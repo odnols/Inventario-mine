@@ -1,0 +1,407 @@
+body{
+    background-color: rgba(0, 0, 0, .7);
+    font-family: "Minecraftia";
+    overflow-x: hidden;
+    overflow-y: hidden;
+    user-select: none;
+}
+h3.ordena{
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    left: 25%;
+    top: -15%;
+    position: absolute;
+    display: none;
+}
+#versao_referencia{
+    display: none;
+}
+#Inventario{
+    position: fixed;
+    z-index: 3;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+img#menu{
+    position: absolute;
+    z-index: 2;
+}
+#menu_completo{
+    /* display: none; */
+    top: 15px;
+    width: 600px;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    /* left: 50%; */
+    /* margin-left: -300px; */
+    left: 3%;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+}
+#lista_itens{
+    overflow: hidden;
+    z-index: 2;
+    top: 10%;
+    width: 470px;
+    height: 386px;
+    left: 52%;
+    position: absolute;
+    margin-left: -300px;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+}
+#estatisticas_inventario{
+    /* display: none; */
+    top: 18.2%;
+    z-index: 4;
+    width: 585px;
+    padding: 5px;
+    position: absolute;
+    right: 4%;
+    height: 408px;
+    background: url("../IMG/Interface/prancheta.png") no-repeat;
+}
+.estat{
+    position: absolute;
+    padding-left: 5%;
+}
+#prancheta_add{
+    display: none;
+    top: 18.2%;
+    z-index: 9;
+    width: 585px;
+    padding: 5px;
+    position: absolute;
+    /* left: 50%; */
+    right: 4%;
+    height: 408px;
+    /* margin-left: -285px; */
+    background: url("../IMG/Interface/prancheta.png") no-repeat;
+}
+.input_prancheta{
+    border: 0px solid;
+    color: white;
+    text-shadow: 3px 3px 0px rgb(62, 62, 62);
+    font-family: "Minecraftia";
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    padding-top: 10px;
+    max-height: 34px;
+    overflow: hidden;
+}
+.input_check{
+    border: 1px solid black;
+    width: 42px;
+    height: 42px;
+    background: url("../IMG/Interface/slot.png") no-repeat;
+}
+#selects{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+select{
+    position: absolute;
+    max-width: 378px;
+}
+#inserir_item{
+    width: 90%;
+    right: 5%;
+    bottom: 6%;
+    position: absolute;
+}
+#checkboxes{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    right: 5%;
+    top: 11%;
+}
+.icon_check{
+    width: 38px;
+}
+#input_img{
+    width: 85%; 
+    border: 1px solid grey;
+    padding: 0px;
+    height: 34px;
+    border-radius: 4px;
+    left: 7%;
+    top: 100%;
+    position: absolute;
+}
+#preview{
+    position: absolute;
+    box-shadow: inset 0px 0px 10px black;
+    width: 48px;
+    height: 48px;
+    left: 30%;
+    top: 180px;
+}
+#listagem{
+    width: 503px;
+    left: 11px;
+    height: 270px;
+    position: absolute;
+    overflow-y: auto;
+    top: 147px;
+}
+#slot_item{
+    background: url("../IMG/Interface/slot.png");
+    width: 54px;
+    height: 54px;
+    float: left;
+}
+#slot_item:hover{
+    background: url("../IMG/Interface/slot_hover.png");
+}
+.icon_item{
+    width: 48px;
+    height: 48px;
+    padding: 3px;
+}
+input, select{
+    width: 480px;
+    height: 40px;
+    font-size: 24px;
+    padding-left: 20px;
+}
+.Construcao, .Decorativos, .Redstone, .Transportes, .Diversos, .Alimentos, .Ferramentas, .Combate, .Pocoes, .Especiais, .Prancheta{
+    display: none;
+}
+#item_0, #item_1, #item_2, #item_3, #item_4, #item_5, #item_6, #item_7, #item_8, #item_9, #item_10, #item_11{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 3;
+}
+#item_0{
+    top: 80%;
+    left: 3%;
+}
+#item_1{
+    top: 80%;
+    left: 16.5%;
+}
+#item_2{
+    top: 80%;
+    left: 30%;
+}
+#item_3{
+    top: 80%;
+    left: 44%;
+}
+#item_9{
+    top: 80%;
+    left: 69%;
+}
+#item_10{
+    top: 80%;
+    left: 82%;
+}
+#item_4{
+    top: 1650%;
+    left: 3%;
+}
+#item_5{
+    top: 1650%;
+    left: 16.5%;
+}
+#item_6{
+    top: 1650%;
+    left: 30%;
+}
+#item_7{
+    top: 1650%;
+    left: 44%;
+}
+#item_8{
+    top: 1650%;
+    left: 58%;
+}
+#item_11{
+    top: 1650%;
+    left: 82%;
+}
+.aba_menu{
+    z-index: 2;
+    position: absolute;
+    top: 15px;
+}
+.opcoes_laterais{
+    z-index: 0 !important;
+    animation: puxa_campos .5s;
+}
+#img_decorativos{
+    left: 16.2%;
+}
+#img_redstone{
+    left: 30%;
+}
+#img_transportes{
+    left: 43.8%;
+}
+#img_especiais{
+    left: 68.6%;
+}
+#img_pesquisa{
+    left: 81.9%;
+}
+#img_diversos{
+    top: 1641%;
+}
+#img_alimentos{
+    top: 1642%;
+    left: 16%;
+}
+#img_ferramentas{
+    top: 1642%;
+    left: 30%;
+}
+#img_combate{
+    top: 1642%;
+    left: 43.8%;
+}
+#img_pocoes{
+    top: 1642%;
+    left: 57.6%;
+}
+#img_configs, #img_configs_2{
+    z-index: 0;
+    position: absolute;
+    top: 330%;
+    right: -5.9%;
+}
+#img_configs_2, #img_versoes_2, #img_coletaveis_2{
+    display: none;
+    z-index: 1 !important;
+}
+#img_coletaveis, #img_coletaveis_2{
+    z-index: 0;
+    position: absolute;
+    top: 190px;
+    right: -5.9%;
+}
+#img_versoes, #img_versoes_2{
+    display: none;
+    z-index: 0;
+    position: absolute;
+    top: 280px;
+    right: -5.9%;
+}
+#img_prancheta{
+    top: 1680%;
+    left: 82.4%;
+}
+#barra_pesquisa_input{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: "Minecraftia";
+    width: 248px;
+    top: 110px;
+    right: 16.6%;
+    z-index: 4;
+    background: url("../IMG/Interface/barra_pesquisa.png") no-repeat;
+    position: absolute;
+    color: white;
+    text-shadow: 3px 3px 0px rgb(62, 62, 62);
+    border: 0px solid;
+}
+#barra_pesquisa{
+    position: absolute;
+    right: 16.6%;
+    top: 110px;
+}
+.input_prancheta{
+    padding-left: 10px;
+    background: url("../IMG/Interface/barra_prancheta.png") no-repeat;
+    width: 356px;
+    position: absolute;
+    left: 4%;
+}
+#barra_nome{
+    top: 12%;
+}
+#barra_nome_interno{
+    top: 25%;
+}
+#titulo_aba{
+    color: #3f3f3f;
+    z-index: 3;
+    position: absolute;
+    left: 6.4%;
+    top: 370%;
+}
+#barra_rolagem{
+    position: absolute;
+    width: 36px;
+    height: 330px;
+    right: 54px;
+    top: 153px;
+    z-index: 9;
+}
+#barra_scroll{
+    background: url("../IMG/Interface/scroll.png");
+    position: absolute;
+    width: 36px;
+    height: 45px;
+    cursor: move;
+    z-index: 10;
+}
+#barra_scroll_block{
+    display: none;
+}
+#img_detalhes{
+    position: absolute;
+    right: 50%;
+    margin-right: -24px;
+    top: 30%;
+    transform: scale(3);
+    filter: drop-shadow(0px 0px 3px black);
+    width: 48px;
+    height: 48px;
+}
+#btn_voltar, #btn_apagar{
+    font-size: 30px;
+    width: 300px;
+}
+#btn_voltar{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+#btn_apagar{
+    position: absolute;
+    top: 2%;
+    left: 6.5%;
+    background-color: rgb(241, 101, 101);
+}
+#lista_versoes{
+    background: url("../IMG/Interface/Livro.png") no-repeat;
+    z-index: 10;
+    top: 7%;
+    font-size: 18px;
+    padding-left: 4%;
+    width: 438px;
+    height: 540px;
+    padding-top: 100px;
+    position: absolute;
+    left: 70%;
+    margin-left: -219px;
+}
+a{
+    text-decoration: none !important;
+    color: blue !important;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
