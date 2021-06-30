@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
 </head>
@@ -261,10 +262,55 @@
 
     <script type="text/javascript">
 
-            categoria(10, 0);
+        categoria(10, 0);
         clique("prancheta", 0);
 
         document.addEventListener("onKeyDown", clique());
     </script>
+
+    <!-- <script src="JSON/dados.json"></script>
+    <script type="text/javascript">
+
+    fetch("JSON/dados.json")
+        .then(response => response.json())
+        .then(json => { 
+
+            // Listando os itens do JSON para o usuário
+            for(var i = 0; i < json.length; i++){
+
+                if(typeof json[i].id_item !== "undefined"){
+
+                    if(json[i].nome_interno)
+                        var nome_interno = "off";
+                    else
+                        var nome_interno = "";
+
+                    if(!json[i].versao_add || json[i].versao_add === "outro")
+                        var versao_add = "off";
+                    else
+                        var versao_add = json[i].versao_add;
+                        
+                    if(!json[i].renovavel)
+                        var renovavel = "não renovável";
+                    else
+                        var renovavel = "renovável";
+                    
+                    if(json[i].empilhavel != 0)
+                        var empilhavel = "empilhável";
+                    else
+                        var empilhavel = null;
+
+                    if(json[i].coletavel != 0)
+                        var coletavel = "coletável";
+                    else
+                        var coletavel = "não_coletável";
+
+                    $("#listagem").append("<div id='slot_item' class='"+ json[i].tipo_item +" "+ versao_add +" "+ nome_interno +" "+ renovavel +" "+ empilhavel +" "+ coletavel +"' onclick='exibe_detalhes_item("+ json[i].id_item +")' onmouseover='toolTip("+ json[i].id_item +")' onmouseout='toolTip()'>");
+                    $("#listagem").append("<img class='icon_item' src='IMG/Itens/"+ json[i].tipo_item +"/"+ json[i].nome_img + "'>");
+                    $("#listagem").append("</div>");
+                }
+            }
+        });
+    </script> -->
 </body>
 </html>

@@ -138,7 +138,7 @@ function categoria(alvo, local){
         alvos = document.getElementsByClassName(alvo);
     }
 
-    console.log(alvo);
+    // console.log(alvo);
 
     // Escondendo todos os itens de todas as categorias
     for(var i = 0; i < categorias.length; i++){
@@ -178,9 +178,9 @@ function categoria(alvo, local){
         }
     }
 
-    console.log(alvo);
-    console.log(alvos.length);
-    console.log(itens);
+    // console.log(alvo);
+    // console.log(alvos.length);
+    // console.log(itens);
 
     // Exibindo os itens da categoria escolhida
     for(var i = 0; i < alvos.length; i++){
@@ -193,7 +193,7 @@ function categoria(alvo, local){
             var slots_livres = alvos.length - 1;
         else{
             var slots_livres = itens - 2    ;
-            console.log("Aqui");
+            // console.log("Aqui");
         }
 
         if(alvos.length - 1 < 45 && alvo != 10 && typeof alvo != "string")
@@ -206,12 +206,12 @@ function categoria(alvo, local){
                 slots_livres = 45 - itens;
             else{
                 slots_livres = ((slots_livres % 9) - 9) * - 1;
-                console.log("Aqui 2");
+                // console.log("Aqui 2");
             }
         }
 
-        console.log("Itens: "+ itens);
-        console.log("Slots livres: "+ slots_livres);
+        // console.log("Itens: "+ itens);
+        // console.log("Slots livres: "+ slots_livres);
         
         document.getElementById("complementa_slots").innerHTML = "";
 

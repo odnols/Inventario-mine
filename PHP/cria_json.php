@@ -1,9 +1,7 @@
 <?php include_once "conexao_obsoleta.php";
-
-    echo "Criando o Json, aguarde...";
-
+    
     $arquivo = "dados.json";
-    $file = fopen($arquivo, 'w');
+    $file = fopen("../JSON/". $arquivo, 'w');
 
     $data = array();
 

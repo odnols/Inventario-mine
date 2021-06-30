@@ -154,7 +154,7 @@ select{
     top: 147px;
 }
 #slot_item{
-    background: url("../IMG/Interface/slot.png");
+    background: url("../IMG/Interface/slot.png") !important;
     width: 54px;
     height: 54px;
     float: left;
