@@ -11,7 +11,7 @@
 
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
 </head>
-<body> 
+<body>
 
     <div id="lista_versoes" style="display: none">
         <?php
@@ -86,6 +86,7 @@
 
     </div>
             
+    <a href="PHP/cria_json.php">Criar json</a>
             
     <form id="prancheta_add" method="post" action="PHP/item_registrar.php" enctype="multipart/form-data">
         <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required>
