@@ -178,23 +178,17 @@ function categoria(alvo, local){
         }
     }
 
-    // console.log(alvo);
-    // console.log(alvos.length);
-    // console.log(itens);
-
     // Exibindo os itens da categoria escolhida
     for(var i = 0; i < alvos.length; i++){
         alvos[i].style.display = "Block";
         itens++;
     }
 
+    var slots_livres = itens - 2;
+
     if((alvos.length - 1) % 9 != 0){
         if(alvo != 10 && typeof alvo != "string")
-            var slots_livres = alvos.length - 1;
-        else{
-            var slots_livres = itens - 2    ;
-            // console.log("Aqui");
-        }
+            slots_livres = alvos.length - 1;
 
         if(alvos.length - 1 < 45 && alvo != 10 && typeof alvo != "string")
             slots_livres = 47 - alvos.length - 1;
@@ -204,15 +198,10 @@ function categoria(alvo, local){
         if(alvo == 10 || typeof alvo == "string"){
             if(itens < 45)
                 slots_livres = 45 - itens;
-            else{
+            else
                 slots_livres = ((slots_livres % 9) - 9) * - 1;
-                // console.log("Aqui 2");
-            }
         }
 
-        // console.log("Itens: "+ itens);
-        // console.log("Slots livres: "+ slots_livres);
-        
         document.getElementById("complementa_slots").innerHTML = "";
 
         for(var j = 0; j < slots_livres; j++){
@@ -259,13 +248,11 @@ function dragElement(elmnt) {
 
     if(elmnt != null){
         var pos2 = 0, pos4 = 0;
-        if (document.getElementById(elmnt.id)) {
-            /* if present, the header is where you move the DIV from:*/
+        if (document.getElementById(elmnt.id))
             document.getElementById(elmnt.id).onmousedown = dragMouseDown;
-        } else {
-            /* otherwise, move the DIV from anywhere inside the DIV:*/
+        else
             elmnt.onmousedown = dragMouseDown;
-        }
+        
 
         function dragMouseDown(e) {
             e = e || window.event;

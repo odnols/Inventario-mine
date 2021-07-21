@@ -88,7 +88,8 @@
     </div>
             
     <a href="PHP/cria_json.php">Criar json</a>
-            
+    <a href="JSON/substituir.php">Substituir</a>        
+
     <form id="prancheta_add" method="post" action="PHP/item_registrar.php" enctype="multipart/form-data">
         <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required>
 
@@ -98,8 +99,8 @@
             <select name="abamenu" style="width: 505px;">
 
             <?php
-                $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes"];
-                $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções"];
+                $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais"];
+                $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais"];
             
                 for($i = 0; $i < sizeof($categorias); $i++){
                     echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";
@@ -268,8 +269,8 @@
         document.addEventListener("onKeyDown", clique());
     </script>
 
-    <!-- <script src="JSON/dados.json"></script>
-    <script type="text/javascript">
+    <script src="JSON/dados.json"></script>
+    <!-- <script type="text/javascript">
 
     fetch("JSON/dados.json")
         .then(response => response.json())
