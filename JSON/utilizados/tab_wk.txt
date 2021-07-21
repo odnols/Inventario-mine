@@ -1,0 +1,2052 @@
+{{Many images}}
+{{infobox
+|image=Texture Update Logo.png
+|imagesize=250px
+|rows={{Infobox row|Download|Veja {{slink||Downloads}}}}
+{{Infobox row|Data de lançamento|
+'''Edição Java:'''<br>
+April 23, 2019 (na [[Edição Java 1.14|1.14]])<br>
+'''Edição Bedrock:'''<br>
+March 19, 2019 (na [[Edição Bedrock 1.10.0|1.10.0]])<br>
+'''PlayStation 4 Edition:'''<br>
+15 de abril de 2019 (na [[PlayStation 4 Edition 1.90|1.90]])}}
+}}
+
+A '''Atualização da textura'''   é uma [[atualização]] que foi lançado na [[Edição Java 1.14]],<ref>{{snap|18w43a|October 24, 2018}}</ref> (com mais alterações na [[Edição Java 1.14.1|1.14.1]], [[Edição Java 1.15|1.15]] e [[Edição Java 1.16|1.16]]), [[Edição Bedrock 1.10.0]],<ref>{{tweet|MattGartzke|1090700501056839685|A primeira versão 1.10 chegou com escudos e novas texturas!|30 de janeiro de 2019}}</ref> (com mais alterações na [[Edição Bedrock 1.11.0]]) e [[PlayStation 4 Edition 1.90]] (com outras alterações na [[PlayStation 4 Edition 1.91]]).
+A atualização altera a maioria das texturas do jogo,<ref>{{article|try-new-minecraft-java-textures|Experimente as novas texturas para a Edição Java|31 de janeiro de 2018}}</ref> exceto algumas texturas icônicas como [[terra]] e [[creeper]]. As texturas foram desenvolvidas principalmente por [[JAPPA]] (Jasper Boerstra). As texturas antigas estão disponíveis como um pacote de recursos/pacote de textura embutido no jogo{{only|java}} ou como um download separado{{only|bedrock}} (nomeado "'''Programmer Art'''" {{in|java}}, e "'''Classic Textures'''" {{in|bedrock}}).<ref>{{snap|18w44a}}</ref><ref>[https://marketplace.minecraft.net/en-us/pdp?id=58d525a7-f93d-41a6-b1f3-c7887e2dad3d Minecraft Classic Texture Pack]</ref>
+
+== Textures ==
+
+=== Blocks ===
+
+==== Natural blocks ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| All [[Log]]s
+| {{animate|Oak Log Axis Y JE2 BE1.png; Spruce Log Axis Y JE2 BE2.png; Birch Log Axis Y JE2 BE2.png; Jungle Log Axis Y JE2 BE2.png; Acacia Log Axis Y JE2 BE1.png ;Dark Oak Log Axis Y JE2 BE1.png|80px}}
+| {{animate|Oak Log Axis Y JE5 BE3.png; Spruce Log Axis Y JE5 BE3.png; Birch Log Axis Y JE5 BE3.png; Jungle Log Axis Y JE6 BE3.png; Acacia Log Axis Y JE5 BE3.png; Dark Oak Log Axis Y JE5 BE3.png|80px}} ||
+|-
+| All [[Wood]]s
+| {{animate|Oak Wood Axis Y JE1 BE1.png;Spruce Wood Axis Y JE1 BE1.png;Birch Wood Axis Y JE1 BE1.png;Jungle Wood Axis Y JE1 BE1.png;Acacia Wood Axis Y JE2 BE1.png;Dark Oak Wood Axis Y JE2 BE1.png|80px}}
+| {{animate|Oak Wood.png;Spruce Wood.png;Birch Wood.png;Jungle Wood.png;Acacia Wood.png;Dark Oak Wood.png|80px}} ||
+|-
+| [[Stone]]
+| [[File:Stone JE2 BE2.png|80px]]
+| [[File:Stone JE4 BE2.png|80px]] ||
+|-
+| [[Stone Bricks]]
+| [[File:Stone Bricks JE1 BE1.png|80px]]
+| [[File:Stone Bricks JE3 BE2.png|80px]] ||
+|-
+| [[Mossy Stone Bricks]]
+| [[File:Mossy Stone Bricks JE1 BE1.png|80px]]
+| [[File:Mossy Stone Bricks JE3 BE2.png|80px]] ||
+|-
+| [[Cracked Stone Bricks]]
+| [[File:Cracked Stone Bricks JE1 BE1.png|80px]]
+| [[File:Cracked Stone Bricks JE3 BE2.png|80px]] ||
+|-
+| [[Chiseled Stone Bricks]]
+| [[File:Chiseled Stone Bricks JE1 BE1.png|80px]]
+| [[File:Chiseled Stone Bricks JE3 BE2.png|80px]] ||
+|-
+| [[Cobblestone]]
+| [[File:Cobblestone JE4.png|80px]]
+| [[File:Cobblestone JE6.png|80px]] ||
+|-
+| [[Mossy Cobblestone]]
+| [[File:Mossy Cobblestone JE2 BE1.png|80px]]
+| [[File:Mossy Cobblestone JE4 BE2.png|80px]] ||
+|-
+| [[Gravel]]
+| [[File:Gravel JE4 BE2.png|80px]]
+| [[File:Gravel JE5 BE3.png|80px]] ||
+|-
+| [[Andesite]]
+| [[File:Andesite JE1 BE1.png|80px]]
+| [[File:Andesite JE3 BE2.png|80px]] ||
+|-
+| [[Polished Andesite]]
+| [[File:Polished Andesite JE1 BE1.png|80px]]
+| [[File:Polished Andesite JE2 BE2.png|80px]] ||
+|-
+| [[Diorite]]
+| [[File:Diorite JE1 BE1.png|80px]]
+| [[File:Diorite JE4 BE3.png|80px]] ||
+|-
+| [[Polished Diorite]]
+| [[File:Polished Diorite JE1 BE1.png|80px]]
+| [[File:Polished Diorite JE2 BE2.png|80px]] ||
+|-
+| [[Granite]]
+| [[File:Granite JE1 BE1.png|80px]]
+| [[File:Granite JE2 BE2.png|80px]] ||
+|-
+| [[Polished Granite]]
+| [[File:Polished Granite JE1 BE1.png|80px]]
+| [[File:Polished Granite JE2 BE2.png|80px]] ||
+|-
+| [[Clay (block)|Clay]]
+| [[File:Clay JE1 BE1.png|80px]]
+| [[File:Clay JE2 BE2.png|80px]] ||
+|-
+| [[Terracotta]]
+| [[File:Terracotta JE1 BE1.png|80px]]
+| [[File:Terracotta JE2 BE2.png|80px]] ||
+|-
+| [[Obsidian]]
+| [[File:Obsidian JE1 BE1.png|80px]]
+| [[File:Obsidian JE3 BE2.png|80px]] ||
+|-
+| [[Bedrock]]
+| [[File:Bedrock JE1 BE1.png|80px]]
+| [[File:Bedrock JE2 BE2.png|80px]] ||
+|-
+| [[Netherrack]]
+| [[File:Netherrack JE2 BE1.png|80px]]
+| [[File:Netherrack JE4 BE2.png|80px]] ||
+|-
+| [[Nether Bricks]]
+| [[File:Nether Bricks JE1 BE1.png|80px]]
+| [[File:Nether Bricks JE3 BE4.png|80px]] ||
+|-
+| [[Soul Sand]]
+| [[File:Soul Sand JE1 BE1.png|80px]]
+| [[File:Soul Sand JE2 BE2.png|80px]] ||
+|-
+| [[Magma Block]]
+| [[File:Magma Block JE1 BE1.gif|80px]]
+| [[File:Magma Block JE2 BE2.gif|80px]] ||
+|-
+| [[Glowstone]]
+| [[File:Glowstone JE2 BE1.png|80px]]
+| [[File:Glowstone JE4 BE2.png|80px]] ||
+|-
+| [[Brown Mushroom Block]]
+| [[File:Brown Mushroom Block JE1 BE1.png|80px]]
+| [[File:Brown Mushroom Block JE2 BE2.png|80px]] ||
+|-
+| [[Red Mushroom Block]]
+| [[File:Red Mushroom Block JE1 BE1.png|80px]]
+| [[File:Red Mushroom Block JE2 BE2.png|80px]] ||
+|-
+| [[Mushroom Stem]]
+| [[File:Mushroom Stem JE1 BE1.png|80px]]
+| [[File:Mushroom Stem JE2 BE2.png|80px]] ||
+|-
+| [[Mycelium]]
+| [[File:Mycelium JE1 BE1.png|80px]]
+| [[File:Mycelium JE2 BE2.png|80px]] ||
+|-
+| [[Grass Block|Snowy Grass Block]]
+| [[File:Snowy Grass Block JE1 BE1.png|80px]]
+| [[File:Snowy Grass Block JE3 BE3.png|80px]] ||
+|-
+| [[Snow]]
+| {{animate|Snow (layers 1) JE2 BE2.png;Snow (layers 2) JE2 BE1.png;Snow (layers 3) JE2 BE1.png;Snow (layers 4) JE2 BE1.png;Snow (layers 5) JE2 BE1.png; Snow (layers 6) JE2 BE1.png;Snow (layers 7) JE2 BE1.png;Snow (layers 8) JE1 BE1.png|80px}}
+| {{animate|Snow (layers 1) JE3 BE3.png;Snow (layers 2) JE3 BE2.png;Snow (layers 3) JE3 BE2.png;Snow (layers 4) JE3 BE2.png;Snow (layers 5) JE3 BE2.png; Snow (layers 6) JE3 BE2.png;Snow (layers 7) JE3 BE2.png;Snow (layers 8) JE2 BE2.png|80px}} ||
+|-
+| [[Snow block]]
+| [[File:Snow Block JE1 BE1.png|80px]]
+| [[File:Snow Block JE2 BE2.png|80px]] ||
+|-
+| [[Ice]]
+| [[File:Ice JE1 BE1.png|80px]]
+| [[File:Ice JE2 BE3.png|80px]] ||
+|-
+| [[Packed Ice]]
+| [[File:Packed Ice JE1 BE2.png|80px]]
+| [[File:Packed Ice JE2 BE3.png|80px]] ||
+|-
+| [[Frosted Ice]]
+| {{animate|Frosted Ice 1 JE1 BE1.png;Frosted Ice 2 JE1 BE1.png;Frosted Ice 3 JE1 BE1.png|80px}}
+| {{animate|Frosted Ice 1 JE2 BE2.png;Frosted Ice 2 JE2 BE2.png;Frosted Ice 3 JE2 BE2.png|80px}} ||
+|-
+| [[Grass Block]]
+| [[File:Grass Block JE6 BE5.png|80px]]
+| [[File:Grass Block JE7 BE6.png|80px]] ||
+|-
+| [[Grass Path]]
+| [[File:Grass Path JE1 BE1.png|80px]]
+| [[File:Grass Path JE2 BE2.png|80px]] ||
+|-
+| [[Podzol]]
+| [[File:Podzol JE1 BE1.png|80px]]
+| [[File:Podzol JE2 BE2.png|80px]] ||
+|-
+| [[Farmland]]
+| {{animate|Farmland JE3 BE3.png;Moist Farmland JE3 BE3.png;Farmland BE4.png|80px}}
+| {{animate|Farmland JE4 BE6.png;Moist Farmland JE4 BE4.png;Farmland BE5.png|80px}} ||
+|-
+| [[Prismarine]]
+| [[File:Prismarine JE1 BE1.gif|80px]]
+| [[File:Prismarine JE2 BE2.gif|80px]] ||
+|-
+| [[Prismarine Bricks]]
+| [[File:Prismarine Bricks JE1 BE1.png|80px]]
+| [[File:Prismarine Bricks JE2 BE2.png|80px]] ||
+|-
+| [[Dark Prismarine]]
+| [[File:Dark Prismarine JE1 BE1.png|80px]]
+| [[File:Dark Prismarine JE2 BE2.png|80px]] ||
+|-
+| [[Sponge]]
+| {{animate|Sponge JE2 BE2.png;Wet Sponge JE1 BE1.png|80px}}
+| {{animate|Sponge JE3 BE3.png;Wet Sponge JE2 BE2.png|80px}} ||
+|-
+| rowspan="2" | [[Spawner]]
+| [[File:Spawner JE2.png|80px]]
+| [[File:Spawner JE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Spawner BE1.png|80px]]
+| [[File:Spawner BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Cobweb]]
+| [[File:Cobweb JE2 BE1.png|80px]]
+| [[File:Cobweb JE2 BE2.png|80px]] ||
+|-
+| [[End Stone]]
+| [[File:End Stone JE1 BE1.png|80px]]
+| [[File:End Stone JE3 BE2.png|80px]] ||
+|-
+| [[End Stone Bricks]]
+| [[File:End Stone Bricks JE1 BE1.png|80px]]
+| [[File:End Stone Bricks JE2 BE2.png|80px]] ||
+|-
+| [[Chorus Flower]]
+| {{animate|Chorus Flower JE1 BE1.png;Chorus Flower Dead JE1 BE1.png|80px}}
+| {{animate|Chorus Flower JE2 BE2.png;Chorus Flower Dead JE2 BE2.png|80px}} ||
+|-
+| [[Chorus Plant]]
+| [[File:Chorus Plant JE1 BE1.png|80px]]
+| [[File:Chorus Plant JE2 BE2.png|80px]] ||
+|-
+| [[Purpur Block]]
+| [[File:Purpur Block JE1 BE1.png|80px]]
+| [[File:Purpur Block JE2 BE2.png|80px]] ||
+|-
+| rowspan=2 | [[Purpur Pillar]]
+| rowspan=2 | [[File:Purpur Pillar Axis Y JE1 BE1.png|80px]]
+| [[File:Purpur Pillar Axis Y JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Purpur Pillar Axis Y JE3 BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[End Rod]]
+| [[File:End Rod JE1 BE1.png|80px]]
+| [[File:End Rod JE2 BE2.png|80px]] ||
+|-
+| [[Sand]]
+| [[File:Sand JE3 BE1.png|80px]]
+| [[File:Sand JE5 BE2.png|80px]] ||
+|-
+| [[Sandstone]]
+| [[File:Sandstone JE2 BE2.png|80px]]
+| [[File:Sandstone JE6 BE3.png|80px]] ||
+|-
+| [[Cut Sandstone]]
+| [[File:Cut Sandstone JE1 BE1.png|80px]]
+| [[File:Cut Sandstone JE5 BE2.png|80px]] ||
+|-
+| [[Chiseled Sandstone]]
+| [[File:Chiseled Sandstone JE1 BE1.png|80px]]
+| [[File:Chiseled Sandstone JE5 BE2.png|80px]] ||
+|-
+| [[Red Sand]]
+| [[File:Red Sand JE1 BE1.png|80px]]
+| [[File:Red Sand JE3 BE2.png|80px]] ||
+|-
+| [[Red Sandstone]]
+| [[File:Red Sandstone JE1 BE1.png|80px]]
+| [[File:Red Sandstone JE4 BE2.png|80px]] ||
+|-
+| [[Cut Red Sandstone]]
+| [[File:Cut Red Sandstone JE1 BE1.png|80px]]
+| [[File:Cut Red Sandstone JE4 BE2.png|80px]] ||
+|-
+| [[Chiseled Red Sandstone]]
+| [[File:Chiseled Red Sandstone JE1 BE1.png|80px]]
+| [[File:Chiseled Red Sandstone JE4 BE2.png|80px]] ||
+|-
+| [[Coal Ore]]
+| [[File:Coal Ore JE1 BE1.png|80px]]
+| [[File:Coal Ore JE2 BE2.png|80px]] ||
+|-
+| [[Iron Ore]]
+| [[File:Iron Ore JE1 BE1.png|80px]]
+| [[File:Iron Ore JE2 BE2.png|80px]] ||
+|-
+| [[Lapis Lazuli Ore]]
+| [[File:Lapis Lazuli Ore JE1 BE1.png|80px]]
+| [[File:Lapis Lazuli Ore JE2 BE2.png|80px]] ||
+|-
+| [[Gold Ore]]
+| [[File:Gold Ore JE2 BE1.png|80px]]
+| [[File:Gold Ore JE3 BE2.png|80px]] ||
+|-
+| [[Redstone Ore]]
+| [[File:Redstone Ore JE1 BE1.png|80px]]
+| [[File:Redstone Ore JE2 BE2.png|80px]] ||
+|-
+| [[Diamond Ore]]
+| [[File:Diamond Ore JE1 BE1.png|80px]]
+| [[File:Diamond Ore JE3 BE3.png|80px]] ||
+|-
+| [[Emerald Ore]]
+| [[File:Emerald Ore JE2 BE1.png|80px]]
+| [[File:Emerald Ore JE3 BE2.png|80px]] ||
+|-
+| [[Nether Quartz Ore]]
+| [[File:Nether Quartz Ore JE1 BE1.png|80px]]
+| [[File:Nether Quartz Ore JE3 BE2.png|80px]] ||
+|-
+| [[Bone Block]]
+| [[File:Bone Block Axis Y JE1 BE1.png|80px]]
+| [[File:Bone Block Axis Y JE2 BE2.png|80px]] ||
+|-
+| [[End Portal Frame]]
+| {{animate|End Portal Frame (S) JE2 BE1.png;Filled End Portal Frame (S) JE2 BE1.png|80px}}
+| {{animate|End Portal Frame (S) JE5 BE2.png;Filled End Portal Frame (S) JE5 BE2.png|80px}} ||
+|}
+
+==== Plants ====
+{| class="wikitable" data-description="Plants"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| [[Wheat Seeds|Wheat]]
+| {{animate|Wheat Age 0 JE1 BE1.png; Wheat Age 1 JE1 BE1.png; Wheat Age 2 JE1 BE1.png; Wheat Age 3 JE1 BE1.png; Wheat Age 4 JE1 BE1.png; Wheat Age 5 JE1 BE1.png; Wheat Age 6 JE1 BE1.png; Wheat Age 7 JE1 BE1.png|80px}}
+| {{animate|Wheat Age 0 JE3 BE2.png; Wheat Age 1 JE3 BE2.png; Wheat Age 2 JE3 BE2.png; Wheat Age 3 JE3 BE2.png; Wheat Age 4 JE3 BE2.png; Wheat Age 5 JE3 BE2.png; Wheat Age 6 JE4 BE2.png; Wheat Age 7 JE4 BE2.png|80px}} ||
+|-
+| [[Carrot]]s
+| {{animate|Carrots Age 0 JE1 BE1.png;Carrots Age 1 JE1 BE1.png;Carrots Age 2 JE1 BE1.png;Carrots Age 3 JE1 BE1.png|80px}}
+| {{animate|Carrots Age 0 JE2 BE2.png;Carrots Age 1 JE2 BE2.png;Carrots Age 2 JE2 BE2.png;Carrots Age 3 JE2 BE2.png|80px}} ||
+|-
+| [[Beetroot Seeds|Beetroots]]
+| {{animate|Beetroots Age 0 JE1 BE1.png; Beetroots Age 1 JE1 BE1.png; Beetroots Age 2 JE1 BE1.png; Beetroots Age 3 JE1 BE1.png|80px}}
+| {{animate|Beetroots Age 0 JE2 BE2.png; Beetroots Age 1 JE2 BE2.png; Beetroots Age 2 JE2 BE2.png; Beetroots Age 3 JE2 BE2.png|80px}} ||
+|-
+| [[Potato]]es
+| {{animate|Potatoes Age 0 JE1 BE1.png;Potatoes Age 1 JE1 BE1.png; Potatoes Age 2 JE1 BE1.png; Potatoes Age 3 JE1 BE1.png|80px}}
+| {{animate|Potatoes Age 0 JE2 BE2.png;Potatoes Age 1 JE2 BE2.png; Potatoes Age 2 JE2 BE2.png; Potatoes Age 3 JE2 BE2.png|80px}} ||
+|-
+| [[Pumpkin]]
+| [[File:Pumpkin JE1 BE1.png|80px]]
+| [[File:Pumpkin JE2 BE2.png|80px]] ||
+|-
+| [[Carved Pumpkin]]
+| [[File:Carved Pumpkin JE1 BE1.png|80px]]
+| [[File:Carved Pumpkin (S) JE4.png|80px]] ||
+|-
+| [[Melon]]
+| [[File:Melon JE1 BE1.png|80px]]
+| [[File:Melon JE2 BE2.png|80px]] ||
+|-
+| rowspan="2" | [[Cactus]]
+| [[File:Cactus JE2 BE1.png|80px]]
+| [[File:Cactus JE4.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Cactus BE3.png|80px]]
+| [[File:Cactus BE4.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Cocoa]]
+| {{animate|Cocoa Age 0 (S) JE1.png;Cocoa Age 1 (S) JE1.png;Cocoa Age 2 (S) JE1.png|80px}}
+| {{animate|Cocoa Age 0 (S) JE2.png;Cocoa Age 1 (S) JE2.png;Cocoa Age 2 (S) JE2.png|80px}} ||
+|-
+| [[Red Mushroom]]
+| [[File:Red Mushroom JE1 BE1.png|80px]]
+| [[File:Red Mushroom JE2 BE2.png|80px]] ||
+|-
+| [[Brown Mushroom]]
+| [[File:Brown Mushroom JE1 BE1.png|80px]]
+| [[File:Brown Mushroom JE2 BE2.png|80px]] ||
+|-
+| [[Nether Wart]]
+| {{animate|Nether Wart Age 0 JE1 BE2.png;Nether Wart Age 1 JE1 BE2.png;Nether Wart Age 2 JE1 BE2.png|80px}}
+| {{animate|Nether Wart Age 0.png;Nether Wart Age 1.png;Nether Wart Age 2.png|80px}} ||
+|-
+| rowspan="2" | [[Grass]]
+| [[File:Grass JE2.png|80px]]
+| rowspan="2" | [[File:Grass JE4.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Grass BE3.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Fern]]
+| [[File:Fern JE1 BE1.png|80px]]
+| rowspan="2" | [[File:Fern JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Fern BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Tall Grass]]
+| [[File:Tall Grass JE2.png|80px]]
+| rowspan="2" | [[File:Tall Grass JE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Tall Grass BE1.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Large Fern]]
+| [[File:Large Fern JE1.png|80px]]
+| rowspan="2" | [[File:Large Fern JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Large Fern BE1.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Dead Bush]]
+| [[File:Dead Bush JE1 BE1.png|80px]]
+| [[File:Dead Bush JE2 BE2.png|80px]] ||
+|-
+| All [[Sapling]]s
+| {{animate|Oak Sapling JE4 BE2.png;Spruce Sapling JE1 BE1.png;Birch Sapling JE1 BE1.png;Jungle Sapling JE1 BE1.png;Acacia Sapling JE1 BE1.png;Dark Oak Sapling JE1 BE1.png|80px}}
+| {{animate|Oak Sapling JE5 BE3.png;Spruce Sapling JE2 BE2.png;Birch Sapling JE2 BE2.png;Jungle Sapling JE2 BE2.png;Acacia Sapling JE2 BE2.png;Dark Oak Sapling JE2 BE2.png|80px}} ||
+|-
+| [[Allium]]
+| [[File:Allium JE1 BE1.png|80px]]
+| [[File:Allium JE2 BE2.png|80px]] ||
+|-
+| [[Azure Bluet]]
+| [[File:Azure Bluet JE1 BE1.png|80px]]
+| [[File:Azure Bluet JE2 BE2.png|80px]] ||
+|-
+| [[Blue Orchid]]
+| [[File:Blue Orchid JE1 BE1.png|80px]]
+| [[File:Blue Orchid JE2 BE2.png|80px]] ||
+|-
+| [[Dandelion]]
+| [[File:Dandelion JE1 BE1.png|80px]]
+| [[File:Dandelion JE2 BE2.png|80px]] ||
+|-
+| [[Oxeye Daisy]]
+| [[File:Oxeye Daisy JE1 BE1.png|80px]]
+| [[File:Oxeye Daisy JE2 BE2.png|80px]] ||
+|-
+| [[Sunflower]]
+| [[File:Sunflower JE1 BE1.png|80px]]
+| [[File:Sunflower JE2 BE2.png|80px]] ||
+|-
+| rowspan="2" | [[Peony]]
+| [[File:Peony JE1 BE1.png|80px]]
+| rowspan="2" | [[File:Peony JE2 BE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Peony BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Lilac]]
+| [[File:Lilac JE1 BE1.png|80px]]
+| [[File:Lilac JE2 BE2.png|80px]] ||
+|-
+| rowspan="2" | [[Rose Bush]]
+| [[File:Rose Bush JE1 BE1.png|80px]]
+| rowspan="2" | [[File:Rose Bush JE2 BE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Rose Bush BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Poppy]]
+| [[File:Poppy JE1 BE1.png|80px]]
+| [[File:Poppy JE3 BE2.png|80px]] ||
+|-
+| All [[Tulip]]s
+| {{animate|Orange Tulip JE1 BE1.png;Pink Tulip JE1 BE1.png;Red Tulip JE1 BE1.png;White Tulip JE1 BE1.png|80px}}
+| {{animate|Orange Tulip.png;Pink Tulip.png;Red Tulip.png;White Tulip.png|80px}} ||
+|-
+| [[Vines]]
+| [[File:Vines JE1 BE1.png|80px]]
+| [[File:Vines JE2 BE2.png|80px]] ||
+|-
+| [[Lily Pad]]
+| [[File:Lily Pad JE1 BE1.png|80px]]
+| [[File:Lily Pad JE2 BE2.png|80px]] ||
+|}
+
+===== Leaves =====
+
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| rowspan="2" | [[Oak Leaves]]
+| [[File:Oak Leaves JE3 BE1.png|80px]]
+| [[File:Oak Leaves JE4.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Oak Leaves BE4.png|80px]]
+| [[File:Oak Leaves BE5.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Spruce Leaves]]
+| [[File:Spruce Leaves JE1 BE1.png|80px]]
+| [[File:Spruce Leaves JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Spruce Leaves BE2.png|80px]]
+| [[File:Spruce Leaves BE3.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Birch Leaves]]
+| [[File:Birch Leaves JE1 BE2.png|80px]]
+| [[File:Birch Leaves JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Birch Leaves BE3.png|80px]]
+| [[File:Birch Leaves BE4.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Jungle Leaves]]
+| [[File:Jungle Leaves JE1 BE1.png|80px]]
+| [[File:Jungle Leaves JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Jungle Leaves BE3.png|80px]]
+| [[File:Jungle Leaves BE4.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Acacia Leaves]]
+| [[File:Acacia Leaves JE1.png|80px]]
+| [[File:Acacia Leaves JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Oak Leaves BE4.png|80px]]
+| [[File:Acacia Leaves BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Dark Oak Leaves]]
+| [[File:Dark Oak Leaves JE1.png|80px]]
+| [[File:Dark Oak Leaves JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Oak Leaves BE4.png|80px]]
+| [[File:Dark Oak Leaves BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|}
+
+==== Manufactured ====
+{| class="wikitable" data-description="Manufactured Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| rowspan="2" | All [[Stripped Log]]s
+| {{animate|Stripped Oak Log Axis Y JE1 BE1.png; Stripped Spruce Log Axis Y JE1.png; Stripped Birch Log Axis Y JE1 BE1.png; Stripped Jungle Log Axis Y JE2 BE2.png; Stripped Acacia Log Axis Y JE1 BE1.png; Stripped Dark Oak Log Axis Y JE1.png|80px}}
+| {{animate|Stripped Oak Log Axis Y JE2 BE2.png; Stripped Spruce Log Axis Y JE2.png; Stripped Birch Log Axis Y JE2 BE2.png; Stripped Jungle Log Axis Y JE4 BE3.png; Stripped Acacia Log Axis Y JE2 BE2.png; Stripped Dark Oak Log Axis Y JE2.png|80px}} || {{only|java|short=1}}
+|-
+| {{animate|Stripped Oak Log Axis Y JE1 BE1.png; Stripped Spruce Log Axis Y BE2.png; Stripped Birch Log Axis Y JE1 BE1.png; Stripped Jungle Log Axis Y JE2 BE2.png; Stripped Acacia Log Axis Y JE1 BE1.png; Stripped Dark Oak Log Axis Y BE2.png|80px}}
+| {{animate|Stripped Oak Log Axis Y JE2 BE2.png; Stripped Spruce Log Axis Y BE3.png; Stripped Birch Log Axis Y JE2 BE2.png; Stripped Jungle Log Axis Y JE4 BE3.png; Stripped Acacia Log Axis Y JE2 BE2.png; Stripped Dark Oak Log Axis Y BE3.png|80px}} || {{only|bedrock|short=1}}
+|-
+| All [[Planks]]
+| {{animate|Oak Planks JE4 BE2.png;Spruce Planks JE1 BE1.png;Birch Planks JE1 BE1.png;Jungle Planks JE1 BE1.png;Acacia Planks JE1 BE1.png;Dark Oak Planks JE1 BE1.png|80px}}
+| {{animate|Oak Planks JE6 BE3.png;Spruce Planks JE4 BE2.png;Birch Planks JE3 BE2.png;Jungle Planks JE3 BE2.png;Acacia Planks JE3 BE2.png;Dark Oak Planks JE3 BE2.png|80px}} ||
+|-
+| [[Jack o'Lantern]]
+| [[File:Jack o'Lantern (S) JE1 BE1.png|80px]]
+| [[File:Jack o'Lantern (S) JE4.png|80px]] ||
+|-
+| [[Hay Bale]]
+| [[File:Hay Bale Axis Y JE1 BE1.png|80px]]
+| [[File:Hay Bale Axis Y JE2 BE2.png|80px]] ||
+|-
+| [[Block of Coal]]
+| [[File:Block of Coal JE2 BE1.png|80px]]
+| [[File:Block of Coal JE3 BE2.png|80px]] ||
+|-
+| [[Lapis Lazuli Block]]
+| [[File:Lapis Lazuli Block JE2 BE2.png|80px]]
+| [[File:Lapis Lazuli Block JE3 BE3.png|80px]] ||
+|-
+| [[Block of Iron]]
+| [[File:Block of Iron JE3 BE3.png|80px]]
+| [[File:Block of Iron JE4 BE4.png|80px]] ||
+|-
+| [[Block of Gold]]
+| [[File:Block of Gold JE4 BE2.png|80px]]
+| [[File:Block of Gold JE6 BE3.png|80px]] ||
+|-
+| [[Block of Diamond]]
+| [[File:Block of Diamond JE3 BE2.png|80px]]
+| [[File:Block of Diamond JE6 BE3.png|80px]] ||
+|-
+| [[Block of Redstone]]
+| [[File:Block of Redstone JE1 BE1.png|80px]]
+| [[File:Block of Redstone JE2 BE2.png|80px]] ||
+|-
+| [[Block of Emerald]]
+| [[File:Block of Emerald JE1 BE1.png|80px]]
+| [[File:Block of Emerald JE4 BE3.png|80px]] ||
+|-
+| [[Block of Quartz]]
+| [[File:Block of Quartz JE1 BE1.png|80px]]
+| [[File:Block of Quartz JE3 BE2.png|80px]] ||
+|-
+| [[Chiseled Quartz Block]]
+| [[File:Chiseled Quartz Block Axis Y JE1 BE1.png|80px]]
+| [[File:Chiseled Quartz Block.png|80px]] ||
+|-
+| [[Quartz Pillar]]
+| [[File:Quartz Pillar Axis Y JE1 BE1.png|80px]]
+| [[File:Quartz Pillar Axis Y.png|80px]] ||
+|-
+| [[Nether Wart Block]]
+| [[File:Nether Wart Block JE1 BE1.png|80px]]
+| [[File:Nether Wart Block JE2 BE2.png|80px]] ||
+|-
+| [[Glass]]
+| [[File:Glass JE3 BE1.png|80px]]
+| [[File:Glass.png|80px]] ||
+|-
+| [[Glass Pane]]
+| [[File:Glass Pane JE2 BE2.png|80px]]
+| [[File:Glass Pane.png|80px]] ||
+|-
+| All [[Stained Glass]]
+| {{animate|White Stained Glass Revision 1.png;Orange Stained Glass Revision 1.png;Magenta Stained Glass Revision 1.png;Light Blue Stained Glass Revision 1.png;Yellow Stained Glass Revision 1.png;Lime Stained Glass Revision 1.png;Pink Stained Glass Revision 1.png;Gray Stained Glass Revision 1.png;Light Gray Stained Glass Revision 1.png;Cyan Stained Glass Revision 1.png;Purple Stained Glass Revision 1.png;Blue Stained Glass Revision 1.png;Brown Stained Glass Revision 1.png;Green Stained Glass Revision 1.png;Red Stained Glass Revision 1.png;Black Stained Glass Revision 1.png|80px}}
+| {{animate|White Stained Glass.png;Orange Stained Glass.png;Magenta Stained Glass.png;Light Blue Stained Glass.png;Yellow Stained Glass.png;Lime Stained Glass.png;Pink Stained Glass.png;Gray Stained Glass.png;Light Gray Stained Glass.png;Cyan Stained Glass.png;Purple Stained Glass.png;Blue Stained Glass.png;Brown Stained Glass.png;Green Stained Glass.png;Red Stained Glass.png;Black Stained Glass.png|80px}} ||
+|-
+| All [[Stained Glass Pane]]s
+| {{animate|White Stained Glass Pane JE2 BE1.png;Orange Stained Glass Pane JE2 BE1.png;Magenta Stained Glass Pane JE2 BE1.png;Light Blue Stained Glass Pane JE2 BE1.png;Yellow Stained Glass Pane JE2 BE1.png;Lime Stained Glass Pane JE2 BE1.png;Pink Stained Glass Pane JE2 BE1.png;Gray Stained Glass Pane JE2 BE1.png;Light Gray Stained Glass Pane JE2 BE1.png;Cyan Stained Glass Pane JE2 BE1.png;Purple Stained Glass Pane JE2 BE1.png;Blue Stained Glass Pane JE2 BE1.png;Brown Stained Glass Pane JE2 BE1.png;Green Stained Glass Pane JE2 BE1.png;Red Stained Glass Pane JE2 BE1.png;Black Stained Glass Pane JE2 BE1.png|80px}}
+| {{animate|White Stained Glass Pane JE3 BE2.png;Orange Stained Glass Pane JE3 BE2.png;Magenta Stained Glass Pane JE3 BE2.png;Light Blue Stained Glass Pane JE3 BE2.png;Yellow Stained Glass Pane JE3 BE2.png;Lime Stained Glass Pane JE3 BE2.png;Pink Stained Glass Pane JE3 BE2.png;Gray Stained Glass Pane JE3 BE2.png;Light Gray Stained Glass Pane JE3 BE2.png;Cyan Stained Glass Pane JE3 BE2.png;Purple Stained Glass Pane JE3 BE2.png;Blue Stained Glass Pane JE3 BE2.png;Brown Stained Glass Pane JE3 BE2.png;Green Stained Glass Pane JE3 BE2.png;Red Stained Glass Pane JE3 BE2.png;Black Stained Glass Pane JE3 BE2.png|80px}} ||
+|-
+| [[Bed]]
+| {{animate|White Bed JE2 BE2.png; Orange Bed JE2 BE2.png; Magenta Bed JE2 BE2.png; Light Blue Bed JE2 BE2.png; Yellow Bed JE2 BE2.png; Lime Bed JE2 BE2.png; Pink Bed JE2 BE2.png; Gray Bed JE2 BE2.png; Light Gray Bed JE2 BE2.png; Cyan Bed JE2 BE2.png; Purple Bed JE2 BE2.png; Blue Bed JE2 BE2.png; Brown Bed JE2 BE2.png; Green Bed JE2 BE2.png; Red Bed JE3 BE2.png; Black Bed JE2 BE2.png|80px}}
+| {{animate|White Bed JE3 BE3.png; Orange Bed JE3 BE3.png; Magenta Bed JE3 BE3.png; Light Blue Bed JE3 BE3.png; Yellow Bed JE3 BE3.png; Lime Bed JE3 BE3.png; Pink Bed JE3 BE3.png; Gray Bed JE3 BE3.png; Light Gray Bed JE3 BE3.png; Cyan Bed JE3 BE3.png; Purple Bed JE3 BE3.png; Blue Bed JE3 BE3.png; Brown Bed JE3 BE3.png; Green Bed JE3 BE3.png; Red Bed JE4 BE3.png; Black Bed JE3 BE3.png|80px}} ||
+|-
+| [[Bookshelf]]
+| [[File:Bookshelf JE2 BE1.png|80px]]
+| [[File:Bookshelf JE4 BE2.png|80px]] ||
+|-
+| [[Bricks]]
+| [[File:Bricks JE4 BE2.png|80px]]
+| [[File:Bricks JE5 BE3.png|80px]] ||
+|-
+| [[Red Nether Bricks]]
+| [[File:Red Nether Bricks JE1 BE1.png|80px]]
+| [[File:Red Nether Bricks JE3 BE2.png|80px]] ||
+|-
+| [[Smooth Stone]]
+| [[File:Smooth Stone JE1 BE1.png|80px]]
+| [[File:Smooth Stone JE2 BE2.png|80px]] ||
+|-
+| rowspan="2" | [[Slime Block]]
+| [[File:Slime Block JE1.png|80px]]
+| [[File:Slime Block JE2 BE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Slime Block BE1.png|80px]]
+| [[File:Slime Block BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|- 
+| [[Flower Pot]]
+| [[File:Flower Pot JE1 BE1.png|80px]]
+| [[File:Flower Pot JE2 BE2.png|80px]] ||
+|- 
+| [[TNT]]
+| [[File:TNT JE2 BE1.png|80px]]
+| [[File:TNT JE3 BE2.png|80px]] ||
+|-
+| [[Iron Bars]]
+| {{animate|Iron Bars (unconnected) JE2.png;Iron Bars (N) JE2.png;Iron Bars (E) JE3.png;Iron Bars (S) JE3.png;Iron Bars (W) JE2.png;Iron Bars (NS) JE2.png;Iron Bars (EW) JE2.png;Iron Bars (NE) JE2.png;Iron Bars (SE) JE2.png;Iron Bars (SW) JE2.png;Iron Bars (NW) JE2.png;Iron Bars (ESW) JE2.png;Iron Bars (NSW) JE2.png;Iron Bars (NEW) JE2.png;Iron Bars (NES) JE2.png;Iron Bars (NESW) JE2.png|80px}}
+| {{animate|Iron Bars (unconnected) JE3.png;Iron Bars (N) JE3 BE2.png;Iron Bars (E) JE4 BE2.png;Iron Bars (S) JE4 BE2.png;Iron Bars (W) JE3 BE2.png;Iron Bars (NS) JE3 BE2.png;Iron Bars (EW) JE3 BE2.png;Iron Bars (NE) JE3 BE2.png;Iron Bars (SE) JE3 BE2.png;Iron Bars (SW) JE3 BE2.png;Iron Bars (NW) JE3 BE2.png;Iron Bars (ESW) JE3 BE2.png;Iron Bars (NSW) JE3 BE2.png;Iron Bars (NEW) JE3 BE2.png;Iron Bars (NES) JE3 BE2.png;Iron Bars (NESW) JE3 BE2.png|80px}} ||
+|- 
+| [[Torch]]
+| [[File:Torch JE3 BE1.png|80px]]
+| [[File:Torch JE6 BE2.png|80px]] ||
+|- 
+| rowspan="2" | [[Redstone Torch]]
+| rowspan="2" | {{animate|Redstone Torch JE1 BE1.png;Unlit Redstone Torch JE1 BE1.png|80px}}
+| {{animate|Redstone Torch JE2.png;Unlit Redstone Torch JE2.png|80px}} || {{only|Java|short=1}}
+|-
+| {{animate|Redstone Torch BE3.png;Unlit Redstone Torch BE2.png|80px}} || {{only|Bedrock|short=1}}
+|}
+
+==== Utility ====
+{| class="wikitable" data-description="Utility"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| [[Crafting Table]]
+| [[File:Crafting Table JE1 BE1.png|80px]]
+| [[File:Crafting Table JE4 BE3.png|80px]] ||
+|-
+| [[Ender Chest]]
+| [[File:Ender Chest JE1 BE1.png|80px]]
+| [[File:Ender Chest JE2 BE2.png|80px]] ||
+|-
+| [[Brewing Stand]]
+| {{animate|Brewing Stand (empty) JE1.png;Brewing Stand (full) JE1.png|80px}}
+| {{animate|Brewing Stand.png;Brewing Stand (Full).png|80px}} ||
+|-
+| [[Enchanting Table]]
+| [[File:Enchanting Table JE1 BE1.png|80px]]
+| [[File:Enchanting Table JE4 BE2.png|80px]] ||
+|-
+| [[Beacon]]
+| [[File:Beacon JE4 BE1.png|80px]]
+| [[File:Beacon JE6 BE2.png|80px]] ||
+|-
+| rowspan="2" | All [[Anvil]] Stages
+| {{animate|Anvil (N) JE2.png;Chipped Anvil (N) JE2.png;Damaged Anvil (N) JE2.png|80px}}
+| {{animate|Anvil.png;Chipped Anvil.png;Damaged Anvil.png|80px}}
+| {{only|java|short=1}}
+|-
+| {{animate|Anvil (N) BE2.png;Chipped Anvil (N) BE2.png;Damaged Anvil (N) BE2.png|80px}}
+| {{animate|Anvil BE.png;Slightly Damaged Anvil BE.png;Very Damaged Anvil BE.png|80px}}
+| {{only|bedrock|short=1}}
+|-
+| Broken Anvil
+| [[File:Broken Anvil BE1.png|80px]]
+| [[File:Broken Anvil.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Cauldron]]
+| {{animate|Cauldron JE6.png;Water Cauldron (level 1) JE6.png;Water Cauldron (level 2) JE6.png;Water Cauldron JE6.png|80px}}
+| {{animate|Cauldron JE7.png;Water Cauldron (level 1) JE7.png;Water Cauldron (level 2) JE7.png;Water Cauldron JE7.png|80px}}
+| {{only|java|short=1}}
+|-
+| {{animate|Cauldron BE1.png;Water Cauldron (level 1) BE1.png;Water Cauldron (level 2) BE1.png;Water Cauldron BE1.png|80px}}
+| {{animate|Cauldron BE2.png;Water Cauldron (level 1) BE2.png;Water Cauldron (level 2) BE2.png;Water Cauldron BE2.png|80px}}
+| {{only|bedrock|short=1}}
+|-
+| [[Furnace]]
+| {{animate|Furnace JE2 BE1.png;Lit Furnace JE2 BE1.png|80px}}
+| {{animate|Furnace JE3 BE2.png;Lit Furnace JE3 BE2.png|80px}} ||
+|-
+| [[Item Frame]]
+| [[File:Item Frame JE1 BE1.png|80px]]
+| [[File:Item Frame JE2 BE2.png|80px]] ||
+|-
+| rowspan="2" | [[Cake]]
+| rowspan="2" | [[File:Cake JE1 BE1.png|80px]]
+| [[File:Cake JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Cake BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Jukebox]]
+| [[File:Jukebox JE1 BE1.png|80px]]
+| [[File:Jukebox JE2 BE2.png|80px]] ||
+|}
+
+==== Mechanism ====
+{| class="wikitable" data-description="Mechanisms"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| rowspan="2" | [[Piston]]
+| rowspan="2" | [[File:Piston JE2 BE1.png|80px]]
+| [[File:Piston JE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Piston BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Sticky Piston]]
+| rowspan="2" | [[File:Sticky Piston JE2 BE1.png|80px]]
+| [[File:Sticky Piston JE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Sticky Piston BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Hopper]]
+| [[File:Hopper (D) JE2 BE1.png|80px]]
+| [[File:Hopper (D) JE3 BE2.png|80px]] ||
+|-
+| [[Redstone Lamp]]
+| {{animate|Redstone Lamp JE2 BE1.png;Lit Redstone Lamp JE2 BE1.png|80px}}
+| {{animate|Redstone Lamp.png;Lit Redstone Lamp.png|80px}} ||
+|-
+| [[Dispenser]]
+| [[File:Dispenser JE2 BE1.png|80px]]
+| [[File:Dispenser (S) JE4.png|80px]] ||
+|-
+| [[Dropper]]
+| [[File:Dropper JE1 BE1.png|80px]]
+| [[File:Dropper (S) JE3.png|80px]] ||
+|-
+| rowspan="2" | [[Observer]]
+| [[File:Observer JE3.png|80px]]
+| rowspan="2" | [[File:Observer JE4 BE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Observer BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| Unpowered [[Redstone Repeater]]
+| {{animate|Redstone Repeater JE4 BE1.png;Redstone Repeater Delay 2 JE4 BE1.png;Redstone Repeater Delay 3 (S) JE4 BE1.png;Redstone Repeater Delay 4 (S) JE4 BE1.png|80px}}
+| {{animate|Redstone Repeater JE5 BE2.png;Redstone Repeater Delay 2 JE5 BE2.png;Redstone Repeater Delay 3 JE5 BE2.png;Redstone Repeater Delay 4 JE5 BE2.png|80px}} ||
+|-
+| Powered [[Redstone Repeater]]
+| {{animate|Powered Redstone Repeater (S) JE7.png;Powered Redstone Repeater Delay 2 (S) JE7.png;Powered Redstone Repeater Delay 3 (S) JE7.png;Powered Redstone Repeater Delay 4 (S) JE7.png|80px}}
+| {{animate|Powered Redstone Repeater JE9.png;Powered Redstone Repeater Delay 2 JE9.png;Powered Redstone Repeater Delay 3 JE9.png;Powered Redstone Repeater Delay 4 JE9.png|80px}} ||
+|-
+| Unpowered [[Redstone Comparator]]
+| {{animate|Redstone Comparator (S) JE2 BE1.png;Subtracting Redstone Comparator (S) JE4.png|80px}}
+| {{animate|Redstone Comparator.png;Subtracting Redstone Comparator.png|80px}} ||
+|-
+| Powered [[Redstone Comparator]]
+| {{animate|Powered Redstone Comparator (S) JE2 BE1.png;Powered Subtracting Redstone Comparator (S) JE4.png|80px}}
+| {{animate|Powered Redstone Comparator (S) JE4.png;Powered Subtracting Redstone Comparator (S) JE5.png|80px}} ||
+|-
+| [[Rail]]
+| [[File:Rail (NS) JE2 BE1.png|80px]]
+| [[File:Rail (NS) JE3 BE2.png|80px]] ||
+|-
+| [[Powered Rail]]
+| {{animate|Powered Rail JE1 BE1.png;Powered Powered Rail (NS) JE1 BE1.png|80px}}
+| {{animate|Powered Rail (NS) JE2 BE2.png;Powered Powered Rail (NS) JE2 BE2.png|80px}} ||
+|-
+| [[Detector Rail]]
+| {{animate|Detector Rail (NS) JE1 BE1.png;Powered Detector Rail (NS) JE1 BE1.png|80px}}
+| {{animate|Detector Rail (NS) JE2 BE2.png;Powered Detector Rail (NS) JE2 BE2.png|80px}} ||
+|-
+| [[Activator Rail]]
+| {{animate|Activator Rail (NS) JE1 BE1.png;Powered Activator Rail (NS) JE1 BE1.png|80px}}
+| {{animate|Activator Rail (NS) JE2 BE2.png;Powered Activator Rail (NS) JE2 BE2.png|80px}} ||
+|-
+| [[Oak Trapdoor]]
+| [[File:Oak Trapdoor JE1 BE1.png|80px]]
+| [[File:Oak Trapdoor.png|80px]] ||
+|-
+| [[Spruce Trapdoor]]
+| [[File:Spruce Trapdoor JE1 BE1.png|80px]]
+| [[File:Spruce Trapdoor.png|80px]] ||
+|-
+| [[Iron Trapdoor]]
+| [[File:Iron Trapdoor JE2.png|80px]]
+| [[File:Iron Trapdoor.png|80px]] ||
+|-
+| [[Iron Door]]
+| [[File:Iron Door JE1 BE1.png|80px]]
+| [[File:Iron_Door_JE4.png|80px]] ||
+|-
+| All [[Wooden Door]]s
+| {{animate|Oak Door JE3 BE1.png; Birch Door JE2.png; Spruce Door JE1 BE1.png; Jungle Door JE3.png; Acacia Door JE3.png; Dark Oak Door JE2.png|80px}}
+| {{animate|Oak_Door_JE7.png; Birch Door JE3 BE2.png; Spruce Door JE3 BE2.png; Jungle Door JE4 BE2.png; Acacia Door JE4 BE2.png; Dark Oak Door JE3 BE2.png|80px}} ||
+|-
+| [[Note Block]]
+| [[File:Note Block JE1 BE1.png|80px]]
+| [[File:Note Block JE2 BE2.png|80px]] ||
+|}
+
+==== Creative only ====
+
+{| class="wikitable" data-description="mechanism"
+! Name
+! Old texture
+! New texture
+|-
+| [[Impulse Command Block]]
+| [[File:Impulse Command Block JE3 BE1.png|80px]]
+| [[File:Impulse Command Block JE5 BE2.png|80px]]
+|-
+| [[Chain Command Block]]
+| [[File:Chain Command Block JE2 BE1.png|80px]]
+| [[File:Chain Command Block JE3 BE2.png|80px]]
+|-
+| [[Repeating Command Block]]
+| [[File:Repeating Command Block JE2 BE1.png|80px]]
+| [[File:Repeating Command Block JE4 BE2.png|80px]]
+|}
+
+=== Items ===
+
+==== Raw Materials ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| [[Coal]]
+| [[File:Coal JE3 BE2.png|80px]]
+| [[File:Coal JE4 BE3.png|80px]]
+|-
+| [[Charcoal]]
+| [[File:Charcoal JE3 BE3.png|80px]]
+| [[File:Charcoal JE4 BE4.png|80px]]
+|-
+| [[Iron Ingot]]
+| [[File:Iron Ingot JE1 BE1.png|80px]]
+| [[File:Iron Ingot JE2 BE2.png|80px]]
+|-
+| [[Gold Ingot]]
+| [[File:Gold Ingot JE1 BE1.png|80px]]
+| [[File:Gold Ingot JE3 BE2.png|80px]]
+|-
+| [[Gold Nugget]]
+| [[File:Gold Nugget JE2 BE1.png|80px]]
+| [[File:Gold Nugget JE3 BE2.png|80px]]
+|-
+| [[Emerald]]
+| [[File:Emerald JE1 BE1.png|80px]]
+| [[File:Emerald JE3 BE3.png|80px]]
+|-
+| [[Diamond]]
+| [[File:Diamond JE2 BE2.png|80px]]
+| [[File:Diamond JE3 BE3.png|80px]]
+|-
+| [[Gunpowder]]
+| [[File:Gunpowder JE1 BE1.png|80px]]
+| [[File:Gunpowder JE2 BE2.png|80px]]
+|-
+| [[Redstone Dust]]
+| [[File:Redstone Dust JE1 BE1.png|80px]]
+| [[File:Redstone Dust JE2 BE2.png|80px]]
+|-
+| [[Glowstone Dust]]
+| [[File:Glowstone Dust JE1 BE1.png|80px]]
+| [[File:Glowstone Dust JE2 BE2.png|80px]]
+|-
+| [[Bone Meal]] 
+| [[File:Bone Meal JE1 BE1.png|80px]]
+| [[File:Bone Meal JE3 BE3.png|80px]]
+|-
+| [[Ink Sac]] 
+| [[File:Ink Sac JE1 BE1.png|80px]]
+| [[File:Ink Sac JE2 BE2.png|80px]]
+|-
+| [[Lapis Lazuli]]
+| [[File:Lapis Lazuli JE1 BE1.png|80px]]
+| [[File:Lapis Lazuli JE2 BE2.png|80px]]
+|-
+| [[Prismarine Shard]]
+| [[File:Prismarine Shard JE1 BE1.png|80px]]
+| [[File:Prismarine Shard JE2 BE2.png|80px]]
+|-
+| [[Prismarine Crystal]]
+| [[File:Prismarine Crystals JE1 BE1.png|80px]]
+| [[File:Prismarine Crystals JE2 BE2.png|80px]]
+|-
+| [[Nether Quartz]]
+| [[File:Nether Quartz JE1 BE1.png|80px]]
+| [[File:Nether Quartz JE2 BE2.png|80px]]
+|-
+| [[Flint]]
+| [[File:Flint JE1 BE1.png|80px]]
+| [[File:Flint JE3 BE3.png|80px]]
+|-
+| [[Feather]]
+| [[File:Feather JE2 BE1.png|80px]]
+| [[File:Feather JE3 BE2.png|80px]]
+|-
+| [[Leather]]
+| [[File:Leather JE1 BE1.png|80px]]
+| [[File:Leather JE2 BE2.png|80px]]
+|-
+| [[Rabbit Hide]]
+| [[File:Rabbit Hide JE2 BE1.png|80px]]
+| [[File:Rabbit Hide JE3 BE2.png|80px]]
+|-
+| [[Rabbit's Foot]]
+| [[File:Rabbit's Foot JE2 BE1.png|80px]]
+| [[File:Rabbit's Foot JE3 BE2.png|80px]]
+|-
+| [[Clay (ball)|Clay]]
+| [[File:Clay Ball JE1 BE1.png|80px]]
+| [[File:Clay Ball JE2 BE2.png|80px]]
+|-
+| [[Slimeball]]
+| [[File:Slimeball JE1 BE1.png|80px]]
+| [[File:Slimeball JE2 BE2.png|80px]]
+|-
+| [[Magma Cream]]
+| [[File:Magma Cream JE2 BE1.png|80px]]
+| [[File:Magma Cream JE3 BE2.png |80px]]
+|-
+| [[Nether Star]]
+| [[File:Nether Star JE2 BE1.gif|80px]]
+| [[File:Nether Star.gif|80px]]
+|-
+| [[Bone]]
+| [[File:Bone JE1 BE1.png|80px]]
+| [[File:Bone JE3 BE2.png|80px]]
+|-
+| [[Ghast Tear]]
+| [[File:Ghast Tear JE1 BE1.png|80px]]
+| [[File:Ghast Tear JE2 BE2.png|80px]]
+|-
+| [[Ender Pearl]]
+| [[File:Ender Pearl JE2 BE1.png|80px]]
+| [[File:Ender Pearl JE3 BE2.png|80px]]
+|-
+| [[Shulker Shell]]
+| [[File:Shulker Shell JE1 BE1.png|80px]]
+| [[File:Shulker Shell JE2 BE2.png|80px]]
+|-
+| [[Brick]]
+| [[File:Brick JE1 BE1.png|80px]]
+| [[File:Brick JE2 BE2.png|80px]]
+|-
+| [[Nether Brick]]
+| [[File:Nether Brick JE1 BE1.png|80px]]
+| [[File:Nether Brick JE2 BE2.png|80px]]
+|-
+| [[Phantom Membrane]]
+| [[File:Phantom Membrane JE1 BE1.png|80px]]
+| [[File:Phantom Membrane JE2 BE2.png|80px]]
+|-
+| [[String]]
+| [[File:String JE1 BE1.png|80px]]
+| [[File:String JE2 BE2.png|80px]]
+|-
+| [[Paper]]
+| [[File:Paper JE1 BE1.png|80px]]
+| [[File:Paper JE2 BE2.png|80px]]
+|-
+| [[Dragon's Breath]]
+| [[File:Dragon's Breath JE1 BE1.png|80px]]
+| [[File:Dragon's Breath JE2 BE2.png|80px]]
+|}
+
+==== Transport ====
+{| class="wikitable" data-description="Transport"
+! Name
+! Old texture
+! New texture
+|-
+| All [[Minecart]]s
+| {{animate|Minecart (item) JE2 BE1.png;Minecart with Chest (item) JE1 BE1.png;Minecart with Command Block (item) JE1 BE2.png;Minecart with Furnace (item) JE1.png;Minecart with Hopper (item) JE1 BE1.png;Minecart with TNT (item) JE1 BE1.png|80px}}
+| {{animate|Minecart (item) JE3 BE2.png;Minecart with Chest (item) JE2 BE2.png;Minecart with Command Block (item) JE2 BE3.png;Minecart with Furnace (item) JE2.png;Minecart with Hopper (item) JE2 BE2.png;Minecart with TNT (item) JE2 BE2.png|80px}}
+|-
+| All [[Boat]]s
+| {{animate|Oak Boat (item) JE3 BE2.png;Spruce Boat (item) JE1 BE2.png;Birch Boat (item) JE1 BE2.png;Jungle Boat (item) JE1 BE2.png;Acacia Boat (item) JE1 BE2.png;Dark Oak Boat (item) JE1 BE2.png|80px}}
+| {{animate|Oak Boat (item) JE4 BE3.png;Spruce Boat (item) JE2 BE3.png;Birch Boat (item) JE2 BE3.png;Jungle Boat (item) JE2 BE3.png;Acacia Boat (item) JE2 BE3.png;Dark Oak Boat (item) JE2 BE3.png|80px}}
+|-
+| [[Elytra]]/[[Broken Elytra]]
+| {{animate|Elytra (item) JE1 BE1.png;Broken Elytra (item) JE1 BE1.png|80px}}
+| {{animate|Elytra (item) JE2 BE2.png;Broken Elytra (item) JE2 BE2.png|80px}}
+|}
+
+==== Food ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| [[Apple]]
+| [[File:Apple JE2 BE2.png|80px]]
+| [[File:Apple JE3 BE3.png|80px]]
+|-
+| [[Golden Apple|Golden]] [[Enchanted Golden Apple|Apples]]
+| [[File:Golden Apple JE1 BE1.png|80px]]
+| [[File:Golden Apple JE2 BE2.png|80px]]
+|-
+| [[Beetroot]]
+| [[File:Beetroot JE1 BE1.png|80px]]
+| [[File:Beetroot JE2 BE2.png|80px]]
+|-
+| [[Beetroot Soup]]
+| [[File:Beetroot Soup JE1 BE1.png|80px]]
+| [[File:Beetroot Soup JE2 BE2.png|80px]]
+|-
+| [[Bread]]
+| [[File:Bread JE2 BE2.png|80px]]
+| [[File:Bread JE3 BE3.png|80px]]
+|-
+| [[Cake]]
+| [[File:Cake (item) JE1 BE1.png|80px]]
+| [[File:Cake (item) JE3 BE3.png|80px]]
+|-
+| [[Carrot]]
+| [[File:Carrot JE2 BE1.png|80px]]
+| [[File:Carrot JE3 BE2.png|80px]]
+|-
+| [[Golden Carrot]]
+| [[File:Golden Carrot JE3 BE1.png|80px]]
+| [[File:Golden Carrot JE4 BE2.png|80px]]
+|-
+| [[Raw Chicken]]
+| [[File:Raw Chicken JE2 BE2.png|80px]]
+| [[File:Raw Chicken JE3 BE3.png|80px]]
+|-
+| [[Cooked Chicken]]
+| [[File:Cooked Chicken JE2 BE2.png|80px]]
+| [[File:Cooked Chicken JE3 BE3.png|80px]]
+|-
+| [[Raw Beef]]
+| [[File:Raw Beef JE3 BE2.png|80px]]
+| [[File:Raw Beef JE4 BE3.png|80px]]
+|-
+| [[Steak]]
+| [[File:Steak JE3 BE2.png|80px]]
+| [[File:Steak JE4 BE3.png|80px]]
+|-
+| [[Raw Mutton]]
+| [[File:Raw Mutton JE2 BE1.png|80px]]
+| [[File:Raw Mutton JE3 BE2.png|80px]]
+|-
+| [[Cooked Mutton]]
+| [[File:Cooked Mutton JE2 BE1.png|80px]]
+| [[File:Cooked Mutton JE3 BE2.png|80px]]
+|-
+| [[Raw Porkchop]]
+| [[File:Raw Porkchop JE2 BE2.png|80px]]
+| [[File:Raw Porkchop JE3 BE3.png|80px]]
+|-
+| [[Cooked Porkchop]]
+| [[File:Cooked Porkchop JE3 BE2.png|80px]]
+| [[File:Cooked Porkchop JE4 BE3.png|80px]]
+|-
+| [[Raw Rabbit]]
+| [[File:Raw Rabbit JE2 BE1.png|80px]]
+| [[File:Raw Rabbit JE3 BE2.png|80px]]
+|-
+| [[Cooked Rabbit]]
+| [[File:Cooked Rabbit JE2 BE1.png|80px]]
+| [[File:Cooked Rabbit JE3 BE2.png|80px]]
+|-
+| [[Chorus Fruit]]
+| [[File:Chorus Fruit JE1 BE1.png|80px]]
+| [[File:Chorus Fruit JE2 BE2.png|80px]]
+|-
+| [[Cookie]]
+| [[File:Cookie JE1 BE1.png|80px]]
+| [[File:Cookie JE2 BE2.png|80px]]
+|-
+| [[Melon Slice]]
+| [[File:Melon Slice JE1 BE1.png|80px]]
+| [[File:Melon Slice JE2 BE2.png|80px]]
+|-
+| [[Mushroom Stew]]
+| [[File:Mushroom Stew JE1 BE1.png|80px]]
+| [[File:Mushroom Stew JE2 BE2.png|80px]]
+|-
+| [[Potato]]
+| [[File:Potato JE1 BE1.png|80px]]
+| [[File:Potato JE3 BE2.png|80px]]
+|-
+| [[Poisonous Potato]]
+| [[File:Poisonous Potato JE1 BE1.png|80px]]
+| [[File:Poisonous Potato JE3 BE2.png|80px]]
+|-
+| [[Baked Potato]]
+| [[File:Baked Potato JE2 BE1.png|80px]]
+| [[File:Baked Potato JE4 BE2.png|80px]]
+|-
+| [[Pumpkin Pie]]
+| [[File:Pumpkin Pie JE1 BE1.png|80px]]
+| [[File:Pumpkin Pie JE2 BE2.png|80px]]
+|-
+| [[Rabbit Stew]]
+| [[File:Rabbit Stew JE1 BE1.png|80px]]
+| [[File:Rabbit Stew JE3 BE2.png|80px]]
+|-
+| [[Rotten Flesh]]
+| [[File:Rotten Flesh JE2 BE1.png|80px]]
+| [[File:Rotten Flesh JE3 BE2.png|80px]]
+|-
+| [[Spider Eye]]
+| [[File:Spider Eye JE1 BE1.png|80px]]
+| [[File:Spider Eye JE2 BE2.png|80px]]
+|-
+| [[Cooked Cod]]
+| [[File:Cooked Cod JE2 BE2.png|80px]]
+| [[File:Cooked Cod JE4 BE3.png|80px]]
+|-
+| [[Egg]]
+| [[File:Egg JE1 BE1.png|80px]]
+| [[File:Egg JE2 BE2.png|80px]]
+|}
+
+==== Plants ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| [[Wheat]]
+| [[File:Wheat JE1 BE1.png|80px]]
+| [[File:Wheat JE2 BE2.png|80px]]
+|-
+| [[Sugar Cane]]
+| [[File:Sugar Cane (item) JE1 BE1.png|80px]]
+| [[File:Sugar Cane (item) JE2 BE2.png|80px]]
+|-
+| [[Beetroot Seeds]]
+| [[File:Beetroot Seeds JE1 BE1.png|80px]]
+| [[File:Beetroot Seeds JE2 BE2.png|80px]]
+|-
+| [[Cocoa Beans]]
+| [[File:Cocoa Beans JE3 BE1.png|80px]]
+| [[File:Cocoa Beans JE4 BE2.png|80px]]
+|-
+| [[Lily Pad]]
+| [[File:Lily Pad (item) JE2 BE1.png|80px]]
+| [[File:Lily Pad (item) JE3 BE2.png|80px]]
+|}
+
+==== Dyes ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| All [[Dye]]s
+| {{animate|Red Dye JE1 BE1.png;Orange Dye JE1 BE1.png;Yellow Dye JE1 BE1.png;Lime Dye JE1 BE1.png;Green Dye JE1 BE1.png;Light Blue Dye JE1 BE1.png;Cyan Dye JE1 BE1.png;Purple Dye JE1 BE1.png;Magenta Dye JE1 BE1.png;Pink Dye JE1 BE1.png;Light Gray Dye JE2 BE2.png;Gray Dye JE1 BE1.png|80px}}
+| {{animate|Red Dye JE2 BE2.png;Orange Dye JE2 BE2.png;Yellow Dye JE2 BE2.png;Lime Dye JE2 BE2.png;Green Dye JE2 BE2.png;Light Blue Dye JE2 BE2.png;Cyan Dye JE2 BE2.png;Purple Dye JE2 BE2.png;Magenta Dye JE2 BE2.png;Pink Dye JE2 BE2.png;Light Gray Dye JE2 BE2.png;Gray Dye JE2 BE2.png|80px}}
+|-
+| Dyes {{in|be}}
+| {{animate|Lapis Lazuli JE1 BE1.png;Bone Meal JE1 BE1.png;Ink Sac JE1 BE1.png;Cocoa Beans JE3 BE1.png|80px}}
+| {{animate|Lapis Lazuli JE2 BE2.png;Bone Meal JE2 BE2.png;Ink Sac JE2 BE2.png;Cocoa Beans JE4 BE2.png|80px}}
+|}
+
+==== Tools ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| All [[Pickaxe]]s
+| {{animate|Wooden Pickaxe JE1 BE1.png;Stone Pickaxe JE1 BE1.png;Iron Pickaxe JE2 BE1.png;Golden Pickaxe JE2 BE1.png;Diamond Pickaxe JE1 BE1.png|80px}}
+| {{animate|Wooden Pickaxe JE2 BE2.png;Stone Pickaxe JE2 BE2.png;Iron Pickaxe JE3 BE2.png;Golden Pickaxe JE3 BE2.png;Diamond Pickaxe JE2 BE2.png|80px}}
+|
+|-
+| All [[Shovel]]s
+| {{animate|Wooden Shovel JE1 BE1.png;Stone Shovel JE1 BE1.png;Iron Shovel JE2 BE1.png;Golden Shovel JE2 BE1.png;Diamond Shovel JE1 BE1.png|80px}}
+| {{animate|Wooden Shovel JE2 BE2.png;Stone Shovel JE2 BE2.png;Iron Shovel JE3 BE2.png;Golden Shovel JE3 BE2.png;Diamond Shovel JE2 BE2.png|80px}}
+|
+|-
+| All [[Axe]]s
+| {{animate|Wooden Axe JE1 BE1.png;Stone Axe JE1 BE1.png;Iron Axe JE4 BE1.png;Golden Axe JE2 BE1.png;Diamond Axe JE1 BE1.png|80px}}
+| {{animate|Wooden Axe JE2 BE2.png;Stone Axe JE2 BE2.png;Iron Axe JE5 BE2.png;Golden Axe JE3 BE2.png;Diamond Axe JE2 BE2.png|80px}}
+|
+|-
+| All [[Hoe]]s
+| {{animate|Wooden Hoe JE1 BE1.png;Stone Hoe JE1 BE1.png;Iron Hoe JE1 BE1.png;Golden Hoe JE1 BE1.png;Diamond Hoe JE1 BE1.png|80px}}
+| {{animate|Wooden Hoe JE2 BE2.png;Stone Hoe JE2 BE2.png;Iron Hoe JE2 BE2.png;Golden Hoe JE2 BE2.png;Diamond Hoe JE2 BE2.png|80px}}
+|
+|-
+| [[Shears]]
+| [[File:Shears JE1 BE1.png|80px]]
+| [[File:Shears JE2 BE2.png|80px]]
+|
+|-
+| [[Fishing Rod]]
+| {{animate|Fishing Rod JE1 BE1.png;Cast Fishing Rod JE2 BE1.png|80px}}
+| {{animate|Fishing Rod JE2 BE2.png;Cast Fishing Rod JE3 BE2.png|80px}}
+|
+|-
+| [[Carrot on a Stick]]
+| [[File:Carrot on a Stick JE1 BE1.png|80px]]
+| [[File:Carrot on a Stick JE2 BE2.png|80px]]
+|
+|-
+| [[Flint and Steel]]
+| [[File:Flint and Steel JE3 BE1.png|80px]]
+| [[File:Flint and Steel JE4 BE2.png|80px]]
+|
+|-
+| [[Lead]]
+| [[File:Lead JE1 BE1.png|80px]]
+| [[File:Lead JE2 BE2.png|80px]]
+|
+|-
+| [[Name Tag]]
+| [[File:Name Tag JE1 BE1.png|80px]]
+| [[File:Name Tag JE2 BE2.png|80px]]
+|
+|-
+| [[Empty Map]]
+| [[File:Empty Map JE1 BE1.png|80px]]
+| [[File:Empty Map JE2 BE2.png|80px]]
+|
+|-
+| rowspan="2"|[[Map]]
+| rowspan="2"|[[File:Map (item) JE1 BE1.png|80px]]
+| [[File:Map (item) JE2 BE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Map (item) BE3.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2"|[[Explorer Map]]s
+| rowspan="2"|{{animate|Woodland Explorer Map JE1 BE1.png;Ocean Explorer Map JE1 BE1.png|80px}}
+| {{animate|Woodland Explorer Map JE2 BE2.png;Ocean Explorer Map JE2 BE2.png|80px}}
+| {{only|java|short=1}}
+|-
+| {{animate|Woodland Explorer Map BE3.png;Ocean Explorer Map BE3.png|80px}}
+| {{only|bedrock|short=1}}
+|}
+
+==== Weapons ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| All [[Sword]]s
+| {{animate|Wooden Sword JE1 BE1.png;Stone Sword JE1 BE1.png;Iron Sword JE1 BE1.png;Golden Sword JE2 BE1.png;Diamond Sword JE1 BE1.png|80px}}
+| {{animate|Wooden Sword JE2 BE2.png;Stone Sword JE2 BE2.png;Iron Sword JE2 BE2.png;Golden Sword JE3 BE2.png;Diamond Sword JE2 BE2.png|80px}}
+|-
+| [[Fire Charge]]
+| [[File:Fire Charge JE1 BE1.png|80px]]
+| [[File:Fire Charge JE2 BE2.png|80px]]
+|-
+| [[Snowball]]
+| [[File:Snowball JE1 BE1.png|80px]]
+| [[File:Snowball JE3 BE3.png|80px]]
+|-
+| [[Spectral Arrow]]
+| [[File:Spectral Arrow (item) JE1.png|80px]]
+| [[File:Spectral Arrow (item) JE2.png|80px]]
+|}
+
+==== Armor ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| Player [[Armor]]
+| {{animate|Leather Cap (item) JE3 BE2.png;Chainmail Helmet (item) JE1 BE1.png;Iron Helmet (item) JE1 BE1.png;Golden Helmet (item) JE1 BE1.png;Diamond Helmet (item) JE1 BE1.png|80px}}<br>
+{{animate|Leather Tunic (item) JE3 BE2.png;Chainmail Chestplate (item) JE1 BE1.png;Iron Chestplate (item) JE1 BE1.png;Golden Chestplate (item) JE1 BE1.png;Diamond Chestplate (item) JE1 BE1.png|80px}}<br>
+{{animate|Leather Pants (item) JE3 BE2.png;Chainmail Leggings (item) JE1 BE1.png;Iron Leggings (item) JE1 BE1.png;Golden Leggings (item) JE1 BE1.png;Diamond Leggings (item) JE1 BE1.png|80px}}<br>
+{{animate|Leather Boots (item) JE3 BE2.png;Chainmail Boots (item) JE1 BE1.png;Iron Boots (item) JE1 BE1.png;Golden Boots (item) JE1 BE1.png;Diamond Boots (item) JE1 BE1.png|80px}}
+| {{animate|Leather Cap (item) JE4 BE3.png;Chainmail Helmet (item) JE2 BE2.png;Iron Helmet (item) JE2 BE2.png;Golden Helmet (item) JE3 BE3.png;Diamond Helmet (item) JE2 BE2.png|80px}}<br>
+{{animate|Leather Tunic (item) JE4 BE3.png;Chainmail Chestplate (item) JE2 BE2.png;Iron Chestplate (item) JE2 BE2.png;Golden Chestplate (item) JE3 BE3.png;Diamond Chestplate (item) JE2 BE2.png|80px}}<br>
+{{animate|Leather Pants (item) JE4 BE3.png;Chainmail Leggings (item) JE2 BE2.png;Iron Leggings (item) JE2 BE2.png;Golden Leggings (item) JE3 BE3.png;Diamond Leggings (item) JE2 BE2.png|80px}}<br>
+{{animate|Leather Boots (item) JE4 BE3.png;Chainmail Boots (item) JE2 BE2.png;Iron Boots (item) JE2 BE2.png;Golden Boots (item) JE3 BE3.png;Diamond Boots (item) JE2 BE2.png|80px}}
+|
+|-
+| Golden and diamond [[Horse Armor]]
+| {{animate|Golden Horse Armor (item) JE1 BE1.png;Diamond Horse Armor (item) JE1 BE1.png|80px}}
+| {{animate|Golden Horse Armor (item) JE3 BE3.png;Diamond Horse Armor (item) JE3 BE3.png|80px}}
+|
+|-
+| [[Leather Horse Armor]]
+| [[File:Leather Horse Armor (item) BE1.png|80px]]
+| [[File:Leather Horse Armor (item) BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Iron Horse Armor]]
+| rowspan="2" | [[File:Iron Horse Armor (item) JE1 BE1.png|80px]]
+| [[File:Iron Horse Armor (item) JE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Iron Horse Armor (item) JE2 BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|}
+
+==== Utility ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| [[Totem of Undying]]
+| [[File:Totem of Undying JE1 BE1.png|80px]]
+| [[File:Totem of Undying JE2 BE2.png|80px]]
+|-
+| [[Bottle o' Enchanting]]
+| [[File:Bottle o' Enchanting JE1 BE1.png|80px]]
+| [[File:Bottle o' Enchanting JE2 BE2.png|80px]]
+|-
+| [[Brewing Stand]]
+| [[File:Brewing Stand (item) JE1 BE1.png|80px]]
+| [[File:Brewing Stand (item) JE3 BE2.png|80px]]
+|-
+| [[Cauldron]]
+| [[File:Cauldron (item) JE1 BE1.png|80px]]
+| [[File:Cauldron (item) JE2 BE2.png|80px]]
+|-
+| [[Hopper]]
+| [[File:Hopper (item) JE2 BE1.png|80px]]
+| [[File:Hopper (item) JE3 BE2.png|80px]]
+|-
+| [[Saddle]]
+| [[File:Saddle JE1 BE1.png|80px]]
+| [[File:Saddle JE2 BE2.png|80px]]
+|-
+| [[Bucket]]
+| [[File:Bucket JE1 BE1.png|80px]]
+| [[File:Bucket JE2 BE2.png|80px]]
+|-
+| [[Water Bucket]]
+| [[File:Water Bucket JE1 BE1.png|80px]]
+| [[File:Water Bucket JE2 BE2.png|80px]]
+|-
+| [[Lava Bucket]]
+| [[File:Lava Bucket JE1 BE1.png|80px]]
+| [[File:Lava Bucket JE2 BE2.png|80px]]
+|-
+| [[Milk Bucket]]
+| [[File:Milk Bucket JE1 BE1.png|80px]]
+| [[File:Milk Bucket JE2 BE2.png|80px]]
+|-
+| All [[Bucket of Fish|Buckets of Fish]]
+| {{animate|Bucket of Cod Revision 1.png;Bucket of Salmon Revision 1.png;Bucket of Pufferfish Revision 1.png;Bucket of Tropical Fish Revision 2.png|80px}}
+| {{animate|Bucket of Cod.png;Bucket of Salmon.png;Bucket of Pufferfish.png;Bucket of Tropical Fish.png|80px}}
+|}
+
+==== Mechanism ====
+{| class="wikitable" data-description="Mechanisms"
+! Name
+! Old texture
+! New texture
+|-
+| [[Redstone Repeater]]
+| [[File:Redstone Repeater (item) JE2 BE1.png|80px]]
+| [[File:Redstone Repeater (item) JE3 BE2.png|80px]]
+|-
+| [[Redstone Comparator]]
+| [[File:Redstone Comparator (item) JE1 BE1.png|80px]]
+| [[File:Redstone Comparator (item) JE2 BE2.png|80px]]
+|}
+
+==== Manufactured ====
+{| class="wikitable" data-description='Manufactured"
+! Name
+! Old texture
+! New texture
+|-
+| [[Book]]
+| [[File:Book JE1 BE1.png|80px]]
+| [[File:Book JE2 BE2.png|80px]]
+|-
+| [[Book and Quill]]
+| [[File:Book and Quill JE1 BE1.png|80px]]
+| [[File:Book and Quill JE2 BE2.png|80px]]
+|-
+| [[Written Book]]
+| [[File:Written Book JE1 BE1.png|80px]]
+| [[File:Written Book.png|80px]]
+|-
+| [[Enchanted Book]]
+| [[File:Enchanted Book JE1 BE1.png|80px]]
+| [[File:Enchanted_Book.png‎|80px]]
+|-
+| [[Bowl]]
+| [[File:Bowl JE1 BE1.png|80px]]
+| [[File:Bowl JE2 BE2.png|80px]]
+|-
+| [[End Crystal]]
+| [[File:End Crystal (item) JE1 BE1.png|80px]]
+| [[File:End Crystal (item) JE2 BE2.png|80px]]
+|-
+| [[Eye of Ender]]
+| [[File:Eye of Ender JE1 BE1.png|80px]]
+| [[File:Eye of Ender JE2 BE2.png|80px]]
+|-
+| [[Fermented Spider Eye]]
+| [[File:Fermented Spider Eye JE1 BE1.png|80px]]
+| [[File:Fermented Spider Eye JE2 BE2.png|80px]]
+|-
+| [[Firework Rocket]]
+| [[File:Firework Rocket JE1 BE1.png|80px]]
+| [[File:Firework Rocket JE2 BE2.png|80px]]
+|-
+| [[Sugar]]
+| [[File:Sugar JE1 BE1.png|80px]]
+| [[File:Sugar JE2 BE2.png|80px]]
+|-
+| [[Glistering Melon Slice]]
+| [[File:Glistering Melon Slice JE1 BE1.png|80px]]
+| [[File:Glistering Melon Slice JE3 BE2.png|80px]]
+|-
+| [[Popped Chorus Fruit]]
+| [[File:Popped Chorus Fruit JE1 BE1.png|80px]]
+| [[File:Popped Chorus Fruit JE2 BE2.png|80px]]
+|-
+| [[Oak Sign]]
+| [[File:Oak Sign Revision 1.png|80px]]
+| [[File:Oak Sign.png|80px]]
+|-
+| [[Painting]]
+| [[File:Painting JE1 BE1.png|80px]]
+| [[File:Painting JE2 BE2.png|80px]]
+|-
+| [[Item Frame]]
+| [[File:Item Frame (item) JE1 BE1.png|80px]]
+| [[File:Item Frame (item) JE2 BE2.png|80px]]
+|-
+| [[Glass Bottle]]
+| [[File:Glass Bottle JE1 BE1.png|80px]]
+| [[File:Glass Bottle JE2 BE2.png|80px]]
+|-
+| [[Music Disc|Music Disc (11)]]
+| [[File:Music Disc 11 JE1 BE1.png|80px]]
+| [[File:Music Disc 11 JE2 BE2.png|80px]]
+|}
+
+==== Potions ====
+{| class="wikitable" data-description='Manufactured"
+! Name
+! Old texture
+! New texture
+|-
+| [[Potion]]
+| {{animate|Water Bottle JE1 BE1.png;Potion of Swiftness JE1 BE1.png;Potion of Slowness JE1 BE1.png;Potion of Strength JE1 BE1.png;Potion of Healing JE1 BE1.png;Potion of Harming JE1 BE1.png;Potion of Leaping JE1 BE1.png;Potion of Regeneration JE1 BE1.png;Potion of Fire Resistance JE1 BE1.png;Potion of Water Breathing JE1 BE1.png;Potion of Invisibility JE1 BE1.png;Potion of Night Vision JE1 BE1.png;Potion of Weakness JE1 BE1.png;Potion of Poison JE1 BE1.png;Potion of Decay BE1.png;Potion of Luck JE1.png;Potion of the Turtle Master JE1 BE1.png;Potion of Slow Falling JE1 BE1.png;Uncraftable Potion JE1.png|80px}}
+| {{animate|Water Bottle JE2 BE2.png;Potion of Swiftness JE2 BE2.png;Potion of Slowness JE2 BE2.png;Potion of Strength JE2 BE2.png;Potion of Healing JE2 BE2.png;Potion of Harming JE2 BE2.png;Potion of Leaping JE2 BE2.png;Potion of Regeneration JE2 BE2.png;Potion of Fire Resistance JE2 BE2.png;Potion of Water Breathing JE2 BE2.png;Potion of Invisibility JE2 BE2.png;Potion of Night Vision JE2 BE2.png;Potion of Weakness JE2 BE2.png;Potion of Poison JE2 BE2.png;Potion of Decay BE2.png;Potion of Luck JE2.png;Potion of the Turtle Master JE2 BE2.png;Potion of Slow Falling JE2 BE2.png;Uncraftable Potion JE2.png|80px}}
+|-
+| [[Splash Potion]]
+| {{animate|Splash Water Bottle JE1 BE1.png;Splash Potion of Swiftness JE1 BE1.png;Splash Potion of Slowness JE1 BE1.png;Splash Potion of Strength JE1 BE1.png;Splash Potion of Healing JE1 BE1.png;Splash Potion of Harming JE1 BE1.png;Splash Potion of Leaping JE1 BE1.png;Splash Potion of Regeneration JE1 BE1.png;Splash Potion of Fire Resistance JE1 BE1.png;Splash Potion of Water Breathing JE1 BE1.png;Splash Potion of Invisibility JE1 BE1.png;Splash Potion of Night Vision JE1 BE1.png;Splash Potion of Weakness JE1 BE1.png;Splash Potion of Poison JE1 BE1.png;Splash Potion of Decay BE1.png;Splash Potion of Luck JE1.png;Splash Potion of the Turtle Master JE1 BE1.png;Splash Potion of Slow Falling JE1 BE1.png;Uncraftable Splash Potion JE1.png|80px}}
+| {{animate|Splash Water Bottle JE2 BE2.png;Splash Potion of Swiftness JE2 BE2.png;Splash Potion of Slowness JE2 BE2.png;Splash Potion of Strength JE2 BE2.png;Splash Potion of Healing JE2 BE2.png;Splash Potion of Harming JE2 BE2.png;Splash Potion of Leaping JE2 BE2.png;Splash Potion of Regeneration JE2 BE2.png;Splash Potion of Fire Resistance JE2 BE2.png;Splash Potion of Water Breathing JE2 BE2.png;Splash Potion of Invisibility JE2 BE2.png;Splash Potion of Night Vision JE2 BE2.png;Splash Potion of Weakness JE2 BE2.png;Splash Potion of Poison JE2 BE2.png;Splash Potion of Decay BE2.png;Splash Potion of Luck JE2.png;Splash Potion of the Turtle Master JE2 BE2.png;Splash Potion of Slow Falling JE2 BE2.png;Uncraftable Splash Potion JE2.png|80px}}
+|-
+| [[Lingering Potion]]
+| {{animate|Lingering Water Bottle JE1 BE1.png;Lingering Potion of Swiftness JE1 BE1.png;Lingering Potion of Slowness JE1 BE1.png;Lingering Potion of Strength JE1 BE1.png;Lingering Potion of Healing JE1 BE1.png;Lingering Potion of Harming JE1 BE1.png;Lingering Potion of Leaping JE1 BE1.png;Lingering Potion of Regeneration JE1 BE1.png;Lingering Potion of Fire Resistance JE1 BE1.png;Lingering Potion of Water Breathing JE1 BE1.png;Lingering Potion of Invisibility JE1 BE1.png;Lingering Potion of Night Vision JE1 BE1.png;Lingering Potion of Weakness JE1 BE1.png;Lingering Potion of Poison JE1 BE1.png;Lingering Potion of Decay BE1.png;Lingering Potion of Luck JE1.png;Lingering Potion of the Turtle Master JE1 BE1.png;Lingering Potion of Slow Falling JE1 BE1.png;Uncraftable Lingering Potion JE1.png|80px}}
+| {{animate|Lingering Water Bottle JE2 BE2.png;Lingering Potion of Swiftness JE2 BE2.png;Lingering Potion of Slowness JE2 BE2.png;Lingering Potion of Strength JE2 BE2.png;Lingering Potion of Healing JE2 BE2.png;Lingering Potion of Harming JE2 BE2.png;Lingering Potion of Leaping JE2 BE2.png;Lingering Potion of Regeneration JE2 BE2.png;Lingering Potion of Fire Resistance JE2 BE2.png;Lingering Potion of Water Breathing JE2 BE2.png;Lingering Potion of Invisibility JE2 BE2.png;Lingering Potion of Night Vision JE2 BE2.png;Lingering Potion of Weakness JE2 BE2.png;Lingering Potion of Poison JE2 BE2.png;Lingering Potion of Decay BE2.png;Lingering Potion of Luck JE2.png;Lingering Potion of the Turtle Master JE2 BE2.png;Lingering Potion of Slow Falling JE2 BE2.png;Uncraftable Lingering Potion JE2.png|80px}}
+|}
+
+==== Creative only ====
+{| class="wikitable" data-description='Creative"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| [[Barrier]]
+| [[File:Barrier JE1 BE1.png|80px]]
+| [[File:Barrier JE2 BE2.png|80px]]
+|-
+| [[Structure Void]]
+| [[File:Structure Void (item) JE1.png|80px]]
+| [[File:Structure Void (item) JE2.png|80px]]
+| {{only|java}}
+|-
+| [[Knowledge Book]]
+| [[File:Knowledge Book JE1.png|80px]]
+| [[File:Knowledge Book JE2.png|80px]]
+| {{only|java}}
+|}
+
+=== Entities ===
+
+==== Passive ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| [[Chicken]]
+| [[File:Chicken JE1 BE1.png|86px]]
+| [[File:Chicken JE2 BE2.png|86px]]
+|-
+| [[Cow]]
+| [[File:Cow Revision 4.png|86px]]
+| [[File:Cow.png|86px]]
+|-
+| [[Pig]]
+| [[File:Pig JE2 BE1.png|86px]]
+| [[File:Pig JE3 BE2.png|86px]]
+|-
+| [[Pig]] (saddled)
+| [[File:Saddled Pig JE2 BE1.png|86px]]
+| [[File:Saddled Pig JE3 BE2.png|86px]]
+|-
+| [[Sheep]]
+| [[File:White Sheep JE2 BE5.png|86px]]
+| [[File:White Sheep.png|86px]]
+|-
+| [[Bat]]
+| [[File:Bat Revision 1.png|86px]]
+| [[File:Bat.png|86px]]
+|-
+| [[Mooshroom]]
+| [[File:Red Mooshroom JE2 BE1.png|86px]]
+| [[File:Mooshroom.png|86px]]
+|-
+| [[Ocelot]]
+| [[File:Ocelot Revision 1.png|128px]]
+| [[File:Ocelot.png|128px]]
+|-
+| [[Cat]]
+| {{animate|Tuxedo Cat Revision 0.png;Red Tabby Cat Revision 0.png;Siamese Cat Revision 0.png|128px}}
+| {{animate|Tuxedo Cat.png;Red Cat.png;Siamese Cat.png|128px}}
+|-
+| [[Horse]]
+| [[File:White Horse old.png|86px]]
+| [[File:White Horse.png|86px]]
+|-
+| [[Skeleton Horse]]
+| [[File:Skeleton Horse Revision 2.png|86px]]
+| [[File:Skeleton Horse.png|86px]]
+|-
+| [[Zombie Horse]]
+| [[File:Zombie Horse Revision 2.png|86px]]
+| [[File:Zombie Horse.png|86px]]
+|-
+| [[Donkey]]
+| [[File:Donkey Revision 4.png|86px]]
+| [[File:Donkey.png|86px]]
+|-
+| [[Mule]]
+| [[File:Mule Revision 3.png|86px]]
+| [[File:Mule.png|86px]]
+|-
+| [[Rabbit]]
+| [[File:Brown Rabbit Revision 1.png|86px]]
+| [[File:Brown Rabbit.png|86px]]
+|-
+| [[Squid]]
+| [[File:Squid Revision 1.png|86px]]
+| [[File:Squid.png|86px]]
+|}
+
+==== Neutral ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| [[Iron Golem]]
+| [[File:Iron Golem Revision 1.png|80px]]
+| [[File:Iron Golem.png|80px]]
+|
+|-
+| [[Llama]]
+| [[File:Creamy Llama Revision 1.png|86px]]
+| [[File:Creamy Llama.png|86px]]
+|
+|-
+| [[Polar Bear]]
+| [[File:Polar Bear Revision 1.png|128px]]
+| [[File:Polar Bear.png|128px]]
+|
+|-
+| [[Snow Golem]]
+| [[File:Snow Golem JE1 BE1.png|76px]]
+| [[File:Snow Golem.png|86px]]
+|
+|-
+| [[Wolf]]
+| [[File:Wolf Revision 1.png|96px]]
+| [[File:Wolf.png|96px]]
+|
+|-
+| rowspan="2" | [[Zombie Pigman]]
+| rowspan="2" | [[File:Zombified Piglin JE3 BE2.png|86px]]
+| [[File:Zombified Piglin JE5.png|86px]]
+| {{only|java|short=1}}
+|-
+| [[File:Zombified Piglin BE3.png|86px]]
+| {{only|bedrock|short=1}}
+|}
+
+==== Hostile ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| [[Zombie]]
+| [[File:Zombie Revision 1.png|86px]]
+| [[File:Zombie.png|86px]] ||
+|-
+| [[Husk]]
+| [[File:Husk JE1 BE1.png|86px]]
+| [[File:Husk JE2 BE2.png|86px]] ||
+|-
+| [[Skeleton]]
+| [[File:Skeleton Revision 5.png|80px]]
+| [[File:Skeleton.png|90px]] ||
+|-
+| [[Stray]]
+| [[File:Stray JE1 BE3.png|100px]]
+| [[File:Stray JE2 BE4.png|100px]] ||
+|-
+| [[Spider]]
+| [[File:Spider JE3 BE2.png|128px]]
+| [[File:Spider JE4 BE3.png|128px]] ||
+|-
+| [[Cave Spider]]
+| [[File:Cave Spider Revision 1.png|128px]]
+| [[File:Cave Spider.png|128px]] ||
+|-
+| [[Witch]]
+| [[File:Witch Revision 2.png|80px]]
+| [[File:Witch.png|80px]] ||
+|-
+| [[Slime]]
+| [[File:Slime JE2 BE1.png|92px]]
+| [[File:Slime JE4 BE2.png|100px]] ||
+|-
+| [[Magma Cube]]
+| [[File:Magma Cube Revision 1.png|100px]]
+| [[File:Magma Cube.png|100px]] ||
+|-
+| [[Wither Skeleton]]
+| [[File:Wither Skeleton Revision 3.png|100px]]
+| [[File:Wither Skeleton.png|100px]] ||
+|-
+| [[Ghast]]
+| [[File:Ghast JE1 BE1.png|120px]]
+| [[File:Ghast.png|120px]] ||
+|-
+| rowspan="2" | [[Blaze]]
+| rowspan="2" | [[File:Blaze JE1 BE1.png|80px]]
+| [[File:Blaze JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Blaze BE3.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Guardian]]
+| [[File:Guardian Revision 1.png|150px]]
+| [[File:Guardian.png|150px]] ||
+|-
+| [[Elder Guardian]]
+| [[File:Elder Guardian Revision 1.png|150px]]
+| [[File:Elder Guardian.png|150px]] ||
+|-
+| [[Evoker]]
+| [[File:Evoker Revision 1.png|80px]]
+| [[File:Evoker.png|80px]] ||
+|-
+| rowspan="2" | [[Vindicator]]
+| rowspan="2" | [[File:Vindicator JE1 BE1.png|80px]]
+| [[File:Vindicator JE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Vindicator BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| [[Illusioner]]
+| [[File:Illusioner Revision 1.png|80px]]
+| [[File:Illusioner.png|80px]] ||
+|-
+| [[Vex]]
+| [[File:Vex Revision 1.png|120px]]
+| [[File:Vex.png|120px]] ||
+|-
+| [[Evoker Fangs]]
+| [[File:Evoker Fangs Revision 1.png|80px]]
+| [[File:Evoker Fangs.png|80px]] ||
+|-
+| [[Wither]]
+| [[File:Wither Revision 1.png|140px]]
+| [[File:Wither.png|140px]] ||
+|}
+
+==== Transport ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+|-
+| All [[Boat]]s
+| {{animate|Oak Boat JE2 BE1.png; Spruce Boat JE1 BE1.png; Birch Boat JE1 BE1.png; Jungle Boat JE1 BE1.png; Acacia Boat JE1 BE1.png; Dark Oak Boat JE1 BE1.png|150px}}
+| {{animate|Oak Boat.png; Spruce Boat.png; Birch Boat.png; Jungle Boat.png; Acacia Boat.png; Dark Oak Boat.png|150px}}
+|-
+| All [[Minecart (disambiguation)|Minecart]]s
+| {{animate|Minecart JE2 BE1.png;Minecart with Chest JE3 BE1.png;Minecart with Furnace JE2.png;Minecart with Hopper JE1 BE1.png;Minecart with TNT JE1 BE1.png;Minecart with Command Block JE3.png;Minecart with Command Block BE1.png;Minecart with Spawner JE1 BE1.png|120px}}
+| {{animate|Minecart JE3 BE2.png;Minecart with Chest JE4 BE2.png;Minecart with Furnace JE3.png;Minecart with Hopper JE2 BE2.png;Minecart with TNT JE2 BE2.png;Minecart with Command Block JE4.png;Minecart with Command Block BE2.png;Minecart with Spawner JE2 BE2.png|120px}}
+|-
+| [[Elytra]]
+| [[File:Elytra JE1 BE1.png|96px]]
+| [[File:Elytra JE2 BE2.png|96px]]
+|}
+
+==== Miscellaneous ====
+{| class="wikitable" data-description="Natural Blocks"
+! Name
+! Old texture
+! New texture
+! Notes
+|-
+| All [[Armor]]
+| {{animate|Armor leather (Entity) before TextureUpdate.png;Armor chainmail (Entity).png;Armor iron (Entity).png;Armor golden (Entity).png;Armor diamond (Entity).png|80px}}
+| {{animate|Armor leather (Entity).png;Armor chainmail (Entity) TextureUpdate.png;Armor iron (Entity) TextureUpdate.png;Armor golden (Entity) TextureUpdate.png;Armor diamond (Entity) TextureUpdate.png|80px}}
+|
+|-
+| [[Shield]]
+| [[File:Shield JE1.png|80px]]
+| [[File:Shield JE2 BE1.png|80px]]
+|
+|-
+| rowspan="2" | [[Armor Stand]]
+| [[File:Armor Stand JE1.png|80px]]
+| [[File:Armor Stand JE3.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Armor Stand BE1.png|80px]]
+| [[File:Armor Stand BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[End Crystal]]
+| [[File:End Crystal JE1 BE1.png|120px]]
+| [[File:End Crystal JE2.png|120px]]
+| {{only|java|short=1}}
+|-
+| [[File:End Crystal BE2.png|120px]]
+| [[File:End Crystal BE3.png|120px]]
+| {{only|bedrock|short=1}}
+|-
+| rowspan="2" | [[Dragon Fireball]]
+| rowspan="2" | [[File:Dragon Fireball JE1 BE1.png|80px]]
+| [[File:Dragon Fireball JE2.png|80px]]
+| {{only|java|short=1}}
+|-
+| [[File:Dragon Fireball BE2.png|80px]]
+| {{only|bedrock|short=1}}
+|}
+
+=== GUI ===
+
+==== Effect ====
+{| class="wikitable"
+|+
+!Name
+!Old texture
+!New texture
+|-
+|[[Absorption]]
+|[[File:Absorption JE2 BE2.png|80px]]
+|[[File:Absorption.png|80px]]
+|-
+|[[Blindness]]
+|[[File:Blindness JE1 BE1.png|80px]]
+|[[File:Blindness.png|80px]]
+|-
+|[[Fire Resistance]]
+|[[File:Fire Resistance JE1 BE1.png|80px]]
+|[[File:Fire Resistance.png|80px]]
+|-
+|[[Glowing]]
+|[[File:Glowing JE1.png|80px]]
+|[[File:Glowing.png|80px]]
+|-
+|[[Haste]]
+|[[File:Haste JE1 BE1.png|80px]]
+|[[File:Haste.png|80px]]
+|-
+|[[Health Boost]]
+|[[File:Health Boost JE2 BE2.png|80px]]
+|[[File:Health Boost.png|80px]]
+|-
+|[[Hunger (status effect)|Hunger]]
+|[[File:Hunger JE1 BE1.png|80px]]
+|[[File:Hunger.png|80px]]
+|-
+|[[Invisibility]]
+|[[File:Invisibility JE1 BE1.png|80px]]
+|[[File:Invisibility.png|80px]]
+|-
+|[[Jump Boost]]
+|[[File:Jump Boost JE1 BE1.png|80px]]
+|[[File:Jump Boost.png|80px]]
+|-
+|[[Levitation]]
+|[[File:Levitation JE1 BE1.png|80px]]
+|[[File:Levitation.png|80px]]
+|-
+|[[Luck]]
+|[[File:Luck JE1.png|80px]]
+|[[File:Luck.png|80px]]
+|-
+|[[Mining Fatigue]]
+|[[File:Mining Fatigue JE1 BE1.png|80px]]
+|[[File:Mining Fatigue.png|80px]]
+|-
+|[[Nausea]]
+|[[File:Nausea JE1 BE1.png|80px]]
+|[[File:Nausea.png|80px]]
+|-
+|[[Night Vision]]
+|[[File:Night Vision JE1 BE1.png|80px]]
+|[[File:Night Vision.png|80px]]
+|-
+|[[Poison]]
+|[[File:Poison JE1 BE1.png|80px]]
+|[[File:Poison.png|80px]]
+|-
+|[[Regeneration]]
+|[[File:Regeneration JE1 BE1.png|80px]]
+|[[File:Regeneration.png|80px]]
+|-
+|[[Resistance]]
+|[[File:Resistance JE1 BE1.png|80px]]
+|[[File:Resistance.png|80px]]
+|-
+|[[Slowness]]
+|[[File:Slowness JE1 BE1.png|80px]]
+|[[File:Slowness.png|80px]]
+|-
+|[[Speed]]
+|[[File:Speed JE1 BE1.png|80px]]
+|[[File:Speed.png|80px]]
+|-
+|[[Strength]]
+|[[File:Strength JE1 BE1.png|80px]]
+|[[File:Strength.png|80px]]
+|-
+|[[Bad Luck]]
+|[[File:Bad Luck JE1.png|80px]]
+|[[File:Bad Luck.png|80px]]
+|-
+|[[Water Breathing]]
+|[[File:Water Breathing JE1 BE1.png|80px]]
+|[[File:Water Breathing.png|80px]]
+|-
+|[[Weakness]]
+|[[File:Weakness JE1 BE1.png|80px]]
+|[[File:Weakness.png|80px]]
+|-
+|[[Wither (status effect)|Wither]]
+|[[File:Wither (effect) JE1 BE1.png|80px]]
+|[[File:Wither (effect).png|80px]]
+|}
+
+=== Preview textures ===
+Some unreleased textures [[Jasper Boerstra|Jappa]] made when developing the final ones for the update.
+<gallery>
+File:Cobblestone Diamond Block and Obsidian textures.png|Some unreleased Cobblestone, Diamond Block, and Obsidian textures.
+File:Diamond Block Preview1.jpg|An unreleased diamond block texture.
+File:Diamond Block Preview2.jpg|Ditto
+File:Hay bale texture update preview.png
+File:Chorus flower texture update preview.png
+File:Oak log texture update preview 2.png
+File:Jungle planks texture update preview.png
+File:Oak planks texture update preview.png
+File:Jungle door texture update preview.png
+File:Crafting table texture update preview.png
+File:Birch log texture update preview 2.png
+File:Dark oak log texture update preview.png
+File:Acacia log texture update preview.png
+File:Jungle log texture update preview.png
+File:Spruce log texture update preview.png
+File:Oak log texture update preview.png
+File:Grass texture update preview.png
+File:Bookshelf texture update preview.png
+File:Oak planks texture update preview 2.png
+File:Oak log texture update preview 3.png
+File:Dead chorus flower texture update preview.png
+File:End Stone texture update preview.png
+File:Obsidian (texture) pTU20170718.png
+File:Obsidian (texture) pTU20170719.png
+File:Obsidian (texture) pTU20180711.png
+File:Oak Planks texture update preview.jpg
+File:Oak Planks (texture) pTU20170722.png
+File:Netherrack texture update preview.jpg
+File:Diorite Andisite and Cobblestone texture update preview.jpg
+File:Glowstone texture update preview.jpg
+File:Glowstone texture update preview2.jpg
+File:Cobblestone texture update preview.jpg
+File:Melon texture update preview.jpg
+File:Oak Planks and Log texture update preview2.jpg
+File:Oak Planks and Log texture update preview.jpg
+</gallery>
+
+== Downloads ==
+
+{| class="wikitable"
+|-
+! Versão
+! Disponível
+! Download
+|-
+| 1.0.0
+| &nbsp;na [[Edição Java 1.12]]
+| [https://community-content-assets.minecraft.net/upload/8ecbc1e9fc691af61e0f16995ef5b097-NewDefault.zip Download]
+|-
+| 2.0.0
+| &nbsp;na [[Edição Java 1.12]]
+| [https://community-content-assets-cms.minecraft.net/upload/f81517ca516363c381528480bb4c5189-New%20Default%20Betapack%20V2.zip Download]
+|-
+| 3.0.0
+| &nbsp;na [[Edição 18w43a]]
+| —
+|-
+| 3.0.1
+| &nbsp;na [[Edição Java 18w43b]]
+| —
+|-
+| 3.1.0
+| &nbsp;na [[Edição Java 18w44a]]
+| [https://community-content-assets.minecraft.net/upload/e8b22f28dd0202cd90dfd935636080ce-Texture%20Update%20V3.1.zip Download]
+|-
+| 3.2.0
+| &nbsp;na [[Edição Java 18w47a]]
+| —
+|-
+| 3.2.1
+| &nbsp;na [[Edição Java 18w47b]]
+| —
+|-
+| 3.3.0
+| &nbsp;na [[Edição Java 18w50a]]
+| [https://community-content-assets.minecraft.net/upload/96f743018ca1a68d161f312f9b387386-Texture%20Update%20V3.3%20Java.zip Download]
+|-
+| 3.4.0
+| &nbsp;na [[Edição Java 19w08a]]
+| —
+|-
+| 3.4.1
+| &nbsp;na [[Edição Java 19w13b]]
+|}
+
+== Histórico ==
+{{History|java}}
+{{History||1.14|snap=18w43a|Mudou todas as texturas.}}
+{{History|||snap=18w43b|Corrigido algumas texturas.}}
+{{History|||snap=18w44a|Mudou as texturas de areia, pedra, andesito, diorito, obsidiana, cactus e trigo.}}
+{{History|||snap=18w47a|Mudou as texturas de blocos de ouro, blocos de diamantes, troncos e tábuas.}}
+{{History|||snap=18w47b|Mudou as texturas de impulso e repetindo blocos de comando, porta de abeto e alçapão, bacalhau cru e cozido e o gato de smoking.|
+Mudou as principais texturas de toras normais e despojado.}}
+{{History|||snap=18w48a|Mudou as texturas do caminho da grama.}}
+{{History|||snap=18w50a|Mudou as texturas de cama, paralelepípedos, bloco esmeralda, pedra final, grama, paralelepípedos musgosos, minério de quartzo inferior, pilar de quartzo, tijolos inferiores vermelhos, arenito vermelho, arenito e pranchas de abeto.|
+Mudou o lado da obsidiana e as texturas de fundo da tabela encantadora, e a textura superior do tora de selva despojado.|
+Mudou as texturas de batata assada, olho de aranha fermentado, toda a armadura de cavalo, batata, batata venenosa e ensopado de coelho.}}
+{{History|||snap=19w08a|Mudou as texturas de bloco esmeralda, minério de diamante, diorito, bloco de grama, bloco de grama nevado, podzol, micélio, porta de carvalho, vitrais e vitrais.|
+Mudou as texturas de armadura de ouro, armadura de cavalo, bolo, esmeralda, membrana fantasma e bola de neve.|Mudou as texturas de golens de ferro, cavalos esqueletos e cavalos zumbis.|Mudou os ícones dos efeitos Sorte e Má sorte.}}
+
+{{History|Bedrock}}
+{{History||1.8|snap=December 13, 2018|slink=https://twitter.com/mattgartzke/status/1073283813147459584?s=21|Pacote de recursos beta liberado com as novas texturas.}}
+{{History||1.10.0|snap=beta 1.10.0.3|As texturas de atualização de textura agora são o padrão.}}
+
+{{history|PlayStation 4}}
+{{History||1.90
+|As texturas de atualização de textura agora são o padrão.
+|As texturas antigas estão disponíveis no pacote de texturas "Classic Textures" incorporado.}}
+{{History|foot}}
+
+== Curiosidades ==
+
+* Em 1º de abril de 2018, a atualização de textura foi "lançada" na [[Edição Java]] como dia da mentira' e a nova versão padrão de 8 bits das texturas foram lançadas para o Java Edition. As novas texturas estavam disponíveis em versões de [[1.12|1.12.x]] e versões de [[17w43a]] para [[18w11a]]. Foi anunciado que todas as edições do ''Minecraft'' obteria essas novas texturas. As novas texturas foram na verdade as texturas originais usando cores de 8 bits, levando a uma redução drástica em detalhes.<ref>{{article|java-edition-textures-finally-perfected|Java Edition Textures Finally Perfected|April 1, 2018}}</ref>
+** As texturas foram revertidas para o que eram antes em 2 de abril de 2018.<ref>{{tweet|dinner|980718994956210176}}</ref> Essas texturas não podem ser reativadas definindo a data do dispositivo para 1º de abril de 2018.
+* A galeria do pacote beta de atualização de textura na [[Minecraft Loja]] usa capturas de tela da edição Java.
+
+== Referências ==
+
+{{reflist}}
+
+{{Versões da Edição Java}}
+{{Bedrock Edition versions}}
+
+[[en:Texture Update]]
+[[es:Texture Update]]
+[[fr:Mise à jour des textures]]
+[[ja:テクスチャ・アップデート]]
+[[ko:텍스처 업데이트]]
+[[pl:Texture Update]]
+[[ru:Texture Update]]
+[[th:การอัพเดทเทกซ์เจอร์]]
+[[uk:Texture Update]]
+[[zh:材质更新]]

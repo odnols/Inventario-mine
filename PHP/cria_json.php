@@ -1,6 +1,6 @@
 <?php include_once "conexao_obsoleta.php";
     
-    $arquivo = "dados.json";
+    $arquivo = "dados_locais.json";
     $file = fopen("../JSON/". $arquivo, 'w');
 
     $data = array();
@@ -20,13 +20,15 @@
         $versao_add = $dados["versao_adicionada"];
         $renovavel = $dados["renovavel"];
         
+        $nome_int = str_replace("_", " ", $nome_interno);
+        
         array_push($data, array(
             "id_item" => $id_item,
             "nome_img" => $nome_img,
             "tipo_item" => $tipo_item,
             "nome_item" => $nome_item,
             "coletavel" => $coletavel,
-            "nome_interno" => $nome_interno,
+            "nome_interno" => $nome_int,
             "empilhavel" => $empilhavel,
             "versao_add" => $versao_add,
             "renovavel" => $renovavel
