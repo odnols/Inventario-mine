@@ -7,6 +7,7 @@ $nome_interno = $_POST["nome_interno"];
 $abamenu = $_POST["abamenu"];
 $empilhavel = $_POST["empilhavel"];
 $versao = $_POST["versao"];
+$aliases = $_POST["aliases"];
 
 $arq_name = $_FILES["img"]["name"]; //O nome do ficheiro
 $arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
@@ -24,7 +25,7 @@ else
     $renovavel = 0;
 
 // Atualizando os campos principais
-$insere = "UPDATE item set nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel where id_item = $id_item";
+$insere = "UPDATE item set nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel, aliases_nome = '$aliases' where id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando o nome interno

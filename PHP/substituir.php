@@ -1,11 +1,13 @@
 <?php include_once "../PHP/conexao_obsoleta.php";
     
+    // Base de dados em JSON
     $arquivo_json = file_get_contents("dados_locais.json");
     $data = json_decode($arquivo_json);
 
+    // Arquivo que será traduzido
     $arquivo_txt = "tab_wk.txt";
     $fh = fopen($arquivo_txt, 'r+');
-    $dados = fread ($fh , filesize($arquivo_txt));
+    $dados = fread($fh, filesize($arquivo_txt));
 
     $dados = explode("|-", $dados);
 

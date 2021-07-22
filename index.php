@@ -79,24 +79,36 @@
 
         echo "<br><p class='estat'>Não empilhaveis: ";
         echo $executa->num_rows ."</p>";
-
-        // $verificar = "SELECT * from item where nome like '%cobre%'";
-        // $verificar = "SELECT * from item order by posicao_item";
+        
         $verificar = "SELECT * from item order by id_item desc";
         $executa = $conexao->query($verificar); ?>
 
     </div>
-            
-    <a href="PHP/cria_json.php">Criar json</a>
-    <a href="JSON/substituir.php">Substituir</a>        
+    
+    <div id="botoes_ferramentas">
+        <a class="bttn_frrm" href="PHP/exportar_dados.php">Exportar Dados</a>
+        <a class="bttn_frrm" id="importar_dados_button" href="PHP/importar_dados.php" onclick="importar_dados()">Importar Dados</a>
 
+        <a class="bttn_frrm" href="JSON/substituir.php">Traduzir itens</a>        
+    </div>
+
+    <!-- Importar célula de dados para o banco -->
+    <form id="selecionar_celula_dados" method="post" action="PHP/importar_dados.php" enctype="multipart/form-data">
+
+        <h2>Selecione um arquivo JSON apropriado para fazer a importação de dados</h2>
+        <input type="file" name="arquivo" required accept=".json"><br><br>
+
+        <input type="submit" value="Importar">
+    </form>
+
+    <!-- Adicionar item -->
     <form id="prancheta_add" method="post" action="PHP/item_registrar.php" enctype="multipart/form-data">
         <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required>
-
-        <input class="input_prancheta" id="barra_nome_interno" type="text" placeholder="Nome interno" name="nome_interno">
+        
+        <input class="input_prancheta" id="barra_nome_interno_pr" type="text" placeholder="Nome interno" name="nome_interno">
 
         <div id="selects">
-            <select name="abamenu" style="width: 505px;">
+            <select name="abamenu" style="width: 505px;" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
 
             <?php
                 $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais"];
@@ -107,13 +119,13 @@
                 } ?>
             </select><br><br>
 
-            <select name="empilhavel" style="width: 505px;">
+            <select name="empilhavel" style="width: 505px;" onmouseover="toolTip('Quantos itens se juntam')" onmouseout="toolTip()">
                 <option value="64">64x</option>
                 <option value="16">16x</option>
                 <option value="0">Não</option>            
             </select><br><br>
 
-            <select name="versao" style="width: 505px;">
+            <select name="versao" style="width: 505px;" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
                 <option value="outro">Outro</option>
                 <?php
 
@@ -126,11 +138,11 @@
         </div>
         
         <div id="checkboxes">
-            <input class="input_check" type="checkbox" name="coletavelsurvival" checked> <img class="icon_check" src="IMG/Interface/coracao.png" title="Coletável no sobrevivência"><br>
+            <input class="input_check" type="checkbox" name="coletavelsurvival" checked  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/coracao.png"  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
-            <input class="input_check" type="checkbox" name="renovavel" checked> <img class="icon_check" src="IMG/Itens/Decorativos/anvil.png" title="Recurso renovável">
+            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
-            <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage();">
+            <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage();" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
 
             <img id="preview">
         </div>
@@ -138,6 +150,7 @@
         <input id="inserir_item" type="submit" value="Inserir">
     </form>
 
+    <!-- Menu interativo -->
     <div id="menu_completo">
         <img id="menu" src="IMG/Interface/Menu.png">
 
@@ -268,7 +281,9 @@
         document.addEventListener("onKeyDown", clique());
     </script>
 
-    <script src="JSON/dados.json"></script>
+    <!-- <script src="JSON/dados.json"></script> -->
+    
+    <!-- Scripts utilizados para leitura direta dos dados do JSON e montagem no site -->
     <!-- <script type="text/javascript">
 
     fetch("JSON/dados.json")

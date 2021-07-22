@@ -31,14 +31,11 @@ img#menu{
     z-index: 2;
 }
 #menu_completo{
-    /* display: none; */
     top: 15px;
     width: 600px;
     height: auto;
     padding: 5px;
     position: absolute;
-    /* left: 50%; */
-    /* margin-left: -300px; */
     left: 3%;
     color: white;
     font-size: 24px;
@@ -58,7 +55,6 @@ img#menu{
     padding: 15px;
 }
 #estatisticas_inventario{
-    /* display: none; */
     top: 18.2%;
     z-index: 4;
     width: 585px;
@@ -79,10 +75,8 @@ img#menu{
     width: 585px;
     padding: 5px;
     position: absolute;
-    /* left: 50%; */
     right: 4%;
     height: 408px;
-    /* margin-left: -285px; */
     background: url("../IMG/Interface/prancheta.png") no-repeat;
 }
 .input_prancheta{
@@ -332,7 +326,13 @@ input, select{
     top: 12%;
 }
 #barra_nome_interno{
+    top: 21%;
+}
+#barra_nome_interno_pr{
     top: 25%;
+}
+#barra_aliases{
+    top: 30%;
 }
 #titulo_aba{
     color: #3f3f3f;
@@ -404,4 +404,34 @@ a{
 }
 ::-webkit-scrollbar {
     width: 0px;
+}
+#botoes_ferramentas{
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    z-index: 1;
+    position: absolute;
+    animation: puxa_botoes 2s;
+}
+.bttn_frrm{ 
+    color: black !important;
+    background-color: white;
+    width: 85%; 
+    border: 1px solid grey;
+    padding: 10px;
+    height: 34px;
+    border-radius: 4px;
+}
+#selecionar_celula_dados{
+    display: none;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    left: 0px;
+    top: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
 }
