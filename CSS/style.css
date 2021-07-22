@@ -55,6 +55,7 @@ img#menu{
     padding: 15px;
 }
 #estatisticas_inventario{
+    display: none;
     top: 18.2%;
     z-index: 4;
     width: 585px;
@@ -167,7 +168,7 @@ input, select{
     font-size: 24px;
     padding-left: 20px;
 }
-.Construcao, .Decorativos, .Redstone, .Transportes, .Diversos, .Alimentos, .Ferramentas, .Combate, .Pocoes, .Especiais, .Prancheta{
+.Construcao, .Decorativos, .Redstone, .Transportes, .Diversos, .Alimentos, .Ferramentas, .Combate, .Pocoes, .Especiais, .Prancheta, .Generico{
     display: none;
 }
 #item_0, #item_1, #item_2, #item_3, #item_4, #item_5, #item_6, #item_7, #item_8, #item_9, #item_10, #item_11{
@@ -266,9 +267,6 @@ input, select{
 #img_pocoes{
     top: 1642%;
     left: 57.6%;
-}
-.Generico{
-    display: none;
 }
 #img_configs_2, #img_versoes_2, #img_coletaveis_2, #img_genericos_2{
     display: none;
