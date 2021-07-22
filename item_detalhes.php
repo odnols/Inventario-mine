@@ -13,7 +13,10 @@
 
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
 </head>
-<body>
+<body onload="sincroniza_tema()">
+
+    <div id="filtro_colorido"></div>
+
     <?php
     $id_item = $_GET["id"];
     

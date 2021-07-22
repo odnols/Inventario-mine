@@ -1,9 +1,19 @@
 body{
-    background-color: rgba(0, 0, 0, .7);
+    background: url('../IMG/Temas/brand.png') no-repeat;
+    background-size: cover;
     font-family: "Minecraftia";
     overflow-x: hidden;
     overflow-y: hidden;
     user-select: none;
+}
+#filtro_colorido{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%);
 }
 h3.ordena{
     color: white;
@@ -63,7 +73,6 @@ img#menu{
     position: absolute;
     right: 4%;
     height: 408px;
-    background: url("../IMG/Interface/prancheta.png") no-repeat;
 }
 .estat{
     position: absolute;
@@ -78,7 +87,6 @@ img#menu{
     position: absolute;
     right: 4%;
     height: 408px;
-    background: url("../IMG/Interface/prancheta.png") no-repeat;
 }
 .input_prancheta{
     border: 0px solid;
@@ -95,7 +103,6 @@ img#menu{
     border: 1px solid black;
     width: 42px;
     height: 42px;
-    background: url("../IMG/Interface/slot.png") no-repeat;
 }
 #selects{
     position: absolute;
@@ -148,14 +155,13 @@ select{
     overflow-y: auto;
     top: 147px;
 }
-#slot_item{
-    background: url("../IMG/Interface/slot.png") !important;
+.slot_item{
     width: 54px;
     height: 54px;
     float: left;
 }
-#slot_item:hover{
-    background: url("../IMG/Interface/slot_hover.png") !important;
+.slot_item:hover{
+    background: url("../IMG/Interface/Claro/slot_hover.png") !important;
 }
 .icon_item{
     width: 48px;
@@ -311,7 +317,6 @@ input, select{
     top: 110px;
     right: 16.6%;
     z-index: 4;
-    background: url("../IMG/Interface/barra_pesquisa.png") no-repeat;
     position: absolute;
     color: white;
     text-shadow: 3px 3px 0px rgb(62, 62, 62);
@@ -324,7 +329,6 @@ input, select{
 }
 .input_prancheta{
     padding-left: 10px;
-    background: url("../IMG/Interface/barra_prancheta.png") no-repeat;
     width: 356px;
     position: absolute;
     left: 4%;
@@ -342,7 +346,6 @@ input, select{
     top: 30%;
 }
 #titulo_aba{
-    color: #3f3f3f;
     z-index: 3;
     position: absolute;
     left: 6.4%;
@@ -357,7 +360,6 @@ input, select{
     z-index: 9;
 }
 #barra_scroll{
-    background: url("../IMG/Interface/scroll.png");
     position: absolute;
     width: 36px;
     height: 45px;
@@ -411,6 +413,14 @@ a{
 }
 ::-webkit-scrollbar {
     width: 0px;
+}
+#menu_user{
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1;
+    position: absolute;
+    animation: puxa_botoes_2 2s;    
 }
 #botoes_ferramentas{
     position: absolute;
