@@ -36,7 +36,7 @@
         <center><h2>Estatísticas</h2></center>
     
         <?php
-        $verificar = "SELECT * from item";
+        $verificar = "SELECT * from item where abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
         echo "<p id='versao_referencia' class='estat'>Itens Adicionados: <span id='num_referencia'></span></p>";
@@ -44,37 +44,37 @@
         echo "<br><p class='estat'>Itens Registrados: ";
         echo $executa->num_rows ."</p>";
 
-        $verificar = "SELECT * from item where coletavelsurvival = 1";
+        $verificar = "SELECT * from item where coletavelsurvival = 1 and abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'> Coletáveis: ";
         echo $executa->num_rows ."</p>";
 
-        $verificar = "SELECT * from item where renovavel = 1";
+        $verificar = "SELECT * from item where renovavel = 1 and abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Renováveis: ";
         echo $executa->num_rows ."</p>";
         
-        $verificar = "SELECT * from item where empilhavel != 0";
+        $verificar = "SELECT * from item where empilhavel != 0 and abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Empilháveis: ";
         echo $executa->num_rows ."</p>";
         
-        $verificar = "SELECT * from item where empilhavel != 0 and coletavelsurvival = 1";
+        $verificar = "SELECT * from item where empilhavel != 0 and coletavelsurvival = 1 and abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Coletáveis e empilhaveis: ";
         echo $executa->num_rows ."</p>";
 
-        $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1";
+        $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Coletaveis empilhaveis e não renováveis: ";
         echo $executa->num_rows ."</p>";
 
-        $verificar = "SELECT * from item where empilhavel like 0";
+        $verificar = "SELECT * from item where empilhavel like 0 and abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Não empilhaveis: ";
@@ -168,8 +168,8 @@
         <div id="item_7" onclick="categoria(7, 0)"></div>
         <div id="item_8" onclick="categoria(8, 0)"></div>
         <div id="item_9" onclick="categoria(9, 0)"></div>
-        <div id="item_10" onclick="categoria(10, 0)"></div>
-
+        <div id="item_10" onclick="categoria(10, 0)"></div> <!-- Pesquisa -->
+        
         <div id="item_11" onclick="clique('prancheta')"></div>
 
         <img id="img_construcao" class="aba_menu Construcao" src="IMG/Interface/aba_construcao.png">
@@ -197,10 +197,10 @@
             <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
         </div>
         
-        <!-- <div onclick="filtragem_automatica('Generico')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
+        <div onclick="filtragem_automatica('genéricos')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
             <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
             <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
-        </div> -->
+        </div>
 
         <img id="img_especiais" class="aba_menu Especiais" src="IMG/Interface/aba_especiais.png">
         <img id="img_pesquisa" class="aba_menu Pesquisa" src="IMG/Interface/aba_pesquisa.png">
@@ -264,10 +264,13 @@
                 }
 
                 $auto_completa = strtolower($converte);
-
-                // Recursos temporariamente em testes
-                if($tipo_item != "Generico"){ 
+                
+                if($tipo_item != "Generico"){
                     echo "<div id='slot_item' class='$tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
+                    echo "</div>";
+                }else{
+                    echo "<div id='slot_item' class='$tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }
@@ -286,56 +289,9 @@
     <script type="text/javascript">
 
         categoria(10, 0);
-        clique("prancheta", 0);
+        // clique("prancheta", 0);
 
         document.addEventListener("onKeyDown", clique());
     </script>
-
-    <!-- <script src="JSON/dados.json"></script> -->
-    
-    <!-- Scripts utilizados para leitura direta dos dados do JSON e montagem no site -->
-    <!-- <script type="text/javascript">
-
-    fetch("JSON/dados.json")
-        .then(response => response.json())
-        .then(json => { 
-
-            // Listando os itens do JSON para o usuário
-            for(var i = 0; i < json.length; i++){
-
-                if(typeof json[i].id_item !== "undefined"){
-
-                    if(json[i].nome_interno)
-                        var nome_interno = "off";
-                    else
-                        var nome_interno = "";
-
-                    if(!json[i].versao_add || json[i].versao_add === "outro")
-                        var versao_add = "off";
-                    else
-                        var versao_add = json[i].versao_add;
-                        
-                    if(!json[i].renovavel)
-                        var renovavel = "não renovável";
-                    else
-                        var renovavel = "renovável";
-                    
-                    if(json[i].empilhavel != 0)
-                        var empilhavel = "empilhável";
-                    else
-                        var empilhavel = null;
-
-                    if(json[i].coletavel != 0)
-                        var coletavel = "coletável";
-                    else
-                        var coletavel = "não_coletável";
-
-                    $("#listagem").append("<div id='slot_item' class='"+ json[i].tipo_item +" "+ versao_add +" "+ nome_interno +" "+ renovavel +" "+ empilhavel +" "+ coletavel +"' onclick='exibe_detalhes_item("+ json[i].id_item +")' onmouseover='toolTip("+ json[i].id_item +")' onmouseout='toolTip()'>");
-                    $("#listagem").append("<img class='icon_item' src='IMG/Itens/"+ json[i].tipo_item +"/"+ json[i].nome_img + "'>");
-                    $("#listagem").append("</div>");
-                }
-            }
-        });
-    </script> -->
 </body>
 </html>

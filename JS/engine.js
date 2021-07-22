@@ -99,6 +99,9 @@ function categoria(alvo, local){
         
         document.getElementById("barra_pesquisa_input").value = alvo;
     }
+    
+    if(alvo == null)
+        alvo = 10;
 
     if(alvo == 10){
         texto = document.getElementById("barra_pesquisa_input").value;
@@ -121,16 +124,15 @@ function categoria(alvo, local){
         alvo = 10;
     }
     
-    if(alvo == "off" || alvo == "não_coletável" || alvo == "Generico")
+    if(alvo == "off" || alvo == "não_coletável" || alvo == "generico")
         verifica_posicao(alvo);
     else{
         document.getElementById("img_configs_2").style.display = "none";
         document.getElementById("img_coletaveis_2").style.display = "none";
-        // document.getElementById("img_genericos_2").style.display = "none";
+        document.getElementById("img_genericos_2").style.display = "none";
     }
 
-    if(local == 0){
-        // Definindo a aba alvo
+    if(local == 0){ // Definindo a aba alvo
         alvos = document.getElementsByClassName(categorias[alvo]);
 
         document.getElementById("img_versoes_2").style.display = "none";
@@ -138,6 +140,11 @@ function categoria(alvo, local){
     }else
         alvos = document.getElementsByClassName(alvo);
     
+    if(versoes.includes(alvo) && itens_genericos == 1) // Esconde todos os itens genéricos
+        mostrar_todos();
+
+    if(versoes.includes(alvo) && cache_pesquisa != null) // Limpa o cache de pesquisa
+        cache_pesquisa = null;
     
     // Escondendo todos os itens de todas as categorias
     for(var i = 0; i < categorias.length; i++){
@@ -165,7 +172,7 @@ function categoria(alvo, local){
                             esconde[2].style.display = "Block";
                             esconde[3].style.display = "Block";
                             esconde[4].style.display = "Block";
-                            // esconde[5].style.display = "Block";
+                            esconde[5].style.display = "Block";
                         }
                     }
                 }else{
@@ -178,6 +185,10 @@ function categoria(alvo, local){
         }
     }
 
+    // Itens genéricos
+    if(itens_genericos == 1)
+        alvos = document.getElementsByClassName("Generico");
+
     // Exibindo os itens da categoria escolhida
     for(var i = 0; i < alvos.length; i++){
         alvos[i].style.display = "Block";
@@ -187,9 +198,9 @@ function categoria(alvo, local){
     var slots_livres = itens;
 
     if(alvo == 10)
-        slots_livres -= 20;
+        slots_livres -= 22;
 
-    if(((alvos.length - 1) % 9) != 0 || alvos.length == 1){
+    if((alvos.length - 1) != 47){
         if(alvo != 10 && typeof alvo != "string")
             slots_livres = alvos.length - 1;
 
@@ -245,21 +256,22 @@ function categoria(alvo, local){
         document.getElementById("titulo_aba").innerHTML = nome_aba;
 }
 
-function mostrar_todos(alvo){
-    var alvos = document.getElementsByClassName(alvo);
-
+function mostrar_todos(){
+    var alvos = document.getElementsByClassName('Generico');
 
     if(itens_genericos == 0){
         for(var i = 0; i < alvos.length; i++){
-            alvos[0].style.display = "Block";
-        }   
+            alvos[i].style.display = "Block";
+        }
 
         itens_genericos = 1;
     }else{
         for(var i = 0; i < alvos.length; i++){
-            alvos[0].style.display = "None";
+            alvos[i].style.display = "None";
         }
         
+        document.getElementById("img_genericos_2").style.display = "none";
+
         itens_genericos = 0;
     }
 }
@@ -276,8 +288,11 @@ function filtragem_automatica(alvo_filtragem, local){
     if(local != null)
         document.getElementById("lista_versoes").style.display = "none";
     
+    if(alvo_filtragem == "genéricos")
+        alvo_filtragem = "generico";
+
     // Verifica se a requisição é igual a anterior e desabilita o elemento
-    if(cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "Generico"){
+    if(cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "generico"){
         if(cache_pesquisa != alvo_filtragem){
             cache_pesquisa = alvo_filtragem;
             document.getElementById("barra_pesquisa_input").value = alvo_filtragem;
@@ -294,8 +309,8 @@ function filtragem_automatica(alvo_filtragem, local){
         verifica_posicao(alvo_filtragem);
     }
 
-    if(alvo_filtragem == "Generico")
-        mostrar_todos("Generico");
+    if(alvo_filtragem == "generico" || (alvo_filtragem != "generico" && itens_genericos == 1))
+        mostrar_todos();
 
     filtra_pesquisa();
 }
@@ -366,11 +381,11 @@ function verifica_posicao(caso){
     if(caso == "não_coletável")
         caso = 1;
 
-    if(caso == "Generico")
+    if(caso == "generico")
         caso = 2;
 
-    alvos = ["img_configs", "img_coletaveis"];
-    alvos_finais = ["img_configs_2", "img_coletaveis_2"];
+    alvos = ["img_configs", "img_coletaveis", "img_genericos"];
+    alvos_finais = ["img_configs_2", "img_coletaveis_2", "img_genericos_2"];
 
     elemento = document.getElementById(alvos[caso]);
     posicao = elemento.getBoundingClientRect();
@@ -402,7 +417,7 @@ function previewImage() {
     nome_interno = file[0].name;
     nome_interno = nome_interno.replace('.png', "");
 
-    document.getElementById("barra_nome_interno").value = nome_interno;
+    document.getElementById("barra_nome_interno_pr").value = nome_interno;
 
     if (file.length > 0) {
         var fileReader = new FileReader();

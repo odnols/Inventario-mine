@@ -957,7 +957,7 @@
         "empilhavel": "0",
         "versao_add": "1.14",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "82",
@@ -12616,11 +12616,11 @@
         "nome_img": "netherite_chestplate.png",
         "tipo_item": "Generico",
         "nome_item": "Armadura",
-        "coletavel": "0",
+        "coletavel": "1",
         "nome_interno": "armor",
         "empilhavel": "0",
         "versao_add": "outro",
-        "renovavel": "0",
+        "renovavel": "1",
         "aliases": ""
     },
     {
@@ -12633,7 +12633,7 @@
         "empilhavel": "0",
         "versao_add": "outro",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1062",
@@ -12645,7 +12645,7 @@
         "empilhavel": "0",
         "versao_add": "outro",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1063",
@@ -12657,7 +12657,7 @@
         "empilhavel": "0",
         "versao_add": "outro",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1064",
@@ -12669,7 +12669,7 @@
         "empilhavel": "0",
         "versao_add": "outro",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1065",
@@ -12681,7 +12681,7 @@
         "empilhavel": "0",
         "versao_add": "outro",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1066",
@@ -12693,7 +12693,7 @@
         "empilhavel": "64",
         "versao_add": "outro",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1073",
