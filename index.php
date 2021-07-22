@@ -86,10 +86,14 @@
     </div>
     
     <div id="botoes_ferramentas">
-        <a class="bttn_frrm" href="PHP/exportar_dados.php">Exportar Dados</a>
-        <a class="bttn_frrm" id="importar_dados_button" href="PHP/importar_dados.php" onclick="importar_dados()">Importar Dados</a>
-
-        <a class="bttn_frrm" href="JSON/substituir.php">Traduzir itens</a>        
+        <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
+        <a class="bttn_frrm" href="PHP/exportar_dados.php">Exportar Dados</a> <?php } ?>
+        <a class="bttn_frrm" id="button_importar_dados" href="PHP/importar_dados.php" onclick="importar_dados()">Importar Dados</a>
+        
+        <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
+        <a class="bttn_frrm" id="button_apagar_dados" href="PHP/limpar_dados.php">Limpar Dados</a>
+        <a class="bttn_frrm" href="JSON/substituir.php">Traduzir itens</a>   
+        <?php } ?>
     </div>
 
     <!-- Importar célula de dados para o banco -->
@@ -111,8 +115,8 @@
             <select name="abamenu" style="width: 505px;" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
 
             <?php
-                $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais"];
-                $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais"];
+                $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
+                $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
             
                 for($i = 0; $i < sizeof($categorias); $i++){
                     echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";
@@ -192,6 +196,11 @@
             <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
             <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
         </div>
+        
+        <!-- <div onclick="filtragem_automatica('Generico')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
+            <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
+            <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
+        </div> -->
 
         <img id="img_especiais" class="aba_menu Especiais" src="IMG/Interface/aba_especiais.png">
         <img id="img_pesquisa" class="aba_menu Pesquisa" src="IMG/Interface/aba_pesquisa.png">
@@ -211,7 +220,10 @@
             <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
             <?php 
             while($dados = $executa->fetch_assoc()){
-                
+                                
+                $apelido = null;
+                $converte = null;
+
                 $id_item = $dados["id_item"];
                 $nome_img = $dados["img"];
                 $tipo_item = $dados["abamenu"];
@@ -224,8 +236,6 @@
 
                 if(!$nome_interno)
                     $nome_interno = "off";
-                else
-                    $nome_interno = "";
 
                 if(!$versao_add || $versao_add == "outro")
                     $versao_add = "off";
@@ -245,9 +255,6 @@
                 else
                     $coletavel = "não_coletável";
 
-                $apelido = null;
-                $converte = null;
-
                 for($i = 0; $i < strlen($nome_item); $i++){
                     $converte = $converte." ";
                     
@@ -258,9 +265,12 @@
 
                 $auto_completa = strtolower($converte);
 
-                echo "<div id='slot_item' class='$tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'>";
-                    echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
-                echo "</div>";
+                // Recursos temporariamente em testes
+                if($tipo_item != "Generico"){ 
+                    echo "<div id='slot_item' class='$tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
+                    echo "</div>";
+                }
             } ?>
                 <div id="complementa_slots"></div>
             </div>

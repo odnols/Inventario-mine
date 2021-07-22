@@ -267,15 +267,18 @@ input, select{
     top: 1642%;
     left: 57.6%;
 }
+.Generico{
+    display: none;
+}
+#img_configs_2, #img_versoes_2, #img_coletaveis_2, #img_genericos_2{
+    display: none;
+    z-index: 1 !important;
+}
 #img_configs, #img_configs_2{
     z-index: 0;
     position: absolute;
-    top: 330%;
+    top: 100px;
     right: -5.9%;
-}
-#img_configs_2, #img_versoes_2, #img_coletaveis_2{
-    display: none;
-    z-index: 1 !important;
 }
 #img_coletaveis, #img_coletaveis_2{
     z-index: 0;
@@ -288,6 +291,12 @@ input, select{
     z-index: 0;
     position: absolute;
     top: 280px;
+    right: -5.9%;
+}
+#img_genericos, #img_genericos_2{
+    z-index: 0;
+    position: absolute;
+    top: 370px;
     right: -5.9%;
 }
 #img_prancheta{
@@ -407,7 +416,7 @@ a{
 }
 #botoes_ferramentas{
     position: absolute;
-    right: 7%;
+    right: 2%;
     top: 5%;
     z-index: 1;
     position: absolute;
@@ -421,6 +430,12 @@ a{
     padding: 10px;
     height: 34px;
     border-radius: 4px;
+}
+#button_importar_dados{
+    background-color: rgb(154, 231, 212);
+}
+#button_apagar_dados{
+    background-color: rgb(253, 179, 179);
 }
 #selecionar_celula_dados{
     display: none;
