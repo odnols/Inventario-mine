@@ -200,10 +200,14 @@ function categoria(alvo, local){
 
     var slots_livres = itens;
 
-    if(alvo == 10)
-        slots_livres -= 22;
+    qtd_slots = (alvos.length - 1) % 9;
 
-    if((alvos.length - 1) != 47){
+    if(alvo == 10){
+        slots_livres -= 22;
+        qtd_slots = (alvos.length - 2) % 9;
+    }
+
+    if(qtd_slots != 0){
         if(alvo != 10 && typeof alvo != "string")
             slots_livres = alvos.length - 1;
 
@@ -413,14 +417,17 @@ function voltar_pag(){
     window.location = "index.php";
 }
 
-function previewImage() {
+function previewImage(local) {
     var file = document.getElementById("input_img").files;
 
     // Criando o nome interno automaticamente
     nome_interno = file[0].name;
     nome_interno = nome_interno.replace('.png', "");
 
-    document.getElementById("barra_nome_interno_pr").value = nome_interno;
+    if(local == 0)
+        document.getElementById("barra_nome_interno_pr").value = nome_interno;
+    else
+        document.getElementById("barra_nome_interno").value = nome_interno;
 
     if (file.length > 0) {
         var fileReader = new FileReader();

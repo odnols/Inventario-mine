@@ -109,7 +109,7 @@
 
             <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
-            <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage();" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
+            <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage(1);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
 
             <img id="preview">
         </div>

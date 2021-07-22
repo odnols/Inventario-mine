@@ -146,7 +146,7 @@
 
             <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
-            <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage();" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
+            <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
 
             <img id="preview">
         </div>
@@ -289,7 +289,7 @@
     <script type="text/javascript">
 
         categoria(10, 0);
-        clique("prancheta", 0);
+        // clique("prancheta", 0);
 
         document.addEventListener("onKeyDown", clique());
     </script>
