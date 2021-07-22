@@ -1,5 +1,5 @@
 // Variavéis Globais 
-var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0;
+var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0, tema = null;
 
 function gerencia_scroll(valor){
     libera_scroll = valor;
@@ -444,6 +444,78 @@ function apagarItem(id_item){
     if(confirm("Deseja realmente remover?"))
         window.location = "PHP/item_remover.php?id="+ id_item;
 }
+
 function importar_dados(){
     // $("#selecionar_celula_dados").toggle();
+}
+
+function troca_tema(){
+
+    if(tema == null || tema == 1)
+        localStorage.setItem('tema', "0");
+    
+    if(tema == 0)
+        localStorage.setItem('tema', "1");
+    
+    location.reload();
+}
+
+function sincroniza_tema(){
+
+    tema = localStorage.getItem("tema");
+
+    if(tema != null)
+        tema = parseInt(tema);
+    else
+        tema = 1;
+
+    alvo = "claro";
+
+    if(tema == 0)
+        alvo = "escuro";
+    
+    lista_templates = ["#estatisticas_inventario", "#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item"];
+    nome_template = ["prancheta.png", "prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png"];
+
+    lista_imagens = ["img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu"];
+    nome_arquivos = ["aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "Menu.png"];
+
+    for(var i = 0; i < lista_imagens.length; i++){ // Imagens
+        imagem = document.getElementById(lista_imagens[i]);
+        
+        if(imagem != null)
+            imagem.src = "IMG/Interface/"+ alvo +"/"+ nome_arquivos[i];
+    }
+
+    for(var i = 0; i < lista_templates.length; i++){
+        if(lista_templates[i].includes("#")){ // Elementos que utilizam ID
+
+            lista_templates[i] = lista_templates[i].replace("#", ""); 
+            
+            objeto = document.getElementById(lista_templates[i]);
+            if(objeto != null)
+                objeto.style.background = "url('IMG/Interface/"+ alvo +"/"+ nome_template[i] +"') no-repeat";
+        }else{ // Elementos que estão referenciados como classes
+
+            lista_templates[i] = lista_templates[i].replace(".", "");
+            var alvos = document.getElementsByClassName(lista_templates[i]);
+
+            for(var j = 0; j < alvos.length; j++){
+                alvos[j].style.background = "url('IMG/Interface/"+ alvo +"/"+ nome_template[i] +"') no-repeat";
+            }
+        }
+    }
+
+    textos = document.getElementsByClassName("cor_textos");
+    
+    for(var i = 0; i < textos.length; i++){
+
+        if(tema == 0){
+            textos[i].style.color = "#ffffff";
+            document.getElementById("titulo_aba").style.color = "#ffffff";
+        }else{
+            textos[i].style.color = "black";
+            document.getElementById("titulo_aba").style.color = "#3f3f3f";
+        }
+    }
 }

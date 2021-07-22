@@ -817,7 +817,7 @@
     },
     {
         "id_item": "70",
-        "nome_img": "Enchanted_Golden_Apple_JE2_BE2.gif",
+        "nome_img": "enchanted_golden_apple.png",
         "tipo_item": "Alimentos",
         "nome_item": "Ma\u00e7\u00e3 dourada encantada",
         "coletavel": "1",
@@ -1641,7 +1641,7 @@
         "empilhavel": "64",
         "versao_add": "1.2",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "140",
@@ -2053,7 +2053,7 @@
     },
     {
         "id_item": "174",
-        "nome_img": "Warped_Pressure_Plate_JE1_BE1.png",
+        "nome_img": "warped_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o distorcida",
         "coletavel": "1",
@@ -2325,7 +2325,7 @@
         "empilhavel": "16",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": "snowball"
+        "aliases": null
     },
     {
         "id_item": "197",
@@ -3181,7 +3181,7 @@
     },
     {
         "id_item": "267",
-        "nome_img": "Tinted_Glass_JE2.png",
+        "nome_img": "tinted_glass.png",
         "tipo_item": "Construcao",
         "nome_item": "Vidro fosco",
         "coletavel": "1",
@@ -5142,7 +5142,7 @@
         "nome_item": "Focinho",
         "coletavel": "1",
         "nome_interno": "piglin_banner_pattern",
-        "empilhavel": "64",
+        "empilhavel": "0",
         "versao_add": "1.16",
         "renovavel": "0",
         "aliases": null
@@ -7719,7 +7719,7 @@
         "id_item": "639",
         "nome_img": "glass_pane.png",
         "tipo_item": "Decorativos",
-        "nome_item": "Painel de vidro",
+        "nome_item": "Vidra\u00e7a",
         "coletavel": "1",
         "nome_interno": "glass_pane",
         "empilhavel": "64",
@@ -8625,7 +8625,7 @@
         "empilhavel": "64",
         "versao_add": "1.8",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "711",
@@ -11109,7 +11109,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "926",
@@ -12621,7 +12621,7 @@
         "empilhavel": "0",
         "versao_add": "outro",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1061",
@@ -12849,7 +12849,7 @@
         "empilhavel": "64",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1089",
@@ -13135,9 +13135,9 @@
         "coletavel": "1",
         "nome_interno": "blaze_powder",
         "empilhavel": "64",
-        "versao_add": "outro",
+        "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": null
+        "aliases": ""
     },
     {
         "id_item": "1114",
@@ -13147,7 +13147,7 @@
         "coletavel": "1",
         "nome_interno": "glistering_melon_slice",
         "empilhavel": "64",
-        "versao_add": "outro",
+        "versao_add": "1.0",
         "renovavel": "1",
         "aliases": null
     },
@@ -13159,9 +13159,9 @@
         "coletavel": "1",
         "nome_interno": "ghast_tear",
         "empilhavel": "64",
-        "versao_add": "outro",
+        "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1116",
@@ -13171,7 +13171,7 @@
         "coletavel": "1",
         "nome_interno": "potion",
         "empilhavel": "0",
-        "versao_add": "outro",
+        "versao_add": "1.0",
         "renovavel": "1",
         "aliases": null
     },
@@ -13183,7 +13183,7 @@
         "coletavel": "1",
         "nome_interno": "potion",
         "empilhavel": "0",
-        "versao_add": "outro",
+        "versao_add": "1.9",
         "renovavel": "1",
         "aliases": null
     },
@@ -13195,7 +13195,7 @@
         "coletavel": "1",
         "nome_interno": "potion",
         "empilhavel": "0",
-        "versao_add": "outro",
+        "versao_add": "1.9",
         "renovavel": "1",
         "aliases": null
     },
@@ -13207,7 +13207,7 @@
         "coletavel": "1",
         "nome_interno": "potion",
         "empilhavel": "0",
-        "versao_add": "outro",
+        "versao_add": "1.9",
         "renovavel": "1",
         "aliases": null
     },
@@ -13604,6 +13604,18 @@
         "nome_interno": "white_stained_glass",
         "empilhavel": "64",
         "versao_add": "1.7",
+        "renovavel": "1",
+        "aliases": null
+    },
+    {
+        "id_item": "1153",
+        "nome_img": "cocoa_beans.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Sementes de cacau",
+        "coletavel": "1",
+        "nome_interno": "cocoa_beans",
+        "empilhavel": "64",
+        "versao_add": "1.0",
         "renovavel": "1",
         "aliases": null
     }
