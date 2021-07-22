@@ -134,12 +134,10 @@ function categoria(alvo, local){
 
         document.getElementById("img_versoes_2").style.display = "none";
         document.getElementById("lista_versoes").style.display = "none";
-    }else{
+    }else
         alvos = document.getElementsByClassName(alvo);
-    }
-
-    // console.log(alvo);
-
+    
+    
     // Escondendo todos os itens de todas as categorias
     for(var i = 0; i < categorias.length; i++){
         esconde = document.getElementsByClassName(categorias[i]);
@@ -155,7 +153,7 @@ function categoria(alvo, local){
             }
         }else{
             for(var x = 0; x < esconde.length; x++){
-                if(typeof esconde[x] != "undefined"){
+                if(typeof esconde[x] !== "undefined"){
                     esconde[x].style.display = "None";
 
                     if(typeof alvo == "string"){
@@ -184,18 +182,21 @@ function categoria(alvo, local){
         itens++;
     }
 
-    var slots_livres = itens - 2;
+    var slots_livres = itens;
 
-    if((alvos.length - 1) % 9 != 0){
+    if(alvo == 10)
+        slots_livres -= 20;
+
+    if(((alvos.length - 1) % 9) != 0 || alvos.length == 1){
         if(alvo != 10 && typeof alvo != "string")
             slots_livres = alvos.length - 1;
 
-        if(alvos.length - 1 < 45 && alvo != 10 && typeof alvo != "string")
+        if(alvos.length - 1 < 45 && alvo !== 10 && typeof alvo != "string")
             slots_livres = 47 - alvos.length - 1;
-        else if(alvo != 10 && typeof alvo != "string")
+        else if(alvo !== 10 && typeof alvo != "string")
             slots_livres = ((slots_livres % 9) - 9) * - 1;
 
-        if(alvo == 10 || typeof alvo == "string"){
+        if(alvo === 10 || typeof alvo === "string"){
             if(itens < 45)
                 slots_livres = 45 - itens;
             else

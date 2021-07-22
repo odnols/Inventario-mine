@@ -113,7 +113,7 @@ select{
 }
 #inserir_item{
     width: 90%;
-    right: 5%;
+    right: 6%;
     bottom: 6%;
     position: absolute;
 }
@@ -160,7 +160,7 @@ select{
     float: left;
 }
 #slot_item:hover{
-    background: url("../IMG/Interface/slot_hover.png");
+    background: url("../IMG/Interface/slot_hover.png") !important;
 }
 .icon_item{
     width: 48px;

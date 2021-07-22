@@ -42,43 +42,43 @@
         echo "<p id='versao_referencia' class='estat'>Itens Adicionados: <span id='num_referencia'></span></p>";
         
         echo "<br><p class='estat'>Itens Registrados: ";
-        echo $executa->num_rows. "</p>";
+        echo $executa->num_rows ."</p>";
 
         $verificar = "SELECT * from item where coletavelsurvival = 1";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'> Coletáveis: ";
-        echo $executa->num_rows. "</p>";
+        echo $executa->num_rows ."</p>";
 
         $verificar = "SELECT * from item where renovavel = 1";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Renováveis: ";
-        echo $executa->num_rows."</p>";
+        echo $executa->num_rows ."</p>";
         
         $verificar = "SELECT * from item where empilhavel != 0";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Empilháveis: ";
-        echo $executa->num_rows."</p>";
+        echo $executa->num_rows ."</p>";
         
         $verificar = "SELECT * from item where empilhavel != 0 and coletavelsurvival = 1";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Coletáveis e empilhaveis: ";
-        echo $executa->num_rows."</p>";
+        echo $executa->num_rows ."</p>";
 
         $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Coletaveis empilhaveis e não renováveis: ";
-        echo $executa->num_rows."</p>";
+        echo $executa->num_rows ."</p>";
 
         $verificar = "SELECT * from item where empilhavel like 0";
         $executa = $conexao->query($verificar);
 
         echo "<br><p class='estat'>Não empilhaveis: ";
-        echo $executa->num_rows."</p>";
+        echo $executa->num_rows ."</p>";
 
         // $verificar = "SELECT * from item where nome like '%cobre%'";
         // $verificar = "SELECT * from item order by posicao_item";
@@ -245,11 +245,10 @@
 
                 $auto_completa = strtolower($converte);
 
-                echo "<div id='slot_item' class='$tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip($id_item)' onmouseout='toolTip()'>";
+                echo "<div id='slot_item' class='$tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'>";
                     echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                 echo "</div>";
             } ?>
-
                 <div id="complementa_slots"></div>
             </div>
         </div>
