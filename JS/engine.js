@@ -1,5 +1,5 @@
 // Variavéis Globais 
-var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null;
+var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0;
 
 function gerencia_scroll(valor){
     libera_scroll = valor;
@@ -112,7 +112,7 @@ function categoria(alvo, local){
     }
 
     categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Pesquisa"];
-    versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17"];
+    versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18"];
 
     itens = 0;
     
@@ -121,11 +121,12 @@ function categoria(alvo, local){
         alvo = 10;
     }
     
-    if(alvo == "off" || alvo == "não_coletável")
+    if(alvo == "off" || alvo == "não_coletável" || alvo == "Generico")
         verifica_posicao(alvo);
     else{
         document.getElementById("img_configs_2").style.display = "none";
         document.getElementById("img_coletaveis_2").style.display = "none";
+        // document.getElementById("img_genericos_2").style.display = "none";
     }
 
     if(local == 0){
@@ -164,6 +165,7 @@ function categoria(alvo, local){
                             esconde[2].style.display = "Block";
                             esconde[3].style.display = "Block";
                             esconde[4].style.display = "Block";
+                            // esconde[5].style.display = "Block";
                         }
                     }
                 }else{
@@ -243,6 +245,66 @@ function categoria(alvo, local){
         document.getElementById("titulo_aba").innerHTML = nome_aba;
 }
 
+function mostrar_todos(alvo){
+    var alvos = document.getElementsByClassName(alvo);
+
+
+    if(itens_genericos == 0){
+        for(var i = 0; i < alvos.length; i++){
+            alvos[0].style.display = "Block";
+        }   
+
+        itens_genericos = 1;
+    }else{
+        for(var i = 0; i < alvos.length; i++){
+            alvos[0].style.display = "None";
+        }
+        
+        itens_genericos = 0;
+    }
+}
+
+function filtra_pesquisa(){
+    texto = document.getElementById("barra_pesquisa_input").value;
+    texto = texto.toLowerCase();
+
+    categoria(texto, 1);
+}
+
+function filtragem_automatica(alvo_filtragem, local){
+
+    if(local != null)
+        document.getElementById("lista_versoes").style.display = "none";
+    
+    // Verifica se a requisição é igual a anterior e desabilita o elemento
+    if(cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "Generico"){
+        if(cache_pesquisa != alvo_filtragem){
+            cache_pesquisa = alvo_filtragem;
+            document.getElementById("barra_pesquisa_input").value = alvo_filtragem;
+            verifica_posicao(alvo_filtragem);
+        }else{
+            document.getElementById("barra_pesquisa_input").value = "";
+            cache_pesquisa = null;
+        }
+    }else{
+        cache_pesquisa = alvo_filtragem;
+
+        document.getElementById("barra_pesquisa_input").value = alvo_filtragem;
+
+        verifica_posicao(alvo_filtragem);
+    }
+
+    if(alvo_filtragem == "Generico")
+        mostrar_todos("Generico");
+
+    filtra_pesquisa();
+}
+
+function lista_versoes(){
+    $("#lista_versoes").toggle();
+    $("#img_versoes_2").toggle();
+}
+
 dragElement(document.getElementById("barra_scroll"));
 
 function dragElement(elmnt) {
@@ -296,44 +358,6 @@ function dragElement(elmnt) {
     }
 }
 
-function filtra_pesquisa(){
-    texto = document.getElementById("barra_pesquisa_input").value;
-    texto = texto.toLowerCase();
-
-    categoria(texto, 1);
-}
-
-function filtragem_automatica(alvo_filtragem, local){
-
-    if(local != null)
-        document.getElementById("lista_versoes").style.display = "none";
-
-    // Verifica se a requisição é igual a anterior e desabilita o elemento
-    if(cache_pesquisa == "off" || cache_pesquisa == "não_coletável"){
-        if(cache_pesquisa != alvo_filtragem){
-            cache_pesquisa = alvo_filtragem;
-            document.getElementById("barra_pesquisa_input").value = alvo_filtragem;
-            verifica_posicao(alvo_filtragem);
-        }else{
-            document.getElementById("barra_pesquisa_input").value = "";
-            cache_pesquisa = null;
-        }
-    }else{
-        cache_pesquisa = alvo_filtragem;
-
-        document.getElementById("barra_pesquisa_input").value = alvo_filtragem;
-
-        verifica_posicao(alvo_filtragem);
-    }
-
-    filtra_pesquisa();
-}
-
-function lista_versoes(){
-    $("#lista_versoes").toggle();
-    $("#img_versoes_2").toggle();
-}
-
 function verifica_posicao(caso){
 
     if(caso == "off")
@@ -341,6 +365,9 @@ function verifica_posicao(caso){
     
     if(caso == "não_coletável")
         caso = 1;
+
+    if(caso == "Generico")
+        caso = 2;
 
     alvos = ["img_configs", "img_coletaveis"];
     alvos_finais = ["img_configs_2", "img_coletaveis_2"];

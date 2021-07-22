@@ -39,7 +39,7 @@ while($dados = $executa->fetch_assoc()){
     ));
 }
 
-$json = json_encode($data);
+$json = json_encode($data, JSON_PRETTY_PRINT);
 fwrite($file, $json);
 
 fclose($file);
