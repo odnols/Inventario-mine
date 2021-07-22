@@ -289,7 +289,7 @@
     <script type="text/javascript">
 
         categoria(10, 0);
-        // clique("prancheta", 0);
+        clique("prancheta", 0);
 
         document.addEventListener("onKeyDown", clique());
     </script>

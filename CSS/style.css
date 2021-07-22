@@ -55,7 +55,7 @@ img#menu{
     padding: 15px;
 }
 #estatisticas_inventario{
-    display: none;
+    /* display: none; */
     top: 18.2%;
     z-index: 4;
     width: 585px;

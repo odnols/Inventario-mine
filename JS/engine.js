@@ -140,10 +140,13 @@ function categoria(alvo, local){
     }else
         alvos = document.getElementsByClassName(alvo);
     
-    if(versoes.includes(alvo) && itens_genericos == 1) // Esconde todos os itens genéricos
+    if((versoes.includes(alvo) || categorias.includes(categorias[alvo])) && itens_genericos == 1){ // Esconde todos os itens genéricos
         mostrar_todos();
+        cache_pesquisa = null;
+        document.getElementById("barra_pesquisa_input").value = "";
+    }
 
-    if(versoes.includes(alvo) && cache_pesquisa != null) // Limpa o cache de pesquisa
+    if((versoes.includes(alvo) || categorias.includes(categorias[alvo])) && cache_pesquisa != null) // Limpa o cache de pesquisa
         cache_pesquisa = null;
     
     // Escondendo todos os itens de todas as categorias
