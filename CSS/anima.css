@@ -2,3 +2,7 @@
     from{ right: 10%; }
     to{ right: -5.9%; }
 }
+@keyframes puxa_botoes{
+    from { top: -10%; }
+    to { top: 5%; }
+}

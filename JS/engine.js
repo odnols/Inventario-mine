@@ -392,3 +392,6 @@ function apagarItem(id_item){
     if(confirm("Deseja realmente remover?"))
         window.location = "PHP/item_remover.php?id="+ id_item;
 }
+function importar_dados(){
+    // $("#selecionar_celula_dados").toggle();
+}
