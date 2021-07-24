@@ -233,7 +233,7 @@ function categoria(alvo, local){
 
     if(versoes.includes(alvo)){
         $("#versao_referencia").fadeIn();
-        document.getElementById("num_referencia").innerHTML = itens;
+        document.getElementById("num_referencia").innerHTML = alvo + " ( "+ itens + " )";
     }else{
         $("#versao_referencia").fadeOut();
     }
@@ -253,7 +253,7 @@ function categoria(alvo, local){
     else if(alvo == 8)
         nome_aba = "Poções"
     else if(alvo == 9)
-        nome_aba = "Blocos especiais";
+        nome_aba = "Itens especiais";
     else if(alvo == 10)
         nome_aba = "Buscar";
     else
