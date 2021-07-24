@@ -40,7 +40,7 @@
         $verificar = "SELECT * from item where abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
-        echo "<p id='versao_referencia' class='estat'>Itens Adicionados: <span id='num_referencia'></span></p>";
+        echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
         
         echo "<br><p class='estat cor_textos'>Itens Registrados: ";
         echo $executa->num_rows ."</p>";
@@ -72,7 +72,7 @@
         $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
         $executa = $conexao->query($verificar);
 
-        echo "<br><p class='estat cor_textos'>Coletaveis empilháveis e não renováveis: ";
+        echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
         echo $executa->num_rows ."</p>";
 
         $verificar = "SELECT * from item where empilhavel like 0 and abamenu != 'Generico'";
@@ -294,7 +294,7 @@
     <script type="text/javascript">
     
         categoria(10, 0);
-        // clique("prancheta", 0);
+        clique("prancheta", 0);
 
         document.addEventListener("onKeyDown", clique());
     </script>
