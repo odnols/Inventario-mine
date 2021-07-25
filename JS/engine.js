@@ -197,40 +197,35 @@ function categoria(alvo, local){
         alvos[i].style.display = "Block";
     }
 
+    console.log("alvos:", alvos.length);
+    console.log("typeof alvo", typeof alvo);
     var slots_livres;
-    var qtd_slots = 0;
 
-    if((alvos.length - 1) <= 45)
-        slots_livres = 45 - itens;
-    else
-        qtd_slots = ((alvos.length - 3) % 9);
-    
-    if(((qtd_slots == 0 && alvos.length - 1) % 9 == 0) && (alvos.length - 1) <= 45)
-        qtd_slots = 45 - alvos.length - 1;
+    slots_livres = ((alvos.length - 1) % 9);
 
-    if(alvo == 10){
-        slots_livres -= 22;
-        qtd_slots = (alvos.length - 2) % 9;
-    }
-    
-    if(qtd_slots >= 0){
-        if(alvo != 10 && typeof alvo != "string")
-            slots_livres = alvos.length - 1;
+    console.log("resto:", (alvos.length - 1) % 9);
 
-        if(alvos.length - 1 < 45 && alvo !== 10 && typeof alvo != "string")
-            slots_livres = 47 - alvos.length - 1;
-        else if(alvo !== 10 && typeof alvo != "string")
-            slots_livres = ((slots_livres % 9) - 9) * - 1;
-
-        if(alvo === 10 || typeof alvo === "string"){
-            if(alvos.length < 45)
-                slots_livres = 45 - alvos.length;
+    if(((alvos.length - 1) % 9 != 0) || alvos.length < 45){
+        if(alvos.length < 45 && itens < 45)
+            if(typeof alvo != "string")
+                slots_livres = 46 - alvos.length;
             else
-                slots_livres = ((slots_livres % 9) - 9) * - 1;
-        }
+                slots_livres = 45 - alvos.length;
+        else
+            if(alvo === 10)
+                slots_livres = (alvos.length % 9) - 9;
+            else
+                slots_livres = 9 - (alvos.length % 9);
 
+        if(slots_livres == 9)
+            slots_livres = 0;
+    }
+
+    console.log("slots_livres", slots_livres);
+
+    if(slots_livres > 0){
         document.getElementById("complementa_slots").innerHTML = "";
-
+        
         for(var j = 0; j < slots_livres; j++){
             document.getElementById("complementa_slots").innerHTML += "<div class='slot_item'></div>";
         }
@@ -244,7 +239,7 @@ function categoria(alvo, local){
         $("#versao_referencia").fadeOut();
     }
 
-    if(alvos.length >= 47){
+    if(itens > 45 || alvos.length > 45){
         document.getElementById("barra_scroll").style.display = "Block";
         document.getElementById("barra_scroll_block").style.display = "None";
     }else{
