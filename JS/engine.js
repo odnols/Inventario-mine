@@ -195,19 +195,25 @@ function categoria(alvo, local){
     // Exibindo os itens da categoria escolhida
     for(var i = 0; i < alvos.length; i++){
         alvos[i].style.display = "Block";
-        itens++;
     }
 
-    var slots_livres = itens;
+    var slots_livres;
+    var qtd_slots = 0;
 
-    qtd_slots = (alvos.length - 1) % 9;
+    if((alvos.length - 1) <= 45)
+        slots_livres = 45 - itens;
+    else
+        qtd_slots = ((alvos.length - 3) % 9);
+    
+    if(((qtd_slots == 0 && alvos.length - 1) % 9 == 0) && (alvos.length - 1) <= 45)
+        qtd_slots = 45 - alvos.length - 1;
 
     if(alvo == 10){
         slots_livres -= 22;
         qtd_slots = (alvos.length - 2) % 9;
     }
-
-    if(qtd_slots != 0){
+    
+    if(qtd_slots >= 0){
         if(alvo != 10 && typeof alvo != "string")
             slots_livres = alvos.length - 1;
 
@@ -217,8 +223,8 @@ function categoria(alvo, local){
             slots_livres = ((slots_livres % 9) - 9) * - 1;
 
         if(alvo === 10 || typeof alvo === "string"){
-            if(itens < 45)
-                slots_livres = 45 - itens;
+            if(alvos.length < 45)
+                slots_livres = 45 - alvos.length;
             else
                 slots_livres = ((slots_livres % 9) - 9) * - 1;
         }
@@ -226,19 +232,19 @@ function categoria(alvo, local){
         document.getElementById("complementa_slots").innerHTML = "";
 
         for(var j = 0; j < slots_livres; j++){
-            document.getElementById("complementa_slots").innerHTML += "<div id='slot_item'></div>";
+            document.getElementById("complementa_slots").innerHTML += "<div class='slot_item'></div>";
         }
     }else // Limpa os slots de outras abas
         document.getElementById("complementa_slots").innerHTML = "";
 
     if(versoes.includes(alvo)){
         $("#versao_referencia").fadeIn();
-        document.getElementById("num_referencia").innerHTML = alvo + " ( "+ itens + " )";
+        document.getElementById("num_referencia").innerHTML = alvo + " ( "+ alvos.length + " )";
     }else{
         $("#versao_referencia").fadeOut();
     }
 
-    if(itens >= 47){
+    if(alvos.length >= 47){
         document.getElementById("barra_scroll").style.display = "Block";
         document.getElementById("barra_scroll_block").style.display = "None";
     }else{
@@ -457,7 +463,7 @@ function troca_tema(){
     if(tema == 0)
         localStorage.setItem('tema', "1");
     
-    location.reload();
+    sincroniza_tema();
 }
 
 function sincroniza_tema(){
