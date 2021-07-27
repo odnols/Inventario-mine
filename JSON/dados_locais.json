@@ -9,7 +9,7 @@
         "empilhavel": "64",
         "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "2",
@@ -33,7 +33,7 @@
         "empilhavel": "0",
         "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "4",
@@ -183,13 +183,13 @@
         "id_item": "16",
         "nome_img": "Bundle_Filled_JE2.png",
         "tipo_item": "Ferramentas",
-        "nome_item": "Bolsa",
+        "nome_item": "Trouxa",
         "coletavel": "1",
         "nome_interno": "bundle",
         "empilhavel": "0",
         "versao_add": "1.18",
         "renovavel": "1",
-        "aliases": null
+        "aliases": ""
     },
     {
         "id_item": "17",
@@ -2325,7 +2325,7 @@
         "empilhavel": "16",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": "snowball"
+        "aliases": null
     },
     {
         "id_item": "197",
@@ -6057,7 +6057,7 @@
         "empilhavel": "64",
         "versao_add": "1.10",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "508",
@@ -7677,7 +7677,7 @@
         "empilhavel": "64",
         "versao_add": "1.17",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "637",
@@ -12477,7 +12477,7 @@
         "empilhavel": "64",
         "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1044",
@@ -12513,7 +12513,7 @@
         "empilhavel": "64",
         "versao_add": "1.7",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1047",
@@ -13785,7 +13785,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1168",
@@ -13797,7 +13797,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1169",
@@ -13809,7 +13809,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1170",
@@ -13821,7 +13821,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1171",
@@ -13833,7 +13833,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1172",
@@ -13845,7 +13845,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1173",
@@ -13857,7 +13857,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1174",
@@ -13869,7 +13869,7 @@
         "empilhavel": "0",
         "versao_add": "1.8",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1175",
@@ -13881,7 +13881,7 @@
         "empilhavel": "0",
         "versao_add": "1.8",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1176",
@@ -13893,7 +13893,7 @@
         "empilhavel": "0",
         "versao_add": "1.8",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1177",
@@ -14001,7 +14001,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1186",
@@ -14013,7 +14013,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1187",
@@ -14025,7 +14025,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1188",
@@ -14037,7 +14037,7 @@
         "empilhavel": "0",
         "versao_add": "1.7",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1189",
@@ -14049,7 +14049,7 @@
         "empilhavel": "0",
         "versao_add": "1.7",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1190",
@@ -14061,7 +14061,7 @@
         "empilhavel": "0",
         "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1191",
@@ -14073,7 +14073,7 @@
         "empilhavel": "0",
         "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1192",
@@ -14085,7 +14085,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1193",
@@ -14097,7 +14097,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1194",
@@ -14109,7 +14109,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1195",
@@ -14121,7 +14121,7 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1196",
@@ -14133,7 +14133,7 @@
         "empilhavel": "0",
         "versao_add": "1.8",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1197",
@@ -14145,7 +14145,7 @@
         "empilhavel": "0",
         "versao_add": "1.8",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1198",
@@ -14157,7 +14157,7 @@
         "empilhavel": "0",
         "versao_add": "1.8",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1199",
@@ -14265,7 +14265,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1208",
@@ -14277,7 +14277,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1209",
@@ -14289,7 +14289,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1210",
@@ -14301,7 +14301,7 @@
         "empilhavel": "0",
         "versao_add": "1.7",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1211",
@@ -14313,7 +14313,7 @@
         "empilhavel": "0",
         "versao_add": "1.7",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1212",
@@ -14445,7 +14445,7 @@
         "empilhavel": "0",
         "versao_add": "1.0",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1223",
@@ -14505,7 +14505,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1228",
@@ -14517,7 +14517,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1229",
@@ -14529,7 +14529,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1230",
@@ -14541,7 +14541,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1231",
@@ -14553,7 +14553,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1232",
@@ -14565,7 +14565,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1233",
@@ -14577,7 +14577,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1234",
@@ -14637,7 +14637,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1239",
@@ -14649,7 +14649,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1240",
@@ -14661,7 +14661,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1241",
@@ -14769,7 +14769,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1250",
@@ -14781,7 +14781,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1251",
@@ -14793,7 +14793,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1252",
@@ -14877,7 +14877,7 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1259",
@@ -15021,7 +15021,7 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "1271",
@@ -15033,6 +15033,6 @@
         "empilhavel": "0",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     }
 ]

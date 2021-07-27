@@ -5,6 +5,7 @@
 }
 /* Dica de ferramenta de estilo para minecraft */
 #minetip-tooltip {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -14,7 +15,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 27px;
-	font-family: Minecraftia, sans-serif;
+	font-family: Minecraftia, Minecraft, sans-serif;
 	font-size: 20px;
 	word-spacing: 3px;
 	white-space: nowrap;
