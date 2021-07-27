@@ -8,6 +8,8 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
@@ -221,6 +223,11 @@
             <img id="barra_scroll_block" src="#">
         </div>
         
+        <div id="minetip-tooltip">
+            <span id="nome_item_minetip"></span><br>
+            <span id="descricao_item_minetip"></span>
+        </div>
+
         <div id="lista_itens">
             <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
             <?php 
@@ -271,11 +278,11 @@
                 $auto_completa = strtolower($converte);
                 
                 if($tipo_item != "Generico"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'>";
+                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\")' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }else{
-                    echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'>";
+                    echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\")' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }
