@@ -4,6 +4,7 @@ use minecraft_itens;
 create table item(
 	id_item int(11) not null primary key auto_increment,
     nome varchar(200) not null,
+    descricao varchar(500),
     abamenu varchar(200) not null,
     empilhavel int(11) not null,
     coletavelSurvival tinyint(1),
@@ -16,7 +17,7 @@ create table item(
 );
 
 create table cor_item(
-	id_cor int not null auto_increment primary key,
+    id_cor int not null auto_increment primary key,
     id_item int not null,
     tipo_item int not null,
     foreign key(id_item) references item(id_item)

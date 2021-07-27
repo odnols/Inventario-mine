@@ -20,12 +20,14 @@
     
     <div id="minetip-tooltip">
         <span id="nome_item_minetip"></span><br>
-        <span id="descricao_item_minetip"></span>
+        <span id="descricao_item_minetip"></span><br>
+        <span id="nome_interno_minetip"></span>
     </div>
 
-    <div id="minetip-tooltip" class="caixa_item_detalhes" style="display: block;">
+    <div id="minetip-tooltip" class="caixa_item_detalhes">
         <span id="nome_item_minetp"></span><br>
-        <span id="descricao_item_minetp"></span>
+        <span id="descricao_item_minetp"></span><br>
+        <span id="nome_interno_minetp"></span>
     </div>
 
     <?php
@@ -49,6 +51,8 @@
     $empilhavel = $dados["empilhavel"];
     $versao_add = $dados["versao_adicionada"];
     
+    $descricao_item = $dados["descricao"];
+
     if($versao_add == null)
         $versao_add = "Outro";
 
@@ -79,6 +83,8 @@
         <input type="text" name="id_item" value="<?php echo $id_item ?>" style="display: none;">
     
         <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required value="<?php echo $nome_item ?>" onmouseover="toolTip('Nome do item')" onmouseout="toolTip()">
+
+        <input class="input_prancheta" id="barra_descricao" type="text" placeholder="Descrição" name="descricao" value="<?php echo $descricao_item ?>" onmouseover="toolTip('Descrição do item')" onmouseout="toolTip()">
 
         <input class="input_prancheta" id="barra_nome_interno" type="text" placeholder="Nome interno" name="nome_interno" value="<?php echo $nome_interno ?>" onmouseover="toolTip('Nome interno do item')" onmouseout="toolTip()">
 
@@ -157,7 +163,7 @@
     
     <?php 
     
-    echo "<script>toolTip(\"$nome_item\", \"$nome_interno\", $cor_item, 1)</script>";
+    echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
     
     ?>
 

@@ -10,6 +10,7 @@ $versao = $_POST["versao"];
 $aliases = $_POST["aliases"];
 
 $cor_tipo_item = $_POST["cor_tipo_item"];
+$descricao = $_POST["descricao"];
 
 $arq_name = $_FILES["img"]["name"]; //O nome do ficheiro
 $arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
@@ -40,6 +41,13 @@ else
     $insere = "UPDATE item set nome_interno = '$nome_interno' where id_item = $id_item";
 $executa = $conexao->query($insere);
 
+// Atualizando a descrição do item
+if(strlen($descricao) < 1)
+    $insere = "UPDATE item set descricao = null where id_item = $id_item";
+else
+    $insere = "UPDATE item set descricao = '$descricao' where id_item = $id_item";
+$executa = $conexao->query($insere);
+
 // Atualizando a versão
 if(strlen($versao) < 1 || $versao == "Outro")
     $insere = "UPDATE item set versao_adicionada = null where id_item = $id_item";
@@ -60,8 +68,6 @@ if($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0){ // Só insere se 
         $insere = "DELETE from cor_item where id_item = $id_item";
 
     $executa = $conexao-> query($insere);
-
-    echo $insere;
 }
 
 // Atualizando a imagem que está sendo utilizada

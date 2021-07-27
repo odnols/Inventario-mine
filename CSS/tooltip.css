@@ -1,7 +1,7 @@
 /* Dica de ferramenta de estilo para minecraft */
 #minetip-tooltip {
 	color: #FFF;
-	text-shadow: 3px 3px 0 #3F3F3F;
+	text-shadow: 3px 3px 0#3F3F3F;
 }
 /* Dica de ferramenta de estilo para minecraft */
 #minetip-tooltip {
@@ -9,8 +9,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #100010;
-	background-color: rgba(16, 0, 16, 0.94);
+	background-color:#100010;
+	background-color:rgba(16, 0, 16, 0.94);
 	padding: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -31,9 +31,9 @@
 	right: -3px;
 	bottom: 3px;
 	left: -3px;
-	border: 3px solid #100010;
+	border: 3px solid#100010;
 	border-style: none solid;
-	border-color: rgba(16, 0, 16, 0.94);
+	border-color:rgba(16, 0, 16, 0.94);
 }
 #minetip-tooltip::after {
 	content: "";
@@ -42,9 +42,9 @@
 	right: 0;
 	bottom: 3px;
 	left: 0;
-	border: 3px solid #2D0A63;
-	border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
-	border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+	border: 3px solid#2D0A63;
+	border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31),rgba(40, 0, 127, 0.31)) 1;
+	border-image: linear-gradient(rgba(80, 0, 255, 0.31),rgba(40, 0, 127, 0.31)) 1;
 }
 #minetip-tooltip > .description,
 #minetip-tooltip > .minetip-description {
@@ -52,31 +52,67 @@
 	margin-top: 4px;
 }
 #descricao_item_minetip{
+	color: #a8a8a8;
+	float: left;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0#2a2a2a;
+}
+#nome_interno_minetip{
 	color: #545454;
-	float:  left;
+	float: left;
 	padding-top: 25px;
-	text-shadow: 3px 3px 0 #151515;
+	text-shadow: 3px 3px 0#151515;
 }
 .item_encantado{
 	color: #54fcfc;
-	text-shadow: 3px 3px 0 #153e3e;
+	text-shadow: 3px 3px 0#153e3e;
 }
 .item_especial{
 	color: #fcfc54;
-	text-shadow: 3px 3px 0 #3e3e15;
+	text-shadow: 3px 3px 0#3e3e15;
 }
 .item_lendario{
 	color: #fc54fc;
-	text-shadow: 3px 3px 0 #3e153e;
+	text-shadow: 3px 3px 0#3e153e;
 }
 .caixa_item_detalhes{
+	display: block !important;
 	position: absolute;
 	left: 50% !important;
-	top: 70% !important;
+	top: 60% !important;
 }
 #descricao_item_minetp{
+	color: #a8a8a8;
+	float: left;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0#2a2a2a;
+}
+#nome_interno_minetp{
 	color: #545454;
 	float:  left;
 	padding-top: 25px;
-	text-shadow: 3px 3px 0 #151515;
+	text-shadow: 3px 3px 0#151515;
+}
+.efeito_cor_azul{
+	float: left;
+	color: #5454fc;
+	text-shadow: 3px 3px 0#15153e;
+}
+.efeito_cor_vermelha{
+	float: left;
+	padding-top: 30px;
+	color: #fc5454;
+	text-shadow: 3px 3px 0#3e1515;
+}	
+.efeito_cor_roxa{
+	float: left;
+	padding-top: 30px;
+	color: #a800a8;
+	text-shadow: 3px 3px 0#2a002a;
+}
+.efeito_cor_verde{ 
+	float: left;
+	padding-top: 30px;
+	color: #00a800;
+	text-shadow: 3px 3px 0#002a00;
 }
