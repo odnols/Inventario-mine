@@ -336,6 +336,10 @@ input, select{
 #barra_nome{
     top: 12%;
 }
+#barra_descricao{
+    top: 30%;
+    z-index: 4;
+}
 #barra_nome_interno{
     top: 21%;
 }

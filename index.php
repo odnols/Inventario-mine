@@ -226,7 +226,8 @@
         
         <div id="minetip-tooltip">
             <span id="nome_item_minetip"></span><br>
-            <span id="descricao_item_minetip"></span>
+            <span id="descricao_item_minetip"></span><br>
+            <span id="nome_interno_minetip"></span>
         </div>
 
         <div id="lista_itens">
@@ -246,6 +247,8 @@
                 $empilhavel = $dados["empilhavel"];
                 $versao_add = $dados["versao_adicionada"];
                 $renovavel = $dados["renovavel"];
+
+                $descricao = $dados["descricao"];
 
                 if(!$nome_interno)
                     $nome_interno = "off";
@@ -290,11 +293,11 @@
                 $auto_completa = strtolower($converte);
                 
                 if($tipo_item != "Generico"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }else{
-                    echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                    echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }
