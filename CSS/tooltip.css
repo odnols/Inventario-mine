@@ -1,0 +1,59 @@
+/* Dica de ferramenta de estilo para minecraft */
+#minetip-tooltip {
+	color: #FFF;
+	text-shadow: 3px 3px 0 #3F3F3F;
+}
+/* Dica de ferramenta de estilo para minecraft */
+#minetip-tooltip {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #100010;
+	background-color: rgba(16, 0, 16, 0.94);
+	padding: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 27px;
+	font-family: Minecraftia, sans-serif;
+	font-size: 20px;
+	word-spacing: 3px;
+	white-space: nowrap;
+	line-height: 3px;
+	margin: 3px 1px;
+	pointer-events: none;
+	z-index: 9999;
+}
+#minetip-tooltip::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: -3px;
+	bottom: 3px;
+	left: -3px;
+	border: 3px solid #100010;
+	border-style: none solid;
+	border-color: rgba(16, 0, 16, 0.94);
+}
+#minetip-tooltip::after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 0;
+	bottom: 3px;
+	left: 0;
+	border: 3px solid #2D0A63;
+	border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+	border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+}
+
+#minetip-tooltip > .description,
+#minetip-tooltip > .minetip-description {
+	display: block;
+	margin-top: 4px;
+}
+#descricao_item_minetip{
+	color: #545454;
+	float:  left;
+	padding-top: 25px;
+	text-shadow: 3px 3px 0 #151515;
+}
