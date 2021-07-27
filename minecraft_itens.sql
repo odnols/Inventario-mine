@@ -14,3 +14,10 @@ create table item(
     versao_adicionada varchar(150),
 	aliases_nome varchar(1000)
 );
+
+create table cor_item(
+	id_cor int not null auto_increment primary key,
+    id_item int not null,
+    tipo_item int not null,
+    foreign key(id_item) references item(id_item)
+);

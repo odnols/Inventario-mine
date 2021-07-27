@@ -276,14 +276,25 @@
                     }
                 }
 
+                $cor_item = 0;
+
+                $verificar_item = "SELECT * from cor_item where id_item = $id_item";
+                $executa_item = $conexao->query($verificar_item);
+
+                if($executa_item->num_rows > 0){
+                    $dados2 = $executa_item->fetch_assoc();
+
+                    $cor_item = $dados2["tipo_item"];
+                }
+                
                 $auto_completa = strtolower($converte);
                 
                 if($tipo_item != "Generico"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\")' onmouseout='toolTip()'>";
+                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }else{
-                    echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\")' onmouseout='toolTip()'>";
+                    echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }

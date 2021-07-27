@@ -9,6 +9,8 @@ $empilhavel = $_POST["empilhavel"];
 $versao = $_POST["versao"];
 $aliases = $_POST["aliases"];
 
+$cor_tipo_item = $_POST["cor_tipo_item"];
+
 $arq_name = $_FILES["img"]["name"]; //O nome do ficheiro
 $arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
 $arq_tmp = $_FILES["img"]["tmp_name"]; //O nome temporário do arquivo
@@ -23,6 +25,9 @@ if(isset($_POST["renovavel"]))
     $renovavel = 1;
 else
     $renovavel = 0;
+
+if(strlen($aliases) == 0)
+    $aliases = null;
 
 // Atualizando os campos principais
 $insere = "UPDATE item set nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel, aliases_nome = '$aliases' where id_item = $id_item";
@@ -41,6 +46,23 @@ if(strlen($versao) < 1 || $versao == "Outro")
 else
     $insere = "UPDATE item set versao_adicionada = '$versao' where id_item = $id_item";
 $executa = $conexao->query($insere);
+
+// Verifica se o item possui registros anteriores
+$verifica_cor_item = "SELECT * from cor_item where id_item = $id_item";
+$executa_verificacao = $conexao->query($verifica_cor_item);
+
+if($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0){ // Só insere se for diferente de zero
+    if($executa_verificacao->num_rows == 0) // Insere um novo
+        $insere = "INSERT into cor_item values (null, $id_item, $cor_tipo_item)";
+    else if($cor_tipo_item != 0) // Atualiza
+        $insere = "UPDATE cor_item set tipo_item = $cor_tipo_item where id_item = $id_item"; 
+    else
+        $insere = "DELETE from cor_item where id_item = $id_item";
+
+    $executa = $conexao-> query($insere);
+
+    echo $insere;
+}
 
 // Atualizando a imagem que está sendo utilizada
 if(strlen($arq_name) > 0){
