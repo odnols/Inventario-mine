@@ -8,7 +8,8 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+    
     <script src="JS/tooltip.js"></script>
 
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
@@ -16,6 +17,11 @@
 <body onload="sincroniza_tema()">
 
     <div id="filtro_colorido"></div>
+
+    <div id="minetip-tooltip">
+        <span id="nome_item_minetip"></span><br>
+        <span id="descricao_item_minetip"></span>
+    </div>
 
     <?php
     $id_item = $_GET["id"];
@@ -119,6 +125,8 @@
 
         <input id="inserir_item" type="submit" value="Atualizar">
     </form>
+
+    <div class="slot_item" style="display: none;"></div>
 
     <script src="JS/engine.js"></script>
 </body>
