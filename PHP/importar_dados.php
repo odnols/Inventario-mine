@@ -27,10 +27,21 @@ foreach($data as $key => $value){
         $empilhavel = $value->empilhavel;
         $versao = $value->versao_add;
         $renovavel = $value->renovavel;
+        $aliases = $value->aliases;
 
         # Inserindo o item no banco de dados
-        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, versao_adicionada, nome_interno) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno');";
+        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, versao_adicionada, nome_interno, aliases_nome) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno', '$aliases');";
         $executa = $conexao->query($insere);
+
+        if(array_key_exists("cor_item", $value)){ // Verifica se existe os dados de cor do item
+            $cor_item = $value->cor_item;
+            
+            $id_cor = $cor_item[0]->id_cor;
+            $tipo_item = $cor_item[0]->tipo_item;
+
+            $insere = "INSERT into cor_item (id_cor, id_item, tipo_item) values ($id_cor, $id_item, $tipo_item)";
+            $executa = $conexao->query($insere);
+        }
     }
 }
 

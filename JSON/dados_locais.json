@@ -189,7 +189,7 @@
         "empilhavel": "0",
         "versao_add": "1.18",
         "renovavel": "1",
-        "aliases": ""
+        "aliases": null
     },
     {
         "id_item": "17",
@@ -1317,7 +1317,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "36",
+                "tipo_item": "3"
+            }
+        ]
     },
     {
         "id_item": "112",
@@ -1515,7 +1521,7 @@
         "id_item": "128",
         "nome_img": "tropical_fish_bucket.png",
         "tipo_item": "Diversos",
-        "nome_item": "balde com peixe tropical",
+        "nome_item": "Balde com peixe tropical",
         "coletavel": "1",
         "nome_interno": "tropical_fish_bucket",
         "empilhavel": "0",
@@ -1641,7 +1647,13 @@
         "empilhavel": "64",
         "versao_add": "1.2",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "9",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "140",
@@ -2325,7 +2337,7 @@
         "empilhavel": "16",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": "snowball"
     },
     {
         "id_item": "197",
@@ -2409,7 +2421,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "3",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "204",
@@ -2421,7 +2439,13 @@
         "empilhavel": "64",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "20",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "205",
@@ -3609,7 +3633,13 @@
         "empilhavel": "0",
         "versao_add": "1.9",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "13",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "302",
@@ -4905,7 +4935,13 @@
         "empilhavel": "0",
         "versao_add": "1.16",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "22",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "412",
@@ -8001,7 +8037,13 @@
         "empilhavel": "64",
         "versao_add": "1.13",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "10",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "657",
@@ -8037,7 +8079,13 @@
         "empilhavel": "0",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "23",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "660",
@@ -8049,7 +8097,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "24",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "661",
@@ -8061,7 +8115,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "25",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "662",
@@ -8073,7 +8133,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "26",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "663",
@@ -8085,7 +8151,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "27",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "664",
@@ -8097,7 +8169,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "28",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "665",
@@ -8109,7 +8187,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "29",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "666",
@@ -8121,7 +8205,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "30",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "667",
@@ -8133,7 +8223,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "31",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "668",
@@ -8145,7 +8241,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "32",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "669",
@@ -8157,7 +8259,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "33",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "670",
@@ -8169,7 +8277,13 @@
         "empilhavel": "0",
         "versao_add": "1.1",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "34",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "671",
@@ -8481,7 +8595,13 @@
         "empilhavel": "0",
         "versao_add": "1.14",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "11",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "699",
@@ -8493,7 +8613,13 @@
         "empilhavel": "0",
         "versao_add": "1.14",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "12",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "700",
@@ -8505,7 +8631,13 @@
         "empilhavel": "0",
         "versao_add": "1.14",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "35",
+                "tipo_item": "3"
+            }
+        ]
     },
     {
         "id_item": "701",
@@ -9513,7 +9645,13 @@
         "empilhavel": "64",
         "versao_add": "1.9",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "14",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "789",
@@ -9525,7 +9663,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "15",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "790",
@@ -9537,7 +9681,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "16",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "791",
@@ -9549,7 +9699,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "17",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "792",
@@ -9561,7 +9717,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "18",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "793",
@@ -9573,7 +9735,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "19",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "794",
@@ -12585,7 +12753,13 @@
         "empilhavel": "64",
         "versao_add": "1.9",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "37",
+                "tipo_item": "3"
+            }
+        ]
     },
     {
         "id_item": "1057",
@@ -12597,7 +12771,13 @@
         "empilhavel": "64",
         "versao_add": "1.9",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "38",
+                "tipo_item": "3"
+            }
+        ]
     },
     {
         "id_item": "1084",
@@ -12837,7 +13017,13 @@
         "empilhavel": "0",
         "versao_add": "1.7",
         "renovavel": "0",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "39",
+                "tipo_item": "3"
+            }
+        ]
     },
     {
         "id_item": "1088",
@@ -12849,7 +13035,13 @@
         "empilhavel": "64",
         "versao_add": "1.9",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "21",
+                "tipo_item": "1"
+            }
+        ]
     },
     {
         "id_item": "1089",
@@ -13221,7 +13413,13 @@
         "empilhavel": "64",
         "versao_add": "1.4",
         "renovavel": "1",
-        "aliases": null
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "8",
+                "tipo_item": "2"
+            }
+        ]
     },
     {
         "id_item": "1121",
@@ -15034,5 +15232,23 @@
         "versao_add": "1.13",
         "renovavel": "1",
         "aliases": null
+    },
+    {
+        "id_item": "1272",
+        "nome_img": "debug_stick.png",
+        "tipo_item": "Especiais",
+        "nome_item": "Graveto de depura\u00e7\u00e3o",
+        "coletavel": "0",
+        "nome_interno": "debug_stick",
+        "empilhavel": "0",
+        "versao_add": "1.13",
+        "renovavel": "0",
+        "aliases": null,
+        "cor_item": [
+            {
+                "id_cor": "1",
+                "tipo_item": "3"
+            }
+        ]
     }
 ]

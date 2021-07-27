@@ -17,10 +17,15 @@
 <body onload="sincroniza_tema()">
 
     <div id="filtro_colorido"></div>
-
+    
     <div id="minetip-tooltip">
         <span id="nome_item_minetip"></span><br>
         <span id="descricao_item_minetip"></span>
+    </div>
+
+    <div id="minetip-tooltip" class="caixa_item_detalhes" style="display: block;">
+        <span id="nome_item_minetp"></span><br>
+        <span id="descricao_item_minetp"></span>
     </div>
 
     <?php
@@ -52,7 +57,17 @@
     
     if($dados["renovavel"])
         $renovavel = "checked";
-    ?>
+
+    $cor_item = 0;
+
+    $verificar_item = "SELECT * from cor_item where id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
+
+    if($executa_item->num_rows > 0){
+        $dados2 = $executa_item->fetch_assoc();
+
+        $cor_item = $dados2["tipo_item"];
+    } ?>
 
     <button id="btn_voltar" onclick="voltar_pag()">Voltar</button>
     <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
@@ -86,6 +101,18 @@
                 } ?> 
             </select><br><br>
 
+            <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A Cor do item no inventário')" onmouseout="toolTip()">
+                <?php
+                    $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa"];
+
+                    echo "<option value='$cor_item'>$cores_nome[$cor_item]</option>";
+
+                    for($i = sizeof($cores_nome) - 1; $i >= 0; $i--){
+                        if($i != $cor_item)
+                            echo "<option value='$i'>$cores_nome[$i]</option>";
+                    } ?>
+            </select><br><br>
+            
             <select name="empilhavel" style="width: 505px;" onmouseover="toolTip('Quantos itens se juntam')" onmouseout="toolTip()">
                 <?php
                     $empilhagens = [64, 16, 0];
@@ -127,6 +154,12 @@
     </form>
 
     <div class="slot_item" style="display: none;"></div>
+    
+    <?php 
+    
+    echo "<script>toolTip(\"$nome_item\", \"$nome_interno\", $cor_item, 1)</script>";
+    
+    ?>
 
     <script src="JS/engine.js"></script>
 </body>

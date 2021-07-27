@@ -197,13 +197,9 @@ function categoria(alvo, local){
         alvos[i].style.display = "Block";
     }
 
-    console.log("alvos:", alvos.length);
-    console.log("typeof alvo", typeof alvo);
     var slots_livres;
 
     slots_livres = ((alvos.length - 1) % 9);
-
-    console.log("resto:", (alvos.length - 1) % 9);
 
     if(((alvos.length - 1) % 9 != 0) || alvos.length < 45){
         if(alvos.length < 45 && itens < 45)
@@ -220,8 +216,6 @@ function categoria(alvo, local){
         if(slots_livres == 9)
             slots_livres = 0;
     }
-
-    console.log("slots_livres", slots_livres);
 
     if(slots_livres > 0){
         document.getElementById("complementa_slots").innerHTML = "";

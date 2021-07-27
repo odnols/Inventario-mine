@@ -46,13 +46,35 @@
 	border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
 	border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
 }
-
 #minetip-tooltip > .description,
 #minetip-tooltip > .minetip-description {
 	display: block;
 	margin-top: 4px;
 }
 #descricao_item_minetip{
+	color: #545454;
+	float:  left;
+	padding-top: 25px;
+	text-shadow: 3px 3px 0 #151515;
+}
+.item_encantado{
+	color: #54fcfc;
+	text-shadow: 3px 3px 0 #153e3e;
+}
+.item_especial{
+	color: #fcfc54;
+	text-shadow: 3px 3px 0 #3e3e15;
+}
+.item_lendario{
+	color: #fc54fc;
+	text-shadow: 3px 3px 0 #3e153e;
+}
+.caixa_item_detalhes{
+	position: absolute;
+	left: 50% !important;
+	top: 70% !important;
+}
+#descricao_item_minetp{
 	color: #545454;
 	float:  left;
 	padding-top: 25px;
