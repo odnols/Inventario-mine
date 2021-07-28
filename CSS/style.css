@@ -462,3 +462,16 @@ a{
     position: absolute;
     text-align: center;
 }
+#bttns_navegacao{
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+    height: 90px;
+}
+.navegacao{
+    height: 43px;
+    width: 43px;
+}

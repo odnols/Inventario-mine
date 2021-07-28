@@ -20,10 +20,14 @@ while($dados = $executa->fetch_assoc()){
     $versao_add = $dados["versao_adicionada"];
     $renovavel = $dados["renovavel"];
     $aliases = $dados["aliases_nome"];
-
+    $descricao = $dados["descricao"];
+    
     if(strlen($aliases) == 0)
         $aliases = null;
 
+    if(strlen($descricao) == 0)
+        $descricao = null;
+        
     # Remove o underline do nome interno do item
     // $nome_int = str_replace("_", " ", $nome_interno);
     $nome_int = $nome_interno;
@@ -58,7 +62,8 @@ while($dados = $executa->fetch_assoc()){
             "empilhavel" => $empilhavel,
             "versao_add" => $versao_add,
             "renovavel" => $renovavel,
-            "aliases" => $aliases
+            "aliases" => $aliases,
+            "descricao" => $descricao
         ));
     }else{
         array_push($data, array(
@@ -72,6 +77,7 @@ while($dados = $executa->fetch_assoc()){
             "versao_add" => $versao_add,
             "renovavel" => $renovavel,
             "aliases" => $aliases,
+            "descricao" => $descricao,
             "cor_item" => $cor_item
         ));
     }
