@@ -54,7 +54,6 @@
 #descricao_item_minetip{
 	color: #a8a8a8;
 	float: left;
-	padding-top: 30px;
 	text-shadow: 3px 3px 0#2a2a2a;
 }
 #nome_interno_minetip{
@@ -84,7 +83,6 @@
 #descricao_item_minetp{
 	color: #a8a8a8;
 	float: left;
-	padding-top: 30px;
 	text-shadow: 3px 3px 0#2a2a2a;
 }
 #nome_interno_minetp{
@@ -95,6 +93,7 @@
 }
 .efeito_cor_azul{
 	float: left;
+	padding-top: 30px;
 	color: #5454fc;
 	text-shadow: 3px 3px 0#15153e;
 }
@@ -115,4 +114,15 @@
 	padding-top: 30px;
 	color: #00a800;
 	text-shadow: 3px 3px 0#002a00;
+}
+.efeito_cor_padrao{
+	float: left;
+	padding-top: 30px;
+	color: #a8a8a8;
+	text-shadow: 3px 3px 0#2a2a2a;
+}
+.espaco{
+	float: left;
+	padding-top: 5px;
+	width: 100%;
 }

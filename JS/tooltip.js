@@ -15,12 +15,12 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         document.getElementById(id_nome_item).innerHTML = "";
         document.getElementById(id_descricao_item).innerHTML = "";
 
-        let cores = ["", "item_encantado", "item_especial", "item_lendario"];
-        let cores_efeitos = ["&1", "&2", "&3", "&4"];
-        let nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde"];
+        let itens_especiais = ["", "item_encantado", "item_especial", "item_lendario"];
+        let cores_efeitos = ["&1", "&2", "&3", "&4", "&r"];
+        let nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde", "efeito_cor_padrao"];
 
         if(cor_item > 0)
-            document.getElementById(id_nome_item).innerHTML += "<span class='"+ cores[cor_item] +"'>"+ nome +"</span>";
+            document.getElementById(id_nome_item).innerHTML += "<span class='"+ itens_especiais[cor_item] +"'>"+ nome +"</span>";
         else
             document.getElementById(id_nome_item).innerHTML = nome;
             
@@ -35,16 +35,20 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         }else{
 
             descricao_colorida = descricao.split("[");
-            console.log(descricao_colorida);
-            
+
             for(var j = 0; j < descricao_colorida.length; j++){
                 for(var i = 0; i < cores_efeitos.length; i++){
                     if(descricao_colorida[j].indexOf(cores_efeitos[i]) != -1){
-                        
-                        descricao_colorida[j] = descricao_colorida[j].replace(cores_efeitos[i], "", 1);
 
-                        document.getElementById(id_descricao_item).innerHTML += "<span class='"+ nome_cores_efeitos[i] +"'> "+ descricao_colorida[j] +"</span><br>";
+                        descricao_colorida[j] = descricao_colorida[j].replace(cores_efeitos[i], "", 1);
+                        
+                        document.getElementById(id_descricao_item).innerHTML += "<span class='"+ nome_cores_efeitos[i] +"'> "+ descricao_colorida[j] +" </span><br>";
+
+                        break;
                     }
+
+                    if(descricao_colorida[j] == "&s")
+                        document.getElementById(id_descricao_item).innerHTML += "<div class='espaco'></div><br>";
                 }
             }
         }

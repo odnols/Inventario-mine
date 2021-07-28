@@ -32,7 +32,7 @@
 
     <?php
     $id_item = $_GET["id"];
-    
+      
     $renovavel = "";
     $coletavel_s = "";
 
@@ -75,6 +75,11 @@
 
     <button id="btn_voltar" onclick="voltar_pag()">Voltar</button>
     <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
+
+    <div id="bttns_navegacao">
+        <a href="item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao"> < </button></a>
+        <a href="item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao"> > </button></a>
+    </div>
 
     <?php echo "<img id='img_detalhes' src='IMG/Itens/$tipo_item/$nome_img'>"; ?>    
     

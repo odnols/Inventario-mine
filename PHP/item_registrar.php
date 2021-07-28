@@ -29,7 +29,7 @@ else
 $verificar = "SELECT nome from item where nome like '$nome'";
 $executa = $conexao->query($verificar);
 
-if($executa->num_rows == 0 || $nome == "Disco musical"){
+if($executa->num_rows == 0 || $nome == "Disco musical" || $nome == "Livro encantado"){
     $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, versao_adicionada, nome_interno) values (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno');";
 
     $executa = $conexao->query($insere);
