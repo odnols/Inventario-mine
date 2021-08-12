@@ -15,34 +15,41 @@ while($dados = $executa->fetch_assoc()){
 }
 
 // Registrando no banco os itens que só existem no JSON
-foreach($data as $key => $value){  
+foreach($data as $key => $value){
+    
+    $id_item = $value->id_item;
+    $arq_name = $value->nome_img;
+    $abamenu = $value->tipo_item;
+    $nome = $value->nome_item;
+    $coletavelsurvival = $value->coletavel;
+    $nome_interno = $value->nome_interno;
+    $empilhavel = $value->empilhavel;
+    $versao = $value->versao_add;
+    $renovavel = $value->renovavel;
+    $aliases = $value->aliases;
+    $descricao = $value->descricao;
+    $oculto_invt = $value->oculto_invt;
+
     if(!in_array($value->id_item, $IDs_registrados)){
-
-        $id_item = $value->id_item;
-        $arq_name = $value->nome_img;
-        $abamenu = $value->tipo_item;
-        $nome = $value->nome_item;
-        $coletavelsurvival = $value->coletavel;
-        $nome_interno = $value->nome_interno;
-        $empilhavel = $value->empilhavel;
-        $versao = $value->versao_add;
-        $renovavel = $value->renovavel;
-        $aliases = $value->aliases;
-        $descricao = $value->descricao;
-
         # Inserindo o item no banco de dados
-        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno', '$aliases', '$descricao');";
+        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, $oculto_invt '$versao', '$nome_interno', '$aliases', '$descricao');";
         $executa = $conexao->query($insere);
+    }
 
-        if(array_key_exists("cor_item", $value)){ // Verifica se existe os dados de cor do item
-            $cor_item = $value->cor_item;
-            
-            $id_cor = $cor_item[0]->id_cor;
-            $tipo_item = $cor_item[0]->tipo_item;
+    if($id_item == null){
+        # Inserindo o item no banco de dados
+        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, $oculto_invt, '$versao', '$nome_interno', '$aliases', '$descricao');";
+        $executa = $conexao->query($insere);
+    }
+    
+    if(array_key_exists("cor_item", $value)){ // Verifica se existe os dados de cor do item
+        $cor_item = $value->cor_item;
+        
+        $id_cor = $cor_item[0]->id_cor;
+        $tipo_item = $cor_item[0]->tipo_item;
 
-            $insere = "INSERT into cor_item (id_cor, id_item, tipo_item) values ($id_cor, $id_item, $tipo_item)";
-            $executa = $conexao->query($insere);
-        }
+        $insere = "INSERT into cor_item (id_cor, id_item, tipo_item) values ($id_cor, $id_item, $tipo_item)";
+        $executa = $conexao->query($insere);
     }
 }
 

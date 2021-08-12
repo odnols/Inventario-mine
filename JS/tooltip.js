@@ -23,32 +23,34 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
             document.getElementById(id_nome_item).innerHTML += "<span class='"+ itens_especiais[cor_item] +"'>"+ nome +"</span>";
         else
             document.getElementById(id_nome_item).innerHTML = nome;
-            
-        if(descricao.indexOf("&") == -1){
-            document.getElementById(id_descricao_item).style.color = "#a8a8a8";
-            document.getElementById(id_descricao_item).style.textShadow = "3px 3px 0 #2a2a2a";
+        
+        if(typeof descricao != "undefined"){
+            if(descricao.indexOf("&") == -1){
+                document.getElementById(id_descricao_item).style.color = "#a8a8a8";
+                document.getElementById(id_descricao_item).style.textShadow = "3px 3px 0 #2a2a2a";
 
-            if(typeof descricao != "undefined")
-                document.getElementById(id_descricao_item).innerHTML = descricao;
-            else
-                document.getElementById(id_descricao_item).innerHTML = "";
-        }else{
+                if(typeof descricao != "undefined")
+                    document.getElementById(id_descricao_item).innerHTML = descricao;
+                else
+                    document.getElementById(id_descricao_item).innerHTML = "";
+            }else{
 
-            descricao_colorida = descricao.split("[");
+                descricao_colorida = descricao.split("[");
 
-            for(var j = 0; j < descricao_colorida.length; j++){
-                for(var i = 0; i < cores_efeitos.length; i++){
-                    if(descricao_colorida[j].indexOf(cores_efeitos[i]) != -1){
+                for(var j = 0; j < descricao_colorida.length; j++){
+                    for(var i = 0; i < cores_efeitos.length; i++){
+                        if(descricao_colorida[j].indexOf(cores_efeitos[i]) != -1){
 
-                        descricao_colorida[j] = descricao_colorida[j].replace(cores_efeitos[i], "", 1);
-                        
-                        document.getElementById(id_descricao_item).innerHTML += "<span class='"+ nome_cores_efeitos[i] +"'> "+ descricao_colorida[j] +" </span><br>";
+                            descricao_colorida[j] = descricao_colorida[j].replace(cores_efeitos[i], "", 1);
+                            
+                            document.getElementById(id_descricao_item).innerHTML += "<span class='"+ nome_cores_efeitos[i] +"'> "+ descricao_colorida[j] +" </span><br>";
 
-                        break;
+                            break;
+                        }
+
+                        if(descricao_colorida[j] == "&s")
+                            document.getElementById(id_descricao_item).innerHTML += "<div class='espaco'></div><br>";
                     }
-
-                    if(descricao_colorida[j] == "&s")
-                        document.getElementById(id_descricao_item).innerHTML += "<div class='espaco'></div><br>";
                 }
             }
         }

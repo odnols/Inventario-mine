@@ -10,6 +10,7 @@ create table item(
     coletavelSurvival tinyint(1),
     img varchar(500),
     renovavel tinyint(1),
+    oculto_invt tinyint(1),
     posicao_item int(11),
     nome_interno varchar(150),
     versao_adicionada varchar(150),
