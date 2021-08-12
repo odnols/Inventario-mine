@@ -65,14 +65,23 @@ img#menu{
     padding: 15px;
 }
 #estatisticas_inventario{
-    /* display: none; */
-    top: 18.2%;
-    z-index: 4;
+    top: 17.5%;
     width: 585px;
     padding: 5px;
     position: absolute;
     right: 4%;
     height: 408px;
+}
+img#prancheta{
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+}
+#text_estatsc{
+    z-index: 2 !important;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 .estat{
     position: absolute;
@@ -137,15 +146,15 @@ select{
     border-radius: 4px;
     left: 7%;
     top: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
 #preview{
     position: absolute;
     box-shadow: inset 0px 0px 10px black;
     width: 48px;
     height: 48px;
-    left: 30%;
-    top: 180px;
+    left: 25%;
+    top: 200px;
 }
 #listagem{
     width: 503px;
@@ -174,7 +183,7 @@ input, select{
     font-size: 24px;
     padding-left: 20px;
 }
-.Construcao, .Decorativos, .Redstone, .Transportes, .Diversos, .Alimentos, .Ferramentas, .Combate, .Pocoes, .Especiais, .Prancheta, .Generico{
+.Construcao, .Decorativos, .Redstone, .Transportes, .Diversos, .Alimentos, .Ferramentas, .Combate, .Pocoes, .Especiais, .Prancheta, .Generico, .oculto{
     display: none;
 }
 #item_0, #item_1, #item_2, #item_3, #item_4, #item_5, #item_6, #item_7, #item_8, #item_9, #item_10, #item_11{
@@ -240,6 +249,13 @@ input, select{
     z-index: 0 !important;
     animation: puxa_campos .5s;
 }
+.opcoes_baixo{
+    left: 0%;
+    position: absolute;
+    top: 96%;
+    z-index: 0 !important;
+    animation: puxa_campos2 .5s;
+}
 #img_decorativos{
     left: 16.2%;
 }
@@ -274,7 +290,7 @@ input, select{
     top: 1642%;
     left: 57.6%;
 }
-#img_configs_2, #img_versoes_2, #img_coletaveis_2, #img_genericos_2{
+#img_configs_2, #img_versoes_2, #img_coletaveis_2, #img_genericos_2, #img_ocultos_2{
     display: none;
     z-index: 1 !important;
 }
@@ -306,6 +322,14 @@ input, select{
 #img_prancheta{
     top: 1680%;
     left: 82.4%;
+}
+#img_oculto{
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+}
+#img_ocultos_2{
+    left: 3px;
 }
 #barra_pesquisa_input{
     box-shadow: 0 0 0 0;

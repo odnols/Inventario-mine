@@ -14,4 +14,4 @@ $banco = "minecraft_itens";
 		die("Falha na conexão: " . $conexao->connect_error);
 
 // Corretor ortográfico
-mysqli_set_charset($conexao,"utf8");
+mysqli_set_charset($conexao, "utf8");

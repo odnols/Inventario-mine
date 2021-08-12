@@ -1,5 +1,5 @@
 // Variavéis Globais 
-var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0, tema = null;
+var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0, itens_ocultos = 0, tema = null;
 
 function gerencia_scroll(valor){
     libera_scroll = valor;
@@ -124,7 +124,7 @@ function categoria(alvo, local){
         alvo = 10;
     }
     
-    if(alvo == "off" || alvo == "não_coletável" || alvo == "generico")
+    if(alvo == "off" || alvo == "não_coletável" || alvo == "generico" || alvo == "oculto")
         verifica_posicao(alvo);
     else{
         document.getElementById("img_configs_2").style.display = "none";
@@ -140,8 +140,14 @@ function categoria(alvo, local){
     }else
         alvos = document.getElementsByClassName(alvo);
     
-    if((versoes.includes(alvo) || categorias.includes(categorias[alvo])) && itens_genericos == 1){ // Esconde todos os itens genéricos
-        mostrar_todos();
+    if((versoes.includes(alvo) || categorias.includes(categorias[alvo])) &&  (itens_genericos || itens_ocultos)){ // Esconde todos os itens genéricos
+        
+        if(itens_genericos)
+            mostrar_genericos();
+
+        if(itens_ocultos)
+            mostrar_ocultos();
+
         cache_pesquisa = null;
         document.getElementById("barra_pesquisa_input").value = "";
     }
@@ -176,6 +182,7 @@ function categoria(alvo, local){
                             esconde[3].style.display = "Block";
                             esconde[4].style.display = "Block";
                             esconde[5].style.display = "Block";
+                            esconde[6].style.display = "Block";
                         }
                     }
                 }else{
@@ -258,7 +265,7 @@ function categoria(alvo, local){
         document.getElementById("titulo_aba").innerHTML = nome_aba;
 }
 
-function mostrar_todos(){
+function mostrar_genericos(){
     var alvos = document.getElementsByClassName('Generico');
 
     if(itens_genericos == 0){
@@ -278,6 +285,26 @@ function mostrar_todos(){
     }
 }
 
+function mostrar_ocultos(){
+    var alvos = document.getElementsByClassName('oculto');
+
+    if(itens_ocultos == 0){
+        for(var i = 0; i < alvos.length; i++){
+            alvos[i].style.display = "Block";
+        }
+
+        itens_ocultos = 1;
+    }else{
+        for(var i = 0; i < alvos.length; i++){
+            alvos[i].style.display = "None";
+        }
+        
+        document.getElementById("img_ocultos_2").style.display = "none";
+
+        itens_ocultos = 0;
+    }
+}
+
 function filtra_pesquisa(){
     texto = document.getElementById("barra_pesquisa_input").value;
     texto = texto.toLowerCase();
@@ -294,7 +321,7 @@ function filtragem_automatica(alvo_filtragem, local){
         alvo_filtragem = "generico";
 
     // Verifica se a requisição é igual a anterior e desabilita o elemento
-    if(cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "generico"){
+    if(cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "generico" || cache_pesquisa == "oculto"){
         if(cache_pesquisa != alvo_filtragem){
             cache_pesquisa = alvo_filtragem;
             document.getElementById("barra_pesquisa_input").value = alvo_filtragem;
@@ -312,7 +339,10 @@ function filtragem_automatica(alvo_filtragem, local){
     }
 
     if(alvo_filtragem == "generico" || (alvo_filtragem != "generico" && itens_genericos == 1))
-        mostrar_todos();
+        mostrar_genericos();
+
+    if(alvo_filtragem == "oculto" || (alvo_filtragem != "oculto" && itens_ocultos == 1))
+        mostrar_ocultos();
 
     filtra_pesquisa();
 }
@@ -386,8 +416,11 @@ function verifica_posicao(caso){
     if(caso == "generico")
         caso = 2;
 
-    alvos = ["img_configs", "img_coletaveis", "img_genericos"];
-    alvos_finais = ["img_configs_2", "img_coletaveis_2", "img_genericos_2"];
+    if(caso == "oculto")
+        caso = 3;
+
+    alvos = ["img_configs", "img_coletaveis", "img_genericos", "img_ocultos"];
+    alvos_finais = ["img_configs_2", "img_coletaveis_2", "img_genericos_2", "img_ocultos_2"];
 
     elemento = document.getElementById(alvos[caso]);
     posicao = elemento.getBoundingClientRect();
@@ -396,10 +429,19 @@ function verifica_posicao(caso){
         document.getElementById(alvos_finais[i]).style.display = "none";
     }
 
-    if(posicao.x > 622)
-        document.getElementById(alvos_finais[caso]).style.animation = "none";
-    else
-        document.getElementById(alvos_finais[caso]).style.animation = "puxa_campos .5s";
+    console.log(posicao.y);
+
+    if(caso != 3){
+        if(posicao.x > 622)
+            document.getElementById(alvos_finais[caso]).style.animation = "none";
+        else
+            document.getElementById(alvos_finais[caso]).style.animation = "puxa_campos .5s";
+    }else{
+        if(posicao.y > 510)
+            document.getElementById(alvos_finais[caso]).style.animation = "none";
+        else
+            document.getElementById(alvos_finais[caso]).style.animation = "puxa_campos2 .5s";
+    }
 
     document.getElementById(alvos_finais[caso]).style.display = "block";
 }
@@ -469,11 +511,11 @@ function sincroniza_tema(){
     if(tema == 0)
         alvo = "escuro";
     
-    lista_templates = ["#estatisticas_inventario", "#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item"];
-    nome_template = ["prancheta.png", "prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png"];
+    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item"];
+    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png"];
 
-    lista_imagens = ["img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu"];
-    nome_arquivos = ["aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "Menu.png"];
+    lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos"];
+    nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "Menu.png", "aba_oculto.png"];
 
     for(var i = 0; i < lista_imagens.length; i++){ // Imagens
         imagem = document.getElementById(lista_imagens[i]);

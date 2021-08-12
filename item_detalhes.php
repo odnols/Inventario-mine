@@ -35,6 +35,7 @@
       
     $renovavel = "";
     $coletavel_s = "";
+    $oculto_invt = "";
 
     $busca_dados = "SELECT * from item where id_item = $id_item";
     $executa = $conexao->query($busca_dados);
@@ -62,6 +63,9 @@
     if($dados["renovavel"])
         $renovavel = "checked";
 
+    if($dados["oculto_invt"])
+        $oculto_invt = "checked";
+    
     $cor_item = 0;
 
     $verificar_item = "SELECT * from cor_item where id_item = $id_item";
@@ -74,12 +78,15 @@
     } ?>
 
     <button id="btn_voltar" onclick="voltar_pag()">Voltar</button>
-    <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
 
     <div id="bttns_navegacao">
         <a href="item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao"> < </button></a>
         <a href="item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao"> > </button></a>
     </div>
+
+    <?php if(strlen($nome_item) > 0) { // Verifica se existem dados para o ID ?> 
+
+    <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
 
     <?php echo "<img id='img_detalhes' src='IMG/Itens/$tipo_item/$nome_img'>"; ?>    
     
@@ -156,6 +163,8 @@
 
             <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
+            <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
+
             <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage(1);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
 
             <img id="preview">
@@ -168,9 +177,16 @@
     
     <?php 
     
-    echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
-    
-    ?>
+        echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
+    }else{
+        echo "<script>toolTip(\"Oh, noo!\", \"[&2Este ID não existe ;C\", \"404\", 0, 1)</script>";
+
+        echo "<style>
+            #filtro_colorido{
+                background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(80,0,0,0.6699054621848739) 39%, rgba(255,0,0,0) 100%) !important;
+            }
+        </style>";
+    } ?>
 
     <script src="JS/engine.js"></script>
 </body>

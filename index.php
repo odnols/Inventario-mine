@@ -37,56 +37,64 @@
     </div>
     
     <div id="estatisticas_inventario">
-        <center><h2 class="cor_textos">Estatísticas</h2></center>
-    
-        <?php
-        $verificar = "SELECT * from item where abamenu != 'Generico'";
-        $executa = $conexao->query($verificar);
+        <img id="prancheta" src="#">
 
-        echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
+        <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
+            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
+            <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
+        </div>
+
+        <div id="text_estatsc">
+            <center><h2 class="cor_textos">Estatísticas</h2></center>
         
-        echo "<br><p class='estat cor_textos'>Itens Registrados: ";
-        echo $executa->num_rows ."</p>";
+            <?php
+            $verificar = "SELECT * from item where abamenu != 'Generico'";
+            $executa = $conexao->query($verificar);
 
-        $verificar = "SELECT * from item where coletavelsurvival = 1 and abamenu != 'Generico'";
-        $executa = $conexao->query($verificar);
+            echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
+            
+            echo "<br><p class='estat cor_textos'>Itens Registrados: ";
+            echo $executa->num_rows ."</p>";
 
-        echo "<br><p class='estat cor_textos'> Coletáveis: ";
-        echo $executa->num_rows ."</p>";
+            $verificar = "SELECT * from item where coletavelsurvival = 1 and abamenu != 'Generico'";
+            $executa = $conexao->query($verificar);
 
-        $verificar = "SELECT * from item where renovavel = 1 and abamenu != 'Generico'";
-        $executa = $conexao->query($verificar);
+            echo "<br><p class='estat cor_textos'> Coletáveis: ";
+            echo $executa->num_rows ."</p>";
 
-        echo "<br><p class='estat cor_textos'>Renováveis: ";
-        echo $executa->num_rows ."</p>";
-        
-        $verificar = "SELECT * from item where empilhavel != 0 and abamenu != 'Generico'";
-        $executa = $conexao->query($verificar);
+            $verificar = "SELECT * from item where renovavel = 1 and abamenu != 'Generico'";
+            $executa = $conexao->query($verificar);
 
-        echo "<br><p class='estat cor_textos'>Empilháveis: ";
-        echo $executa->num_rows ."</p>";
-        
-        $verificar = "SELECT * from item where empilhavel != 0 and coletavelsurvival = 1 and abamenu != 'Generico'";
-        $executa = $conexao->query($verificar);
+            echo "<br><p class='estat cor_textos'>Renováveis: ";
+            echo $executa->num_rows ."</p>";
+            
+            $verificar = "SELECT * from item where empilhavel != 0 and abamenu != 'Generico'";
+            $executa = $conexao->query($verificar);
 
-        echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
-        echo $executa->num_rows ."</p>";
+            echo "<br><p class='estat cor_textos'>Empilháveis: ";
+            echo $executa->num_rows ."</p>";
+            
+            $verificar = "SELECT * from item where empilhavel != 0 and coletavelsurvival = 1 and abamenu != 'Generico'";
+            $executa = $conexao->query($verificar);
 
-        $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
-        $executa = $conexao->query($verificar);
+            echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
+            echo $executa->num_rows ."</p>";
 
-        echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
-        echo $executa->num_rows ."</p>";
+            $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
+            $executa = $conexao->query($verificar);
 
-        $verificar = "SELECT * from item where empilhavel like 0 and abamenu != 'Generico'";
-        $executa = $conexao->query($verificar);
+            echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
+            echo $executa->num_rows ."</p>";
 
-        echo "<br><p class='estat cor_textos'>Não empilháveis: ";
-        echo $executa->num_rows ."</p>";
-        
-        $verificar = "SELECT * from item order by id_item desc";
-        $executa = $conexao->query($verificar); ?>
+            $verificar = "SELECT * from item where empilhavel like 0 and abamenu != 'Generico'";
+            $executa = $conexao->query($verificar);
 
+            echo "<br><p class='estat cor_textos'>Não empilháveis: ";
+            echo $executa->num_rows ."</p>";
+            
+            $verificar = "SELECT * from item order by id_item desc";
+            $executa = $conexao->query($verificar); ?>
+        </div>
     </div>
     
     <div id="botoes_ferramentas">
@@ -102,8 +110,8 @@
 
     <div id="menu_user">
         <a class="bttn_frrm" href="#" onclick="troca_tema()">Tema</a>
-
     </div>
+
     <!-- Importar célula de dados para o banco -->
     <form id="selecionar_celula_dados" method="post" action="PHP/importar_dados.php" enctype="multipart/form-data">
 
@@ -237,6 +245,8 @@
                                 
                 $apelido = null;
                 $converte = null;
+                $livro_encant = null;
+                $oculto_invt = null;
 
                 $id_item = $dados["id_item"];
                 $nome_img = $dados["img"];
@@ -247,8 +257,11 @@
                 $empilhavel = $dados["empilhavel"];
                 $versao_add = $dados["versao_adicionada"];
                 $renovavel = $dados["renovavel"];
+                $oculto_invt = $dados["oculto_invt"];
 
                 $descricao = $dados["descricao"];
+
+                $descricao_pes = str_replace("[&r", "", $descricao);
 
                 if(!$nome_interno)
                     $nome_interno = "off";
@@ -256,8 +269,11 @@
                 if(!$versao_add || $versao_add == "outro")
                     $versao_add = "off";
                 
+                if($oculto_invt == 1)
+                    $oculto_invt = "Oculto";
+
                 if(!$renovavel)
-                    $renovavel = "não renovável";
+                    $renovavel = "não_renovável";
                 else
                     $renovavel = "renovável";
                 
@@ -279,6 +295,14 @@
                     }
                 }
 
+                for($i = 0; $i < strlen($descricao_pes); $i++){
+                    $livro_encant = $livro_encant." ";
+                    
+                    for($x = 0; $x <= $i; $x++){
+                        $livro_encant = $livro_encant."".$descricao_pes[$x];
+                    }
+                }
+
                 $cor_item = 0;
 
                 $verificar_item = "SELECT * from cor_item where id_item = $id_item";
@@ -292,12 +316,18 @@
                 
                 $auto_completa = strtolower($converte);
                 
-                if($tipo_item != "Generico"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                $livro_encant = strtolower($livro_encant);
+
+                if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
+                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $livro_encant' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }else{
-                    echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                    if($oculto_invt != "Oculto"){
+                        echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                    }else{
+                        echo "<div class='slot_item oculto' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                    }
                         echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
                     echo "</div>";
                 }
@@ -316,7 +346,7 @@
     <script type="text/javascript">
     
         categoria(10, 0);
-        clique("prancheta", 0);
+        // clique("prancheta", 0);
 
         document.addEventListener("onKeyDown", clique());
     </script>
