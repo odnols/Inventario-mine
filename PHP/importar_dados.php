@@ -30,18 +30,18 @@ foreach($data as $key => $value){
     $descricao = $value->descricao;
     $oculto_invt = $value->oculto_invt;
 
+    if($renovavel == null)
+        $renovavel = 0;
+
+    if($oculto_invt == null)
+        $oculto_invt = 0;
+    
     if(!in_array($value->id_item, $IDs_registrados)){
         # Inserindo o item no banco de dados
-        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, $oculto_invt '$versao', '$nome_interno', '$aliases', '$descricao');";
+        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, $oculto_invt, '$versao', '$nome_interno', '$aliases', '$descricao');";
         $executa = $conexao->query($insere);
     }
 
-    if($id_item == null){
-        # Inserindo o item no banco de dados
-        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, $oculto_invt, '$versao', '$nome_interno', '$aliases', '$descricao');";
-        $executa = $conexao->query($insere);
-    }
-    
     if(array_key_exists("cor_item", $value)){ // Verifica se existe os dados de cor do item
         $cor_item = $value->cor_item;
         
@@ -51,7 +51,7 @@ foreach($data as $key => $value){
         $insere = "INSERT into cor_item (id_cor, id_item, tipo_item) values ($id_cor, $id_item, $tipo_item)";
         $executa = $conexao->query($insere);
     }
-}
+} 
 
 header("Location: ../index.php");
 ?>
@@ -59,27 +59,8 @@ header("Location: ../index.php");
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Importação</title>
-    <link rel="shortcut icon" href="IMG/Itens/Construcao/bloco_grama.png">
-
-    <style>
-        body{
-            background-color: black;
-            text-align: center !important;
-            overflow-y: hidden;
-            overflow-x: hidden;
-        }
-        img{
-            position: absolute;
-            left: 50%;
-            top: 10%;
-            margin-left: -400px;
-        }
-        h1{
-            color: white;
-            font-family: "Minecraftia";
-        }
-    </style>
+    <title>Importando dados...</title>
+    <link rel="shortcut icon" href="../IMG/Itens/Construcao/bloco_grama.png">
 </head>
 <body>
     <img src="https://www.criatives.com.br/wp-content/uploads/2014/10/gifs_matematicas_David_Whyte_01.gif">
