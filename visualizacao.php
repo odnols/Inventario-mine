@@ -70,12 +70,16 @@
             <center><h2 class="cor_textos">Estatísticas</h2></center>
         
             <?php
+            $verificar = "SELECT * from item where versao_adicionada = $versao_jogo";
+            $executa = $conexao->query($verificar);
+            echo "<p class='estat cor_textos'>Itens adicionados na versão 1.$versao_jogo ( ";
+            echo $executa->num_rows ." ) </p>";
+
+
             $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
-            echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
-            
-            echo "<br><p class='estat cor_textos'>Itens Registrados: ";
+            echo "<br><p class='estat cor_textos'>Itens no Inventário: ";
             echo $executa->num_rows ."</p>";
 
             $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and coletavelsurvival = 1 and abamenu != 'Generico'";
