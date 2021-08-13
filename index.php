@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="IMG/Itens/Construcao/bloco_grama.png">
+    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/bloco_grama.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">
@@ -23,8 +23,8 @@
             for($i = 0; $i < 18; $i += 2){
                 $x = $i + 1;
 
-                echo "-> <a href='#' onclick='categoria(1.$i, 2)'>1.$i</a> |";
-                echo " <a href='#' onclick='categoria(1.$x, 2)'>1.$x</a><br>";
+                echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a> |";
+                echo " <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a><br>";
             }
         ?>
     </div>
@@ -41,6 +41,12 @@
             <center><h2 class="cor_textos">Estatísticas</h2></center>
         
             <?php
+
+            $graphics = true;
+
+            if(!isset($_GET["dg"]))
+                $graphics = false;    
+            
             $verificar = "SELECT * from item where abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
@@ -102,6 +108,10 @@
     </div>
 
     <div id="menu_user">
+        <?php if(!isset($_GET["dg"])) { ?>
+        <a class="bttn_frrm" href="index.php?dg=true" onclick="#">Programmer Art</a> <?php } else { ?>
+        <a class="bttn_frrm" href="index.php" onclick="#">Gráficos padrões</a> <?php } ?>
+
         <a class="bttn_frrm" href="visualizacao.php">Máquina do tempo</a>
         <a class="bttn_frrm" href="#" onclick="troca_tema()">Tema</a>
     </div>
@@ -241,6 +251,7 @@
                 $converte = null;
                 $descricao_pesq = null;
                 $oculto_invt = null;
+                $geracao = "new";
 
                 $id_item = $dados["id_item"];
                 $nome_icon = $dados["nome_icon"];
@@ -261,6 +272,9 @@
 
                 if(!$nome_interno)
                     $nome_interno = "off";
+
+                if($versao_add < 13 && $graphics)
+                    $geracao = "classic";
 
                 if($versao_add == null)
                     $versao_add = "off";
@@ -322,7 +336,7 @@
                 
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
                     echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
@@ -330,7 +344,7 @@
                     }else{
                         echo "<div class='slot_item oculto' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }
             } ?>
@@ -343,10 +357,8 @@
     <script src="JS/engine.js"></script>
 
     <script type="text/javascript">
-        
-        main();
-        categoria(10, 0);
-        // clique("prancheta", 0);
+
+        categoria(1, 0);
 
         document.addEventListener("onKeyDown", clique());
     </script>
