@@ -18,7 +18,7 @@ while($dados = $executa->fetch_assoc()){
 foreach($data as $key => $value){
     
     $id_item = $value->id_item;
-    $arq_name = $value->nome_img;
+    $nome_icon = $value->nome_icon;
     $abamenu = $value->tipo_item;
     $nome = $value->nome_item;
     $coletavelsurvival = $value->coletavel;
@@ -36,9 +36,21 @@ foreach($data as $key => $value){
     if($oculto_invt == null)
         $oculto_invt = 0;
     
+    $versao = explode(".", $versao);
+
+    if(!isset($versao[1]))
+        $versao[1] = 0;
+    
+    if($versao[1] == 101)
+        $versao[1] = 10;
+
+    $versao = $versao[1];
+
+    echo "$nome_icon <br><br>";
+
     if(!in_array($value->id_item, $IDs_registrados)){
         # Inserindo o item no banco de dados
-        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, img, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, $oculto_invt, '$versao', '$nome_interno', '$aliases', '$descricao');";
+        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$nome_icon', $renovavel, $oculto_invt, $versao, '$nome_interno', '$aliases', '$descricao');";
         $executa = $conexao->query($insere);
     }
 
@@ -53,17 +65,4 @@ foreach($data as $key => $value){
     }
 } 
 
-header("Location: ../index.php");
-?>
-
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Importando dados...</title>
-    <link rel="shortcut icon" href="../IMG/Itens/Construcao/bloco_grama.png">
-</head>
-<body>
-    <img src="https://www.criatives.com.br/wp-content/uploads/2014/10/gifs_matematicas_David_Whyte_01.gif">
-    <h1>Estamos importando uns dados...</h1>
-</body>
-</html>
+Header("Location: ../index.php");

@@ -55,7 +55,7 @@ $executa = $conexao->query($insere);
 
 // Atualizando a versão
 if(strlen($versao) < 1 || $versao == "Outro")
-    $insere = "UPDATE item set versao_adicionada = null where id_item = $id_item";
+    $insere = "UPDATE item set versao_adicionada = 0 where id_item = $id_item";
 else
     $insere = "UPDATE item set versao_adicionada = '$versao' where id_item = $id_item";
 $executa = $conexao->query($insere);
@@ -77,7 +77,7 @@ if($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0){ // Só insere se 
 
 // Atualizando a imagem que está sendo utilizada
 if(strlen($arq_name) > 0){
-    $atualiza = "UPDATE item set img = '$arq_name' where id_item = $id_item";
+    $atualiza = "UPDATE item set nome_icon = '$arq_name' where id_item = $id_item";
     $executa = $conexao->query($atualiza);
 
     // Criando uma cópia da imagem

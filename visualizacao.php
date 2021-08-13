@@ -20,22 +20,44 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-
-            $versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.101", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", ""];
-
-            for($i = 0; $i < sizeof($versoes) - 1; $i += 2){
+            if(isset($_GET["versao_jogo"]))
+                $versao_jogo = $_GET["versao_jogo"];
+            
+            if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 18)
+                $versao_jogo = 5;
+            
+            for($i = 0; $i < 18; $i += 2){
                 $x = $i + 1;
 
-                if($versoes[$i] != "1.101")
-                    echo "-> <a href='#' onclick='categoria($versoes[$i], 2)'>$versoes[$i]</a> |";
-                else
-                    echo "-> <a href='#' onclick='categoria(1.101, 2)'>1.10</a> |";
+                echo "-> <a href='#' onclick='categoria(1.$i, 2)'>1.$i</a>";
+                
+                if($x <= $versao_jogo)
+                    echo " | <a href='#' onclick='categoria(1.$x, 2)'>1.$x</a><br>";
 
-                echo " <a href='#' onclick='categoria($versoes[$x], 2)'>$versoes[$x]</a><br>";
+                if($versao_jogo == $i || $versao_jogo == $x) // Para o menu
+                    break;
             }
         ?>
     </div>
-    
+        
+    <div id="menu_user">
+
+        <?php if(($versao_jogo - 1) > -1){ ?>
+            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo - 1; ?>"><button class="navegacao"> < </button></a>
+        <?php }
+
+        if($versao_jogo < 18) { ?>
+            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>"><button class="navegacao"> > </button></a>
+        <?php } ?>
+
+        <a class="bttn_frrm" href="index.php">Gerenciador</a>
+        <a class="bttn_frrm" href="#" onclick="troca_tema()">Tema</a>
+    </div>
+
+    <div id="infos_versao">
+        Edição Java 1.<?php echo $versao_jogo; ?>
+    </div>
+
     <div id="estatisticas_inventario">
         <img id="prancheta" src="#">
 
@@ -48,7 +70,7 @@
             <center><h2 class="cor_textos">Estatísticas</h2></center>
         
             <?php
-            $verificar = "SELECT * from item where abamenu != 'Generico'";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
@@ -56,43 +78,43 @@
             echo "<br><p class='estat cor_textos'>Itens Registrados: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where coletavelsurvival = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and coletavelsurvival = 1 and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where renovavel = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and renovavel = 1 and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Renováveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item where empilhavel != 0 and abamenu != 'Generico'";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and empilhavel != 0 and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item where empilhavel != 0 and coletavelsurvival = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and empilhavel != 0 and coletavelsurvival = 1 and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where empilhavel like 0 and abamenu != 'Generico'";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and empilhavel like 0 and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Não empilháveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item order by id_item desc";
+            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo order by id_item desc";
             $executa = $conexao->query($verificar); ?>
         </div>
     </div>
@@ -172,11 +194,11 @@
                                 
                 $apelido = null;
                 $converte = null;
-                $livro_encant = null;
+                $descricao_pesq = null;
                 $oculto_invt = null;
 
                 $id_item = $dados["id_item"];
-                $nome_img = $dados["img"];
+                $nome_icon = $dados["nome_icon"];
                 $tipo_item = $dados["abamenu"];
                 $nome_item = $dados["nome"];
                 $coletavel = $dados["coletavelSurvival"];
@@ -186,16 +208,20 @@
                 $renovavel = $dados["renovavel"];
                 $oculto_invt = $dados["oculto_invt"];
 
-                $descricao = $dados["descricao"];
+                $descricao = "[&1". $tipo_item;
+
+                $descricao = $descricao ." ". $dados["descricao"];
 
                 $descricao_pes = str_replace("[&r", "", $descricao);
 
                 if(!$nome_interno)
                     $nome_interno = "off";
 
-                if(!$versao_add || $versao_add == "outro")
+                if($versao_add == null)
                     $versao_add = "off";
-                
+                else
+                    $versao_add = "1.". $versao_add;
+
                 if($oculto_invt == 1)
                     $oculto_invt = "Oculto";
 
@@ -223,10 +249,10 @@
                 }
 
                 for($i = 0; $i < strlen($descricao_pes); $i++){
-                    $livro_encant = $livro_encant." ";
+                    $descricao_pesq = $descricao_pesq." ";
                     
                     for($x = 0; $x <= $i; $x++){
-                        $livro_encant = $livro_encant."".$descricao_pes[$x];
+                        $descricao_pesq = $descricao_pesq."".$descricao_pes[$x];
                     }
                 }
 
@@ -243,11 +269,15 @@
                 
                 $auto_completa = strtolower($converte);
                 
-                $livro_encant = strtolower($livro_encant);
+                $descricao_pesq = strtolower($descricao_pesq);
 
+                for($i = 0; $i < 20; $i++){ // Elimina todos os números de versão da descrição
+                    $descricao_pesq = str_replace("1.".$i, "", $descricao_pesq);
+                }
+                
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $livro_encant' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
+                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
@@ -255,7 +285,7 @@
                     }else{
                         echo "<div class='slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }
             } ?>

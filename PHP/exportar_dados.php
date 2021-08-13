@@ -11,7 +11,7 @@ $executa = $conexao->query($verificar);
 while($dados = $executa->fetch_assoc()){
     
     $id_item = $dados["id_item"];
-    $nome_img = $dados["img"];
+    $nome_icon = $dados["nome_icon"];
     $tipo_item = $dados["abamenu"];
     $nome_item = $dados["nome"];
     $coletavel = $dados["coletavelSurvival"];
@@ -29,6 +29,8 @@ while($dados = $executa->fetch_assoc()){
     if(strlen($descricao) == 0)
         $descricao = null;
 
+    $versao_add = floatval($versao_add); 
+    
     # Remove o underline do nome interno do item
     // $nome_int = str_replace("_", " ", $nome_interno);
     $nome_int = $nome_interno;
@@ -55,7 +57,7 @@ while($dados = $executa->fetch_assoc()){
     if($executa_item->num_rows == 0){
         array_push($data, array(
             "id_item" => $id_item,
-            "nome_img" => $nome_img,
+            "nome_icon" => $nome_icon,
             "tipo_item" => $tipo_item,
             "nome_item" => $nome_item,
             "coletavel" => $coletavel,
@@ -70,7 +72,7 @@ while($dados = $executa->fetch_assoc()){
     }else{
         array_push($data, array(
             "id_item" => $id_item,
-            "nome_img" => $nome_img,
+            "nome_icon" => $nome_icon,
             "tipo_item" => $tipo_item,
             "nome_item" => $nome_item,
             "coletavel" => $coletavel,

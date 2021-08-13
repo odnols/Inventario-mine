@@ -1,5 +1,5 @@
 // Variavéis Globais 
-var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0, itens_ocultos = 0, tema = null;
+var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0, itens_ocultos = 0, tema = null, pesquisa = 0;
 
 function gerencia_scroll(valor){
     libera_scroll = valor;
@@ -90,12 +90,7 @@ function categoria(alvo, local){
     if(local == 2){
         local = 1;
 
-        if(alvo == 1)
-            alvo = "1.0";
-        else if(alvo == 1.101)
-            alvo = "1.10";
-        else
-            alvo = alvo.toString();
+        alvo = alvo.toString();
         
         document.getElementById("barra_pesquisa_input").value = alvo;
     }
@@ -104,6 +99,8 @@ function categoria(alvo, local){
         alvo = 10;
 
     if(alvo == 10){
+        pesquisa = 1;
+
         texto = document.getElementById("barra_pesquisa_input").value;
         document.getElementById("titulo_aba").innerHTML = "Buscar";        
 
@@ -118,7 +115,10 @@ function categoria(alvo, local){
     versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18"];
 
     itens = 0;
-    
+
+    if((categorias[alvo]) && (categorias[alvo] != "Pesquisa" && local != 1)) // Descrição das abas do inventário para os itens
+        pesquisa = 0;
+
     if(typeof alvo == "string" && alvo.length == 0){
         local = 0;
         alvo = 10;
@@ -232,7 +232,7 @@ function categoria(alvo, local){
         }
     }else // Limpa os slots de outras abas
         document.getElementById("complementa_slots").innerHTML = "";
-
+    
     if(versoes.includes(alvo)){
         $("#versao_referencia").fadeIn();
         document.getElementById("num_referencia").innerHTML = alvo + " ( "+ alvos.length + " )";
@@ -429,8 +429,6 @@ function verifica_posicao(caso){
         document.getElementById(alvos_finais[i]).style.display = "none";
     }
 
-    console.log(posicao.y);
-
     if(caso != 3){
         if(posicao.x > 622)
             document.getElementById(alvos_finais[caso]).style.animation = "none";
@@ -554,5 +552,95 @@ function sincroniza_tema(){
             textos[i].style.color = "black";
             document.getElementById("titulo_aba").style.color = "#3f3f3f";
         }
+    }
+}
+
+function toolTip(nome, descricao, nome_interno, cor_item, local){
+
+    if(typeof nome != "undefined"){
+
+        id_nome_item = "nome_item_minetip";
+        id_descricao_item = "descricao_item_minetip";
+        id_nome_interno = "nome_interno_minetip";
+
+        if(typeof local != "undefined"){
+            id_nome_item = "nome_item_minetp";
+            id_descricao_item = "descricao_item_minetp";
+            id_nome_interno = "nome_interno_minetp";
+        }
+
+        document.getElementById(id_nome_item).innerHTML = "";
+        document.getElementById(id_descricao_item).innerHTML = "";
+
+        let itens_especiais = ["", "item_encantado", "item_especial", "item_lendario"];
+        let cores_efeitos = ["&1", "&2", "&3", "&4", "&r"];
+        let nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde", "efeito_cor_padrao"];
+
+        if(cor_item > 0)
+            document.getElementById(id_nome_item).innerHTML += "<span class='"+ itens_especiais[cor_item] +"'>"+ nome +"</span>";
+        else
+            document.getElementById(id_nome_item).innerHTML = nome;
+        
+        if(typeof descricao != "undefined"){
+            if(descricao.indexOf("&") == -1){
+                document.getElementById(id_descricao_item).style.color = "#a8a8a8";
+                document.getElementById(id_descricao_item).style.textShadow = "3px 3px 0 #2a2a2a";
+
+                if(typeof descricao != "undefined")
+                    document.getElementById(id_descricao_item).innerHTML = descricao;
+                else
+                    document.getElementById(id_descricao_item).innerHTML = "";
+            }else{
+
+                alvos_replace = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
+
+                if(pesquisa == 0){
+                    for(var i = 0; i< alvos_replace.length; i++){
+                        descricao = descricao.replace("[&1"+ alvos_replace[i], "");
+                    }
+                }else{
+                    categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
+
+                    alvo_alteracao = descricao.split(" ");
+                    alvo_alteracao[0] = alvo_alteracao[0].replace("[&1", "");
+
+                    var i = alvos_replace.indexOf(alvo_alteracao[0]);
+                    descricao = descricao.replace(alvo_alteracao[0], "[&1"+ categorias_exib[i]);
+                }
+
+                descricao_colorida = descricao.split("[");
+
+                for(var j = 0; j < descricao_colorida.length; j++){
+                    for(var i = 0; i < cores_efeitos.length; i++){
+                        if(descricao_colorida[j].indexOf(cores_efeitos[i]) != -1){
+
+                            descricao_colorida[j] = descricao_colorida[j].replace(cores_efeitos[i], "", 1);
+                            
+                            document.getElementById(id_descricao_item).innerHTML += "<span class='"+ nome_cores_efeitos[i] +"'> "+ descricao_colorida[j] +" </span><br>";
+
+                            break;
+                        }
+
+                        if(descricao_colorida[j] == "&s")
+                            document.getElementById(id_descricao_item).innerHTML += "<div class='espaco'></div><br>";
+                    }
+                }
+            }
+        }
+
+        if(typeof nome_interno != "undefined")
+            document.getElementById(id_nome_interno).innerHTML = "minecraft:"+ nome_interno;
+        else
+            document.getElementById(id_nome_interno).innerHTML = "";
+
+        if(typeof local == "undefined")
+            document.getElementById("minetip-tooltip").style.display = "Block";
+
+        $(".slot_item").on("mousemove", function( event ) {
+            $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
+        });
+
+    }else{
+        document.getElementById("minetip-tooltip").style.display = "None";
     }
 }
