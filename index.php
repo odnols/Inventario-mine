@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tooltip.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/jquery-1.11.3.min.js"></script>
 
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
 </head>
@@ -339,7 +339,7 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="JS/jquery-3.4.1.js"></script>
     <script src="JS/engine.js"></script>
 
     <script type="text/javascript">
