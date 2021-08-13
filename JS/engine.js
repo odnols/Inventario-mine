@@ -25,10 +25,6 @@ function scrollSincronizado(principal, sincronizado){
     }
 }
 
-function main(){
-    document.addEventListener("keypress", clique);
-}
-
 function abre_menu(valor){
     if(valor == 1){
         $("#menu_completo").fadeOut();

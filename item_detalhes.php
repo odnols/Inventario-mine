@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="IMG/Itens/Construcao/bloco_grama.png">
+    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/bloco_grama.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">
@@ -91,7 +91,8 @@
 
     <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
 
-    <?php echo "<img id='img_detalhes' src='IMG/Itens/$tipo_item/$nome_icon'>"; ?>    
+    <?php echo "<img id='img_detalhes' src='IMG/Itens/new/$tipo_item/$nome_icon'>";
+          echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon'>"; ?>    
     
     <form id="prancheta_att" method="post" action="PHP/item_atualizar.php" enctype="multipart/form-data">
 
@@ -162,7 +163,7 @@
         <div id="checkboxes">
             <input class="input_check" type="checkbox" name="coletavelsurvival" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
-            <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+            <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
             <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
 

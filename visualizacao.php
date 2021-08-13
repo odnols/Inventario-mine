@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="IMG/Itens/Construcao/bloco_grama.png">
+    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/bloco_grama.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">
@@ -20,24 +20,28 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-            if(isset($_GET["versao_jogo"]))
-                $versao_jogo = $_GET["versao_jogo"];
-            
-            if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 18)
-                $versao_jogo = 5;
-            
-            for($i = 0; $i < 18; $i += 2){
-                $x = $i + 1;
+        $graphics = true;
 
-                echo "-> <a href='#' onclick='categoria(1.$i, 2)'>1.$i</a>";
-                
-                if($x <= $versao_jogo)
-                    echo " | <a href='#' onclick='categoria(1.$x, 2)'>1.$x</a><br>";
+        if(!isset($_GET["dg"]))
+            $graphics = false; 
 
-                if($versao_jogo == $i || $versao_jogo == $x) // Para o menu
-                    break;
-            }
-        ?>
+        if(isset($_GET["versao_jogo"]))
+            $versao_jogo = $_GET["versao_jogo"];
+        
+        if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 18)
+            $versao_jogo = 5;
+        
+        for($i = 0; $i < 18; $i += 2){
+            $x = $i + 1;
+
+            echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a>";
+            
+            if($x <= $versao_jogo)
+                echo " | <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a><br>";
+
+            if($versao_jogo == $i || $versao_jogo == $x) // Para o menu
+                break;
+        } ?>
     </div>
         
     <div id="menu_user">
@@ -49,6 +53,10 @@
         if($versao_jogo < 18) { ?>
             <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>"><button class="navegacao"> > </button></a>
         <?php } ?>
+
+        <?php if(!isset($_GET["dg"])) { ?>
+        <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>&dg=true" onclick="#">Programmer Art</a> <?php } else { ?>
+        <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>" onclick="#">Gráficos padrões</a> <?php } ?>
 
         <a class="bttn_frrm" href="index.php">Gerenciador</a>
         <a class="bttn_frrm" href="#" onclick="troca_tema()">Tema</a>
@@ -74,8 +82,7 @@
             $executa = $conexao->query($verificar);
             echo "<p class='estat cor_textos'>Itens adicionados na versão 1.$versao_jogo ( ";
             echo $executa->num_rows ." ) </p>";
-
-
+            
             $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
@@ -200,6 +207,7 @@
                 $converte = null;
                 $descricao_pesq = null;
                 $oculto_invt = null;
+                $geracao = "new";
 
                 $id_item = $dados["id_item"];
                 $nome_icon = $dados["nome_icon"];
@@ -220,6 +228,9 @@
 
                 if(!$nome_interno)
                     $nome_interno = "off";
+
+                if($versao_add < 13 && $graphics)
+                    $geracao = "classic";
 
                 if($versao_add == null)
                     $versao_add = "off";
@@ -281,7 +292,7 @@
                 
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
                     echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
@@ -289,7 +300,7 @@
                     }else{
                         echo "<div class='slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }
             } ?>
