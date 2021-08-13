@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tooltip.css">
     
-    <script src="JS/tooltip.js"></script>
-
+    <script src="JS/engine.js"></script>
+    
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
 </head>
 <body onload="sincroniza_tema()">
@@ -42,7 +42,7 @@
     
     $dados = $executa->fetch_assoc();
 
-    $nome_img = $dados["img"];
+    $nome_icon = $dados["nome_icon"];
     
     $nome_item = $dados["nome"];
     $nome_interno = $dados["nome_interno"];
@@ -56,7 +56,7 @@
 
     if($versao_add == null)
         $versao_add = "Outro";
-
+ 
     if($dados["coletavelSurvival"])
         $coletavel_s = "checked";
     
@@ -80,7 +80,10 @@
     <button id="btn_voltar" onclick="voltar_pag()">Voltar</button>
 
     <div id="bttns_navegacao">
-        <a href="item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao"> < </button></a>
+        <?php if($id_item - 1 > 0){ ?>
+            <a href="item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao"> < </button></a>
+        <?php } ?>
+
         <a href="item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao"> > </button></a>
     </div>
 
@@ -88,7 +91,7 @@
 
     <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
 
-    <?php echo "<img id='img_detalhes' src='IMG/Itens/$tipo_item/$nome_img'>"; ?>    
+    <?php echo "<img id='img_detalhes' src='IMG/Itens/$tipo_item/$nome_icon'>"; ?>    
     
     <form id="prancheta_att" method="post" action="PHP/item_atualizar.php" enctype="multipart/form-data">
 
@@ -146,14 +149,12 @@
             </select><br><br>
 
             <select name="versao" style="width: 505px;" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
-                <option value="<?php echo $versao_add ?>"><?php echo $versao_add ?></option>
 
-                <?php
-                $versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18"];
-
-                for($i = sizeof($versoes) - 1; $i >= 0; $i--){
-                    if($versao_add != $versoes[$i])
-                        echo "<option value='$versoes[$i]'>$versoes[$i]</option>";
+                <?php echo "<option value='$versao_add'>1.$versao_add</option>";
+        
+                for($i = 18; $i >= 0; $i--){
+                    if($versao_add != $i)
+                        echo "<option value='$i'>1.$i</option>";
                 } ?>
             </select>
         </div>
@@ -187,7 +188,8 @@
             }
         </style>";
     } ?>
-
-    <script src="JS/engine.js"></script>
 </body>
+
+<script src="JS/engine.js"></script>
+
 </html>

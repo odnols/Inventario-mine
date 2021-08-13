@@ -499,3 +499,15 @@ a{
     height: 43px;
     width: 43px;
 }
+#infos_versao{
+    position: absolute;
+    right: 15%;
+    text-align: center;
+    top: 5%;
+    width: 585px;
+    padding: 5px;
+    right: 4%;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 0px rgb(62, 62, 62);
+}

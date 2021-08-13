@@ -40,11 +40,11 @@ Por esta tela é possível definir a cor do nome do item, definir a aba que ele 
 
 ( Todos os `[&` pulam uma linha, com excessão do `[&r` ) <br><br>
 
-* <b>Exemplos de uso<b> <br>
+* <h3>Exemplos de uso<h3>
 -> Descrição de umaEspada = `[&s[&rNa mão principal: [&4Dano por golpe: 8 [&4Velocidade de ataque: 1.6` <br>
 O Resultado será este// <br>
 <img src="https://user-images.githubusercontent.com/56841881/129284333-cd3ef660-0e51-4f40-9e42-8742af529bca.png" alt="accessibility text"><br><br>
-  
+
 -> Descrição de uma Poção = `[&1Força (1:00) [&s[&3Efeito aplicado: [&1Dano por golpe: +3` <br>
 O Resultado será este// <br>
 <img src="https://user-images.githubusercontent.com/56841881/129284575-87664d82-9ad3-4d5c-93e5-0099f80300b8.png" alt="accessibility text"><br><br>
@@ -53,13 +53,13 @@ O Resultado será este// <br>
 <h2>Importando e Exportando</h2>
 <p>A Importação dos valores e a exportação é realizada através do arquivo JSON, dessa forma, também é possível adicionar itens editando o JSON e clicando para importar no sistema.<br>Só tenha certeza que o ID não é repetido, dessa forma o sistema irá adicionar o item, utilizando o ID informado</p>
 <img src="https://user-images.githubusercontent.com/56841881/129283878-c612a002-9603-4f97-bdd4-963b851b8086.png" alt="accessibility text">
-  
-  
+
+
 <h2>Estatísticas Gerais</h2>
 <p>Atendendo o objetivo do sistema, essa parte é onde ficam todos os valores interessantes sobre os itens do jogo, nele temos vários, onde é possível ver de forma concreta a quantidade de itens existentes no jogo, e com tais características.</p>
 <img src="https://user-images.githubusercontent.com/56841881/129284048-5f3029e8-1dc1-4fc3-aeeb-5eb539338587.png" alt="accessibility text">
-  
-  
+
+
 <h2>Modo noturno</h2>
 <p>Também há um modo noturno incluso no sistema, ele deixará tudo mais escuro ( :v ) e agradável aos olhos, caso precise/goste de usar este modo.</p>
 <img src="https://user-images.githubusercontent.com/56841881/129284931-8d68ba72-18a6-4620-a27e-cb0d2a17af98.png" alt="accessibility text">

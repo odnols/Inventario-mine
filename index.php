@@ -20,18 +20,11 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-
-            $versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.101", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", ""];
-
-            for($i = 0; $i < sizeof($versoes) - 1; $i += 2){
+            for($i = 0; $i < 18; $i += 2){
                 $x = $i + 1;
 
-                if($versoes[$i] != "1.101")
-                    echo "-> <a href='#' onclick='categoria($versoes[$i], 2)'>$versoes[$i]</a> |";
-                else
-                    echo "-> <a href='#' onclick='categoria(1.101, 2)'>1.10</a> |";
-
-                echo " <a href='#' onclick='categoria($versoes[$x], 2)'>$versoes[$x]</a><br>";
+                echo "-> <a href='#' onclick='categoria(1.$i, 2)'>1.$i</a> |";
+                echo " <a href='#' onclick='categoria(1.$x, 2)'>1.$x</a><br>";
             }
         ?>
     </div>
@@ -43,7 +36,7 @@
             <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
             <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
         </div>
-
+        
         <div id="text_estatsc">
             <center><h2 class="cor_textos">Estatísticas</h2></center>
         
@@ -109,6 +102,7 @@
     </div>
 
     <div id="menu_user">
+        <a class="bttn_frrm" href="visualizacao.php">Máquina do tempo</a>
         <a class="bttn_frrm" href="#" onclick="troca_tema()">Tema</a>
     </div>
 
@@ -242,14 +236,14 @@
             <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
             <?php 
             while($dados = $executa->fetch_assoc()){
-                                
+
                 $apelido = null;
                 $converte = null;
-                $livro_encant = null;
+                $descricao_pesq = null;
                 $oculto_invt = null;
 
                 $id_item = $dados["id_item"];
-                $nome_img = $dados["img"];
+                $nome_icon = $dados["nome_icon"];
                 $tipo_item = $dados["abamenu"];
                 $nome_item = $dados["nome"];
                 $coletavel = $dados["coletavelSurvival"];
@@ -259,16 +253,20 @@
                 $renovavel = $dados["renovavel"];
                 $oculto_invt = $dados["oculto_invt"];
 
-                $descricao = $dados["descricao"];
+                $descricao = "[&1". $tipo_item;
+
+                $descricao = $descricao ." ". $dados["descricao"];
 
                 $descricao_pes = str_replace("[&r", "", $descricao);
 
                 if(!$nome_interno)
                     $nome_interno = "off";
 
-                if(!$versao_add || $versao_add == "outro")
+                if($versao_add == null)
                     $versao_add = "off";
-                
+                else
+                    $versao_add = "1.". $versao_add;
+
                 if($oculto_invt == 1)
                     $oculto_invt = "Oculto";
 
@@ -296,10 +294,10 @@
                 }
 
                 for($i = 0; $i < strlen($descricao_pes); $i++){
-                    $livro_encant = $livro_encant." ";
+                    $descricao_pesq = $descricao_pesq." ";
                     
                     for($x = 0; $x <= $i; $x++){
-                        $livro_encant = $livro_encant."".$descricao_pes[$x];
+                        $descricao_pesq = $descricao_pesq."".$descricao_pes[$x];
                     }
                 }
 
@@ -316,11 +314,15 @@
                 
                 $auto_completa = strtolower($converte);
                 
-                $livro_encant = strtolower($livro_encant);
+                $descricao_pesq = strtolower($descricao_pesq);
 
+                for($i = 0; $i < 20; $i++){ // Elimina todos os números de versão da descrição
+                    $descricao_pesq = str_replace("1.".$i, "", $descricao_pesq);
+                }
+                
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $livro_encant' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
+                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
@@ -328,7 +330,7 @@
                     }else{
                         echo "<div class='slot_item oculto' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
-                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_img'>";
+                        echo "<img class='icon_item' src='IMG/Itens/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }
             } ?>
@@ -339,12 +341,10 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="JS/engine.js"></script>
-    <script src="JS/tooltip.js"></script>
-
-    <script language="javascript"> main(); </script>
 
     <script type="text/javascript">
-    
+        
+        main();
         categoria(10, 0);
         // clique("prancheta", 0);
 
