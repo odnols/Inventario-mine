@@ -13,16 +13,18 @@ Todas as características e estilos foram recriadas fidedignas ao jogo base na <
 
 <em>Nota: O Sistema está sempre sendo atualizado, sendo assim, verifique sempre para obter a versão mais atualizada :P</em>
 
+
 <h2>Pesquisando</h2>
 <p>A ferramenta de pesquisa também está presente, você pode procurar por qualquer item ou bloco.</p>
-![image](https://user-images.githubusercontent.com/56841881/129283366-df07ecf1-fb65-48ed-aa80-359cc4e774a4.png)
+<img src="https://user-images.githubusercontent.com/56841881/129285220-ef0cf3cc-a8df-4424-80bb-13241003bb62.png" alt="accessibility text">
 
 <p>Também há várias abas extras, para ajudar a gerenciar o sistema ou navegar entre as versões do jogo</p>
-![image](https://user-images.githubusercontent.com/56841881/129283488-d6b8a10e-50a4-4cc8-a22f-ca13f4d48471.png)
+<img src="https://user-images.githubusercontent.com/56841881/129285233-456852fa-5c44-483f-bb83-02b0d28c6820.png" alt="accessibility text">
+
 
 <h2>Editando</h2>
-<p>Para editar os itens, existe uma tela separada, onde vários dados do item podem ser alterados fácilmente.</p>
-![image](https://user-images.githubusercontent.com/56841881/129283580-bd158cbc-dd35-44d3-bd5b-dc9221b982df.png)
+<p>Para editar os itens, existe uma tela separada, onde vários dados do item podem ser alterados facilmente.</p>
+<img src="https://user-images.githubusercontent.com/56841881/129285247-4c226e9f-0770-413f-9955-7060a47e31e9.png" alt="accessibility text">
 
 Por esta tela é possível definir a cor do nome do item, definir a aba que ele irá aparecer no menu, a versão que foi adicionado, seu nome, descrição e outras estatísticas.
 
@@ -41,21 +43,23 @@ Por esta tela é possível definir a cor do nome do item, definir a aba que ele 
 * <b>Exemplos de uso<b> <br>
 -> Descrição de umaEspada = `[&s[&rNa mão principal: [&4Dano por golpe: 8 [&4Velocidade de ataque: 1.6` <br>
 O Resultado será este// <br>
-![image](https://user-images.githubusercontent.com/56841881/129284333-cd3ef660-0e51-4f40-9e42-8742af529bca.png) <br><br>
-
+<img src="https://user-images.githubusercontent.com/56841881/129284333-cd3ef660-0e51-4f40-9e42-8742af529bca.png" alt="accessibility text"><br><br>
+  
 -> Descrição de uma Poção = `[&1Força (1:00) [&s[&3Efeito aplicado: [&1Dano por golpe: +3` <br>
 O Resultado será este// <br>
-![image](https://user-images.githubusercontent.com/56841881/129284575-87664d82-9ad3-4d5c-93e5-0099f80300b8.png) <br><br>
+<img src="https://user-images.githubusercontent.com/56841881/129284575-87664d82-9ad3-4d5c-93e5-0099f80300b8.png" alt="accessibility text"><br><br>
 
 
 <h2>Importando e Exportando</h2>
 <p>A Importação dos valores e a exportação é realizada através do arquivo JSON, dessa forma, também é possível adicionar itens editando o JSON e clicando para importar no sistema.<br>Só tenha certeza que o ID não é repetido, dessa forma o sistema irá adicionar o item, utilizando o ID informado</p>
-![image](https://user-images.githubusercontent.com/56841881/129283878-c612a002-9603-4f97-bdd4-963b851b8086.png)
-
+<img src="https://user-images.githubusercontent.com/56841881/129283878-c612a002-9603-4f97-bdd4-963b851b8086.png" alt="accessibility text">
+  
+  
 <h2>Estatísticas Gerais</h2>
 <p>Atendendo o objetivo do sistema, essa parte é onde ficam todos os valores interessantes sobre os itens do jogo, nele temos vários, onde é possível ver de forma concreta a quantidade de itens existentes no jogo, e com tais características.</p>
-![image](https://user-images.githubusercontent.com/56841881/129284048-5f3029e8-1dc1-4fc3-aeeb-5eb539338587.png)
-
+<img src="https://user-images.githubusercontent.com/56841881/129284048-5f3029e8-1dc1-4fc3-aeeb-5eb539338587.png" alt="accessibility text">
+  
+  
 <h2>Modo noturno</h2>
 <p>Também há um modo noturno incluso no sistema, ele deixará tudo mais escuro ( :v ) e agradável aos olhos, caso precise/goste de usar este modo.</p>
-![image](https://user-images.githubusercontent.com/56841881/129284931-8d68ba72-18a6-4620-a27e-cb0d2a17af98.png)
+<img src="https://user-images.githubusercontent.com/56841881/129284931-8d68ba72-18a6-4620-a27e-cb0d2a17af98.png" alt="accessibility text">
