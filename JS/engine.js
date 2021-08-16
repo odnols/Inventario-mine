@@ -513,8 +513,8 @@ function sincroniza_tema(versao_jogo){
     if(tema == 0)
         alvo = "escuro";
     
-    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item"];
-    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png"];
+    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add"];
+    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png"];
 
     lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos"];
     nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "menu.png", "aba_oculto.png"];

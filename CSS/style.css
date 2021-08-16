@@ -164,12 +164,12 @@ select{
     overflow-y: auto;
     top: 147px;
 }
-.slot_item{
+.slot_item, .slot_item_add{
     width: 54px;
     height: 54px;
     float: left;
 }
-.slot_item:hover{
+.slot_item:hover, .slot_item_add:hover{
     background: url("../IMG/Interface/Claro/slot_hover.png") !important;
 }
 .icon_item{
