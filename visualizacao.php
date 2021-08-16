@@ -13,9 +13,15 @@
     <script src="JS/jquery.min.js"></script>
     <script src="JS/jquery-1.11.3.min.js"></script>
 
-    <?php include_once "PHP/conexao_obsoleta.php"; ?>
+    <?php include_once "PHP/conexao_obsoleta.php";
+    
+    if(isset($_GET["versao_jogo"]))
+        $versao_jogo = $_GET["versao_jogo"];
+        
+    if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 18)
+        $versao_jogo = 5; ?>
 </head>
-<body onload="sincroniza_tema()">
+<body onload="sincroniza_tema(<?php echo $versao_jogo ?>)">
 
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
@@ -25,12 +31,6 @@
         if(!isset($_GET["dg"]))
             $graphics = false; 
 
-        if(isset($_GET["versao_jogo"]))
-            $versao_jogo = $_GET["versao_jogo"];
-        
-        if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 18)
-            $versao_jogo = 5;
-        
         for($i = 0; $i < 18; $i += 2){
             $x = $i + 1;
 
@@ -55,11 +55,11 @@
         <?php } ?>
 
         <?php if(!isset($_GET["dg"])) { ?>
-        <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>&dg=true" onclick="#">Programmer Art</a> <?php } else { ?>
+        <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>&dg=true" onclick="#" onmouseover="toolTip('Os gráficos originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
         <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>" onclick="#">Gráficos padrões</a> <?php } ?>
 
-        <a class="bttn_frrm" href="index.php">Gerenciador</a>
-        <a class="bttn_frrm" href="#" onclick="troca_tema()">Tema</a>
+        <a class="bttn_frrm" href="index.php" onmouseover="toolTip('O gerenciador de itens')" onmouseout="toolTip()">Gerenciador</a>
+        <a class="bttn_frrm" href="#" onclick="troca_tema(<?php echo $versao_jogo ?>)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()">Tema</a>
     </div>
 
     <div id="infos_versao">
@@ -69,11 +69,13 @@
     <div id="estatisticas_inventario">
         <img id="prancheta" src="#">
 
-        <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
-            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
-            <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
+        <div class="botoes_menu">
+            <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
+                <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
+                <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
+            </div>
         </div>
-
+        
         <div id="text_estatsc">
             <center><h2 class="cor_textos">Estatísticas</h2></center>
         
@@ -134,57 +136,60 @@
     <div id="menu_completo">
         <img id="menu" src="#">
 
-        <div id="item_0" onclick="categoria(0, 0)"></div>
-        <div id="item_1" onclick="categoria(1, 0)"></div>
-        <div id="item_2" onclick="categoria(2, 0)"></div>
-        <div id="item_3" onclick="categoria(3, 0)"></div>
-        <div id="item_4" onclick="categoria(4, 0)"></div>
-        <div id="item_5" onclick="categoria(5, 0)"></div>
-        <div id="item_6" onclick="categoria(6, 0)"></div>
-        <div id="item_7" onclick="categoria(7, 0)"></div>
-        <div id="item_8" onclick="categoria(8, 0)"></div>
-        <div id="item_9" onclick="categoria(9, 0)"></div>
-        <div id="item_10" onclick="categoria(10, 0)"></div> <!-- Pesquisa -->
-        
-        <div id="item_11" onclick="clique('prancheta')"></div>
+        <div class="botoes_menu">
+            <div id="item_0" onclick="categoria(0, 0)"></div>
+            <div id="item_1" onclick="categoria(1, 0)"></div>
+            <div id="item_2" onclick="categoria(2, 0)"></div>
+            <div id="item_3" onclick="categoria(3, 0)"></div>
+            <div id="item_4" onclick="categoria(4, 0)"></div>
+            <div id="item_5" onclick="categoria(5, 0)"></div>
+            <div id="item_6" onclick="categoria(6, 0)"></div>
+            <div id="item_7" onclick="categoria(7, 0)"></div>
+            <div id="item_8" onclick="categoria(8, 0)"></div>
+            <div id="item_9" onclick="categoria(9, 0)"></div>
+            <div id="item_10" onclick="categoria(10, 0)"></div> <!-- Pesquisa -->
+            
+            <div id="item_11" onclick="clique('prancheta')"></div>
 
-        <img id="img_construcao" class="aba_menu Construcao" src="#">
-        <img id="img_decorativos" class="aba_menu Decorativos" src="#">
-        <img id="img_redstone" class="aba_menu Redstone" src="#">
-        <img id="img_transportes" class="aba_menu Transportes" src="#">
-        <img id="img_diversos" class="aba_menu Diversos" src="#">
-        <img id="img_alimentos" class="aba_menu Alimentos" src="#">
-        <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
-        <img id="img_combate" class="aba_menu Combate" src="#">
-        <img id="img_pocoes" class="aba_menu Pocoes" src="#">
+            <img id="img_construcao" class="aba_menu Construcao" src="#">
+            <img id="img_decorativos" class="aba_menu Decorativos" src="#">
+            <img id="img_redstone" class="aba_menu Redstone" src="#">
+            <img id="img_transportes" class="aba_menu Transportes" src="#">
+            <img id="img_diversos" class="aba_menu Diversos" src="#">
+            <img id="img_alimentos" class="aba_menu Alimentos" src="#">
+            <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
+            <img id="img_combate" class="aba_menu Combate" src="#">
+            <img id="img_pocoes" class="aba_menu Pocoes" src="#">
+
+            <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
+                <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
+                <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
+            </div>
+            
+            <div onclick="filtragem_automatica('não_coletável')" onmouseover="toolTip('Mostrar itens que não são coletáveis no sobrevivência')" onmouseout="toolTip()">
+                <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_nao_coletaveis.png">
+                <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
+            </div>
+
+            <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
+                <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
+                <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
+            </div>
+            
+            <div onclick="filtragem_automatica('genéricos')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
+                <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
+                <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
+            </div>
+            
+            <img id="img_especiais" class="aba_menu Especiais" src="#">
+
+            <img id="img_pesquisa" class="aba_menu Pesquisa" src="#">
         
-        <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
-            <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
-            <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
-        </div>
+            <img id="img_prancheta" class="aba_menu Prancheta" src="IMG/Interface/mascara_prancheta.png"> 
         
-        <div onclick="filtragem_automatica('não_coletável')" onmouseover="toolTip('Mostrar itens que não são coletáveis no sobrevivência')" onmouseout="toolTip()">
-            <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_nao_coletaveis.png">
-            <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
+            <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
         </div>
 
-        <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
-            <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
-            <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
-        </div>
-        
-        <div onclick="filtragem_automatica('genéricos')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
-            <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
-            <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
-        </div>
-
-        <img id="img_especiais" class="aba_menu Especiais" src="#">
-        <img id="img_pesquisa" class="aba_menu Pesquisa" src="#">
-        
-        <img id="img_prancheta" class="aba_menu Prancheta" src="IMG/Interface/mascara_prancheta.png"> 
-        
-        <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
-        
         <span id="titulo_aba"></span>
 
         <div id="barra_rolagem">
@@ -199,7 +204,7 @@
         </div>
 
         <div id="lista_itens">
-            <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
+            <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll', <?php echo $versao_jogo ?>)">
             <?php 
             while($dados = $executa->fetch_assoc()){
                                 
@@ -311,7 +316,6 @@
 
     <script src="JS/jquery-3.4.1.js"></script>
     <script src="JS/engine.js"></script>
-    <script src="JS/tooltip.js"></script>
 
     <script type="text/javascript">
         categoria(10, 0);

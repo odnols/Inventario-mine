@@ -5,20 +5,28 @@ function gerencia_scroll(valor){
     libera_scroll = valor;
 }
 
-function scrollSincronizado(principal, sincronizado){
+function scrollSincronizado(principal, sincronizado, versao_jogo){
 
     let elem = document.getElementById(sincronizado);
     let doc = document.getElementById(principal);
 
     if(principal == "listagem"){
         if(libera_scroll){
-            value = parseInt(86 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight));
+            if(versao_jogo > 2 || typeof versao_jogo == "undefined")
+                value = parseInt(86 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight));
+            else
+                value = parseFloat(90.7 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight));
 
             elem.style.top = value + '%';
         }
     }else{
-        porcentagem = parseInt(86 * posicao_scroll / (elem.scrollHeight - elem.clientHeight));
-        porcentagem = porcentagem - 59;
+        if(versao_jogo > 2 || typeof versao_jogo == "undefined"){
+            porcentagem = parseInt(86 * posicao_scroll / (elem.scrollHeight - elem.clientHeight));
+            porcentagem = porcentagem - 59;
+        }else{
+            porcentagem = parseFloat(90.9 * posicao_scroll / (elem.scrollHeight - elem.clientHeight));
+            porcentagem = porcentagem - 90;
+        }
 
         value = parseInt((elem.scrollHeight / 180) * porcentagem);
         elem.scrollTop = value;        
@@ -480,7 +488,7 @@ function importar_dados(){
     // $("#selecionar_celula_dados").toggle();
 }
 
-function troca_tema(){
+function troca_tema(versao_jogo){
 
     if(tema == null || tema == 1)
         localStorage.setItem('tema', "0");
@@ -488,10 +496,10 @@ function troca_tema(){
     if(tema == 0)
         localStorage.setItem('tema', "1");
     
-    sincroniza_tema();
+    sincroniza_tema(versao_jogo);
 }
 
-function sincroniza_tema(){
+function sincroniza_tema(versao_jogo){
 
     tema = localStorage.getItem("tema");
 
@@ -511,6 +519,33 @@ function sincroniza_tema(){
     lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos"];
     nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "Menu.png", "aba_oculto.png"];
 
+    if(typeof versao_jogo != "undefined")
+        if(versao_jogo <= 2){
+            nome_arquivos[nome_arquivos.indexOf("Menu.png")] = "menu_classic.png";
+            
+            document.getElementById("titulo_aba").innerHTML = "Seleção de item";
+
+            document.getElementById("menu_completo").style.top = "0px";
+            document.getElementById("menu_completo").style.left = "7%";
+            document.getElementById("lista_itens").style.width = "440px";
+            document.getElementById("listagem").style.top = "63px";
+            document.getElementById("listagem").style.left = "9px";
+            document.getElementById("listagem").style.height = "486px";
+            document.getElementById("listagem").style.width = "433px";
+            document.getElementById("lista_itens").style.height = "519px";
+            document.getElementById("titulo_aba").style.top = "90%";
+            document.getElementById("barra_rolagem").style.right = "111px";
+            document.getElementById("barra_rolagem").style.height = "480px";
+            document.getElementById("barra_rolagem").style.top = "69px";
+        }
+    else{
+        botoes_menu = document.getElementsByClassName("botoes_menu");
+
+        for(var i = 0; i < botoes_menu.length; i++){
+            botoes_menu[i].style.display = "Block";
+        }
+    }
+        
     for(var i = 0; i < lista_imagens.length; i++){ // Imagens
         imagem = document.getElementById(lista_imagens[i]);
         
