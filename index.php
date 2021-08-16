@@ -153,10 +153,8 @@
                 <option value="outro">Outro</option>
                 <?php
 
-                $versoes[10] = "1.10";
-
-                for($i = sizeof($versoes); $i >= 0; $i--){
-                    echo "<option value='$versoes[$i]'>$versoes[$i]</option>";
+                for($i = 18; $i >= 0; $i--){
+                    echo "<option value='$i'>1.$i</option>";
                 } ?>
             </select>
         </div>
