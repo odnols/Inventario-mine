@@ -283,19 +283,24 @@
                 
                 $descricao_pesq = strtolower($descricao_pesq);
 
+                $slot_item = "slot_item";
+
+                if($versao_add == "1.".$versao_jogo)
+                    $slot_item = "slot_item_add";
+
                 for($i = 0; $i < 20; $i++){ // Elimina todos os números de versão da descrição
                     $descricao_pesq = str_replace("1.".$i, "", $descricao_pesq);
                 }
                 
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                    echo "<div class='$slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
-                        echo "<div class='slot_item $tipo_item' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div class='$slot_item $tipo_item' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }else{
-                        echo "<div class='slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
                         echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
