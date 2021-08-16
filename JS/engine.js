@@ -517,11 +517,11 @@ function sincroniza_tema(versao_jogo){
     nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png"];
 
     lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos"];
-    nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "Menu.png", "aba_oculto.png"];
+    nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "menu.png", "aba_oculto.png"];
 
     if(typeof versao_jogo != "undefined")
         if(versao_jogo <= 2){
-            nome_arquivos[nome_arquivos.indexOf("Menu.png")] = "menu_classic.png";
+            nome_arquivos[nome_arquivos.indexOf("menu.png")] = "menu_classic.png";
             
             document.getElementById("titulo_aba").innerHTML = "Seleção de item";
 

@@ -137,17 +137,9 @@
         <img id="menu" src="#">
 
         <div class="botoes_menu">
-            <div id="item_0" onclick="categoria(0, 0)"></div>
-            <div id="item_1" onclick="categoria(1, 0)"></div>
-            <div id="item_2" onclick="categoria(2, 0)"></div>
-            <div id="item_3" onclick="categoria(3, 0)"></div>
-            <div id="item_4" onclick="categoria(4, 0)"></div>
-            <div id="item_5" onclick="categoria(5, 0)"></div>
-            <div id="item_6" onclick="categoria(6, 0)"></div>
-            <div id="item_7" onclick="categoria(7, 0)"></div>
-            <div id="item_8" onclick="categoria(8, 0)"></div>
-            <div id="item_9" onclick="categoria(9, 0)"></div>
-            <div id="item_10" onclick="categoria(10, 0)"></div> <!-- Pesquisa -->
+            <?php for($i = 0; $i < 11; $i++){
+                echo "<div id='item_$i' onclick='categoria($i, 0)'></div>";
+            } ?>
             
             <div id="item_11" onclick="clique('prancheta')"></div>
 
