@@ -109,11 +109,11 @@
 
     <div id="menu_user">
         <?php if(!isset($_GET["dg"])) { ?>
-        <a class="bttn_frrm" href="index.php?dg=true" onclick="#">Programmer Art</a> <?php } else { ?>
-        <a class="bttn_frrm" href="index.php" onclick="#">Gráficos padrões</a> <?php } ?>
+        <a class="bttn_frrm" href="index.php?dg=true" onclick="#" onmouseover="toolTip('Os gráficos originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
+        <a class="bttn_frrm" href="index.php" onclick="#" >Gráficos padrões</a> <?php } ?>
 
-        <a class="bttn_frrm" href="visualizacao.php">Máquina do tempo</a>
-        <a class="bttn_frrm" href="#" onclick="troca_tema()">Tema</a>
+        <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a>
+        <a class="bttn_frrm" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()">Tema</a>
     </div>
 
     <!-- Importar célula de dados para o banco -->
@@ -164,7 +164,7 @@
         <div id="checkboxes">
             <input class="input_check" type="checkbox" name="coletavelsurvival" checked  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/coracao.png"  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
-            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
             <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
 
@@ -178,30 +178,32 @@
     <div id="menu_completo">
         <img id="menu" src="#">
 
-        <div id="item_0" onclick="categoria(0, 0)"></div>
-        <div id="item_1" onclick="categoria(1, 0)"></div>
-        <div id="item_2" onclick="categoria(2, 0)"></div>
-        <div id="item_3" onclick="categoria(3, 0)"></div>
-        <div id="item_4" onclick="categoria(4, 0)"></div>
-        <div id="item_5" onclick="categoria(5, 0)"></div>
-        <div id="item_6" onclick="categoria(6, 0)"></div>
-        <div id="item_7" onclick="categoria(7, 0)"></div>
-        <div id="item_8" onclick="categoria(8, 0)"></div>
-        <div id="item_9" onclick="categoria(9, 0)"></div>
-        <div id="item_10" onclick="categoria(10, 0)"></div> <!-- Pesquisa -->
-        
-        <div id="item_11" onclick="clique('prancheta')"></div>
+        <div id="botoes_menu">
+            <div id="item_0" onclick="categoria(0, 0)"></div>
+            <div id="item_1" onclick="categoria(1, 0)"></div>
+            <div id="item_2" onclick="categoria(2, 0)"></div>
+            <div id="item_3" onclick="categoria(3, 0)"></div>
+            <div id="item_4" onclick="categoria(4, 0)"></div>
+            <div id="item_5" onclick="categoria(5, 0)"></div>
+            <div id="item_6" onclick="categoria(6, 0)"></div>
+            <div id="item_7" onclick="categoria(7, 0)"></div>
+            <div id="item_8" onclick="categoria(8, 0)"></div>
+            <div id="item_9" onclick="categoria(9, 0)"></div>
+            <div id="item_10" onclick="categoria(10, 0)"></div> <!-- Pesquisa -->
+            
+            <div id="item_11" onclick="clique('prancheta')"></div>
 
-        <img id="img_construcao" class="aba_menu Construcao" src="#">
-        <img id="img_decorativos" class="aba_menu Decorativos" src="#">
-        <img id="img_redstone" class="aba_menu Redstone" src="#">
-        <img id="img_transportes" class="aba_menu Transportes" src="#">
-        <img id="img_diversos" class="aba_menu Diversos" src="#">
-        <img id="img_alimentos" class="aba_menu Alimentos" src="#">
-        <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
-        <img id="img_combate" class="aba_menu Combate" src="#">
-        <img id="img_pocoes" class="aba_menu Pocoes" src="#">
-        
+            <img id="img_construcao" class="aba_menu Construcao" src="#">
+            <img id="img_decorativos" class="aba_menu Decorativos" src="#">
+            <img id="img_redstone" class="aba_menu Redstone" src="#">
+            <img id="img_transportes" class="aba_menu Transportes" src="#">
+            <img id="img_diversos" class="aba_menu Diversos" src="#">
+            <img id="img_alimentos" class="aba_menu Alimentos" src="#">
+            <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
+            <img id="img_combate" class="aba_menu Combate" src="#">
+            <img id="img_pocoes" class="aba_menu Pocoes" src="#">
+        </div>
+
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
             <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
             <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
