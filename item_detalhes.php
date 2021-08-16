@@ -91,8 +91,10 @@
 
     <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
 
-    <?php echo "<img id='img_detalhes' src='IMG/Itens/new/$tipo_item/$nome_icon'>";
-          echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon'>"; ?>    
+    <?php echo "<img id='img_detalhes' src='IMG/Itens/new/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite atual deste item\")' onmouseout='toolTip()'>";
+
+        if($versao_add < 13)
+          echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite antes da Edição Java 1.14 deste item\")' onmouseout='toolTip()'>"; ?>    
     
     <form id="prancheta_att" method="post" action="PHP/item_atualizar.php" enctype="multipart/form-data">
 
