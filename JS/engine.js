@@ -671,6 +671,9 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
             $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
         });
 
+        $(".slot_item_add").on("mousemove", function( event ) {
+            $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
+        });
     }else{
         document.getElementById("minetip-tooltip").style.display = "None";
     }
