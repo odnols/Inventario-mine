@@ -1,3 +1,7 @@
+@font-face{
+    font-family: "Minecraftia";
+    src: url('../Fonts/Minecraftia.ttf');
+}
 body{
     background: url('../IMG/Temas/brand.png') no-repeat;
     background-size: cover;

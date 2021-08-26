@@ -36,18 +36,6 @@ foreach($data as $key => $value){
     if($oculto_invt == null)
         $oculto_invt = 0;
     
-    $versao = explode(".", $versao);
-
-    if(!isset($versao[1]))
-        $versao[1] = 0;
-    
-    if($versao[1] == 101)
-        $versao[1] = 10;
-
-    $versao = $versao[1];
-
-    echo "$nome_icon <br><br>";
-
     if(!in_array($value->id_item, $IDs_registrados)){
         # Inserindo o item no banco de dados
         $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$nome_icon', $renovavel, $oculto_invt, $versao, '$nome_interno', '$aliases', '$descricao');";
