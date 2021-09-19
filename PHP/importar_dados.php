@@ -29,6 +29,7 @@ foreach($data as $key => $value){
     $aliases = $value->aliases;
     $descricao = $value->descricao;
     $oculto_invt = $value->oculto_invt;
+    $programmer_art = $value->programmer_art;
 
     if($renovavel == null)
         $renovavel = 0;
@@ -36,9 +37,12 @@ foreach($data as $key => $value){
     if($oculto_invt == null)
         $oculto_invt = 0;
     
+    if($programmer_art == null)
+        $programmer_art = 0;
+
     if(!in_array($value->id_item, $IDs_registrados)){
         # Inserindo o item no banco de dados
-        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, oculto_invt, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$nome_icon', $renovavel, $oculto_invt, $versao, '$nome_interno', '$aliases', '$descricao');";
+        $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, oculto_invt, programmer_art, versao_adicionada, nome_interno, aliases_nome, descricao) values ($id_item, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$nome_icon', $renovavel, $oculto_invt, $programmer_art, $versao, '$nome_interno', '$aliases', '$descricao');";
         $executa = $conexao->query($insere);
     }
 

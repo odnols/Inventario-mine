@@ -32,11 +32,17 @@ if(isset($_POST["oculto_invt"]))
 else
     $oculto_invt = 0;
 
+if(isset($_POST["programmer_art"]))
+    $programmer_art = 1;
+else
+    $programmer_art = 0;
+    
+
 if(strlen($aliases) == 0)
     $aliases = null;
 
 // Atualizando os campos principais
-$insere = "UPDATE item set nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel, oculto_invt = $oculto_invt, aliases_nome = '$aliases' where id_item = $id_item";
+$insere = "UPDATE item set nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel, oculto_invt = $oculto_invt, programmer_art = $programmer_art, aliases_nome = '$aliases' where id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando o nome interno

@@ -36,6 +36,7 @@
     $renovavel = "";
     $coletavel_s = "";
     $oculto_invt = "";
+    $programmer_art = "";
 
     $busca_dados = "SELECT * from item where id_item = $id_item";
     $executa = $conexao->query($busca_dados);
@@ -66,6 +67,9 @@
     if($dados["oculto_invt"])
         $oculto_invt = "checked";
     
+    if($dados["programmer_art"])
+        $programmer_art = "checked";
+
     $cor_item = 0;
 
     $verificar_item = "SELECT * from cor_item where id_item = $id_item";
@@ -93,8 +97,8 @@
 
     <?php echo "<img id='img_detalhes' src='IMG/Itens/new/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite atual deste item\")' onmouseout='toolTip()'>";
 
-        if($versao_add < 13)
-          echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite antes da Edição Java 1.14 deste item\")' onmouseout='toolTip()'>"; ?>    
+        if($programmer_art != "")
+          echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite original deste item\")' onmouseout='toolTip()'>"; ?>    
     
     <form id="prancheta_att" method="post" action="PHP/item_atualizar.php" enctype="multipart/form-data">
 
@@ -169,9 +173,13 @@
 
             <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
 
-            <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage(1);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
+            <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
 
-            <img id="preview">
+            <div id="selecionar_sprite">
+                <img id="preview">
+
+                <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage(1);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
+            </div>
         </div>
 
         <input id="inserir_item" type="submit" value="Atualizar">
@@ -180,7 +188,6 @@
     <div class="slot_item" style="display: none;"></div>
     
     <?php 
-    
         echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
     }else{
         echo "<script>toolTip(\"Oh, noo!\", \"[&2Este ID não existe ;C\", \"404\", 0, 1)</script>";

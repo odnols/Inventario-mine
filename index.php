@@ -12,7 +12,7 @@
 
     <script src="JS/jquery.min.js"></script>
     <script src="JS/jquery-1.11.3.min.js"></script>
-
+    
     <?php include_once "PHP/conexao_obsoleta.php"; ?>
 </head>
 <body onload="sincroniza_tema()">
@@ -253,6 +253,7 @@
                 $versao_add = $dados["versao_adicionada"];
                 $renovavel = $dados["renovavel"];
                 $oculto_invt = $dados["oculto_invt"];
+                $programmer_art = $dados["programmer_art"];
 
                 $descricao = "[&1". $tipo_item;
 
@@ -263,7 +264,7 @@
                 if(!$nome_interno)
                     $nome_interno = "off";
 
-                if($versao_add < 13 && $graphics)
+                if($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
                 if($versao_add == null)
