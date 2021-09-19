@@ -152,7 +152,7 @@
                     for($i = sizeof($empilhagens) - 1; $i >= 0; $i--){
                         if($empilhagens[$i] != $empilhavel)
                             echo "<option value='$empilhagens[$i]'>$empilhagens_exib[$i]</option>";
-                    } ?>         
+                    } ?>
             </select><br><br>
 
             <select name="versao" style="width: 505px;" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
@@ -176,9 +176,9 @@
             <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
 
             <div id="selecionar_sprite">
-                <img id="preview">
-
                 <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage(1);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
+
+                <img id="preview_sprite">
             </div>
         </div>
 
