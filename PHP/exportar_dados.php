@@ -22,6 +22,7 @@ while($dados = $executa->fetch_assoc()){
     $aliases = $dados["aliases_nome"];
     $descricao = $dados["descricao"];
     $oculto_invt = $dados["oculto_invt"];
+    $programmer_art = $dados["programmer_art"];
 
     if(strlen($aliases) == 0)
         $aliases = null;
@@ -67,7 +68,8 @@ while($dados = $executa->fetch_assoc()){
             "renovavel" => $renovavel,
             "aliases" => $aliases,
             "descricao" => $descricao,
-            "oculto_invt" => $oculto_invt
+            "oculto_invt" => $oculto_invt,
+            "programmer_art" => $programmer_art
         ));
     }else{
         array_push($data, array(
@@ -83,6 +85,7 @@ while($dados = $executa->fetch_assoc()){
             "aliases" => $aliases,
             "descricao" => $descricao,
             "oculto_invt" => $oculto_invt,
+            "programmer_art" => $programmer_art,
             "cor_item" => $cor_item
         ));
     }

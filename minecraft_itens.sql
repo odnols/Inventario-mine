@@ -11,6 +11,7 @@ create table item(
     nome_icon varchar(500),
     renovavel tinyint(1),
     oculto_invt tinyint(1),
+    programmer_art tinyint(1),
     posicao_item int(11),
     nome_interno varchar(150),
     versao_adicionada int,
