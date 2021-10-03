@@ -25,7 +25,7 @@ Todas as características e estilos foram recriadas fidedignas ao jogo base na <
 
 <h2>Editando</h2>
 <p>Para editar os itens, existe uma tela separada, onde vários dados do item podem ser alterados facilmente.</p>
-<img src="https://user-images.githubusercontent.com/56841881/129285247-4c226e9f-0770-413f-9955-7060a47e31e9.png">
+<img src="https://user-images.githubusercontent.com/56841881/134084619-1bc84fad-6877-44a5-a462-c08050673f4a.png">
 
 Por esta tela é possível definir a cor do nome do item, definir a aba que ele irá aparecer no menu, a versão que foi adicionado, seu nome, descrição e outras estatísticas.
 
@@ -53,7 +53,7 @@ O Resultado será este// <br>
 
 <h2>Importando e Exportando</h2>
 <p>A Importação dos valores e a exportação é realizada através do arquivo JSON, dessa forma, também é possível adicionar itens editando o JSON e clicando para importar no sistema.<br>Só tenha certeza que o ID não é repetido, dessa forma o sistema irá adicionar o item, utilizando o ID informado</p>
-<img src="https://user-images.githubusercontent.com/56841881/129283878-c612a002-9603-4f97-bdd4-963b851b8086.png">
+<img src="https://user-images.githubusercontent.com/56841881/134085214-aa40fbbe-e1ab-4dd5-9c5f-409253750f73.png">
 
 
 <h2>Estatísticas Gerais</h2>
@@ -70,7 +70,7 @@ O Resultado será este// <br>
 <p>É possível navegar entre todas as versões completas lançadas até hoje, partindo da Edição Java 1.0 até a versão 1.18. Com a ajuda de um menu separado, é possível navegar de versão em versão, listando a quantidade de itens que foram adicionados em cada uma e destacando-os.</p>
 <img src="https://user-images.githubusercontent.com/56841881/129590450-f0cbf2a5-b10e-47c7-bb63-9a5e6a4c9ffe.png">
 
-<p>O Programmer Art também está incluso no sistema, os sprites estão sendo coletados da Edição Java 1.12, para ativar este recurso, basta clicar no canto inferior direito chamado "Programmer Art", todos os itens que foram adicionados antes da 1.13 terão seus gráficos trocados para a versão anterior!</p>
+<p>O Programmer Art também está incluso no sistema, os sprites estão sendo coletados da Edição Java 1.12 e 1.11, para ativar este recurso, basta clicar no canto inferior direito chamado "Programmer Art", todos os itens que possuírem texturas antigas terão seus sprites alterados para a versão anterior!</p>
 <img src="https://user-images.githubusercontent.com/56841881/129591015-04ce4b83-8bbd-4741-aa6f-94d6a26ca15f.png">
 
 <h3>Menu Clássico</h3>
