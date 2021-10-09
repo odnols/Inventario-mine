@@ -39,8 +39,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "48",
-                "durabilidade": "131"
+                "id_durabilidade": 48,
+                "durabilidade": 131
             }
         ],
         "versao_add": 0,
@@ -48,8 +48,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 1 [&4Velocidade de ataque: 2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": null
+        "programmer_art": 1
     },
     {
         "id_item": 4,
@@ -2347,8 +2346,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "17",
-                "durabilidade": "64"
+                "id_durabilidade": 17,
+                "durabilidade": 64
             }
         ],
         "versao_add": 0,
@@ -2356,13 +2355,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "9",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 157,
@@ -2389,8 +2382,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "19",
-                "durabilidade": "25"
+                "id_durabilidade": 19,
+                "durabilidade": 25
             }
         ],
         "versao_add": 4,
@@ -2398,13 +2391,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "9",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 159,
@@ -2416,8 +2403,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "18",
-                "durabilidade": "100"
+                "id_durabilidade": 18,
+                "durabilidade": 100
             }
         ],
         "versao_add": 16,
@@ -2425,13 +2412,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "9",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 160,
@@ -2503,8 +2484,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "3",
-                "durabilidade": "59"
+                "id_durabilidade": 3,
+                "durabilidade": 59
             }
         ],
         "versao_add": 0,
@@ -2512,13 +2493,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 4 [&4Velocidade de ataque: 1.6",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "9",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 165,
@@ -2890,8 +2865,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "16",
-                "durabilidade": "64"
+                "id_durabilidade": 16,
+                "durabilidade": 64
             }
         ],
         "versao_add": 0,
@@ -2899,13 +2874,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "9",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 190,
@@ -3649,8 +3618,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "15",
-                "durabilidade": "238"
+                "id_durabilidade": 15,
+                "durabilidade": 238
             }
         ],
         "versao_add": 0,
@@ -3658,13 +3627,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 239,
@@ -3916,8 +3879,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "14",
-                "durabilidade": "59"
+                "id_durabilidade": 14,
+                "durabilidade": 59
             }
         ],
         "versao_add": 0,
@@ -3925,13 +3888,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 2 [&4Velocidade de ataque: 1.2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 256,
@@ -3943,8 +3900,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "13",
-                "durabilidade": "131"
+                "id_durabilidade": 13,
+                "durabilidade": 131
             }
         ],
         "versao_add": 0,
@@ -3952,13 +3909,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 3 [&4Velocidade de ataque: 1.2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 257,
@@ -3970,8 +3921,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "12",
-                "durabilidade": "250"
+                "id_durabilidade": 12,
+                "durabilidade": 250
             }
         ],
         "versao_add": 0,
@@ -3979,13 +3930,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 4 [&4Velocidade de ataque: 1.2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 258,
@@ -3997,8 +3942,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "11",
-                "durabilidade": "32"
+                "id_durabilidade": 11,
+                "durabilidade": 32
             }
         ],
         "versao_add": 0,
@@ -4006,13 +3951,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 2 [&4Velocidade de ataque: 1.2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 259,
@@ -4024,8 +3963,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "10",
-                "durabilidade": "1561"
+                "id_durabilidade": 10,
+                "durabilidade": 1561
             }
         ],
         "versao_add": 0,
@@ -4033,13 +3972,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 5 [&4Velocidade de ataque: 1.2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 260,
@@ -4051,8 +3984,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "9",
-                "durabilidade": "2031"
+                "id_durabilidade": 9,
+                "durabilidade": 2031
             }
         ],
         "versao_add": 16,
@@ -4060,13 +3993,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 6 [&4Velocidade de ataque: 1.2",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 261,
@@ -4078,8 +4005,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "4",
-                "durabilidade": "131"
+                "id_durabilidade": 4,
+                "durabilidade": 131
             }
         ],
         "versao_add": 0,
@@ -4087,13 +4014,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 5 [&4Velocidade de ataque: 1.6",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 262,
@@ -4105,8 +4026,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "6",
-                "durabilidade": "250"
+                "id_durabilidade": 6,
+                "durabilidade": 250
             }
         ],
         "versao_add": 0,
@@ -4114,13 +4035,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 6 [&4Velocidade de ataque: 1.6",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 263,
@@ -4132,8 +4047,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "5",
-                "durabilidade": "32"
+                "id_durabilidade": 5,
+                "durabilidade": 32
             }
         ],
         "versao_add": 0,
@@ -4141,13 +4056,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 4 [&4Velocidade de ataque: 1.6",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 264,
@@ -4159,8 +4068,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "7",
-                "durabilidade": "1561"
+                "id_durabilidade": 7,
+                "durabilidade": 1561
             }
         ],
         "versao_add": 0,
@@ -4168,13 +4077,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 7 [&4Velocidade de ataque: 1.6",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 265,
@@ -4186,8 +4089,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "8",
-                "durabilidade": "2031"
+                "id_durabilidade": 8,
+                "durabilidade": 2031
             }
         ],
         "versao_add": 16,
@@ -4195,13 +4098,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 8 [&4Velocidade de ataque: 1.6",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "20",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 266,
@@ -6415,8 +6312,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "64",
-                "durabilidade": "2031"
+                "id_durabilidade": 64,
+                "durabilidade": 2031
             }
         ],
         "versao_add": 16,
@@ -6424,13 +6321,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 10 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 413,
@@ -6442,8 +6333,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "63",
-                "durabilidade": "2031"
+                "id_durabilidade": 63,
+                "durabilidade": 2031
             }
         ],
         "versao_add": 16,
@@ -6451,13 +6342,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 6.5 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 414,
@@ -6469,8 +6354,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "62",
-                "durabilidade": "2031"
+                "id_durabilidade": 62,
+                "durabilidade": 2031
             }
         ],
         "versao_add": 16,
@@ -6478,13 +6363,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 1 [&4Velocidade de ataque: 4",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 415,
@@ -6496,8 +6375,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "43",
-                "durabilidade": "407"
+                "id_durabilidade": 43,
+                "durabilidade": 407
             }
         ],
         "versao_add": 16,
@@ -6505,13 +6384,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +3 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 416,
@@ -6523,8 +6396,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "44",
-                "durabilidade": "592"
+                "id_durabilidade": 44,
+                "durabilidade": 592
             }
         ],
         "versao_add": 16,
@@ -6532,13 +6405,7 @@
         "aliases": null,
         "descricao": "[&s[&rNo corpo: [&1Pontos de armadura: +8 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 417,
@@ -6550,8 +6417,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "45",
-                "durabilidade": "555"
+                "id_durabilidade": 45,
+                "durabilidade": 555
             }
         ],
         "versao_add": 16,
@@ -6559,13 +6426,7 @@
         "aliases": null,
         "descricao": "[&s[&rNas pernas: [&1Pontos de armadura: +6 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 418,
@@ -6577,8 +6438,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "46",
-                "durabilidade": "481"
+                "id_durabilidade": 46,
+                "durabilidade": 481
             }
         ],
         "versao_add": 16,
@@ -6586,13 +6447,7 @@
         "aliases": null,
         "descricao": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +3 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 419,
@@ -9514,8 +9369,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "39",
-                "durabilidade": "363"
+                "id_durabilidade": 39,
+                "durabilidade": 363
             }
         ],
         "versao_add": 0,
@@ -9523,13 +9378,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +3 [&1 Resist\u00eancia da armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 977,
@@ -9571,8 +9420,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "50",
-                "durabilidade": "59"
+                "id_durabilidade": 50,
+                "durabilidade": 59
             }
         ],
         "versao_add": 0,
@@ -9580,13 +9429,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 7 [&4Velocidade de ataque: 0.8",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "22",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 638,
@@ -10816,8 +10659,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "49",
-                "durabilidade": "131"
+                "id_durabilidade": 49,
+                "durabilidade": 131
             }
         ],
         "versao_add": 0,
@@ -10825,13 +10668,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 9 [&4Velocidade de ataque: 0.8",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 683,
@@ -10843,8 +10680,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "56",
-                "durabilidade": "250"
+                "id_durabilidade": 56,
+                "durabilidade": 250
             }
         ],
         "versao_add": 0,
@@ -10852,13 +10689,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 9 [&4Velocidade de ataque: 0.9",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 684,
@@ -10870,8 +10701,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "55",
-                "durabilidade": "32"
+                "id_durabilidade": 55,
+                "durabilidade": 32
             }
         ],
         "versao_add": 0,
@@ -10879,13 +10710,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 7 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 685,
@@ -10897,8 +10722,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "59",
-                "durabilidade": "1561"
+                "id_durabilidade": 59,
+                "durabilidade": 1561
             }
         ],
         "versao_add": 0,
@@ -10906,13 +10731,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 9 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 686,
@@ -10924,8 +10743,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "51",
-                "durabilidade": "59"
+                "id_durabilidade": 51,
+                "durabilidade": 59
             }
         ],
         "versao_add": 0,
@@ -10933,13 +10752,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 2.5 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 687,
@@ -10951,8 +10764,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "47",
-                "durabilidade": "131"
+                "id_durabilidade": 47,
+                "durabilidade": 131
             }
         ],
         "versao_add": 0,
@@ -10960,13 +10773,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 3.5 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 688,
@@ -10978,8 +10785,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "57",
-                "durabilidade": "250"
+                "id_durabilidade": 57,
+                "durabilidade": 250
             }
         ],
         "versao_add": 0,
@@ -10987,13 +10794,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 4.5 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 689,
@@ -11005,8 +10806,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "53",
-                "durabilidade": "32"
+                "id_durabilidade": 53,
+                "durabilidade": 32
             }
         ],
         "versao_add": 0,
@@ -11014,13 +10815,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 2.5 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 690,
@@ -11032,8 +10827,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "60",
-                "durabilidade": "1561"
+                "id_durabilidade": 60,
+                "durabilidade": 1561
             }
         ],
         "versao_add": 0,
@@ -11041,13 +10836,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 5.5 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 691,
@@ -11059,8 +10848,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "52",
-                "durabilidade": "59"
+                "id_durabilidade": 52,
+                "durabilidade": 59
             }
         ],
         "versao_add": 0,
@@ -11068,13 +10857,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 1 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 692,
@@ -11086,8 +10869,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "58",
-                "durabilidade": "250"
+                "id_durabilidade": 58,
+                "durabilidade": 250
             }
         ],
         "versao_add": 0,
@@ -11095,13 +10878,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 1 [&4Velocidade de ataque: 3",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 693,
@@ -11113,8 +10890,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "54",
-                "durabilidade": "32"
+                "id_durabilidade": 54,
+                "durabilidade": 32
             }
         ],
         "versao_add": 0,
@@ -11122,13 +10899,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 1 [&4Velocidade de ataque: 1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 694,
@@ -11140,8 +10911,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "61",
-                "durabilidade": "1561"
+                "id_durabilidade": 61,
+                "durabilidade": 1561
             }
         ],
         "versao_add": 0,
@@ -11149,13 +10920,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 1 [&4Velocidade de ataque: 4",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "34",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 695,
@@ -15331,8 +15096,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "42",
-                "durabilidade": "165"
+                "id_durabilidade": 42,
+                "durabilidade": 165
             }
         ],
         "versao_add": 0,
@@ -15340,13 +15105,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 981,
@@ -15358,8 +15117,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "32",
-                "durabilidade": "77"
+                "id_durabilidade": 32,
+                "durabilidade": 77
             }
         ],
         "versao_add": 0,
@@ -15367,13 +15126,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 982,
@@ -15385,8 +15138,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "38",
-                "durabilidade": "55"
+                "id_durabilidade": 38,
+                "durabilidade": 55
             }
         ],
         "versao_add": 0,
@@ -15394,13 +15147,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 983,
@@ -15412,8 +15159,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "33",
-                "durabilidade": "165"
+                "id_durabilidade": 33,
+                "durabilidade": 165
             }
         ],
         "versao_add": 0,
@@ -15421,13 +15168,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 984,
@@ -15439,8 +15180,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "22",
-                "durabilidade": "275"
+                "id_durabilidade": 22,
+                "durabilidade": 275
             }
         ],
         "versao_add": 13,
@@ -15448,13 +15189,7 @@
         "aliases": null,
         "descricao": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 985,
@@ -15466,8 +15201,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "23",
-                "durabilidade": "528"
+                "id_durabilidade": 23,
+                "durabilidade": 528
             }
         ],
         "versao_add": 0,
@@ -15475,13 +15210,7 @@
         "aliases": null,
         "descricao": "[&s[&rNo corpo: [&1Pontos de armadura: +8 [&1Resist\u00eancia da armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 986,
@@ -15493,8 +15222,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "24",
-                "durabilidade": "240"
+                "id_durabilidade": 24,
+                "durabilidade": 240
             }
         ],
         "versao_add": 0,
@@ -15502,13 +15231,7 @@
         "aliases": null,
         "descricao": "[&s[&rNo corpo: [&1Pontos de armadura: +6",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 987,
@@ -15520,8 +15243,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "25",
-                "durabilidade": "112"
+                "id_durabilidade": 25,
+                "durabilidade": 112
             }
         ],
         "versao_add": 0,
@@ -15529,13 +15252,7 @@
         "aliases": null,
         "descricao": "[&s[&rNo corpo: [&1Pontos de armadura: +5",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 988,
@@ -15547,8 +15264,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "26",
-                "durabilidade": "80"
+                "id_durabilidade": 26,
+                "durabilidade": 80
             }
         ],
         "versao_add": 0,
@@ -15556,13 +15273,7 @@
         "aliases": null,
         "descricao": "[&s[&rNo corpo: [&1Pontos de armadura: +3",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 989,
@@ -15574,8 +15285,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "27",
-                "durabilidade": "240"
+                "id_durabilidade": 27,
+                "durabilidade": 240
             }
         ],
         "versao_add": 0,
@@ -15583,13 +15294,7 @@
         "aliases": null,
         "descricao": "[&s[&rNo corpo: [&1Pontos de armadura: +5",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 990,
@@ -15601,8 +15306,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "28",
-                "durabilidade": "429"
+                "id_durabilidade": 28,
+                "durabilidade": 429
             }
         ],
         "versao_add": 0,
@@ -15610,13 +15315,7 @@
         "aliases": null,
         "descricao": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +3 [&1Resist\u00eancia da armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 991,
@@ -15628,8 +15327,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "29",
-                "durabilidade": "195"
+                "id_durabilidade": 29,
+                "durabilidade": 195
             }
         ],
         "versao_add": 0,
@@ -15637,13 +15336,7 @@
         "aliases": null,
         "descricao": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 992,
@@ -15655,8 +15348,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "30",
-                "durabilidade": "91"
+                "id_durabilidade": 30,
+                "durabilidade": 91
             }
         ],
         "versao_add": 0,
@@ -15664,13 +15357,7 @@
         "aliases": null,
         "descricao": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 993,
@@ -15682,8 +15369,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "37",
-                "durabilidade": "65"
+                "id_durabilidade": 37,
+                "durabilidade": 65
             }
         ],
         "versao_add": 0,
@@ -15691,13 +15378,7 @@
         "aliases": null,
         "descricao": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 994,
@@ -15709,8 +15390,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "34",
-                "durabilidade": "195"
+                "id_durabilidade": 34,
+                "durabilidade": 195
             }
         ],
         "versao_add": 0,
@@ -15718,13 +15399,7 @@
         "aliases": null,
         "descricao": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +1",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 995,
@@ -15736,8 +15411,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "40",
-                "durabilidade": "495"
+                "id_durabilidade": 40,
+                "durabilidade": 495
             }
         ],
         "versao_add": 0,
@@ -15745,13 +15420,7 @@
         "aliases": null,
         "descricao": "[&s[&rNas pernas: [&1Pontos de armadura: +6 [&1Resisit\u00eancia da armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 996,
@@ -15763,8 +15432,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "41",
-                "durabilidade": "225"
+                "id_durabilidade": 41,
+                "durabilidade": 225
             }
         ],
         "versao_add": 0,
@@ -15772,13 +15441,7 @@
         "aliases": null,
         "descricao": "[&s[&rNas pernas: [&1Pontos de armadura: +5",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 997,
@@ -15790,8 +15453,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "31",
-                "durabilidade": "105"
+                "id_durabilidade": 31,
+                "durabilidade": 105
             }
         ],
         "versao_add": 0,
@@ -15799,13 +15462,7 @@
         "aliases": null,
         "descricao": "[&s[&rNas pernas: [&1Pontos de armadura: +3",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 998,
@@ -15817,8 +15474,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "36",
-                "durabilidade": "75"
+                "id_durabilidade": 36,
+                "durabilidade": 75
             }
         ],
         "versao_add": 0,
@@ -15826,13 +15483,7 @@
         "aliases": null,
         "descricao": "[&s[&rNas pernas: [&1Pontos de armadura: +2",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 999,
@@ -15844,8 +15495,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "35",
-                "durabilidade": "225"
+                "id_durabilidade": 35,
+                "durabilidade": 225
             }
         ],
         "versao_add": 0,
@@ -15853,13 +15504,7 @@
         "aliases": null,
         "descricao": "[&s[&rNas pernas: [&1Pontos de armadura: +4",
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 1001,
@@ -15871,8 +15516,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "2",
-                "durabilidade": "384"
+                "id_durabilidade": 2,
+                "durabilidade": 384
             }
         ],
         "versao_add": 0,
@@ -15880,13 +15525,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "19",
-                "tipo_item": "2"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 1002,
@@ -17041,8 +16680,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "20",
-                "durabilidade": "336"
+                "id_durabilidade": 20,
+                "durabilidade": 336
             }
         ],
         "versao_add": 8,
@@ -17050,13 +16689,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "21",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 1090,
@@ -17068,8 +16701,8 @@
         "empilhavel": 0,
         "durabilidade": [
             {
-                "id_durabilidade": "21",
-                "durabilidade": "326"
+                "id_durabilidade": 21,
+                "durabilidade": 326
             }
         ],
         "versao_add": 14,
@@ -17077,13 +16710,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 0,
-        "cor_item": [
-            {
-                "id_cor": "21",
-                "tipo_item": "1"
-            }
-        ]
+        "programmer_art": 0
     },
     {
         "id_item": 1091,

@@ -351,10 +351,7 @@
     <script src="JS/engine.js"></script>
 
     <script type="text/javascript">
-
         categoria(1, 0);
-        clique('prancheta');
-
         document.addEventListener("onKeyDown", clique());
     </script>
 </body>
