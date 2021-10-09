@@ -31,20 +31,27 @@ while($dados = $executa->fetch_assoc()){
         $descricao = null;
 
     $versao_add = floatval($versao_add); 
-    
+
+    $id_item = intval($id_item);
+    $empilhavel = intval($empilhavel);
+    $coletavel = intval($coletavel);
+    $renovavel = intval($renovavel);
+    $oculto_invt = intval($oculto_invt);
+    $programmer_art = intval($programmer_art);
+
     # Remove o underline do nome interno do item
     // $nome_int = str_replace("_", " ", $nome_interno);
     $nome_int = $nome_interno;
     
     // Verifica se o item possui registros de cores no título
     $verificar_item = "SELECT * from cor_item where id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+    $executa_item_1 = $conexao->query($verificar_item);
 
-    if($executa_item->num_rows > 0){
+    if($executa_item_1->num_rows > 0){
 
         $cor_item = array();
 
-        $dados2 = $executa_item->fetch_assoc();
+        $dados2 = $executa_item_1->fetch_assoc();
 
         $id_cor = $dados2["id_cor"];
         $valor_cor = $dados2["tipo_item"];
@@ -55,7 +62,26 @@ while($dados = $executa->fetch_assoc()){
         ));
     }
 
-    if($executa_item->num_rows == 0){
+    $verificar_durabilidade = "SELECT * from durabilidade_item where id_item = $id_item";
+    $executa_item_2 = $conexao->query($verificar_durabilidade);
+    $durabilidade = 0;
+
+    if($executa_item_2->num_rows > 0){
+    
+        $durabilidade_item = array();
+
+        $dados2 = $executa_item_2->fetch_assoc();
+
+        $id_durabilidade = $dados2["id_durabilidade"];
+        $durabilidade = $dados2["durabilidade"];
+
+        array_push($durabilidade_item, array(
+            "id_durabilidade" => $id_durabilidade,
+            "durabilidade" => $durabilidade
+        ));
+    }
+
+    if($executa_item_1 -> num_rows == 0 && $executa_item_2 -> num_rows == 0){
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -71,6 +97,23 @@ while($dados = $executa->fetch_assoc()){
             "oculto_invt" => $oculto_invt,
             "programmer_art" => $programmer_art
         ));
+    }else if($executa_item_2 -> num_rows == 0){
+        array_push($data, array(
+            "id_item" => $id_item,
+            "nome_icon" => $nome_icon,
+            "tipo_item" => $tipo_item,
+            "nome_item" => $nome_item,
+            "coletavel" => $coletavel,
+            "nome_interno" => $nome_int,
+            "empilhavel" => $empilhavel,
+            "versao_add" => $versao_add,
+            "renovavel" => $renovavel,
+            "aliases" => $aliases,
+            "descricao" => $descricao,
+            "oculto_invt" => $oculto_invt,
+            "programmer_art" => $programmer_art,
+            "cor_item" => $cor_item
+        ));
     }else{
         array_push($data, array(
             "id_item" => $id_item,
@@ -80,6 +123,7 @@ while($dados = $executa->fetch_assoc()){
             "coletavel" => $coletavel,
             "nome_interno" => $nome_int,
             "empilhavel" => $empilhavel,
+            "durabilidade" => $durabilidade_item,
             "versao_add" => $versao_add,
             "renovavel" => $renovavel,
             "aliases" => $aliases,

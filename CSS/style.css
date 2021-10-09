@@ -16,6 +16,7 @@ body{
     height: 100%;
     left: 0px;
     top: 0px;
+    z-index: 0 !important;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%);
 }
@@ -117,13 +118,7 @@ img#prancheta{
     width: 42px;
     height: 42px;
 }
-#selects{
-    position: absolute;
-    top: 40%;
-    left: 4%;
-}
 select{
-    position: absolute;
     max-width: 378px;
 }
 #inserir_item{
@@ -352,14 +347,12 @@ input, select{
     border: 0px solid;
 }
 #barra_pesquisa{
-    position: absolute;
     right: 16.6%;
     top: 110px;
 }
 .input_prancheta{
     padding-left: 10px;
     width: 356px;
-    position: absolute;
     left: 4%;
 }
 #barra_nome{
@@ -377,6 +370,9 @@ input, select{
 }
 #barra_aliases{
     top: 30%;
+}
+#barra_durabilidade{
+    top: 40%;
 }
 #titulo_aba{
     z-index: 3;
@@ -428,6 +424,15 @@ input, select{
 #btn_voltar, #btn_apagar{
     font-size: 30px;
     width: 300px;
+    z-index: 2;
+    transition: background-color .2s;
+    border: solid 0px white;
+}
+#btn_voltar:hover{
+    background-color: gray;
+}
+#btn_apagar:hover{
+    background-color: red;
 }
 #btn_voltar{
     position: absolute;
@@ -531,4 +536,43 @@ a{
 }
 .botoes_menu{
     display: none;
+}
+#prancheta_att{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#selecionador{
+    padding-top: 5%;
+    padding-left: 3%;
+    width: 378px;
+    height: 350px;
+}
+.pag_1{
+    z-index: 1;
+    width: 378px;
+    height: 300px;
+}
+#pag_1{
+    display: none;
+}
+.pag_2{
+    display: none;
+    z-index: 1;
+    width: 378px;
+    height: 300px;
+}
+.troca_pag_button{
+    width: 378px;
+    font-size: 30px;
+    border: solid 1px gray;
+    border-radius: 2px;
+    position: absolute;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: background-color .2s;
+}
+.troca_pag_button:hover{
+    background-color: gray;
 }

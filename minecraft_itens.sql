@@ -24,3 +24,10 @@ create table cor_item(
     tipo_item int not null,
     foreign key(id_item) references item(id_item)
 );
+
+create table durabilidade_item(
+    id_durabilidade int not null auto_increment primary key,
+    id_item int not null,
+    durabilidade int not null,
+    foreign key(id_item) references item(id_item)
+);

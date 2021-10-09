@@ -586,6 +586,23 @@ function sincroniza_tema(versao_jogo){
     }
 }
 
+function troca_itens(pag){
+
+    const esconde1 = document.getElementsByClassName("pag_1");
+    esconde1[0].style.display = "None";
+    
+    const esconde2 = document.getElementsByClassName("pag_2");
+    esconde2[0].style.display = "None";
+
+    document.getElementById("pag_1").style.display = "None";
+    document.getElementById("pag_2").style.display = "None";
+
+    const alvo = document.getElementsByClassName("pag_"+ pag);
+    alvo[0].style.display = "Block";
+
+    document.getElementById("pag_"+ ( 3 - pag)).style.display = "Block";
+}
+
 function toolTip(nome, descricao, nome_interno, cor_item, local){
 
     if(typeof nome != "undefined"){

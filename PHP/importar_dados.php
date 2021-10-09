@@ -55,6 +55,16 @@ foreach($data as $key => $value){
         $insere = "INSERT into cor_item (id_cor, id_item, tipo_item) values ($id_cor, $id_item, $tipo_item)";
         $executa = $conexao->query($insere);
     }
-} 
+
+    if(array_key_exists("durabilidade", $value)){
+        $durabili = $value->durabilidade;
+
+        $id_durabilidade = $durabili[0]->id_durabilidade;
+        $durabilidade = $durabili[0]->durabilidade;
+
+        $insere = "INSERT into durabilidade_item (id_durabilidade, id_item, durabilidade) values ($id_durabilidade, $id_item, $durabilidade)";
+        $executa = $conexao->query($insere);
+    }
+}
 
 Header("Location: ../index.php");
