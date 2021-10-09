@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="utf-8">
-    <title>Inventário</title>
+    <title>Informações</title>
     <link rel="shortcut icon" href="IMG/Itens/new/Construcao/bloco_grama.png">
 
     <!-- CSS -->
@@ -71,6 +71,7 @@
         $programmer_art = "checked";
 
     $cor_item = 0;
+    $durabilidade = "";
 
     $verificar_item = "SELECT * from cor_item where id_item = $id_item";
     $executa_item = $conexao->query($verificar_item);
@@ -79,6 +80,15 @@
         $dados2 = $executa_item->fetch_assoc();
 
         $cor_item = $dados2["tipo_item"];
+    }
+    
+    $verificar_item = "SELECT * from durabilidade_item where id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
+
+    if($executa_item->num_rows > 0){
+        $dados3 = $executa_item->fetch_assoc();
+
+        $durabilidade = $dados3["durabilidade"];
     } ?>
 
     <button id="btn_voltar" onclick="voltar_pag()">Voltar</button>
@@ -101,69 +111,79 @@
           echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite original deste item\")' onmouseout='toolTip()'>"; ?>    
     
     <form id="prancheta_att" method="post" action="PHP/item_atualizar.php" enctype="multipart/form-data">
-
-        <input type="text" name="id_item" value="<?php echo $id_item ?>" style="display: none;">
-    
-        <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required value="<?php echo $nome_item ?>" onmouseover="toolTip('Nome do item')" onmouseout="toolTip()">
-
-        <input class="input_prancheta" id="barra_descricao" type="text" placeholder="Descrição" name="descricao" value="<?php echo $descricao_item ?>" onmouseover="toolTip('Descrição do item')" onmouseout="toolTip()">
-
-        <input class="input_prancheta" id="barra_nome_interno" type="text" placeholder="Nome interno" name="nome_interno" value="<?php echo $nome_interno ?>" onmouseover="toolTip('Nome interno do item')" onmouseout="toolTip()">
-
-        <input class="input_prancheta" id="barra_aliases" type="text" placeholder="Aliases" name="aliases" value="<?php echo $aliases ?>" onmouseover="toolTip('Aliases do item')" onmouseout="toolTip()">
-
-        <div id="selects">
-            <select name="abamenu" style="width: 505px;" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
-
-                <?php
-                $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
-                $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
-                
-                // Procura o indice da categoria do item e exibe formatado
-                $indice = array_search($tipo_item, $categorias);
-                echo "<option value='$tipo_item'>$categorias_exib[$indice]</option>";
-
-                for($i = 0; $i < sizeof($categorias); $i++){
-                    if($tipo_item != $categorias[$i])
-                        echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";
-                } ?> 
-            </select><br><br>
-
-            <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A Cor do item no inventário')" onmouseout="toolTip()">
-                <?php
-                    $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa"];
-
-                    echo "<option value='$cor_item'>$cores_nome[$cor_item]</option>";
-
-                    for($i = sizeof($cores_nome) - 1; $i >= 0; $i--){
-                        if($i != $cor_item)
-                            echo "<option value='$i'>$cores_nome[$i]</option>";
-                    } ?>
-            </select><br><br>
+        <div id="selecionador">
+            <div class="pag_1">
+                <input type="text" name="id_item" value="<?php echo $id_item ?>" style="display: none;">
             
-            <select name="empilhavel" style="width: 505px;" onmouseover="toolTip('Quantos itens se juntam')" onmouseout="toolTip()">
-                <?php
-                    $empilhagens = [64, 16, 0];
-                    $empilhagens_exib = ["64x", "16x", "Não"];
+                <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required value="<?php echo $nome_item ?>" onmouseover="toolTip('Nome do item')" onmouseout="toolTip()">
 
-                    $indice = array_search($empilhavel, $empilhagens);
-                    echo "<option value='$empilhavel'>$empilhagens_exib[$indice]</option>";
+                <input class="input_prancheta" id="barra_descricao" type="text" placeholder="Descrição" name="descricao" value="<?php echo $descricao_item ?>" onmouseover="toolTip('Descrição do item')" onmouseout="toolTip()">
 
-                    for($i = sizeof($empilhagens) - 1; $i >= 0; $i--){
-                        if($empilhagens[$i] != $empilhavel)
-                            echo "<option value='$empilhagens[$i]'>$empilhagens_exib[$i]</option>";
+                <?php if($empilhavel == 0) { ?>
+                    <input class="input_prancheta" id="barra_durabilidade" type="text" placeholder="Durabilidade" name="durabilidade" value="<?php echo $durabilidade ?>" onmouseover="toolTip('Durabilidade do item')" onmouseout="toolTip()">
+                <?php } ?>
+
+                <input class="input_prancheta" id="barra_nome_interno" type="text" placeholder="Nome interno" name="nome_interno" value="<?php echo $nome_interno ?>" onmouseover="toolTip('Nome interno do item')" onmouseout="toolTip()">
+
+                <input class="input_prancheta" id="barra_aliases" type="text" placeholder="Aliases" name="aliases" value="<?php echo $aliases ?>" onmouseover="toolTip('Aliases do item')" onmouseout="toolTip()">
+            </div>
+
+            <div id="selects" class="pag_2">
+                <select name="abamenu" style="width: 505px;" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
+
+                    <?php
+                    $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
+                    $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
+                    
+                    // Procura o indice da categoria do item e exibe formatado
+                    $indice = array_search($tipo_item, $categorias);
+                    echo "<option value='$tipo_item'>$categorias_exib[$indice]</option>";
+
+                    for($i = 0; $i < sizeof($categorias); $i++){
+                        if($tipo_item != $categorias[$i])
+                            echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";
+                    } ?> 
+                </select><br><br>
+
+                <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A Cor do item no inventário')" onmouseout="toolTip()">
+                    <?php
+                        $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa"];
+
+                        echo "<option value='$cor_item'>$cores_nome[$cor_item]</option>";
+
+                        for($i = sizeof($cores_nome) - 1; $i >= 0; $i--){
+                            if($i != $cor_item)
+                                echo "<option value='$i'>$cores_nome[$i]</option>";
+                        } ?>
+                </select><br><br>
+                
+                <select name="empilhavel" style="width: 505px;" onmouseover="toolTip('Quantos itens se juntam')" onmouseout="toolTip()">
+                    <?php
+                        $empilhagens = [64, 16, 0];
+                        $empilhagens_exib = ["64x", "16x", "Não"];
+
+                        $indice = array_search($empilhavel, $empilhagens);
+                        echo "<option value='$empilhavel'>$empilhagens_exib[$indice]</option>";
+
+                        for($i = sizeof($empilhagens) - 1; $i >= 0; $i--){
+                            if($empilhagens[$i] != $empilhavel)
+                                echo "<option value='$empilhagens[$i]'>$empilhagens_exib[$i]</option>";
+                        } ?>
+                </select><br><br>
+
+                <select name="versao" style="width: 505px;" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
+
+                    <?php echo "<option value='$versao_add'>1.$versao_add</option>";
+            
+                    for($i = 18; $i >= 0; $i--){
+                        if($versao_add != $i)
+                            echo "<option value='$i'>1.$i</option>";
                     } ?>
-            </select><br><br>
-
-            <select name="versao" style="width: 505px;" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
-
-                <?php echo "<option value='$versao_add'>1.$versao_add</option>";
-        
-                for($i = 18; $i >= 0; $i--){
-                    if($versao_add != $i)
-                        echo "<option value='$i'>1.$i</option>";
-                } ?>
-            </select>
+                </select>
+            </div><br><br>
+            
+            <input type="button" value=">" id="pag_2" class="troca_pag_button" onclick="troca_itens(2)">
+            <input type="button" value="<" id="pag_1" class="troca_pag_button" onclick="troca_itens(1)">
         </div>
 
         <div id="checkboxes">

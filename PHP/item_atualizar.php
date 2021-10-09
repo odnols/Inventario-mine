@@ -11,6 +11,7 @@ $aliases = $_POST["aliases"];
 
 $cor_tipo_item = $_POST["cor_tipo_item"];
 $descricao = $_POST["descricao"];
+$durabilidade = $_POST["durabilidade"];
 
 $arq_name = $_FILES["img"]["name"]; //O nome do ficheiro
 $arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
@@ -80,6 +81,20 @@ if($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0){ // Só insere se 
 
     $executa = $conexao-> query($insere);
 }
+
+// Verifica se o item possui registros anteriores
+$verifica_durabilidade_item = "SELECT * from durabilidade_item where id_item = $id_item";
+$executa_verificacao = $conexao->query($verifica_durabilidade_item);
+
+if($executa_verificacao->num_rows > 0)
+    if(strlen($durabilidade) > 0)
+        $insere = "UPDATE durabilidade_item set durabilidade = $durabilidade where id_item = $id_item";
+    else
+        $insere = "DELETE from durabilidade_item where id_item = $id_item";
+else
+    $insere = "INSERT into durabilidade_item values (null, $id_item, $durabilidade)";
+
+$executa = $conexao-> query($insere);
 
 // Atualizando a imagem que está sendo utilizada
 if(strlen($arq_name) > 0){
