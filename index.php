@@ -98,19 +98,18 @@
     
     <div id="botoes_ferramentas">
         <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
-        <a class="bttn_frrm" href="PHP/exportar_dados.php">Exportar Dados</a> <?php } ?>
-        <a class="bttn_frrm" id="button_importar_dados" href="PHP/importar_dados.php" onclick="importar_dados()">Importar Dados</a>
+        <a class="bttn_frrm" href="PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados de para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
+        <a class="bttn_frrm" id="button_importar_dados" href="PHP/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
         
         <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
-        <a class="bttn_frrm" id="button_apagar_dados" href="PHP/limpar_dados.php">Limpar Dados</a>
-        <a class="bttn_frrm" href="JSON/substituir.php">Traduzir itens</a>   
+        <a class="bttn_frrm" id="button_apagar_dados" href="PHP/limpar_dados.php" onmouseover="toolTip('Apague todos os dados salvos no banco')" onmouseout="toolTip()">Limpar Dados</a>
         <?php } ?>
     </div>
 
     <div id="menu_user">
         <?php if(!isset($_GET["dg"])) { ?>
-        <a class="bttn_frrm" href="index.php?dg=true" onclick="#" onmouseover="toolTip('Os gráficos originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
-        <a class="bttn_frrm" href="index.php" onclick="#" >Gráficos padrões</a> <?php } ?>
+        <a class="bttn_frrm" href="index.php?dg=true" onmouseover="toolTip('Os gráficos originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
+        <a class="bttn_frrm" href="index.php">Gráficos padrões</a> <?php } ?>
 
         <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a>
         <a class="bttn_frrm" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()">Tema</a>
@@ -127,38 +126,40 @@
 
     <!-- Adicionar item -->
     <form id="prancheta_add" method="post" action="PHP/item_registrar.php" enctype="multipart/form-data">
-        <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required>
-        
-        <input class="input_prancheta" id="barra_nome_interno_pr" type="text" placeholder="Nome interno" name="nome_interno">
-
-        <div id="selects">
-            <select name="abamenu" style="width: 505px;" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
-
-            <?php
-                $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
-                $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
+        <div id="inputs_principais">
+            <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required>
             
-                for($i = 0; $i < sizeof($categorias); $i++){
-                    echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";
-                } ?>
-            </select><br><br>
+            <input class="input_prancheta" id="barra_nome_interno_pr" type="text" placeholder="Nome interno" name="nome_interno">
 
-            <select name="empilhavel" style="width: 505px;" onmouseover="toolTip('Quantos itens se juntam')" onmouseout="toolTip()">
-                <option value="64">64x</option>
-                <option value="16">16x</option>
-                <option value="0">Não</option>            
-            </select><br><br>
+            <div id="selects">
+                <select name="abamenu" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
 
-            <select name="versao" style="width: 505px;" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
-                <option value="outro">Outro</option>
                 <?php
+                    $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
+                    $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
+                
+                    for($i = 0; $i < sizeof($categorias); $i++){
+                        echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";
+                    } ?>
+                </select><br><br>
 
-                for($i = 18; $i >= 0; $i--){
-                    echo "<option value='$i'>1.$i</option>";
-                } ?>
-            </select>
+                <select name="empilhavel" onmouseover="toolTip('Quantos itens se juntam')" onmouseout="toolTip()">
+                    <option value="64">64x</option>
+                    <option value="16">16x</option>
+                    <option value="0">Não</option>            
+                </select><br><br>
+
+                <select name="versao" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
+                    <option value="outro">Outro</option>
+                    <?php
+
+                    for($i = 18; $i >= 0; $i--){
+                        echo "<option value='$i'>1.$i</option>";
+                    } ?>
+                </select>
+            </div>
         </div>
-        
+
         <div id="checkboxes">
             <input class="input_check" type="checkbox" name="coletavelsurvival" checked  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/coracao.png"  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
@@ -352,6 +353,7 @@
     <script type="text/javascript">
 
         categoria(1, 0);
+        clique('prancheta');
 
         document.addEventListener("onKeyDown", clique());
     </script>

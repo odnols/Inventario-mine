@@ -17,7 +17,7 @@ body{
     left: 0px;
     top: 0px;
     z-index: 0 !important;
-    background: rgb(0,0,0);
+    background: rgba(9,121,99,0.6699054621848739);
     background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%);
 }
 h3.ordena{
@@ -102,6 +102,12 @@ img#prancheta{
     right: 4%;
     height: 408px;
 }
+#inputs_principais{
+    padding-top: 40px;
+    padding-left: 3%;
+    height: auto;
+    width: 368px;
+}
 .input_prancheta{
     border: 0px solid;
     color: white;
@@ -119,13 +125,19 @@ img#prancheta{
     height: 42px;
 }
 select{
-    max-width: 378px;
+    max-width: 368px;
 }
 #inserir_item{
     width: 90%;
     right: 6%;
     bottom: 6%;
     position: absolute;
+    font-size: 30px;
+    transition: background-color .2s;
+    border: solid 0px white;
+}
+#inserir_item:hover{
+    background-color: greenyellow;
 }
 #checkboxes{
     position: absolute;
@@ -431,8 +443,8 @@ input, select{
 #btn_voltar:hover{
     background-color: gray;
 }
-#btn_apagar:hover{
-    background-color: red;
+#btn_apagar:hover, #button_apagar_dados:hover{
+    background-color: rgb(255, 38, 38);
 }
 #btn_voltar{
     position: absolute;
@@ -485,16 +497,25 @@ a{
     color: black !important;
     background-color: white;
     width: 85%; 
-    border: 1px solid grey;
+    border: 0px solid grey;
     padding: 10px;
     height: 34px;
     border-radius: 4px;
+    transition: background-color .2s;
+}
+.bttn_frrm:hover{
+    background-color: rgb(224, 193, 135);
 }
 #button_importar_dados{
     background-color: rgb(154, 231, 212);
+    transition: background-color .2s;
+}
+#button_importar_dados:hover{
+    background-color: rgb(100, 197, 173);
 }
 #button_apagar_dados{
     background-color: rgb(253, 179, 179);
+    transition: background-color .2s;
 }
 #selecionar_celula_dados{
     display: none;
@@ -512,15 +533,21 @@ a{
 #bttns_navegacao{
     position: absolute;
     z-index: 100;
-    top: 2%;
+    top: 1%;
     left: 50%;
     margin-left: -45px;
-    width: 90px;
-    height: 90px;
+    width: 104px;
 }
 .navegacao{
-    height: 43px;
-    width: 43px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: wheat;
+    transition: background-color .2s;
+    border: solid 0px white;
+}
+.navegacao:hover{
+    background-color: lightskyblue;
 }
 #infos_versao{
     position: absolute;

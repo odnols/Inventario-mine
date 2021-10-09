@@ -16,6 +16,7 @@
 </head>
 <body onload="sincroniza_tema()">
 
+    <div id="fundo_personali"></div>
     <div id="filtro_colorido"></div>
     
     <div id="minetip-tooltip">
@@ -209,6 +210,24 @@
     
     <?php 
         echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
+
+        echo "<style>
+            #fundo_personali{
+                background: url('IMG/Itens/new/$tipo_item/$nome_icon'),
+                url('IMG/Itens/new/$tipo_item/$nome_icon');
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: 0;
+                left: 0px;
+                top: 0px;
+                background-position: 150px 150px,
+                                     0px 0px;
+                background-size: 300px;
+                image-rendering: pixelated;
+                filter: blur(5px);
+            }
+        </style>";
     }else{
         echo "<script>toolTip(\"Oh, noo!\", \"[&2Este ID não existe ;C\", \"404\", 0, 1)</script>";
 
