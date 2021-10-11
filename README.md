@@ -16,16 +16,16 @@ Todas as características e estilos foram recriadas fidedignas ao jogo base na <
 
 <h2>Pesquisando</h2>
 <p>A ferramenta de pesquisa também está presente, você pode procurar por qualquer item ou bloco.</p>
-<img src="https://user-images.githubusercontent.com/56841881/136668621-eb77f456-e913-4640-9992-4686c223496e.png">
+<img src="https://user-images.githubusercontent.com/56841881/136726403-035c4929-acf0-4c9b-ba22-dec22d2bee4a.png">
 
 
 <p>Também há várias abas extras, para ajudar a gerenciar o sistema ou navegar entre as versões do jogo</p>
-<img src="https://user-images.githubusercontent.com/56841881/136668611-67d088bc-a572-4d6b-9a05-0c7b6ff805dc.png">
+<img src="https://user-images.githubusercontent.com/56841881/136726469-0b83aafa-7877-4f41-b9d1-074aec0ed4c2.png">
 
 
 <h2>Editando</h2>
 <p>Para editar os itens, existe uma tela separada, onde vários dados do item podem ser alterados facilmente.</p>
-<img src="https://user-images.githubusercontent.com/56841881/136668578-ea90efe4-1a6a-4d0b-94e1-5bfad257e2f2.png">
+<img src="https://user-images.githubusercontent.com/56841881/136726529-87e1dbf7-6cd8-41fa-8794-8efa14122992.png">
 
 Por esta tela é possível definir a cor do nome do item, definir a aba que ele irá aparecer no menu, a versão que foi adicionado, seu nome, descrição e outras estatísticas.
 
@@ -58,21 +58,21 @@ O Resultado será este// <br>
 
 <h2>Estatísticas Gerais</h2>
 <p>Atendendo o objetivo do sistema, essa parte é onde ficam todos os valores interessantes sobre os itens do jogo, nele temos vários, onde é possível ver de forma concreta a quantidade de itens existentes no jogo, e com tais características.</p>
-<img src="https://user-images.githubusercontent.com/56841881/129284048-5f3029e8-1dc1-4fc3-aeeb-5eb539338587.png">
+<img src="https://user-images.githubusercontent.com/56841881/136726586-172f91a5-7b97-4270-a1b5-da4ae5b90c3f.png">
 
 
 <h2>Modo noturno</h2>
 <p>Também há um modo noturno incluso no sistema, ele deixará tudo mais escuro ( :v ) e agradável aos olhos, caso precise/goste de usar este modo.</p>
-<img src="https://user-images.githubusercontent.com/56841881/136668776-b53cb253-20e9-48c2-b006-4f032a9a8266.png">
+<img src="https://user-images.githubusercontent.com/56841881/136726678-c00180a8-6892-418f-90be-04b3fc225e0c.png">
 
 
 <h2>Máquina do tempo</h2>
 <p>É possível navegar entre todas as versões completas lançadas até hoje, partindo da Edição Java 1.0 até a versão 1.18. Com a ajuda de um menu separado, é possível navegar de versão em versão, listando a quantidade de itens que foram adicionados em cada uma e destacando-os.</p>
-<img src="https://user-images.githubusercontent.com/56841881/136668846-3be4ff22-74f4-4efc-9f42-cec701ad704b.png">
+<img src="https://user-images.githubusercontent.com/56841881/136726802-5db9d851-b53c-4181-a186-e2f7d87b7c7b.png">
 
 <p>O Programmer Art também está incluso no sistema, os sprites estão sendo coletados da Edição Java 1.12 e 1.11, para ativar este recurso, basta clicar no canto inferior direito chamado "Programmer Art", todos os itens que possuírem texturas antigas terão seus sprites alterados para a versão anterior!</p>
 <img src="https://user-images.githubusercontent.com/56841881/129591015-04ce4b83-8bbd-4741-aa6f-94d6a26ca15f.png">
 
 <h3>Menu Clássico</h3>
 O Menu Clássico é parte da máquina do tempo, ele é ativado nas Edições 1.0, 1.1 e 1.2; Mais versões de menus serão implementadas no futuro para cobrir todas as alterações que ocorreram no menu do jogo.
-<img src="https://user-images.githubusercontent.com/56841881/136668884-6f20bc05-4130-4750-b34d-dd36be1f0575.png">
+<img src="https://user-images.githubusercontent.com/56841881/136726929-fe675898-fc13-4869-8ec6-4e24ab71c238.png">
