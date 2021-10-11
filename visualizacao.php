@@ -47,19 +47,19 @@
     <div id="menu_user">
 
         <?php if(($versao_jogo - 1) > -1){ ?>
-            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo - 1; ?>"><button class="navegacao"> < </button></a>
+            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo - 1; ?>"><button class="navegacao" onmouseover="toolTip('Versão anterior')" onmouseout="toolTip()"> < </button></a>
         <?php }
 
         if($versao_jogo < 18) { ?>
-            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>"><button class="navegacao"> > </button></a>
+            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>"><button class="navegacao" onmouseover="toolTip('Próxima versão')" onmouseout="toolTip()"> > </button></a>
         <?php } ?>
 
         <?php if(!isset($_GET["dg"])) { ?>
         <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>&dg=true" onclick="#" onmouseover="toolTip('Os gráficos originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
-        <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>" onclick="#">Gráficos padrões</a> <?php } ?>
+        <a class="bttn_frrm" id="bttn_programmers_atv" href="index.php" onmouseover="toolTip('Volte para os sprites atuais do Minecraft')" onmouseout="toolTip()">Gráficos padrões</a> <?php } ?>
 
         <a class="bttn_frrm" href="index.php" onmouseover="toolTip('O gerenciador de itens')" onmouseout="toolTip()">Gerenciador</a>
-        <a class="bttn_frrm" href="#" onclick="troca_tema(<?php echo $versao_jogo ?>)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()">Tema</a>
+        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
     <div id="infos_versao">

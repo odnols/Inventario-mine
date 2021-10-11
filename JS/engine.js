@@ -471,8 +471,8 @@ function previewImage(local) {
     if (file.length > 0) {
         var fileReader = new FileReader();
 
-        fileReader.onload = function (event) {
-            document.getElementById("preview").setAttribute("src", event.target.result);
+        fileReader.onload = function (event){
+            document.getElementById("preview_sprite").setAttribute("src", event.target.result);
         };
 
         fileReader.readAsDataURL(file[0]);
@@ -510,9 +510,19 @@ function sincroniza_tema(versao_jogo){
 
     alvo = "claro";
 
-    if(tema == 0)
+    if(tema == 0){
         alvo = "escuro";
-    
+        document.getElementById("icone_tema").innerHTML = "🌑";
+        document.getElementById("bttn_troca_tema").style.backgroundColor = "rgb(39, 39, 45)";
+        document.getElementById("filtro_colorido").style.background = " linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(3, 26, 124, 0.67) 39%, rgba(0,212,255,0) 100%)";
+    }
+
+    if(alvo == "claro"){
+        document.getElementById("icone_tema").innerHTML = "☀️";
+        document.getElementById("bttn_troca_tema").style.backgroundColor = "white";
+        document.getElementById("filtro_colorido").style.background = "linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%)";
+    }
+
     lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add"];
     nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png"];
 
@@ -684,13 +694,18 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         if(typeof local == "undefined")
             document.getElementById("minetip-tooltip").style.display = "Block";
 
-        $(".slot_item").on("mousemove", function( event ) {
-            $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
-        });
+        // Verifica se existem muitos alvos para poder acompanhar o mouse            
+        const verifica = document.getElementsByClassName("slot_item");
 
-        $(".slot_item_add").on("mousemove", function( event ) {
-            $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
-        });
+        if(verifica.length > 1){
+            $(".slot_item").on("mousemove", function( event ) {
+                $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
+            });
+
+            $(".slot_item_add").on("mousemove", function( event ) {
+                $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
+            });
+        }
     }else{
         document.getElementById("minetip-tooltip").style.display = "None";
     }

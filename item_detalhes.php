@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/anima.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="css/att_item.css">
     
     <script src="JS/engine.js"></script>
     
@@ -93,13 +94,17 @@
     } ?>
 
     <button id="btn_voltar" onclick="voltar_pag()">Voltar</button>
+    
+    <div id="menu_user">
+        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
+    </div>
 
     <div id="bttns_navegacao">
         <?php if($id_item - 1 > 0){ ?>
-            <a href="item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao"> < </button></a>
+            <a href="item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao" onmouseover="toolTip('Item anterior')" onmouseout="toolTip()"> < </button></a>
         <?php } ?>
 
-        <a href="item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao"> > </button></a>
+        <a href="item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao" onmouseover="toolTip('Próximo item')" onmouseout="toolTip()"> > </button></a>
     </div>
 
     <?php if(strlen($nome_item) > 0) { // Verifica se existem dados para o ID ?> 
@@ -108,8 +113,8 @@
 
     <?php echo "<img id='img_detalhes' src='IMG/Itens/new/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite atual deste item\")' onmouseout='toolTip()'>";
 
-        if($programmer_art != "")
-          echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite original deste item\")' onmouseout='toolTip()'>"; ?>    
+    if($programmer_art != "")
+        echo "<img id='img_detalhes_classic' src='IMG/Itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite original deste item\")' onmouseout='toolTip()'>"; ?>    
     
     <form id="prancheta_att" method="post" action="PHP/item_atualizar.php" enctype="multipart/form-data">
         <div id="selecionador">
@@ -183,31 +188,34 @@
                 </select>
             </div><br><br>
             
-            <input type="button" value=">" id="pag_2" class="troca_pag_button" onclick="troca_itens(2)">
-            <input type="button" value="<" id="pag_1" class="troca_pag_button" onclick="troca_itens(1)">
+            <input type="button" value=">" id="pag_2" class="troca_pag_button" onclick="troca_itens(2)" onmouseover="toolTip('Outros dados')" onmouseout="toolTip()">
+            <input type="button" value="<" id="pag_1" class="troca_pag_button" onclick="troca_itens(1)" onmouseover="toolTip('Outros dados')" onmouseout="toolTip()">
         </div>
 
         <div id="checkboxes">
-            <input class="input_check" type="checkbox" name="coletavelsurvival" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+            <div id="separador_checks">
+                <div id="opcoes_esquerda">
+                    <input class="input_check" type="checkbox" name="coletavelsurvival" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
-            <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+                    <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+                </div>
+                <div id="opcoes_direita">
+                    <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
 
-            <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
-
-            <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
+                    <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
+                </div>
+            </div>
 
             <div id="selecionar_sprite">
-                <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage(1);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
+                <input id="input_img" type="file" name="img" accept="image/*" onchange="previewImage(1);" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
 
-                <img id="preview_sprite">
+                <img id="preview_sprite" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
             </div>
         </div>
 
         <input id="inserir_item" type="submit" value="Atualizar">
     </form>
-
-    <div class="slot_item" style="display: none;"></div>
-    
+ 
     <?php 
         echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
 
@@ -230,7 +238,7 @@
         </style>";
     }else{
         echo "<script>toolTip(\"Oh, noo!\", \"[&2Este ID não existe ;C\", \"404\", 0, 1)</script>";
-
+        
         echo "<style>
             #filtro_colorido{
                 background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(80,0,0,0.6699054621848739) 39%, rgba(255,0,0,0) 100%) !important;

@@ -40,9 +40,7 @@
         <div id="text_estatsc">
             <center><h2 class="cor_textos">Estatísticas</h2></center>
         
-            <?php
-
-            $graphics = true;
+            <?php $graphics = true;
 
             if(!isset($_GET["dg"]))
                 $graphics = false;    
@@ -98,7 +96,7 @@
     
     <div id="botoes_ferramentas">
         <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
-        <a class="bttn_frrm" href="PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados de para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
+        <a class="bttn_frrm" href="PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
         <a class="bttn_frrm" id="button_importar_dados" href="PHP/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
         
         <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
@@ -107,12 +105,13 @@
     </div>
 
     <div id="menu_user">
-        <?php if(!isset($_GET["dg"])) { ?>
-        <a class="bttn_frrm" href="index.php?dg=true" onmouseover="toolTip('Os gráficos originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
-        <a class="bttn_frrm" href="index.php">Gráficos padrões</a> <?php } ?>
-
-        <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a>
-        <a class="bttn_frrm" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()">Tema</a>
+        <?php if($executa->num_rows > 0) { if(!isset($_GET["dg"])) { ?>
+        <a class="bttn_frrm" href="index.php?dg=true" onmouseover="toolTip('Os sprites originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
+        <a class="bttn_frrm" id="bttn_programmers_atv" href="index.php" onmouseover="toolTip('Volte para os sprites atuais do Minecraft')" onmouseout="toolTip()">Gráficos padrões</a> <?php } } ?>
+            
+        <?php if($executa->num_rows > 0) { ?>
+        <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a> <?php } ?>
+        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
     <!-- Importar célula de dados para o banco -->
@@ -166,9 +165,9 @@
             <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
             <div id="selecionar_sprite">
-                <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Foto do item')" onmouseout="toolTip()">
+                <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
 
-                <img id="preview_sprite">
+                <img id="preview_sprite" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
             </div>
         </div>
 
@@ -351,7 +350,7 @@
     <script src="JS/engine.js"></script>
 
     <script type="text/javascript">
-        categoria(1, 0);
+        categoria(0, 0);
         document.addEventListener("onKeyDown", clique());
     </script>
 </body>

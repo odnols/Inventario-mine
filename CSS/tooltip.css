@@ -74,12 +74,6 @@
 	color: #fc54fc;
 	text-shadow: 3px 3px 0#3e153e;
 }
-.caixa_item_detalhes{
-	display: block !important;
-	position: absolute;
-	left: 50% !important;
-	top: 60% !important;
-}
 #descricao_item_minetp{
 	color: #a8a8a8;
 	float: left;
