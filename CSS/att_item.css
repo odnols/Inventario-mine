@@ -1,0 +1,36 @@
+#checkboxes{
+    right: 15%;
+}
+#separador_checks{
+    width: 300px;
+}
+#opcoes_esquerda{
+    float: left;
+    padding-left: 1%;
+}
+#opcoes_direita{
+    width: 100px;
+    float: left;
+    padding-left: 6%;
+}
+#selecionar_sprite{
+    width: 148px;
+    padding-left: 5%;
+}
+#input_img{
+    width: 194px;
+}
+#preview_sprite{
+    margin-left: 50%;
+}
+.caixa_item_detalhes{
+	display: block !important;
+	position: absolute;
+	left: 40% !important;
+	top: 50% !important;
+}
+#minetip-tooltip{
+    position: fixed;
+    top: 10%;
+    left: 35%;
+}

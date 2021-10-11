@@ -18,7 +18,8 @@ body{
     top: 0px;
     z-index: 0 !important;
     background: rgba(9,121,99,0.6699054621848739);
-    background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(4, 78, 64, 0.67) 39%, rgba(0,212,255,0) 100%);
+    transition: background-color .2s;
 }
 h3.ordena{
     color: white;
@@ -421,6 +422,7 @@ input, select{
     height: 48px;
     image-rendering: auto;
     image-rendering: pixelated;
+    z-index: 1;
 }
 #img_detalhes_classic{
     position: absolute;
@@ -432,6 +434,7 @@ input, select{
     height: 48px;
     image-rendering: auto;
     image-rendering: pixelated;
+    z-index: 1;
 }
 #btn_voltar, #btn_apagar{
     font-size: 30px;
@@ -444,7 +447,7 @@ input, select{
     background-color: gray;
 }
 #btn_apagar:hover, #button_apagar_dados:hover{
-    background-color: rgb(255, 38, 38);
+    background-color: rgb(241, 101, 101);
 }
 #btn_voltar{
     position: absolute;
@@ -455,7 +458,6 @@ input, select{
     position: absolute;
     top: 2%;
     left: 6.5%;
-    background-color: rgb(241, 101, 101);
 }
 #lista_versoes{
     background: url("../IMG/Interface/Livro.png") no-repeat;
@@ -506,6 +508,13 @@ a{
 .bttn_frrm:hover{
     background-color: rgb(224, 193, 135);
 }
+#bttn_programmers_atv{
+    background-color: rgb(224, 193, 135);
+    transition: background-color .2s;
+}
+#bttn_programmers_atv:hover{
+    background-color: rgb(180, 147, 85);
+}
 #button_importar_dados{
     background-color: rgb(154, 231, 212);
     transition: background-color .2s;
@@ -513,7 +522,7 @@ a{
 #button_importar_dados:hover{
     background-color: rgb(100, 197, 173);
 }
-#button_apagar_dados{
+#button_apagar_dados, #btn_apagar{
     background-color: rgb(253, 179, 179);
     transition: background-color .2s;
 }
