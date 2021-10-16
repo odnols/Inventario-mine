@@ -20,7 +20,7 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-            for($i = 0; $i < 18; $i += 2){
+            for($i = 0; $i < 19; $i += 2){
                 $x = $i + 1;
 
                 echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a> |";
@@ -152,7 +152,7 @@
                     <option value="outro">Outro</option>
                     <?php
 
-                    for($i = 18; $i >= 0; $i--){
+                    for($i = 19; $i >= 0; $i--){
                         echo "<option value='$i'>1.$i</option>";
                     } ?>
                 </select>

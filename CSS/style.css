@@ -9,6 +9,8 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     user-select: none;
+    image-rendering: auto;
+    image-rendering: pixelated;
 }
 #filtro_colorido{
     position: fixed;
@@ -420,8 +422,6 @@ input, select{
     filter: drop-shadow(0px 0px 3px black);
     width: 48px;
     height: 48px;
-    image-rendering: auto;
-    image-rendering: pixelated;
     z-index: 1;
 }
 #img_detalhes_classic{

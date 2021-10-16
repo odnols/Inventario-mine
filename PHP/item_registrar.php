@@ -34,7 +34,7 @@ if($executa->num_rows == 0 || $nome == "Disco musical" || $nome == "Livro encant
     $executa = $conexao->query($insere);
 
     // Criando uma cópia da imagem
-    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\$abamenu/". $arq_name);
+    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\new\\$abamenu/". $arq_name);
 }
 
 Header("Location: ../index.php");

@@ -102,7 +102,7 @@ if(strlen($arq_name) > 0){
     $executa = $conexao->query($atualiza);
 
     // Criando uma cópia da imagem
-    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\$abamenu/". $arq_name);
+    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\new\\$abamenu/". $arq_name);
 }
 
 Header("Location: ../item_detalhes.php?id=$id_item");
