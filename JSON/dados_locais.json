@@ -1,7 +1,7 @@
 [
     {
         "id_item": 1,
-        "nome_icon": "terra.png",
+        "nome_icon": "dirt.png",
         "tipo_item": "Construcao",
         "nome_item": "Terra",
         "coletavel": 1,
@@ -157,7 +157,7 @@
     },
     {
         "id_item": 11,
-        "nome_icon": "muda_pinheiro.png",
+        "nome_icon": "spruce_sapling.png",
         "tipo_item": "Decorativos",
         "nome_item": "Muda de pinheiro",
         "coletavel": 1,
@@ -217,7 +217,7 @@
     },
     {
         "id_item": 15,
-        "nome_icon": "Spyglass_JE2.png",
+        "nome_icon": "spyglass.png",
         "tipo_item": "Ferramentas",
         "nome_item": "Luneta",
         "coletavel": 1,
@@ -232,7 +232,7 @@
     },
     {
         "id_item": 16,
-        "nome_icon": "Bundle_Filled_JE2.png",
+        "nome_icon": "bundle.png",
         "tipo_item": "Ferramentas",
         "nome_item": "Trouxa",
         "coletavel": 1,
@@ -292,7 +292,7 @@
     },
     {
         "id_item": 20,
-        "nome_icon": "Glow_Ink_Sac_JE1.png",
+        "nome_icon": "glow_ink_sac.png",
         "tipo_item": "Diversos",
         "nome_item": "Bolsa de tinta brilhante",
         "coletavel": 1,
@@ -367,7 +367,7 @@
     },
     {
         "id_item": 25,
-        "nome_icon": "Netherite_Scrap_JE2_BE1.png",
+        "nome_icon": "netherite_scrap.png",
         "tipo_item": "Diversos",
         "nome_item": "Fragmentos de netherita",
         "coletavel": 1,
@@ -382,7 +382,7 @@
     },
     {
         "id_item": 26,
-        "nome_icon": "Netherite_Ingot_JE1.png",
+        "nome_icon": "netherite_ingot.png",
         "tipo_item": "Diversos",
         "nome_item": "Barra de netherita",
         "coletavel": 1,
@@ -682,7 +682,7 @@
     },
     {
         "id_item": 46,
-        "nome_icon": "pedra.png",
+        "nome_icon": "stone.png",
         "tipo_item": "Construcao",
         "nome_item": "Pedra",
         "coletavel": 1,
@@ -742,7 +742,7 @@
     },
     {
         "id_item": 50,
-        "nome_icon": "Lectern_JE2_BE1.png",
+        "nome_icon": "lectern.png",
         "tipo_item": "Redstone",
         "nome_item": "Atril",
         "coletavel": 1,
@@ -907,7 +907,7 @@
     },
     {
         "id_item": 62,
-        "nome_icon": "Gold_Ingot_JE4_BE2.png",
+        "nome_icon": "gold_ingot.png",
         "tipo_item": "Diversos",
         "nome_item": "Barra de ouro",
         "coletavel": 1,
@@ -982,7 +982,7 @@
     },
     {
         "id_item": 67,
-        "nome_icon": "carne_podre.png",
+        "nome_icon": "rotten_flesh.png",
         "tipo_item": "Alimentos",
         "nome_item": "Carne podre",
         "coletavel": 1,
@@ -1084,7 +1084,7 @@
     },
     {
         "id_item": 73,
-        "nome_icon": "salmao_assado.png",
+        "nome_icon": "cooked_salmon.png",
         "tipo_item": "Alimentos",
         "nome_item": "Salm\u00e3o assado",
         "coletavel": 1,
@@ -1159,7 +1159,7 @@
     },
     {
         "id_item": 78,
-        "nome_icon": "bolo.png",
+        "nome_icon": "cake.png",
         "tipo_item": "Alimentos",
         "nome_item": "Bolo",
         "coletavel": 1,
@@ -1279,7 +1279,7 @@
     },
     {
         "id_item": 86,
-        "nome_icon": "bloco_grama.png",
+        "nome_icon": "grass_block.png",
         "tipo_item": "Construcao",
         "nome_item": "Bloco de grama",
         "coletavel": 1,
@@ -1294,7 +1294,7 @@
     },
     {
         "id_item": 87,
-        "nome_icon": "terra_enraizada.png",
+        "nome_icon": "rooted_dirt.png",
         "tipo_item": "Construcao",
         "nome_item": "Terra enraizada",
         "coletavel": 1,
@@ -1309,7 +1309,7 @@
     },
     {
         "id_item": 88,
-        "nome_icon": "terra_infertil.png",
+        "nome_icon": "coarse_dirt.png",
         "tipo_item": "Construcao",
         "nome_item": "Terra inf\u00e9rtil",
         "coletavel": 1,
@@ -1579,7 +1579,7 @@
     },
     {
         "id_item": 106,
-        "nome_icon": "bacalhau_assado.png",
+        "nome_icon": "cooked_cod.png",
         "tipo_item": "Alimentos",
         "nome_item": "Bacalhau assado",
         "coletavel": 1,
@@ -1594,7 +1594,7 @@
     },
     {
         "id_item": 107,
-        "nome_icon": "bacalhau_cru.png",
+        "nome_icon": "cod.png",
         "tipo_item": "Alimentos",
         "nome_item": "Bacalhau cru",
         "coletavel": 1,
@@ -1609,7 +1609,7 @@
     },
     {
         "id_item": 108,
-        "nome_icon": "salmao_cru.png",
+        "nome_icon": "salmon.png",
         "tipo_item": "Alimentos",
         "nome_item": "Salm\u00e3o cru",
         "coletavel": 1,
@@ -1717,7 +1717,7 @@
     },
     {
         "id_item": 114,
-        "nome_icon": "tufo.png",
+        "nome_icon": "tuff.png",
         "tipo_item": "Construcao",
         "nome_item": "Tufo",
         "coletavel": 1,
@@ -1732,7 +1732,7 @@
     },
     {
         "id_item": 115,
-        "nome_icon": "calcita.png",
+        "nome_icon": "calcite.png",
         "tipo_item": "Construcao",
         "nome_item": "Calcita",
         "coletavel": 1,
@@ -2338,7 +2338,7 @@
     },
     {
         "id_item": 156,
-        "nome_icon": "Fishing_Rod_JE2_BE2.png",
+        "nome_icon": "fishing_rod.png",
         "tipo_item": "Ferramentas",
         "nome_item": "Vara de pesca",
         "coletavel": 1,
@@ -2359,11 +2359,11 @@
     },
     {
         "id_item": 157,
-        "nome_icon": "Clock.png",
+        "nome_icon": "clock.png",
         "tipo_item": "Ferramentas",
         "nome_item": "Rel\u00f3gio",
         "coletavel": 1,
-        "nome_interno": "Clock",
+        "nome_interno": "clock",
         "empilhavel": 64,
         "versao_add": 0,
         "renovavel": 1,
@@ -2374,7 +2374,7 @@
     },
     {
         "id_item": 158,
-        "nome_icon": "Vara_com_cenoura.png",
+        "nome_icon": "carrot_on_a_stick.png",
         "tipo_item": "Transportes",
         "nome_item": "Vara com cenoura",
         "coletavel": 1,
@@ -2395,7 +2395,7 @@
     },
     {
         "id_item": 159,
-        "nome_icon": "Vara_com_fungo_distorcido.png",
+        "nome_icon": "warped_fungus_on_a_stick.png",
         "tipo_item": "Transportes",
         "nome_item": "Vara com fungo distorcido",
         "coletavel": 1,
@@ -2461,7 +2461,7 @@
     },
     {
         "id_item": 163,
-        "nome_icon": "Redstone_Lamp_JE3_BE2.png",
+        "nome_icon": "redstone_lamp.png",
         "tipo_item": "Redstone",
         "nome_item": "L\u00e2mpada de redstone",
         "coletavel": 1,
@@ -2587,7 +2587,7 @@
     },
     {
         "id_item": 171,
-        "nome_icon": "ardosia.png",
+        "nome_icon": "deepslate.png",
         "tipo_item": "Construcao",
         "nome_item": "Ard\u00f3sia",
         "coletavel": 1,
@@ -2602,7 +2602,7 @@
     },
     {
         "id_item": 172,
-        "nome_icon": "Oak_Pressure_Plate_JE5_BE2.png",
+        "nome_icon": "oak_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de carvalho",
         "coletavel": 1,
@@ -2617,7 +2617,7 @@
     },
     {
         "id_item": 173,
-        "nome_icon": "Stone_Pressure_Plate.png",
+        "nome_icon": "stone_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de pedra",
         "coletavel": 1,
@@ -2647,7 +2647,7 @@
     },
     {
         "id_item": 175,
-        "nome_icon": "Block_of_Redstone_JE2_BE2.png",
+        "nome_icon": "redstone_block.png",
         "tipo_item": "Redstone",
         "nome_item": "Bloco de redstone",
         "coletavel": 1,
@@ -2662,7 +2662,7 @@
     },
     {
         "id_item": 176,
-        "nome_icon": "Target_JE1_BE1.png",
+        "nome_icon": "target.png",
         "tipo_item": "Redstone",
         "nome_item": "Alvo",
         "coletavel": 1,
@@ -2677,7 +2677,7 @@
     },
     {
         "id_item": 177,
-        "nome_icon": "Lightning_Rod_JE3.png",
+        "nome_icon": "lightning_rod.png",
         "tipo_item": "Redstone",
         "nome_item": "Para-raios",
         "coletavel": 1,
@@ -2692,7 +2692,7 @@
     },
     {
         "id_item": 178,
-        "nome_icon": "Dinamite.png",
+        "nome_icon": "tnt.png",
         "tipo_item": "Redstone",
         "nome_item": "Dinamite",
         "coletavel": 1,
@@ -2707,7 +2707,7 @@
     },
     {
         "id_item": 179,
-        "nome_icon": "Bloco_de_Nota_Musical.png",
+        "nome_icon": "note_block.png",
         "tipo_item": "Redstone",
         "nome_item": "Bloco musical",
         "coletavel": 1,
@@ -2722,7 +2722,7 @@
     },
     {
         "id_item": 180,
-        "nome_icon": "Sculk_Sensor_JE1.gif",
+        "nome_icon": "sculk_sensor.gif",
         "tipo_item": "Redstone",
         "nome_item": "Sensor de sculk",
         "coletavel": 1,
@@ -2737,7 +2737,7 @@
     },
     {
         "id_item": 181,
-        "nome_icon": "Detector_de_luz_solar.png",
+        "nome_icon": "daylight_detector.png",
         "tipo_item": "Redstone",
         "nome_item": "Detector de luz solar",
         "coletavel": 1,
@@ -2752,7 +2752,7 @@
     },
     {
         "id_item": 182,
-        "nome_icon": "Dropper_JE3.png",
+        "nome_icon": "dropper.png",
         "tipo_item": "Redstone",
         "nome_item": "Liberador",
         "coletavel": 1,
@@ -2767,7 +2767,7 @@
     },
     {
         "id_item": 183,
-        "nome_icon": "Ejetor.png",
+        "nome_icon": "dispenser.png",
         "tipo_item": "Redstone",
         "nome_item": "Ejetor",
         "coletavel": 1,
@@ -2782,7 +2782,7 @@
     },
     {
         "id_item": 184,
-        "nome_icon": "Bloco_de_slime.png",
+        "nome_icon": "slime_block.png",
         "tipo_item": "Redstone",
         "nome_item": "Bloco de slime",
         "coletavel": 1,
@@ -2812,7 +2812,7 @@
     },
     {
         "id_item": 186,
-        "nome_icon": "Scute.png",
+        "nome_icon": "scute.png",
         "tipo_item": "Diversos",
         "nome_item": "Escama de tartaruga",
         "coletavel": 1,
@@ -2842,7 +2842,7 @@
     },
     {
         "id_item": 188,
-        "nome_icon": "Polvora.png",
+        "nome_icon": "gunpowder.png",
         "tipo_item": "Diversos",
         "nome_item": "P\u00f3lvora",
         "coletavel": 1,
@@ -2857,7 +2857,7 @@
     },
     {
         "id_item": 189,
-        "nome_icon": "Flint_and_Steel_JE4_BE2.png",
+        "nome_icon": "flint_and_steel.png",
         "tipo_item": "Ferramentas",
         "nome_item": "Pederneira",
         "coletavel": 1,
@@ -2908,7 +2908,7 @@
     },
     {
         "id_item": 192,
-        "nome_icon": "Livro.png",
+        "nome_icon": "book.png",
         "tipo_item": "Diversos",
         "nome_item": "Livro",
         "coletavel": 1,
@@ -2923,7 +2923,7 @@
     },
     {
         "id_item": 193,
-        "nome_icon": "Papel.png",
+        "nome_icon": "paper.png",
         "tipo_item": "Diversos",
         "nome_item": "Papel",
         "coletavel": 1,
@@ -2998,7 +2998,7 @@
     },
     {
         "id_item": 198,
-        "nome_icon": "Graveto.png",
+        "nome_icon": "stick.png",
         "tipo_item": "Diversos",
         "nome_item": "Graveto",
         "coletavel": 1,
@@ -3013,7 +3013,7 @@
     },
     {
         "id_item": 199,
-        "nome_icon": "Copper_Ingot_JE2_BE1.png",
+        "nome_icon": "copper_ingot.png",
         "tipo_item": "Diversos",
         "nome_item": "Barra de cobre",
         "coletavel": 1,
@@ -3028,7 +3028,7 @@
     },
     {
         "id_item": 200,
-        "nome_icon": "Iron_Ingot_JE3_BE2.png",
+        "nome_icon": "iron_ingot.png",
         "tipo_item": "Diversos",
         "nome_item": "Barra de ferro",
         "coletavel": 1,
@@ -3094,7 +3094,7 @@
     },
     {
         "id_item": 204,
-        "nome_icon": "Aqueduto.png",
+        "nome_icon": "conduit.png",
         "tipo_item": "Diversos",
         "nome_item": "Aqueduto",
         "coletavel": 1,
@@ -3130,7 +3130,7 @@
     },
     {
         "id_item": 206,
-        "nome_icon": "funil.png",
+        "nome_icon": "hopper.png",
         "tipo_item": "Redstone",
         "nome_item": "Funil",
         "coletavel": 1,
@@ -3145,9 +3145,9 @@
     },
     {
         "id_item": 207,
-        "nome_icon": "placa_de_pressao_carmesim.png",
+        "nome_icon": "crimson_pressure_plate.png",
         "tipo_item": "Redstone",
-        "nome_item": "Placa de press\u00e3o carmisim",
+        "nome_item": "Placa de press\u00e3o carmesim",
         "coletavel": 1,
         "nome_interno": "crimson_pressure_plate",
         "empilhavel": 64,
@@ -3160,7 +3160,7 @@
     },
     {
         "id_item": 208,
-        "nome_icon": "placa_de_pressao_pinheiro.png",
+        "nome_icon": "spruce_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de pinheiro",
         "coletavel": 1,
@@ -3175,7 +3175,7 @@
     },
     {
         "id_item": 209,
-        "nome_icon": "placa_de_pressao_eucalipto.png",
+        "nome_icon": "birch_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de b\u00e9tula",
         "coletavel": 1,
@@ -3190,7 +3190,7 @@
     },
     {
         "id_item": 210,
-        "nome_icon": "placa_de_pressao_acacia.png",
+        "nome_icon": "acacia_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de ac\u00e1cia",
         "coletavel": 1,
@@ -3205,7 +3205,7 @@
     },
     {
         "id_item": 211,
-        "nome_icon": "placa_de_pressao_carvalho_escuro.png",
+        "nome_icon": "dark_oak_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de carvalho escuro",
         "coletavel": 1,
@@ -3220,7 +3220,7 @@
     },
     {
         "id_item": 212,
-        "nome_icon": "pedra_negra_placa.png",
+        "nome_icon": "polished_blackstone_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de pedra-negra polida",
         "coletavel": 1,
@@ -3235,7 +3235,7 @@
     },
     {
         "id_item": 213,
-        "nome_icon": "placa_de_pressao_selva.png",
+        "nome_icon": "jungle_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de madeira da selva",
         "coletavel": 1,
@@ -3250,7 +3250,7 @@
     },
     {
         "id_item": 214,
-        "nome_icon": "placa_de_pesagem_pesada.png",
+        "nome_icon": "light_weighted_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de pesagem pesada",
         "coletavel": 1,
@@ -3265,7 +3265,7 @@
     },
     {
         "id_item": 215,
-        "nome_icon": "placa_de_pesagem_leve.png",
+        "nome_icon": "heavy_weighted_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de pesagem leve",
         "coletavel": 1,
@@ -3280,7 +3280,7 @@
     },
     {
         "id_item": 216,
-        "nome_icon": "tocha_redstone.png",
+        "nome_icon": "redstone_torch.png",
         "tipo_item": "Redstone",
         "nome_item": "Tocha de redstone",
         "coletavel": 1,
@@ -3295,7 +3295,7 @@
     },
     {
         "id_item": 217,
-        "nome_icon": "po_redstone.png",
+        "nome_icon": "redstone_dust.png",
         "tipo_item": "Redstone",
         "nome_item": "P\u00f3 de redstone",
         "coletavel": 1,
@@ -3310,7 +3310,7 @@
     },
     {
         "id_item": 218,
-        "nome_icon": "pistao.png",
+        "nome_icon": "piston.png",
         "tipo_item": "Redstone",
         "nome_item": "Pist\u00e3o",
         "coletavel": 1,
@@ -3325,7 +3325,7 @@
     },
     {
         "id_item": 219,
-        "nome_icon": "pistao_grudento.png",
+        "nome_icon": "sticky_piston.png",
         "tipo_item": "Redstone",
         "nome_item": "Pist\u00e3o grudento",
         "coletavel": 1,
@@ -3340,7 +3340,7 @@
     },
     {
         "id_item": 220,
-        "nome_icon": "observador.png",
+        "nome_icon": "observer.png",
         "tipo_item": "Redstone",
         "nome_item": "Observador",
         "coletavel": 1,
@@ -3355,7 +3355,7 @@
     },
     {
         "id_item": 221,
-        "nome_icon": "alavanca.png",
+        "nome_icon": "lever.png",
         "tipo_item": "Redstone",
         "nome_item": "Alavanca",
         "coletavel": 1,
@@ -3370,7 +3370,7 @@
     },
     {
         "id_item": 222,
-        "nome_icon": "repetidor_redstone.png",
+        "nome_icon": "redstone_repeater.png",
         "tipo_item": "Redstone",
         "nome_item": "Repetidor de redstone",
         "coletavel": 1,
@@ -3385,7 +3385,7 @@
     },
     {
         "id_item": 223,
-        "nome_icon": "comparador_redstone.png",
+        "nome_icon": "redstone_comparator.png",
         "tipo_item": "Redstone",
         "nome_item": "Comparador de redstone",
         "coletavel": 1,
@@ -3400,7 +3400,7 @@
     },
     {
         "id_item": 224,
-        "nome_icon": "bau_armadilha.png",
+        "nome_icon": "trapped_chest.png",
         "tipo_item": "Redstone",
         "nome_item": "Ba\u00fa com armadilha",
         "coletavel": 1,
@@ -3415,7 +3415,7 @@
     },
     {
         "id_item": 225,
-        "nome_icon": "gancho_armadilha.png",
+        "nome_icon": "tripwire_hook.png",
         "tipo_item": "Redstone",
         "nome_item": "Gancho de armadilha",
         "coletavel": 1,
@@ -3430,7 +3430,7 @@
     },
     {
         "id_item": 226,
-        "nome_icon": "botao_carvalho.png",
+        "nome_icon": "oak_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de carvalho",
         "coletavel": 1,
@@ -3445,7 +3445,7 @@
     },
     {
         "id_item": 227,
-        "nome_icon": "botao_eucalipto.png",
+        "nome_icon": "birch_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de b\u00e9tula",
         "coletavel": 1,
@@ -3460,7 +3460,7 @@
     },
     {
         "id_item": 228,
-        "nome_icon": "botao_pinheiro.png",
+        "nome_icon": "spruce_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de pinheiro",
         "coletavel": 1,
@@ -3475,7 +3475,7 @@
     },
     {
         "id_item": 229,
-        "nome_icon": "botao_acacia.png",
+        "nome_icon": "acacia_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de ac\u00e1cia",
         "coletavel": 1,
@@ -3490,7 +3490,7 @@
     },
     {
         "id_item": 230,
-        "nome_icon": "botao_selva.png",
+        "nome_icon": "jungle_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de madeira da selva",
         "coletavel": 1,
@@ -3505,7 +3505,7 @@
     },
     {
         "id_item": 231,
-        "nome_icon": "botao_carvalho_escuro.png",
+        "nome_icon": "dark_oak_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de carvalho escuro",
         "coletavel": 1,
@@ -3520,7 +3520,7 @@
     },
     {
         "id_item": 232,
-        "nome_icon": "botao_distorcido.png",
+        "nome_icon": "warped_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o distorcido",
         "coletavel": 1,
@@ -3535,7 +3535,7 @@
     },
     {
         "id_item": 233,
-        "nome_icon": "botao_carmesim.png",
+        "nome_icon": "crimson_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o carmesim",
         "coletavel": 1,
@@ -3550,7 +3550,7 @@
     },
     {
         "id_item": 234,
-        "nome_icon": "botao_pedra.png",
+        "nome_icon": "stone_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de pedra",
         "coletavel": 1,
@@ -3565,11 +3565,11 @@
     },
     {
         "id_item": 235,
-        "nome_icon": "botao_pedra_negra_polida.png",
+        "nome_icon": "polished_blackstone_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de pedra-negra polida",
         "coletavel": 1,
-        "nome_interno": "polished_blackstone_button\t",
+        "nome_interno": "polished_blackstone_button",
         "empilhavel": 64,
         "versao_add": 16,
         "renovavel": 1,
@@ -3580,7 +3580,7 @@
     },
     {
         "id_item": 236,
-        "nome_icon": "etiqueta.png",
+        "nome_icon": "name_tag.png",
         "tipo_item": "Ferramentas",
         "nome_item": "Etiqueta",
         "coletavel": 1,
@@ -3595,7 +3595,7 @@
     },
     {
         "id_item": 237,
-        "nome_icon": "laco.png",
+        "nome_icon": "lead.png",
         "tipo_item": "Ferramentas",
         "nome_item": "La\u00e7o",
         "coletavel": 1,
@@ -3610,7 +3610,7 @@
     },
     {
         "id_item": 238,
-        "nome_icon": "tesoura.png",
+        "nome_icon": "shears.png",
         "tipo_item": "Ferramentas",
         "nome_item": "Tesoura",
         "coletavel": 1,
@@ -3631,7 +3631,7 @@
     },
     {
         "id_item": 239,
-        "nome_icon": "linha.png",
+        "nome_icon": "string.png",
         "tipo_item": "Diversos",
         "nome_item": "Linha",
         "coletavel": 1,
@@ -3646,7 +3646,7 @@
     },
     {
         "id_item": 240,
-        "nome_icon": "ovo_tartaruga.png",
+        "nome_icon": "turtle_egg.png",
         "tipo_item": "Diversos",
         "nome_item": "Ovo de tartaruga",
         "coletavel": 1,
@@ -3661,7 +3661,7 @@
     },
     {
         "id_item": 241,
-        "nome_icon": "Sementes.png",
+        "nome_icon": "wheat_seeds.png",
         "tipo_item": "Diversos",
         "nome_item": "Sementes de trigo",
         "coletavel": 1,
@@ -3676,7 +3676,7 @@
     },
     {
         "id_item": 242,
-        "nome_icon": "bolsa_tinta.png",
+        "nome_icon": "ink_sac.png",
         "tipo_item": "Diversos",
         "nome_item": "Bolsa de tinta",
         "coletavel": 1,
@@ -4102,7 +4102,7 @@
     },
     {
         "id_item": 266,
-        "nome_icon": "bagas_brilhantes.png",
+        "nome_icon": "glow_berries.png",
         "tipo_item": "Alimentos",
         "nome_item": "Bagas brilhantes",
         "coletavel": 1,
@@ -4507,7 +4507,7 @@
     },
     {
         "id_item": 291,
-        "nome_icon": "trilho.png",
+        "nome_icon": "rail.png",
         "tipo_item": "Transportes",
         "nome_item": "Trilho",
         "coletavel": 1,
@@ -4522,7 +4522,7 @@
     },
     {
         "id_item": 292,
-        "nome_icon": "trilho_eletrico.png",
+        "nome_icon": "powered_rail.png",
         "tipo_item": "Transportes",
         "nome_item": "Trilho el\u00e9trico",
         "coletavel": 1,
@@ -4537,7 +4537,7 @@
     },
     {
         "id_item": 293,
-        "nome_icon": "trilho_detector.png",
+        "nome_icon": "detector_rail.png",
         "tipo_item": "Transportes",
         "nome_item": "Trilho detector",
         "coletavel": 1,
@@ -4552,7 +4552,7 @@
     },
     {
         "id_item": 294,
-        "nome_icon": "trilho_ativador.png",
+        "nome_icon": "activator_rail.png",
         "tipo_item": "Transportes",
         "nome_item": "Trilho ativador",
         "coletavel": 1,
@@ -4582,7 +4582,7 @@
     },
     {
         "id_item": 296,
-        "nome_icon": "sela.png",
+        "nome_icon": "saddle.png",
         "tipo_item": "Transportes",
         "nome_item": "Sela",
         "coletavel": 1,
@@ -4657,7 +4657,7 @@
     },
     {
         "id_item": 301,
-        "nome_icon": "elitro.png",
+        "nome_icon": "elytra.png",
         "tipo_item": "Transportes",
         "nome_item": "\u00c9litros",
         "coletavel": 1,
@@ -4678,7 +4678,7 @@
     },
     {
         "id_item": 302,
-        "nome_icon": "bote.png",
+        "nome_icon": "oak_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de carvalho",
         "coletavel": 1,
@@ -4693,7 +4693,7 @@
     },
     {
         "id_item": 303,
-        "nome_icon": "bote_pinheiro.png",
+        "nome_icon": "spruce_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de pinheiro",
         "coletavel": 1,
@@ -4708,7 +4708,7 @@
     },
     {
         "id_item": 304,
-        "nome_icon": "bote_eucalipto.png",
+        "nome_icon": "birch_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de b\u00e9tula",
         "coletavel": 1,
@@ -4723,7 +4723,7 @@
     },
     {
         "id_item": 305,
-        "nome_icon": "bote_selva.png",
+        "nome_icon": "jungle_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de madeira da selva",
         "coletavel": 1,
@@ -4738,7 +4738,7 @@
     },
     {
         "id_item": 306,
-        "nome_icon": "bote_acacia.png",
+        "nome_icon": "acacia_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de ac\u00e1cia",
         "coletavel": 1,
@@ -4753,7 +4753,7 @@
     },
     {
         "id_item": 307,
-        "nome_icon": "bote_carvalho_escuro.png",
+        "nome_icon": "dark_oak_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de carvalho escuro",
         "coletavel": 1,
@@ -4768,7 +4768,7 @@
     },
     {
         "id_item": 308,
-        "nome_icon": "fatia_melancia.png",
+        "nome_icon": "melon_slice.png",
         "tipo_item": "Alimentos",
         "nome_item": "Fatia de melancia",
         "coletavel": 1,
@@ -4783,7 +4783,7 @@
     },
     {
         "id_item": 309,
-        "nome_icon": "alga_seca.png",
+        "nome_icon": "dried_kelp.png",
         "tipo_item": "Alimentos",
         "nome_item": "Algas secas",
         "coletavel": 1,
@@ -4798,7 +4798,7 @@
     },
     {
         "id_item": 310,
-        "nome_icon": "pao.png",
+        "nome_icon": "bread.png",
         "tipo_item": "Alimentos",
         "nome_item": "P\u00e3o",
         "coletavel": 1,
@@ -4828,7 +4828,7 @@
     },
     {
         "id_item": 312,
-        "nome_icon": "beterraba.png",
+        "nome_icon": "beetroot.png",
         "tipo_item": "Alimentos",
         "nome_item": "Beterraba",
         "coletavel": 1,
@@ -4978,7 +4978,7 @@
     },
     {
         "id_item": 321,
-        "nome_icon": "crimsom_door.png",
+        "nome_icon": "crimson_door.png",
         "tipo_item": "Redstone",
         "nome_item": "Porta carmesim",
         "coletavel": 1,
@@ -5113,7 +5113,7 @@
     },
     {
         "id_item": 330,
-        "nome_icon": "crimsom_trapdoor.png",
+        "nome_icon": "crimson_trapdoor.png",
         "tipo_item": "Redstone",
         "nome_item": "Al\u00e7ap\u00e3o de carmesim",
         "coletavel": 1,
@@ -5233,7 +5233,7 @@
     },
     {
         "id_item": 338,
-        "nome_icon": "crimsom_fence_gate.png",
+        "nome_icon": "crimson_fence_gate.png",
         "tipo_item": "Redstone",
         "nome_item": "Port\u00e3o carmesim",
         "coletavel": 1,
@@ -5263,7 +5263,7 @@
     },
     {
         "id_item": 340,
-        "nome_icon": "torta_abobora.png",
+        "nome_icon": "pumpkin_pie.png",
         "tipo_item": "Alimentos",
         "nome_item": "Torta de ab\u00f3bora",
         "coletavel": 1,
@@ -5278,7 +5278,7 @@
     },
     {
         "id_item": 341,
-        "nome_icon": "coelho_cru.png",
+        "nome_icon": "rabbit.png",
         "tipo_item": "Alimentos",
         "nome_item": "Coelho cru",
         "coletavel": 1,
@@ -5293,7 +5293,7 @@
     },
     {
         "id_item": 342,
-        "nome_icon": "coelho_assado.png",
+        "nome_icon": "cooked_rabbit.png",
         "tipo_item": "Alimentos",
         "nome_item": "Coelho assado",
         "coletavel": 1,
@@ -5323,7 +5323,7 @@
     },
     {
         "id_item": 344,
-        "nome_icon": "baiacu.png",
+        "nome_icon": "pufferfish.png",
         "tipo_item": "Alimentos",
         "nome_item": "Baiacu",
         "coletavel": 1,
@@ -5338,7 +5338,7 @@
     },
     {
         "id_item": 345,
-        "nome_icon": "ensopado_cogumelos.png",
+        "nome_icon": "mushroom_stew.png",
         "tipo_item": "Alimentos",
         "nome_item": "Ensopado de cogumelos",
         "coletavel": 1,
@@ -5353,7 +5353,7 @@
     },
     {
         "id_item": 346,
-        "nome_icon": "cenoura.png",
+        "nome_icon": "carrot.png",
         "tipo_item": "Alimentos",
         "nome_item": "Cenoura",
         "coletavel": 1,
@@ -5368,7 +5368,7 @@
     },
     {
         "id_item": 347,
-        "nome_icon": "batata.png",
+        "nome_icon": "potato.png",
         "tipo_item": "Alimentos",
         "nome_item": "Batata",
         "coletavel": 1,
@@ -5383,7 +5383,7 @@
     },
     {
         "id_item": 348,
-        "nome_icon": "granito.png",
+        "nome_icon": "granite.png",
         "tipo_item": "Construcao",
         "nome_item": "Granito",
         "coletavel": 1,
@@ -5398,7 +5398,7 @@
     },
     {
         "id_item": 349,
-        "nome_icon": "granito_polido.png",
+        "nome_icon": "polished_granite.png",
         "tipo_item": "Construcao",
         "nome_item": "Granito polido",
         "coletavel": 1,
@@ -5413,7 +5413,7 @@
     },
     {
         "id_item": 350,
-        "nome_icon": "andesito_polido.png",
+        "nome_icon": "polished_andesite.png",
         "tipo_item": "Construcao",
         "nome_item": "Andesito polido",
         "coletavel": 1,
@@ -5428,7 +5428,7 @@
     },
     {
         "id_item": 351,
-        "nome_icon": "diorito.png",
+        "nome_icon": "diorite.png",
         "tipo_item": "Construcao",
         "nome_item": "Diorito",
         "coletavel": 1,
@@ -5443,7 +5443,7 @@
     },
     {
         "id_item": 352,
-        "nome_icon": "diorito_polido.png",
+        "nome_icon": "polished_diorite.png",
         "tipo_item": "Construcao",
         "nome_item": "Diorito polido",
         "coletavel": 1,
@@ -6918,7 +6918,7 @@
         "id_item": 450,
         "nome_icon": "crimson_slab.png",
         "tipo_item": "Construcao",
-        "nome_item": "Laje carmesin",
+        "nome_item": "Laje carmesim",
         "coletavel": 1,
         "nome_interno": "crimson_slab",
         "empilhavel": 64,
@@ -10527,7 +10527,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "programmer_art": 1
+        "programmer_art": 0
     },
     {
         "id_item": 673,
@@ -12750,7 +12750,7 @@
         "id_item": 817,
         "nome_icon": "crimson_sign.png",
         "tipo_item": "Decorativos",
-        "nome_item": "Placa carmesin",
+        "nome_item": "Placa carmesim",
         "coletavel": 1,
         "nome_interno": "crimson_sign",
         "empilhavel": 16,
@@ -21914,7 +21914,7 @@
         "tipo_item": "Decorativos",
         "nome_item": "Veios de sculk",
         "coletavel": 1,
-        "nome_interno": "Sculk_Vein.gif",
+        "nome_interno": "sculk_vein",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 1,
@@ -21925,11 +21925,11 @@
     },
     {
         "id_item": 1394,
-        "nome_icon": "Sculk_Shrieker.gif",
+        "nome_icon": "sculk_shrieker.gif",
         "tipo_item": "Decorativos",
         "nome_item": "Alerta de sculk",
         "coletavel": 1,
-        "nome_interno": "Sculk_Shrieker",
+        "nome_interno": "sculk_shrieker",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 0,
@@ -21940,7 +21940,7 @@
     },
     {
         "id_item": 1395,
-        "nome_icon": "Warden_Spawn_Egg.png",
+        "nome_icon": "warden_spawn_egg.png",
         "tipo_item": "Diversos",
         "nome_item": "Ovo gerador de warden",
         "coletavel": 0,
@@ -21955,7 +21955,7 @@
     },
     {
         "id_item": 1396,
-        "nome_icon": "Mangrove_Roots.png",
+        "nome_icon": "mangrove_roots.png",
         "tipo_item": "Decorativos",
         "nome_item": "Ra\u00edzes de mangue",
         "coletavel": 1,
@@ -21970,7 +21970,7 @@
     },
     {
         "id_item": 1397,
-        "nome_icon": "Mangrove_Planks.png",
+        "nome_icon": "mangrove_planks.png",
         "tipo_item": "Construcao",
         "nome_item": "T\u00e1buas de mangue",
         "coletavel": 1,
@@ -21985,7 +21985,7 @@
     },
     {
         "id_item": 1398,
-        "nome_icon": "Unknown_frame_block.png",
+        "nome_icon": "frame_block.png",
         "tipo_item": "Decorativos",
         "nome_item": "Bloco de quadro",
         "coletavel": 1,
@@ -22000,7 +22000,7 @@
     },
     {
         "id_item": 1399,
-        "nome_icon": "Goat_Horn_BE1.png",
+        "nome_icon": "goat_horn.png",
         "tipo_item": "Diversos",
         "nome_item": "Chifre de cabra",
         "coletavel": 1,
@@ -22015,7 +22015,7 @@
     },
     {
         "id_item": 1400,
-        "nome_icon": "bote.png",
+        "nome_icon": "oak_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de carvalho com ba\u00fa",
         "coletavel": 1,
@@ -22030,7 +22030,7 @@
     },
     {
         "id_item": 1401,
-        "nome_icon": "bote_pinheiro.png",
+        "nome_icon": "spruce_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de pinheiro com ba\u00fa",
         "coletavel": 1,
@@ -22045,7 +22045,7 @@
     },
     {
         "id_item": 1402,
-        "nome_icon": "bote_eucalipto.png",
+        "nome_icon": "birch_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de b\u00e9tula com ba\u00fa",
         "coletavel": 1,
@@ -22060,7 +22060,7 @@
     },
     {
         "id_item": 1403,
-        "nome_icon": "bote_selva.png",
+        "nome_icon": "jungle_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de madeira da selva com ba\u00fa",
         "coletavel": 1,
@@ -22075,7 +22075,7 @@
     },
     {
         "id_item": 1404,
-        "nome_icon": "bote_acacia.png",
+        "nome_icon": "acacia_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de ac\u00e1cia com ba\u00fa",
         "coletavel": 1,
@@ -22090,7 +22090,7 @@
     },
     {
         "id_item": 1405,
-        "nome_icon": "bote_carvalho_escuro.png",
+        "nome_icon": "dark_oak_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de carvalho escuro com ba\u00fa",
         "coletavel": 1,
@@ -22165,7 +22165,7 @@
     },
     {
         "id_item": 1410,
-        "nome_icon": "Mud_Bricks_Render.png",
+        "nome_icon": "mud_bricks.png",
         "tipo_item": "Construcao",
         "nome_item": "Tijolos de barro",
         "coletavel": 1,
@@ -22180,7 +22180,7 @@
     },
     {
         "id_item": 1411,
-        "nome_icon": "Mangrove_Log.png",
+        "nome_icon": "mangrove_log.png",
         "tipo_item": "Construcao",
         "nome_item": "Tronco de mangue",
         "coletavel": 1,
@@ -22195,7 +22195,7 @@
     },
     {
         "id_item": 1412,
-        "nome_icon": "Mangrove_Leaves.png",
+        "nome_icon": "mangrove_leaves.png",
         "tipo_item": "Decorativos",
         "nome_item": "Folhas de mangue",
         "coletavel": 1,
@@ -22240,7 +22240,7 @@
     },
     {
         "id_item": 1415,
-        "nome_icon": "botao_selva.png",
+        "nome_icon": "jungle_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de mangue",
         "coletavel": 1,
@@ -22300,7 +22300,7 @@
     },
     {
         "id_item": 1419,
-        "nome_icon": "placa_de_pressao_selva.png",
+        "nome_icon": "jungle_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de mangue",
         "coletavel": 1,
@@ -22390,7 +22390,7 @@
     },
     {
         "id_item": 1425,
-        "nome_icon": "Mangrove_Sappling.png",
+        "nome_icon": "mangrove_sapling.png",
         "tipo_item": "Decorativos",
         "nome_item": "Prop\u00e1gulo de mangue",
         "coletavel": 1,
@@ -22405,7 +22405,7 @@
     },
     {
         "id_item": 1426,
-        "nome_icon": "bote_selva.png",
+        "nome_icon": "jungle_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de mangue",
         "coletavel": 1,
@@ -22420,7 +22420,7 @@
     },
     {
         "id_item": 1427,
-        "nome_icon": "bote_selva.png",
+        "nome_icon": "jungle_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de mangue com ba\u00fa",
         "coletavel": 1,
