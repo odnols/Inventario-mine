@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Informações</title>
-    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/bloco_grama.png">
+    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/glass_block.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">

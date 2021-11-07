@@ -1,0 +1,248 @@
+
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Inventário</title>
+    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/grass_block.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/anima.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/jquery-1.11.3.min.js"></script>
+</head>
+<body onload="sincroniza_tema()">
+
+    <div id="filtro_colorido"></div>
+    <div id="lista_versoes" style="display: none">
+        <script>
+            for(let i = 0; i < 19; i += 2){
+                let x = i + 1;
+
+                document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`);
+                document.write(` <a href='#' onclick='categoria(\"1.${x}\", 2)'>1.${x}</a><br>`);
+            }
+        </script>
+    </div>
+
+    <div id="estatisticas_inventario">
+        <img id="prancheta" src="#">
+
+        <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
+            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
+            <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
+        </div>
+        
+        <div id="text_estatsc">
+            <center><h2 class="cor_textos">Estatísticas</h2></center>
+            
+            <p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>
+            <br><p class='estat cor_textos'>Itens Registrados: <span id='qtd_itens_inventario'>Carregando...</span></p>
+            <br><p class='estat cor_textos'>Coletáveis: <span id='qtd_itens_inventario_colet'>Carregando...</span></p>
+            <br><p class='estat cor_textos'>Renováveis: <span id='qtd_itens_inventario_renov'>Carregando...</span></p>
+            <br><p class='estat cor_textos'>Empilháveis: <span id='qtd_itens_inventario_empil'>Carregando...</span></p>
+            <br><p class='estat cor_textos'>Coletáveis e empilháveis: <span id='qtd_itens_inventario_colet_empil'>Carregando...</span></p>
+            <br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: <span id='qtd_itens_inventario_colet_empil_n_renov'>Carregando...</span></p>
+            <br><p class='estat cor_textos'>Não empilháveis: <span id='qtd_itens_inventario_n_empil'>Carregando...</span></p>
+        </div>
+    </div>
+
+    <div id="menu_user">
+        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
+    </div>
+
+    <!-- Menu interativo -->
+    <div id="menu_completo">
+        <img id="menu" src="#">
+
+        <script>
+            for(let i = 0; i < 11; i++){
+                document.write(`<div id='item_${i}' onclick='categoria(${i}, 0)'></div>`);
+            }
+        </script>
+        
+        <div id="item_11" onclick="clique('prancheta')"></div>
+
+        <img id="img_construcao" class="aba_menu Construcao" src="#">
+        <img id="img_decorativos" class="aba_menu Decorativos" src="#">
+        <img id="img_redstone" class="aba_menu Redstone" src="#">
+        <img id="img_transportes" class="aba_menu Transportes" src="#">
+        <img id="img_diversos" class="aba_menu Diversos" src="#">
+        <img id="img_alimentos" class="aba_menu Alimentos" src="#">
+        <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
+        <img id="img_combate" class="aba_menu Combate" src="#">
+        <img id="img_pocoes" class="aba_menu Pocoes" src="#">
+        
+        <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
+            <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
+            <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
+        </div>
+        
+        <div onclick="filtragem_automatica('não_coletável')" onmouseover="toolTip('Mostrar itens que não são coletáveis no sobrevivência')" onmouseout="toolTip()">
+            <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_nao_coletaveis.png">
+            <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
+        </div>
+
+        <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
+            <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
+            <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
+        </div>
+        
+        <div onclick="filtragem_automatica('genéricos')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
+            <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
+            <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
+        </div>
+
+        <img id="img_especiais" class="aba_menu Especiais" src="#">
+        <img id="img_pesquisa" class="aba_menu Pesquisa" src="#">
+        
+        <img id="img_prancheta" class="aba_menu Prancheta" src="IMG/Interface/mascara_prancheta.png"> 
+        
+        <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
+        
+        <span id="titulo_aba"></span>
+
+        <div id="barra_rolagem">
+            <div id="barra_scroll" src="IMG/Interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
+            <img id="barra_scroll_block" src="#">
+        </div>
+        
+        <div id="minetip-tooltip">
+            <span id="nome_item_minetip"></span><br>
+            <span id="descricao_item_minetip"></span><br>
+            <span id="nome_interno_minetip"></span>
+        </div>
+
+        <div id="lista_itens">
+            <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
+                <div id="grade_itens"></div>
+                <div id="complementa_slots"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/jquery-3.4.1.js"></script>
+    <script src="JS/engine.js"></script>
+
+    <script type="text/javascript">
+
+        (function(){
+            
+            alert("Isso pode demorar,.. muito");
+
+            let qtd_itens = 0, qtd_itens_colet = 0, qtd_itens_renov = 0, qtd_itens_empil = 0, qtd_itens_colet_empil = 0, qtd_itens_colet_empil_n_renov = 0, qtd_itens_n_empil = 0;
+
+            graphics = 0;
+
+            fetch('https://raw.githubusercontent.com/brnd-21/inventario-mine/main/JSON/dados_locais.json')
+            .then(response => response.json())
+            .then(async res_artigo => {
+                for(let h = 0; h < res_artigo.length; h++){
+                    
+                    let valor = res_artigo[h];
+
+                    if(valor.tipo_item !== "Generico"){
+                        qtd_itens++
+                        
+                        if(valor.coletavel)
+                            qtd_itens_colet++
+
+                        if(valor.renovavel)
+                            qtd_itens_renov++;
+                        
+                        if(valor.empilhavel !== 0)
+                            qtd_itens_empil++;
+                        else
+                            qtd_itens_n_empil++;
+
+                        if(valor.coletavel && valor.empilhavel > 0){
+                            qtd_itens_colet_empil++;
+
+                            if(!valor.renovavel)
+                                qtd_itens_colet_empil_n_renov++;
+                        }
+                    }
+
+                    let apelido = null;
+                    let converte = null;
+                    let descricao_pesq = null;
+                    let oculto_invt = valor.oculto_invt;
+                    let geracao = "new";
+                    let versao_add = `1.${valor.versao_add}`;
+                    let descricao = `[&1${valor.tipo_item}`;
+                    let empilhavel = null;
+                    let renovavel = "renovável";
+                    let coletavel = "não_coletável";
+
+                    descricao = `${descricao} ${valor.x}`;
+                    descricao_pes = descricao.replace("[&r", "");
+
+                    if(valor.programmer_art === 1 && graphics)
+                        geracao = "classic";
+
+                    if(valor.oculto_invt === 1)
+                        oculto_invt = "Oculto";
+
+                    if(!valor.renovavel)
+                        renovavel = "não_renovável";
+                    
+                    if(valor.empilhavel !== 0)
+                        empilhavel = "empilhável";
+
+                    if(valor.coletavel !== 0)
+                        coletavel = "coletável";
+
+                    // for(let i = 0; i < valor.nome_item.length; i++){
+                    //     converte = `${converte} `;
+                        
+                    //     for(let x = 0; x <= i; x++){
+                    //         converte = `${converte}${valor.nome_item[x]}`;
+                    //     }
+                    // }
+
+                    // for(i = 0; i < descricao_pes.length; i++){
+                    //     descricao_pesq = `${descricao_pesq} `;
+                        
+                    //     for(x = 0; x <= i; x++){
+                    //         descricao_pesq = `${descricao_pesq}${descricao_pes[x]}`;
+                    //     }
+                    // }
+
+                    let cor_item = 0;
+                    
+                    // auto_completa = converte.toLocaleLowerCase();
+                    // descricao_pesq = descricao_pesq.toLocaleLowerCase();
+
+                    let url_sprite = `https://raw.githubusercontent.com/brnd-21/inventario-mine/main/IMG/Itens/${geracao}/${valor.tipo_item}/${valor.nome_icon}`;
+
+                    // for(let i = 0; i < 20; i++){ // Elimina todos os números de versão da descrição
+                        // descricao_pesq = descricao_pesq.replace(`1.${i}`, "");
+                    // }
+
+                    if(valor.tipo_item !== "Generico" && valor.oculto_invt !== "Oculto"){
+                        document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item} ${valor.versao_add} ${renovavel} ${empilhavel} ${coletavel} ${descricao_pesq}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
+                    }else{
+                        if(valor.oculto_invt !== "Oculto"){
+                            document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
+                        }
+                    }
+                }
+            })
+            .then(() => {
+                document.getElementById("qtd_itens_inventario").innerHTML = qtd_itens;
+                document.getElementById("qtd_itens_inventario_colet").innerHTML = qtd_itens_colet;
+                document.getElementById("qtd_itens_inventario_renov").innerHTML = qtd_itens_renov;
+                document.getElementById("qtd_itens_inventario_empil").innerHTML = qtd_itens_empil;
+                document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = qtd_itens_colet_empil;
+                document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = qtd_itens_colet_empil_n_renov;
+                document.getElementById("qtd_itens_inventario_n_empil").innerHTML = qtd_itens_n_empil;
+            })
+        })();
+
+        categoria(0, 0);
+        document.addEventListener("onKeyDown", clique());
+    </script>
+</body>
+</html>
