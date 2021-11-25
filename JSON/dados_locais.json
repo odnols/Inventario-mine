@@ -231,21 +231,6 @@
         "programmer_art": 0
     },
     {
-        "id_item": 16,
-        "nome_icon": "bundle.png",
-        "tipo_item": "Ferramentas",
-        "nome_item": "Trouxa",
-        "coletavel": 1,
-        "nome_interno": "bundle",
-        "empilhavel": 0,
-        "versao_add": 19,
-        "renovavel": 1,
-        "aliases": null,
-        "descricao": null,
-        "oculto_invt": 0,
-        "programmer_art": 0
-    },
-    {
         "id_item": 17,
         "nome_icon": "amethyst_cluster.png",
         "tipo_item": "Decorativos",
@@ -21999,21 +21984,6 @@
         "programmer_art": 0
     },
     {
-        "id_item": 1399,
-        "nome_icon": "goat_horn.png",
-        "tipo_item": "Diversos",
-        "nome_item": "Chifre de cabra",
-        "coletavel": 1,
-        "nome_interno": "goat_horn",
-        "empilhavel": 0,
-        "versao_add": 19,
-        "renovavel": 1,
-        "aliases": null,
-        "descricao": null,
-        "oculto_invt": 0,
-        "programmer_art": 0
-    },
-    {
         "id_item": 1400,
         "nome_icon": "oak_boat.png",
         "tipo_item": "Transportes",
@@ -22458,7 +22428,7 @@
         "id_item": 1429,
         "nome_icon": "water_bucket.png",
         "tipo_item": "Diversos",
-        "nome_item": "Balde de girino",
+        "nome_item": "Balde com girinos",
         "coletavel": 1,
         "nome_interno": "tadpole_bucket",
         "empilhavel": 0,
