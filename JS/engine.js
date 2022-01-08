@@ -1,6 +1,10 @@
 // Variavéis Globais 
 var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0, itens_ocultos = 0, tema = null, pesquisa = 0;
 
+var qtd_itens = 0, qtd_itens_colet = 0, qtd_itens_renov = 0, qtd_itens_empil = 0, qtd_itens_colet_empil = 0, qtd_itens_colet_empil_n_renov = 0, qtd_itens_n_empil = 0;
+
+var graphics = 0, total_load = 50, dados_globais;
+
 function gerencia_scroll(valor){
     libera_scroll = valor;
 }
@@ -709,4 +713,116 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
     }else{
         document.getElementById("minetip-tooltip").style.display = "None";
     }
+}
+
+function carregamento_secundario(res_artigo, ia){
+
+    for(let h = ia; h < ia + 50; h++){
+        
+        if(typeof res_artigo[h] === "undefined" || res_artigo[h] === null) return;
+
+        let valor = res_artigo[h];
+
+        if(valor.tipo_item !== "Generico"){
+            qtd_itens++
+            
+            if(valor.coletavel)
+                qtd_itens_colet++
+
+            if(valor.renovavel)
+                qtd_itens_renov++;
+            
+            if(valor.empilhavel !== 0)
+                qtd_itens_empil++;
+            else
+                qtd_itens_n_empil++;
+
+            if(valor.coletavel && valor.empilhavel > 0){
+                qtd_itens_colet_empil++;
+
+                if(!valor.renovavel)
+                    qtd_itens_colet_empil_n_renov++;
+            }
+        }
+
+        let apelido = null;
+        let converte = null;
+        let descricao_pesq = null;
+        let oculto_invt = valor.oculto_invt;
+        let geracao = "new";
+        let versao_add = `1.${valor.versao_add}`;
+        let descricao = `[&1${valor.tipo_item}`;
+        let empilhavel = null;
+        let renovavel = "renovável";
+        let coletavel = "não_coletável";
+
+        descricao = `${descricao} ${valor.x}`;
+        descricao_pes = descricao.replace("[&r", "");
+
+        if(valor.programmer_art === 1 && graphics)
+            geracao = "classic";
+
+        if(valor.oculto_invt === 1)
+            oculto_invt = "Oculto";
+
+        if(!valor.renovavel)
+            renovavel = "não_renovável";
+        
+        if(valor.empilhavel !== 0)
+            empilhavel = "empilhável";
+
+        if(valor.coletavel !== 0)
+            coletavel = "coletável";
+
+        for(let i = 0; i < valor.nome_item.length; i++){
+            converte = `${converte} `;
+            
+            for(let x = 0; x <= i; x++){
+                converte = `${converte}${valor.nome_item[x]}`;
+            }
+        }
+
+        for(i = 0; i < descricao_pes.length; i++){
+            descricao_pesq = `${descricao_pesq} `;
+            
+            for(x = 0; x <= i; x++){
+                descricao_pesq = `${descricao_pesq}${descricao_pes[x]}`;
+            }
+        }
+
+        let cor_item = 0;
+        
+        auto_completa = converte.toLocaleLowerCase();
+        descricao_pesq = descricao_pesq.toLocaleLowerCase();
+
+        let url_sprite = `https://raw.githubusercontent.com/odnols/inventario-mine/main/IMG/Itens/${geracao}/${valor.tipo_item}/${valor.nome_icon}`;
+
+        for(let i = 0; i < 20; i++){ // Elimina todos os números de versão da descrição
+            descricao_pesq = descricao_pesq.replace(`1.${i}`, "");
+        }
+
+        if(valor.tipo_item !== "Generico" && valor.oculto_invt !== "Oculto"){
+            document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item} 1.${valor.versao_add} ${renovavel} ${auto_completa} ${descricao_pesq} ${empilhavel} ${coletavel} ${descricao_pesq}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
+        }else{
+            if(valor.oculto_invt !== "Oculto"){
+                document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
+            }
+        }
+    }
+
+    setTimeout(() => {
+
+        document.getElementById("qtd_itens_inventario").innerHTML = qtd_itens;
+        document.getElementById("qtd_itens_inventario_colet").innerHTML = qtd_itens_colet;
+        document.getElementById("qtd_itens_inventario_renov").innerHTML = qtd_itens_renov;
+        document.getElementById("qtd_itens_inventario_empil").innerHTML = qtd_itens_empil;
+        document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = qtd_itens_colet_empil;
+        document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = qtd_itens_colet_empil_n_renov;
+        document.getElementById("qtd_itens_inventario_n_empil").innerHTML = qtd_itens_n_empil;
+
+        sincroniza_tema();
+        categoria(0, 0);
+
+        carregamento_secundario(res_artigo, ia + 50);
+    }, 5000);
 }

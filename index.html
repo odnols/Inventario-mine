@@ -129,17 +129,14 @@
     <script type="text/javascript">
 
         (function(){
-            
-            alert("Isso pode demorar,.. muito");
 
-            let qtd_itens = 0, qtd_itens_colet = 0, qtd_itens_renov = 0, qtd_itens_empil = 0, qtd_itens_colet_empil = 0, qtd_itens_colet_empil_n_renov = 0, qtd_itens_n_empil = 0;
-
-            graphics = 0;
-
-            fetch('https://raw.githubusercontent.com/brnd-21/inventario-mine/main/JSON/dados_locais.json')
+            fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/JSON/dados_locais.json')
             .then(response => response.json())
             .then(async res_artigo => {
-                for(let h = 0; h < res_artigo.length; h++){
+
+                dados_globais = res_artigo;
+
+                for(let h = 0; h < total_load; h++){
                     
                     let valor = res_artigo[h];
 
@@ -194,35 +191,35 @@
                     if(valor.coletavel !== 0)
                         coletavel = "coletável";
 
-                    // for(let i = 0; i < valor.nome_item.length; i++){
-                    //     converte = `${converte} `;
+                    for(let i = 0; i < valor.nome_item.length; i++){
+                        converte = `${converte} `;
                         
-                    //     for(let x = 0; x <= i; x++){
-                    //         converte = `${converte}${valor.nome_item[x]}`;
-                    //     }
-                    // }
+                        for(let x = 0; x <= i; x++){
+                            converte = `${converte}${valor.nome_item[x]}`;
+                        }
+                    }
 
-                    // for(i = 0; i < descricao_pes.length; i++){
-                    //     descricao_pesq = `${descricao_pesq} `;
+                    for(i = 0; i < descricao_pes.length; i++){
+                        descricao_pesq = `${descricao_pesq} `;
                         
-                    //     for(x = 0; x <= i; x++){
-                    //         descricao_pesq = `${descricao_pesq}${descricao_pes[x]}`;
-                    //     }
-                    // }
+                        for(x = 0; x <= i; x++){
+                            descricao_pesq = `${descricao_pesq}${descricao_pes[x]}`;
+                        }
+                    }
 
                     let cor_item = 0;
                     
-                    // auto_completa = converte.toLocaleLowerCase();
-                    // descricao_pesq = descricao_pesq.toLocaleLowerCase();
+                    auto_completa = converte.toLocaleLowerCase();
+                    descricao_pesq = descricao_pesq.toLocaleLowerCase();
 
                     let url_sprite = `https://raw.githubusercontent.com/brnd-21/inventario-mine/main/IMG/Itens/${geracao}/${valor.tipo_item}/${valor.nome_icon}`;
 
-                    // for(let i = 0; i < 20; i++){ // Elimina todos os números de versão da descrição
-                        // descricao_pesq = descricao_pesq.replace(`1.${i}`, "");
-                    // }
+                    for(let i = 0; i < 20; i++){ // Elimina todos os números de versão da descrição
+                        descricao_pesq = descricao_pesq.replace(`1.${i}`, "");
+                    }
 
                     if(valor.tipo_item !== "Generico" && valor.oculto_invt !== "Oculto"){
-                        document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item} ${valor.versao_add} ${renovavel} ${empilhavel} ${coletavel} ${descricao_pesq}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
+                        document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item} 1.${valor.versao_add} ${renovavel} ${auto_completa} ${descricao_pesq} ${empilhavel} ${coletavel} ${descricao_pesq}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
                     }else{
                         if(valor.oculto_invt !== "Oculto"){
                             document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
@@ -238,10 +235,14 @@
                 document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = qtd_itens_colet_empil;
                 document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = qtd_itens_colet_empil_n_renov;
                 document.getElementById("qtd_itens_inventario_n_empil").innerHTML = qtd_itens_n_empil;
-            })
+                
+                sincroniza_tema();
+                categoria(0, 0);
+
+                carregamento_secundario(dados_globais, 50);
+            });
         })();
 
-        categoria(0, 0);
         document.addEventListener("onKeyDown", clique());
     </script>
 </body>
