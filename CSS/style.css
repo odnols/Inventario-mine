@@ -692,6 +692,31 @@ a{
     position: absolute;
     right: 279px;
 }
+#produto_final{
+    top: 90px;
+    width: 78px;
+    height: 78px;
+    z-index: 2;
+    position: absolute;
+    right: 93px;
+}
+#sprite_produto{
+    width: 48px;
+    height: 48px;
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute;
+    float: left;
+    z-index: 0 !important;
+}
+#qtd_produto{
+    color: white;
+    font-size: 24px;
+    float: right;
+    padding-top: 36px;
+    padding-right: 12px;
+    text-shadow: 3px 3px 0px #3e3e3e;
+}
 .gric{
     width: 48px;
     height: 48px;

@@ -4,6 +4,7 @@ var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, lib
 var qtd_itens = 0, qtd_itens_colet = 0, qtd_itens_renov = 0, qtd_itens_empil = 0, qtd_itens_colet_empil = 0, qtd_itens_colet_empil_n_renov = 0, qtd_itens_n_empil = 0;
 
 var graphics = 0, total_load = 50, dados_globais;
+var dados_itens = [];
 
 function gerencia_scroll(valor){
     libera_scroll = valor;
@@ -825,4 +826,54 @@ function carregamento_secundario(res_artigo, ia){
 
         carregamento_secundario(res_artigo, ia + 50);
     }, 5000);
+}
+
+function sincroniza_itens(craft, produto, qtd){
+
+    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/JSON/dados_locais.json')
+    .then(response => response.json())
+    .then(async res_artigo => {
+        
+        dados_itens = res_artigo;
+        mostra_crafting(craft, produto, qtd);
+    });
+}
+
+function mostra_crafting(craft, produto, qtd){
+
+    const grid = document.getElementsByClassName('grid_craft');
+    let sprite_produto = "";
+
+    if(dados_itens.length < 1){
+        sincroniza_itens(craft, produto, qtd);
+        return;
+    }
+
+    for(let i = 0; i < grid.length; i++){
+
+        let sprite_item = "";
+
+        if(craft[i] !== null || typeof craft[i] !== "undefined"){
+            Object.keys(dados_itens).forEach(function(k){
+                if(k == craft[i])
+                    sprite_item = `IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+
+                if(k == produto)
+                    sprite_produto = `IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+            });
+            
+            grid[i].style.backgroundImage = `url('${sprite_item}')`;
+        }else
+            grid[i].style.backgroundImage = `None`;
+    }
+
+    Object.keys(dados_itens).forEach(function(k){
+        if(dados_itens[k]["id_item"] == produto)
+            sprite_produto = `IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+    });
+
+    document.getElementById("sprite_produto").innerHTML = "";
+    document.getElementById("sprite_produto").innerHTML += "<img src='"+ sprite_produto +"' style='width: 48px'>";
+
+    document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null;
 }

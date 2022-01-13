@@ -35,6 +35,19 @@
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
+    <div id="minetip-tooltip">
+            <span id="nome_item_minetip"></span><br>
+            <span id="descricao_item_minetip"></span><br>
+            <span id="nome_interno_minetip"></span>
+        </div>
+        
+    <div id="botoes_ferramentas">
+        <a class="bttn_frrm" href="index.php" onmouseover="toolTip('O Gerenciador de itens')" onmouseout="toolTip()"><img src="img/interface/crafting_table.png"></a>
+
+        <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
+        <a class="bttn_frrm" href="PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
+    </div>
+
     <?php
         for($i = 1; $i <= 5; $i++){
             echo "<a href='#'><div class='item_crafting itc_$i' onclick='crafting_categoria($i)'></div></a>";
@@ -48,28 +61,31 @@
 
         <div id="grid_crafting">
             <?php for($i = 0; $i < 9; $i++){
-                echo "<div class='grid_craft gric gric_$i'></div>";
+                echo "<div class='grid_craft gric'></div>";
             } ?>
         </div>
 
+        <div id="produto_final">
+            <div id="sprite_produto"></div>
+            <div id="qtd_produto"></div>
+        </div>
 
         <div id="prancheta_itens_crafting">
 
-        <?php 
-
-        $i = 0;
+        <?php $i = 0;
 
         while($dados = $executa->fetch_assoc()){
             
             $programmer_art = $dados["programmer_art"];
             $tipo_item = $dados["abamenu"];
+            $id_item = $dados["id_item"];
             $nome_icon = $dados["nome_icon"];
             $geracao = "new";
 
             if($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-            echo "<a href='#'><div class='slot_item_crafting'> <img class='sprite_slot_crafting' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'></div></a>";
+            echo "<a href='#' onclick='mostra_crafting([null], $id_item, null)'><div class='slot_item_crafting'> <img class='sprite_slot_crafting' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'></div></a>";
 
             if($i == 19)
                 break;
@@ -79,6 +95,7 @@
         </div>
     </div>
     
+    <script type="text/javascript" src="JSON/dados_locais.json"></script>
     <script src="JS/jquery-3.4.1.js"></script>
     <script src="JS/engine.js"></script>
 </body>

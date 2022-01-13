@@ -35,5 +35,6 @@ create table durabilidade_item(
 
 create table crafting_item(
     id_craft int not null auto_increment primary key,
-    craft varchar(500) not null
+    craft varchar(500) not null,
+    qtd_produtos int
 );
