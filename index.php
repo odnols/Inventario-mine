@@ -194,6 +194,16 @@
 
         <div id="item_11" onclick="clique('prancheta')"></div>
         
+        <img id="img_construcao" class="aba_menu Construcao" src="#">
+        <img id="img_decorativos" class="aba_menu Decorativos" src="#">
+        <img id="img_redstone" class="aba_menu Redstone" src="#">
+        <img id="img_transportes" class="aba_menu Transportes" src="#">
+        <img id="img_diversos" class="aba_menu Diversos" src="#">
+        <img id="img_alimentos" class="aba_menu Alimentos" src="#">
+        <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
+        <img id="img_combate" class="aba_menu Combate" src="#">
+        <img id="img_pocoes" class="aba_menu Pocoes" src="#">
+        
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
             <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
             <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
