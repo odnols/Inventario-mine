@@ -499,11 +499,12 @@ a{
     color: black !important;
     background-color: white;
     width: 85%; 
-    border: 0px solid grey;
     padding: 10px;
     height: 34px;
-    border-radius: 4px;
     transition: background-color .2s;
+    margin-left: 4px;
+    margin-right: 4px;
+    box-shadow: 4px 0px 0px 0px black, 0px 4px 0px 0px black, -4px 0px 0px 0px #c6c6c6, 4px 4px 0px 0px black, 0px -4px 0px 0px white, -4px 4px 0px 0px #8b8b8b, -4px -4px 0px 0px white, 4px -4px 0px 0px #8b8b8b, 5px 5px 0px -30px rgba(0,0,0,0);
 }
 .bttn_frrm:hover{
     background-color: rgb(224, 193, 135);
@@ -611,4 +612,93 @@ a{
 }
 .troca_pag_button:hover{
     background-color: gray;
+}
+#menu_criacao{
+    width: 1071px;
+    height: 498px;
+    position: absolute;
+    left: 50%;
+    margin-left: -535px;
+    top: 50%;
+    margin-top: -249px;
+    background-image: url("../IMG/Interface/Claro/crafting.png");
+}
+.item_crafting{
+    width: 90px;
+    height: 75px;
+    z-index: 3;
+    left: 155px;
+    position: absolute;
+}
+.itc_1{
+    top: 75px;
+}
+.itc_2{
+    top: 155px;
+}
+.itc_3{
+    top: 237px;
+}
+.itc_4{
+    top: 317px;
+}
+.itc_5{
+    top: 398px;
+}
+#seta_esquerda_crafting{
+    background-image: url("../IMG/Interface/Claro/seta_esquerda.png");
+    width: 33px;
+    height: 51px;
+    position: absolute;
+    left: 361px;
+    bottom: 99px;
+    z-index: 3;
+}
+#seta_direita_crafting{
+    background-image: url("../IMG/Interface/Claro/seta_direita.png");
+    width: 33px;
+    height: 51px;
+    position: absolute;
+    left: 523px;
+    bottom: 99px;
+    z-index: 3;
+}
+#prancheta_itens_crafting{
+    width: 375px;
+    height: 300px;
+    z-index: 2;
+    position: absolute;
+    left: 129px;
+    top: 93px;
+    overflow-y: scroll;
+}
+.slot_item_crafting{
+    background-image: url("../IMG/Interface/Claro/slot_item_crafting.png");
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+.sprite_slot_crafting{
+    padding-left: 12px;
+    padding-top: 12px;
+    width: 48px;
+    height: 48px;
+}
+#grid_crafting{
+    top: 48px;
+    width: 162px;
+    height: 162px;
+    z-index: 2;
+    position: absolute;
+    right: 279px;
+}
+.gric{
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin: 3px;
+}
+.gric_0, .gric_8, .gric_5{
+    background-image: url("../IMG/Itens/new/Construcao/acacia_log.png");
+    background-repeat: no-repeat;
 }

@@ -15,6 +15,7 @@ create table item(
     posicao_item int(11),
     nome_interno varchar(150),
     versao_adicionada int,
+    fabricavel int,
 	aliases_nome varchar(1000)
 );
 
@@ -30,4 +31,9 @@ create table durabilidade_item(
     id_item int not null,
     durabilidade int not null,
     foreign key(id_item) references item(id_item)
+);
+
+create table crafting_item(
+    id_craft int not null auto_increment primary key,
+    craft varchar(500) not null
 );

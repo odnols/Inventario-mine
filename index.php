@@ -59,6 +59,12 @@
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
             echo $executa->num_rows ."</p>";
 
+            $verificar = "SELECT * from item where fabricavel = 1";
+            $executa = $conexao->query($verificar);
+
+            echo "<br><p class='estat cor_textos'> Fabricáveis: ";
+            echo $executa->num_rows ."</p>";
+
             $verificar = "SELECT * from item where renovavel = 1 and abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
@@ -95,6 +101,8 @@
     </div>
     
     <div id="botoes_ferramentas">
+        <a class="bttn_frrm" href="crafting.php" onmouseover="toolTip('O Crafting de todos os itens')" onmouseout="toolTip()"><img src="img/interface/crafting_table.png"></a>
+
         <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
         <a class="bttn_frrm" href="PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
         <a class="bttn_frrm" id="button_importar_dados" href="PHP/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
@@ -164,6 +172,8 @@
 
             <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
+            <input class="input_check" type="checkbox" name="fabricavel" checked onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+
             <div id="selecionar_sprite">
                 <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
 
@@ -183,16 +193,6 @@
         } ?>
 
         <div id="item_11" onclick="clique('prancheta')"></div>
-
-        <img id="img_construcao" class="aba_menu Construcao" src="#">
-        <img id="img_decorativos" class="aba_menu Decorativos" src="#">
-        <img id="img_redstone" class="aba_menu Redstone" src="#">
-        <img id="img_transportes" class="aba_menu Transportes" src="#">
-        <img id="img_diversos" class="aba_menu Diversos" src="#">
-        <img id="img_alimentos" class="aba_menu Alimentos" src="#">
-        <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
-        <img id="img_combate" class="aba_menu Combate" src="#">
-        <img id="img_pocoes" class="aba_menu Pocoes" src="#">
         
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
             <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">

@@ -39,6 +39,7 @@
     $coletavel_s = "";
     $oculto_invt = "";
     $programmer_art = "";
+    $crafting = "";
 
     $busca_dados = "SELECT * from item where id_item = $id_item";
     $executa = $conexao->query($busca_dados);
@@ -71,6 +72,9 @@
     
     if($dados["programmer_art"])
         $programmer_art = "checked";
+
+    if($dados["fabricavel"])
+        $crafting = "checked";
 
     $cor_item = 0;
     $durabilidade = "";
@@ -203,6 +207,8 @@
                     <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
 
                     <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
+
+                    <input class="input_check" type="checkbox" name="fabricavel" <?php echo $crafting ?> onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
                 </div>
             </div>
 

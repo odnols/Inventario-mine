@@ -25,11 +25,17 @@ if(isset($_POST["coletavelsurvival"]))
 else
     $coletavelsurvival = 0;
 
+// Verifica se o item pode ser fabricado manualmente
+if(isset($_POST["fabricavel"]))
+    $fabricavel = 1;
+else
+    $fabricavel = 0;
+
 $verificar = "SELECT nome from item where nome like '$nome'";
 $executa = $conexao->query($verificar);
 
 if($executa->num_rows == 0 || $nome == "Disco musical" || $nome == "Livro encantado"){
-    $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, versao_adicionada, nome_interno) values (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno');";
+    $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, versao_adicionada, nome_interno, fabricavel) values (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
 
     $executa = $conexao->query($insere);
 

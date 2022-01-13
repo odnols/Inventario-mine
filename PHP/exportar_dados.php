@@ -23,7 +23,8 @@ while($dados = $executa->fetch_assoc()){
     $descricao = $dados["descricao"];
     $oculto_invt = intval($dados["oculto_invt"]);
     $programmer_art = intval($dados["programmer_art"]);
-
+    $fabricavel = intval($dados["fabricavel"]);
+    
     if(strlen($aliases) == 0)
         $aliases = null;
 
@@ -83,6 +84,7 @@ while($dados = $executa->fetch_assoc()){
             "aliases" => $aliases,
             "descricao" => $descricao,
             "oculto_invt" => $oculto_invt,
+            "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art
         ));
     }else if($executa_item_2 -> num_rows == 0){
@@ -99,6 +101,7 @@ while($dados = $executa->fetch_assoc()){
             "aliases" => $aliases,
             "descricao" => $descricao,
             "oculto_invt" => $oculto_invt,
+            "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art,
             "cor_item" => $cor_item
         ));
@@ -117,6 +120,7 @@ while($dados = $executa->fetch_assoc()){
             "aliases" => $aliases,
             "descricao" => $descricao,
             "oculto_invt" => $oculto_invt,
+            "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art
         ));
     }else{
@@ -134,6 +138,7 @@ while($dados = $executa->fetch_assoc()){
             "aliases" => $aliases,
             "descricao" => $descricao,
             "oculto_invt" => $oculto_invt,
+            "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art,
             "cor_item" => $cor_item
         ));
