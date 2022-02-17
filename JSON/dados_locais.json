@@ -1984,7 +1984,7 @@
         "aliases": null,
         "descricao": null,
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -2883,7 +2883,7 @@
     },
     {
         "id_item": 180,
-        "nome_icon": "sculk_sensor.gif",
+        "nome_icon": "sculk_sensor.png",
         "tipo_item": "Redstone",
         "nome_item": "Sensor de sculk",
         "coletavel": 1,
@@ -20867,7 +20867,7 @@
         "descricao": "[&rCondutividade",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "57",
@@ -21945,7 +21945,7 @@
         "descricao": "[&rVelocidade das almas I",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "136",
@@ -21967,7 +21967,7 @@
         "descricao": "[&rVelocidade das almas II",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "135",
@@ -21989,7 +21989,7 @@
         "descricao": "[&rVelocidade das almas III",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "134",
@@ -22781,7 +22781,7 @@
         "descricao": "[&rLealdade I",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "98",
@@ -22803,7 +22803,7 @@
         "descricao": "[&rLealdade II",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "97",
@@ -22825,7 +22825,7 @@
         "descricao": "[&rLealdade III",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "96",
@@ -22847,7 +22847,7 @@
         "descricao": "[&rPenetra\u00e7\u00e3o I",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "95",
@@ -22869,7 +22869,7 @@
         "descricao": "[&rPenetra\u00e7\u00e3o II",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "94",
@@ -22891,7 +22891,7 @@
         "descricao": "[&rPenetra\u00e7\u00e3o III",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "93",
@@ -22913,7 +22913,7 @@
         "descricao": "[&rPenetra\u00e7\u00e3o IV",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "92",
@@ -22935,7 +22935,7 @@
         "descricao": "[&rPenetra\u00e7\u00e3o V",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "91",
@@ -22957,7 +22957,7 @@
         "descricao": "[&rCorrenteza I",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "90",
@@ -22979,7 +22979,7 @@
         "descricao": "[&rCorrenteza II",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "89",
@@ -23001,7 +23001,7 @@
         "descricao": "[&rCorrenteza III",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "88",
@@ -23023,7 +23023,7 @@
         "descricao": "[&rRajada",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "87",
@@ -23045,7 +23045,7 @@
         "descricao": "[&rCarga r\u00e1pida I",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "86",
@@ -23067,7 +23067,7 @@
         "descricao": "[&rCarga r\u00e1pida II",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "84",
@@ -23089,7 +23089,7 @@
         "descricao": "[&rCarga r\u00e1pida III",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "85",
@@ -23111,7 +23111,7 @@
         "descricao": "[&rPerfura\u00e7\u00e3o I",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "83",
@@ -23133,7 +23133,7 @@
         "descricao": "[&rPerfura\u00e7\u00e3o II",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "82",
@@ -23155,7 +23155,7 @@
         "descricao": "[&rPerfura\u00e7\u00e3o III",
         "oculto_invt": 1,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "80",
@@ -23177,7 +23177,7 @@
         "descricao": "[&rPerfura\u00e7\u00e3o IV",
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0,
+        "programmer_art": 1,
         "cor_item": [
             {
                 "id_cor": "81",
@@ -23235,8 +23235,8 @@
     },
     {
         "id_item": 1391,
-        "nome_icon": "sculk_block.gif",
-        "tipo_item": "Decorativos",
+        "nome_icon": "sculk_block.png",
+        "tipo_item": "Redstone",
         "nome_item": "Bloco de sculk",
         "coletavel": 1,
         "nome_interno": "sculk_block",
@@ -23251,11 +23251,11 @@
     },
     {
         "id_item": 1392,
-        "nome_icon": "sculk_catalyser.png",
-        "tipo_item": "Decorativos",
+        "nome_icon": "sculk_catalyst.png",
+        "tipo_item": "Redstone",
         "nome_item": "Catalisador de sculk",
         "coletavel": 1,
-        "nome_interno": "sculk_catalyser",
+        "nome_interno": "sculk_catalyst",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 0,
@@ -23267,8 +23267,8 @@
     },
     {
         "id_item": 1393,
-        "nome_icon": "Sculk_Vein.gif",
-        "tipo_item": "Decorativos",
+        "nome_icon": "sculk_vein.png",
+        "tipo_item": "Redstone",
         "nome_item": "Veios de sculk",
         "coletavel": 1,
         "nome_interno": "sculk_vein",
@@ -23283,8 +23283,8 @@
     },
     {
         "id_item": 1394,
-        "nome_icon": "sculk_shrieker.gif",
-        "tipo_item": "Decorativos",
+        "nome_icon": "sculk_shrieker.png",
+        "tipo_item": "Redstone",
         "nome_item": "Alerta de sculk",
         "coletavel": 1,
         "nome_interno": "sculk_shrieker",
@@ -23347,11 +23347,11 @@
     },
     {
         "id_item": 1398,
-        "nome_icon": "frame_block.png",
+        "nome_icon": "reinforced_deepslate.png",
         "tipo_item": "Decorativos",
         "nome_item": "Bloco de quadro",
         "coletavel": 1,
-        "nome_interno": "frame_block",
+        "nome_interno": "reinforced_deepslate",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 0,
@@ -23958,5 +23958,87 @@
         "oculto_invt": 0,
         "fabricavel": 1,
         "programmer_art": 0
+    },
+    {
+        "id_item": 1437,
+        "nome_icon": "mangrove_flower.png",
+        "tipo_item": "Decorativos",
+        "nome_item": "Fruto de mangue",
+        "coletavel": 1,
+        "nome_interno": "mangrove_flower",
+        "empilhavel": 64,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1438,
+        "nome_icon": "enchanted_book.png",
+        "tipo_item": "Combate",
+        "nome_item": "Livro encantado",
+        "coletavel": 1,
+        "nome_interno": "enchanted_book",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": "[&rSwift Sneak I",
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "168",
+                "tipo_item": "2"
+            }
+        ]
+    },
+    {
+        "id_item": 1439,
+        "nome_icon": "enchanted_book.png",
+        "tipo_item": "Combate",
+        "nome_item": "Livro encantado",
+        "coletavel": 1,
+        "nome_interno": "enchanted_book",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": "[&rSwift Sneak II",
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "169",
+                "tipo_item": "2"
+            }
+        ]
+    },
+    {
+        "id_item": 1440,
+        "nome_icon": "enchanted_book.png",
+        "tipo_item": "Combate",
+        "nome_item": "Livro encantado",
+        "coletavel": 1,
+        "nome_interno": "enchanted_book",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": "[&rSwift Sneak III",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "170",
+                "tipo_item": "2"
+            }
+        ]
     }
 ]

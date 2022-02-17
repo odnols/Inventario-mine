@@ -18,7 +18,7 @@
     if(isset($_GET["versao_jogo"]))
         $versao_jogo = $_GET["versao_jogo"];
         
-    if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 18)
+    if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 19)
         $versao_jogo = 5; ?>
 </head>
 <body onload="sincroniza_tema(<?php echo $versao_jogo ?>)">
@@ -31,7 +31,7 @@
         if(!isset($_GET["dg"]))
             $graphics = false; 
 
-        for($i = 0; $i < 18; $i += 2){
+        for($i = 0; $i < 19; $i += 2){
             $x = $i + 1;
 
             echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a>";
@@ -50,7 +50,7 @@
             <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo - 1; ?>"><button class="navegacao" onmouseover="toolTip('Versão anterior')" onmouseout="toolTip()"> < </button></a>
         <?php }
 
-        if($versao_jogo < 18) { ?>
+        if($versao_jogo < 19) { ?>
             <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>"><button class="navegacao" onmouseover="toolTip('Próxima versão')" onmouseout="toolTip()"> > </button></a>
         <?php } ?>
 

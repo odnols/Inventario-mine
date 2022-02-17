@@ -701,13 +701,18 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
 
         // Verifica se existem muitos alvos para poder acompanhar o mouse            
         const verifica = document.getElementsByClassName("slot_item");
+        const verifica_2 = document.getElementsByClassName("slot_item_crafting");
 
-        if(verifica.length > 1){
+        if(verifica.length > 1 || verifica_2.length > 1){
             $(".slot_item").on("mousemove", function( event ) {
                 $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
             });
 
             $(".slot_item_add").on("mousemove", function( event ) {
+                $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
+            });
+
+            $(".slot_item_crafting").on("mousemove", function( event ) {
                 $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
             });
         }
@@ -868,8 +873,10 @@ function mostra_crafting(craft, produto, qtd){
     }
 
     Object.keys(dados_itens).forEach(function(k){
-        if(dados_itens[k]["id_item"] == produto)
+        if(dados_itens[k]["id_item"] == produto){
             sprite_produto = `IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+            nome_produto = dados_itens[k]["nome"];
+        }
     });
 
     document.getElementById("sprite_produto").innerHTML = "";

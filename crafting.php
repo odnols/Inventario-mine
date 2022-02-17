@@ -75,7 +75,10 @@
         <?php $i = 0;
 
         while($dados = $executa->fetch_assoc()){
-            
+
+            $nome_item = $dados["nome"];
+            $nome_interno = $dados["nome_interno"];
+
             $programmer_art = $dados["programmer_art"];
             $tipo_item = $dados["abamenu"];
             $id_item = $dados["id_item"];
@@ -85,7 +88,7 @@
             if($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-            echo "<a href='#' onclick='mostra_crafting([null], $id_item, null)'><div class='slot_item_crafting'> <img class='sprite_slot_crafting' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'></div></a>";
+            echo "<a href='#' onclick='mostra_crafting([null], $id_item, null)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'><div class='slot_item_crafting'><img class='sprite_slot_crafting' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'></div></a>";
 
             if($i == 19)
                 break;
