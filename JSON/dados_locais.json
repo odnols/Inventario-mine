@@ -15228,7 +15228,7 @@
         "aliases": null,
         "descricao": "[&rNenhum efeito",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -15244,7 +15244,7 @@
         "aliases": null,
         "descricao": "[&rNenhum efeito",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -15260,7 +15260,7 @@
         "aliases": null,
         "descricao": "[&rNenhum efeito",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18182,7 +18182,7 @@
         "aliases": null,
         "descricao": "[&rNenhum efeito",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18198,7 +18198,7 @@
         "aliases": null,
         "descricao": "[&rNenhum efeito",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18214,7 +18214,7 @@
         "aliases": null,
         "descricao": "[&rNenhum efeito",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18780,7 +18780,7 @@
         "aliases": null,
         "descricao": "[&2Dano instant\u00e2neo",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18796,7 +18796,7 @@
         "aliases": null,
         "descricao": "[&2Dano instant\u00e2neo II",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18812,7 +18812,7 @@
         "aliases": null,
         "descricao": "[&2Veneno (0:45)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18828,7 +18828,7 @@
         "aliases": null,
         "descricao": "[&2Veneno (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18844,7 +18844,7 @@
         "aliases": null,
         "descricao": "[&2Veneno II (0:21)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18860,7 +18860,7 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o (0:45)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18876,7 +18876,7 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18892,7 +18892,7 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o II (0:22)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18908,7 +18908,7 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a (3:00) [&s[&3Efeito aplicado: [&1Dano por golpe: +3",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18924,7 +18924,7 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a (8:00) [&s[&3Efeito aplicado: [&1Dano por golpe: +3",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18940,7 +18940,7 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a II (1:30) [&s[&3Efeito aplicado: [&1Dano por golpe: +6",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18956,7 +18956,7 @@
         "aliases": null,
         "descricao": "[&2Fraqueza (1:30) [&s[&3Efeito aplicado: [&2Dano por golpe: -4",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -18972,7 +18972,7 @@
         "aliases": null,
         "descricao": "[&2Fraqueza (4:00) [&s[&3Efeito aplicado: [&2Dano por golpe: -4",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19004,7 +19004,7 @@
         "aliases": null,
         "descricao": "[&1Queda lenta (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19020,7 +19020,7 @@
         "aliases": null,
         "descricao": "[&1Queda lenta (4:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19036,7 +19036,7 @@
         "aliases": null,
         "descricao": "[&1Vis\u00e3o noturna (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19052,7 +19052,7 @@
         "aliases": null,
         "descricao": "[&1Vis\u00e3o noturna (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19068,7 +19068,7 @@
         "aliases": null,
         "descricao": "[&1Invisibilidade (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19084,7 +19084,7 @@
         "aliases": null,
         "descricao": "[&1Invisibilidade (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19100,7 +19100,7 @@
         "aliases": null,
         "descricao": "[&1Supersalto (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19116,7 +19116,7 @@
         "aliases": null,
         "descricao": "[&1Supersalto (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19132,7 +19132,7 @@
         "aliases": null,
         "descricao": "[&1Supersalto II (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19148,7 +19148,7 @@
         "aliases": null,
         "descricao": "[&1Resist. ao fogo (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19164,7 +19164,7 @@
         "aliases": null,
         "descricao": "[&1Resist. ao fogo (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19180,7 +19180,7 @@
         "aliases": null,
         "descricao": "[&1Velocidade (3:00) [&s[&3Efeito aplicado: [&1Velocidade: +20%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19196,7 +19196,7 @@
         "aliases": null,
         "descricao": "[&1Velocidade (8:00) [&s[&3Efeito aplicado: [&1Velocidade: +20%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19212,7 +19212,7 @@
         "aliases": null,
         "descricao": "[&1Velocidade II (1:30) [&s[&3Efeito aplicado: [&1Velocidade: +40%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19228,7 +19228,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o (1:30) [&s[&3Efeito aplicado: [&2Velocidade: -15%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19244,7 +19244,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o (4:00) [&s[&3Efeito aplicado: [&2Velocidade: -15%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19260,7 +19260,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o IV (0:20) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19276,7 +19276,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o VI (0:20) [&1Resist\u00eancia III (0:20) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19292,7 +19292,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o VI (0:40) [&1Resist\u00eancia III (0:40) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19308,7 +19308,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o VI (0:20) [&1Resist\u00eancia IV (0:20) [&s[&3Efeito aplicado: [&2Velocidade: -90%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19324,7 +19324,7 @@
         "aliases": null,
         "descricao": "[&1Resp. aqu\u00e1tica (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19340,7 +19340,7 @@
         "aliases": null,
         "descricao": "[&1Resp. aqu\u00e1tica (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19356,7 +19356,7 @@
         "aliases": null,
         "descricao": "[&1Vida instant\u00e2nea",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19372,7 +19372,7 @@
         "aliases": null,
         "descricao": "[&1Vida instant\u00e2nea II",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19388,7 +19388,7 @@
         "aliases": null,
         "descricao": "[&1Vis\u00e3o noturna (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19404,7 +19404,7 @@
         "aliases": null,
         "descricao": "[&1Vis\u00e3o noturna (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19420,7 +19420,7 @@
         "aliases": null,
         "descricao": "[&1Invisibilidade (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19436,7 +19436,7 @@
         "aliases": null,
         "descricao": "[&1Invisibilidade (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19452,7 +19452,7 @@
         "aliases": null,
         "descricao": "[&1Supersalto (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19468,7 +19468,7 @@
         "aliases": null,
         "descricao": "[&1Supersalto (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19484,7 +19484,7 @@
         "aliases": null,
         "descricao": "[&1Supersalto II (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19500,7 +19500,7 @@
         "aliases": null,
         "descricao": "[&1Resist. ao fogo (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19516,7 +19516,7 @@
         "aliases": null,
         "descricao": "[&1Resist. ao fogo (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19532,7 +19532,7 @@
         "aliases": null,
         "descricao": "[&1Velocidade (3:00) [&s[&3Efeito aplicado: [&1Velocidade: +20%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19548,7 +19548,7 @@
         "aliases": null,
         "descricao": "[&1Velocidade (8:00) [&s[&3Efeito aplicado: [&1Velocidade: +20%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19564,7 +19564,7 @@
         "aliases": null,
         "descricao": "[&1Velocidade II (1:30) [&s[&3Efeito aplicado: [&1Velocidade: +40%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19580,7 +19580,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o (1:30) [&s[&3Efeito aplicado: [&2Velocidade: -15%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19596,7 +19596,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o (4:00) [&s[&3Efeito aplicado: [&2Velocidade: -15%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19612,7 +19612,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o IV (0:20) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19628,7 +19628,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o IV (0:20) [&1Resist\u00eancia III (0:20) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19644,7 +19644,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o IV (0:40) [&1Resist\u00eancia III (0:40) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19660,7 +19660,7 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o VI (0:20) [&1Resist\u00eancia IV (0:20) [&s[&3Efeito aplicado: [&2Velocidade: -90%",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19676,7 +19676,7 @@
         "aliases": null,
         "descricao": "[&1Respir. aqu\u00e1tica (3:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19692,7 +19692,7 @@
         "aliases": null,
         "descricao": "[&1Respir. aqu\u00e1tica (8:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19708,7 +19708,7 @@
         "aliases": null,
         "descricao": "[&1Vida instant\u00e2nea",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19724,7 +19724,7 @@
         "aliases": null,
         "descricao": "[&1Vida instant\u00e2nea II",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19740,7 +19740,7 @@
         "aliases": null,
         "descricao": "[&2Dano instant\u00e2neo",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19756,7 +19756,7 @@
         "aliases": null,
         "descricao": "[&2Dano instant\u00e2neo II",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19772,7 +19772,7 @@
         "aliases": null,
         "descricao": "[&2Veneno (0:45)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19788,7 +19788,7 @@
         "aliases": null,
         "descricao": "[&2Veneno (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19804,7 +19804,7 @@
         "aliases": null,
         "descricao": "[&2Veneno II (0:21)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19820,7 +19820,7 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o (0:45)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19836,7 +19836,7 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19852,7 +19852,7 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o II (0:22)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19868,7 +19868,7 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a (3:00) [&s[&3Efeito aplicado: [&1Dano por golpe: +3",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19884,7 +19884,7 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a (8:00) [&s[&3Efeito aplicado: [&1Dano por golpe: +3",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19900,7 +19900,7 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a II (1:30) [&s[&3Efeito aplicado: [&1Dano por golpe: +6",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19916,7 +19916,7 @@
         "aliases": null,
         "descricao": "[&2Fraqueza (1:30) [&s[&3Efeito aplicado: [&2Dano por golpe: -4",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19932,7 +19932,7 @@
         "aliases": null,
         "descricao": "[&2Fraqueza (4:00) [&s[&3Efeito aplicado: [&2Dano por golpe: -4",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19964,7 +19964,7 @@
         "aliases": null,
         "descricao": "[&1Queda lenta (1:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -19980,7 +19980,7 @@
         "aliases": null,
         "descricao": "[&1Queda lenta (4:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
+        "fabricavel": 1,
         "programmer_art": 1
     },
     {
@@ -23475,7 +23475,7 @@
     },
     {
         "id_item": 1407,
-        "nome_icon": "phantom_spawn_egg.png",
+        "nome_icon": "allay_spawn_egg.png",
         "tipo_item": "Diversos",
         "nome_item": "Ovo gerador de allay",
         "coletavel": 0,
