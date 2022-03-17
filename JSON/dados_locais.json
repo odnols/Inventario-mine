@@ -23219,7 +23219,7 @@
     },
     {
         "id_item": 1390,
-        "nome_icon": "mud_block.png",
+        "nome_icon": "mud.png",
         "tipo_item": "Construcao",
         "nome_item": "Barro",
         "coletavel": 1,
@@ -23236,7 +23236,7 @@
     {
         "id_item": 1391,
         "nome_icon": "sculk_block.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Decorativos",
         "nome_item": "Bloco de sculk",
         "coletavel": 1,
         "nome_interno": "sculk_block",
@@ -23252,7 +23252,7 @@
     {
         "id_item": 1392,
         "nome_icon": "sculk_catalyst.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Decorativos",
         "nome_item": "Catalisador de sculk",
         "coletavel": 1,
         "nome_interno": "sculk_catalyst",
@@ -23268,7 +23268,7 @@
     {
         "id_item": 1393,
         "nome_icon": "sculk_vein.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Decorativos",
         "nome_item": "Veios de sculk",
         "coletavel": 1,
         "nome_interno": "sculk_vein",
@@ -23284,7 +23284,7 @@
     {
         "id_item": 1394,
         "nome_icon": "sculk_shrieker.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Decorativos",
         "nome_item": "Alerta de sculk",
         "coletavel": 1,
         "nome_interno": "sculk_shrieker",
@@ -23571,7 +23571,7 @@
     },
     {
         "id_item": 1413,
-        "nome_icon": "jungle_stairs.png",
+        "nome_icon": "mangrove_stairs.png",
         "tipo_item": "Construcao",
         "nome_item": "Escadas de mangue",
         "coletavel": 1,
@@ -23587,7 +23587,7 @@
     },
     {
         "id_item": 1414,
-        "nome_icon": "jungle_slab.png",
+        "nome_icon": "mangrove_slab.png",
         "tipo_item": "Construcao",
         "nome_item": "Laje de mangue",
         "coletavel": 1,
@@ -23603,7 +23603,7 @@
     },
     {
         "id_item": 1415,
-        "nome_icon": "jungle_button.png",
+        "nome_icon": "mangrove_button.png",
         "tipo_item": "Redstone",
         "nome_item": "Bot\u00e3o de mangue",
         "coletavel": 1,
@@ -23619,7 +23619,7 @@
     },
     {
         "id_item": 1416,
-        "nome_icon": "jungle_fence_gate.png",
+        "nome_icon": "mangrove_fence_gate.png",
         "tipo_item": "Redstone",
         "nome_item": "Port\u00e3o de mangue",
         "coletavel": 1,
@@ -23635,7 +23635,7 @@
     },
     {
         "id_item": 1417,
-        "nome_icon": "jungle_door.png",
+        "nome_icon": "mangrove_door.png",
         "tipo_item": "Redstone",
         "nome_item": "Porta de mangue",
         "coletavel": 1,
@@ -23651,7 +23651,7 @@
     },
     {
         "id_item": 1418,
-        "nome_icon": "jungle_trapdoor.png",
+        "nome_icon": "mangrove_trapdoor.png",
         "tipo_item": "Redstone",
         "nome_item": "Al\u00e7ap\u00e3o de mangue",
         "coletavel": 1,
@@ -23667,7 +23667,7 @@
     },
     {
         "id_item": 1419,
-        "nome_icon": "jungle_pressure_plate.png",
+        "nome_icon": "mangrove_pressure_plate.png",
         "tipo_item": "Redstone",
         "nome_item": "Placa de press\u00e3o de mangue",
         "coletavel": 1,
@@ -23699,7 +23699,7 @@
     },
     {
         "id_item": 1421,
-        "nome_icon": "jungle_sign.png",
+        "nome_icon": "mangrove_sign.png",
         "tipo_item": "Decorativos",
         "nome_item": "Placa de mangue",
         "coletavel": 1,
@@ -23715,7 +23715,7 @@
     },
     {
         "id_item": 1422,
-        "nome_icon": "stripped_jungle_log.png",
+        "nome_icon": "stripped_mangrove_log.png",
         "tipo_item": "Construcao",
         "nome_item": "Tronco de mangue descascado",
         "coletavel": 1,
@@ -23731,7 +23731,7 @@
     },
     {
         "id_item": 1423,
-        "nome_icon": "jungle_wood.png",
+        "nome_icon": "mangrove_wood.png",
         "tipo_item": "Construcao",
         "nome_item": "Madeira de mangue",
         "coletavel": 1,
@@ -23747,7 +23747,7 @@
     },
     {
         "id_item": 1424,
-        "nome_icon": "stripped_jungle_wood.png",
+        "nome_icon": "stripped_mangrove_wood.png",
         "tipo_item": "Construcao",
         "nome_item": "Madeira de mangue descascada",
         "coletavel": 1,
@@ -23763,11 +23763,11 @@
     },
     {
         "id_item": 1425,
-        "nome_icon": "mangrove_sapling.png",
+        "nome_icon": "mangrove_propagule.png",
         "tipo_item": "Decorativos",
         "nome_item": "Prop\u00e1gulo de mangue",
         "coletavel": 1,
-        "nome_interno": "mangrove_sapling",
+        "nome_interno": "mangrove_propagule",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 1,
@@ -23779,7 +23779,7 @@
     },
     {
         "id_item": 1426,
-        "nome_icon": "jungle_boat.png",
+        "nome_icon": "mangrove_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de mangue",
         "coletavel": 1,
@@ -23795,7 +23795,7 @@
     },
     {
         "id_item": 1427,
-        "nome_icon": "jungle_chest_boat.png",
+        "nome_icon": "mangrove_chest_boat.png",
         "tipo_item": "Transportes",
         "nome_item": "Bote de mangue com ba\u00fa",
         "coletavel": 1,
@@ -23849,11 +23849,11 @@
     },
     {
         "id_item": 1430,
-        "nome_icon": "frog_eggs.png",
+        "nome_icon": "frogspawn.png",
         "tipo_item": "Diversos",
         "nome_item": "Ovos de sapo",
         "coletavel": 0,
-        "nome_interno": "frog_egg",
+        "nome_interno": "frogspawn",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 1,
@@ -23913,11 +23913,11 @@
     },
     {
         "id_item": 1434,
-        "nome_icon": "mud_bricks_slab.png",
+        "nome_icon": "mud_brick_slab.png",
         "tipo_item": "Construcao",
         "nome_item": "Laje de tijolos de barro",
         "coletavel": 1,
-        "nome_interno": "mud_bricks_slab",
+        "nome_interno": "mud_brick_slab",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 1,
@@ -23929,11 +23929,11 @@
     },
     {
         "id_item": 1435,
-        "nome_icon": "mud_bricks_stairs.png",
+        "nome_icon": "mud_brick_stairs.png",
         "tipo_item": "Construcao",
         "nome_item": "Escadas de tijolos de barro",
         "coletavel": 1,
-        "nome_interno": "mud_bricks_stairs",
+        "nome_interno": "mud_brick_stairs",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 1,
@@ -23960,12 +23960,12 @@
         "programmer_art": 0
     },
     {
-        "id_item": 1437,
-        "nome_icon": "mangrove_flower.png",
-        "tipo_item": "Decorativos",
-        "nome_item": "Fruto de mangue",
+        "id_item": 1441,
+        "nome_icon": "muddy_mangrove_roots.png",
+        "tipo_item": "Construcao",
+        "nome_item": "Ra\u00edzes de mangue enlameadas",
         "coletavel": 1,
-        "nome_interno": "mangrove_flower",
+        "nome_interno": "muddy_mangrove_roots",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 1,
@@ -24040,5 +24040,53 @@
                 "tipo_item": "2"
             }
         ]
+    },
+    {
+        "id_item": 1442,
+        "nome_icon": "packed_mud.png",
+        "tipo_item": "Construcao",
+        "nome_item": "Barro compactado",
+        "coletavel": 1,
+        "nome_interno": "packed_mud",
+        "empilhavel": 64,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 1,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1443,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1444,
+        "nome_icon": "copper_goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cobre",
+        "coletavel": 1,
+        "nome_interno": "copper_goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
     }
 ]
