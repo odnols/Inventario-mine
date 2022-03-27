@@ -884,3 +884,7 @@ function mostra_crafting(craft, produto, qtd){
 
     document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null;
 }
+
+function expande_sprite(caminho){
+    window.location.href = "./sprite.php?caminho="+ caminho;
+}

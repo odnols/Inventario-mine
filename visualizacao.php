@@ -199,7 +199,7 @@
             <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll', <?php echo $versao_jogo ?>)">
             <?php 
             while($dados = $executa->fetch_assoc()){
-                                
+                
                 $apelido = null;
                 $converte = null;
                 $descricao_pesq = null;
@@ -294,14 +294,14 @@
                 }
                 
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
-                    echo "<div class='$slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                    echo "<div onclick='expande_sprite(`IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
-                        echo "<div class='$slot_item $tipo_item' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div onclick='expande_sprite(`IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }else{
-                        echo "<div class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div onclick='expande_sprite(`IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
                         echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
