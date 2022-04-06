@@ -24088,5 +24088,37 @@
         "oculto_invt": 0,
         "fabricavel": 0,
         "programmer_art": 0
+    },
+    {
+        "id_item": 1445,
+        "nome_icon": "recovery_compass.png",
+        "tipo_item": "Ferramentas",
+        "nome_item": "B\u00fassola de retomada",
+        "coletavel": 1,
+        "nome_interno": "recovery_compass",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 1,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1446,
+        "nome_icon": "echo_shard.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Fragmento de eco",
+        "coletavel": 1,
+        "nome_interno": "echo_shard",
+        "empilhavel": 64,
+        "versao_add": 19,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
     }
 ]
