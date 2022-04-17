@@ -47,66 +47,66 @@ if(strlen($aliases) == 0)
     $aliases = null;
 
 // Atualizando os campos principais
-$insere = "UPDATE item set nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel, oculto_invt = $oculto_invt, programmer_art = $programmer_art, aliases_nome = '$aliases', fabricavel = $crafting where id_item = $id_item";
+$insere = "UPDATE item SET nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel, oculto_invt = $oculto_invt, programmer_art = $programmer_art, aliases_nome = '$aliases', fabricavel = $crafting WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando o nome interno
 if(strlen($nome_interno) < 1)
-    $insere = "UPDATE item set nome_interno = null where id_item = $id_item";
+    $insere = "UPDATE item SET nome_interno = null WHERE id_item = $id_item";
 else
-    $insere = "UPDATE item set nome_interno = '$nome_interno' where id_item = $id_item";
+    $insere = "UPDATE item SET nome_interno = '$nome_interno' WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando a descrição do item
 if(strlen($descricao) < 1)
-    $insere = "UPDATE item set descricao = null where id_item = $id_item";
+    $insere = "UPDATE item SET descricao = null WHERE id_item = $id_item";
 else
-    $insere = "UPDATE item set descricao = '$descricao' where id_item = $id_item";
+    $insere = "UPDATE item SET descricao = '$descricao' WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando a versão
 if(strlen($versao) < 1 || $versao == "Outro")
-    $insere = "UPDATE item set versao_adicionada = 0 where id_item = $id_item";
+    $insere = "UPDATE item SET versao_adicionada = 0 WHERE id_item = $id_item";
 else
-    $insere = "UPDATE item set versao_adicionada = '$versao' where id_item = $id_item";
+    $insere = "UPDATE item SET versao_adicionada = '$versao' WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Verifica se o item possui registros anteriores
-$verifica_cor_item = "SELECT * from cor_item where id_item = $id_item";
+$verifica_cor_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_cor_item);
 
 if($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0){ // Só insere se for diferente de zero
     if($executa_verificacao->num_rows == 0) // Insere um novo
-        $insere = "INSERT into cor_item values (null, $id_item, $cor_tipo_item)";
+        $insere = "INSERT INTO cor_item VALUES (null, $id_item, $cor_tipo_item)";
     else if($cor_tipo_item != 0) // Atualiza
-        $insere = "UPDATE cor_item set tipo_item = $cor_tipo_item where id_item = $id_item"; 
+        $insere = "UPDATE cor_item SET tipo_item = $cor_tipo_item WHERE id_item = $id_item"; 
     else
-        $insere = "DELETE from cor_item where id_item = $id_item";
+        $insere = "DELETE FROM cor_item WHERE id_item = $id_item";
 
     $executa = $conexao-> query($insere);
 }
 
 // Verifica se o item possui registros anteriores
-$verifica_durabilidade_item = "SELECT * from durabilidade_item where id_item = $id_item";
+$verifica_durabilidade_item = "SELECT * FROM durabilidade_item WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_durabilidade_item);
 
 if($executa_verificacao->num_rows > 0)
     if(strlen($durabilidade) > 0)
-        $insere = "UPDATE durabilidade_item set durabilidade = $durabilidade where id_item = $id_item";
+        $insere = "UPDATE durabilidade_item SET durabilidade = $durabilidade WHERE id_item = $id_item";
     else
-        $insere = "DELETE from durabilidade_item where id_item = $id_item";
+        $insere = "DELETE FROM durabilidade_item WHERE id_item = $id_item";
 else
-    $insere = "INSERT into durabilidade_item values (null, $id_item, $durabilidade)";
+    $insere = "INSERT INTO durabilidade_item values (null, $id_item, $durabilidade)";
 
 $executa = $conexao-> query($insere);
 
 // Atualizando a imagem que está sendo utilizada
 if(strlen($arq_name) > 0){
-    $atualiza = "UPDATE item set nome_icon = '$arq_name' where id_item = $id_item";
+    $atualiza = "UPDATE item SET nome_icon = '$arq_name' WHERE id_item = $id_item";
     $executa = $conexao->query($atualiza);
 
     // Criando uma cópia da imagem
     move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\new\\$abamenu/". $arq_name);
 }
 
-Header("Location: ../item_detalhes.php?id=$id_item");
+Header("Location: ../pages/item_detalhes.php?id=$id_item");

@@ -3,4 +3,4 @@
 $verificar = "DELETE FROM item";
 $executa = $conexao->query($verificar);
 
-header("Location: ../index.php");
+header("Location: ../pages/index.php");

@@ -3,10 +3,10 @@
 $IDs_registrados = [];
 
 // Este arquivo está disponível por padrão em sua pasta JSON
-$arquivo = file_get_contents('../JSON/dados_locais.json');
+$arquivo = file_get_contents('../Files/JSON/dados_locais.json');
 $data = json_decode($arquivo);
 
-$verificar = "SELECT * from item";
+$verificar = "SELECT * FROM item";
 $executa = $conexao->query($verificar);
 
 // Salvando todos os IDs do banco num array
@@ -78,4 +78,4 @@ foreach($data as $key => $value){
     }
 }
 
-Header("Location: ../index.php");
+Header("Location: ../pages/index.php");

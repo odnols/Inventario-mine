@@ -31,11 +31,11 @@ if(isset($_POST["fabricavel"]))
 else
     $fabricavel = 0;
 
-$verificar = "SELECT nome from item where nome like '$nome'";
+$verificar = "SELECT nome FROM item WHERE nome LIKE '$nome'";
 $executa = $conexao->query($verificar);
 
 if($executa->num_rows == 0 || $nome == "Disco musical" || $nome == "Livro encantado"){
-    $insere = "INSERT into item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, versao_adicionada, nome_interno, fabricavel) values (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
+    $insere = "INSERT INTO item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, versao_adicionada, nome_interno, fabricavel) VALUES (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
 
     $executa = $conexao->query($insere);
 
@@ -43,4 +43,4 @@ if($executa->num_rows == 0 || $nome == "Disco musical" || $nome == "Livro encant
     move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\new\\$abamenu/". $arq_name);
 }
 
-Header("Location: ../index.php");
+Header("Location: ../pages/index.php");

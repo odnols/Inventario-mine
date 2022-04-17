@@ -1,11 +1,11 @@
 <?php include_once "conexao_obsoleta.php";
 
 $arquivo = "dados_locais.json";
-$file = fopen("../JSON/". $arquivo, 'w');
+$file = fopen("../Files/JSON/". $arquivo, 'w');
 
 $data = array();
 
-$verificar = "SELECT * from item";
+$verificar = "SELECT * FROM item";
 $executa = $conexao->query($verificar);
 
 while($dados = $executa->fetch_assoc()){
@@ -32,7 +32,7 @@ while($dados = $executa->fetch_assoc()){
         $descricao = null;
     
     // Verifica se o item possui registros de cores no título
-    $verificar_item = "SELECT * from cor_item where id_item = $id_item";
+    $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
     $executa_item_1 = $conexao->query($verificar_item);
 
     if($executa_item_1->num_rows > 0){
@@ -51,7 +51,7 @@ while($dados = $executa->fetch_assoc()){
     }
 
     // Verifica se o item possui registros de durabilidade
-    $verificar_durabilidade = "SELECT * from durabilidade_item where id_item = $id_item";
+    $verificar_durabilidade = "SELECT * FROM durabilidade_item WHERE id_item = $id_item";
     $executa_item_2 = $conexao->query($verificar_durabilidade);
     $durabilidade = 0;
 
@@ -150,4 +150,4 @@ fwrite($file, $json);
 
 fclose($file);
 
-Header("Location: ../index.php");
+Header("Location: ../pages/index.php");

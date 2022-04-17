@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/grass_block.png">
+    <link rel="shortcut icon" href="../IMG/Itens/new/Construcao/grass_block.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/anima.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="../css/anima.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
-    <script src="JS/jquery.min.js"></script>
-    <script src="JS/jquery-1.11.3.min.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/jquery-1.11.3.min.js"></script>
     
-    <?php include_once "PHP/conexao_obsoleta.php"; ?>
+    <?php include_once "../PHP/conexao_obsoleta.php"; ?>
 </head>
-<body onload="sincroniza_tema()">
+<body onload="sincroniza_tema(undefined, 1)">
 
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
@@ -33,7 +33,7 @@
         <img id="prancheta" src="#">
 
         <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
-            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
+            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="../IMG/Interface/mascara_oculto.png">
             <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
         </div>
         
@@ -45,7 +45,7 @@
             if(!isset($_GET["dg"]))
                 $graphics = false;    
             
-            $verificar = "SELECT * from item where abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
@@ -53,62 +53,62 @@
             echo "<br><p class='estat cor_textos'>Itens Registrados: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where coletavelsurvival = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE coletavelsurvival = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where fabricavel = 1";
+            $verificar = "SELECT * FROM item WHERE fabricavel = 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'> Fabricáveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where renovavel = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE renovavel = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Renováveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item where empilhavel != 0 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE empilhavel != 0 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item where empilhavel != 0 and coletavelsurvival = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE empilhavel != 0 AND coletavelsurvival = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE coletavelsurvival = 1 AND empilhavel != 0 AND renovavel != 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where empilhavel like 0 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE empilhavel LIKE 0 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Não empilháveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item order by id_item desc";
+            $verificar = "SELECT * FROM item ORDER BY id_item DESC";
             $executa = $conexao->query($verificar); ?>
         </div>
     </div>
     
     <div id="botoes_ferramentas">
-        <a class="bttn_frrm" href="crafting.php" onmouseover="toolTip('O Crafting de todos os itens')" onmouseout="toolTip()"><img src="img/interface/crafting_table.png"></a>
+        <a class="bttn_frrm" href="crafting.php" onmouseover="toolTip('O Crafting de todos os itens')" onmouseout="toolTip()"><img src="../IMG/interface/crafting_table.png"></a>
 
         <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
-        <a class="bttn_frrm" href="PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
-        <a class="bttn_frrm" id="button_importar_dados" href="PHP/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
+        <a class="bttn_frrm" href="../PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
+        <a class="bttn_frrm" id="button_importar_dados" href="../PHP/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
         
         <?php if($executa->num_rows > 0) { ?> <!-- Só libera a utilização se houver dados -->
-        <a class="bttn_frrm" id="button_apagar_dados" href="PHP/limpar_dados.php" onmouseover="toolTip('Apague todos os dados salvos no banco')" onmouseout="toolTip()">Limpar Dados</a>
+        <a class="bttn_frrm" id="button_apagar_dados" href="../PHP/limpar_dados.php" onmouseover="toolTip('Apague todos os dados salvos no banco')" onmouseout="toolTip()">Limpar Dados</a>
         <?php } ?>
     </div>
 
@@ -118,8 +118,10 @@
         <a class="bttn_frrm" id="bttn_programmers_atv" href="index.php" onmouseover="toolTip('Volte para os sprites atuais do Minecraft')" onmouseout="toolTip()">Gráficos padrões</a> <?php } } ?>
             
         <?php if($executa->num_rows > 0) { ?>
-        <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a> <?php } ?>
-        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
+        <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a> 
+        
+        <a class="bttn_frrm" href="../modules/criar_pagina.php" onmouseover="toolTip('Atualizar o site em HTML')" onmouseout="toolTip()">Atualizar HTML</a> <?php } ?>
+        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
     <!-- Importar célula de dados para o banco -->
@@ -168,11 +170,11 @@
         </div>
 
         <div id="checkboxes">
-            <input class="input_check" type="checkbox" name="coletavelsurvival" checked  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/coracao.png"  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+            <input class="input_check" type="checkbox" name="coletavelsurvival" checked  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/coracao.png"  onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
-            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
-            <input class="input_check" type="checkbox" name="fabricavel" checked onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="IMG/Interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+            <input class="input_check" type="checkbox" name="fabricavel" checked onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
 
             <div id="selecionar_sprite">
                 <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
@@ -205,36 +207,36 @@
         <img id="img_pocoes" class="aba_menu Pocoes" src="#">
         
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
-            <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
-            <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
+            <img id="img_configs_2" class="aba_menu opcoes_laterais" src="../IMG/Interface/mascara_configs.png">
+            <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_configs.png">
         </div>
         
         <div onclick="filtragem_automatica('não_coletável')" onmouseover="toolTip('Mostrar itens que não são coletáveis no sobrevivência')" onmouseout="toolTip()">
-            <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_nao_coletaveis.png">
-            <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
+            <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="../IMG/Interface/mascara_nao_coletaveis.png">
+            <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_nao_coletaveis.png">
         </div>
 
         <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
-            <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
-            <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
+            <img id="img_versoes_2" class="aba_menu" src="../IMG/Interface/mascara_atts.png">
+            <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_atts.png">
         </div>
         
         <div onclick="filtragem_automatica('genéricos')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
-            <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
-            <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
+            <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="../IMG/Interface/mascara_generic.png">
+            <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_generic.png">
         </div>
 
         <img id="img_especiais" class="aba_menu Especiais" src="#">
         <img id="img_pesquisa" class="aba_menu Pesquisa" src="#">
         
-        <img id="img_prancheta" class="aba_menu Prancheta" src="IMG/Interface/mascara_prancheta.png"> 
+        <img id="img_prancheta" class="aba_menu Prancheta" src="../IMG/Interface/mascara_prancheta.png"> 
         
         <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
         
         <span id="titulo_aba"></span>
 
         <div id="barra_rolagem">
-            <div id="barra_scroll" src="IMG/Interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
+            <div id="barra_scroll" src="../IMG/Interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
             <img id="barra_scroll_block" src="#">
         </div>
         
@@ -320,7 +322,7 @@
 
                 $cor_item = 0;
 
-                $verificar_item = "SELECT * from cor_item where id_item = $id_item";
+                $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
                 $executa_item = $conexao->query($verificar_item);
 
                 if($executa_item->num_rows > 0){
@@ -339,7 +341,7 @@
                 
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
                     echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='../IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
@@ -347,7 +349,7 @@
                     }else{
                         echo "<div class='slot_item oculto' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
-                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='../IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }
             } ?>
@@ -356,8 +358,8 @@
         </div>
     </div>
 
-    <script src="JS/jquery-3.4.1.js"></script>
-    <script src="JS/engine.js"></script>
+    <script src="../JS/jquery-3.4.1.js"></script>
+    <script src="../JS/engine.js"></script>
 
     <script type="text/javascript">
         categoria(0, 0);

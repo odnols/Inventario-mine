@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Minecraftia";
-    src: url('../Fonts/Minecraftia.ttf');
+    src: url('../Files/Fonts/Minecraftia.ttf');
 }
 body{
     user-select: none;
@@ -10,7 +10,7 @@ body{
     background-size: cover;
     font-family: "Minecraftia";
     image-rendering: pixelated;
-    background: url('../IMG/Temas/brand.png') no-repeat;
+    background: url('../IMG/Temas/1.19.png') no-repeat;
 }
 #filtro_colorido{
     top: 0px;
@@ -288,11 +288,11 @@ input, select{
 }
 #img_alimentos{
     top: 1642%;
-    left: 16%;
+    left: 101px;
 }
 #img_ferramentas{
     top: 1642%;
-    left: 30%;
+    left: 188.6px;
 }
 #img_combate{
     top: 1642%;
@@ -385,6 +385,13 @@ input, select{
 }
 #barra_durabilidade{
     top: 40%;
+}
+#btn_fabricacao{
+    width: 368px;
+    font-size: 20px;
+    padding-top: 5px;
+    height: 45px;
+    font-family: 'Minecraftia';
 }
 #titulo_aba{
     top: 370%;
@@ -649,6 +656,9 @@ a{
     position: absolute;
     background-image: url("../IMG/Interface/Claro/seta_esquerda.png");
 }
+#seta_esquerda_crafting:hover{
+    background-image: url("../IMG/Interface/Claro/seta_esquerda_hover.png");
+}
 #seta_direita_crafting{
     z-index: 3;
     left: 523px;
@@ -658,6 +668,23 @@ a{
     position: absolute;
     background-image: url("../IMG/Interface/Claro/seta_direita.png");
 }
+#seta_direta_crafting:hover{
+    background-image: url("../IMG/Interface/Claro/seta_direita_hover.png") !important;
+}
+#abas_craft_organiza{
+    width: 105px;
+    left: 148px;
+    top: 70px;
+    position: absolute;
+    z-index: 1 !important;
+}
+.aba_menu_craft{
+    padding-top: 3px;
+    position: absolute;
+    width: 105px;
+    height: 78px;
+    display: none;
+}
 #prancheta_itens_crafting{
     top: 93px;
     z-index: 2;
@@ -666,6 +693,24 @@ a{
     height: 300px;
     position: absolute;
     overflow-y: scroll;
+}
+#img_craft_ferramentas{
+    padding-top: 84px;
+}
+#img_craft_blocos{
+    padding-top: 165px;
+}
+#img_craft_diversos{
+    padding-top: 246px;
+}
+#img_craft_redstone{
+    padding-top: 327px;
+}
+#num_pagina_craft{
+    color: white;
+    font-size: 24px;
+    padding-top: 393px;
+    padding-left: 270px;
 }
 .slot_item_crafting{
     width: 75px;

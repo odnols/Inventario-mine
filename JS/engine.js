@@ -244,7 +244,7 @@ function categoria(alvo, local){
     
     if(versoes.includes(alvo)){
         $("#versao_referencia").fadeIn();
-        document.getElementById("num_referencia").innerHTML = alvo + " ( "+ alvos.length + " )";
+        document.getElementById("num_referencia").innerHTML = `${alvo} ( ${alvos.length} )`;
     }else{
         $("#versao_referencia").fadeOut();
     }
@@ -454,7 +454,7 @@ function verifica_posicao(caso){
 }
 
 function exibe_detalhes_item(id_item){
-    window.location = "item_detalhes.php?id="+ id_item;
+    window.location = `item_detalhes.php?id=${id_item}`;
 }
 
 function voltar_pag(){
@@ -486,40 +486,38 @@ function previewImage(local) {
 
 function apagarItem(id_item){
     if(confirm("Deseja realmente remover?"))
-        window.location = "PHP/item_remover.php?id="+ id_item;
+        window.location = `PHP/item_remover.php?id=${id_item}`;
 }
 
-function importar_dados(){
-    // $("#selecionar_celula_dados").toggle();
-}
-
-function troca_tema(versao_jogo){
+function troca_tema(versao_jogo, local){
 
     if(tema == null || tema == 1)
-        localStorage.setItem('tema', "0");
+        localStorage.setItem('tema_invent_mc', "0");
     
     if(tema == 0)
-        localStorage.setItem('tema', "1");
-    
-    sincroniza_tema(versao_jogo);
+        localStorage.setItem('tema_invent_mc', "1");
+
+    sincroniza_tema(versao_jogo, local);
 }
 
-function sincroniza_tema(versao_jogo){
+function sincroniza_tema(versao_jogo, local){
 
-    tema = localStorage.getItem("tema");
+    tema = localStorage.getItem("tema_invent_mc");
+    let alvo = "claro";
+    let caminho = "";
 
+    if(local) caminho = "../";
+    
     if(tema != null)
         tema = parseInt(tema);
     else
         tema = 1;
-
-    alvo = "claro";
-
+    
     if(tema == 0){
         alvo = "escuro";
         document.getElementById("icone_tema").innerHTML = "🌑";
         document.getElementById("bttn_troca_tema").style.backgroundColor = "rgb(39, 39, 45)";
-        document.getElementById("filtro_colorido").style.background = " linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(3, 26, 124, 0.67) 39%, rgba(0,212,255,0) 100%)";
+        document.getElementById("filtro_colorido").style.background = "linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(3, 26, 124, 0.67) 39%, rgba(0,212,255,0) 100%)";
     }
 
     if(alvo == "claro"){
@@ -528,11 +526,11 @@ function sincroniza_tema(versao_jogo){
         document.getElementById("filtro_colorido").style.background = "linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%)";
     }
 
-    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add"];
-    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png"];
+    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add", "#menu_criacao", "#seta_direita_crafting", "#seta_esquerda_crafting", ".slot_item_crafting"];
+    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png", "crafting.png", "seta_direita.png", "seta_esquerda.png", "slot_item_crafting.png"];
 
-    lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos"];
-    nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "menu.png", "aba_oculto.png"];
+    lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos", "img_craft_todos", "img_craft_ferramentas", "img_craft_blocos", "img_craft_diversos", "img_craft_redstone"];
+    nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "menu.png", "aba_oculto.png", "aba_craft_todos.png", "aba_craft_ferramentas.png", "aba_craft_blocos.png", "aba_craft_diversos.png", "aba_craft_redstone.png"];
 
     if(typeof versao_jogo != "undefined")
         if(versao_jogo <= 2){
@@ -540,18 +538,18 @@ function sincroniza_tema(versao_jogo){
             
             document.getElementById("titulo_aba").innerHTML = "Seleção de item";
 
+            document.getElementById("titulo_aba").style.top = "90%";
+            document.getElementById("listagem").style.width = "433px";
+            document.getElementById("listagem").style.height = "486px";
             document.getElementById("menu_completo").style.top = "0px";
             document.getElementById("menu_completo").style.left = "7%";
-            document.getElementById("lista_itens").style.width = "440px";
-            document.getElementById("listagem").style.top = "63px";
-            document.getElementById("listagem").style.left = "9px";
-            document.getElementById("listagem").style.height = "486px";
-            document.getElementById("listagem").style.width = "433px";
-            document.getElementById("lista_itens").style.height = "519px";
-            document.getElementById("titulo_aba").style.top = "90%";
+            document.getElementById("lista_itens").style.left = "12px";
+            document.getElementById("lista_itens").style.top = "-69px";
+            document.getElementById("lista_itens").style.width = "433px";
+            document.getElementById("lista_itens").style.height = "486px";
+            document.getElementById("barra_rolagem").style.top = "69px";
             document.getElementById("barra_rolagem").style.right = "111px";
             document.getElementById("barra_rolagem").style.height = "480px";
-            document.getElementById("barra_rolagem").style.top = "69px";
         }
     else{
         botoes_menu = document.getElementsByClassName("botoes_menu");
@@ -565,7 +563,7 @@ function sincroniza_tema(versao_jogo){
         imagem = document.getElementById(lista_imagens[i]);
         
         if(imagem != null)
-            imagem.src = "IMG/Interface/"+ alvo +"/"+ nome_arquivos[i];
+            imagem.src = `${caminho}IMG/Interface/${alvo}/${nome_arquivos[i]}`;
     }
 
     for(var i = 0; i < lista_templates.length; i++){
@@ -575,14 +573,14 @@ function sincroniza_tema(versao_jogo){
             
             objeto = document.getElementById(lista_templates[i]);
             if(objeto != null)
-                objeto.style.background = "url('IMG/Interface/"+ alvo +"/"+ nome_template[i] +"') no-repeat";
+                objeto.style.background = `url('${caminho}IMG/Interface/${alvo}/${nome_template[i]}') no-repeat`;
         }else{ // Elementos que estão referenciados como classes
 
             lista_templates[i] = lista_templates[i].replace(".", "");
             var alvos = document.getElementsByClassName(lista_templates[i]);
 
             for(var j = 0; j < alvos.length; j++){
-                alvos[j].style.background = "url('IMG/Interface/"+ alvo +"/"+ nome_template[i] +"') no-repeat";
+                alvos[j].style.background = `url('${caminho}IMG/Interface/${alvo}/${nome_template[i]}') no-repeat`;
             }
         }
     }
@@ -640,7 +638,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         let nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde", "efeito_cor_padrao"];
 
         if(cor_item > 0)
-            document.getElementById(id_nome_item).innerHTML += "<span class='"+ itens_especiais[cor_item] +"'>"+ nome +"</span>";
+            document.getElementById(id_nome_item).innerHTML += `<span class='${itens_especiais[cor_item]}'>${nome}</span>`;
         else
             document.getElementById(id_nome_item).innerHTML = nome;
         
@@ -658,9 +656,8 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
                 alvos_replace = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
 
                 if(pesquisa == 0){
-                    for(var i = 0; i< alvos_replace.length; i++){
-                        descricao = descricao.replace("[&1"+ alvos_replace[i], "");
-                    }
+                    for(var i = 0; i< alvos_replace.length; i++)
+                        descricao = descricao.replace(`[&1${alvos_replace[i]}`, "");
                 }else{
                     categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
 
@@ -668,7 +665,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
                     alvo_alteracao[0] = alvo_alteracao[0].replace("[&1", "");
 
                     var i = alvos_replace.indexOf(alvo_alteracao[0]);
-                    descricao = descricao.replace(alvo_alteracao[0], "[&1"+ categorias_exib[i]);
+                    descricao = descricao.replace(alvo_alteracao[0], `[&1${categorias_exib[i]}`);
                 }
 
                 descricao_colorida = descricao.split("[");
@@ -692,7 +689,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         }
 
         if(typeof nome_interno != "undefined")
-            document.getElementById(id_nome_interno).innerHTML = "minecraft:"+ nome_interno;
+            document.getElementById(id_nome_interno).innerHTML = `minecraft:${nome_interno}`;
         else
             document.getElementById(id_nome_interno).innerHTML = "";
 
@@ -716,121 +713,8 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
                 $("#minetip-tooltip").css({left:event.pageX + 30, top:event.pageY - 50} )
             });
         }
-    }else{
+    }else
         document.getElementById("minetip-tooltip").style.display = "None";
-    }
-}
-
-function carregamento_secundario(res_artigo, ia){
-
-    for(let h = ia; h < ia + 50; h++){
-        
-        if(typeof res_artigo[h] === "undefined" || res_artigo[h] === null) return;
-
-        let valor = res_artigo[h];
-
-        if(valor.tipo_item !== "Generico"){
-            qtd_itens++
-            
-            if(valor.coletavel)
-                qtd_itens_colet++
-
-            if(valor.renovavel)
-                qtd_itens_renov++;
-            
-            if(valor.empilhavel !== 0)
-                qtd_itens_empil++;
-            else
-                qtd_itens_n_empil++;
-
-            if(valor.coletavel && valor.empilhavel > 0){
-                qtd_itens_colet_empil++;
-
-                if(!valor.renovavel)
-                    qtd_itens_colet_empil_n_renov++;
-            }
-        }
-
-        let apelido = null;
-        let converte = null;
-        let descricao_pesq = null;
-        let oculto_invt = valor.oculto_invt;
-        let geracao = "new";
-        let versao_add = `1.${valor.versao_add}`;
-        let descricao = `[&1${valor.tipo_item}`;
-        let empilhavel = null;
-        let renovavel = "renovável";
-        let coletavel = "não_coletável";
-
-        descricao = `${descricao} ${valor.x}`;
-        descricao_pes = descricao.replace("[&r", "");
-
-        if(valor.programmer_art === 1 && graphics)
-            geracao = "classic";
-
-        if(valor.oculto_invt === 1)
-            oculto_invt = "Oculto";
-
-        if(!valor.renovavel)
-            renovavel = "não_renovável";
-        
-        if(valor.empilhavel !== 0)
-            empilhavel = "empilhável";
-
-        if(valor.coletavel !== 0)
-            coletavel = "coletável";
-
-        for(let i = 0; i < valor.nome_item.length; i++){
-            converte = `${converte} `;
-            
-            for(let x = 0; x <= i; x++){
-                converte = `${converte}${valor.nome_item[x]}`;
-            }
-        }
-
-        for(i = 0; i < descricao_pes.length; i++){
-            descricao_pesq = `${descricao_pesq} `;
-            
-            for(x = 0; x <= i; x++){
-                descricao_pesq = `${descricao_pesq}${descricao_pes[x]}`;
-            }
-        }
-
-        let cor_item = 0;
-        
-        auto_completa = converte.toLocaleLowerCase();
-        descricao_pesq = descricao_pesq.toLocaleLowerCase();
-
-        let url_sprite = `https://raw.githubusercontent.com/odnols/inventario-mine/main/IMG/Itens/${geracao}/${valor.tipo_item}/${valor.nome_icon}`;
-
-        for(let i = 0; i < 20; i++){ // Elimina todos os números de versão da descrição
-            descricao_pesq = descricao_pesq.replace(`1.${i}`, "");
-        }
-
-        if(valor.tipo_item !== "Generico" && valor.oculto_invt !== "Oculto"){
-            document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item} 1.${valor.versao_add} ${renovavel} ${auto_completa} ${descricao_pesq} ${empilhavel} ${coletavel} ${descricao_pesq}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
-        }else{
-            if(valor.oculto_invt !== "Oculto"){
-                document.getElementById("grade_itens").innerHTML += `<div class='slot_item ${valor.tipo_item}' onmouseover='toolTip(\"${valor.nome_item}\", \"${descricao}\", \"${valor.nome_interno}\", ${cor_item})' onmouseout='toolTip()'><img class='icon_item' src='${url_sprite}'></div>`;
-            }
-        }
-    }
-
-    setTimeout(() => {
-
-        document.getElementById("qtd_itens_inventario").innerHTML = qtd_itens;
-        document.getElementById("qtd_itens_inventario_colet").innerHTML = qtd_itens_colet;
-        document.getElementById("qtd_itens_inventario_renov").innerHTML = qtd_itens_renov;
-        document.getElementById("qtd_itens_inventario_empil").innerHTML = qtd_itens_empil;
-        document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = qtd_itens_colet_empil;
-        document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = qtd_itens_colet_empil_n_renov;
-        document.getElementById("qtd_itens_inventario_n_empil").innerHTML = qtd_itens_n_empil;
-
-        sincroniza_tema();
-        categoria(0, 0);
-
-        carregamento_secundario(res_artigo, ia + 50);
-    }, 5000);
 }
 
 function sincroniza_itens(craft, produto, qtd){
@@ -840,19 +724,22 @@ function sincroniza_itens(craft, produto, qtd){
     .then(async res_artigo => {
         
         dados_itens = res_artigo;
-        mostra_crafting(craft, produto, qtd);
+        mostra_crafting(craft, produto, qtd, 1);
     });
 }
 
-function mostra_crafting(craft, produto, qtd){
+function mostra_crafting(craft, produto, qtd, local){
+
+    let caminho = '';
+
+    if(local)
+        caminho = '../';
 
     const grid = document.getElementsByClassName('grid_craft');
     let sprite_produto = "";
 
-    if(dados_itens.length < 1){
-        sincroniza_itens(craft, produto, qtd);
-        return;
-    }
+    if(dados_itens.length < 1)
+        return sincroniza_itens(craft, produto, qtd);
 
     for(let i = 0; i < grid.length; i++){
 
@@ -861,10 +748,10 @@ function mostra_crafting(craft, produto, qtd){
         if(craft[i] !== null || typeof craft[i] !== "undefined"){
             Object.keys(dados_itens).forEach(function(k){
                 if(k == craft[i])
-                    sprite_item = `IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+                    sprite_item = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
 
                 if(k == produto)
-                    sprite_produto = `IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+                    sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
             });
             
             grid[i].style.backgroundImage = `url('${sprite_item}')`;
@@ -874,17 +761,21 @@ function mostra_crafting(craft, produto, qtd){
 
     Object.keys(dados_itens).forEach(function(k){
         if(dados_itens[k]["id_item"] == produto){
-            sprite_produto = `IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+            sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
             nome_produto = dados_itens[k]["nome"];
         }
     });
 
     document.getElementById("sprite_produto").innerHTML = "";
-    document.getElementById("sprite_produto").innerHTML += "<img src='"+ sprite_produto +"' style='width: 48px'>";
+    document.getElementById("sprite_produto").innerHTML += `<img src='${sprite_produto}' style='width: 48px'>`;
 
     document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null;
 }
 
 function expande_sprite(caminho){
-    window.location.href = "./sprite.php?caminho="+ caminho;
+    window.location.href = `./sprite.php?caminho=${caminho}`;
+}
+
+function inicia_craft(id_item){
+    
 }

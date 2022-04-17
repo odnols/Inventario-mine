@@ -1,0 +1,44 @@
+#menu_criacao{
+    top: 50%;
+    left: 50%;
+    width: 1071px;
+    height: 498px;
+    position: absolute;
+    margin-top: -249px;
+    margin-left: -535px;
+    background-image: url("../IMG/Interface/Claro/crafting.png");
+}
+#seta_esquerda_crafting{
+    z-index: 3;
+    left: 361px;
+    width: 33px;
+    height: 51px;
+    bottom: 99px;
+    position: absolute;
+    background-image: url("../Files/IMG/Interface/Claro/seta_esquerda.png");
+}
+#seta_esquerda_crafting:hover{
+    background-image: url("../Files/IMG/Interface/Claro/seta_esquerda_hover.png");
+}
+#seta_direita_crafting{
+    z-index: 3;
+    left: 523px;
+    width: 33px;
+    height: 51px;
+    bottom: 99px;
+    position: absolute;
+    background-image: url("../Files/IMG/Interface/Claro/seta_direita.png");
+}
+#seta_direta_crafting:hover{
+    background-image: url("../Files/IMG/Interface/Claro/seta_direita_hover.png") !important;
+}
+.slot_item_crafting{
+    width: 75px;
+    float: left;
+    height: 75px;
+    background-image: url("../Files/IMG/Interface/Claro/slot_item_crafting.png");
+}
+.gric_0, .gric_8, .gric_5{
+    background-repeat: no-repeat;
+    background-image: url("../IMG/Itens/new/Construcao/acacia_log.png");
+}

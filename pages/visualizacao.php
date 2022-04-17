@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/grass_block.png">
+    <link rel="shortcut icon" href="../IMG/Itens/new/Construcao/grass_block.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/anima.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/anima.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
 
-    <script src="JS/jquery.min.js"></script>
-    <script src="JS/jquery-1.11.3.min.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/jquery-1.11.3.min.js"></script>
 
-    <?php include_once "PHP/conexao_obsoleta.php";
+    <?php include_once "../PHP/conexao_obsoleta.php";
     
     if(isset($_GET["versao_jogo"]))
         $versao_jogo = $_GET["versao_jogo"];
@@ -21,7 +21,7 @@
     if(!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 19)
         $versao_jogo = 5; ?>
 </head>
-<body onload="sincroniza_tema(<?php echo $versao_jogo ?>)">
+<body onload="sincroniza_tema(<?php echo $versao_jogo ?>, 1)">
 
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
@@ -59,7 +59,7 @@
         <a class="bttn_frrm" id="bttn_programmers_atv" href="index.php" onmouseover="toolTip('Volte para os sprites atuais do Minecraft')" onmouseout="toolTip()">Gráficos padrões</a> <?php } ?>
 
         <a class="bttn_frrm" href="index.php" onmouseover="toolTip('O gerenciador de itens')" onmouseout="toolTip()">Gerenciador</a>
-        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema()" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
+        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(<?php echo $versao_jogo ?>, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
     <div id="infos_versao">
@@ -71,7 +71,7 @@
 
         <div class="botoes_menu">
             <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
-                <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
+                <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="../IMG/Interface/mascara_oculto.png">
                 <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
             </div>
         </div>
@@ -80,54 +80,54 @@
             <center><h2 class="cor_textos">Estatísticas</h2></center>
         
             <?php
-            $verificar = "SELECT * from item where versao_adicionada = $versao_jogo";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada = $versao_jogo";
             $executa = $conexao->query($verificar);
             echo "<p class='estat cor_textos'>Itens adicionados na versão 1.$versao_jogo ( ";
-            echo $executa->num_rows ." ) </p>";
+            echo $executa->num_rows ." )</p>";
             
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Itens no Inventário: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and coletavelsurvival = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND coletavelsurvival = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and renovavel = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND renovavel = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Renováveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and empilhavel != 0 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND empilhavel != 0 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and empilhavel != 0 and coletavelsurvival = 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND empilhavel != 0 AND coletavelsurvival = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and coletavelsurvival = 1 and empilhavel != 0 and renovavel != 1 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND coletavelsurvival = 1 AND empilhavel != 0 AND renovavel != 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
             echo $executa->num_rows ."</p>";
 
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo and empilhavel like 0 and abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND empilhavel LIKE 0 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Não empilháveis: ";
             echo $executa->num_rows ."</p>";
             
-            $verificar = "SELECT * from item where versao_adicionada <= $versao_jogo order by id_item desc";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo ORDER BY id_item DESC";
             $executa = $conexao->query($verificar); ?>
         </div>
     </div>
@@ -154,30 +154,30 @@
             <img id="img_pocoes" class="aba_menu Pocoes" src="#">
 
             <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
-                <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
-                <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
+                <img id="img_configs_2" class="aba_menu opcoes_laterais" src="../IMG/Interface/mascara_configs.png">
+                <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_configs.png">
             </div>
             
             <div onclick="filtragem_automatica('não_coletável')" onmouseover="toolTip('Mostrar itens que não são coletáveis no sobrevivência')" onmouseout="toolTip()">
-                <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_nao_coletaveis.png">
-                <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
+                <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="../IMG/Interface/mascara_nao_coletaveis.png">
+                <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_nao_coletaveis.png">
             </div>
 
             <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
-                <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
-                <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
+                <img id="img_versoes_2" class="aba_menu" src="../IMG/Interface/mascara_atts.png">
+                <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_atts.png">
             </div>
             
             <div onclick="filtragem_automatica('genéricos')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
-                <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
-                <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
+                <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="../IMG/Interface/mascara_generic.png">
+                <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="../IMG/Interface/aba_generic.png">
             </div>
             
             <img id="img_especiais" class="aba_menu Especiais" src="#">
 
             <img id="img_pesquisa" class="aba_menu Pesquisa" src="#">
         
-            <img id="img_prancheta" class="aba_menu Prancheta" src="IMG/Interface/mascara_prancheta.png"> 
+            <img id="img_prancheta" class="aba_menu Prancheta" src="../IMG/Interface/mascara_prancheta.png"> 
         
             <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
         </div>
@@ -185,7 +185,7 @@
         <span id="titulo_aba"></span>
 
         <div id="barra_rolagem">
-            <div id="barra_scroll" src="IMG/Interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
+            <div id="barra_scroll" src="../IMG/Interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
             <img id="barra_scroll_block" src="#">
         </div>
         
@@ -271,7 +271,7 @@
 
                 $cor_item = 0;
 
-                $verificar_item = "SELECT * from cor_item where id_item = $id_item";
+                $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
                 $executa_item = $conexao->query($verificar_item);
 
                 if($executa_item->num_rows > 0){
@@ -294,16 +294,16 @@
                 }
                 
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
-                    echo "<div onclick='expande_sprite(`IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
+                    echo "<div onclick='expande_sprite(`../IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item' src='../IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
-                        echo "<div onclick='expande_sprite(`IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div onclick='expande_sprite(`../IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }else{
-                        echo "<div onclick='expande_sprite(`IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div onclick='expande_sprite(`../IMG/Itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
-                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='../IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
                     echo "</div>";
                 }
             } ?>
@@ -312,8 +312,8 @@
         </div>
     </div>
 
-    <script src="JS/jquery-3.4.1.js"></script>
-    <script src="JS/engine.js"></script>
+    <script src="../JS/jquery-3.4.1.js"></script>
+    <script src="../JS/engine.js"></script>
 
     <script type="text/javascript">
         categoria(10, 0);
