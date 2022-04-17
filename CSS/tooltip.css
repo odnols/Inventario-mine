@@ -1,50 +1,50 @@
 /* Dica de ferramenta de estilo para minecraft */
 #minetip-tooltip {
 	color: #FFF;
-	text-shadow: 3px 3px 0#3F3F3F;
+	text-shadow: 3px 3px 0 #3F3F3F;
 }
 /* Dica de ferramenta de estilo para minecraft */
 #minetip-tooltip {
-	display: none;
-	position: fixed;
 	top: 0;
 	left: 0;
-	background-color:#100010;
-	background-color:rgba(16, 0, 16, 0.94);
 	padding: 15px;
+	z-index: 9999;
+	display: none;
+	position: fixed;
+	font-size: 20px;
+	margin: 3px 1px;
+	line-height: 3px;
+	padding-top: 27px;
+	word-spacing: 3px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 27px;
-	font-family: Minecraftia, Minecraft, sans-serif;
-	font-size: 20px;
-	word-spacing: 3px;
 	white-space: nowrap;
-	line-height: 3px;
-	margin: 3px 1px;
 	pointer-events: none;
-	z-index: 9999;
+	background-color:#100010;
+	background-color:rgba(16, 0, 16, 0.94);
+	font-family: Minecraftia, Minecraft, sans-serif;
 }
 #minetip-tooltip::before {
-	content: "";
-	position: absolute;
 	top: 3px;
+	left: -3px;
 	right: -3px;
 	bottom: 3px;
-	left: -3px;
-	border: 3px solid#100010;
+	content: "";
+	position: absolute;
 	border-style: none solid;
+	border: 3px solid #100010;
 	border-color:rgba(16, 0, 16, 0.94);
 }
 #minetip-tooltip::after {
-	content: "";
-	position: absolute;
+	left: 0;
 	top: 3px;
 	right: 0;
+	content: "";
 	bottom: 3px;
-	left: 0;
-	border: 3px solid#2D0A63;
-	border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31),rgba(40, 0, 127, 0.31)) 1;
+	position: absolute;
+	border: 3px solid #2D0A63;
 	border-image: linear-gradient(rgba(80, 0, 255, 0.31),rgba(40, 0, 127, 0.31)) 1;
+	border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31),rgba(40, 0, 127, 0.31)) 1;
 }
 #minetip-tooltip > .description,
 #minetip-tooltip > .minetip-description {
@@ -52,71 +52,71 @@
 	margin-top: 4px;
 }
 #descricao_item_minetip{
-	color: #a8a8a8;
 	float: left;
-	text-shadow: 3px 3px 0#2a2a2a;
+	color: #a8a8a8;
+	text-shadow: 3px 3px 0 #2a2a2a;
 }
 #nome_interno_minetip{
-	color: #545454;
 	float: left;
+	color: #545454;
 	padding-top: 25px;
-	text-shadow: 3px 3px 0#151515;
+	text-shadow: 3px 3px 0 #151515;
 }
 .item_encantado{
 	color: #54fcfc;
-	text-shadow: 3px 3px 0#153e3e;
+	text-shadow: 3px 3px 0 #153e3e;
 }
 .item_especial{
 	color: #fcfc54;
-	text-shadow: 3px 3px 0#3e3e15;
+	text-shadow: 3px 3px 0 #3e3e15;
 }
 .item_lendario{
 	color: #fc54fc;
-	text-shadow: 3px 3px 0#3e153e;
+	text-shadow: 3px 3px 0 #3e153e;
 }
 #descricao_item_minetp{
-	color: #a8a8a8;
 	float: left;
-	text-shadow: 3px 3px 0#2a2a2a;
+	color: #a8a8a8;
+	text-shadow: 3px 3px 0 #2a2a2a;
 }
 #nome_interno_minetp{
+	float: left;
 	color: #545454;
-	float:  left;
 	padding-top: 25px;
-	text-shadow: 3px 3px 0#151515;
+	text-shadow: 3px 3px 0 #151515;
 }
 .efeito_cor_azul{
 	float: left;
-	padding-top: 30px;
 	color: #5454fc;
-	text-shadow: 3px 3px 0#15153e;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0 #15153e;
 }
 .efeito_cor_vermelha{
 	float: left;
-	padding-top: 30px;
 	color: #fc5454;
-	text-shadow: 3px 3px 0#3e1515;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0 #3e1515;
 }	
 .efeito_cor_roxa{
 	float: left;
-	padding-top: 30px;
 	color: #a800a8;
-	text-shadow: 3px 3px 0#2a002a;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0 #2a002a;
 }
 .efeito_cor_verde{ 
 	float: left;
-	padding-top: 30px;
 	color: #00a800;
-	text-shadow: 3px 3px 0#002a00;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0 #002a00;
 }
 .efeito_cor_padrao{
 	float: left;
-	padding-top: 30px;
 	color: #a8a8a8;
-	text-shadow: 3px 3px 0#2a2a2a;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0 #2a2a2a;
 }
 .espaco{
 	float: left;
-	padding-top: 5px;
 	width: 100%;
+	padding-top: 5px;
 }

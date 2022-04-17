@@ -3,151 +3,155 @@
     src: url('../Fonts/Minecraftia.ttf');
 }
 body{
-    background: url('../IMG/Temas/brand.png') no-repeat;
-    background-size: cover;
-    font-family: "Minecraftia";
+    user-select: none;
     overflow-x: hidden;
     overflow-y: hidden;
-    user-select: none;
     image-rendering: auto;
+    background-size: cover;
+    font-family: "Minecraftia";
     image-rendering: pixelated;
+    background: url('../IMG/Temas/brand.png') no-repeat;
 }
 #filtro_colorido{
-    position: fixed;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
-    left: 0px;
-    top: 0px;
+    position: fixed;
     z-index: 0 !important;
+    transition: background-color .2s;
     background: rgba(9,121,99,0.6699054621848739);
     background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(4, 78, 64, 0.67) 39%, rgba(0,212,255,0) 100%);
-    transition: background-color .2s;
 }
 h3.ordena{
-    color: white;
-    text-shadow: 0px 0px 2px black;
-    left: 25%;
     top: -15%;
-    position: absolute;
+    left: 25%;
+    color: white;
     display: none;
+    position: absolute;
+    text-shadow: 0px 0px 2px black;
 }
 #versao_referencia{
     display: none;
 }
 #Inventario{
-    position: fixed;
+    top: 10%;
+    left: 10%;
     z-index: 3;
     width: 80%;
     height: 80%;
-    left: 10%;
-    top: 10%;
-    background-color: rgba(0, 0, 0, .5);
     display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
 }
 img#menu{
-    position: absolute;
     z-index: 2;
+    position: absolute;
 }
 #menu_completo{
+    left: 3%;
     top: 15px;
     width: 600px;
     height: auto;
-    padding: 5px;
-    position: absolute;
-    left: 3%;
     color: white;
-    font-size: 24px;
     padding: 15px;
+    font-size: 24px;
+    position: absolute;
 }
 #lista_itens{
-    overflow: hidden;
     z-index: 2;
-    top: 10%;
-    width: 470px;
-    height: 387px;
-    left: 52%;
-    position: absolute;
-    margin-left: -300px;
+    width: 486px;
     color: white;
+    height: 270px;
     font-size: 24px;
-    padding: 15px;
+    overflow: hidden;
+    margin-top: 135px;
+    position: absolute;
+    margin-left: 24px;
+}
+#listagem{
+    width: 503px;
+    height: 270px;
+    overflow-y: auto;
+    position: absolute;
+    padding: 0px !important;
 }
 #estatisticas_inventario{
+    right: 4%;
     top: 17.5%;
     width: 585px;
     padding: 5px;
-    position: absolute;
-    right: 4%;
     height: 408px;
+    position: absolute;
 }
 img#prancheta{
-    position: absolute;
-    z-index: 2;
     left: 0px;
+    z-index: 2;
+    position: absolute;
 }
 #text_estatsc{
-    z-index: 2 !important;
+    width: 100%;
     position: absolute;
     text-align: center;
-    width: 100%;
+    z-index: 2 !important;
 }
 .estat{
-    position: absolute;
     padding-left: 5%;
+    position: absolute;
 }
 #prancheta_add{
-    display: none;
-    top: 18.2%;
+    right: 4%;
     z-index: 9;
+    top: 18.2%;
     width: 585px;
     padding: 5px;
-    position: absolute;
-    right: 4%;
+    display: none;
     height: 408px;
+    position: absolute;
 }
 #inputs_principais{
-    padding-top: 40px;
-    padding-left: 3%;
     height: auto;
     width: 368px;
+    padding-left: 3%;
+    padding-top: 40px;
 }
 .input_prancheta{
-    border: 0px solid;
-    color: white;
-    text-shadow: 3px 3px 0px rgb(62, 62, 62);
-    font-family: "Minecraftia";
-    box-shadow: 0 0 0 0;
     outline: 0;
-    padding-top: 10px;
-    max-height: 34px;
+    color: white;
     overflow: hidden;
+    max-height: 34px;
+    padding-top: 10px;
+    border: 0px solid;
+    box-shadow: 0 0 0 0;
+    font-family: "Minecraftia";
+    text-shadow: 3px 3px 0px rgb(62, 62, 62);
 }
 .input_check{
-    border: 1px solid black;
     width: 42px;
     height: 42px;
+    border: 1px solid black;
 }
 select{
     max-width: 368px;
 }
 #inserir_item{
-    width: 90%;
     right: 6%;
     bottom: 6%;
-    position: absolute;
+    width: 90%;
     font-size: 30px;
-    transition: background-color .2s;
+    position: absolute;
     border: solid 0px white;
+    transition: background-color .2s;
 }
 #inserir_item:hover{
     background-color: greenyellow;
 }
 #checkboxes{
-    position: absolute;
+    top: 11%;
+    right: 5%;
     width: 125px;
     height: 125px;
-    right: 5%;
-    top: 11%;
+    position: absolute;
 }
 .icon_check{
     width: 38px;
@@ -157,40 +161,33 @@ select{
 }
 #input_img{
     width: 85%;
-    border: 1px solid grey;
     padding: 0px;
     height: 34px;
     border-radius: 4px;
+    border: 1px solid grey;
 }
 #preview_sprite{
+    left: 25%;
+    top: 200px;
+    width: 48px;
+    height: 48px;
     margin-top: 15px;
     margin-left: 30px;
     box-shadow: inset 0px 0px 10px black;
-    width: 48px;
-    height: 48px;
-    left: 25%;
-    top: 200px;
-}
-#listagem{
-    width: 503px;
-    left: 11px;
-    height: 270px;
-    position: absolute;
-    overflow-y: auto;
-    top: 147px;
 }
 .slot_item, .slot_item_add{
     width: 54px;
-    height: 54px;
     float: left;
+    height: 54px;
 }
 .slot_item:hover, .slot_item_add:hover{
     background: url("../IMG/Interface/Claro/slot_hover.png") !important;
 }
 .icon_item{
+    display: block;
+    padding: 3px;
     width: 48px;
     height: 48px;
-    padding: 3px;
 }
 input, select{
     width: 480px;
@@ -202,10 +199,10 @@ input, select{
     display: none;
 }
 #item_0, #item_1, #item_2, #item_3, #item_4, #item_5, #item_6, #item_7, #item_8, #item_9, #item_10, #item_11{
+    z-index: 3;
     width: 80px;
     height: 80px;
     position: absolute;
-    z-index: 3;
 }
 #item_0{
     top: 80%;
@@ -232,33 +229,33 @@ input, select{
     left: 82%;
 }
 #item_4{
-    top: 1650%;
     left: 3%;
+    top: 1650%;
 }
 #item_5{
     top: 1650%;
     left: 16.5%;
 }
 #item_6{
-    top: 1650%;
     left: 30%;
+    top: 1650%;
 }
 #item_7{
-    top: 1650%;
     left: 44%;
+    top: 1650%;
 }
 #item_8{
-    top: 1650%;
     left: 58%;
+    top: 1650%;
 }
 #item_11{
-    top: 1650%;
     left: 82%;
+    top: 1650%;
 }
 .aba_menu{
+    top: 15px;
     z-index: 2;
     position: absolute;
-    top: 15px;
 }
 .opcoes_laterais{
     z-index: 0 !important;
@@ -266,8 +263,8 @@ input, select{
 }
 .opcoes_baixo{
     left: 0%;
-    position: absolute;
     top: 96%;
+    position: absolute;
     z-index: 0 !important;
     animation: puxa_campos2 .5s;
 }
@@ -311,64 +308,64 @@ input, select{
 }
 #img_configs, #img_configs_2{
     z-index: 0;
-    position: absolute;
     top: 100px;
     right: -5.9%;
+    position: absolute;
 }
 #img_coletaveis, #img_coletaveis_2{
     z-index: 0;
-    position: absolute;
     top: 190px;
     right: -5.9%;
+    position: absolute;
 }
 #img_versoes, #img_versoes_2{
-    display: none;
     z-index: 0;
-    position: absolute;
     top: 280px;
     right: -5.9%;
+    display: none;
+    position: absolute;
 }
 #img_genericos, #img_genericos_2{
     z-index: 0;
-    position: absolute;
     top: 370px;
     right: -5.9%;
+    position: absolute;
 }
 #img_prancheta{
     top: 1680%;
     left: 82.4%;
 }
 #img_oculto{
-    z-index: 1;
-    top: 100%;
     left: 0%;
+    top: 100%;
+    z-index: 1;
 }
 #img_ocultos_2{
     left: 3px;
 }
 #barra_pesquisa_input{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    padding-top: 5px;
-    padding-left: 10px;
-    font-family: "Minecraftia";
-    width: 248px;
     top: 110px;
-    right: 16.6%;
     z-index: 4;
-    position: absolute;
+    outline: 0;
+    width: 248px;
+    right: 16.6%;
     color: white;
-    text-shadow: 3px 3px 0px rgb(62, 62, 62);
+    padding-top: 5px;
     border: 0px solid;
+    position: absolute;
+    padding-left: 10px;
+    box-shadow: 0 0 0 0;
+    font-family: "Minecraftia";
+    text-shadow: 3px 3px 0px rgb(62, 62, 62);
 }
 #barra_pesquisa{
-    right: 16.6%;
     top: 110px;
+    right: 16.6%;
 }
 .input_prancheta{
-    padding-left: 10px;
-    width: 356px;
     left: 4%;
+    width: 356px;
+    padding-left: 10px;
 }
 #barra_nome{
     top: 12%;
@@ -390,58 +387,58 @@ input, select{
     top: 40%;
 }
 #titulo_aba{
-    z-index: 3;
-    position: absolute;
-    left: 6.4%;
     top: 370%;
+    z-index: 3;
+    left: 6.4%;
+    position: absolute;
 }
 #barra_rolagem{
-    position: absolute;
+    z-index: 9;
+    top: 153px;
+    right: 54px;
     width: 36px;
     height: 330px;
-    right: 54px;
-    top: 153px;
-    z-index: 9;
+    position: absolute;
 }
 #barra_scroll{
-    position: absolute;
+    z-index: 10;
     width: 36px;
     height: 45px;
     cursor: move;
-    z-index: 10;
+    position: absolute;
 }
 #barra_scroll_block{
     display: none;
 }
 #img_detalhes{
-    position: absolute;
-    right: 50%;
-    margin-right: -24px;
     top: 30%;
-    transform: scale(3);
-    filter: drop-shadow(0px 0px 3px black);
+    z-index: 1;
+    right: 50%;
     width: 48px;
     height: 48px;
-    z-index: 1;
+    position: absolute;
+    margin-right: -24px;
+    transform: scale(3);
+    filter: drop-shadow(0px 0px 3px black);
 }
 #img_detalhes_classic{
-    position: absolute;
-    right: 35%;
     top: 30%;
-    transform: scale(3);
-    filter: drop-shadow(0px 0px 3px black);
+    right: 35%;
+    z-index: 1;
     width: 48px;
     height: 48px;
+    position: absolute;
+    transform: scale(3);
     image-rendering: auto;
     image-rendering: pixelated;
-    z-index: 1;
+    filter: drop-shadow(0px 0px 3px black);
 }
 #btn_voltar, #btn_apagar{
-    font-size: 30px;
-    width: 300px;
     z-index: 2;
-    transition: background-color .2s;
+    width: 300px;
+    font-size: 30px;
     border: solid 0px white;
+    transition: background-color .2s;
 }
 #btn_voltar:hover{
     background-color: gray;
@@ -450,27 +447,27 @@ input, select{
     background-color: rgb(241, 101, 101);
 }
 #btn_voltar{
-    position: absolute;
     top: 2%;
     right: 5%;
+    position: absolute;
 }
 #btn_apagar{
-    position: absolute;
     top: 2%;
     left: 6.5%;
+    position: absolute;
 }
 #lista_versoes{
-    background: url("../IMG/Interface/Livro.png") no-repeat;
-    z-index: 10;
     top: 7%;
-    font-size: 18px;
-    padding-left: 4%;
+    left: 70%;
+    z-index: 10;
     width: 438px;
     height: 540px;
+    font-size: 18px;
+    padding-left: 4%;
     padding-top: 100px;
     position: absolute;
-    left: 70%;
     margin-left: -219px;
+    background: url("../IMG/Interface/Livro.png") no-repeat;
 }
 a{
     text-decoration: none !important;
@@ -480,7 +477,6 @@ a{
     width: 0px;
 }
 #menu_user{
-    position: absolute;
     right: 2%;
     bottom: 5%;
     z-index: 1;
@@ -488,102 +484,101 @@ a{
     animation: puxa_botoes_2 2s;    
 }
 #botoes_ferramentas{
-    position: absolute;
-    right: 2%;
     top: 5%;
+    right: 2%;
     z-index: 1;
     position: absolute;
     animation: puxa_botoes 2s;
 }
 .bttn_frrm{ 
-    color: black !important;
-    background-color: white;
+    height: 34px;
     width: 85%; 
     padding: 10px;
-    height: 34px;
-    transition: background-color .2s;
     margin-left: 4px;
     margin-right: 4px;
+    background-color: white;
+    color: black !important;
+    transition: background-color .2s;
     box-shadow: 4px 0px 0px 0px black, 0px 4px 0px 0px black, -4px 0px 0px 0px #c6c6c6, 4px 4px 0px 0px black, 0px -4px 0px 0px white, -4px 4px 0px 0px #8b8b8b, -4px -4px 0px 0px white, 4px -4px 0px 0px #8b8b8b, 5px 5px 0px -30px rgba(0,0,0,0);
 }
 .bttn_frrm:hover{
     background-color: rgb(224, 193, 135);
 }
 #bttn_programmers_atv{
-    background-color: rgb(224, 193, 135);
     transition: background-color .2s;
+    background-color: rgb(224, 193, 135);
 }
 #bttn_programmers_atv:hover{
     background-color: rgb(180, 147, 85);
 }
 #button_importar_dados{
-    background-color: rgb(154, 231, 212);
     transition: background-color .2s;
+    background-color: rgb(154, 231, 212);
 }
 #button_importar_dados:hover{
     background-color: rgb(100, 197, 173);
 }
 #button_apagar_dados, #btn_apagar{
-    background-color: rgb(253, 179, 179);
     transition: background-color .2s;
+    background-color: rgb(253, 179, 179);
 }
 #selecionar_celula_dados{
-    display: none;
+    top: 0px;
+    left: 0px;
     z-index: 11;
     width: 100%;
     height: 100%;
-    padding-top: 10%;
-    left: 0px;
-    top: 0px;
     color: white;
-    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    padding-top: 10%;
     position: absolute;
     text-align: center;
+    background-color: rgba(0, 0, 0, .7);
 }
 #bttns_navegacao{
-    position: absolute;
-    z-index: 100;
     top: 1%;
     left: 50%;
-    margin-left: -45px;
     width: 104px;
+    z-index: 100;
+    margin-left: -45px;
+    position: absolute;
 }
 .navegacao{
-    font-size: 30px;
-    height: 50px;
     width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: solid 0px white;
     background-color: wheat;
     transition: background-color .2s;
-    border: solid 0px white;
 }
 .navegacao:hover{
     background-color: lightskyblue;
 }
 #infos_versao{
-    position: absolute;
-    right: 15%;
-    text-align: center;
     top: 5%;
+    right: 4%;
+    right: 15%;
     width: 585px;
     padding: 5px;
-    right: 4%;
-    font-size: 40px;
     color: white;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
     text-shadow: 3px 3px 0px rgb(62, 62, 62);
 }
 .botoes_menu{
     display: none;
 }
 #prancheta_att{
-    position: absolute;
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 #selecionador{
-    padding-top: 5%;
-    padding-left: 3%;
     width: 378px;
     height: 350px;
+    padding-top: 5%;
+    padding-left: 3%;
 }
 .pag_1{
     z-index: 1;
@@ -594,40 +589,40 @@ a{
     display: none;
 }
 .pag_2{
-    display: none;
     z-index: 1;
     width: 378px;
+    display: none;
     height: 300px;
 }
 .troca_pag_button{
     width: 378px;
+    padding: 2px;
     font-size: 30px;
-    border: solid 1px gray;
     border-radius: 2px;
     position: absolute;
-    padding: 2px;
     padding-left: 15px;
     padding-right: 15px;
+    border: solid 1px gray;
     transition: background-color .2s;
 }
 .troca_pag_button:hover{
     background-color: gray;
 }
 #menu_criacao{
+    top: 50%;
+    left: 50%;
     width: 1071px;
     height: 498px;
     position: absolute;
-    left: 50%;
-    margin-left: -535px;
-    top: 50%;
     margin-top: -249px;
+    margin-left: -535px;
     background-image: url("../IMG/Interface/Claro/crafting.png");
 }
 .item_crafting{
-    width: 90px;
-    height: 75px;
     z-index: 3;
+    width: 90px;
     left: 155px;
+    height: 75px;
     position: absolute;
 }
 .itc_1{
@@ -646,84 +641,84 @@ a{
     top: 398px;
 }
 #seta_esquerda_crafting{
-    background-image: url("../IMG/Interface/Claro/seta_esquerda.png");
+    z-index: 3;
+    left: 361px;
     width: 33px;
     height: 51px;
-    position: absolute;
-    left: 361px;
     bottom: 99px;
-    z-index: 3;
+    position: absolute;
+    background-image: url("../IMG/Interface/Claro/seta_esquerda.png");
 }
 #seta_direita_crafting{
-    background-image: url("../IMG/Interface/Claro/seta_direita.png");
+    z-index: 3;
+    left: 523px;
     width: 33px;
     height: 51px;
-    position: absolute;
-    left: 523px;
     bottom: 99px;
-    z-index: 3;
+    position: absolute;
+    background-image: url("../IMG/Interface/Claro/seta_direita.png");
 }
 #prancheta_itens_crafting{
+    top: 93px;
+    z-index: 2;
+    left: 129px;
     width: 375px;
     height: 300px;
-    z-index: 2;
     position: absolute;
-    left: 129px;
-    top: 93px;
     overflow-y: scroll;
 }
 .slot_item_crafting{
-    background-image: url("../IMG/Interface/Claro/slot_item_crafting.png");
     width: 75px;
-    height: 75px;
     float: left;
+    height: 75px;
+    background-image: url("../IMG/Interface/Claro/slot_item_crafting.png");
 }
 .sprite_slot_crafting{
-    padding-left: 12px;
-    padding-top: 12px;
     width: 48px;
     height: 48px;
+    padding-left: 12px;
+    padding-top: 12px;
 }
 #grid_crafting{
     top: 48px;
+    z-index: 2;
+    right: 279px;
     width: 162px;
     height: 162px;
-    z-index: 2;
     position: absolute;
-    right: 279px;
 }
 #produto_final{
     top: 90px;
-    width: 78px;
-    height: 78px;
     z-index: 2;
-    position: absolute;
+    width: 78px;
     right: 93px;
+    height: 78px;
+    position: absolute;
 }
 #sprite_produto{
     width: 48px;
-    height: 48px;
-    margin-left: 15px;
-    margin-top: 15px;
-    position: absolute;
     float: left;
+    height: 48px;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
     z-index: 0 !important;
 }
 #qtd_produto{
+    float: right;
     color: white;
     font-size: 24px;
-    float: right;
     padding-top: 36px;
     padding-right: 12px;
     text-shadow: 3px 3px 0px #3e3e3e;
 }
 .gric{
     width: 48px;
-    height: 48px;
     float: left;
     margin: 3px;
+    height: 48px;
 }
 .gric_0, .gric_8, .gric_5{
-    background-image: url("../IMG/Itens/new/Construcao/acacia_log.png");
     background-repeat: no-repeat;
+    background-image: url("../IMG/Itens/new/Construcao/acacia_log.png");
 }

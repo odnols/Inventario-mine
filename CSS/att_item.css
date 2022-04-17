@@ -9,8 +9,8 @@
     padding-left: 1%;
 }
 #opcoes_direita{
-    width: 100px;
     float: left;
+    width: 100px;
     padding-left: 6%;
 }
 #selecionar_sprite{
@@ -24,13 +24,13 @@
     margin-left: 50%;
 }
 .caixa_item_detalhes{
-	display: block !important;
-	position: absolute;
-	left: 40% !important;
+    position: absolute;
 	top: 50% !important;
+	left: 40% !important;
+	display: block !important;
 }
 #minetip-tooltip{
-    position: fixed;
     top: 10%;
     left: 35%;
+    position: fixed;
 }
