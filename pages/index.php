@@ -125,9 +125,9 @@
     </div>
 
     <!-- Importar célula de dados para o banco -->
-    <form id="selecionar_celula_dados" method="post" action="PHP/importar_dados.php" enctype="multipart/form-data">
+    <form id="importar_dados_json" method="post" action="PHP/importar_dados.php" enctype="multipart/form-data">
 
-        <h2>Selecione um arquivo JSON apropriado para fazer a importação de dados</h2>
+        <h2>Fazer a importação de dados a partir de um JSON</h2>
         <input type="file" name="arquivo" required accept=".json"><br><br>
 
         <input type="submit" value="Importar">

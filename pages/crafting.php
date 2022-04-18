@@ -25,8 +25,12 @@
 </head>
 <body onload="sincroniza_tema(undefined, 1)">
 
+    <div id="prancheta_criar_crafting"></div>
     <div id="filtro_colorido"></div>
-    <div id="menu_user">    
+
+    <a class="bttn_frrm" id="btn_fecha_tela_craft" href="#" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
+    
+    <div id="menu_user">
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
@@ -58,6 +62,8 @@
     <a href="#" id="seta_direita_crafting"></a>
 
     <div id="menu_criacao">
+
+        <a id="click_abrir_crafting" href="#"></a>
 
         <div id="grid_crafting">
             <?php for($i = 0; $i < 9; $i++){

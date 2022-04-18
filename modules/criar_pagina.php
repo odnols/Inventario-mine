@@ -258,13 +258,9 @@ ob_start(); ?>
 </body>
 </html>
 
-<?php 
-
-// Recolhendo os dados que seriam mostrados e salvando num outro arquivo
+<?php // Recolhendo os dados que seriam mostrados e salvando num outro arquivo
 $gerado = ob_get_contents();
 ob_end_clean();
 
 file_put_contents('../index.html', $gerado);
-echo "Completo";
-
 header("Location: ../pages/index.php") ?>

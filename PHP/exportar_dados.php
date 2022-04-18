@@ -70,7 +70,28 @@ while($dados = $executa->fetch_assoc()){
         ));
     }
 
-    if($executa_item_1 -> num_rows == 0 && $executa_item_2 -> num_rows == 0){
+    // Verifica se o item possui registros de fabricação
+    $verificar_item = "SELECT * FROM crafting_item WHERE id_item = $id_item";
+    $executa_item_3 = $conexao->query($verificar_item);
+
+    if($executa_item_3->num_rows > 0){
+
+        $fabricacao = array();
+
+        $dados3 = $executa_item_3->fetch_assoc();
+
+        $id_craft = $dados3["id_craft"];
+        $crafting = $dados3["craft"];
+        $qtd_produtos = $dados3["qtd_produtos"];
+
+        array_push($fabricacao, array(
+            "id_craft" => $id_craft,
+            "receita" => $crafting,
+            "produtos" => $qtd_produtos
+        ));
+    }
+
+    if($executa_item_1 -> num_rows == 0 && $executa_item_2 -> num_rows == 0 && $executa_item_3 -> num_rows == 0){
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -87,7 +108,7 @@ while($dados = $executa->fetch_assoc()){
             "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art
         ));
-    }else if($executa_item_2 -> num_rows == 0){
+    }else if($executa_item_2 -> num_rows == 0 && $executa_item_3 -> num_rows == 0){
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -105,7 +126,7 @@ while($dados = $executa->fetch_assoc()){
             "programmer_art" => $programmer_art,
             "cor_item" => $cor_item
         ));
-    }else if($executa_item_1 -> num_rows == 0){
+    }else if($executa_item_1 -> num_rows == 0 && $executa_item_3 -> num_rows == 0){
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -122,6 +143,24 @@ while($dados = $executa->fetch_assoc()){
             "oculto_invt" => $oculto_invt,
             "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art
+        ));
+    }else if($executa_item_1 -> num_rows == 0 && $executa_item_2 -> num_rows == 0){
+        array_push($data, array(
+            "id_item" => $id_item,
+            "nome_icon" => $nome_icon,
+            "tipo_item" => $tipo_item,
+            "nome_item" => $nome_item,
+            "coletavel" => $coletavel,
+            "nome_interno" => $nome_interno,
+            "empilhavel" => $empilhavel,
+            "versao_add" => $versao_add,
+            "renovavel" => $renovavel,
+            "aliases" => $aliases,
+            "descricao" => $descricao,
+            "oculto_invt" => $oculto_invt,
+            "fabricavel" => $fabricavel,
+            "programmer_art" => $programmer_art,
+            "fabricacao" => $fabricacao
         ));
     }else{
         array_push($data, array(
@@ -140,7 +179,8 @@ while($dados = $executa->fetch_assoc()){
             "oculto_invt" => $oculto_invt,
             "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art,
-            "cor_item" => $cor_item
+            "cor_item" => $cor_item,
+            "fabricacao" => $fabricacao
         ));
     }
 }

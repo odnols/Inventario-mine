@@ -17,6 +17,10 @@
 </head>
 <body onload="sincroniza_tema(undefined, 1)">
 
+    <div id="prancheta_criar_crafting"></div>
+
+    <a class="bttn_frrm" id="btn_fecha_tela_craft" href="#" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
+
     <div id="fundo_personali"></div>
     <div id="filtro_colorido"></div>
     
@@ -34,7 +38,10 @@
 
     <?php
     $id_item = $_GET["id"];
-      
+
+    if(isset($_GET["rlod"]))
+        header("Location: ./item_detalhes.php?id=$id_item");
+
     $renovavel = "";
     $coletavel_s = "";
     $oculto_invt = "";
@@ -105,15 +112,15 @@
 
     <div id="bttns_navegacao">
         <?php if($id_item - 1 > 0){ ?>
-            <a href="item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao" onmouseover="toolTip('Item anterior')" onmouseout="toolTip()"> < </button></a>
+            <a href="./item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao" onmouseover="toolTip('Item anterior')" onmouseout="toolTip()"> < </button></a>
         <?php } ?>
 
-        <a href="item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao" onmouseover="toolTip('Próximo item')" onmouseout="toolTip()"> > </button></a>
+        <a href="./item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao" onmouseover="toolTip('Próximo item')" onmouseout="toolTip()"> > </button></a>
     </div>
 
     <?php if(strlen($nome_item) > 0) { // Verifica se existem dados para o ID ?> 
 
-    <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item ?>)">Apagar</button>
+    <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item; ?>)">Apagar</button>
 
     <?php echo "<img id='img_detalhes' src='../IMG/Itens/new/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite atual deste item\")' onmouseout='toolTip()'>";
 
@@ -123,27 +130,26 @@
     <form id="prancheta_att" method="post" action="../PHP/item_atualizar.php" enctype="multipart/form-data">
         <div id="selecionador">
             <div class="pag_1">
-                <input type="text" name="id_item" value="<?php echo $id_item ?>" style="display: none;">
+                <input type="text" name="id_item" value="<?php echo $id_item; ?>" style="display: none;">
             
-                <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required value="<?php echo $nome_item ?>" onmouseover="toolTip('Nome do item')" onmouseout="toolTip()">
+                <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required value="<?php echo $nome_item; ?>" onmouseover="toolTip('Nome do item')" onmouseout="toolTip()">
 
-                <input class="input_prancheta" id="barra_descricao" type="text" placeholder="Descrição" name="descricao" value="<?php echo $descricao_item ?>" onmouseover="toolTip('Descrição do item')" onmouseout="toolTip()">
+                <input class="input_prancheta" id="barra_descricao" type="text" placeholder="Descrição" name="descricao" value="<?php echo $descricao_item; ?>" onmouseover="toolTip('Descrição do item')" onmouseout="toolTip()">
 
                 <?php if($empilhavel == 0) { ?>
-                    <input class="input_prancheta" id="barra_durabilidade" type="text" placeholder="Durabilidade" name="durabilidade" value="<?php echo $durabilidade ?>" onmouseover="toolTip('Durabilidade do item')" onmouseout="toolTip()">
+                    <input class="input_prancheta" id="barra_durabilidade" type="text" placeholder="Durabilidade" name="durabilidade" value="<?php echo $durabilidade; ?>" onmouseover="toolTip('Durabilidade do item')" onmouseout="toolTip()">
                 <?php } ?>
 
-                <input class="input_prancheta" id="barra_nome_interno" type="text" placeholder="Nome interno" name="nome_interno" value="<?php echo $nome_interno ?>" onmouseover="toolTip('Nome interno do item')" onmouseout="toolTip()">
+                <input class="input_prancheta" id="barra_nome_interno" type="text" placeholder="Nome interno" name="nome_interno" value="<?php echo $nome_interno; ?>" onmouseover="toolTip('Nome interno do item')" onmouseout="toolTip()">
 
-                <input class="input_prancheta" id="barra_aliases" type="text" placeholder="Aliases" name="aliases" value="<?php echo $aliases ?>" onmouseover="toolTip('Aliases do item')" onmouseout="toolTip()">
+                <input class="input_prancheta" id="barra_aliases" type="text" placeholder="Aliases" name="aliases" value="<?php echo $aliases; ?>" onmouseover="toolTip('Aliases do item')" onmouseout="toolTip()">
 
                 <?php if($crafting == "checked")
-                    echo "<input type='button' id='btn_fabricacao' value='Fabricação' onclick='inicia_craft($id_item)'>"
-                ?>
+                    echo "<input type='button' id='btn_fabricacao' value='Fabricação' onclick='inicia_craft($id_item)'>"; ?>
             </div>
 
             <div id="selects" class="pag_2">
-                <select name="abamenu" style="width: 505px;" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
+                <select name="abamenu" style="width: 505px" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
 
                     <?php
                     $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
@@ -196,6 +202,7 @@
                 </select>
             </div><br><br>
             
+            <!-- Botões para navegar entre as páginas -->
             <input type="button" value=">" id="pag_2" class="troca_pag_button" onclick="troca_itens(2)" onmouseover="toolTip('Outros dados')" onmouseout="toolTip()">
             <input type="button" value="<" id="pag_1" class="troca_pag_button" onclick="troca_itens(1)" onmouseover="toolTip('Outros dados')" onmouseout="toolTip()">
         </div>
@@ -222,11 +229,25 @@
                 <img id="preview_sprite" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
             </div>
         </div>
-
+        
         <input id="inserir_item" type="submit" value="Atualizar">
     </form>
- 
-    <?php 
+    
+    <?php if($crafting == "checked") {
+        
+        $coleta_receita = "SELECT * FROM crafting_item WHERE id_item = $id_item";
+        $executa_coleta = $conexao->query($coleta_receita);
+
+        $dados4 = $executa_coleta->fetch_assoc();
+        $receita = $dados4["craft"]; ?>
+    
+    <div id="preview_item_craft">
+        <?php for($i = 0; $i < 9; $i++){
+            echo "<div class='grid_craft gric'></div>";
+        } ?>
+    </div>
+
+    <?php } 
         echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
 
         echo "<style>
@@ -257,4 +278,10 @@
     } ?>
 </body>
 <script src="../JS/engine.js"></script>
+
+<script type="text/javascript">
+    setTimeout(() => {
+        mostra_crafting('<?php echo $receita ?>', null, 1);
+    }, 200);
+</script>
 </html>

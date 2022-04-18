@@ -66,8 +66,8 @@ img#menu{
     font-size: 24px;
     overflow: hidden;
     margin-top: 135px;
-    position: absolute;
     margin-left: 24px;
+    position: absolute;
 }
 #listagem{
     width: 503px;
@@ -101,7 +101,7 @@ img#prancheta{
 }
 #prancheta_add{
     right: 4%;
-    z-index: 9;
+    z-index: 8;
     top: 18.2%;
     width: 585px;
     padding: 5px;
@@ -184,10 +184,10 @@ select{
     background: url("../IMG/Interface/Claro/slot_hover.png") !important;
 }
 .icon_item{
-    display: block;
-    padding: 3px;
     width: 48px;
+    padding: 3px;
     height: 48px;
+    display: block;
 }
 input, select{
     width: 480px;
@@ -387,10 +387,10 @@ input, select{
     top: 40%;
 }
 #btn_fabricacao{
+    height: 45px;
     width: 368px;
     font-size: 20px;
     padding-top: 5px;
-    height: 45px;
     font-family: 'Minecraftia';
 }
 #titulo_aba{
@@ -400,7 +400,7 @@ input, select{
     position: absolute;
 }
 #barra_rolagem{
-    z-index: 9;
+    z-index: 2;
     top: 153px;
     right: 54px;
     width: 36px;
@@ -408,7 +408,7 @@ input, select{
     position: absolute;
 }
 #barra_scroll{
-    z-index: 10;
+    z-index: 2;
     width: 36px;
     height: 45px;
     cursor: move;
@@ -477,8 +477,8 @@ input, select{
     background: url("../IMG/Interface/Livro.png") no-repeat;
 }
 a{
-    text-decoration: none !important;
     color: blue !important;
+    text-decoration: none !important;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -498,8 +498,8 @@ a{
     animation: puxa_botoes 2s;
 }
 .bttn_frrm{ 
-    height: 34px;
     width: 85%; 
+    height: 34px;
     padding: 10px;
     margin-left: 4px;
     margin-right: 4px;
@@ -529,7 +529,7 @@ a{
     transition: background-color .2s;
     background-color: rgb(253, 179, 179);
 }
-#selecionar_celula_dados{
+#importar_dados_json{
     top: 0px;
     left: 0px;
     z-index: 11;
@@ -546,7 +546,7 @@ a{
     top: 1%;
     left: 50%;
     width: 104px;
-    z-index: 100;
+    z-index: 7;
     margin-left: -45px;
     position: absolute;
 }
@@ -672,18 +672,18 @@ a{
     background-image: url("../IMG/Interface/Claro/seta_direita_hover.png") !important;
 }
 #abas_craft_organiza{
-    width: 105px;
-    left: 148px;
     top: 70px;
+    left: 148px;
+    width: 105px;
     position: absolute;
     z-index: 1 !important;
 }
 .aba_menu_craft{
-    padding-top: 3px;
-    position: absolute;
     width: 105px;
     height: 78px;
     display: none;
+    padding-top: 3px;
+    position: absolute;
 }
 #prancheta_itens_crafting{
     top: 93px;
@@ -721,8 +721,8 @@ a{
 .sprite_slot_crafting{
     width: 48px;
     height: 48px;
-    padding-left: 12px;
     padding-top: 12px;
+    padding-left: 12px;
 }
 #grid_crafting{
     top: 48px;
@@ -731,6 +731,10 @@ a{
     width: 162px;
     height: 162px;
     position: absolute;
+    background-image: url("../IMG/Interface/Claro/slot.png");
+}
+.grid_craft:hover{
+    background-image: url("../IMG/Interface/Claro/slot_hover.png");
 }
 #produto_final{
     top: 90px;
@@ -750,10 +754,11 @@ a{
     z-index: 0 !important;
 }
 #qtd_produto{
-    float: right;
+    right: 0px;
     color: white;
     font-size: 24px;
     padding-top: 36px;
+    position: absolute;
     padding-right: 12px;
     text-shadow: 3px 3px 0px #3e3e3e;
 }
@@ -766,4 +771,72 @@ a{
 .gric_0, .gric_8, .gric_5{
     background-repeat: no-repeat;
     background-image: url("../IMG/Itens/new/Construcao/acacia_log.png");
+}
+#craft_prancheta{
+    top: 5%;
+    right: 5%;
+    width: 528px;
+    height: 498px;
+    position: absolute;
+    background-image: url("../IMG/Interface/Claro/craft.png");
+}
+#slots_atalho_itens{
+    left: 21px;
+    height: 54px;
+    width: 486px;
+    bottom: 21px;
+    position: absolute;
+}
+#craft_ativo{
+    background-image: url("../IMG/Interface/Claro/slot_hover.png") !important;
+}
+#btn_confirma_craft{
+    top: 180px;
+    right: 21px;
+    height: 45px;
+    width: 219px;
+    font-size: 20px;
+    padding-top: 5px;
+    border: 0px solid;
+    position: absolute;
+    font-family: 'Minecraftia';
+    transition: background-color .2s;
+}
+#btn_confirma_craft:hover{
+    background-color: rgb(100, 197, 173);
+}
+.input_hidden{
+    display: none;
+}
+#click_abrir_crafting{
+    top: 102px;
+    width: 60px;
+    height: 54px;
+    right: 453px;
+    position: absolute;
+}
+#prancheta_criar_crafting{
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    display: none;
+    position: fixed;
+    z-index: 8 !important;
+}
+#btn_fecha_tela_craft{
+    right: 92px;
+    width: 88px;
+    bottom: 21px;
+    display: none !important;
+    position: absolute;
+    z-index: 9 !important;
+}
+#preview_item_craft{
+    z-index: 2;
+    width: 162px;
+    right: 136px;
+    height: 162px;
+    bottom: 105px;
+    position: absolute;
 }

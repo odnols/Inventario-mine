@@ -4,7 +4,7 @@ var prancheta = false, alvo_anterior = null, inicio = 0, posicao_scroll = 0, lib
 var qtd_itens = 0, qtd_itens_colet = 0, qtd_itens_renov = 0, qtd_itens_empil = 0, qtd_itens_colet_empil = 0, qtd_itens_colet_empil_n_renov = 0, qtd_itens_n_empil = 0;
 
 var graphics = 0, total_load = 50, dados_globais;
-var dados_itens = [];
+var dados_itens = [], itens_atalho = [], array_crafting = [null, null, null, null, null, null, null, null, null];
 
 function gerencia_scroll(valor){
     libera_scroll = valor;
@@ -56,7 +56,7 @@ function clique(valor, estado){
 
     if(typeof valor == "string"){
 
-        mostra = document.getElementsByClassName("Prancheta");
+        let mostra = document.getElementsByClassName("Prancheta");
 
         if(!prancheta && estado != 1){
             document.getElementById("prancheta_add").style.display = "Block";
@@ -68,26 +68,22 @@ function clique(valor, estado){
             prancheta = false;
         }
     }else{
-        if(typeof event != "undefined"){
+        if(typeof event !== "undefined"){
 
-            var tecla = event.keyCode;
+            let tecla = event.keyCode;
 
             switch(tecla){
                 case 101: // e
                 case 69 : // E
+                    alvo = "prancheta_add";
+
                     if(!menu)
                         alvo = "menu_completo";
-                    else
-                        alvo = "prancheta_add";
                 break;   
                 case 119: // q
                 case 87 : // Q
                     alvo = "prancheta_add";
-
-                    if(menu)
-                        menu = false;
-                    else
-                        menu = true;
+                    menu = !menu;
                 break;
             }
         }
@@ -120,10 +116,10 @@ function categoria(alvo, local){
         }
     }
 
-    categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Pesquisa"];
-    versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19"];
+    let categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Pesquisa"];
+    let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19"];
 
-    itens = 0;
+    let itens = 0;
 
     if((categorias[alvo]) && (categorias[alvo] != "Pesquisa" && local != 1)) // Descrição das abas do inventário para os itens
         pesquisa = 0;
@@ -165,11 +161,11 @@ function categoria(alvo, local){
         cache_pesquisa = null;
     
     // Escondendo todos os itens de todas as categorias
-    for(var i = 0; i < categorias.length; i++){
+    for(let i = 0; i < categorias.length; i++){
         esconde = document.getElementsByClassName(categorias[i]);
 
-        if(typeof alvo != "string"){
-            for(var x = 0; x < esconde.length; x++){
+        if(typeof alvo !== "string"){
+            for(let x = 0; x < esconde.length; x++){
                 if(alvo != 10)
                     esconde[x].style.display = "None";
                 else{
@@ -178,7 +174,7 @@ function categoria(alvo, local){
                 }
             }
         }else{
-            for(var x = 0; x < esconde.length; x++){
+            for(let x = 0; x < esconde.length; x++){
                 if(typeof esconde[x] !== "undefined"){
                     esconde[x].style.display = "None";
 
@@ -191,11 +187,13 @@ function categoria(alvo, local){
                             esconde[3].style.display = "Block";
                             esconde[4].style.display = "Block";
                             esconde[5].style.display = "Block";
-                            esconde[6].style.display = "Block";
+
+                            if(esconde.length > 6)
+                                esconde[6].style.display = "Block";
                         }
                     }
                 }else{
-                    if(typeof esconde[x] != "undefined"){
+                    if(typeof esconde[x] !== "undefined"){
                         esconde[x].style.display = "Block";
                         itens++;
                     }
@@ -209,17 +207,15 @@ function categoria(alvo, local){
         alvos = document.getElementsByClassName("Generico");
 
     // Exibindo os itens da categoria escolhida
-    for(var i = 0; i < alvos.length; i++){
+    for(let i = 0; i < alvos.length; i++){
         alvos[i].style.display = "Block";
     }
 
-    var slots_livres;
-
-    slots_livres = ((alvos.length - 1) % 9);
+    let slots_livres = ((alvos.length - 1) % 9);
 
     if(((alvos.length - 1) % 9 != 0) || alvos.length < 45){
         if(alvos.length < 45 && itens < 45)
-            if(typeof alvo != "string")
+            if(typeof alvo !== "string")
                 slots_livres = 46 - alvos.length;
             else
                 slots_livres = 45 - alvos.length;
@@ -236,7 +232,7 @@ function categoria(alvo, local){
     if(slots_livres > 0){
         document.getElementById("complementa_slots").innerHTML = "";
         
-        for(var j = 0; j < slots_livres; j++){
+        for(let j = 0; j < slots_livres; j++){
             document.getElementById("complementa_slots").innerHTML += "<div class='slot_item'></div>";
         }
     }else // Limpa os slots de outras abas
@@ -275,18 +271,16 @@ function categoria(alvo, local){
 }
 
 function mostrar_genericos(){
-    var alvos = document.getElementsByClassName('Generico');
+    let alvos = document.getElementsByClassName('Generico');
 
     if(itens_genericos == 0){
-        for(var i = 0; i < alvos.length; i++){
+        for(let i = 0; i < alvos.length; i++)
             alvos[i].style.display = "Block";
-        }
 
         itens_genericos = 1;
     }else{
-        for(var i = 0; i < alvos.length; i++){
+        for(let i = 0; i < alvos.length; i++)
             alvos[i].style.display = "None";
-        }
         
         document.getElementById("img_genericos_2").style.display = "none";
 
@@ -295,18 +289,16 @@ function mostrar_genericos(){
 }
 
 function mostrar_ocultos(){
-    var alvos = document.getElementsByClassName('oculto');
+    let alvos = document.getElementsByClassName('oculto');
 
     if(itens_ocultos == 0){
-        for(var i = 0; i < alvos.length; i++){
+        for(let i = 0; i < alvos.length; i++)
             alvos[i].style.display = "Block";
-        }
 
         itens_ocultos = 1;
     }else{
-        for(var i = 0; i < alvos.length; i++){
+        for(let i = 0; i < alvos.length; i++)
             alvos[i].style.display = "None";
-        }
         
         document.getElementById("img_ocultos_2").style.display = "none";
 
@@ -366,13 +358,13 @@ dragElement(document.getElementById("barra_scroll"));
 function dragElement(elmnt) {
 
     if(elmnt != null){
-        var pos2 = 0, pos4 = 0;
-        if (document.getElementById(elmnt.id))
+        let pos2 = 0, pos4 = 0;
+        
+        if(document.getElementById(elmnt.id))
             document.getElementById(elmnt.id).onmousedown = dragMouseDown;
         else
             elmnt.onmousedown = dragMouseDown;
         
-
         function dragMouseDown(e) {
             e = e || window.event;
             e.preventDefault();
@@ -391,7 +383,6 @@ function dragElement(elmnt) {
             pos4 = e.clientY;
 
             // set the element's new position:
-
             scrollSincronizado('barra_rolagem', 'listagem');
             
             if(pos4 > 185 && pos4 < 484){
@@ -434,7 +425,7 @@ function verifica_posicao(caso){
     elemento = document.getElementById(alvos[caso]);
     posicao = elemento.getBoundingClientRect();
     
-    for(var i = 0; i < alvos_finais.length; i++){
+    for(let i = 0; i < alvos_finais.length; i++){
         document.getElementById(alvos_finais[i]).style.display = "none";
     }
 
@@ -462,7 +453,7 @@ function voltar_pag(){
 }
 
 function previewImage(local) {
-    var file = document.getElementById("input_img").files;
+    let file = document.getElementById("input_img").files;
 
     // Criando o nome interno automaticamente
     nome_interno = file[0].name;
@@ -473,8 +464,8 @@ function previewImage(local) {
     else
         document.getElementById("barra_nome_interno").value = nome_interno;
 
-    if (file.length > 0) {
-        var fileReader = new FileReader();
+    if(file.length > 0) {
+        let fileReader = new FileReader();
 
         fileReader.onload = function (event){
             document.getElementById("preview_sprite").setAttribute("src", event.target.result);
@@ -526,13 +517,13 @@ function sincroniza_tema(versao_jogo, local){
         document.getElementById("filtro_colorido").style.background = "linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%)";
     }
 
-    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add", "#menu_criacao", "#seta_direita_crafting", "#seta_esquerda_crafting", ".slot_item_crafting"];
-    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png", "crafting.png", "seta_direita.png", "seta_esquerda.png", "slot_item_crafting.png"];
+    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add", "#menu_criacao", "#seta_direita_crafting", "#seta_esquerda_crafting", ".slot_item_crafting", "#craft_prancheta", "#slot_craft_ativo", "#preview_item_craft"];
+    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png", "crafting.png", "seta_direita.png", "seta_esquerda.png", "slot_item_crafting.png", "craft.png", "slot_add.png", "grid_crafting.png"];
 
     lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos", "img_craft_todos", "img_craft_ferramentas", "img_craft_blocos", "img_craft_diversos", "img_craft_redstone"];
     nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "menu.png", "aba_oculto.png", "aba_craft_todos.png", "aba_craft_ferramentas.png", "aba_craft_blocos.png", "aba_craft_diversos.png", "aba_craft_redstone.png"];
 
-    if(typeof versao_jogo != "undefined")
+    if(typeof versao_jogo !== "undefined")
         if(versao_jogo <= 2){
             nome_arquivos[nome_arquivos.indexOf("menu.png")] = "menu_classic.png";
             
@@ -554,19 +545,19 @@ function sincroniza_tema(versao_jogo, local){
     else{
         botoes_menu = document.getElementsByClassName("botoes_menu");
 
-        for(var i = 0; i < botoes_menu.length; i++){
+        for(let i = 0; i < botoes_menu.length; i++){
             botoes_menu[i].style.display = "Block";
         }
     }
         
-    for(var i = 0; i < lista_imagens.length; i++){ // Imagens
+    for(let i = 0; i < lista_imagens.length; i++){ // Imagens
         imagem = document.getElementById(lista_imagens[i]);
         
         if(imagem != null)
             imagem.src = `${caminho}IMG/Interface/${alvo}/${nome_arquivos[i]}`;
     }
 
-    for(var i = 0; i < lista_templates.length; i++){
+    for(let i = 0; i < lista_templates.length; i++){
         if(lista_templates[i].includes("#")){ // Elementos que utilizam ID
 
             lista_templates[i] = lista_templates[i].replace("#", ""); 
@@ -577,17 +568,16 @@ function sincroniza_tema(versao_jogo, local){
         }else{ // Elementos que estão referenciados como classes
 
             lista_templates[i] = lista_templates[i].replace(".", "");
-            var alvos = document.getElementsByClassName(lista_templates[i]);
+            let alvos = document.getElementsByClassName(lista_templates[i]);
 
-            for(var j = 0; j < alvos.length; j++){
+            for(let j = 0; j < alvos.length; j++)
                 alvos[j].style.background = `url('${caminho}IMG/Interface/${alvo}/${nome_template[i]}') no-repeat`;
-            }
         }
     }
 
     textos = document.getElementsByClassName("cor_textos");
     
-    for(var i = 0; i < textos.length; i++){
+    for(let i = 0; i < textos.length; i++){
 
         if(tema == 0){
             textos[i].style.color = "#ffffff";
@@ -624,7 +614,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         id_descricao_item = "descricao_item_minetip";
         id_nome_interno = "nome_interno_minetip";
 
-        if(typeof local != "undefined"){
+        if(typeof local !== "undefined"){
             id_nome_item = "nome_item_minetp";
             id_descricao_item = "descricao_item_minetp";
             id_nome_interno = "nome_interno_minetp";
@@ -642,12 +632,12 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         else
             document.getElementById(id_nome_item).innerHTML = nome;
         
-        if(typeof descricao != "undefined"){
+        if(typeof descricao !== "undefined"){
             if(descricao.indexOf("&") == -1){
                 document.getElementById(id_descricao_item).style.color = "#a8a8a8";
                 document.getElementById(id_descricao_item).style.textShadow = "3px 3px 0 #2a2a2a";
 
-                if(typeof descricao != "undefined")
+                if(typeof descricao !== "undefined")
                     document.getElementById(id_descricao_item).innerHTML = descricao;
                 else
                     document.getElementById(id_descricao_item).innerHTML = "";
@@ -656,7 +646,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
                 alvos_replace = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
 
                 if(pesquisa == 0){
-                    for(var i = 0; i< alvos_replace.length; i++)
+                    for(let i = 0; i< alvos_replace.length; i++)
                         descricao = descricao.replace(`[&1${alvos_replace[i]}`, "");
                 }else{
                     categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
@@ -664,14 +654,14 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
                     alvo_alteracao = descricao.split(" ");
                     alvo_alteracao[0] = alvo_alteracao[0].replace("[&1", "");
 
-                    var i = alvos_replace.indexOf(alvo_alteracao[0]);
+                    let i = alvos_replace.indexOf(alvo_alteracao[0]);
                     descricao = descricao.replace(alvo_alteracao[0], `[&1${categorias_exib[i]}`);
                 }
 
                 descricao_colorida = descricao.split("[");
 
-                for(var j = 0; j < descricao_colorida.length; j++){
-                    for(var i = 0; i < cores_efeitos.length; i++){
+                for(let j = 0; j < descricao_colorida.length; j++){
+                    for(let i = 0; i < cores_efeitos.length; i++){
                         if(descricao_colorida[j].indexOf(cores_efeitos[i]) != -1){
 
                             descricao_colorida[j] = descricao_colorida[j].replace(cores_efeitos[i], "", 1);
@@ -688,12 +678,12 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
             }
         }
 
-        if(typeof nome_interno != "undefined")
+        if(typeof nome_interno !== "undefined")
             document.getElementById(id_nome_interno).innerHTML = `minecraft:${nome_interno}`;
         else
             document.getElementById(id_nome_interno).innerHTML = "";
 
-        if(typeof local == "undefined")
+        if(typeof local === "undefined")
             document.getElementById("minetip-tooltip").style.display = "Block";
 
         // Verifica se existem muitos alvos para poder acompanhar o mouse            
@@ -717,46 +707,61 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
         document.getElementById("minetip-tooltip").style.display = "None";
 }
 
-function sincroniza_itens(craft, produto, qtd){
+function sincroniza_itens(receita, produto, qtd, local, id_item){
 
-    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/JSON/dados_locais.json')
+    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/Files/JSON/dados_locais.json')
     .then(response => response.json())
     .then(async res_artigo => {
         
         dados_itens = res_artigo;
-        mostra_crafting(craft, produto, qtd, 1);
+
+        if(local !== 1)
+            mostra_crafting(receita, produto, qtd, 1);
+        else
+            seleciona_item(id_item);
     });
 }
 
-function mostra_crafting(craft, produto, qtd, local){
+function mostra_crafting(receita, produto, qtd, local){
 
     let caminho = '';
+    if(local == 2){
+        document.getElementById("array_craft").value = receita;
+        array_crafting = receita.split(",");
+    }
 
-    if(local)
+    if(receita.length > 9) // Converte a string para um array legível
+        receita = receita.split(",");
+
+    if(local || local == 2)
         caminho = '../';
+    
 
     const grid = document.getElementsByClassName('grid_craft');
     let sprite_produto = "";
 
     if(dados_itens.length < 1)
-        return sincroniza_itens(craft, produto, qtd);
+        return sincroniza_itens(receita, produto, qtd);
 
     for(let i = 0; i < grid.length; i++){
 
         let sprite_item = "";
 
-        if(craft[i] !== null || typeof craft[i] !== "undefined"){
+        if(receita[i] !== null || typeof receita[i] !== "undefined"){
             Object.keys(dados_itens).forEach(function(k){
-                if(k == craft[i])
+
+                if(dados_itens[k]["id_item"] == receita[i])
                     sprite_item = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
 
-                if(k == produto)
+                if(dados_itens[k]["id_item"] == produto)
                     sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
             });
             
-            grid[i].style.backgroundImage = `url('${sprite_item}')`;
+            if(typeof receita[i] !== "undefined")
+                grid[i].style.backgroundImage = `url('${sprite_item}')`;
+
         }else
-            grid[i].style.backgroundImage = `None`;
+            grid[i].style.backgroundImage = 'None';
     }
 
     Object.keys(dados_itens).forEach(function(k){
@@ -766,10 +771,15 @@ function mostra_crafting(craft, produto, qtd, local){
         }
     });
 
-    document.getElementById("sprite_produto").innerHTML = "";
-    document.getElementById("sprite_produto").innerHTML += `<img src='${sprite_produto}' style='width: 48px'>`;
+    if(produto !== null){
+        if(document.getElementById("click_abrir_crafting"))
+            document.getElementById("click_abrir_crafting").setAttribute('onClick', `inicia_craft(${produto})`);
 
-    document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null;
+        document.getElementById("sprite_produto").innerHTML = "";
+        document.getElementById("sprite_produto").innerHTML += `<img src='${sprite_produto}' style='width: 48px'>`;
+
+        // document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null;
+    }
 }
 
 function expande_sprite(caminho){
@@ -777,5 +787,104 @@ function expande_sprite(caminho){
 }
 
 function inicia_craft(id_item){
+
+    let prancheta_criar_crafting = document.getElementById("prancheta_criar_crafting");
+    prancheta_criar_crafting.innerHTML = "";
+
+    prancheta_criar_crafting.style.display = "Block";
+    prancheta_criar_crafting.style.width = "100%";
+    prancheta_criar_crafting.style.height = "100%";
+    prancheta_criar_crafting.innerHTML += `<iframe src='../modules/craft.php?id=${id_item}' name='content' marginheight='0' scrolling='no' frameborder='0' hspace='0' vspace='0' allowtransparency='true' application='true' width='100%' height='100%'></iframe>`;
+
+    document.getElementById("btn_fecha_tela_craft").style.display = "Block";
+}
+
+function seleciona_item(id_item){
     
+    let novo_array = [];
+
+    let slots_atalho = document.getElementById("slots_atalho_itens");
+    slots_atalho.innerHTML = "";
+
+    if(id_item !== "auto"){
+        if(itens_atalho.includes(id_item)) // Removendo o item do elemento
+            itens_atalho.splice(itens_atalho.indexOf(id_item), 1);
+        else if(itens_atalho.length > 8)
+            itens_atalho.pop();
+    
+    // Adicionando o item no primeiro lugar do array
+        novo_array = [id_item].concat(itens_atalho);
+        itens_atalho = novo_array;
+    }
+
+    if(dados_itens.length < 1)
+        return sincroniza_itens(null, null, null, 1, id_item);
+
+    if(id_item == "auto") // Utilizado para sincronizar os dados
+        return;
+
+    for(let i = 0; i < itens_atalho.length; i++){
+
+        let slot_craft_ativo = "";
+
+        Object.keys(dados_itens).forEach(function(k){
+            if(itens_atalho[i] == dados_itens[k]["id_item"]){
+                sprite_item = `../IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+                
+                if(i == 0)
+                    slot_craft_ativo = "id='slot_craft_ativo'";
+
+                slots_atalho.innerHTML += `<div class='slot_item' ${slot_craft_ativo} onclick='seleciona_item(${itens_atalho[i]})'>
+                    <img class='icon_item' src='${sprite_item}'>
+                </div>`;
+            }
+        });
+    }
+
+    sincroniza_tema(undefined, 1);
+}
+
+function seta_item_craft(indice){
+
+    let grid_craft = document.getElementsByClassName("grid_craft");
+
+    for(let i = 0; i < 9; i++){
+        if(i == indice){
+            if(grid_craft[i].style.backgroundImage == "")
+                Object.keys(dados_itens).forEach(function(k){
+                    if(itens_atalho[0] == dados_itens[k]["id_item"]){
+                        sprite_item = `../IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+                        grid_craft[i].style.backgroundImage = `url('${sprite_item}')`;
+                        array_crafting[i] = itens_atalho[0];
+                    }
+                });
+            else{
+                grid_craft[i].style.backgroundImage = "";
+                array_crafting[i] = null;
+            }
+        }
+    }
+
+    document.getElementById("array_craft").value = array_crafting;
+}
+
+function seta_item_criado(id_item){
+    
+    Object.keys(dados_itens).forEach(function(k){
+        if(dados_itens[k]["id_item"] == id_item){
+            sprite_produto = `../IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
+        
+            document.getElementById("sprite_produto").innerHTML = "";
+            document.getElementById("sprite_produto").innerHTML += `<img src='${sprite_produto}' style='width: 48px'>`;
+
+            // document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null;
+        }
+    });
+}
+
+if(document.getElementById("btn_fecha_tela_craft")){
+    $("#btn_fecha_tela_craft").click(() => {
+        $("#prancheta_criar_crafting").fadeOut();
+        $("#btn_fecha_tela_craft").toggle();
+    });
 }

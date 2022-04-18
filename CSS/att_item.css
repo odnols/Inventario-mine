@@ -28,6 +28,7 @@
 	top: 50% !important;
 	left: 40% !important;
 	display: block !important;
+    z-index: 3;
 }
 #minetip-tooltip{
     top: 10%;

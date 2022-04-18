@@ -8,7 +8,6 @@
 	top: 0;
 	left: 0;
 	padding: 15px;
-	z-index: 9999;
 	display: none;
 	position: fixed;
 	font-size: 20px;
@@ -20,6 +19,7 @@
 	padding-right: 10px;
 	white-space: nowrap;
 	pointer-events: none;
+	z-index: 7 !important;
 	background-color:#100010;
 	background-color:rgba(16, 0, 16, 0.94);
 	font-family: Minecraftia, Minecraft, sans-serif;
