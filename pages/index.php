@@ -123,18 +123,9 @@
         <a class="bttn_frrm" href="../modules/criar_pagina.php" onmouseover="toolTip('Atualizar o site em HTML')" onmouseout="toolTip()">Atualizar HTML</a> <?php } ?>
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
-
-    <!-- Importar célula de dados para o banco -->
-    <form id="importar_dados_json" method="post" action="PHP/importar_dados.php" enctype="multipart/form-data">
-
-        <h2>Fazer a importação de dados a partir de um JSON</h2>
-        <input type="file" name="arquivo" required accept=".json"><br><br>
-
-        <input type="submit" value="Importar">
-    </form>
-
+    
     <!-- Adicionar item -->
-    <form id="prancheta_add" method="post" action="PHP/item_registrar.php" enctype="multipart/form-data">
+    <form id="prancheta_add" method="post" action="../PHP/item_registrar.php" enctype="multipart/form-data">
         <div id="inputs_principais">
             <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required>
             
