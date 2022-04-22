@@ -24540,22 +24540,6 @@
         "programmer_art": 0
     },
     {
-        "id_item": 1408,
-        "nome_icon": "donkey_spawn_egg.png",
-        "tipo_item": "Diversos",
-        "nome_item": "Ovo gerador de vaga-lume",
-        "coletavel": 0,
-        "nome_interno": "firefly_spawn_egg",
-        "empilhavel": 64,
-        "versao_add": 19,
-        "renovavel": 0,
-        "aliases": null,
-        "descricao": null,
-        "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 0
-    },
-    {
         "id_item": 1409,
         "nome_icon": "tadpole_spawn_egg.png",
         "tipo_item": "Diversos",

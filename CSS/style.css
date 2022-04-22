@@ -840,3 +840,13 @@ a{
     bottom: 105px;
     position: absolute;
 }
+.textos_craft{
+    margin-top: 11px;
+    margin-left: 87px;
+    position: absolute;
+    font-size: 24px !important;
+}
+.text_craft_2{
+    margin-top: 210px;
+    margin-left: 24px;
+}

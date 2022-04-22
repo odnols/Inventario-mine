@@ -106,7 +106,13 @@ function categoria(alvo, local){
     if(alvo == 10){
         pesquisa = 1;
 
-        texto = document.getElementById("barra_pesquisa_input").value;
+        let texto = "";
+
+        if(document.getElementById("barra_pesquisa_input"))
+            texto = document.getElementById("barra_pesquisa_input").value;
+        // Menu clássico
+            // return;
+
         document.getElementById("titulo_aba").innerHTML = "Buscar";        
 
         if(texto.length > 0){
@@ -131,7 +137,7 @@ function categoria(alvo, local){
     
     if(alvo == "off" || alvo == "não_coletável" || alvo == "generico" || alvo == "oculto")
         verifica_posicao(alvo);
-    else{
+    else if(document.getElementById("img_configs_2")){
         document.getElementById("img_configs_2").style.display = "none";
         document.getElementById("img_coletaveis_2").style.display = "none";
         document.getElementById("img_genericos_2").style.display = "none";
@@ -140,8 +146,10 @@ function categoria(alvo, local){
     if(local == 0){ // Definindo a aba alvo
         alvos = document.getElementsByClassName(categorias[alvo]);
 
-        document.getElementById("img_versoes_2").style.display = "none";
-        document.getElementById("lista_versoes").style.display = "none";
+        if(document.getElementById("img_versoes_2")){
+            document.getElementById("img_versoes_2").style.display = "none";
+            document.getElementById("lista_versoes").style.display = "none";
+        }
     }else
         alvos = document.getElementsByClassName(alvo);
     
@@ -477,7 +485,7 @@ function previewImage(local) {
 
 function apagarItem(id_item){
     if(confirm("Deseja realmente remover?"))
-        window.location = `PHP/item_remover.php?id=${id_item}`;
+        window.location = `../PHP/item_remover.php?id=${id_item}`;
 }
 
 function troca_tema(versao_jogo, local){
@@ -517,8 +525,8 @@ function sincroniza_tema(versao_jogo, local){
         document.getElementById("filtro_colorido").style.background = "linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%)";
     }
 
-    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add", "#menu_criacao", "#seta_direita_crafting", "#seta_esquerda_crafting", ".slot_item_crafting", "#craft_prancheta", "#slot_craft_ativo", "#preview_item_craft"];
-    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png", "crafting.png", "seta_direita.png", "seta_esquerda.png", "slot_item_crafting.png", "craft.png", "slot_add.png", "grid_crafting.png"];
+    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add", "#menu_criacao", "#seta_direita_crafting", "#seta_esquerda_crafting", "#craft_prancheta", "#slot_craft_ativo", "#preview_item_craft", "#grid_crafting", ".slot_item_crafting"];
+    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png", "crafting.png", "seta_direita.png", "seta_esquerda.png", "craft.png", "slot_add.png", "grid_crafting.png", "grid_crafting.png", "slot_item_crafting.png"];
 
     lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos", "img_craft_todos", "img_craft_ferramentas", "img_craft_blocos", "img_craft_diversos", "img_craft_redstone"];
     nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "menu.png", "aba_oculto.png", "aba_craft_todos.png", "aba_craft_ferramentas.png", "aba_craft_blocos.png", "aba_craft_diversos.png", "aba_craft_redstone.png"];
@@ -575,18 +583,19 @@ function sincroniza_tema(versao_jogo, local){
         }
     }
 
-    textos = document.getElementsByClassName("cor_textos");
-    
-    for(let i = 0; i < textos.length; i++){
+    let textos = document.getElementsByClassName("cor_textos");
+    let textos_craft = document.getElementsByClassName("textos_craft");
+    let tam_textos = textos.length || textos_craft.length
+    let cores_texto = ["white", "#3f3f3f"];
+    let alvos = textos || textos_craft;
 
-        if(tema == 0){
-            textos[i].style.color = "#ffffff";
-            document.getElementById("titulo_aba").style.color = "#ffffff";
-        }else{
-            textos[i].style.color = "black";
-            document.getElementById("titulo_aba").style.color = "#3f3f3f";
-        }
-    }
+    if(tema == 0)
+        document.getElementById("titulo_aba").style.color = "#ffffff";
+    else
+        document.getElementById("titulo_aba").style.color = "#3f3f3f";
+
+    for(let i = 0; i < tam_textos; i++)
+        alvos[i].style.color = cores_texto[tema];
 }
 
 function troca_itens(pag){
@@ -739,6 +748,7 @@ function mostra_crafting(receita, produto, qtd, local){
 
     const grid = document.getElementsByClassName('grid_craft');
     let sprite_produto = "";
+    let dados_produto = "";
 
     if(dados_itens.length < 1)
         return sincroniza_itens(receita, produto, qtd);
@@ -757,19 +767,28 @@ function mostra_crafting(receita, produto, qtd, local){
                     sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
             });
             
-            if(typeof receita[i] !== "undefined")
+            if(typeof receita[i] !== "undefined" && sprite_item.length > 0) // Altera o sprite para o item do grid
                 grid[i].style.backgroundImage = `url('${sprite_item}')`;
-
         }else
             grid[i].style.backgroundImage = 'None';
     }
 
     Object.keys(dados_itens).forEach(function(k){
         if(dados_itens[k]["id_item"] == produto){
+
+            dados_produto = dados_itens[k];
+
             sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
             nome_produto = dados_itens[k]["nome"];
         }
     });
+
+    let slots_atalho = document.getElementById("slots_atalho_itens");
+    slots_atalho.innerHTML = "";
+
+    for(let i = 9 - itens_atalho.length; i > 0; i--){
+        slots_atalho.innerHTML += `<div class='slot_item'></div>`;
+    }
 
     if(produto !== null){
         if(document.getElementById("click_abrir_crafting"))
@@ -777,6 +796,9 @@ function mostra_crafting(receita, produto, qtd, local){
 
         document.getElementById("sprite_produto").innerHTML = "";
         document.getElementById("sprite_produto").innerHTML += `<img src='${sprite_produto}' style='width: 48px'>`;
+
+        document.getElementById("sprite_produto").setAttribute('onMouseOver', `toolTip("${dados_produto.nome_item}", "${dados_produto.descricao}", "${dados_produto.nome_interno}", null)`);
+        document.getElementById("sprite_produto").setAttribute('onMouseOut', `toolTip()`);
 
         // document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null;
     }
@@ -839,6 +861,10 @@ function seleciona_item(id_item){
                 </div>`;
             }
         });
+    }
+
+    for(let i = 9 - itens_atalho.length; i > 0; i--){
+        slots_atalho.innerHTML += `<div class='slot_item'></div>`;
     }
 
     sincroniza_tema(undefined, 1);
