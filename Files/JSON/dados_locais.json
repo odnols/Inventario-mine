@@ -7311,7 +7311,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "166",
+                "receita": ",202,,,198,,,42",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 420,
@@ -24302,7 +24309,7 @@
         "id_item": 1395,
         "nome_icon": "warden_spawn_egg.png",
         "tipo_item": "Diversos",
-        "nome_item": "Ovo gerador de defensor",
+        "nome_item": "Ovo gerador de sentinela",
         "coletavel": 0,
         "nome_interno": "warden_spawn_egg",
         "empilhavel": 64,
@@ -24348,7 +24355,7 @@
         "fabricacao": [
             {
                 "id_craft": "57",
-                "receita": ",,,,1411",
+                "receita": ",,,,,,,1411",
                 "produtos": "1"
             }
         ]
@@ -24540,6 +24547,22 @@
         "programmer_art": 0
     },
     {
+        "id_item": 1451,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": "[&rYearn",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
         "id_item": 1409,
         "nome_icon": "tadpole_spawn_egg.png",
         "tipo_item": "Diversos",
@@ -24674,7 +24697,7 @@
         "fabricacao": [
             {
                 "id_craft": "47",
-                "receita": ",,,,1397",
+                "receita": ",,,,,,,1397",
                 "produtos": "1"
             }
         ]
@@ -25197,7 +25220,7 @@
         ]
     },
     {
-        "id_item": 1443,
+        "id_item": 1450,
         "nome_icon": "goat_horn.png",
         "tipo_item": "Diversos",
         "nome_item": "Chifre de cabra",
@@ -25207,7 +25230,7 @@
         "versao_add": 19,
         "renovavel": 1,
         "aliases": null,
-        "descricao": null,
+        "descricao": "[&rDream",
         "oculto_invt": 0,
         "fabricavel": 0,
         "programmer_art": 0
@@ -25293,7 +25316,7 @@
         "id_item": 1448,
         "nome_icon": "disc_fragment_5.png",
         "tipo_item": "Diversos",
-        "nome_item": "Peda\u00e7o de disco",
+        "nome_item": "Fragmento de disco",
         "coletavel": 1,
         "nome_interno": "disc_fragment_5",
         "empilhavel": 64,
@@ -25313,6 +25336,12 @@
         "coletavel": 1,
         "nome_interno": "music_disc_5",
         "empilhavel": 0,
+        "durabilidade": [
+            {
+                "id_durabilidade": 21,
+                "durabilidade": 326
+            }
+        ],
         "versao_add": 19,
         "renovavel": 1,
         "aliases": null,
@@ -25325,6 +25354,109 @@
                 "id_cor": "172",
                 "tipo_item": "1"
             }
+        ],
+        "fabricacao": [
+            {
+                "id_craft": "167",
+                "receita": "1448,1448,1448,1448,1448,1448,1448,1448,1448",
+                "produtos": "1"
+            }
         ]
+    },
+    {
+        "id_item": 1452,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": "[&rCall",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1453,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": "[&rAdmire",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1454,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": "[&rFeel",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1455,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": "[&rSeek",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1456,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": "[&rSing",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1457,
+        "nome_icon": "goat_horn.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Chifre de cabra",
+        "coletavel": 1,
+        "nome_interno": "goat_horn",
+        "empilhavel": 0,
+        "versao_add": 19,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": "[&rPonder",
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
     }
 ]

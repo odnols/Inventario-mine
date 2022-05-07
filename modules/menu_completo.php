@@ -57,12 +57,6 @@
         <img id="barra_scroll_block" src="#">
     </div>
     
-    <div id="minetip-tooltip">
-        <span id="nome_item_minetip"></span><br>
-        <span id="descricao_item_minetip"></span><br>
-        <span id="nome_interno_minetip"></span>
-    </div>
-
     <div id="lista_itens">
 
         <?php if($local_requisicao != 3) { ?>

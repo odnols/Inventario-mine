@@ -745,7 +745,6 @@ function mostra_crafting(receita, produto, qtd, local){
     if(local || local == 2)
         caminho = '../';
     
-
     const grid = document.getElementsByClassName('grid_craft');
     let sprite_produto = "";
     let dados_produto = "";

@@ -15,5 +15,5 @@ else // Inserindo um novo registro
 
 $executa = $conexao->query($processa);
 
-$params= '?'. http_build_query(array('id'=> $id_item, 'rlod'=> 1));
+$params = '?'. http_build_query(array('id'=> $id_item, 'rlod'=> 1));
 header('Location: ../pages/item_detalhes.php'. $params);

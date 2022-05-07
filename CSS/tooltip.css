@@ -19,7 +19,7 @@
 	padding-right: 10px;
 	white-space: nowrap;
 	pointer-events: none;
-	z-index: 7 !important;
+	z-index: 99 !important;
 	background-color:#100010;
 	background-color:rgba(16, 0, 16, 0.94);
 	font-family: Minecraftia, Minecraft, sans-serif;

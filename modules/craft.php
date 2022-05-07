@@ -87,7 +87,7 @@
         seleciona_item('auto');
 
         setTimeout(() => {
-            mostra_crafting('<?php echo $receita ?>', <?php echo $id_item_alvo ?>, null, 2);
+            mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2);
         }, 500);
     </script>
 </body>

@@ -37,6 +37,12 @@
             <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
         </div>
         
+        <div id="minetip-tooltip">
+            <span id="nome_item_minetip"></span><br>
+            <span id="descricao_item_minetip"></span><br>
+            <span id="nome_interno_minetip"></span>
+        </div>
+
         <div id="text_estatsc">
             <center><h3 class="cor_textos">Estatísticas</h3></center>
         

@@ -39,7 +39,7 @@
     <?php
     $id_item = $_GET["id"];
 
-    if(isset($_GET["rlod"]))
+    if(isset($_GET["rlod"])) // Reload na página
         header("Location: ./item_detalhes.php?id=$id_item");
 
     $renovavel = "";
