@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $user = "root";
-$password = "";
+$password = "admin";
 $banco = "minecraft_itens";
 
 $conexao = new mysqli($servidor, $user, $password, $banco);
