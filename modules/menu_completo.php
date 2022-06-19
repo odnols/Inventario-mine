@@ -5,11 +5,11 @@
 
     <?php for($i = 0; $i < 11; $i++){
         echo "<div id='item_$i' onclick='categoria($i, 0)'></div>";
-    } 
+    }
 
     if($local_requisicao == 1){ // Apenas visivel na tela inicial, prancheta de inserção de novos itens ?>
         <div id="item_11" onclick="clique('prancheta')"></div>
-    <?php } 
+    <?php }
     
     if($versao_jogo > 2) { ?>
         <img id="img_construcao" class="aba_menu Construcao" src="#">
@@ -128,13 +128,13 @@
                 }
             }
 
-            for($i = 0; $i < strlen($descricao_pes); $i++){
-                $descricao_pesq = $descricao_pesq." ";
+            // for($i = 0; $i < strlen($descricao_pes); $i++){
+            //     $descricao_pesq = $descricao_pesq." ";
                 
-                for($x = 0; $x <= $i; $x++){
-                    $descricao_pesq = $descricao_pesq."".$descricao_pes[$x];
-                }
-            }
+            //     for($x = 0; $x <= $i; $x++){
+            //         $descricao_pesq = $descricao_pesq."".$descricao_pes[$x];
+            //     }
+            // }
 
             $cor_item = 0;
 

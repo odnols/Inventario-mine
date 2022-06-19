@@ -828,7 +828,6 @@ a{
     right: 92px;
     width: 88px;
     bottom: 21px;
-    display: none !important;
     position: absolute;
     z-index: 9 !important;
 }

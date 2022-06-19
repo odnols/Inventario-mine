@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
 
-    <script src="../JS/jquery.min.js"></script>
-    <script src="../JS/jquery-1.11.3.min.js"></script>
+    <script src="../JS/jquery-3.4.1.js"></script>
 
     <?php include_once "../PHP/conexao_obsoleta.php";
     
@@ -136,9 +135,7 @@
     <?php $local_requisicao = 3; $graphics = false;
     include_once "../modules/menu_completo.php"; ?>
 
-    <script src="../JS/jquery-3.4.1.js"></script>
     <script src="../JS/engine.js"></script>
-
     <script type="text/javascript">
         categoria(10, 0);
         sincroniza_tema(<?php echo $versao_jogo ?>, 1);

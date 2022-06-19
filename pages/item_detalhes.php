@@ -3,23 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>Detalhes do Item</title>
-    <link rel="shortcut icon" href="../IMG/Itens/new/Construcao/glass_block.png">
-
+    
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../CSS/anima.css">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
     <link rel="stylesheet" type="text/css" href="../CSS/att_item.css">
     
+    <script src="../JS/jquery-3.4.1.js"></script>
     <script src="../JS/engine.js"></script>
     
     <?php include_once "../PHP/conexao_obsoleta.php"; ?>
 </head>
 <body onload="sincroniza_tema(undefined, 1)">
-
-    <div id="prancheta_criar_crafting"></div>
-
-    <a class="bttn_frrm" id="btn_fecha_tela_craft" href="#" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
 
     <div id="fundo_personali"></div>
     <div id="filtro_colorido"></div>
@@ -48,6 +44,12 @@
     $programmer_art = "";
     $crafting = "";
 
+    // Último ID registrado de item
+    $ultimo_id = "SELECT id_item FROM item ORDER BY id_item DESC LIMIT 1";
+    $executa_ultimo_id = $conexao->query($ultimo_id);
+    $dados = $executa_ultimo_id->fetch_assoc();
+    $ultimo_id = $dados["id_item"];
+    
     $busca_dados = "SELECT * FROM item WHERE id_item = $id_item";
     $executa = $conexao->query($busca_dados);
     
@@ -114,8 +116,10 @@
         <?php if($id_item - 1 > 0){ ?>
             <a href="./item_detalhes.php?id=<?php echo $id_item - 1 ?>"><button class="navegacao" onmouseover="toolTip('Item anterior')" onmouseout="toolTip()"> < </button></a>
         <?php } ?>
-
-        <a href="./item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao" onmouseover="toolTip('Próximo item')" onmouseout="toolTip()"> > </button></a>
+        
+        <?php if($id_item < $ultimo_id) { ?>
+            <a href="./item_detalhes.php?id=<?php echo $id_item + 1 ?>"><button class="navegacao" onmouseover="toolTip('Próximo item')" onmouseout="toolTip()"> > </button></a>
+        <?php } ?>
     </div>
 
     <?php if(strlen($nome_item) > 0) { // Verifica se existem dados para o ID ?> 
@@ -277,11 +281,12 @@
         </style>";
     } ?>
 </body>
-<script src="../JS/engine.js"></script>
 
-<script type="text/javascript">
-    setTimeout(() => {
-        mostra_crafting('<?php echo $receita ?>', null, 1);
-    }, 200);
-</script>
+<?php if($crafting == "checked") { ?>
+    <script type="text/javascript">
+        setTimeout(() => {
+            mostra_crafting('<?php echo $receita ?>', null, 1);
+        }, 0);
+    </script>
+<?php } ?>
 </html>

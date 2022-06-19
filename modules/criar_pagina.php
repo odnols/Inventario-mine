@@ -13,8 +13,7 @@ ob_start(); ?>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tooltip.css">
 
-    <script src="JS/jquery.min.js"></script>
-    <script src="JS/jquery-1.11.3.min.js"></script>
+    <script src="JS/jquery-3.4.1.js"></script>
 </head>
 <body onload="sincroniza_tema(undefined, 0)">
 
@@ -216,17 +215,19 @@ ob_start(); ?>
                     $descricao_pesq = str_replace("1.".$i, "", $descricao_pesq);
                 }
                 
+                $caminho_sprite = 'IMG/Itens/'. $geracao .'/'. $tipo_item .'/'. $nome_icon;
+
                 if($tipo_item != "Generico" && $oculto_invt != "Oculto"){
-                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onclick='exibe_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
+                    echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item' src='$caminho_sprite'>";
                     echo "</div>";
                 }else{
                     if($oculto_invt != "Oculto"){
-                        echo "<div class='slot_item $tipo_item' onclick='exibe_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div class='slot_item $tipo_item' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }else{
-                        echo "<div class='slot_item oculto' onclick='exibe_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div class='slot_item oculto' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
-                        echo "<img class='icon_item' src='IMG/Itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item' src='$caminho_sprite'>";
                     echo "</div>";
                 }
             } ?>
@@ -235,20 +236,19 @@ ob_start(); ?>
         </div>
     </div>
 
-    <script src="JS/jquery-3.4.1.js"></script>
     <script src="JS/engine.js"></script>
     <script type="text/javascript">
 
         (function (){
             setTimeout(() => {
-                document.getElementById("qtd_itens_inventario").innerHTML = 1417;
-                document.getElementById("qtd_itens_inventario_colet").innerHTML = 1319;
-                document.getElementById("qtd_itens_fabricaveis").innerHTML = 778;
-                document.getElementById("qtd_itens_inventario_renov").innerHTML = 1251;
+                document.getElementById("qtd_itens_inventario").innerHTML = 1424;
+                document.getElementById("qtd_itens_inventario_colet").innerHTML = 1327;
+                document.getElementById("qtd_itens_fabricaveis").innerHTML = 782;
+                document.getElementById("qtd_itens_inventario_renov").innerHTML = 1261;
                 document.getElementById("qtd_itens_inventario_empil").innerHTML = 1007;
-                document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = 914;
-                document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = 57;
-                document.getElementById("qtd_itens_inventario_n_empil").innerHTML = 410;
+                document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = 915;
+                document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = 55;
+                document.getElementById("qtd_itens_inventario_n_empil").innerHTML = 417;
             }, 1000);
         })();
 

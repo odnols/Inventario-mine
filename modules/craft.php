@@ -10,10 +10,16 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
-    <script src="../JS/jquery.min.js"></script>
-    <script src="../JS/jquery-1.11.3.min.js"></script>
+    <script src="../JS/jquery-3.4.1.js"></script>
+    <script src="../JS/engine.js"></script>
 </head>
 <body onload="sincroniza_tema(undefined, 1)">
+
+    <div id="minetip-tooltip">
+        <span id="nome_item_minetip"></span><br>
+        <span id="descricao_item_minetip"></span><br>
+        <span id="nome_interno_minetip"></span>
+    </div>
 
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
@@ -41,6 +47,8 @@
     <?php $local_requisicao = 2; $graphics = false; $versao_jogo = 19;
     include_once "../modules/menu_completo.php"; ?>
     
+    <a class="bttn_frrm" id="btn_fecha_tela_craft" href="../pages/item_detalhes.php?id=<?php echo $id_item_alvo ?>" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
+
     <form id="craft_prancheta" action="../PHP/item_registra_craft.php" method="POST">
 
         <span class="cor_textos textos_craft">Fabricação</span>
@@ -76,19 +84,16 @@
             $dados4 = $executa_coleta->fetch_assoc();
             $receita = $dados4["craft"];
         } ?>
-
-    <script src="../JS/jquery-3.4.1.js"></script>
-    <script src="../JS/engine.js"></script>
-
-    <script type="text/javascript">
-        categoria(0, 0);
-        document.addEventListener("onKeyDown", clique());
-
-        seleciona_item('auto');
-
-        setTimeout(() => {
-            mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2);
-        }, 500);
-    </script>
 </body>
+
+<script type="text/javascript">
+    categoria(0, 0);
+    document.addEventListener("onKeyDown", clique());
+
+    seleciona_item('auto');
+
+    setTimeout(() => {
+        mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2);
+    }, 500);
+</script>
 </html>

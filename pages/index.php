@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
-    <script src="../JS/jquery.min.js"></script>
-    <script src="../JS/jquery-1.11.3.min.js"></script>
+    <script src="../JS/jquery-3.4.1.js"></script>
     
     <?php include_once "../PHP/conexao_obsoleta.php"; ?>
 </head>
@@ -186,10 +185,8 @@
     <!-- Menu interativo -->
     <?php $local_requisicao = 1; $versao_jogo = 19;
     include_once "../modules/menu_completo.php"; ?>
-    
-    <script src="../JS/jquery-3.4.1.js"></script>
-    <script src="../JS/engine.js"></script>
 
+    <script src="../JS/engine.js"></script>
     <script type="text/javascript">
         categoria(0, 0);
         document.addEventListener("onKeyDown", clique());

@@ -456,6 +456,11 @@ function exibe_detalhes_item(id_item){
     window.location = `item_detalhes.php?id=${id_item}`;
 }
 
+function exibe_item(caminho_sprite){
+    localStorage.setItem("sprite_escolhido", caminho_sprite);
+    window.location = `./sprite.html`;
+}
+
 function voltar_pag(){
     window.location = "index.php";
 }
@@ -583,16 +588,17 @@ function sincroniza_tema(versao_jogo, local){
         }
     }
 
-    let textos = document.getElementsByClassName("cor_textos");
-    let textos_craft = document.getElementsByClassName("textos_craft");
-    let tam_textos = textos.length || textos_craft.length
-    let cores_texto = ["white", "#3f3f3f"];
-    let alvos = textos || textos_craft;
+    const textos = document.getElementsByClassName("cor_textos");
+    const textos_craft = document.getElementsByClassName("textos_craft");
+    const tam_textos = textos.length || textos_craft.length
+    const cores_texto = ["white", "#3f3f3f"];
+    const alvos = textos || textos_craft;
+    const titulo_aba = document.getElementById("titulo_aba");
 
-    if(tema == 0)
-        document.getElementById("titulo_aba").style.color = "#ffffff";
-    else
-        document.getElementById("titulo_aba").style.color = "#3f3f3f";
+    if(tema == 0 && titulo_aba)
+        titulo_aba.style.color = "#ffffff";
+    else if(titulo_aba)
+        titulo_aba.style.color = "#3f3f3f";
 
     for(let i = 0; i < tam_textos; i++)
         alvos[i].style.color = cores_texto[tema];
@@ -629,17 +635,21 @@ function toolTip(nome, descricao, nome_interno, cor_item, local){
             id_nome_interno = "nome_interno_minetp";
         }
 
-        document.getElementById(id_nome_item).innerHTML = "";
-        document.getElementById(id_descricao_item).innerHTML = "";
+        const alvo_tooltip = document.getElementById(id_nome_item);
+        const alvo_id_descricao_item = document.getElementById(id_descricao_item);
 
-        let itens_especiais = ["", "item_encantado", "item_especial", "item_lendario"];
-        let cores_efeitos = ["&1", "&2", "&3", "&4", "&r"];
-        let nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde", "efeito_cor_padrao"];
+        if(alvo_tooltip) alvo_tooltip.innerHTML = "";
+        if(alvo_id_descricao_item) alvo_id_descricao_item.innerHTML = "";
 
-        if(cor_item > 0)
-            document.getElementById(id_nome_item).innerHTML += `<span class='${itens_especiais[cor_item]}'>${nome}</span>`;
-        else
-            document.getElementById(id_nome_item).innerHTML = nome;
+        const itens_especiais = ["", "item_encantado", "item_especial", "item_lendario"];
+        const cores_efeitos = ["&1", "&2", "&3", "&4", "&r"];
+        const nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde", "efeito_cor_padrao"];
+
+        if(alvo_tooltip)
+            if(cor_item > 0)
+                document.getElementById(id_nome_item).innerHTML += `<span class='${itens_especiais[cor_item]}'>${nome}</span>`;
+            else
+                document.getElementById(id_nome_item).innerHTML = nome;
         
         if(typeof descricao !== "undefined"){
             if(descricao.indexOf("&") == -1){
@@ -734,12 +744,15 @@ function sincroniza_itens(receita, produto, qtd, local, id_item){
 function mostra_crafting(receita, produto, qtd, local){
 
     let caminho = '';
-    if(local == 2){
-        document.getElementById("array_craft").value = receita;
+    if(local == 2 || local){
+        if(local == 2)
+            document.getElementById("array_craft").value = receita;
+        
         array_crafting = receita.split(",");
     }
 
-    if(receita.length > 9) // Converte a string para um array legível
+    // Converte a string para um array legível
+    if(receita.length == 9)
         receita = receita.split(",");
 
     if(local || local == 2)
@@ -756,17 +769,17 @@ function mostra_crafting(receita, produto, qtd, local){
 
         let sprite_item = "";
 
-        if(receita[i] !== null || typeof receita[i] !== "undefined"){
+        if(array_crafting[i] !== null || typeof array_crafting[i] !== "undefined"){
             Object.keys(dados_itens).forEach(function(k){
 
-                if(dados_itens[k]["id_item"] == receita[i])
+                if(dados_itens[k]["id_item"] == array_crafting[i])
                     sprite_item = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
 
                 if(dados_itens[k]["id_item"] == produto)
                     sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`;
             });
             
-            if(typeof receita[i] !== "undefined" && sprite_item.length > 0) // Altera o sprite para o item do grid
+            if(typeof array_crafting[i] !== "undefined" && sprite_item.length > 0) // Altera o sprite para o item do grid
                 grid[i].style.backgroundImage = `url('${sprite_item}')`;
         }else
             grid[i].style.backgroundImage = 'None';
@@ -782,11 +795,14 @@ function mostra_crafting(receita, produto, qtd, local){
         }
     });
 
-    let slots_atalho = document.getElementById("slots_atalho_itens");
-    slots_atalho.innerHTML = "";
+    const slots_atalho = document.getElementById("slots_atalho_itens");
 
-    for(let i = 9 - itens_atalho.length; i > 0; i--){
-        slots_atalho.innerHTML += `<div class='slot_item'></div>`;
+    if(slots_atalho){
+        slots_atalho.innerHTML = "";
+
+        for(let i = 9 - itens_atalho.length; i > 0; i--){
+            slots_atalho.innerHTML += `<div class='slot_item'></div>`;
+        }
     }
 
     if(produto !== null){
@@ -808,16 +824,7 @@ function expande_sprite(caminho){
 }
 
 function inicia_craft(id_item){
-
-    let prancheta_criar_crafting = document.getElementById("prancheta_criar_crafting");
-    prancheta_criar_crafting.innerHTML = "";
-
-    prancheta_criar_crafting.style.display = "Block";
-    prancheta_criar_crafting.style.width = "100%";
-    prancheta_criar_crafting.style.height = "100%";
-    prancheta_criar_crafting.innerHTML += `<iframe src='../modules/craft.php?id=${id_item}' name='content' marginheight='0' scrolling='no' frameborder='0' hspace='0' vspace='0' allowtransparency='true' application='true' width='100%' height='100%'></iframe>`;
-
-    document.getElementById("btn_fecha_tela_craft").style.display = "Block";
+    window.location = `../modules/craft.php?id=${id_item}`;
 }
 
 function seleciona_item(id_item){

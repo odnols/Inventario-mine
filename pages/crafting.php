@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
 
-    <script src="../JS/jquery.min.js"></script>
-    <script src="../JS/jquery-1.11.3.min.js"></script>
+    <script src="../JS/jquery-3.4.1.js"></script>
     
     <?php include_once "../PHP/conexao_obsoleta.php";
     
@@ -106,7 +105,6 @@
     </div>
     
     <script type="text/javascript" src="../Files/JSON/dados_locais.json"></script>
-    <script src="../JS/jquery-3.4.1.js"></script>
     <script src="../JS/engine.js"></script>
 </body>
 </html>
