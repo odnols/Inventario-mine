@@ -125,9 +125,9 @@ function categoria(alvo, local){
     let categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Pesquisa"];
     let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19"];
 
-    let itens = 0;
+    let itens = 0, alvos;
 
-    if((categorias[alvo]) && (categorias[alvo] != "Pesquisa" && local != 1)) // Descrição das abas do inventário para os itens
+    if((categorias[alvo]) && (categorias[alvo] !== "Pesquisa" && local !== 1)) // Descrição das abas do inventário para os itens
         pesquisa = 0;
 
     if(typeof alvo == "string" && alvo.length == 0){
@@ -152,14 +152,12 @@ function categoria(alvo, local){
         }
     }else
         alvos = document.getElementsByClassName(alvo);
-    
+
     if((versoes.includes(alvo) || categorias.includes(categorias[alvo])) &&  (itens_genericos || itens_ocultos)){ // Esconde todos os itens genéricos
         
-        if(itens_genericos)
-            mostrar_genericos();
+        if(itens_genericos) mostrar_genericos();
 
-        if(itens_ocultos)
-            mostrar_ocultos();
+        if(itens_ocultos) mostrar_ocultos();
 
         cache_pesquisa = null;
         document.getElementById("barra_pesquisa_input").value = "";
@@ -170,16 +168,12 @@ function categoria(alvo, local){
     
     // Escondendo todos os itens de todas as categorias
     for(let i = 0; i < categorias.length; i++){
-        esconde = document.getElementsByClassName(categorias[i]);
+        let esconde = document.getElementsByClassName(categorias[i]);
 
         if(typeof alvo !== "string"){
             for(let x = 0; x < esconde.length; x++){
                 if(alvo != 10)
                     esconde[x].style.display = "None";
-                else{
-                    esconde[x].style.display = "Block";
-                    itens++;
-                }
             }
         }else{
             for(let x = 0; x < esconde.length; x++){
@@ -187,8 +181,8 @@ function categoria(alvo, local){
                     esconde[x].style.display = "None";
 
                     if(typeof alvo == "string"){
-                        esconde[0].style.display = "Block";
-
+                        // esconde[0].style.display = "Block";
+                        
                         if(i == 10){
                             esconde[1].style.display = "Block";
                             esconde[2].style.display = "Block";
@@ -207,6 +201,8 @@ function categoria(alvo, local){
                     }
                 }
             }
+
+            ordena_guias_ativas(categorias, alvos);
         }
     }
 
@@ -240,18 +236,16 @@ function categoria(alvo, local){
     if(slots_livres > 0){
         document.getElementById("complementa_slots").innerHTML = "";
         
-        for(let j = 0; j < slots_livres; j++){
+        for(let j = 0; j < slots_livres; j++)
             document.getElementById("complementa_slots").innerHTML += "<div class='slot_item'></div>";
-        }
     }else // Limpa os slots de outras abas
         document.getElementById("complementa_slots").innerHTML = "";
     
     if(versoes.includes(alvo)){
         $("#versao_referencia").fadeIn();
         document.getElementById("num_referencia").innerHTML = `${alvo} ( ${alvos.length} )`;
-    }else{
+    }else
         $("#versao_referencia").fadeOut();
-    }
 
     if(itens > 45 || alvos.length > 45){
         document.getElementById("barra_scroll").style.display = "Block";
@@ -261,6 +255,7 @@ function categoria(alvo, local){
         document.getElementById("barra_scroll").style.display = "None";
     }
 
+    // Definindo o nome da guia seleciona
     if(alvo == 0)
         nome_aba = "Blocos de construção";
     else if(alvo == 1)
@@ -276,6 +271,43 @@ function categoria(alvo, local){
 
     if(typeof alvo != "string")
         document.getElementById("titulo_aba").innerHTML = nome_aba;
+}
+
+function ordena_guias_ativas(categorias, alvos){
+
+    let guias = [];
+
+    // Pesquisa sem inserção
+    if(alvos.length < 1) {
+        for(let i = 0; i < categorias.length; i++){
+            let alvos_mostra = document.getElementsByClassName(categorias[i]);
+
+            if(alvos_mostra.length > 1){
+                for(let x = 0; x < alvos_mostra.length; x++)
+                    alvos_mostra[x].style.display = "Block";
+                
+                if(!guias.includes(categorias[i])) guias.push(categorias[i]);
+            }
+        }
+    }else{
+        // Listando guias com itens ativos
+        for(let i = 0; i < alvos.length; i++ ){
+            if(!guias.includes(alvos[i].classList[1]))
+                guias.push(alvos[i].classList[1])
+        }
+    }
+
+    // Desabilitando todas as guias
+    for(let i = 0; i < categorias.length; i++){
+        let guia_alvo = document.getElementsByClassName(`aba_menu_${categorias[i]}`);
+
+        if(guia_alvo.length > 0) guia_alvo[0].style.display = "None";
+    }
+
+    for(let i = 0; i < guias.length; i++){
+        let guia_alvo = document.getElementsByClassName(`aba_menu_${guias[i].toLowerCase()}`);
+        if(guia_alvo.length > 0) guia_alvo[0].style.display = "Block";
+    }
 }
 
 function mostrar_genericos(){

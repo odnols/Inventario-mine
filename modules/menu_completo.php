@@ -12,15 +12,15 @@
     <?php }
     
     if($versao_jogo > 2) { ?>
-        <img id="img_construcao" class="aba_menu Construcao" src="#">
-        <img id="img_decorativos" class="aba_menu Decorativos" src="#">
-        <img id="img_redstone" class="aba_menu Redstone" src="#">
-        <img id="img_transportes" class="aba_menu Transportes" src="#">
-        <img id="img_diversos" class="aba_menu Diversos" src="#">
-        <img id="img_alimentos" class="aba_menu Alimentos" src="#">
-        <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
-        <img id="img_combate" class="aba_menu Combate" src="#">
-        <img id="img_pocoes" class="aba_menu Pocoes" src="#">
+        <img id="img_construcao" class="aba_menu aba_menu_construcao Construcao" src="#">
+        <img id="img_decorativos" class="aba_menu aba_menu_decorativos Decorativos" src="#">
+        <img id="img_redstone" class="aba_menu aba_menu_redstone Redstone" src="#">
+        <img id="img_transportes" class="aba_menu aba_menu_transportes Transportes" src="#">
+        <img id="img_diversos" class="aba_menu aba_menu_diversos Diversos" src="#">
+        <img id="img_alimentos" class="aba_menu aba_menu_alimentos Alimentos" src="#">
+        <img id="img_ferramentas" class="aba_menu aba_menu_ferramentas Ferramentas" src="#">
+        <img id="img_combate" class="aba_menu aba_menu_combate Combate" src="#">
+        <img id="img_pocoes" class="aba_menu aba_menu_pocoes Pocoes" src="#">
         
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
             <img id="img_configs_2" class="aba_menu opcoes_laterais" src="../IMG/Interface/mascara_configs.png">
@@ -45,7 +45,7 @@
         <img id="img_especiais" class="aba_menu Especiais" src="#">
         <img id="img_pesquisa" class="aba_menu Pesquisa" src="#">
         
-        <img id="img_prancheta" class="aba_menu Prancheta" src="../IMG/Interface/mascara_prancheta.png"> 
+        <img id="img_prancheta" class="aba_menu Prancheta" src="../IMG/Interface/mascara_prancheta.png">
         
         <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
     <?php } ?>
@@ -58,7 +58,6 @@
     </div>
     
     <div id="lista_itens">
-
         <?php if($local_requisicao != 3) { ?>
             <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
         <?php } else { ?>
