@@ -1,12 +1,29 @@
-@keyframes puxa_campos{
-    from{ right: 10%; }
-    to{ right: -5.9%; }
+@keyframes puxa_campos {
+    from {
+        right: 10%;
+    }
+
+    to {
+        right: -5.9%;
+    }
 }
-@keyframes puxa_campos2{
-    from{ top: 50%; }
-    to{ top: 96%; }
+
+@keyframes puxa_campos2 {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 96%;
+    }
 }
-@keyframes puxa_botoes{
-    from { top: -10%; }
-    to { top: 5%; }
+
+@keyframes puxa_botoes {
+    from {
+        top: -10%;
+    }
+
+    to {
+        top: 5%;
+    }
 }

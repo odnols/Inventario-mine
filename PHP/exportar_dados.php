@@ -1,15 +1,15 @@
 <?php include_once "conexao_obsoleta.php";
 
 $arquivo = "dados_locais.json";
-$file = fopen("../Files/JSON/". $arquivo, 'w');
+$file = fopen("../Files/JSON/" . $arquivo, 'w');
 
 $data = array();
 
 $verificar = "SELECT * FROM item";
 $executa = $conexao->query($verificar);
 
-while($dados = $executa->fetch_assoc()){
-    
+while ($dados = $executa->fetch_assoc()) {
+
     $id_item = intval($dados["id_item"]);
     $nome_icon = $dados["nome_icon"];
     $tipo_item = $dados["abamenu"];
@@ -24,18 +24,18 @@ while($dados = $executa->fetch_assoc()){
     $oculto_invt = intval($dados["oculto_invt"]);
     $programmer_art = intval($dados["programmer_art"]);
     $fabricavel = intval($dados["fabricavel"]);
-    
-    if(strlen($aliases) == 0)
+
+    if (strlen($aliases) == 0)
         $aliases = null;
 
-    if(strlen($descricao) == 0)
+    if (strlen($descricao) == 0)
         $descricao = null;
-    
+
     // Verifica se o item possui registros de cores no título
     $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
     $executa_item_1 = $conexao->query($verificar_item);
 
-    if($executa_item_1->num_rows > 0){
+    if ($executa_item_1->num_rows > 0) {
 
         $cor_item = array();
 
@@ -55,8 +55,8 @@ while($dados = $executa->fetch_assoc()){
     $executa_item_2 = $conexao->query($verificar_durabilidade);
     $durabilidade = 0;
 
-    if($executa_item_2->num_rows > 0){
-    
+    if ($executa_item_2->num_rows > 0) {
+
         $durabilidade_item = array();
 
         $dados2 = $executa_item_2->fetch_assoc();
@@ -74,7 +74,7 @@ while($dados = $executa->fetch_assoc()){
     $verificar_item = "SELECT * FROM crafting_item WHERE id_item = $id_item";
     $executa_item_3 = $conexao->query($verificar_item);
 
-    if($executa_item_3->num_rows > 0){
+    if ($executa_item_3->num_rows > 0) {
 
         $fabricacao = array();
 
@@ -91,7 +91,7 @@ while($dados = $executa->fetch_assoc()){
         ));
     }
 
-    if($executa_item_1 -> num_rows == 0 && $executa_item_2 -> num_rows == 0 && $executa_item_3 -> num_rows == 0){
+    if ($executa_item_1->num_rows == 0 && $executa_item_2->num_rows == 0 && $executa_item_3->num_rows == 0) {
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -108,7 +108,7 @@ while($dados = $executa->fetch_assoc()){
             "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art
         ));
-    }else if($executa_item_2 -> num_rows == 0 && $executa_item_3 -> num_rows == 0){
+    } else if ($executa_item_2->num_rows == 0 && $executa_item_3->num_rows == 0) {
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -126,7 +126,7 @@ while($dados = $executa->fetch_assoc()){
             "programmer_art" => $programmer_art,
             "cor_item" => $cor_item
         ));
-    }else if($executa_item_1 -> num_rows == 0 && $executa_item_3 -> num_rows == 0){
+    } else if ($executa_item_1->num_rows == 0 && $executa_item_3->num_rows == 0) {
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -144,7 +144,7 @@ while($dados = $executa->fetch_assoc()){
             "fabricavel" => $fabricavel,
             "programmer_art" => $programmer_art
         ));
-    }else if($executa_item_1 -> num_rows == 0 && $executa_item_2 -> num_rows == 0){
+    } else if ($executa_item_1->num_rows == 0 && $executa_item_2->num_rows == 0) {
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,
@@ -162,7 +162,7 @@ while($dados = $executa->fetch_assoc()){
             "programmer_art" => $programmer_art,
             "fabricacao" => $fabricacao
         ));
-    }else{
+    } else {
         array_push($data, array(
             "id_item" => $id_item,
             "nome_icon" => $nome_icon,

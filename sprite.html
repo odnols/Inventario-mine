@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="utf-8">
-    <title>Inventário</title>
-    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/grass_block.png">
-    
+	<meta charset="utf-8">
+	<title>Inventário</title>
+	<link rel="shortcut icon" href="IMG/Itens/new/Construcao/grass_block.png">
+
 	<style type="text/css">
-		img{
-            top: 50%;
-            left: 50%;
+		img {
+			top: 50%;
+			left: 50%;
 			margin: 0;
 			width: 480px;
-            position: absolute;
+			position: absolute;
 			image-rendering: pixelated;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
 			filter: drop-shadow(0px 0px 500px white);
 		}
-		body{
+
+		body {
 			overflow: hidden;
 			background: black;
 		}
 	</style>
 </head>
+
 <body>
 	<img id="sprite_item_html">
 </body>
 
 <script src="JS/engine.js"></script>
 <script>
-    (function(){
+	(function () {
 
 		sprite_escolhido = localStorage.getItem("sprite_escolhido");
 
-        const img_alvo = document.getElementById("sprite_item_html");
-        img_alvo.src = sprite_escolhido;
-    })();
+		const img_alvo = document.getElementById("sprite_item_html");
+		img_alvo.src = sprite_escolhido;
+	})();
 </script>
+
 </html>

@@ -1,8 +1,9 @@
-@font-face{
+@font-face {
     font-family: "Minecraftia";
     src: url('../Files/Fonts/Minecraftia.ttf');
 }
-body{
+
+body {
     user-select: none;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -12,7 +13,8 @@ body{
     image-rendering: pixelated;
     background: url('../IMG/Temas/1.19.png') no-repeat;
 }
-#filtro_colorido{
+
+#filtro_colorido {
     top: 0px;
     left: 0px;
     width: 100%;
@@ -20,10 +22,11 @@ body{
     position: fixed;
     z-index: 0 !important;
     transition: background-color .2s;
-    background: rgba(9,121,99,0.6699054621848739);
-    background: linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(4, 78, 64, 0.67) 39%, rgba(0,212,255,0) 100%);
+    background: rgba(9, 121, 99, 0.6699054621848739);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9248074229691877) 0%, rgba(4, 78, 64, 0.67) 39%, rgba(0, 212, 255, 0) 100%);
 }
-h3.ordena{
+
+h3.ordena {
     top: -15%;
     left: 25%;
     color: white;
@@ -31,10 +34,12 @@ h3.ordena{
     position: absolute;
     text-shadow: 0px 0px 2px black;
 }
-#versao_referencia{
+
+#versao_referencia {
     display: none;
 }
-#Inventario{
+
+#Inventario {
     top: 10%;
     left: 10%;
     z-index: 3;
@@ -44,11 +49,13 @@ h3.ordena{
     position: fixed;
     background-color: rgba(0, 0, 0, .5);
 }
-img#menu{
+
+img#menu {
     z-index: 2;
     position: absolute;
 }
-#menu_completo{
+
+#menu_completo {
     left: 3%;
     top: 15px;
     width: 600px;
@@ -58,7 +65,8 @@ img#menu{
     font-size: 24px;
     position: absolute;
 }
-#lista_itens{
+
+#lista_itens {
     z-index: 2;
     width: 486px;
     color: white;
@@ -69,14 +77,16 @@ img#menu{
     margin-left: 24px;
     position: absolute;
 }
-#listagem{
+
+#listagem {
     width: 503px;
     height: 270px;
     overflow-y: auto;
     position: absolute;
     padding: 0px !important;
 }
-#estatisticas_inventario{
+
+#estatisticas_inventario {
     right: 4%;
     top: 17.5%;
     width: 585px;
@@ -84,22 +94,26 @@ img#menu{
     height: 408px;
     position: absolute;
 }
-img#prancheta{
+
+img#prancheta {
     left: 0px;
     z-index: 2;
     position: absolute;
 }
-#text_estatsc{
+
+#text_estatsc {
     width: 100%;
     position: absolute;
     text-align: center;
     z-index: 2 !important;
 }
-.estat{
+
+.estat {
     padding-left: 5%;
     position: absolute;
 }
-#prancheta_add{
+
+#prancheta_add {
     right: 4%;
     z-index: 8;
     top: 18.2%;
@@ -109,13 +123,15 @@ img#prancheta{
     height: 408px;
     position: absolute;
 }
-#inputs_principais{
+
+#inputs_principais {
     height: auto;
     width: 368px;
     padding-left: 3%;
     padding-top: 40px;
 }
-.input_prancheta{
+
+.input_prancheta {
     outline: 0;
     color: white;
     overflow: hidden;
@@ -126,15 +142,18 @@ img#prancheta{
     font-family: "Minecraftia";
     text-shadow: 3px 3px 0px rgb(62, 62, 62);
 }
-.input_check{
+
+.input_check {
     width: 42px;
     height: 42px;
     border: 1px solid black;
 }
-select{
+
+select {
     max-width: 368px;
 }
-#inserir_item{
+
+#inserir_item {
     right: 6%;
     bottom: 6%;
     width: 90%;
@@ -143,30 +162,36 @@ select{
     border: solid 0px white;
     transition: background-color .2s;
 }
-#inserir_item:hover{
+
+#inserir_item:hover {
     background-color: greenyellow;
 }
-#checkboxes{
+
+#checkboxes {
     top: 11%;
     right: 5%;
     width: 125px;
     height: 125px;
     position: absolute;
 }
-.icon_check{
+
+.icon_check {
     width: 38px;
 }
-#selecionar_sprite{
+
+#selecionar_sprite {
     padding-top: 5px;
 }
-#input_img{
+
+#input_img {
     width: 85%;
     padding: 0px;
     height: 34px;
     border-radius: 4px;
     border: 1px solid grey;
 }
-#preview_sprite{
+
+#preview_sprite {
     left: 25%;
     top: 200px;
     width: 48px;
@@ -175,175 +200,249 @@ select{
     margin-left: 30px;
     box-shadow: inset 0px 0px 10px black;
 }
-.slot_item, .slot_item_add{
+
+.slot_item,
+.slot_item_add {
     width: 54px;
     float: left;
     height: 54px;
 }
-.slot_item:hover, .slot_item_add:hover{
+
+.slot_item:hover,
+.slot_item_add:hover {
     background: url("../IMG/Interface/Claro/slot_hover.png") !important;
 }
-.icon_item{
+
+.icon_item {
     width: 48px;
     padding: 3px;
     height: 48px;
     display: block;
 }
-input, select{
+
+input,
+select {
     width: 480px;
     height: 40px;
     font-size: 24px;
     padding-left: 20px;
 }
-.Construcao, .Decorativos, .Redstone, .Transportes, .Diversos, .Alimentos, .Ferramentas, .Combate, .Pocoes, .Especiais, .Prancheta, .Generico, .oculto{
+
+.Construcao,
+.Decorativos,
+.Redstone,
+.Transportes,
+.Diversos,
+.Alimentos,
+.Ferramentas,
+.Combate,
+.Pocoes,
+.Especiais,
+.Prancheta,
+.Generico,
+.oculto {
     display: none;
 }
-#item_0, #item_1, #item_2, #item_3, #item_4, #item_5, #item_6, #item_7, #item_8, #item_9, #item_10, #item_11{
+
+#item_0,
+#item_1,
+#item_2,
+#item_3,
+#item_4,
+#item_5,
+#item_6,
+#item_7,
+#item_8,
+#item_9,
+#item_10,
+#item_11 {
     z-index: 3;
     width: 80px;
     height: 80px;
     position: absolute;
 }
-#item_0{
+
+#item_0 {
     top: 80%;
     left: 3%;
 }
-#item_1{
+
+#item_1 {
     top: 80%;
     left: 16.5%;
 }
-#item_2{
+
+#item_2 {
     top: 80%;
     left: 30%;
 }
-#item_3{
+
+#item_3 {
     top: 80%;
     left: 44%;
 }
-#item_9{
+
+#item_9 {
     top: 80%;
     left: 69%;
 }
-#item_10{
+
+#item_10 {
     top: 80%;
     left: 82%;
 }
-#item_4{
+
+#item_4 {
     left: 3%;
     top: 1650%;
 }
-#item_5{
+
+#item_5 {
     top: 1650%;
     left: 16.5%;
 }
-#item_6{
+
+#item_6 {
     left: 30%;
     top: 1650%;
 }
-#item_7{
+
+#item_7 {
     left: 44%;
     top: 1650%;
 }
-#item_8{
+
+#item_8 {
     left: 58%;
     top: 1650%;
 }
-#item_11{
+
+#item_11 {
     left: 82%;
     top: 1650%;
 }
-.aba_menu{
+
+.aba_menu {
     top: 15px;
     z-index: 2;
     position: absolute;
 }
-.opcoes_laterais{
+
+.opcoes_laterais {
     z-index: 0 !important;
     animation: puxa_campos .5s;
 }
-.opcoes_baixo{
+
+.opcoes_baixo {
     left: 0%;
     top: 96%;
     position: absolute;
     z-index: 0 !important;
     animation: puxa_campos2 .5s;
 }
-#img_decorativos{
+
+#img_decorativos {
     left: 16.2%;
 }
-#img_redstone{
+
+#img_redstone {
     left: 30%;
 }
-#img_transportes{
+
+#img_transportes {
     left: 43.8%;
 }
-#img_especiais{
+
+#img_especiais {
     left: 68.6%;
 }
-#img_pesquisa{
+
+#img_pesquisa {
     left: 81.9%;
 }
-#img_diversos{
+
+#img_diversos {
     top: 1641%;
 }
-#img_alimentos{
+
+#img_alimentos {
     top: 1642%;
     left: 101px;
 }
-#img_ferramentas{
+
+#img_ferramentas {
     top: 1642%;
     left: 188.6px;
 }
-#img_combate{
+
+#img_combate {
     top: 1642%;
     left: 43.8%;
 }
-#img_pocoes{
+
+#img_pocoes {
     top: 1642%;
     left: 57.6%;
 }
-#img_configs_2, #img_versoes_2, #img_coletaveis_2, #img_genericos_2, #img_ocultos_2{
+
+#img_configs_2,
+#img_versoes_2,
+#img_coletaveis_2,
+#img_genericos_2,
+#img_ocultos_2 {
     display: none;
     z-index: 1 !important;
 }
-#img_configs, #img_configs_2{
+
+#img_configs,
+#img_configs_2 {
     z-index: 0;
     top: 100px;
     right: -5.9%;
     position: absolute;
 }
-#img_coletaveis, #img_coletaveis_2{
+
+#img_coletaveis,
+#img_coletaveis_2 {
     z-index: 0;
     top: 190px;
     right: -5.9%;
     position: absolute;
 }
-#img_versoes, #img_versoes_2{
+
+#img_versoes,
+#img_versoes_2 {
     z-index: 0;
     top: 280px;
     right: -5.9%;
     display: none;
     position: absolute;
 }
-#img_genericos, #img_genericos_2{
+
+#img_genericos,
+#img_genericos_2 {
     z-index: 0;
     top: 370px;
     right: -5.9%;
     position: absolute;
 }
-#img_prancheta{
+
+#img_prancheta {
     top: 1680%;
     left: 82.4%;
 }
-#img_oculto{
+
+#img_oculto {
     left: 0%;
     top: 100%;
     z-index: 1;
 }
-#img_ocultos_2{
+
+#img_ocultos_2 {
     left: 3px;
 }
-#barra_pesquisa_input{
+
+#barra_pesquisa_input {
     top: 110px;
     z-index: 4;
     outline: 0;
@@ -358,48 +457,59 @@ input, select{
     font-family: "Minecraftia";
     text-shadow: 3px 3px 0px rgb(62, 62, 62);
 }
-#barra_pesquisa{
+
+#barra_pesquisa {
     top: 110px;
     right: 16.6%;
 }
-.input_prancheta{
+
+.input_prancheta {
     left: 4%;
     width: 356px;
     padding-left: 10px;
 }
-#barra_nome{
+
+#barra_nome {
     top: 12%;
 }
-#barra_descricao{
+
+#barra_descricao {
     top: 30%;
     z-index: 4;
 }
-#barra_nome_interno{
+
+#barra_nome_interno {
     top: 21%;
 }
-#barra_nome_interno_pr{
+
+#barra_nome_interno_pr {
     top: 25%;
 }
-#barra_aliases{
+
+#barra_aliases {
     top: 30%;
 }
-#barra_durabilidade{
+
+#barra_durabilidade {
     top: 40%;
 }
-#btn_fabricacao{
+
+#btn_fabricacao {
     height: 45px;
     width: 368px;
     font-size: 20px;
     padding-top: 5px;
     font-family: 'Minecraftia';
 }
-#titulo_aba{
+
+#titulo_aba {
     top: 370%;
     z-index: 3;
     left: 6.4%;
     position: absolute;
 }
-#barra_rolagem{
+
+#barra_rolagem {
     z-index: 2;
     top: 153px;
     right: 54px;
@@ -407,17 +517,20 @@ input, select{
     height: 330px;
     position: absolute;
 }
-#barra_scroll{
+
+#barra_scroll {
     z-index: 2;
     width: 36px;
     height: 45px;
     cursor: move;
     position: absolute;
 }
-#barra_scroll_block{
+
+#barra_scroll_block {
     display: none;
 }
-#img_detalhes{
+
+#img_detalhes {
     top: 30%;
     z-index: 1;
     right: 50%;
@@ -428,7 +541,8 @@ input, select{
     transform: scale(3);
     filter: drop-shadow(0px 0px 3px black);
 }
-#img_detalhes_classic{
+
+#img_detalhes_classic {
     top: 30%;
     right: 35%;
     z-index: 1;
@@ -440,30 +554,38 @@ input, select{
     image-rendering: pixelated;
     filter: drop-shadow(0px 0px 3px black);
 }
-#btn_voltar, #btn_apagar{
+
+#btn_voltar,
+#btn_apagar {
     z-index: 2;
     width: 300px;
     font-size: 30px;
     border: solid 0px white;
     transition: background-color .2s;
 }
-#btn_voltar:hover{
+
+#btn_voltar:hover {
     background-color: gray;
 }
-#btn_apagar:hover, #button_apagar_dados:hover{
+
+#btn_apagar:hover,
+#button_apagar_dados:hover {
     background-color: rgb(241, 101, 101);
 }
-#btn_voltar{
+
+#btn_voltar {
     top: 2%;
     right: 5%;
     position: absolute;
 }
-#btn_apagar{
+
+#btn_apagar {
     top: 2%;
     left: 6.5%;
     position: absolute;
 }
-#lista_versoes{
+
+#lista_versoes {
     top: 7%;
     left: 70%;
     z-index: 10;
@@ -476,29 +598,34 @@ input, select{
     margin-left: -219px;
     background: url("../IMG/Interface/Livro.png") no-repeat;
 }
-a{
+
+a {
     color: blue !important;
     text-decoration: none !important;
 }
+
 ::-webkit-scrollbar {
     width: 0px;
 }
-#menu_user{
+
+#menu_user {
     right: 2%;
     bottom: 5%;
     z-index: 1;
     position: absolute;
-    animation: puxa_botoes_2 2s;    
+    animation: puxa_botoes_2 2s;
 }
-#botoes_ferramentas{
+
+#botoes_ferramentas {
     top: 5%;
     right: 2%;
     z-index: 1;
     position: absolute;
     animation: puxa_botoes 2s;
 }
-.bttn_frrm{ 
-    width: 85%; 
+
+.bttn_frrm {
+    width: 85%;
     height: 34px;
     padding: 10px;
     margin-left: 4px;
@@ -506,30 +633,38 @@ a{
     background-color: white;
     color: black !important;
     transition: background-color .2s;
-    box-shadow: 4px 0px 0px 0px black, 0px 4px 0px 0px black, -4px 0px 0px 0px #c6c6c6, 4px 4px 0px 0px black, 0px -4px 0px 0px white, -4px 4px 0px 0px #8b8b8b, -4px -4px 0px 0px white, 4px -4px 0px 0px #8b8b8b, 5px 5px 0px -30px rgba(0,0,0,0);
+    box-shadow: 4px 0px 0px 0px black, 0px 4px 0px 0px black, -4px 0px 0px 0px #c6c6c6, 4px 4px 0px 0px black, 0px -4px 0px 0px white, -4px 4px 0px 0px #8b8b8b, -4px -4px 0px 0px white, 4px -4px 0px 0px #8b8b8b, 5px 5px 0px -30px rgba(0, 0, 0, 0);
 }
-.bttn_frrm:hover{
+
+.bttn_frrm:hover {
     background-color: rgb(224, 193, 135);
 }
-#bttn_programmers_atv{
+
+#bttn_programmers_atv {
     transition: background-color .2s;
     background-color: rgb(224, 193, 135);
 }
-#bttn_programmers_atv:hover{
+
+#bttn_programmers_atv:hover {
     background-color: rgb(180, 147, 85);
 }
-#button_importar_dados{
+
+#button_importar_dados {
     transition: background-color .2s;
     background-color: rgb(154, 231, 212);
 }
-#button_importar_dados:hover{
+
+#button_importar_dados:hover {
     background-color: rgb(100, 197, 173);
 }
-#button_apagar_dados, #btn_apagar{
+
+#button_apagar_dados,
+#btn_apagar {
     transition: background-color .2s;
     background-color: rgb(253, 179, 179);
 }
-#importar_dados_json{
+
+#importar_dados_json {
     top: 0px;
     left: 0px;
     z-index: 11;
@@ -542,7 +677,8 @@ a{
     text-align: center;
     background-color: rgba(0, 0, 0, .7);
 }
-#bttns_navegacao{
+
+#bttns_navegacao {
     top: 1%;
     left: 50%;
     width: 104px;
@@ -550,7 +686,8 @@ a{
     margin-left: -45px;
     position: absolute;
 }
-.navegacao{
+
+.navegacao {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -558,10 +695,12 @@ a{
     background-color: wheat;
     transition: background-color .2s;
 }
-.navegacao:hover{
+
+.navegacao:hover {
     background-color: lightskyblue;
 }
-#infos_versao{
+
+#infos_versao {
     top: 5%;
     right: 4%;
     right: 15%;
@@ -573,35 +712,42 @@ a{
     position: absolute;
     text-shadow: 3px 3px 0px rgb(62, 62, 62);
 }
-.botoes_menu{
+
+.botoes_menu {
     display: none;
 }
-#prancheta_att{
+
+#prancheta_att {
     width: 100%;
     height: 100%;
     position: absolute;
 }
-#selecionador{
+
+#selecionador {
     width: 378px;
     height: 350px;
     padding-top: 5%;
     padding-left: 3%;
 }
-.pag_1{
+
+.pag_1 {
     z-index: 1;
     width: 378px;
     height: 300px;
 }
-#pag_1{
+
+#pag_1 {
     display: none;
 }
-.pag_2{
+
+.pag_2 {
     z-index: 1;
     width: 378px;
     display: none;
     height: 300px;
 }
-.troca_pag_button{
+
+.troca_pag_button {
     width: 378px;
     padding: 2px;
     font-size: 30px;
@@ -612,10 +758,12 @@ a{
     border: solid 1px gray;
     transition: background-color .2s;
 }
-.troca_pag_button:hover{
+
+.troca_pag_button:hover {
     background-color: gray;
 }
-#menu_criacao{
+
+#menu_criacao {
     top: 50%;
     left: 50%;
     width: 1071px;
@@ -625,29 +773,36 @@ a{
     margin-left: -535px;
     background-image: url("../IMG/Interface/Claro/crafting.png");
 }
-.item_crafting{
+
+.item_crafting {
     z-index: 3;
     width: 90px;
     left: 155px;
     height: 75px;
     position: absolute;
 }
-.itc_1{
+
+.itc_1 {
     top: 75px;
 }
-.itc_2{
+
+.itc_2 {
     top: 155px;
 }
-.itc_3{
+
+.itc_3 {
     top: 237px;
 }
-.itc_4{
+
+.itc_4 {
     top: 317px;
 }
-.itc_5{
+
+.itc_5 {
     top: 398px;
 }
-#seta_esquerda_crafting{
+
+#seta_esquerda_crafting {
     z-index: 3;
     left: 361px;
     width: 33px;
@@ -656,10 +811,12 @@ a{
     position: absolute;
     background-image: url("../IMG/Interface/Claro/seta_esquerda.png");
 }
-#seta_esquerda_crafting:hover{
+
+#seta_esquerda_crafting:hover {
     background-image: url("../IMG/Interface/Claro/seta_esquerda_hover.png");
 }
-#seta_direita_crafting{
+
+#seta_direita_crafting {
     z-index: 3;
     left: 523px;
     width: 33px;
@@ -668,24 +825,28 @@ a{
     position: absolute;
     background-image: url("../IMG/Interface/Claro/seta_direita.png");
 }
-#seta_direta_crafting:hover{
+
+#seta_direta_crafting:hover {
     background-image: url("../IMG/Interface/Claro/seta_direita_hover.png") !important;
 }
-#abas_craft_organiza{
+
+#abas_craft_organiza {
     top: 70px;
     left: 148px;
     width: 105px;
     position: absolute;
     z-index: 1 !important;
 }
-.aba_menu_craft{
+
+.aba_menu_craft {
     width: 105px;
     height: 78px;
     display: none;
     padding-top: 3px;
     position: absolute;
 }
-#prancheta_itens_crafting{
+
+#prancheta_itens_crafting {
     top: 93px;
     z-index: 2;
     left: 129px;
@@ -694,37 +855,45 @@ a{
     position: absolute;
     overflow-y: scroll;
 }
-#img_craft_ferramentas{
+
+#img_craft_ferramentas {
     padding-top: 84px;
 }
-#img_craft_blocos{
+
+#img_craft_blocos {
     padding-top: 165px;
 }
-#img_craft_diversos{
+
+#img_craft_diversos {
     padding-top: 246px;
 }
-#img_craft_redstone{
+
+#img_craft_redstone {
     padding-top: 327px;
 }
-#num_pagina_craft{
+
+#num_pagina_craft {
     color: white;
     font-size: 24px;
     padding-top: 393px;
     padding-left: 270px;
 }
-.slot_item_crafting{
+
+.slot_item_crafting {
     width: 75px;
     float: left;
     height: 75px;
     background-image: url("../IMG/Interface/Claro/slot_item_crafting.png");
 }
-.sprite_slot_crafting{
+
+.sprite_slot_crafting {
     width: 48px;
     height: 48px;
     padding-top: 12px;
     padding-left: 12px;
 }
-#grid_crafting{
+
+#grid_crafting {
     top: 48px;
     z-index: 2;
     right: 279px;
@@ -733,10 +902,12 @@ a{
     position: absolute;
     background-image: url("../IMG/Interface/Claro/slot.png");
 }
-.grid_craft:hover{
+
+.grid_craft:hover {
     background-image: url("../IMG/Interface/Claro/slot_hover.png");
 }
-#produto_final{
+
+#produto_final {
     top: 90px;
     z-index: 2;
     width: 78px;
@@ -744,7 +915,8 @@ a{
     height: 78px;
     position: absolute;
 }
-#sprite_produto{
+
+#sprite_produto {
     width: 48px;
     float: left;
     height: 48px;
@@ -753,7 +925,8 @@ a{
     position: absolute;
     z-index: 0 !important;
 }
-#qtd_produto{
+
+#qtd_produto {
     right: 0px;
     color: white;
     font-size: 24px;
@@ -762,17 +935,22 @@ a{
     padding-right: 12px;
     text-shadow: 3px 3px 0px #3e3e3e;
 }
-.gric{
+
+.gric {
     width: 48px;
     float: left;
     margin: 3px;
     height: 48px;
 }
-.gric_0, .gric_8, .gric_5{
+
+.gric_0,
+.gric_8,
+.gric_5 {
     background-repeat: no-repeat;
     background-image: url("../IMG/Itens/new/Construcao/acacia_log.png");
 }
-#craft_prancheta{
+
+#craft_prancheta {
     top: 5%;
     right: 5%;
     width: 528px;
@@ -780,17 +958,20 @@ a{
     position: absolute;
     background-image: url("../IMG/Interface/Claro/craft.png");
 }
-#slots_atalho_itens{
+
+#slots_atalho_itens {
     left: 21px;
     height: 54px;
     width: 486px;
     bottom: 21px;
     position: absolute;
 }
-#craft_ativo{
+
+#craft_ativo {
     background-image: url("../IMG/Interface/Claro/slot_hover.png") !important;
 }
-#btn_confirma_craft{
+
+#btn_confirma_craft {
     top: 180px;
     right: 21px;
     height: 45px;
@@ -802,20 +983,24 @@ a{
     font-family: 'Minecraftia';
     transition: background-color .2s;
 }
-#btn_confirma_craft:hover{
+
+#btn_confirma_craft:hover {
     background-color: rgb(100, 197, 173);
 }
-.input_hidden{
+
+.input_hidden {
     display: none;
 }
-#click_abrir_crafting{
+
+#click_abrir_crafting {
     top: 102px;
     width: 60px;
     height: 54px;
     right: 453px;
     position: absolute;
 }
-#prancheta_criar_crafting{
+
+#prancheta_criar_crafting {
     top: 0px;
     left: 0px;
     width: 0px;
@@ -824,14 +1009,16 @@ a{
     position: fixed;
     z-index: 8 !important;
 }
-#btn_fecha_tela_craft{
+
+#btn_fecha_tela_craft {
     right: 92px;
     width: 88px;
     bottom: 21px;
     position: absolute;
     z-index: 9 !important;
 }
-#preview_item_craft{
+
+#preview_item_craft {
     z-index: 2;
     width: 162px;
     right: 136px;
@@ -839,13 +1026,15 @@ a{
     bottom: 105px;
     position: absolute;
 }
-.textos_craft{
+
+.textos_craft {
     margin-top: 11px;
     margin-left: 87px;
     position: absolute;
     font-size: 24px !important;
 }
-.text_craft_2{
+
+.text_craft_2 {
     margin-top: 210px;
     margin-left: 24px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
@@ -13,6 +14,7 @@
     <script src="../JS/jquery-3.4.1.js"></script>
     <script src="../JS/engine.js"></script>
 </head>
+
 <body onload="sincroniza_tema(undefined, 1)">
 
     <div id="minetip-tooltip">
@@ -24,7 +26,7 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <script>
-            for(let i = 0; i < 19; i += 2){
+            for (let i = 0; i < 19; i += 2) {
                 let x = i + 1;
 
                 document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`);
@@ -32,21 +34,23 @@
             }
         </script>
     </div>
-    
+
     <?php include_once "../PHP/conexao_obsoleta.php";
     $id_item_alvo = $_GET["id"];
-    
+
     $busca_itens = "SELECT * FROM item WHERE coletavelSurvival = 1";
     $executa = $conexao->query($busca_itens); ?>
-    
+
     <div id="menu_user">
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
     <!-- Menu interativo -->
-    <?php $local_requisicao = 2; $graphics = false; $versao_jogo = 19;
+    <?php $local_requisicao = 2;
+    $graphics = false;
+    $versao_jogo = 19;
     include_once "../modules/menu_completo.php"; ?>
-    
+
     <a class="bttn_frrm" id="btn_fecha_tela_craft" href="../pages/item_detalhes.php?id=<?php echo $id_item_alvo ?>" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
 
     <form id="craft_prancheta" action="../PHP/item_registra_craft.php" method="POST">
@@ -57,7 +61,7 @@
         <div id="slots_atalho_itens"></div>
 
         <div id="grid_crafting">
-            <?php for($i = 0; $i < 9; $i++){
+            <?php for ($i = 0; $i < 9; $i++) {
                 echo "<div class='grid_craft gric' onclick='seta_item_craft($i)'></div>";
             } ?>
         </div>
@@ -75,15 +79,15 @@
     </form>
 
     <?php
-        $coleta_receita = "SELECT * FROM crafting_item WHERE id_item = $id_item_alvo";
-        $executa_coleta = $conexao->query($coleta_receita);
+    $coleta_receita = "SELECT * FROM crafting_item WHERE id_item = $id_item_alvo";
+    $executa_coleta = $conexao->query($coleta_receita);
 
-        $receita = "";
+    $receita = "";
 
-        if($executa_coleta -> num_rows > 0){
-            $dados4 = $executa_coleta->fetch_assoc();
-            $receita = $dados4["craft"];
-        } ?>
+    if ($executa_coleta->num_rows > 0) {
+        $dados4 = $executa_coleta->fetch_assoc();
+        $receita = $dados4["craft"];
+    } ?>
 </body>
 
 <script type="text/javascript">
@@ -96,4 +100,5 @@
         mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2);
     }, 500);
 </script>
+
 </html>

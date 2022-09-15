@@ -1,36 +1,44 @@
-#checkboxes{
+#checkboxes {
     right: 15%;
 }
-#separador_checks{
+
+#separador_checks {
     width: 300px;
 }
-#opcoes_esquerda{
+
+#opcoes_esquerda {
     float: left;
     padding-left: 1%;
 }
-#opcoes_direita{
+
+#opcoes_direita {
     float: left;
     width: 100px;
     padding-left: 6%;
 }
-#selecionar_sprite{
+
+#selecionar_sprite {
     width: 148px;
     padding-left: 5%;
 }
-#input_img{
+
+#input_img {
     width: 194px;
 }
-#preview_sprite{
+
+#preview_sprite {
     margin-left: 50%;
 }
-.caixa_item_detalhes{
+
+.caixa_item_detalhes {
     position: absolute;
-	top: 50% !important;
-	left: 40% !important;
-	display: block !important;
+    top: 50% !important;
+    left: 40% !important;
+    display: block !important;
     z-index: 3;
 }
-#minetip-tooltip{
+
+#minetip-tooltip {
     top: 10%;
     left: 35%;
     position: fixed;
