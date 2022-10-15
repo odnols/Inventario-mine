@@ -21,11 +21,16 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-        for ($i = 0; $i < 19; $i += 2) {
-            $x = $i + 1;
+        for ($i = 0; $i < 20; $i += 3) {
 
-            echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a> |";
-            echo " <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a><br>";
+            $x = $i + 1;
+            $x2 = $i + 2;
+            
+            echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a>";
+            echo " | <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a>";
+            echo " | <a href='#' onclick='categoria(\"1.$x2\", 2)'>1.$x2</a>";
+
+            echo "<br>";
         }
         ?>
     </div>
@@ -166,7 +171,7 @@
                     <option value="outro">Outro</option>
                     <?php
 
-                    for ($i = 19; $i >= 0; $i--) {
+                    for ($i = 20; $i >= 0; $i--) {
                         echo "<option value='$i'>1.$i</option>";
                     } ?>
                 </select>
@@ -192,7 +197,7 @@
 
     <!-- Menu interativo -->
     <?php $local_requisicao = 1;
-    $versao_jogo = 19;
+    $versao_jogo = 20;
     include_once "../modules/menu_completo.php"; ?>
 
     <script src="../JS/engine.js"></script>

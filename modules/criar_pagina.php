@@ -22,7 +22,7 @@ ob_start(); ?>
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <script>
-            for (let i = 0; i < 19; i += 2) {
+            for (let i = 0; i < 20; i += 2) {
                 let x = i + 1;
 
                 document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`);

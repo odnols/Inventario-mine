@@ -18,7 +18,7 @@
     if (isset($_GET["versao_jogo"]))
         $versao_jogo = $_GET["versao_jogo"];
 
-    if (!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 19)
+    if (!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 20)
         $versao_jogo = 5; ?>
 </head>
 
@@ -32,15 +32,21 @@
         if (!isset($_GET["dg"]))
             $graphics = false;
 
-        for ($i = 0; $i < 19; $i += 2) {
-            $x = $i + 1;
-
+        for ($i = 0; $i < 20; $i += 3) {
             echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a>";
 
-            if ($x <= $versao_jogo)
-                echo " | <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a><br>";
+            $x = $i + 1;
+            $x2 = $i + 2;
 
-            if ($versao_jogo == $i || $versao_jogo == $x) // Para o menu
+            if ($i + 1 <= $versao_jogo)
+                echo " | <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a>";
+
+            if ($i + 2 <= $versao_jogo)
+                echo " | <a href='#' onclick='categoria(\"1.$x2\", 2)'>1.$x2</a>";
+
+            echo "<br>";
+
+            if ($versao_jogo == $i || $versao_jogo == $i + 1 || $versao_jogo == $i + 2) // Para o menu
                 break;
         } ?>
     </div>
@@ -52,7 +58,7 @@
                     < </button></a>
         <?php }
 
-        if ($versao_jogo < 19) { ?>
+        if ($versao_jogo < 20) { ?>
             <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>"><button class="navegacao" onmouseover="toolTip('Próxima versão')" onmouseout="toolTip()"> > </button></a>
         <?php } ?>
 

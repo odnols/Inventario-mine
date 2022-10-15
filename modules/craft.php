@@ -26,7 +26,7 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <script>
-            for (let i = 0; i < 19; i += 2) {
+            for (let i = 0; i < 20; i += 2) {
                 let x = i + 1;
 
                 document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`);
@@ -48,7 +48,7 @@
     <!-- Menu interativo -->
     <?php $local_requisicao = 2;
     $graphics = false;
-    $versao_jogo = 19;
+    $versao_jogo = 20;
     include_once "../modules/menu_completo.php"; ?>
 
     <a class="bttn_frrm" id="btn_fecha_tela_craft" href="../pages/item_detalhes.php?id=<?php echo $id_item_alvo ?>" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
