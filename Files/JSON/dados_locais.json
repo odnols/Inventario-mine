@@ -2063,13 +2063,7 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 1,
-        "cor_item": [
-            {
-                "id_cor": "48",
-                "tipo_item": "3"
-            }
-        ]
+        "programmer_art": 1
     },
     {
         "id_item": 110,
@@ -7664,7 +7658,7 @@
         "id_item": 374,
         "nome_icon": "stripped_crimson_stem.png",
         "tipo_item": "Construcao",
-        "nome_item": "Tronco carmesim descascado",
+        "nome_item": "Caule carmesim descascado",
         "coletavel": 1,
         "nome_interno": "stripped_crimson_stem",
         "empilhavel": 64,
@@ -7680,7 +7674,7 @@
         "id_item": 375,
         "nome_icon": "stripped_warped_stem.png",
         "tipo_item": "Construcao",
-        "nome_item": "Tronco distorcido descascado",
+        "nome_item": "Caule distorcido descascado",
         "coletavel": 1,
         "nome_interno": "stripped_warped_stem",
         "empilhavel": 64,
@@ -29260,7 +29254,7 @@
         "versao_add": 19,
         "renovavel": 1,
         "aliases": null,
-        "descricao": "[&rSentimento",
+        "descricao": "[&rSensa\u00e7\u00e3o",
         "oculto_invt": 0,
         "fabricavel": 0,
         "programmer_art": 0
@@ -29324,7 +29318,7 @@
         "versao_add": 19,
         "renovavel": 1,
         "aliases": null,
-        "descricao": "[&rSonho",
+        "descricao": "[&rDevaneio",
         "oculto_invt": 0,
         "fabricavel": 0,
         "programmer_art": 0
@@ -29343,7 +29337,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "684",
+                "receita": "425,,425,368,368,368,368,368,368",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1464,
@@ -29359,7 +29360,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "683",
+                "receita": "425,,425,369,369,369,369,369,369",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1465,
@@ -29375,7 +29383,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "682",
+                "receita": "425,,425,370,370,370,370,370,370",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1466,
@@ -29391,7 +29406,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "681",
+                "receita": "425,,425,371,371,371,371,371,371",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1467,
@@ -29407,7 +29429,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "680",
+                "receita": "425,,425,372,372,372,372,372,372",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1468,
@@ -29423,7 +29452,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "679",
+                "receita": "425,,425,373,373,373,373,373,373",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1469,
@@ -29439,7 +29475,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "678",
+                "receita": "425,,425,374,374,374,374,374,374",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1470,
@@ -29455,7 +29498,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "676",
+                "receita": "425,,425,375,375,375,375,375,375",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1471,
@@ -29471,7 +29521,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "677",
+                "receita": "425,,425,1422,1422,1422,1422,1422,1422",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1472,
@@ -29487,7 +29544,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "685",
+                "receita": "1051,1051,,1051,1051",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1473,
@@ -29583,7 +29647,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "686",
+                "receita": ",,,1472,,1472,1472,1472,1472",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1479,
@@ -29599,7 +29670,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "687",
+                "receita": ",,,1478,731",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1480,
@@ -29615,7 +29693,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "688",
+                "receita": "353,353,353,408,408,408,353,353,353",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1481,
@@ -29631,7 +29716,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "689",
+                "receita": "1472,1472,1472,1472,1472,1472,,,",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1482,
@@ -29647,7 +29739,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "690",
+                "receita": "1472,198,1472,1472,198,1472",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1483,
@@ -29663,7 +29762,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "691",
+                "receita": "198,1472,198,198,1472,198",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1484,
@@ -29679,7 +29785,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "692",
+                "receita": ",,,1472,1472,,,",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1485,
@@ -29695,7 +29808,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "693",
+                "receita": ",,,1472,1472,1472",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1486,
@@ -29711,7 +29831,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 1
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "694",
+                "receita": "355,,,355,355,,355,355,355",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1487,
@@ -29727,7 +29854,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "695",
+                "receita": "1472,,,1472,1472,,1472,1472,1472",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1488,
@@ -29743,7 +29877,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "696",
+                "receita": "1472,1472,,1472,1472,,1472,1472",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1489,
@@ -29759,7 +29900,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "697",
+                "receita": ",,,,1472",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1490,
@@ -29775,7 +29923,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "698",
+                "receita": "1472,1472,1472,1472,1472,1472,,198",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1491,
@@ -29791,7 +29946,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "699",
+                "receita": "425,,425,1472,1472,1472,1472,1472,1472",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1492,
@@ -29807,7 +29969,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "700",
+                "receita": ",1485,,,1485",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1493,
@@ -29823,7 +29992,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "701",
+                "receita": ",,,1492,1492,1492",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1494,
@@ -29839,6 +30015,429 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "702",
+                "receita": "1492,,,1492,1492,,1492,1492,1492",
+                "produtos": "1"
+            }
+        ]
+    },
+    {
+        "id_item": 1495,
+        "nome_icon": "iron_golem_spawn_egg.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Ovo gerador de golem de ferro",
+        "coletavel": 0,
+        "nome_interno": "iron_golem_spawn_egg",
+        "empilhavel": 64,
+        "versao_add": 20,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
         "programmer_art": 0
+    },
+    {
+        "id_item": 1496,
+        "nome_icon": "snow_golem_spawn_egg.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Ovo gerador de golem de neve",
+        "coletavel": 0,
+        "nome_interno": "snow_golem_spawn_egg",
+        "empilhavel": 64,
+        "versao_add": 20,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1497,
+        "nome_icon": "ender_dragon_spawn_egg.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Ovo gerador de drag\u00e3o",
+        "coletavel": 0,
+        "nome_interno": "ender_dragon_spawn_egg",
+        "empilhavel": 64,
+        "versao_add": 20,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1498,
+        "nome_icon": "whiter_spawn_egg.png",
+        "tipo_item": "Diversos",
+        "nome_item": "Ovo gerador de wither",
+        "coletavel": 0,
+        "nome_interno": "whiter_spawn_egg",
+        "empilhavel": 64,
+        "versao_add": 20,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1499,
+        "nome_icon": "light_15.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_15",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "173",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1500,
+        "nome_icon": "light_14.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_14",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "174",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1501,
+        "nome_icon": "light_13.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_13",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "175",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1502,
+        "nome_icon": "light_12.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_12",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "176",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1503,
+        "nome_icon": "light_11.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_11",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "177",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1504,
+        "nome_icon": "light_10.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_10",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "178",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1505,
+        "nome_icon": "light_9.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_9",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "179",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1506,
+        "nome_icon": "light_8.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_8",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "180",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1507,
+        "nome_icon": "light_7.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_7",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "181",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1508,
+        "nome_icon": "light_6.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_6",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "182",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1509,
+        "nome_icon": "light_5.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_5",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "183",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1510,
+        "nome_icon": "light_4.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_4",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "184",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1511,
+        "nome_icon": "light_3.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_3",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "185",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1512,
+        "nome_icon": "light_2.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_2",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "186",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1513,
+        "nome_icon": "light_1.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_1",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "187",
+                "tipo_item": "3"
+            }
+        ]
+    },
+    {
+        "id_item": 1514,
+        "nome_icon": "light_0.png",
+        "tipo_item": "Redstone",
+        "nome_item": "Luz",
+        "coletavel": 0,
+        "nome_interno": "light_0",
+        "empilhavel": 64,
+        "versao_add": 17,
+        "renovavel": 0,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 1,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "188",
+                "tipo_item": "3"
+            }
+        ]
     }
 ]

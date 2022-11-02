@@ -506,6 +506,8 @@ select {
     top: 370%;
     z-index: 3;
     left: 6.4%;
+    height: 30px;
+    overflow: hidden;
     position: absolute;
 }
 
