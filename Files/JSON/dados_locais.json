@@ -2398,7 +2398,7 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0
+        "programmer_art": 1
     },
     {
         "id_item": 128,
@@ -2414,7 +2414,7 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0
+        "programmer_art": 1
     },
     {
         "id_item": 129,
@@ -2446,7 +2446,7 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0
+        "programmer_art": 1
     },
     {
         "id_item": 131,
@@ -2462,7 +2462,7 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 0,
-        "programmer_art": 0
+        "programmer_art": 1
     },
     {
         "id_item": 132,
@@ -5948,7 +5948,7 @@
         "id_item": 368,
         "nome_icon": "stripped_oak_log.png",
         "tipo_item": "Construcao",
-        "nome_item": "Tronco de carvalo descascado",
+        "nome_item": "Tronco de carvalho descascado",
         "coletavel": 1,
         "nome_interno": "stripped_oak_log",
         "empilhavel": 64,
@@ -28648,11 +28648,11 @@
     },
     {
         "id_item": 1420,
-        "nome_icon": "mangroove_fence.png",
+        "nome_icon": "mangrove_fence.png",
         "tipo_item": "Decorativos",
         "nome_item": "Cerca de mangue",
         "coletavel": 1,
-        "nome_interno": "mangroove_fence",
+        "nome_interno": "mangrove_fence",
         "empilhavel": 64,
         "versao_add": 19,
         "renovavel": 1,
@@ -29509,11 +29509,11 @@
     },
     {
         "id_item": 1471,
-        "nome_icon": "mangroove_hanging_sign.png",
+        "nome_icon": "mangrove_hanging_sign.png",
         "tipo_item": "Decorativos",
         "nome_item": "Placa suspensa de mangue",
         "coletavel": 1,
-        "nome_interno": "mangroove_hanging_sign",
+        "nome_interno": "mangrove_hanging_sign",
         "empilhavel": 16,
         "versao_add": 20,
         "renovavel": 1,
@@ -30091,7 +30091,7 @@
     {
         "id_item": 1499,
         "nome_icon": "light_15.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_15",
@@ -30113,7 +30113,7 @@
     {
         "id_item": 1500,
         "nome_icon": "light_14.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_14",
@@ -30135,7 +30135,7 @@
     {
         "id_item": 1501,
         "nome_icon": "light_13.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_13",
@@ -30157,7 +30157,7 @@
     {
         "id_item": 1502,
         "nome_icon": "light_12.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_12",
@@ -30179,7 +30179,7 @@
     {
         "id_item": 1503,
         "nome_icon": "light_11.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_11",
@@ -30201,7 +30201,7 @@
     {
         "id_item": 1504,
         "nome_icon": "light_10.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_10",
@@ -30223,7 +30223,7 @@
     {
         "id_item": 1505,
         "nome_icon": "light_9.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_9",
@@ -30245,7 +30245,7 @@
     {
         "id_item": 1506,
         "nome_icon": "light_8.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_8",
@@ -30267,7 +30267,7 @@
     {
         "id_item": 1507,
         "nome_icon": "light_7.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_7",
@@ -30289,7 +30289,7 @@
     {
         "id_item": 1508,
         "nome_icon": "light_6.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_6",
@@ -30311,7 +30311,7 @@
     {
         "id_item": 1509,
         "nome_icon": "light_5.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_5",
@@ -30333,7 +30333,7 @@
     {
         "id_item": 1510,
         "nome_icon": "light_4.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_4",
@@ -30355,7 +30355,7 @@
     {
         "id_item": 1511,
         "nome_icon": "light_3.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_3",
@@ -30377,7 +30377,7 @@
     {
         "id_item": 1512,
         "nome_icon": "light_2.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_2",
@@ -30399,7 +30399,7 @@
     {
         "id_item": 1513,
         "nome_icon": "light_1.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_1",
@@ -30421,7 +30421,7 @@
     {
         "id_item": 1514,
         "nome_icon": "light_0.png",
-        "tipo_item": "Redstone",
+        "tipo_item": "Especiais",
         "nome_item": "Luz",
         "coletavel": 0,
         "nome_interno": "light_0",
@@ -30439,5 +30439,98 @@
                 "tipo_item": "3"
             }
         ]
+    },
+    {
+        "id_item": 1515,
+        "nome_icon": "bamboo_block.png",
+        "tipo_item": "Construcao",
+        "nome_item": "Bloco de bambu",
+        "coletavel": 1,
+        "nome_interno": "bamboo_block",
+        "empilhavel": 64,
+        "versao_add": 20,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 1,
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "703",
+                "receita": "1051,1051,1051,1051,1051,1051,1051,1051,1051",
+                "produtos": "1"
+            }
+        ]
+    },
+    {
+        "id_item": 1516,
+        "nome_icon": "stripped_bamboo_block.png",
+        "tipo_item": "Construcao",
+        "nome_item": "Bloco de bambu descascado",
+        "coletavel": 1,
+        "nome_interno": "stripped_bamboo_block",
+        "empilhavel": 64,
+        "versao_add": 20,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1517,
+        "nome_icon": "piglin_head.png",
+        "tipo_item": "Decorativos",
+        "nome_item": "Cabe\u00e7a de piglin",
+        "coletavel": 1,
+        "nome_interno": "piglin_head",
+        "empilhavel": 64,
+        "versao_add": 20,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 0,
+        "programmer_art": 0,
+        "cor_item": [
+            {
+                "id_cor": "189",
+                "tipo_item": "2"
+            }
+        ]
+    },
+    {
+        "id_item": 1518,
+        "nome_icon": "stripped_dark_oak_wood.png",
+        "tipo_item": "Construcao",
+        "nome_item": "Madeira de carvalho escuro descascada",
+        "coletavel": 1,
+        "nome_interno": "stripped_dark_oak_wood",
+        "empilhavel": 64,
+        "versao_add": 13,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 1,
+        "programmer_art": 0
+    },
+    {
+        "id_item": 1519,
+        "nome_icon": "stripped_acacia_wood.png",
+        "tipo_item": "Construcao",
+        "nome_item": "Madeira de ac\u00e1cia descascada",
+        "coletavel": 1,
+        "nome_interno": "stripped_acacia_wood",
+        "empilhavel": 64,
+        "versao_add": 13,
+        "renovavel": 1,
+        "aliases": null,
+        "descricao": null,
+        "oculto_invt": 0,
+        "fabricavel": 1,
+        "programmer_art": 0
     }
 ]

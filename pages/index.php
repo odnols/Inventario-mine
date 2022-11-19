@@ -25,7 +25,7 @@
 
             $x = $i + 1;
             $x2 = $i + 2;
-            
+
             echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a>";
             echo " | <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a>";
             echo " | <a href='#' onclick='categoria(\"1.$x2\", 2)'>1.$x2</a>";
