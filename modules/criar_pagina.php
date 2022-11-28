@@ -23,10 +23,10 @@ ob_start(); ?>
     <div id="lista_versoes" style="display: none">
         <script>
             for (let i = 0; i < 20; i += 2) {
-                let x = i + 1;
+                let x = i + 1
 
-                document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`);
-                document.write(` <a href='#' onclick='categoria(\"1.${x}\", 2)'>1.${x}</a><br>`);
+                document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`)
+                document.write(` <a href='#' onclick='categoria(\"1.${x}\", 2)'>1.${x}</a><br>`)
             }
         </script>
     </div>
@@ -74,7 +74,7 @@ ob_start(); ?>
 
         <script>
             for (let i = 0; i < 11; i++) {
-                document.write(`<div id='item_${i}' onclick='categoria(${i}, 0)'></div>`);
+                document.write(`<div id='item_${i}' onclick='categoria(${i}, 0)'></div>`)
             }
         </script>
 
@@ -140,7 +140,6 @@ ob_start(); ?>
                 while ($dados = $executa->fetch_assoc()) {
 
                     $apelido = null;
-                    $converte = null;
                     $descricao_pesq = null;
                     $oculto_invt = null;
                     $geracao = "new";
@@ -192,22 +191,6 @@ ob_start(); ?>
                     else
                         $coletavel = "não_coletável";
 
-                    for ($i = 0; $i < strlen($nome_item); $i++) {
-                        $converte = $converte . " ";
-
-                        for ($x = 0; $x <= $i; $x++) {
-                            $converte = $converte . "" . $nome_item[$x];
-                        }
-                    }
-
-                    for ($i = 0; $i < strlen($descricao_pes); $i++) {
-                        $descricao_pesq = $descricao_pesq . " ";
-
-                        for ($x = 0; $x <= $i; $x++) {
-                            $descricao_pesq = $descricao_pesq . "" . $descricao_pes[$x];
-                        }
-                    }
-
                     $cor_item = 0;
 
                     $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
@@ -219,9 +202,8 @@ ob_start(); ?>
                         $cor_item = $dados2["tipo_item"];
                     }
 
-                    $auto_completa = strtolower($converte);
-
-                    $descricao_pesq = strtolower($descricao_pesq);
+                    $nome_pesq = strtolower($nome_item);
+                    $descricao_pesq = strtolower($descricao_pes);
 
                     for ($i = 0; $i < 20; $i++) { // Elimina todos os números de versão da descrição
                         $descricao_pesq = str_replace("1." . $i, "", $descricao_pesq);
@@ -230,7 +212,7 @@ ob_start(); ?>
                     $caminho_sprite = 'IMG/Itens/' . $geracao . '/' . $tipo_item . '/' . $nome_icon;
 
                     if ($tipo_item != "Generico" && $oculto_invt != "Oculto") {
-                        echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $auto_completa $descricao_pesq' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $nome_pesq $descricao_pesq' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='$caminho_sprite'>";
                         echo "</div>";
                     } else {
@@ -252,19 +234,19 @@ ob_start(); ?>
     <script type="text/javascript">
         (function() {
             setTimeout(() => {
-                document.getElementById("qtd_itens_inventario").innerHTML = 1424;
-                document.getElementById("qtd_itens_inventario_colet").innerHTML = 1327;
-                document.getElementById("qtd_itens_fabricaveis").innerHTML = 782;
-                document.getElementById("qtd_itens_inventario_renov").innerHTML = 1261;
-                document.getElementById("qtd_itens_inventario_empil").innerHTML = 1007;
-                document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = 915;
-                document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = 55;
-                document.getElementById("qtd_itens_inventario_n_empil").innerHTML = 417;
-            }, 1000);
-        })();
+                document.getElementById("qtd_itens_inventario").innerHTML = 1424
+                document.getElementById("qtd_itens_inventario_colet").innerHTML = 1327
+                document.getElementById("qtd_itens_fabricaveis").innerHTML = 782
+                document.getElementById("qtd_itens_inventario_renov").innerHTML = 1261
+                document.getElementById("qtd_itens_inventario_empil").innerHTML = 1007
+                document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = 915
+                document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = 55
+                document.getElementById("qtd_itens_inventario_n_empil").innerHTML = 417
+            }, 1000)
+        })()
 
-        categoria(0, 0);
-        document.addEventListener("onKeyDown", clique());
+        aba_menu(0, 0)
+        document.addEventListener("onKeyDown", clique())
     </script>
 </body>
 

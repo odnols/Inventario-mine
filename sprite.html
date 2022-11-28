@@ -33,12 +33,11 @@
 <script src="JS/engine.js"></script>
 <script>
 	(function () {
+		sprite_escolhido = localStorage.getItem("sprite_escolhido")
 
-		sprite_escolhido = localStorage.getItem("sprite_escolhido");
-
-		const img_alvo = document.getElementById("sprite_item_html");
-		img_alvo.src = sprite_escolhido;
-	})();
+		const img_alvo = document.getElementById("sprite_item_html")
+		img_alvo.src = sprite_escolhido
+	})()
 </script>
 
 </html>

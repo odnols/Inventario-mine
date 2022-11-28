@@ -3534,7 +3534,7 @@
     },
     {
         "id_item": 185,
-        "nome_icon": "Honey_Block.png",
+        "nome_icon": "Honey_block.png",
         "tipo_item": "Redstone",
         "nome_item": "Bloco de mel",
         "coletavel": 1,

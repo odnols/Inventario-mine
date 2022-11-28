@@ -29,10 +29,10 @@
     <div id="lista_versoes" style="display: none">
         <script>
             for (let i = 0; i < 20; i += 2) {
-                let x = i + 1;
+                let x = i + 1
 
-                document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`);
-                document.write(` <a href='#' onclick='categoria(\"1.${x}\", 2)'>1.${x}</a><br>`);
+                document.write(`-> <a href='#' onclick='filtragem(\"1.${i}\", 2)'>1.${i}</a> |`)
+                document.write(` <a href='#' onclick='filtragem(\"1.${x}\", 2)'>1.${x}</a><br>`)
             }
         </script>
     </div>
@@ -93,14 +93,14 @@
 </body>
 
 <script type="text/javascript">
-    categoria(0, 0);
-    document.addEventListener("onKeyDown", clique());
+    aba_menu(0, 0)
+    document.addEventListener("onKeyDown", clique())
 
-    seleciona_item('auto');
+    seleciona_item('auto')
 
     setTimeout(() => {
-        mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2);
-    }, 500);
+        mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2)
+    }, 500)
 </script>
 
 </html>

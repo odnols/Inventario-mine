@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
 
     <script src="../JS/jquery-3.4.1.js"></script>
-
+    
     <?php include_once "../PHP/conexao_obsoleta.php";
 
     if (isset($_GET["versao_jogo"]))
@@ -151,8 +151,8 @@
     <script src="../JS/custom.js"></script>
 
     <script type="text/javascript">
-        filtragem(10, 0);
-        sincroniza_tema(<?php echo $versao_jogo ?>, 1);
+        filtragem(10, 0)
+        sincroniza_tema(<?php echo $versao_jogo ?>, 1)
     </script>
 </body>
 

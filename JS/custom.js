@@ -82,7 +82,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
             document.getElementById(id_nome_interno).innerHTML = ""
 
         if (typeof local === "undefined")
-            document.getElementById("minetip-tooltip").style.display = "Block"
+            document.getElementById("minetip-tooltip").style.display = "block"
 
         // Verifica se existem muitos alvos para poder acompanhar o mouse            
         const verifica = document.getElementsByClassName("slot_item")
@@ -102,7 +102,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
             })
         }
     } else
-        document.getElementById("minetip-tooltip").style.display = "None"
+        document.getElementById("minetip-tooltip").style.display = "none"
 }
 
 function troca_tema(versao_jogo, local) {
@@ -170,7 +170,7 @@ function sincroniza_tema(versao_jogo, local) {
             botoes_menu = document.getElementsByClassName("botoes_menu")
 
             for (let i = 0; i < botoes_menu.length; i++)
-                botoes_menu[i].style.display = "Block"
+                botoes_menu[i].style.display = "block"
         }
 
     for (let i = 0; i < lista_imagens.length; i++) { // Imagens

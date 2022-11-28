@@ -8,9 +8,9 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     image-rendering: auto;
-    background-size: cover !important;
     font-family: "Minecraftia";
     image-rendering: pixelated;
+    background-size: cover !important;
     background: url('../IMG/Temas/1.19.png') no-repeat;
 }
 

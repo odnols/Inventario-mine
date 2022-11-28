@@ -206,8 +206,8 @@
     <script src="../JS/crafting.js"></script>
 
     <script type="text/javascript">
-        filtragem(0, 0);
-        document.addEventListener("onKeyDown", clique());
+        aba_menu(0, 0)
+        document.addEventListener("onKeyDown", clique())
     </script>
 </body>
 

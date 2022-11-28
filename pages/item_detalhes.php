@@ -13,6 +13,7 @@
 
     <script src="../JS/jquery-3.4.1.js"></script>
     <script src="../JS/engine.js"></script>
+    <script src="../JS/custom.js"></script>
     <script src="../JS/crafting.js"></script>
 
     <?php include_once "../PHP/conexao_obsoleta.php"; ?>
@@ -290,8 +291,8 @@
 <?php if ($crafting == "checked") { ?>
     <script type="text/javascript">
         setTimeout(() => {
-            mostra_crafting('<?php echo $receita ?>', null, 1);
-        }, 0);
+            mostra_crafting('<?php echo $receita ?>', null, 1)
+        }, 0)
     </script>
 <?php } ?>
 
