@@ -33,16 +33,16 @@
             $graphics = false;
 
         for ($i = 0; $i < 20; $i += 3) {
-            echo "-> <a href='#' onclick='categoria(\"1.$i\", 2)'>1.$i</a>";
+            echo "-> <a href='#' onclick='filtragem(\"1.$i\", 2)'>1.$i</a>";
 
             $x = $i + 1;
             $x2 = $i + 2;
 
             if ($i + 1 <= $versao_jogo)
-                echo " | <a href='#' onclick='categoria(\"1.$x\", 2)'>1.$x</a>";
+                echo " | <a href='#' onclick='filtragem(\"1.$x\", 2)'>1.$x</a>";
 
             if ($i + 2 <= $versao_jogo)
-                echo " | <a href='#' onclick='categoria(\"1.$x2\", 2)'>1.$x2</a>";
+                echo " | <a href='#' onclick='filtragem(\"1.$x2\", 2)'>1.$x2</a>";
 
             echo "<br>";
 
@@ -148,8 +148,10 @@
     include_once "../modules/menu_completo.php"; ?>
 
     <script src="../JS/engine.js"></script>
+    <script src="../JS/custom.js"></script>
+
     <script type="text/javascript">
-        categoria(10, 0);
+        filtragem(10, 0);
         sincroniza_tema(<?php echo $versao_jogo ?>, 1);
     </script>
 </body>

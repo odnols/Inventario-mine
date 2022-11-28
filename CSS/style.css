@@ -907,6 +907,7 @@ a {
 
 .grid_craft:hover {
     background-image: url("../IMG/Interface/Claro/slot_hover.png");
+    background-position: -3px -3px;
 }
 
 #produto_final {

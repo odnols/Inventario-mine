@@ -13,6 +13,8 @@
 
     <script src="../JS/jquery-3.4.1.js"></script>
     <script src="../JS/engine.js"></script>
+    <script src="../JS/custom.js"></script>
+    <script src="../JS/crafting.js"></script>
 </head>
 
 <body onload="sincroniza_tema(undefined, 1)">

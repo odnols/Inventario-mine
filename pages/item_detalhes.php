@@ -13,6 +13,7 @@
 
     <script src="../JS/jquery-3.4.1.js"></script>
     <script src="../JS/engine.js"></script>
+    <script src="../JS/crafting.js"></script>
 
     <?php include_once "../PHP/conexao_obsoleta.php"; ?>
 </head>
