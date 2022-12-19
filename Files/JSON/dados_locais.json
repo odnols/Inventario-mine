@@ -3534,7 +3534,7 @@
     },
     {
         "id_item": 185,
-        "nome_icon": "Honey_block.png",
+        "nome_icon": "Honey_Block.png",
         "tipo_item": "Redstone",
         "nome_item": "Bloco de mel",
         "coletavel": 1,
@@ -21145,8 +21145,15 @@
         "aliases": null,
         "descricao": "[&1Vis\u00e3o noturna (0:22)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "743",
+                "receita": "1000,1000,1000,1000,1234,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1006,
@@ -21161,8 +21168,15 @@
         "aliases": null,
         "descricao": "[&1Vis\u00e3o noturna (1:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "742",
+                "receita": "1000,1000,1000,1000,1235,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1007,
@@ -21177,8 +21191,15 @@
         "aliases": null,
         "descricao": "[&1Invisibilidade (0:22)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "741",
+                "receita": "1000,1000,1000,1000,1236,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1008,
@@ -21193,8 +21214,15 @@
         "aliases": null,
         "descricao": "[&1Invisibilidade (1:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "740",
+                "receita": "1000,1000,1000,1000,1237,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1009,
@@ -21209,8 +21237,15 @@
         "aliases": null,
         "descricao": "[&1Supersalto (0:22)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "739",
+                "receita": "1000,1000,1000,1000,1238,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1010,
@@ -21225,8 +21260,15 @@
         "aliases": null,
         "descricao": "[&1Supersalto (1:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "738",
+                "receita": "1000,1000,1000,1000,1239,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1011,
@@ -21241,8 +21283,15 @@
         "aliases": null,
         "descricao": "[&1Supersalto II (0:11)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "737",
+                "receita": "1000,1000,1000,1000,1240,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1012,
@@ -21257,8 +21306,15 @@
         "aliases": null,
         "descricao": "[&1Resist. ao fogo (0:22)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "736",
+                "receita": "1000,1000,1000,1000,1241,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1013,
@@ -21273,8 +21329,15 @@
         "aliases": null,
         "descricao": "[&1Resist. ao fogo (1:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "735",
+                "receita": "1000,1000,1000,1000,1242,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1014,
@@ -21289,8 +21352,15 @@
         "aliases": null,
         "descricao": "[&1Velocidade (0:22) [&s[&3Efeito aplicado: [&1Velocidade: +20%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "734",
+                "receita": "1000,1000,1000,1000,1243,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1015,
@@ -21305,8 +21375,15 @@
         "aliases": null,
         "descricao": "[&1Velocidade (1:00) [&s[&3Efeito aplicado: [&1Velocidade: +20%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "733",
+                "receita": "1000,1000,1000,1000,1244,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1016,
@@ -21321,8 +21398,15 @@
         "aliases": null,
         "descricao": "[&1Velocidade II (0:11) [&s[&3Efeito aplicado: [&1Velocidade: +40%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "732",
+                "receita": "1000,1000,1000,1000,1245,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1017,
@@ -21337,8 +21421,15 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o (0:11) [&s[&3Efeito aplicado: [&2Velocidade: -15%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "731",
+                "receita": "1000,1000,1000,1000,1246,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1018,
@@ -21353,8 +21444,15 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o (0:30) [&s[&3Efeito aplicado: [&2Velocidade: -15%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "730",
+                "receita": "1000,1000,1000,1000,1247,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1019,
@@ -21369,8 +21467,15 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o IV (0:02) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "729",
+                "receita": "1000,1000,1000,1000,1248,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1020,
@@ -21385,8 +21490,15 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o IV (0:02) [&1Resist\u00eancia III (0:02) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 0
+        "fabricavel": 1,
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "728",
+                "receita": "1000,1000,1000,1000,1249,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1021,
@@ -21401,8 +21513,15 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o IV (0:05) [&1Resist\u00eancia III (0:05) [&s[&3Efeito aplicado: [&2Velocidade: -60%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 0
+        "fabricavel": 1,
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "727",
+                "receita": "1000,1000,1000,1000,1250,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1022,
@@ -21417,8 +21536,15 @@
         "aliases": null,
         "descricao": "[&2Lentid\u00e3o VI (0:02) [&1Resist\u00eancia IV (0:02) [&s[&3Efeito aplicado: [&2Velocidade: -90%",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 0
+        "fabricavel": 1,
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "726",
+                "receita": "1000,1000,1000,1000,1251,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1023,
@@ -21433,8 +21559,15 @@
         "aliases": null,
         "descricao": "[&1Respir. aqu\u00e1tica (0:22)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "725",
+                "receita": "1000,1000,1000,1000,1252,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1024,
@@ -21449,8 +21582,15 @@
         "aliases": null,
         "descricao": "[&1Respir. aqu\u00e1tica (1:00)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "724",
+                "receita": "1000,1000,1000,1000,1253,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1025,
@@ -21465,8 +21605,15 @@
         "aliases": null,
         "descricao": "[&1Vida instant\u00e2nea",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "723",
+                "receita": "1000,1000,1000,1000,1254,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1026,
@@ -21481,8 +21628,15 @@
         "aliases": null,
         "descricao": "[&1Vida instant\u00e2nea II",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "722",
+                "receita": "1000,1000,1000,1000,1255,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1027,
@@ -21497,8 +21651,15 @@
         "aliases": null,
         "descricao": "[&2Dano instant\u00e2neo",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "721",
+                "receita": "1000,1000,1000,1000,1256,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1028,
@@ -21513,8 +21674,15 @@
         "aliases": null,
         "descricao": "[&2Dano instant\u00e2neo II",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "720",
+                "receita": "1000,1000,1000,1000,1257,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1029,
@@ -21529,8 +21697,15 @@
         "aliases": null,
         "descricao": "[&2Veneno (0:05)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "719",
+                "receita": "1000,1000,1000,1000,1258,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1030,
@@ -21545,8 +21720,15 @@
         "aliases": null,
         "descricao": "[&2Veneno (0:11)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "718",
+                "receita": "1000,1000,1000,1000,1259,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1031,
@@ -21561,8 +21743,15 @@
         "aliases": null,
         "descricao": "[&2Veneno II (0:02)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "717",
+                "receita": "1000,1000,1000,1000,1260,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1032,
@@ -21577,8 +21766,15 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o (0:05)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "716",
+                "receita": "1000,1000,1000,1000,1261,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1033,
@@ -21593,8 +21789,15 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o (0:11)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "715",
+                "receita": "1000,1000,1000,1000,1262,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1034,
@@ -21609,8 +21812,15 @@
         "aliases": null,
         "descricao": "[&1Regenera\u00e7\u00e3o II (0:02)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "714",
+                "receita": "1000,1000,1000,1000,1263,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1035,
@@ -21625,8 +21835,15 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a (0:22) [&s[&3Efeito aplicado: [&1Dano por golpe: +3",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "713",
+                "receita": "1000,1000,1000,1000,1264,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1036,
@@ -21641,8 +21858,15 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a (1:00) [&s[&3Efeito aplicado: [&1Dano por golpe: +3",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "712",
+                "receita": "1000,1000,1000,1000,1265,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1037,
@@ -21657,8 +21881,15 @@
         "aliases": null,
         "descricao": "[&1For\u00e7a II (0:11) [&s[&3Efeito aplicado: [&1Dano por golpe: +6",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "711",
+                "receita": "1000,1000,1000,1000,1266,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1038,
@@ -21673,8 +21904,15 @@
         "aliases": null,
         "descricao": "[&2Fraqueza (0:11) [&s[&3Efeito aplicado: [&2Dano por golpe: -4",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "710",
+                "receita": "1000,1000,1000,1000,1267,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1039,
@@ -21689,8 +21927,15 @@
         "aliases": null,
         "descricao": "[&2Fraqueza (0:30) [&s[&3Efeito aplicado: [&2Dano por golpe: -4",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "709",
+                "receita": "1000,1000,1000,1000,1268,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1040,
@@ -21705,8 +21950,15 @@
         "aliases": null,
         "descricao": "[&1Sorte (0:37) [&s[&3Efeito aplicado: [&1Sorte: +1",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 1
+        "fabricavel": 1,
+        "programmer_art": 1,
+        "fabricacao": [
+            {
+                "id_craft": "708",
+                "receita": "1000,1000,1000,1000,1269,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1041,
@@ -21721,8 +21973,15 @@
         "aliases": null,
         "descricao": "[&1Queda lenta (0:11)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 0
+        "fabricavel": 1,
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "707",
+                "receita": "1000,1000,1000,1000,1270,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1042,
@@ -21737,8 +21996,15 @@
         "aliases": null,
         "descricao": "[&1Queda lenta (0:30)",
         "oculto_invt": 0,
-        "fabricavel": 0,
-        "programmer_art": 0
+        "fabricavel": 1,
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "706",
+                "receita": "1000,1000,1000,1000,1271,1000,1000,1000,1000",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1043,
@@ -25080,7 +25346,7 @@
         "versao_add": 9,
         "renovavel": 1,
         "aliases": null,
-        "descricao": "[&1Velocidade (0:22) [&s[&3Efeito aplicado: [&1Velocidade: +40%",
+        "descricao": "[&1Velocidade II (0:22) [&s[&3Efeito aplicado: [&1Velocidade: +40%",
         "oculto_invt": 0,
         "fabricavel": 0,
         "programmer_art": 1
@@ -28361,7 +28627,7 @@
         "fabricacao": [
             {
                 "id_craft": "51",
-                "receita": ",731,,,307",
+                "receita": ",731,,,307,,",
                 "produtos": "1"
             }
         ]
@@ -29548,7 +29814,7 @@
         "fabricacao": [
             {
                 "id_craft": "685",
-                "receita": "1051,1051,,1051,1051",
+                "receita": ",,,,1515",
                 "produtos": "1"
             }
         ]
@@ -29950,7 +30216,7 @@
         "fabricacao": [
             {
                 "id_craft": "699",
-                "receita": "425,,425,1472,1472,1472,1472,1472,1472",
+                "receita": "425,,425,1516,1516,1516,1516,1516,1516",
                 "produtos": "1"
             }
         ]
@@ -30515,7 +30781,14 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "705",
+                "receita": ",,,373,373,,373,373",
+                "produtos": "1"
+            }
+        ]
     },
     {
         "id_item": 1519,
@@ -30531,6 +30804,13 @@
         "descricao": null,
         "oculto_invt": 0,
         "fabricavel": 1,
-        "programmer_art": 0
+        "programmer_art": 0,
+        "fabricacao": [
+            {
+                "id_craft": "704",
+                "receita": ",,,372,372,,372,372",
+                "produtos": "1"
+            }
+        ]
     }
 ]
