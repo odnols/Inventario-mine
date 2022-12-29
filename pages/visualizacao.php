@@ -101,7 +101,7 @@
             echo "<br><p class='estat cor_textos'>Itens no Inventário: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND coletavelsurvival = 1 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND coletavel = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
@@ -119,13 +119,13 @@
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND empilhavel != 0 AND coletavelsurvival = 1 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND empilhavel != 0 AND coletavel = 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND coletavelsurvival = 1 AND empilhavel != 0 AND renovavel != 1 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao_adicionada <= $versao_jogo AND coletavel = 1 AND empilhavel != 0 AND renovavel != 1 AND abamenu != 'Generico'";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";

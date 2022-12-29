@@ -74,19 +74,22 @@
 
                 $id_item = $dados["id_item"];
                 $nome_icon = $dados["nome_icon"];
-                $tipo_item = $dados["abamenu"];
+                $tipo_item = 'Construcao';
                 $nome_item = $dados["nome"];
-                $coletavel = $dados["coletavelSurvival"];
+                $coletavel = $dados["coletavel"];
                 $nome_interno = $dados["nome_interno"];
                 $empilhavel = $dados["empilhavel"];
                 $versao_add = $dados["versao_adicionada"];
                 $renovavel = $dados["renovavel"];
-                $oculto_invt = $dados["oculto_invt"];
-                $programmer_art = $dados["programmer_art"];
+
+                $programmer_art = 0;
+
+                // $oculto_invt = $dados["oculto_invt"];
+                // $programmer_art = $dados["programmer_art"];
 
                 $descricao = "[&1" . $tipo_item;
 
-                $descricao = $descricao . " " . $dados["descricao"];
+                // $descricao = $descricao . " " . $dados["descricao"];
 
                 $descricao_pes = str_replace("[&r", "", $descricao);
 
@@ -122,7 +125,7 @@
                 $cor_item = 0;
                 $descricao_pesq = "";
 
-                $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
+                $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
                 $executa_item = $conexao->query($verificar_item);
 
                 if ($executa_item->num_rows > 0) {

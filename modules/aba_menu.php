@@ -26,22 +26,13 @@
     </div>
 
     <div id="filtro_colorido"></div>
-    <div id="lista_versoes" style="display: none">
-        <script>
-            for (let i = 0; i < 20; i += 2) {
-                let x = i + 1
-
-                document.write(`-> <a href='#' onclick='filtragem(\"1.${i}\", 2)'>1.${i}</a> |`)
-                document.write(` <a href='#' onclick='filtragem(\"1.${x}\", 2)'>1.${x}</a><br>`)
-            }
-        </script>
-    </div>
 
     <?php include_once "../PHP/conexao_obsoleta.php";
     $id_item_alvo = $_GET["id"];
 
-    $busca_itens = "SELECT * FROM item WHERE coletavel = 1";
-    $executa = $conexao->query($busca_itens); ?>
+    $dados_item = "SELECT historico_guias FROM item WHERE id_item = $id_item_alvo";
+    $executa = $conexao->query($dados_item); 
+    $dados = $executa->fetch_assoc(); ?>
 
     <div id="menu_user">
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
@@ -50,15 +41,15 @@
     <!-- Menu interativo -->
     <?php $local_requisicao = 2;
     $graphics = false;
-    $versao_jogo = 20;
-    include_once "../modules/menu_completo.php"; ?>
+    $versao_jogo = 20; 
+    
+    echo $dados["nome"]; ?>
 
     <a class="bttn_frrm" id="btn_fecha_tela_craft" href="../pages/item_detalhes.php?id=<?php echo $id_item_alvo ?>" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
 
-    <form id="craft_prancheta" action="../PHP/item_registra_craft.php" method="POST">
+    <form id="craft_prancheta" action="../PHP/item_registra_abas.php" method="POST">
 
-        <span class="cor_textos textos_craft">Fabricação</span>
-        <span class="cor_textos textos_craft text_craft_2">Inventário</span>
+        <span class="cor_textos textos_craft">Linha do tempo</span>
 
         <div id="slots_atalho_itens"></div>
 
@@ -79,28 +70,10 @@
 
         <button id="btn_confirma_craft">Confirma</button>
     </form>
-
-    <?php
-    $coleta_receita = "SELECT * FROM item_receita WHERE id_item = $id_item_alvo";
-    $executa_coleta = $conexao->query($coleta_receita);
-
-    $receita = "";
-
-    if ($executa_coleta->num_rows > 0) {
-        $dados4 = $executa_coleta->fetch_assoc();
-        $receita = $dados4["craft"];
-    } ?>
 </body>
 
 <script type="text/javascript">
-    aba_menu(0, 0)
     document.addEventListener("onKeyDown", clique())
-
-    seleciona_item('auto')
-
-    setTimeout(() => {
-        mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2)
-    }, 500)
 </script>
 
 </html>

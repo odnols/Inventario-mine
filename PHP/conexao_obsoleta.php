@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $user = "root";
 $password = "admin";
-$banco = "minecraft_itens";
+$banco = "mc_itens";
 
 $conexao = new mysqli($servidor, $user, $password, $banco);
 // $conexao->query("SET NAMES 'utf8'");

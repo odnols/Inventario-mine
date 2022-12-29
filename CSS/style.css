@@ -494,7 +494,7 @@ select {
     top: 40%;
 }
 
-#btn_fabricacao {
+#btn_fabricacao, #btn_abamenu {
     height: 45px;
     width: 368px;
     font-size: 20px;

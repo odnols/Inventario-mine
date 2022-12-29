@@ -574,3 +574,7 @@ if (document.getElementById("btn_fecha_tela_craft")) {
         $("#btn_fecha_tela_craft").toggle()
     })
 }
+
+function escolhe_aba_menu(id_item){
+    window.location = `../modules/aba_menu.php?id=${id_item}`
+}

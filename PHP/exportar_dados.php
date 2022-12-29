@@ -8,6 +8,8 @@ $data = array();
 $verificar = "SELECT * FROM item";
 $executa = $conexao->query($verificar);
 
+$i = 0;
+
 while ($dados = $executa->fetch_assoc()) {
 
     $id_item = intval($dados["id_item"]);
@@ -19,170 +21,153 @@ while ($dados = $executa->fetch_assoc()) {
     $empilhavel = intval($dados["empilhavel"]);
     $versao_add = floatval($dados["versao_adicionada"]);
     $renovavel = intval($dados["renovavel"]);
-    $aliases = $dados["aliases_nome"];
-    $descricao = $dados["descricao"];
-    $oculto_invt = intval($dados["oculto_invt"]);
-    $programmer_art = intval($dados["programmer_art"]);
     $fabricavel = intval($dados["fabricavel"]);
 
-    if (strlen($aliases) == 0)
-        $aliases = null;
-
-    if (strlen($descricao) == 0)
-        $descricao = null;
-
+    // Tabelas secundárias
+    $item_oculto = array();
+    $item_legado = array();
+    $item_titulo = array();
+    $item_receita = array();
+    $item_descricao = array();
+    $item_durabilidade = array();
+    
     // Verifica se o item possui registros de cores no título
-    $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
-    $executa_item_1 = $conexao->query($verificar_item);
+    $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
 
-    if ($executa_item_1->num_rows > 0) {
+    if ($executa_item->num_rows > 0) {
 
-        $cor_item = array();
+        $dados = $executa_item->fetch_assoc();
 
-        $dados2 = $executa_item_1->fetch_assoc();
+        $id_titulo = $dados["id_cor"];
+        $valor_cor = $dados["tipo_item"];
 
-        $id_cor = $dados2["id_cor"];
-        $valor_cor = $dados2["tipo_item"];
-
-        array_push($cor_item, array(
-            "id_cor" => $id_cor,
-            "tipo_item" => $valor_cor
+        array_push($item_titulo, array(
+            "id_titulo" => intval($id_titulo),
+            "tipo_item" => intval($valor_cor)
         ));
     }
 
     // Verifica se o item possui registros de durabilidade
-    $verificar_durabilidade = "SELECT * FROM durabilidade_item WHERE id_item = $id_item";
-    $executa_item_2 = $conexao->query($verificar_durabilidade);
-    $durabilidade = 0;
+    $verificar_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
 
-    if ($executa_item_2->num_rows > 0) {
+    if ($executa_item->num_rows > 0) {
 
-        $durabilidade_item = array();
+        $dados = $executa_item->fetch_assoc();
 
-        $dados2 = $executa_item_2->fetch_assoc();
+        $id_durabilidade = $dados["id_durabilidade"];
+        $durabilidade = $dados["durabilidade"];
 
-        $id_durabilidade = intval($dados2["id_durabilidade"]);
-        $durabilidade = intval($dados2["durabilidade"]);
-
-        array_push($durabilidade_item, array(
-            "id_durabilidade" => $id_durabilidade,
-            "durabilidade" => $durabilidade
+        array_push($item_durabilidade, array(
+            "id_durabilidade" => intval($id_durabilidade),
+            "durabilidade" => intval($durabilidade)
         ));
     }
 
     // Verifica se o item possui registros de fabricação
-    $verificar_item = "SELECT * FROM crafting_item WHERE id_item = $id_item";
-    $executa_item_3 = $conexao->query($verificar_item);
+    $verificar_item = "SELECT * FROM item_receita WHERE id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
 
-    if ($executa_item_3->num_rows > 0) {
+    if ($executa_item->num_rows > 0) {
 
-        $fabricacao = array();
+        $dados = $executa_item->fetch_assoc();
 
-        $dados3 = $executa_item_3->fetch_assoc();
+        $id_receita = $dados["id_craft"];
+        $receita = $dados["craft"];
+        $qtd_produtos = $dados["qtd_produtos"];
+        $tipo_craft = $dados["tipo_craft"];
 
-        $id_craft = $dados3["id_craft"];
-        $crafting = $dados3["craft"];
-        $qtd_produtos = $dados3["qtd_produtos"];
-
-        array_push($fabricacao, array(
-            "id_craft" => $id_craft,
-            "receita" => $crafting,
-            "produtos" => $qtd_produtos
+        array_push($item_receita, array(
+            "id_receita" => intval($id_receita),
+            "receita" => $receita,
+            "produtos" => intval($qtd_produtos),
+            "tipo_craft" => intval($tipo_craft)
         ));
     }
 
-    if ($executa_item_1->num_rows == 0 && $executa_item_2->num_rows == 0 && $executa_item_3->num_rows == 0) {
-        array_push($data, array(
-            "id_item" => $id_item,
-            "nome_icon" => $nome_icon,
-            "tipo_item" => $tipo_item,
-            "nome_item" => $nome_item,
-            "coletavel" => $coletavel,
-            "nome_interno" => $nome_interno,
-            "empilhavel" => $empilhavel,
-            "versao_add" => $versao_add,
-            "renovavel" => $renovavel,
-            "aliases" => $aliases,
-            "descricao" => $descricao,
-            "oculto_invt" => $oculto_invt,
-            "fabricavel" => $fabricavel,
-            "programmer_art" => $programmer_art
-        ));
-    } else if ($executa_item_2->num_rows == 0 && $executa_item_3->num_rows == 0) {
-        array_push($data, array(
-            "id_item" => $id_item,
-            "nome_icon" => $nome_icon,
-            "tipo_item" => $tipo_item,
-            "nome_item" => $nome_item,
-            "coletavel" => $coletavel,
-            "nome_interno" => $nome_interno,
-            "empilhavel" => $empilhavel,
-            "versao_add" => $versao_add,
-            "renovavel" => $renovavel,
-            "aliases" => $aliases,
-            "descricao" => $descricao,
-            "oculto_invt" => $oculto_invt,
-            "fabricavel" => $fabricavel,
-            "programmer_art" => $programmer_art,
-            "cor_item" => $cor_item
-        ));
-    } else if ($executa_item_1->num_rows == 0 && $executa_item_3->num_rows == 0) {
-        array_push($data, array(
-            "id_item" => $id_item,
-            "nome_icon" => $nome_icon,
-            "tipo_item" => $tipo_item,
-            "nome_item" => $nome_item,
-            "coletavel" => $coletavel,
-            "nome_interno" => $nome_interno,
-            "empilhavel" => $empilhavel,
-            "durabilidade" => $durabilidade_item,
-            "versao_add" => $versao_add,
-            "renovavel" => $renovavel,
-            "aliases" => $aliases,
-            "descricao" => $descricao,
-            "oculto_invt" => $oculto_invt,
-            "fabricavel" => $fabricavel,
-            "programmer_art" => $programmer_art
-        ));
-    } else if ($executa_item_1->num_rows == 0 && $executa_item_2->num_rows == 0) {
-        array_push($data, array(
-            "id_item" => $id_item,
-            "nome_icon" => $nome_icon,
-            "tipo_item" => $tipo_item,
-            "nome_item" => $nome_item,
-            "coletavel" => $coletavel,
-            "nome_interno" => $nome_interno,
-            "empilhavel" => $empilhavel,
-            "versao_add" => $versao_add,
-            "renovavel" => $renovavel,
-            "aliases" => $aliases,
-            "descricao" => $descricao,
-            "oculto_invt" => $oculto_invt,
-            "fabricavel" => $fabricavel,
-            "programmer_art" => $programmer_art,
-            "fabricacao" => $fabricacao
-        ));
-    } else {
-        array_push($data, array(
-            "id_item" => $id_item,
-            "nome_icon" => $nome_icon,
-            "tipo_item" => $tipo_item,
-            "nome_item" => $nome_item,
-            "coletavel" => $coletavel,
-            "nome_interno" => $nome_interno,
-            "empilhavel" => $empilhavel,
-            "durabilidade" => $durabilidade_item,
-            "versao_add" => $versao_add,
-            "renovavel" => $renovavel,
-            "aliases" => $aliases,
-            "descricao" => $descricao,
-            "oculto_invt" => $oculto_invt,
-            "fabricavel" => $fabricavel,
-            "programmer_art" => $programmer_art,
-            "cor_item" => $cor_item,
-            "fabricacao" => $fabricacao
+    // Verifica se o item possui registros de descrição
+    $verificar_item = "SELECT * FROM item_descricao WHERE id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
+
+    if ($executa_item->num_rows > 0) {
+
+        $dados = $executa_item->fetch_assoc();
+
+        $id_descricao = $dados["id_descricao"];
+        $descricao = $dados["descricao"];
+
+        array_push($item_descricao, array(
+            "id_descricao" => intval($id_descricao),
+            "descricao" => $descricao
         ));
     }
+
+    // Verifica se o item é oculto no inventário
+    $verificar_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
+
+    if ($executa_item->num_rows > 0) {
+
+        $dados = $executa_item->fetch_assoc();
+
+        $id_oculto = $dados["id_oculto"];
+
+        array_push($item_oculto, array(
+            "id_oculto" => intval($id_oculto),
+            "status_item" => 1
+        ));
+    }
+
+    // Verifica se o item possui registros de sprites legados
+    $verificar_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
+
+    if ($executa_item->num_rows > 0) {
+
+        $dados = $executa_item->fetch_assoc();
+
+        $id_legado = $dados["id_legado"];
+
+        array_push($item_legado, array(
+            "id_legado" => intval($id_legado),
+            "status_item" => 1
+        ));
+    }
+
+    array_push($data, array(
+        "id_item" => $id_item,
+        "nome_icon" => $nome_icon,
+        "tipo_item" => $tipo_item,
+        "nome_item" => $nome_item,
+        "coletavel" => $coletavel,
+        "renovavel" => $renovavel,
+        "nome_interno" => $nome_interno,
+        "empilhavel" => $empilhavel,
+        "versao_add" => $versao_add,
+        "fabricavel" => $fabricavel,
+    ));
+
+    // Dados provenientes de outras tabelas
+    if (sizeof($item_titulo) > 0)
+        $data[$i]["item_titulo"] = $item_titulo;
+
+    if (sizeof($item_durabilidade) > 0)
+        $data[$i]["item_durabilidade"] = $item_durabilidade;
+
+    if (sizeof($item_receita) > 0)
+        $data[$i]["item_receita"] = $item_receita;
+
+    if (sizeof($item_descricao) > 0)
+        $data[$i]["item_descricao"] = $item_descricao;
+
+    if (sizeof($item_oculto) > 0)
+        $data[$i]["item_oculto"] = $item_oculto;
+
+    if (sizeof($item_legado) > 0)
+        $data[$i]["item_legado"] = $item_legado;
+
+    $i++;
 }
 
 $json = json_encode($data, JSON_PRETTY_PRINT);

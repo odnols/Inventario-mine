@@ -12,7 +12,7 @@ $arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
 $arq_tmp = $_FILES["img"]["tmp_name"]; //O nome temporário do arquivo
 
 $renovavel = 0;
-$coletavelsurvival = 0;
+$coletavel = 0;
 $fabricavel = 0;
 
 if (strlen($nome_interno) == 0)
@@ -22,8 +22,8 @@ if (isset($_POST["renovavel"]))
     $renovavel = 1;
 
 // Verifica se o item é coletável no sobrevivência
-if (isset($_POST["coletavelsurvival"]))
-    $coletavelsurvival = 1;
+if (isset($_POST["coletavel"]))
+    $coletavel = 1;
 
 // Verifica se o item pode ser fabricado manualmente
 if (isset($_POST["fabricavel"]))
@@ -36,7 +36,7 @@ $executa = $conexao->query($verificar);
 $nomes_reservados = array("Disco musical", "Livro encantado", "Chifre de cabra", "Luz");
 
 if ($executa->num_rows == 0 || in_array($nome, $nomes_reservados)) {
-    $insere = "INSERT INTO item (id_item, nome, abamenu, empilhavel, coletavelSurvival, nome_icon, renovavel, versao_adicionada, nome_interno, fabricavel) VALUES (null, '$nome', '$abamenu', $empilhavel, $coletavelsurvival, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
+    $insere = "INSERT INTO item (id_item, nome, abamenu, empilhavel, coletavel, nome_icon, renovavel, versao_adicionada, nome_interno, fabricavel) VALUES (null, '$nome', '$abamenu', $empilhavel, $coletavel, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
 
     $executa = $conexao->query($insere);
 

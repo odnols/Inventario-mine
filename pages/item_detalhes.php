@@ -63,28 +63,28 @@
 
     $nome_item = $dados["nome"];
     $nome_interno = $dados["nome_interno"];
-    $aliases = $dados["aliases_nome"];
 
-    $tipo_item = $dados["abamenu"];
+    $tipo_item = 'Construcao';
     $empilhavel = $dados["empilhavel"];
     $versao_add = $dados["versao_adicionada"];
 
-    $descricao_item = $dados["descricao"];
+    // $descricao_item = $dados["descricao"];
+    $descricao_item = "";
 
     if ($versao_add == null)
         $versao_add = "Outro";
 
-    if ($dados["coletavelSurvival"])
+    if ($dados["coletavel"])
         $coletavel_s = "checked";
 
     if ($dados["renovavel"])
         $renovavel = "checked";
 
-    if ($dados["oculto_invt"])
-        $oculto_invt = "checked";
+    // if ($dados["oculto_invt"])
+    //     $oculto_invt = "checked";
 
-    if ($dados["programmer_art"])
-        $programmer_art = "checked";
+    // if ($dados["programmer_art"])
+    //     $programmer_art = "checked";
 
     if ($dados["fabricavel"])
         $crafting = "checked";
@@ -92,7 +92,7 @@
     $cor_item = 0;
     $durabilidade = "";
 
-    $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
+    $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
     $executa_item = $conexao->query($verificar_item);
 
     if ($executa_item->num_rows > 0) {
@@ -101,7 +101,7 @@
         $cor_item = $dados2["tipo_item"];
     }
 
-    $verificar_item = "SELECT * FROM durabilidade_item WHERE id_item = $id_item";
+    $verificar_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
     $executa_item = $conexao->query($verificar_item);
 
     if ($executa_item->num_rows > 0) {
@@ -152,29 +152,14 @@
 
                     <input class="input_prancheta" id="barra_nome_interno" type="text" placeholder="Nome interno" name="nome_interno" value="<?php echo $nome_interno; ?>" onmouseover="toolTip('Nome interno do item')" onmouseout="toolTip()">
 
-                    <input class="input_prancheta" id="barra_aliases" type="text" placeholder="Aliases" name="aliases" value="<?php echo $aliases; ?>" onmouseover="toolTip('Aliases do item')" onmouseout="toolTip()">
-
                     <?php if ($crafting == "checked")
                         echo "<input type='button' id='btn_fabricacao' value='Fabricação' onclick='inicia_craft($id_item)'>"; ?>
+
+                    <br><br>
+                    <?php echo "<input type='button' id='btn_abamenu' value='Guia no menu' onclick='escolhe_aba_menu($id_item)'>" ?>
                 </div>
 
                 <div id="selects" class="pag_2">
-                    <select name="abamenu" style="width: 505px" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
-
-                        <?php
-                        $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
-                        $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
-
-                        // Procura o indice da categoria do item e exibe formatado
-                        $indice = array_search($tipo_item, $categorias);
-                        echo "<option value='$tipo_item'>$categorias_exib[$indice]</option>";
-
-                        for ($i = 0; $i < sizeof($categorias); $i++) {
-                            if ($tipo_item != $categorias[$i])
-                                echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";
-                        } ?>
-                    </select><br><br>
-
                     <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A Cor do item no inventário')" onmouseout="toolTip()">
                         <?php
                         $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa"];
@@ -220,7 +205,7 @@
             <div id="checkboxes">
                 <div id="separador_checks">
                     <div id="opcoes_esquerda">
-                        <input class="input_check" type="checkbox" name="coletavelsurvival" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+                        <input class="input_check" type="checkbox" name="coletavel" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
                         <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
                     </div>
@@ -245,7 +230,7 @@
 
         <?php if ($crafting == "checked") {
 
-            $coleta_receita = "SELECT * FROM crafting_item WHERE id_item = $id_item";
+            $coleta_receita = "SELECT * FROM item_receita WHERE id_item = $id_item";
             $executa_coleta = $conexao->query($coleta_receita);
 
             $dados4 = $executa_coleta->fetch_assoc();

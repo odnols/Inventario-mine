@@ -18,10 +18,10 @@ $arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
 $arq_tmp = $_FILES["img"]["tmp_name"]; //O nome temporário do arquivo
 
 // Verifica se o item é coletável no sobrevivência
-if (isset($_POST["coletavelsurvival"]))
-    $coletavelsurvival = 1;
+if (isset($_POST["coletavel"]))
+    $coletavel = 1;
 else
-    $coletavelsurvival = 0;
+    $coletavel = 0;
 
 if (isset($_POST["renovavel"]))
     $renovavel = 1;
@@ -47,7 +47,7 @@ if (strlen($aliases) == 0)
     $aliases = null;
 
 // Atualizando os campos principais
-$insere = "UPDATE item SET nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavelSurvival = $coletavelsurvival, renovavel = $renovavel, oculto_invt = $oculto_invt, programmer_art = $programmer_art, aliases_nome = '$aliases', fabricavel = $crafting WHERE id_item = $id_item";
+$insere = "UPDATE item SET nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavel = $coletavel, renovavel = $renovavel, oculto_invt = $oculto_invt, programmer_art = $programmer_art, aliases_nome = '$aliases', fabricavel = $crafting WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando o nome interno
@@ -72,31 +72,31 @@ else
 $executa = $conexao->query($insere);
 
 // Verifica se o item possui registros anteriores
-$verifica_cor_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
+$verifica_cor_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_cor_item);
 
 if ($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0) { // Só insere se for diferente de zero
     if ($executa_verificacao->num_rows == 0) // Insere um novo
-        $insere = "INSERT INTO cor_item VALUES (null, $id_item, $cor_tipo_item)";
+        $insere = "INSERT INTO item_titulo VALUES (null, $id_item, $cor_tipo_item)";
     else if ($cor_tipo_item != 0) // Atualiza
-        $insere = "UPDATE cor_item SET tipo_item = $cor_tipo_item WHERE id_item = $id_item";
+        $insere = "UPDATE item_titulo SET tipo_item = $cor_tipo_item WHERE id_item = $id_item";
     else
-        $insere = "DELETE FROM cor_item WHERE id_item = $id_item";
+        $insere = "DELETE FROM item_titulo WHERE id_item = $id_item";
 
     $executa = $conexao->query($insere);
 }
 
 // Verifica se o item possui registros anteriores
-$verifica_durabilidade_item = "SELECT * FROM durabilidade_item WHERE id_item = $id_item";
+$verifica_durabilidade_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_durabilidade_item);
 
 if ($executa_verificacao->num_rows > 0)
     if (strlen($durabilidade) > 0)
-        $insere = "UPDATE durabilidade_item SET durabilidade = $durabilidade WHERE id_item = $id_item";
+        $insere = "UPDATE item_durabilidade SET durabilidade = $durabilidade WHERE id_item = $id_item";
     else
-        $insere = "DELETE FROM durabilidade_item WHERE id_item = $id_item";
+        $insere = "DELETE FROM item_durabilidade WHERE id_item = $id_item";
 else
-    $insere = "INSERT INTO durabilidade_item values (null, $id_item, $durabilidade)";
+    $insere = "INSERT INTO item_durabilidade values (null, $id_item, $durabilidade)";
 
 $executa = $conexao->query($insere);
 

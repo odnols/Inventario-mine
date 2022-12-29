@@ -148,7 +148,7 @@ ob_start(); ?>
                     $nome_icon = $dados["nome_icon"];
                     $tipo_item = $dados["abamenu"];
                     $nome_item = $dados["nome"];
-                    $coletavel = $dados["coletavelSurvival"];
+                    $coletavel = $dados["coletavel"];
                     $nome_interno = $dados["nome_interno"];
                     $empilhavel = $dados["empilhavel"];
                     $versao_add = $dados["versao_adicionada"];
@@ -193,7 +193,7 @@ ob_start(); ?>
 
                     $cor_item = 0;
 
-                    $verificar_item = "SELECT * FROM cor_item WHERE id_item = $id_item";
+                    $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
                     $executa_item = $conexao->query($verificar_item);
 
                     if ($executa_item->num_rows > 0) {

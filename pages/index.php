@@ -61,7 +61,7 @@
             if (!isset($_GET["dg"]))
                 $graphics = false;
 
-            $verificar = "SELECT * FROM item WHERE abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item";
             $executa = $conexao->query($verificar);
 
             echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
@@ -69,7 +69,7 @@
             echo "<br><p class='estat cor_textos'>Itens Registrados: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE coletavelsurvival = 1 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE coletavel = 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
@@ -81,31 +81,31 @@
             echo "<br><p class='estat cor_textos'> Fabricáveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE renovavel = 1 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE renovavel = 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE empilhavel != 0 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE empilhavel != 0";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE empilhavel != 0 AND coletavelsurvival = 1 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE empilhavel != 0 AND coletavel = 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE coletavelsurvival = 1 AND empilhavel != 0 AND renovavel != 1 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE coletavel = 1 AND empilhavel != 0 AND renovavel != 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE empilhavel LIKE 0 AND abamenu != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE empilhavel LIKE 0";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Não empilháveis: ";
@@ -181,7 +181,7 @@
         </div>
 
         <div id="checkboxes">
-            <input class="input_check" type="checkbox" name="coletavelsurvival" checked onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+            <input class="input_check" type="checkbox" name="coletavel" checked onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
             <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
