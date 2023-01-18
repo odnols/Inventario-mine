@@ -17,90 +17,88 @@ while ($dados = $executa->fetch_assoc()) {
 // Registrando no banco os itens que só existem no JSON
 foreach ($data as $key => $value) {
 
-    $id_item = $value->id_item;
-    $nome_icon = $value->nome_icon;
-    $abamenu = $value->tipo_item;
-    $nome = $value->nome_item;
-    $coletavel = $value->coletavel;
-    $nome_interno = $value->nome_interno;
-    $empilhavel = $value->empilhavel;
-    $versao = $value->versao_add;
-    $renovavel = 1;
-    $fabricavel = $value->fabricavel;
+    $id_item = $value->id;
 
-    if ($renovavel == null)
-        $renovavel = 0;
+    $nome = $value->name;
+    $abamenu = $value->type;
+    $nome_icon = $value->icon;
+    $nome_interno = $value->internal_name;
+
+    $versao = $value->version;
+    $empilhavel = $value->stackable;
+
+    $renovavel = $value->renewable ? 1 : 0;
+    $fabricavel = $value->craftable ? 1 : 0;
+    $coletavel = $value->collectable ? 1 : 0;
 
     # Inserindo o item no banco de dados
-    if (!in_array($value->id_item, $IDs_registrados)) {
-        $insere = "INSERT into item (id_item, nome, empilhavel, coletavel, nome_icon, renovavel, versao_adicionada, nome_interno, fabricavel) VALUES ($id_item, '$nome', $empilhavel, $coletavel, '$nome_icon', $renovavel, $versao, '$nome_interno', $fabricavel);";
+    if (!in_array($value->id, $IDs_registrados)) {
+        $insere = "INSERT into item (id_item, nome, empilhavel, coletavel, icon, renovavel, versao, internal, fabricavel, tipo) VALUES ($id_item, '$nome', $empilhavel, $coletavel, '$nome_icon', $renovavel, '$versao', '$nome_interno', $fabricavel, '$abamenu')";
         $executa = $conexao->query($insere);
-    }
 
-    // Item com coloração de nome diferente
-    if (array_key_exists("item_titulo", $value)) {
-        $cor_item = $value->item_titulo;
+        // Item com coloração de nome diferente
+        if (array_key_exists("title", $value)) {
+            $cor_item = $value->title;
 
-        $id_titulo = $cor_item[0]->id_titulo;
-        $tipo_item = $cor_item[0]->tipo_item;
+            $tipo_item = $cor_item[0]->type;
 
-        $insere = "INSERT INTO item_titulo (id_titulo, id_item, tipo_item) VALUES ($id_titulo, $id_item, $tipo_item)";
-        $executa = $conexao->query($insere);
-    }
+            $insere = "INSERT INTO item_titulo (id_item, tipo_item) VALUES ($id_item, $tipo_item)";
+            $executa = $conexao->query($insere);
+        }
 
-    // Item com uma durabilidade declarada
-    if (array_key_exists("item_durabilidade", $value)) {
-        $durabili = $value->item_durabilidade;
+        // Item com uma durabilidade informada
+        if (array_key_exists("durability", $value)) {
+            $durabili = $value->durability;
 
-        $id_durabilidade = $durabili[0]->id_durabilidade;
-        $durabilidade = $durabili[0]->durabilidade;
+            $durabilidade = $durabili[0]->value;
 
-        $insere = "INSERT INTO item_durabilidade (id_durabilidade, id_item, durabilidade) VALUES ($id_durabilidade, $id_item, $durabilidade)";
-        $executa = $conexao->query($insere);
-    }
+            $insere = "INSERT INTO item_durabilidade (id_item, durabilidade) VALUES ($id_item, $durabilidade)";
+            $executa = $conexao->query($insere);
+        }
 
-    // Item com sprites antigos disponíveis
-    if (array_key_exists("item_legado", $value)) {
-        $item_legado = $value->item_legado;
+        // Item com sprites antigos disponíveis
+        if (array_key_exists("legacy", $value)) {
+            $insere = "INSERT INTO item_legado (id_item, status_item) VALUES ($id_item, 1)";
+            $executa = $conexao->query($insere);
+        }
 
-        $id_legado = $item_legado[0]->id_legado;
+        // Item oculto do inventário
+        if (array_key_exists("hide", $value)) {
+            $insere = "INSERT INTO item_oculto (id_item, status_item) VALUES ($id_item, 1)";
+            $executa = $conexao->query($insere);
+        }
 
-        $insere = "INSERT INTO item_legado (id_legado, id_item, status_item) VALUES ($id_legado, $id_item, 1)";
-        $executa = $conexao->query($insere);
-    }
+        // Descrição dos itens
+        if (array_key_exists("description", $value)) {
+            $item_descricao = $value->description;
 
-    // Item oculto do inventário
-    if (array_key_exists("item_oculto", $value)) {
-        $item_oculto = $value->item_oculto;
+            $descricao = $item_descricao[0]->value;
 
-        $id_oculto = $item_oculto[0]->id_oculto;
+            $insere = "INSERT INTO item_descricao (id_item, descricao) VALUES ($id_item, '$descricao')";
+            $executa = $conexao->query($insere);
+        }
 
-        $insere = "INSERT INTO item_oculto (id_oculto, id_item, status_item) VALUES ($id_oculto, $id_item, 1)";
-        $executa = $conexao->query($insere);
-    }
+        // Itens com receitas de fabricação
+        if (array_key_exists("recipe", $value)) {
+            $crafting = $value->recipe;
 
-    // Descrição dos itens
-    if (array_key_exists("item_descricao", $value)) {
-        $item_descricao = $value->item_descricao;
+            $craft = $crafting[0]->recipe;
+            $produtos = $crafting[0]->products;
+            $tipo_craft = $crafting[0]->craft_type;
 
-        $id_descricao = $item_descricao[0]->id_descricao;
-        $descricao = $item_descricao[0]->descricao;
+            $insere = "INSERT INTO item_receita (id_item, crafting, qtd_produtos, tipo_craft) VALUES ($id_item, '$craft', $produtos, $tipo_craft)";
+            $executa = $conexao->query($insere);
+        }
 
-        $insere = "INSERT INTO item_descricao (id_descricao, id_item, descricao) VALUES ($id_descricao, $id_item, '$descricao')";
-        $executa = $conexao->query($insere);
-    }
+        // Itens com histórico de várias guias no menu
+        if (array_key_exists("item_tab", $value)) {
+            $guias = $value->item_tab;
 
-    // Itens com receitas de fabricação
-    if (array_key_exists("item_receita", $value)) {
-        $crafting = $value->item_receita;
+            $historico_guias = $guias[0]->tab_history;
 
-        $craft = $crafting[0]->receita;
-        $produtos = $crafting[0]->produtos;
-        $tipo_craft = $crafting[0]->tipo_craft;
-        $id_receita = $crafting[0]->id_receita;
-
-        $insere = "INSERT INTO item_receita (id_craft, id_item, crafting, qtd_produtos, tipo_craft) VALUES ($id_receita, $id_item, '$craft', $produtos, $tipo_craft)";
-        $executa = $conexao->query($insere);
+            $insere = "INSERT INTO item_guia (id_item, historico_guias) VALUES ($id_item, '$historico_guias')";
+            $executa = $conexao->query($insere);
+        }
     }
 }
 

@@ -102,7 +102,7 @@ $executa = $conexao->query($insere);
 
 // Atualizando a imagem que está sendo utilizada
 if (strlen($arq_name) > 0) {
-    $atualiza = "UPDATE item SET nome_icon = '$arq_name' WHERE id_item = $id_item";
+    $atualiza = "UPDATE item SET icon = '$arq_name' WHERE id_item = $id_item";
     $executa = $conexao->query($atualiza);
 
     // Criando uma cópia da imagem

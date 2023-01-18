@@ -59,14 +59,14 @@
 
     $dados = $executa->fetch_assoc();
 
-    $nome_icon = $dados["nome_icon"];
+    $nome_icon = $dados["icon"];
 
     $nome_item = $dados["nome"];
-    $nome_interno = $dados["nome_interno"];
+    $nome_interno = $dados["internal"];
 
-    $tipo_item = 'Construcao';
+    $tipo_item = $dados["tipo"];
     $empilhavel = $dados["empilhavel"];
-    $versao_add = $dados["versao_adicionada"];
+    $versao_add = $dados["versao"];
 
     // $descricao_item = $dados["descricao"];
     $descricao_item = "";
@@ -234,7 +234,9 @@
             $executa_coleta = $conexao->query($coleta_receita);
 
             $dados4 = $executa_coleta->fetch_assoc();
-            $receita = $dados4["craft"]; ?>
+            $receita = $dados4["crafting"];
+
+            echo "receita ". $receita; ?>
 
             <div id="preview_item_craft">
                 <?php for ($i = 0; $i < 9; $i++) {

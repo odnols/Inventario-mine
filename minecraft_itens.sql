@@ -5,13 +5,14 @@ use mc_itens;
 create table item(
     id_item int(11) not null primary key auto_increment,
     nome varchar(200) not null,
-    nome_icon varchar(500),
-    nome_interno varchar(150),
-    versao_adicionada varchar(10),
+    icon varchar(500),
+    internal varchar(150),
+    versao varchar(10),
+    tipo varchar(20),
     empilhavel int(11),
-    coletavel tinyint(1),
-    renovavel tinyint(1),
-    fabricavel tinyint(1)
+    coletavel boolean,
+    renovavel boolean,
+    fabricavel boolean
 );
 
 create table item_titulo(
@@ -61,6 +62,6 @@ create table item_legado(
 create table item_guia(
     id_guia int not null auto_increment primary key,
     id_item int not null,
-    guia_versao varchar(1000),
+    historico_guias varchar(1000),
     foreign key(id_item) references item(id_item)
 );

@@ -36,7 +36,7 @@ $executa = $conexao->query($verificar);
 $nomes_reservados = array("Disco musical", "Livro encantado", "Chifre de cabra", "Luz");
 
 if ($executa->num_rows == 0 || in_array($nome, $nomes_reservados)) {
-    $insere = "INSERT INTO item (id_item, nome, abamenu, empilhavel, coletavel, nome_icon, renovavel, versao_adicionada, nome_interno, fabricavel) VALUES (null, '$nome', '$abamenu', $empilhavel, $coletavel, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
+    $insere = "INSERT INTO item (nome, tipo, empilhavel, coletavel, icon, renovavel, versao, internal, fabricavel) VALUES ('$nome', '$abamenu', $empilhavel, $coletavel, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
 
     $executa = $conexao->query($insere);
 

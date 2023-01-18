@@ -73,13 +73,13 @@
                 $geracao = "new";
 
                 $id_item = $dados["id_item"];
-                $nome_icon = $dados["nome_icon"];
-                $tipo_item = 'Construcao';
+                $nome_icon = $dados["icon"];
+                $tipo_item = $dados["tipo"]; // Temporário
                 $nome_item = $dados["nome"];
                 $coletavel = $dados["coletavel"];
-                $nome_interno = $dados["nome_interno"];
+                $nome_interno = $dados["internal"];
                 $empilhavel = $dados["empilhavel"];
-                $versao_add = $dados["versao_adicionada"];
+                $versao_add = $dados["versao"];
                 $renovavel = $dados["renovavel"];
 
                 $programmer_art = 0;
@@ -102,7 +102,7 @@
                 if ($versao_add == null)
                     $versao_add = "off";
                 else
-                    $versao_add = "1." . $versao_add;
+                    $versao_add = $versao_add;
 
                 if ($oculto_invt == 1)
                     $oculto_invt = "Oculto";

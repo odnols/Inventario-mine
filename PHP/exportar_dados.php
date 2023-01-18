@@ -13,24 +13,29 @@ $i = 0;
 while ($dados = $executa->fetch_assoc()) {
 
     $id_item = intval($dados["id_item"]);
-    $nome_icon = $dados["nome_icon"];
-    $tipo_item = $dados["abamenu"];
+
     $nome_item = $dados["nome"];
-    $coletavel = intval($dados["coletavelSurvival"]);
-    $nome_interno = $dados["nome_interno"];
+    $tipo_item = $dados["tipo"];
+    $nome_icon = $dados["icon"];
+    $nome_interno = $dados["internal"];
+
+    $renovavel = intval($dados["renovavel"]) ? true : false;
+    $coletavel = intval($dados["coletavel"]) ? true : false;
     $empilhavel = intval($dados["empilhavel"]);
-    $versao_add = floatval($dados["versao_adicionada"]);
-    $renovavel = intval($dados["renovavel"]);
-    $fabricavel = intval($dados["fabricavel"]);
+    $fabricavel = intval($dados["fabricavel"]) ? true : false;
+
+    $item_oculto = false;
+    $item_legado = false;
+
+    $versao_add = $dados["versao"];
 
     // Tabelas secundárias
-    $item_oculto = array();
-    $item_legado = array();
+    $item_guia = array();
     $item_titulo = array();
     $item_receita = array();
     $item_descricao = array();
     $item_durabilidade = array();
-    
+
     // Verifica se o item possui registros de cores no título
     $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
     $executa_item = $conexao->query($verificar_item);
@@ -38,13 +43,10 @@ while ($dados = $executa->fetch_assoc()) {
     if ($executa_item->num_rows > 0) {
 
         $dados = $executa_item->fetch_assoc();
-
-        $id_titulo = $dados["id_cor"];
         $valor_cor = $dados["tipo_item"];
 
         array_push($item_titulo, array(
-            "id_titulo" => intval($id_titulo),
-            "tipo_item" => intval($valor_cor)
+            "type" => intval($valor_cor)
         ));
     }
 
@@ -55,13 +57,10 @@ while ($dados = $executa->fetch_assoc()) {
     if ($executa_item->num_rows > 0) {
 
         $dados = $executa_item->fetch_assoc();
-
-        $id_durabilidade = $dados["id_durabilidade"];
         $durabilidade = $dados["durabilidade"];
 
         array_push($item_durabilidade, array(
-            "id_durabilidade" => intval($id_durabilidade),
-            "durabilidade" => intval($durabilidade)
+            "value" => intval($durabilidade)
         ));
     }
 
@@ -73,16 +72,14 @@ while ($dados = $executa->fetch_assoc()) {
 
         $dados = $executa_item->fetch_assoc();
 
-        $id_receita = $dados["id_craft"];
-        $receita = $dados["craft"];
+        $receita = $dados["crafting"];
         $qtd_produtos = $dados["qtd_produtos"];
         $tipo_craft = $dados["tipo_craft"];
 
         array_push($item_receita, array(
-            "id_receita" => intval($id_receita),
-            "receita" => $receita,
-            "produtos" => intval($qtd_produtos),
-            "tipo_craft" => intval($tipo_craft)
+            "recipe" => $receita,
+            "products" => intval($qtd_produtos),
+            "craft_type" => intval($tipo_craft)
         ));
     }
 
@@ -93,13 +90,10 @@ while ($dados = $executa->fetch_assoc()) {
     if ($executa_item->num_rows > 0) {
 
         $dados = $executa_item->fetch_assoc();
-
-        $id_descricao = $dados["id_descricao"];
         $descricao = $dados["descricao"];
 
         array_push($item_descricao, array(
-            "id_descricao" => intval($id_descricao),
-            "descricao" => $descricao
+            "value" => $descricao
         ));
     }
 
@@ -107,65 +101,63 @@ while ($dados = $executa->fetch_assoc()) {
     $verificar_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
     $executa_item = $conexao->query($verificar_item);
 
-    if ($executa_item->num_rows > 0) {
-
-        $dados = $executa_item->fetch_assoc();
-
-        $id_oculto = $dados["id_oculto"];
-
-        array_push($item_oculto, array(
-            "id_oculto" => intval($id_oculto),
-            "status_item" => 1
-        ));
-    }
+    if ($executa_item->num_rows > 0)
+        $item_oculto = true;
 
     // Verifica se o item possui registros de sprites legados
     $verificar_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
+    $executa_item = $conexao->query($verificar_item);
+
+    if ($executa_item->num_rows > 0)
+        $item_legado = true;
+
+    // Verifica se o item possui registros de várias guias
+    $verificar_item = "SELECT * FROM item_guia WHERE id_item = $id_item";
     $executa_item = $conexao->query($verificar_item);
 
     if ($executa_item->num_rows > 0) {
 
         $dados = $executa_item->fetch_assoc();
 
-        $id_legado = $dados["id_legado"];
+        $id_guia = $dados["id_guia"];
+        $historico_guias = $dados["historico_guias"];
 
-        array_push($item_legado, array(
-            "id_legado" => intval($id_legado),
-            "status_item" => 1
+        array_push($item_guia, array(
+            "id" => intval($id_guia),
+            "tab_history" => $historico_guias
         ));
     }
 
     array_push($data, array(
-        "id_item" => $id_item,
-        "nome_icon" => $nome_icon,
-        "tipo_item" => $tipo_item,
-        "nome_item" => $nome_item,
-        "coletavel" => $coletavel,
-        "renovavel" => $renovavel,
-        "nome_interno" => $nome_interno,
-        "empilhavel" => $empilhavel,
-        "versao_add" => $versao_add,
-        "fabricavel" => $fabricavel,
+        "id" => $id_item,
+        "icon" => $nome_icon,
+        "type" => $tipo_item,
+        "name" => $nome_item,
+        "internal_name" => $nome_interno,
+        "version" => $versao_add,
+        "collectable" => $coletavel,
+        "renewable" => $renovavel,
+        "stackable" => $empilhavel,
+        "craftable" => $fabricavel,
+        "hide" => $item_oculto,
+        "legacy" => $item_legado
     ));
 
     // Dados provenientes de outras tabelas
     if (sizeof($item_titulo) > 0)
-        $data[$i]["item_titulo"] = $item_titulo;
+        $data[$i]["title"] = $item_titulo;
 
     if (sizeof($item_durabilidade) > 0)
-        $data[$i]["item_durabilidade"] = $item_durabilidade;
+        $data[$i]["durability"] = $item_durabilidade;
 
     if (sizeof($item_receita) > 0)
-        $data[$i]["item_receita"] = $item_receita;
+        $data[$i]["recipe"] = $item_receita;
 
     if (sizeof($item_descricao) > 0)
-        $data[$i]["item_descricao"] = $item_descricao;
+        $data[$i]["description"] = $item_descricao;
 
-    if (sizeof($item_oculto) > 0)
-        $data[$i]["item_oculto"] = $item_oculto;
-
-    if (sizeof($item_legado) > 0)
-        $data[$i]["item_legado"] = $item_legado;
+    if (sizeof($item_guia) > 0)
+        $data[$i]["tab"] = $item_guia;
 
     $i++;
 }
