@@ -228,18 +228,17 @@ select {
     padding-left: 20px;
 }
 
-.Construcao,
-.Decorativos,
-.Redstone,
-.Transportes,
-.Diversos,
-.Alimentos,
-.Ferramentas,
-.Combate,
-.Pocoes,
-.Especiais,
-.Prancheta,
-.Generico,
+.construcao,
+.decorativos,
+.redstone,
+.transportes,
+.diversos,
+.alimentos,
+.ferramentas,
+.combate,
+.pocoes,
+.especiais,
+.prancheta,
 .oculto {
     display: none;
 }
@@ -388,7 +387,6 @@ select {
 #img_configs_2,
 #img_versoes_2,
 #img_coletaveis_2,
-#img_genericos_2,
 #img_ocultos_2 {
     display: none;
     z-index: 1 !important;
@@ -416,14 +414,6 @@ select {
     top: 280px;
     right: -5.9%;
     display: none;
-    position: absolute;
-}
-
-#img_genericos,
-#img_genericos_2 {
-    z-index: 0;
-    top: 370px;
-    right: -5.9%;
     position: absolute;
 }
 

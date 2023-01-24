@@ -155,8 +155,8 @@
                 <select name="abamenu" onmouseover="toolTip('A Categoria do item')" onmouseout="toolTip()">
 
                     <?php
-                    $categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"];
-                    $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"];
+                    $categorias = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"];
+                    $categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais"];
 
                     for ($i = 0; $i < sizeof($categorias); $i++) {
                         echo "<option value='$categorias[$i]'>$categorias_exib[$i]</option>";

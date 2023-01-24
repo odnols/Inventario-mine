@@ -102,18 +102,13 @@ ob_start(); ?>
 
         <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
             <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
-            <img id="img_versoes" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_atts.png">
+            <img id="img_versoes" class="aba_menu opcoes_laterais pesquisa" src="IMG/Interface/aba_atts.png">
         </div>
 
-        <div onclick="filtragem_automatica('genéricos')" onmouseover="toolTip('Itens genéricos')" onmouseout="toolTip()">
-            <img id="img_genericos_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_generic.png">
-            <img id="img_genericos" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_generic.png">
-        </div>
+        <img id="img_especiais" class="aba_menu especiais" src="#">
+        <img id="img_pesquisa" class="aba_menu pesquisa" src="#">
 
-        <img id="img_especiais" class="aba_menu Especiais" src="#">
-        <img id="img_pesquisa" class="aba_menu Pesquisa" src="#">
-
-        <img id="img_prancheta" class="aba_menu Prancheta" src="IMG/Interface/mascara_prancheta.png">
+        <img id="img_prancheta" class="aba_menu prancheta" src="IMG/Interface/mascara_prancheta.png">
 
         <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
 
@@ -207,24 +202,19 @@ ob_start(); ?>
                     $descricao_pesq = strtolower($descricao_pes);
 
                     for ($i = 0; $i < 20; $i++) { // Elimina todos os números de versão da descrição
-                        $descricao_pesq = str_replace("1." . $i, "", $descricao_pesq);
+                        $descricao_pesq = str_replace($i, "", $descricao_pesq);
                     }
 
                     $caminho_sprite = 'IMG/Itens/' . $geracao . '/' . $tipo_item . '/' . $nome_icon;
 
-                    if ($tipo_item != "Generico" && $oculto_invt != "Oculto") {
-                        echo "<div class='slot_item $tipo_item $versao_add $nome_interno $renovavel $empilhavel $coletavel $nome_pesq $descricao_pesq' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='$caminho_sprite'>";
-                        echo "</div>";
+                    if ($oculto_invt != "oculto") {
+                        echo "<div class='slot_item $tipo_item' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     } else {
-                        if ($oculto_invt != "Oculto") {
-                            echo "<div class='slot_item $tipo_item' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        } else {
-                            echo "<div class='slot_item oculto' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        }
-                        echo "<img class='icon_item' src='$caminho_sprite'>";
-                        echo "</div>";
+                        echo "<div class='slot_item oculto' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
+
+                    echo "<img class='icon_item' src='$caminho_sprite'>";
+                    echo "</div>";
                 } ?>
                 <div id="complementa_slots"></div>
             </div>

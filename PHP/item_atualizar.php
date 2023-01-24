@@ -47,28 +47,28 @@ if (strlen($aliases) == 0)
     $aliases = null;
 
 // Atualizando os campos principais
-$insere = "UPDATE item SET nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavel = $coletavel, renovavel = $renovavel, oculto_invt = $oculto_invt, programmer_art = $programmer_art, aliases_nome = '$aliases', fabricavel = $crafting WHERE id_item = $id_item";
+$insere = "UPDATE item SET nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavel = $coletavel, renovavel = $renovavel, fabricavel = $crafting WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando o nome interno
 if (strlen($nome_interno) < 1)
-    $insere = "UPDATE item SET nome_interno = null WHERE id_item = $id_item";
+    $insere = "UPDATE item SET internal = null WHERE id_item = $id_item";
 else
-    $insere = "UPDATE item SET nome_interno = '$nome_interno' WHERE id_item = $id_item";
+    $insere = "UPDATE item SET internal = '$nome_interno' WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando a descrição do item
 if (strlen($descricao) < 1)
-    $insere = "UPDATE item SET descricao = null WHERE id_item = $id_item";
+    $insere = "UPDATE item_descricao SET descricao = null WHERE id_item = $id_item";
 else
-    $insere = "UPDATE item SET descricao = '$descricao' WHERE id_item = $id_item";
+    $insere = "UPDATE item_descricao SET descricao = '$descricao' WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando a versão
 if (strlen($versao) < 1 || $versao == "Outro")
-    $insere = "UPDATE item SET versao_adicionada = 0 WHERE id_item = $id_item";
+    $insere = "UPDATE item SET versao = 0 WHERE id_item = $id_item";
 else
-    $insere = "UPDATE item SET versao_adicionada = '$versao' WHERE id_item = $id_item";
+    $insere = "UPDATE item SET versao = '$versao' WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Verifica se o item possui registros anteriores
@@ -99,6 +99,32 @@ else
     $insere = "INSERT INTO item_durabilidade values (null, $id_item, $durabilidade)";
 
 $executa = $conexao->query($insere);
+
+// Verifica se o item possui sprites antigos
+$verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
+$executa_verificacao = $conexao->query($verifica_legado_item);
+
+if ($executa_verificacao->num_rows > 0 && $programmer_art) {
+    if ($programmer_art)
+        $insere = "INSERT INTO item_legado values (null, $id_item, 1)";
+    else
+        $insere = "DELETE FROM item_legado WHERE id_item = $id_item";
+
+    $executa = $conexao->query($insere);
+}
+
+// Verifica se o item esta oculto no inventário
+$verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
+$executa_verificacao = $conexao->query($verifica_oculto_item);
+
+if ($executa_verificacao->num_rows > 0 && !$oculto_invt) {
+    if ($oculto_invt)
+        $insere = "INSERT INTO item_oculto values (null, $id_item, 1)";
+    else
+        $insere = "DELETE FROM item_oculto WHERE id_item = $id_item";
+
+    $executa = $conexao->query($insere);
+}
 
 // Atualizando a imagem que está sendo utilizada
 if (strlen($arq_name) > 0) {

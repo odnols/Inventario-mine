@@ -88,7 +88,7 @@
 
     if ($executa_coleta->num_rows > 0) {
         $dados4 = $executa_coleta->fetch_assoc();
-        $receita = $dados4["craft"];
+        $receita = $dados4["crafting"];
     } ?>
 </body>
 

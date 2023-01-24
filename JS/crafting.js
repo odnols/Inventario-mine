@@ -31,8 +31,8 @@ function seleciona_item(id_item) {
         let slot_craft_ativo = ""
 
         Object.keys(dados_itens).forEach(function (k) {
-            if (itens_atalho[i] == dados_itens[k]["id_item"]) {
-                sprite_item = `../IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`
+            if (itens_atalho[i] == dados_itens[k]["id"]) {
+                sprite_item = `../IMG/Itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
 
                 if (i == 0)
                     slot_craft_ativo = "id='slot_craft_ativo'"
@@ -59,8 +59,8 @@ function seta_item_craft(indice) {
         if (i == indice) {
             if (grid_craft[i].style.backgroundImage == "")
                 Object.keys(dados_itens).forEach(function (k) {
-                    if (itens_atalho[0] == dados_itens[k]["id_item"]) {
-                        sprite_item = `../IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`
+                    if (itens_atalho[0] == dados_itens[k]["id"]) {
+                        sprite_item = `../IMG/Itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
                         grid_craft[i].style.backgroundImage = `url('${sprite_item}')`
                         array_crafting[i] = itens_atalho[0]
                     }
@@ -78,8 +78,8 @@ function seta_item_craft(indice) {
 function seta_item_criado(id_item) {
 
     Object.keys(dados_itens).forEach(function (k) {
-        if (dados_itens[k]["id_item"] == id_item) {
-            sprite_produto = `../IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`
+        if (dados_itens[k]["id"] == id_item) {
+            sprite_produto = `../IMG/Itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
 
             document.getElementById("sprite_produto").innerHTML = ""
             document.getElementById("sprite_produto").innerHTML += `<img src='${sprite_produto}' style='width: 48px'>`
@@ -117,11 +117,11 @@ function mostra_crafting(receita, produto, qtd, local) {
         if (array_crafting[i] !== null || typeof array_crafting[i] !== "undefined") {
             Object.keys(dados_itens).forEach(function (k) {
 
-                if (dados_itens[k]["id_item"] == array_crafting[i])
-                    sprite_item = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`
+                if (dados_itens[k]["id"] == array_crafting[i])
+                    sprite_item = `${caminho}IMG/Itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
 
-                if (dados_itens[k]["id_item"] == produto)
-                    sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`
+                if (dados_itens[k]["id"] == produto)
+                    sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
             })
 
             if (typeof array_crafting[i] !== "undefined" && sprite_item.length > 0) // Altera o sprite para o item do grid
@@ -131,12 +131,12 @@ function mostra_crafting(receita, produto, qtd, local) {
     }
 
     Object.keys(dados_itens).forEach(function (k) {
-        if (dados_itens[k]["id_item"] == produto) {
+        if (dados_itens[k]["id"] == produto) {
 
             dados_produto = dados_itens[k]
 
-            sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["tipo_item"]}/${dados_itens[k]["nome_icon"]}`
-            nome_produto = dados_itens[k]["nome"]
+            sprite_produto = `${caminho}IMG/Itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
+            nome_produto = dados_itens[k]["name"]
         }
     })
 

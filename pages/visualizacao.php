@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="../IMG/Itens/new/Construcao/grass_block.png">
+    <link rel="shortcut icon" href="../IMG/Itens/new/construcao/grass_block.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../CSS/anima.css">
@@ -95,43 +95,43 @@
             echo "<p class='estat cor_textos'>Itens adicionados na versão 1.$versao_jogo ( ";
             echo $executa->num_rows . " )</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND tipo != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Itens no Inventário: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1 AND tipo != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND renovavel = 1 AND tipo != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND renovavel = 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0 AND tipo != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0 AND coletavel = 1 AND tipo != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0 AND coletavel = 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1 AND empilhavel != 0 AND renovavel != 1 AND tipo != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1 AND empilhavel != 0 AND renovavel != 1";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel LIKE 0 AND tipo != 'Generico'";
+            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel LIKE 0";
             $executa = $conexao->query($verificar);
 
             echo "<br><p class='estat cor_textos'>Não empilháveis: ";

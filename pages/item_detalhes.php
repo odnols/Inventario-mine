@@ -80,11 +80,19 @@
     if ($dados["renovavel"])
         $renovavel = "checked";
 
-    // if ($dados["oculto_invt"])
-    //     $oculto_invt = "checked";
+    $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
+    $executa_verificacao = $conexao->query($verifica_oculto_item);
+    $dados_oculto = $executa->fetch_assoc();
 
-    // if ($dados["programmer_art"])
-    //     $programmer_art = "checked";
+    if ($dados_oculto["status_item"])
+        $oculto_invt = "checked";
+
+    $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
+    $executa_verificacao = $conexao->query($verifica_legado_item);
+    $dados_legado = $executa->fetch_assoc();
+
+    if ($dados_legado["status_item"])
+        $programmer_art = "checked";
 
     if ($dados["fabricavel"])
         $crafting = "checked";
@@ -234,9 +242,7 @@
             $executa_coleta = $conexao->query($coleta_receita);
 
             $dados4 = $executa_coleta->fetch_assoc();
-            $receita = $dados4["crafting"];
-
-            echo "receita ". $receita; ?>
+            $receita = $dados4["crafting"]; ?>
 
             <div id="preview_item_craft">
                 <?php for ($i = 0; $i < 9; $i++) {
@@ -275,7 +281,9 @@
     } ?>
 </body>
 
-<?php if ($crafting == "checked") { ?>
+<?php if ($crafting == "checked") { 
+    
+    echo $receita; ?>
     <script type="text/javascript">
         setTimeout(() => {
             mostra_crafting('<?php echo $receita ?>', null, 1)

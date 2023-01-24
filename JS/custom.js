@@ -41,13 +41,13 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
                     document.getElementById(id_descricao_item).innerHTML = ""
             } else {
 
-                const alvos_replace = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Generico"]
+                const alvos_replace = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"]
 
                 if (pesquisa == 0) {
                     for (let i = 0; i < alvos_replace.length; i++)
                         descricao = descricao.replace(`[&1${alvos_replace[i]}`, "")
                 } else {
-                    categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais", "Genérico"]
+                    categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais"]
 
                     alvo_alteracao = descricao.split(" ")
                     alvo_alteracao[0] = alvo_alteracao[0].replace("[&1", "")

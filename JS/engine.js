@@ -1,5 +1,5 @@
 // Variavéis Globais 
-var prancheta = false, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_genericos = 0, itens_ocultos = 0, tema = null, pesquisa = 0
+var prancheta = false, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_ocultos = 0, tema = null, pesquisa = 0
 
 var qtd_itens = 0
 
@@ -55,7 +55,7 @@ function clique(valor, estado) {
 
     if (typeof valor == "string") {
 
-        let mostra = document.getElementsByClassName("Prancheta")
+        let mostra = document.getElementsByClassName("prancheta")
 
         if (!prancheta && estado != 1) {
             document.getElementById("prancheta_add").style.display = "block"
@@ -90,7 +90,7 @@ function clique(valor, estado) {
 }
 
 function aba_menu(alvo) {
-    let categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Pesquisa"]
+    let categorias = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"]
 
     if (document.getElementById("img_versoes_2")) {
         document.getElementById("img_versoes_2").style.display = "none"
@@ -127,37 +127,34 @@ function filtragem(pesquisa_input, local) {
             texto = texto.toLowerCase(), pesquisa_input = texto, local = 1
     }
 
-    let categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Pesquisa"]
+    let categorias = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"]
     let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20"]
 
     let alvos = []
 
     // Descrição das abas do inventário para os itens
-    if ((categorias[pesquisa_input]) && (categorias[pesquisa_input] !== "Pesquisa" && local !== 1))
+    if ((categorias[pesquisa_input]) && (categorias[pesquisa_input] !== "pesquisa" && local !== 1))
         pesquisa_input = 0
 
     if (typeof pesquisa_input == "string" && pesquisa_input.length == 0)
         local = 0, pesquisa_input = 10
 
-    if (pesquisa_input == "off" || pesquisa_input == "não_coletável" || pesquisa_input == "generico" || pesquisa_input == "oculto")
+    if (pesquisa_input == "off" || pesquisa_input == "não_coletável" || pesquisa_input == "oculto")
         verifica_posicao(pesquisa_input)
     else if (document.getElementById("img_configs_2")) {
         document.getElementById("img_configs_2").style.display = "none"
         document.getElementById("img_coletaveis_2").style.display = "none"
-        document.getElementById("img_genericos_2").style.display = "none"
     }
 
     // Listando os itens que possuem a class com nome semelhante ao pesquisado
     let itens = document.getElementsByClassName("slot_item")
 
     for (let i = 0; i < itens.length; i++) {
-        if (itens[i].className.includes(pesquisa_input) && !itens[i].className.includes("oculto") && !itens[i].className.includes("Generico"))
+        if (itens[i].className.includes(pesquisa_input) && !itens[i].className.includes("oculto"))
             alvos.push(itens[i])
     }
 
-    if ((versoes.includes(pesquisa_input) || categorias.includes(categorias[pesquisa_input])) && (itens_genericos || itens_ocultos)) { // Esconde todos os itens genéricos
-
-        if (itens_genericos) mostrar_genericos()
+    if ((versoes.includes(pesquisa_input) || categorias.includes(categorias[pesquisa_input])) && itens_ocultos) {
 
         if (itens_ocultos) mostrar_ocultos()
 
@@ -205,10 +202,6 @@ function filtragem(pesquisa_input, local) {
         }
     }
 
-    // Itens genéricos
-    if (itens_genericos == 1)
-        alvos = document.getElementsByClassName("Generico")
-
     // Exibindo os itens da categoria escolhida
     for (let i = 0; i < alvos.length; i++)
         alvos[i].style.display = "block"
@@ -232,7 +225,7 @@ function filtragem(pesquisa_input, local) {
 
 function nome_guia(alvo) {
 
-    let categorias = ["Construcao", "Decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Pocoes", "Especiais", "Pesquisa"]
+    let categorias = ["construcao", "decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "pocoes", "especiais"]
 
     // Definindo o nome da guia seleciona
     if (alvo == 0)
@@ -318,24 +311,6 @@ function ordena_guias_ativas(categorias, alvos) {
     }
 }
 
-function mostrar_genericos() {
-    let alvos = document.getElementsByClassName('Generico')
-
-    if (itens_genericos == 0) {
-        for (let i = 0; i < alvos.length; i++)
-            alvos[i].style.display = "block"
-
-        itens_genericos = 1
-    } else {
-        for (let i = 0; i < alvos.length; i++)
-            alvos[i].style.display = "none"
-
-        document.getElementById("img_genericos_2").style.display = "none"
-
-        itens_genericos = 0
-    }
-}
-
 function mostrar_ocultos() {
     let alvos = document.getElementsByClassName('oculto')
 
@@ -365,11 +340,8 @@ function filtragem_automatica(alvo_filtragem, local) {
     if (local != null)
         document.getElementById("lista_versoes").style.display = "none"
 
-    if (alvo_filtragem == "genéricos")
-        alvo_filtragem = "generico"
-
     // Verifica se a requisição é igual a anterior e desabilita o elemento
-    if (cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "generico" || cache_pesquisa == "oculto") {
+    if (cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "oculto") {
         if (cache_pesquisa != alvo_filtragem) {
             cache_pesquisa = alvo_filtragem
             document.getElementById("barra_pesquisa_input").value = alvo_filtragem
@@ -385,9 +357,6 @@ function filtragem_automatica(alvo_filtragem, local) {
 
         verifica_posicao(alvo_filtragem)
     }
-
-    if (alvo_filtragem == "generico" || (alvo_filtragem != "generico" && itens_genericos == 1))
-        mostrar_genericos()
 
     if (alvo_filtragem == "oculto" || (alvo_filtragem != "oculto" && itens_ocultos == 1))
         mostrar_ocultos()
@@ -460,14 +429,11 @@ function verifica_posicao(caso) {
     if (caso == "não_coletável")
         caso = 1
 
-    if (caso == "generico")
-        caso = 2
-
     if (caso == "oculto")
         caso = 3
 
-    alvos = ["img_configs", "img_coletaveis", "img_genericos", "img_ocultos"]
-    alvos_finais = ["img_configs_2", "img_coletaveis_2", "img_genericos_2", "img_ocultos_2"]
+    alvos = ["img_configs", "img_coletaveis", "img_ocultos"]
+    alvos_finais = ["img_configs_2", "img_coletaveis_2", "img_ocultos_2"]
 
     elemento = document.getElementById(alvos[caso])
     posicao = elemento.getBoundingClientRect()
@@ -575,6 +541,6 @@ if (document.getElementById("btn_fecha_tela_craft")) {
     })
 }
 
-function escolhe_aba_menu(id_item){
+function escolhe_aba_menu(id_item) {
     window.location = `../modules/aba_menu.php?id=${id_item}`
 }
