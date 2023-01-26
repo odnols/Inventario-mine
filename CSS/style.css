@@ -484,7 +484,8 @@ select {
     top: 40%;
 }
 
-#btn_fabricacao, #btn_abamenu {
+#btn_fabricacao,
+#btn_abamenu {
     height: 45px;
     width: 368px;
     font-size: 20px;
@@ -895,8 +896,12 @@ a {
     background-image: url("../IMG/Interface/Claro/slot.png");
 }
 
+.grid_craft {
+    z-index: 2 !important;
+}
+
 .grid_craft:hover {
-    background-image: url("../IMG/Interface/Claro/slot_hover.png");
+    background-image: url("../IMG/Interface/Claro/slot_hover.png") !important;
     background-position: -3px -3px;
 }
 
@@ -934,6 +939,7 @@ a {
     float: left;
     margin: 3px;
     height: 48px;
+    z-index: 20 !important;
 }
 
 .gric_0,

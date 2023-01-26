@@ -47,7 +47,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
                     for (let i = 0; i < alvos_replace.length; i++)
                         descricao = descricao.replace(`[&1${alvos_replace[i]}`, "")
                 } else {
-                    categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais"]
+                    categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "especiais"]
 
                     alvo_alteracao = descricao.split(" ")
                     alvo_alteracao[0] = alvo_alteracao[0].replace("[&1", "")

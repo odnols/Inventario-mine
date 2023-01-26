@@ -64,7 +64,7 @@
 
         <div id="grid_crafting">
             <?php for ($i = 0; $i < 9; $i++) {
-                echo "<div class='grid_craft gric' onclick='seta_item_craft($i)'></div>";
+                echo "<div class='grid_craft gric'onclick='seta_item_craft($i)'></div>";
             } ?>
         </div>
 
