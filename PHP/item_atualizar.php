@@ -4,10 +4,8 @@ $id_item = $_POST["id_item"];
 
 $nome = $_POST["nome"];
 $nome_interno = $_POST["nome_interno"];
-$abamenu = $_POST["abamenu"];
 $empilhavel = $_POST["empilhavel"];
 $versao = $_POST["versao"];
-$aliases = $_POST["aliases"];
 
 $cor_tipo_item = $_POST["cor_tipo_item"];
 $descricao = $_POST["descricao"];
@@ -43,11 +41,8 @@ if (isset($_POST["fabricavel"]))
 else
     $crafting = 0;
 
-if (strlen($aliases) == 0)
-    $aliases = null;
-
 // Atualizando os campos principais
-$insere = "UPDATE item SET nome = '$nome', abamenu = '$abamenu', empilhavel = $empilhavel, coletavel = $coletavel, renovavel = $renovavel, fabricavel = $crafting WHERE id_item = $id_item";
+$insere = "UPDATE item SET nome = '$nome', empilhavel = $empilhavel, coletavel = $coletavel, renovavel = $renovavel, fabricavel = $crafting WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
 
 // Atualizando o nome interno
@@ -66,7 +61,7 @@ $executa = $conexao->query($insere);
 
 // Atualizando a versão
 if (strlen($versao) < 1 || $versao == "Outro")
-    $insere = "UPDATE item SET versao = 0 WHERE id_item = $id_item";
+    $insere = "UPDATE item SET versao = '1.0' WHERE id_item = $id_item";
 else
     $insere = "UPDATE item SET versao = '$versao' WHERE id_item = $id_item";
 $executa = $conexao->query($insere);
@@ -75,7 +70,8 @@ $executa = $conexao->query($insere);
 $verifica_cor_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_cor_item);
 
-if ($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0) { // Só insere se for diferente de zero
+// Só insere se for diferente de zero
+if ($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0) {
     if ($executa_verificacao->num_rows == 0) // Insere um novo
         $insere = "INSERT INTO item_titulo VALUES (null, $id_item, $cor_tipo_item)";
     else if ($cor_tipo_item != 0) // Atualiza
@@ -86,7 +82,7 @@ if ($cor_tipo_item != 0 || $executa_verificacao->num_rows > 0) { // Só insere s
     $executa = $conexao->query($insere);
 }
 
-// Verifica se o item possui registros anteriores
+// Verifica se o item possui registros de durabilidade
 $verifica_durabilidade_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_durabilidade_item);
 
@@ -104,27 +100,25 @@ $executa = $conexao->query($insere);
 $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_legado_item);
 
-if ($executa_verificacao->num_rows > 0 && $programmer_art) {
-    if ($programmer_art)
-        $insere = "INSERT INTO item_legado values (null, $id_item, 1)";
-    else
+if ($executa_verificacao->num_rows > 0) {
+    if (!$programmer_art)
         $insere = "DELETE FROM item_legado WHERE id_item = $id_item";
+} else if ($programmer_art)
+    $insere = "INSERT INTO item_legado values (null, $id_item, 1)";
 
-    $executa = $conexao->query($insere);
-}
+$executa = $conexao->query($insere);
 
 // Verifica se o item esta oculto no inventário
 $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_oculto_item);
 
-if ($executa_verificacao->num_rows > 0 && !$oculto_invt) {
-    if ($oculto_invt)
-        $insere = "INSERT INTO item_oculto values (null, $id_item, 1)";
-    else
+if ($executa_verificacao->num_rows > 0) {
+    if (!$oculto_invt)
         $insere = "DELETE FROM item_oculto WHERE id_item = $id_item";
+} else if ($oculto_invt)
+    $insere = "INSERT INTO item_oculto values (null, $id_item, 1)";
 
-    $executa = $conexao->query($insere);
-}
+$executa = $conexao->query($insere);
 
 // Atualizando a imagem que está sendo utilizada
 if (strlen($arq_name) > 0) {

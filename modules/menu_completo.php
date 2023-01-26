@@ -43,7 +43,7 @@
 
         <img id="img_prancheta" class="aba_menu prancheta" src="../IMG/Interface/mascara_prancheta.png">
 
-        <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
+        <input class="pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
     <?php } ?>
 
     <span id="titulo_aba"></span>

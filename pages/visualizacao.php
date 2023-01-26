@@ -80,7 +80,7 @@
         <div class="botoes_menu">
             <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
                 <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="../IMG/Interface/mascara_oculto.png">
-                <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
+                <img id="img_ocultos" class="aba_menu opcoes_baixo pesquisa" src="#">
             </div>
         </div>
 

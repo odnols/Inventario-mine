@@ -36,7 +36,7 @@ ob_start(); ?>
 
         <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
             <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
-            <img id="img_ocultos" class="aba_menu opcoes_baixo Pesquisa" src="#">
+            <img id="img_ocultos" class="aba_menu opcoes_baixo pesquisa" src="#">
         </div>
 
         <div id="text_estatsc">
@@ -92,12 +92,12 @@ ob_start(); ?>
 
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
             <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
-            <img id="img_configs" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_configs.png">
+            <img id="img_configs" class="aba_menu opcoes_laterais pesquisa" src="IMG/Interface/aba_configs.png">
         </div>
 
         <div onclick="filtragem_automatica('não_coletável')" onmouseover="toolTip('Mostrar itens que não são coletáveis no sobrevivência')" onmouseout="toolTip()">
             <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_nao_coletaveis.png">
-            <img id="img_coletaveis" class="aba_menu opcoes_laterais Pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
+            <img id="img_coletaveis" class="aba_menu opcoes_laterais pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
         </div>
 
         <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
@@ -110,7 +110,7 @@ ob_start(); ?>
 
         <img id="img_prancheta" class="aba_menu prancheta" src="IMG/Interface/mascara_prancheta.png">
 
-        <input class="Pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
+        <input class="pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
 
         <span id="titulo_aba"></span>
 

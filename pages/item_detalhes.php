@@ -68,9 +68,6 @@
     $empilhavel = $dados["empilhavel"];
     $versao_add = $dados["versao"];
 
-    // $descricao_item = $dados["descricao"];
-    $descricao_item = "";
-
     if ($versao_add == null)
         $versao_add = "Outro";
 
@@ -80,22 +77,28 @@
     if ($dados["renovavel"])
         $renovavel = "checked";
 
+    if ($dados["fabricavel"])
+        $crafting = "checked";
+
+    $verifica_descricao_item = "SELECT * FROM item_descricao WHERE id_item = $id_item";
+    $executa_verificacao = $conexao->query($verifica_descricao_item);
+    $dados_descricao = $executa_verificacao->fetch_assoc();
+
+    $descricao_item = $dados_descricao["descricao"];
+
     $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
     $executa_verificacao = $conexao->query($verifica_oculto_item);
-    $dados_oculto = $executa->fetch_assoc();
+    $dados_oculto = $executa_verificacao->fetch_assoc();
 
     if ($dados_oculto["status_item"])
         $oculto_invt = "checked";
 
     $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
     $executa_verificacao = $conexao->query($verifica_legado_item);
-    $dados_legado = $executa->fetch_assoc();
+    $dados_legado = $executa_verificacao->fetch_assoc();
 
     if ($dados_legado["status_item"])
         $programmer_art = "checked";
-
-    if ($dados["fabricavel"])
-        $crafting = "checked";
 
     $cor_item = 0;
     $durabilidade = "";
@@ -196,11 +199,11 @@
 
                     <select name="versao" style="width: 505px;" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
 
-                        <?php echo "<option value='$versao_add'>1.$versao_add</option>";
+                        <?php echo "<option value='$versao_add'>$versao_add</option>";
 
                         for ($i = 20; $i >= 0; $i--) {
-                            if ($versao_add != $i)
-                                echo "<option value='$i'>1.$i</option>";
+                            if ($versao_add != "1." . $i)
+                                echo "<option value='1.$i'>1.$i</option>";
                         } ?>
                     </select>
                 </div><br><br>
@@ -281,9 +284,7 @@
     } ?>
 </body>
 
-<?php if ($crafting == "checked") { 
-    
-    echo $receita; ?>
+<?php if ($crafting == "checked") { ?>
     <script type="text/javascript">
         setTimeout(() => {
             mostra_crafting('<?php echo $receita ?>', null, 1)
