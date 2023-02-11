@@ -20,9 +20,9 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
         if (alvo_tooltip) alvo_tooltip.innerHTML = ""
         if (alvo_id_descricao_item) alvo_id_descricao_item.innerHTML = ""
 
-        const itens_especiais = ["", "item_encantado", "item_especial", "item_lendario"]
-        const cores_efeitos = ["&1", "&2", "&3", "&4", "&r"]
-        const nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde", "efeito_cor_padrao"]
+        const itens_especiais = ["", "item_encantado", "item_especial", "item_lendario", "item_magico"]
+        const cores_efeitos = ["&1", "&2", "&3", "&4", "&5", "&6", "&r"]
+        const nome_cores_efeitos = ["efeito_cor_azul", "efeito_cor_vermelha", "efeito_cor_roxa", "efeito_cor_verde", "efeito_cor_amarela", "efeito_cor_branca", "efeito_cor_padrao"]
 
         if (alvo_tooltip)
             if (cor_item > 0)
@@ -47,13 +47,13 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
                     for (let i = 0; i < alvos_replace.length; i++)
                         descricao = descricao.replace(`[&1${alvos_replace[i]}`, "")
                 } else {
-                    categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "especiais"]
+                    categorias_exib = ["Blocos de construção", "Blocos decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "Poções", "Especiais"]
 
                     alvo_alteracao = descricao.split(" ")
                     alvo_alteracao[0] = alvo_alteracao[0].replace("[&1", "")
 
                     let i = alvos_replace.indexOf(alvo_alteracao[0])
-                    descricao = descricao.replace(alvo_alteracao[0], `[&1${categorias_exib[i]}`)
+                    descricao = descricao.replace(alvo_alteracao[0], categorias_exib[i])
                 }
 
                 descricao_colorida = descricao.split("[")
@@ -64,7 +64,7 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
 
                             descricao_colorida[j] = descricao_colorida[j].replace(cores_efeitos[i], "", 1)
 
-                            document.getElementById(id_descricao_item).innerHTML += `<span class='${nome_cores_efeitos[i]}'>${descricao_colorida[j]}</span><br>`
+                            document.getElementById(id_descricao_item).innerHTML += `<span class='${nome_cores_efeitos[i]} efeito_colorido'>${descricao_colorida[j]}</span>`
 
                             break
                         }

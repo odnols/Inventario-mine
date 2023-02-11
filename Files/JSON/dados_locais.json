@@ -15742,6 +15742,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&rVariante aleat\u00f3ria"
+            }
         ]
     },
     {
@@ -28519,7 +28524,7 @@
         "type": "diversos",
         "name": "Ovo gerador de golem de ferro",
         "internal_name": "iron_golem_spawn_egg",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -28533,7 +28538,7 @@
         "type": "diversos",
         "name": "Ovo gerador de golem de neve",
         "internal_name": "snow_golem_spawn_egg",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -28547,7 +28552,7 @@
         "type": "diversos",
         "name": "Ovo gerador de drag\u00e3o",
         "internal_name": "ender_dragon_spawn_egg",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -28561,7 +28566,7 @@
         "type": "diversos",
         "name": "Ovo gerador de wither",
         "internal_name": "whiter_spawn_egg",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -28988,6 +28993,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento das selvas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
         ]
     },
     {
@@ -29008,6 +29018,11 @@
                 "recipe": "59,1521,59,59,2,59,59,59,59",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento das profundezas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29030,6 +29045,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de armadura de olho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
         ]
     },
     {
@@ -29050,6 +29070,11 @@
                 "recipe": "59,1523,59,59,91,59,59,59,59",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de dunas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29072,6 +29097,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de litorais[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
         ]
     },
     {
@@ -29092,6 +29122,11 @@
                 "recipe": "59,1525,59,59,29,59,59,59,59",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de costelas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29114,6 +29149,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de sentinela[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
         ]
     },
     {
@@ -29134,6 +29174,11 @@
                 "recipe": "59,1527,59,59,504,59,59,59,59",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de mar\u00e9s[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29156,6 +29201,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de espiral[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
         ]
     },
     {
@@ -29176,6 +29226,11 @@
                 "recipe": "59,1529,59,59,47,59,59,59,59",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de vex[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29198,13 +29253,18 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&rOrnamento de focinho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
         ]
     },
     {
         "id": 1531,
         "icon": "netherite_upgrade_smithing_template.png",
         "type": "ferramentas",
-        "name": "Aprimoramento de netherita",
+        "name": "Molde de ferraria",
         "internal_name": "netherite_upgrade_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29218,6 +29278,689 @@
                 "recipe": "59,1531,59,59,29,59,59,59,59",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rMelhoria de netherita[&s[&rAplic\u00e1vel a:[&1Equipamento de diamante[&rIngredientes:[&1Barras de netherita"
+            }
+        ]
+    },
+    {
+        "id": 1532,
+        "icon": "sand.png",
+        "type": "construcao",
+        "name": "Areia suspeita",
+        "internal_name": "suspicious_sand",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1533,
+        "icon": "ceramic_shard.png",
+        "type": "diversos",
+        "name": "Fragmento de cer\u00e2mica",
+        "internal_name": "ceramic_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1534,
+        "icon": "ceramic_shard_2.png",
+        "type": "diversos",
+        "name": "Fragmento de cer\u00e2mica",
+        "internal_name": "ceramic_shard_2",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1535,
+        "icon": "ceramic_shard_4.png",
+        "type": "diversos",
+        "name": "Fragmento de cer\u00e2mica",
+        "internal_name": "ceramic_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1536,
+        "icon": "ceramic_shard_3.png",
+        "type": "diversos",
+        "name": "Fragmento de cer\u00e2mica",
+        "internal_name": "ceramic_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1537,
+        "icon": "brush.png",
+        "type": "ferramentas",
+        "name": "Pincel",
+        "internal_name": "brush",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1538,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Kebab med tre pepperoni[&rKristoffer Zetterstrand[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1568,
+        "icon": "white_banner_s.png",
+        "type": "decorativos",
+        "name": "Estandarte Amea\u00e7ador",
+        "internal_name": "white_banner",
+        "version": "1.14",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 4
+            }
+        ],
+        "description": [
+            {
+                "value": null
+            }
+        ]
+    },
+    {
+        "id": 1539,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5de_aztec[&rKristoffer Zetterstrand[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1540,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Albanian[&rKristoffer Zetterstrand[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1541,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5de_aztec[&rKristoffer Zetterstrand[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1542,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Target Successfully Bombed[&rKristoffer Zetterstrand[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1543,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Paradistr\u00e4d[&rKristoffer Zetterstrand[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1544,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Wasteland[&rKristoffer Zetterstrand[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1545,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Wanderer[&rKristoffer Zetterstrand[&61x2"
+            }
+        ]
+    },
+    {
+        "id": 1546,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Graham[&rKristoffer Zetterstrand[&61x2"
+            }
+        ]
+    },
+    {
+        "id": 1547,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5The Pool[&rKristoffer Zetterstrand[&62x1"
+            }
+        ]
+    },
+    {
+        "id": 1548,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Bonjour Monsieur Courbet[&rKristoffer Zetterstrand[&62x1"
+            }
+        ]
+    },
+    {
+        "id": 1549,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Seaside[&rKristoffer Zetterstrand[&62x1"
+            }
+        ]
+    },
+    {
+        "id": 1550,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5sunset_dense[&rKristoffer Zetterstrand[&62x1"
+            }
+        ]
+    },
+    {
+        "id": 1551,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Creebet[&rKristoffer Zetterstrand[&62x1"
+            }
+        ]
+    },
+    {
+        "id": 1552,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Match[&rKristoffer Zetterstrand[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1553,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Bust[&rKristoffer Zetterstrand[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1554,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5The Stage Is Set[&rKristoffer Zetterstrand[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1555,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5The void[&rKristoffer Zetterstrand[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1556,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Skull and Roses[&rKristoffer Zetterstrand[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1557,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Wither[&rMojang[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1558,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Fighters[&rKristoffer Zetterstrand[&64x2"
+            }
+        ]
+    },
+    {
+        "id": 1559,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Mortal Coil[&rKristoffer Zetterstrand[&64x3"
+            }
+        ]
+    },
+    {
+        "id": 1560,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Kong[&rKristoffer Zetterstrand[&64x3"
+            }
+        ]
+    },
+    {
+        "id": 1561,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Pointer[&rKristoffer Zetterstrand[&64x4"
+            }
+        ]
+    },
+    {
+        "id": 1562,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Pigscene[&rKristoffer Zetterstrand[&64x4"
+            }
+        ]
+    },
+    {
+        "id": 1563,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Skull On Fire[&rKristoffer Zetterstrand[&64x4"
+            }
+        ]
+    },
+    {
+        "id": 1564,
+        "icon": "painting.png",
+        "type": "especiais",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Earth[&rMojang[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1565,
+        "icon": "painting.png",
+        "type": "especiais",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Wind[&rMojang[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1566,
+        "icon": "painting.png",
+        "type": "especiais",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Water[&rMojang[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1567,
+        "icon": "painting.png",
+        "type": "especiais",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.0",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Fire[&rMojang[&62x2"
             }
         ]
     }

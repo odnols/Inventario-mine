@@ -174,7 +174,7 @@
                     <?php
 
                     for ($i = 20; $i >= 0; $i--) {
-                        echo "<option value='$i'>1.$i</option>";
+                        echo "<option value='1.$i'>1.$i</option>";
                     } ?>
                 </select>
             </div>

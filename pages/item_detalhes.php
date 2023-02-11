@@ -173,7 +173,7 @@
                 <div id="selects" class="pag_2">
                     <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A Cor do item no inventário')" onmouseout="toolTip()">
                         <?php
-                        $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa"];
+                        $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa", "Laranja"];
 
                         echo "<option value='$cor_item'>$cores_nome[$cor_item]</option>";
 

@@ -34,7 +34,9 @@ Por esta tela é possível definir a cor do nome do item, definir a aba que ele 
 `[&1` - Cor azul <br>
 `[&2` - Cor vermelha <br>
 `[&3` - Cor roxa <br>
-`[&4` - Cor verde <br><br>
+`[&4` - Cor verde <br>
+`[&5` - Cor amarela <br>
+`[&6` - Cor branca <br><br>
 
 `[&r` - Cor padrão ( cinza ) <br>
 `[&s` - Pula uma linha <br><br>

@@ -38,8 +38,8 @@
             <img id="img_versoes" class="aba_menu opcoes_laterais pesquisa" src="../IMG/Interface/aba_atts.png">
         </div>
 
-        <img id="img_especiais" class="aba_menu especiais" src="#">
-        <img id="img_pesquisa" class="aba_menu pesquisa" src="#">
+        <img id="img_especiais" class="aba_menu aba_menu_especiais especiais" src="#">
+        <img id="img_pesquisa" class="aba_menu aba_menu_pesquisa pesquisa" src="#">
 
         <img id="img_prancheta" class="aba_menu prancheta" src="../IMG/Interface/mascara_prancheta.png">
 
@@ -84,7 +84,14 @@
 
                 $descricao = "[&1" . $tipo_item;
 
-                // $descricao = $descricao . " " . $dados["descricao"];
+                // Descricao do item
+                $verifica_descricao_item = "SELECT descricao FROM item_descricao WHERE id_item = $id_item";
+                $executa_verificacao = $conexao->query($verifica_descricao_item);
+
+                if ($executa_verificacao->num_rows > 0) {
+                    $dados_descri = $executa_verificacao->fetch_assoc();
+                    $descricao = $descricao . " " . $dados_descri["descricao"];
+                }
 
                 $descricao_pes = str_replace("[&r", "", $descricao);
 

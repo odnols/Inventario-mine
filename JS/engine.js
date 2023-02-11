@@ -98,11 +98,11 @@ function aba_menu(alvo) {
     }
 
     // Filtrando os itens da aba escolhida
-    filtragem(categorias[alvo], 0)
+    filtragem(categorias[alvo], 0, true, alvo)
     nome_guia(alvo)
 }
 
-function filtragem(pesquisa_input, local) {
+function filtragem(pesquisa_input, local, force_filter, alvo) {
 
     if (local == 2) {
         local = 1, pesquisa_input = pesquisa_input.toString()
@@ -198,7 +198,7 @@ function filtragem(pesquisa_input, local) {
                 }
             }
 
-            ordena_guias_ativas(categorias, alvos)
+            ordena_guias_ativas(categorias, alvos, force_filter, alvo)
         }
     }
 
@@ -242,10 +242,20 @@ function nome_guia(alvo) {
         nome_aba = categorias[alvo]
 
     if (nome_aba !== "Buscar")
-        document.getElementById("barra_pesquisa_input").style.display = "none"
+        document.getElementById("barra_pesquisa_input").style.display = "None"
+    else
+        document.getElementById("barra_pesquisa_input").style.display = "Block"
 
-    if (typeof alvo != "string")
+    if (typeof alvo !== "string")
         document.getElementById("titulo_aba").innerHTML = nome_aba
+
+    if (nome_aba == "Buscar") {
+        controla_menus(true)
+        pesquisa = 1
+    } else {
+        controla_menus(false)
+        pesquisa = 0
+    }
 }
 
 function preenche_slots_livres(qtd_itens) {
@@ -274,7 +284,7 @@ function preenche_slots_livres(qtd_itens) {
         document.getElementById("complementa_slots").innerHTML = ""
 }
 
-function ordena_guias_ativas(categorias, alvos) {
+function ordena_guias_ativas(categorias, alvos, force_filter, alvo) {
 
     let guias = []
 
@@ -291,16 +301,19 @@ function ordena_guias_ativas(categorias, alvos) {
             }
         }
     } else {
-        // Listando guias com itens ativos
-        for (let i = 0; i < alvos.length; i++) {
-            if (!guias.includes(alvos[i].classList[1]))
-                guias.push(alvos[i].classList[1])
-        }
+        if (!force_filter) { // Listando guias com itens ativos
+            for (let i = 0; i < alvos.length; i++) {
+                if (!guias.includes(alvos[i].classList[1]))
+                    guias.push(alvos[i].classList[1])
+            }
+        } else
+            if (typeof alvo !== "undefined")
+                guias.push(categorias[alvo])
     }
 
     // Desabilitando todas as guias
     for (let i = 0; i < categorias.length; i++) {
-        let guia_alvo = document.getElementsByClassName(`aba_menu_${categorias[i]}`)
+        let guia_alvo = document.getElementsByClassName(`aba_menu_${categorias[i].toLowerCase()}`)
 
         if (guia_alvo.length > 0) guia_alvo[0].style.display = "none"
     }
@@ -332,7 +345,7 @@ function mostrar_ocultos() {
 function filtra_pesquisa() {
     let texto = (document.getElementById("barra_pesquisa_input").value).toLowerCase()
 
-    filtragem(texto, 1)
+    filtragem(texto, 1, false)
 }
 
 function filtragem_automatica(alvo_filtragem, local) {
@@ -543,4 +556,21 @@ if (document.getElementById("btn_fecha_tela_craft")) {
 
 function escolhe_aba_menu(id_item) {
     window.location = `../modules/aba_menu.php?id=${id_item}`
+}
+
+function controla_menus(caso) {
+
+    let alvos = document.getElementsByClassName("opcoes_laterais")
+    let status = "None"
+
+    // Mostrando ou escondendo o icone da pesquisa clicada
+    let icon_busca = document.getElementsByClassName("aba_menu_pesquisa")
+    icon_busca[0].style.display = status
+
+    if (caso)
+        status = "Block"
+
+    // Mostrando ou escondendo as guias laterais
+    for (let i = 0; i < alvos.length; i++)
+        alvos[i].style.display = status
 }

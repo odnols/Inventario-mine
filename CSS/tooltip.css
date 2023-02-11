@@ -84,6 +84,12 @@
 	text-shadow: 3px 3px 0 #3e153e;
 }
 
+.item_magico {
+	color: #fca800;
+	font-style: italic;
+	text-shadow: 3px 3px 0 #3e2a00;
+}
+
 #descricao_item_minetp {
 	float: left;
 	color: #a8a8a8;
@@ -95,6 +101,11 @@
 	color: #545454;
 	padding-top: 25px;
 	text-shadow: 3px 3px 0 #151515;
+}
+
+.efeito_colorido {
+	width: 100%;
+	float: left;
 }
 
 .efeito_cor_azul {
@@ -123,6 +134,20 @@
 	color: #00a800;
 	padding-top: 30px;
 	text-shadow: 3px 3px 0 #002a00;
+}
+
+.efeito_cor_amarela {
+	float: left;
+	color: #fcfc54;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0 #3e3e15;
+}
+
+.efeito_cor_branca {
+	float: left;
+	color: #fcfcfc;
+	padding-top: 30px;
+	text-shadow: 3px 3px 0 #3e3e3e;
 }
 
 .efeito_cor_padrao {
