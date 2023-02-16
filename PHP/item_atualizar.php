@@ -6,6 +6,7 @@ $nome = $_POST["nome"];
 $nome_interno = $_POST["nome_interno"];
 $empilhavel = $_POST["empilhavel"];
 $versao = $_POST["versao"];
+$tipo_item = $_POST["tipo_item"];
 
 $cor_tipo_item = $_POST["cor_tipo_item"];
 $descricao = $_POST["descricao"];
@@ -129,7 +130,7 @@ if ($insere !== "")
     $executa = $conexao->query($insere);
 
 $insere = "";
-// Verifica se o item esta oculto no inventário
+// Verifica se o item está oculto no inventário
 $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
 $executa_verificacao = $conexao->query($verifica_oculto_item);
 
@@ -148,7 +149,7 @@ if (strlen($arq_name) > 0) {
     $executa = $conexao->query($atualiza);
 
     // Criando uma cópia da imagem
-    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\new\\$abamenu/" . $arq_name);
+    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\new\\$tipo_item/" . $arq_name);
 }
 
 Header("Location: ../pages/item_detalhes.php?id=$id_item");

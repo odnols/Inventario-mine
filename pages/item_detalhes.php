@@ -236,6 +236,8 @@
                 </div>
             </div>
 
+            <input name="tipo_item" value="<?php echo $tipo_item ?>" style="display: none">
+
             <input id="inserir_item" type="submit" value="Atualizar">
         </form>
 
