@@ -28109,7 +28109,7 @@
         "id": 1474,
         "icon": "sniffer_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo gerador de sniffer",
+        "name": "Ovo gerador de farejador",
         "internal_name": "sniffer_spawn_egg",
         "version": "1.20",
         "collectable": false,
@@ -28120,7 +28120,7 @@
         "legacy": false,
         "description": [
             {
-                "value": ""
+                "value": null
             }
         ]
     },
@@ -28128,7 +28128,7 @@
         "id": 1475,
         "icon": "sniffer_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo de sniffer",
+        "name": "Ovo de farejador",
         "internal_name": "sniffer_egg",
         "version": "1.20",
         "collectable": true,
@@ -28139,7 +28139,7 @@
         "legacy": false,
         "description": [
             {
-                "value": ""
+                "value": null
             }
         ]
     },
@@ -28147,7 +28147,7 @@
         "id": 1476,
         "icon": "torchflower_seeds.png",
         "type": "diversos",
-        "name": "Sementes de Flor Tocha",
+        "name": "Sementes de plantocha",
         "internal_name": "torchflower_seeds",
         "version": "1.20",
         "collectable": true,
@@ -28166,7 +28166,7 @@
         "id": 1477,
         "icon": "torchflower.png",
         "type": "decorativos",
-        "name": "Flortocha",
+        "name": "Plantocha",
         "internal_name": "torchflower",
         "version": "1.20",
         "collectable": true,
@@ -29016,7 +29016,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento das selvas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite da selva[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29042,7 +29042,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento das profundezas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite das profundezas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29068,7 +29068,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de armadura de olho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de olho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29094,7 +29094,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de dunas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de dunas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29120,7 +29120,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de litorais[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite do litoral[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29146,7 +29146,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de costelas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de costelas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29172,7 +29172,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de sentinela[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de sentinela[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29198,7 +29198,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de mar\u00e9s[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de mar\u00e9s[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29224,7 +29224,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de espiral[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de espiral[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29250,7 +29250,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de vex[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de vex[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29276,7 +29276,7 @@
         ],
         "description": [
             {
-                "value": "[&rOrnamento de focinho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rEnfeite de focinho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29329,7 +29329,7 @@
         "id": 1533,
         "icon": "pottery_shard_skull.png",
         "type": "diversos",
-        "name": "Fragmento de cer\u00e2mica de cr\u00e2nio",
+        "name": "\u00d3straco de caveira",
         "internal_name": "pottery_shard_skull",
         "version": "1.20",
         "collectable": true,
@@ -29340,7 +29340,7 @@
         "legacy": false,
         "description": [
             {
-                "value": ""
+                "value": null
             }
         ]
     },
@@ -29348,7 +29348,7 @@
         "id": 1534,
         "icon": "pottery_shard_prize.png",
         "type": "diversos",
-        "name": "Fragmento de cer\u00e2mica de pr\u00eamio",
+        "name": "\u00d3straco de joia",
         "internal_name": "pottery_shard_prize",
         "version": "1.20",
         "collectable": true,
@@ -29359,7 +29359,7 @@
         "legacy": false,
         "description": [
             {
-                "value": ""
+                "value": null
             }
         ]
     },
@@ -29367,7 +29367,7 @@
         "id": 1535,
         "icon": "pottery_shard_arms_up.png",
         "type": "diversos",
-        "name": "Fragmento de cer\u00e2mica bra\u00e7os para cima",
+        "name": "\u00d3straco de bra\u00e7os no ar",
         "internal_name": "pottery_shard_arms_up",
         "version": "1.20",
         "collectable": true,
@@ -29378,7 +29378,7 @@
         "legacy": false,
         "description": [
             {
-                "value": ""
+                "value": null
             }
         ]
     },
@@ -29386,7 +29386,7 @@
         "id": 1536,
         "icon": "pottery_shard_archer.png",
         "type": "diversos",
-        "name": "Fragmento de cer\u00e2mica de arqueiro",
+        "name": "\u00d3straco de arqueiro",
         "internal_name": "pottery_shard_archer",
         "version": "1.20",
         "collectable": true,
@@ -29397,7 +29397,7 @@
         "legacy": false,
         "description": [
             {
-                "value": ""
+                "value": null
             }
         ]
     },
@@ -29416,7 +29416,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": "239,239,239,,198,,,198",
+                "recipe": ",197,,,199,,,198",
                 "products": 1,
                 "craft_type": 0
             }
@@ -29433,7 +29433,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29476,7 +29476,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29495,7 +29495,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29504,7 +29504,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Albanian[&rKristoffer Zetterstrand[&61x1"
+                "value": "[&5Alban\u00eas[&rKristoffer Zetterstrand[&61x1"
             }
         ]
     },
@@ -29514,7 +29514,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29533,7 +29533,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29542,7 +29542,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Target Successfully Bombed[&rKristoffer Zetterstrand[&61x1"
+                "value": "[&5Alvo bombardeado com sucesso[&61x1"
             }
         ]
     },
@@ -29552,7 +29552,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29561,7 +29561,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Paradistr\u00e4d[&rKristoffer Zetterstrand[&61x1"
+                "value": "[&5Planta-jade[&rKristoffer Zetterstrand[&61x1"
             }
         ]
     },
@@ -29571,7 +29571,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29580,7 +29580,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Wasteland[&rKristoffer Zetterstrand[&61x1"
+                "value": "[&5Deserto[&rKristoffer Zetterstrand[&61x1"
             }
         ]
     },
@@ -29590,7 +29590,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29599,7 +29599,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Wanderer[&rKristoffer Zetterstrand[&61x2"
+                "value": "[&5Caminhante[&rKristoffer Zetterstrand[&61x2"
             }
         ]
     },
@@ -29609,7 +29609,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29628,7 +29628,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29637,7 +29637,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5The Pool[&rKristoffer Zetterstrand[&62x1"
+                "value": "[&5A piscina[&rKristoffer Zetterstrand[&62x1"
             }
         ]
     },
@@ -29647,7 +29647,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29666,7 +29666,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29675,7 +29675,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Seaside[&rKristoffer Zetterstrand[&62x1"
+                "value": "[&5Litoral[&rKristoffer Zetterstrand[&62x1"
             }
         ]
     },
@@ -29685,7 +29685,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29694,7 +29694,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5sunset_dense[&rKristoffer Zetterstrand[&62x1"
+                "value": "[&5P\u00f4r do sol[&rKristoffer Zetterstrand[&62x1"
             }
         ]
     },
@@ -29704,7 +29704,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29723,7 +29723,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29732,7 +29732,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Match[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5F\u00f3sforo[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29742,7 +29742,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29751,7 +29751,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Bust[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5Busto[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29761,7 +29761,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29770,7 +29770,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5The Stage Is Set[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5O palco est\u00e1 montado[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29780,7 +29780,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29789,7 +29789,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5The void[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5O vazio[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29799,7 +29799,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29808,7 +29808,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Skull and Roses[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5Caveira e rosas[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29818,7 +29818,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.4",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29837,7 +29837,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29846,7 +29846,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Fighters[&rKristoffer Zetterstrand[&64x2"
+                "value": "[&5Lutadores[&rKristoffer Zetterstrand[&64x2"
             }
         ]
     },
@@ -29856,7 +29856,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29875,7 +29875,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29894,7 +29894,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29903,7 +29903,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Pointer[&rKristoffer Zetterstrand[&64x4"
+                "value": "[&5Dedo indicador[&rKristoffer Zetterstrand[&64x4"
             }
         ]
     },
@@ -29913,7 +29913,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.0",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29922,7 +29922,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Pigscene[&rKristoffer Zetterstrand[&64x4"
+                "value": "[&5O porco[&rKristoffer Zetterstrand[&64x4"
             }
         ]
     },
@@ -29932,7 +29932,7 @@
         "type": "decorativos",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.3",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29941,7 +29941,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Skull On Fire[&rKristoffer Zetterstrand[&64x4"
+                "value": "[&5Caveira em chamas[&rKristoffer Zetterstrand[&64x4"
             }
         ]
     },
@@ -29951,7 +29951,7 @@
         "type": "especiais",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29960,7 +29960,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Earth[&rMojang[&62x2"
+                "value": "[&5Terra[&rMojang[&62x2"
             }
         ]
     },
@@ -29970,7 +29970,7 @@
         "type": "especiais",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29979,7 +29979,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Wind[&rMojang[&62x2"
+                "value": "[&5Ar[&rMojang[&62x2"
             }
         ]
     },
@@ -29989,7 +29989,7 @@
         "type": "especiais",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -29998,7 +29998,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Water[&rMojang[&62x2"
+                "value": "[&5\u00c1gua[&rMojang[&62x2"
             }
         ]
     },
@@ -30008,7 +30008,7 @@
         "type": "especiais",
         "name": "Quadro",
         "internal_name": "painting",
-        "version": "1.20",
+        "version": "1.19",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -30017,7 +30017,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Fire[&rMojang[&62x2"
+                "value": "[&5Fogo[&rMojang[&62x2"
             }
         ]
     },
@@ -30047,7 +30047,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1569,1569,,1569,1569",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1571,
@@ -30059,9 +30066,14 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": ""
+            }
+        ]
     },
     {
         "id": 1572,
@@ -30075,7 +30087,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1571,1571,,1571,1571",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1573,
@@ -30089,7 +30108,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1569",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1574,
@@ -30103,7 +30129,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,1573,,1573,1573,1573,1573,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1575,
@@ -30117,7 +30150,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1573,1573,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1576,
@@ -30131,7 +30171,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1573,198,1573,1573,198,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1577,
@@ -30145,7 +30192,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "198,1573,198,198,1573,198,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1578,
@@ -30159,7 +30213,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1579,
@@ -30173,7 +30234,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",1573,1573,,1573,1573,,1573,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1580,
@@ -30187,7 +30255,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1573,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1581,
@@ -30201,7 +30276,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1573,1573,1573,1573,1573,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1582,
@@ -30215,7 +30297,14 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1573,,1573,1573,1573,1573",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1583,
@@ -30229,7 +30318,14 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",731,,,1582",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1584,
@@ -30243,7 +30339,14 @@
         "stackable": 16,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1573,1573,1573,1573,1573,1573,,198",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1585,
@@ -30257,7 +30360,14 @@
         "stackable": 16,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "425,,425,1571,1571,1571,1571,1571,1571",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1586,
@@ -30269,9 +30379,14 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": ""
+            }
+        ]
     },
     {
         "id": 1587,
@@ -30313,6 +30428,13 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",195,,195,,195,,195",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     }
 ]
