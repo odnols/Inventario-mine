@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Inventário</title>
-	<link rel="shortcut icon" href="IMG/Itens/new/Construcao/grass_block.png">
+	<link rel="shortcut icon" href="img/itens/new/construcao/grass_block.png">
 
 	<style type="text/css">
 		img {

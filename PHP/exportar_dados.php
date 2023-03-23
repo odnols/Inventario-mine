@@ -1,7 +1,7 @@
 <?php include_once "conexao_obsoleta.php";
 
 $arquivo = "dados_locais.json";
-$file = fopen("../Files/JSON/" . $arquivo, 'w');
+$file = fopen("../files/JSON/" . $arquivo, 'w');
 
 $data = array();
 

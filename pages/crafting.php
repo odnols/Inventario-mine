@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>Criação</title>
-    <link rel="shortcut icon" href="../IMG/Itens/new/Construcao/grass_block.png">
+    <link rel="shortcut icon" href="../img/itens/new/construcao/grass_block.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../CSS/anima.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="../css/anima.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
-    <script src="../JS/jquery-3.4.1.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
 
-    <?php include_once "../PHP/conexao_obsoleta.php";
+    <?php include_once "../php/conexao_obsoleta.php";
 
     $verificar = "SELECT * FROM item WHERE fabricavel = 1 ORDER BY id_item";
     $executa = $conexao->query($verificar);
@@ -42,7 +42,7 @@
     </div>
 
     <div id="botoes_ferramentas">
-        <a class="bttn_frrm" href="index.php" onmouseover="toolTip('O Gerenciador de itens')" onmouseout="toolTip()"><img src="../IMG/interface/crafting_table.png"></a>
+        <a class="bttn_frrm" href="index.php" onmouseover="toolTip('O Gerenciador de itens')" onmouseout="toolTip()"><img src="../img/interface/crafting_table.png"></a>
     </div>
 
     <?php
@@ -95,7 +95,7 @@
                 if ($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-                echo "<a href='#' onclick='mostra_crafting([], $id_item, null, 1)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'><div class='slot_item_crafting'><img class='sprite_slot_crafting' src='../IMG/Itens/$geracao/$tipo_item/$nome_icon'></div></a>";
+                echo "<a href='#' onclick='mostra_crafting([], $id_item, null, 1)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'><div class='slot_item_crafting'><img class='sprite_slot_crafting' src='../img/itens/$geracao/$tipo_item/$nome_icon'></div></a>";
 
                 if ($i == 20)
                     break;
@@ -106,8 +106,8 @@
         <p id="num_pagina_craft">13/21</p>
     </div>
 
-    <script type="text/javascript" src="../Files/JSON/dados_locais.json"></script>
-    <script src="../JS/engine.js"></script>
+    <script type="text/javascript" src="../files/JSON/dados_locais.json"></script>
+    <script src="../js/engine.js"></script>
 </body>
 
 </html>

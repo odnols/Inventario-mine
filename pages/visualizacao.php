@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="../IMG/Itens/new/construcao/grass_block.png">
+    <link rel="shortcut icon" href="../img/itens/new/construcao/grass_block.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../CSS/anima.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="../css/anima.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
-    <script src="../JS/jquery-3.4.1.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
 
-    <?php include_once "../PHP/conexao_obsoleta.php";
+    <?php include_once "../php/conexao_obsoleta.php";
 
     if (isset($_GET["versao_jogo"]))
         $versao_jogo = $_GET["versao_jogo"];
@@ -78,8 +78,8 @@
         <img id="prancheta" src="#">
 
         <div class="botoes_menu">
-            <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
-                <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="../IMG/Interface/mascara_oculto.png">
+            <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('itens ocultos')" onmouseout="toolTip()">
+                <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="../img/interface/mascara_oculto.png">
                 <img id="img_ocultos" class="aba_menu opcoes_baixo pesquisa" src="#">
             </div>
         </div>
@@ -92,13 +92,13 @@
             <?php
             $verificar = "SELECT * FROM item WHERE versao = $versao_jogo";
             $executa = $conexao->query($verificar);
-            echo "<p class='estat cor_textos'>Itens adicionados na versão 1.$versao_jogo ( ";
+            echo "<p class='estat cor_textos'>itens adicionados na versão 1.$versao_jogo ( ";
             echo $executa->num_rows . " )</p>";
 
             $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo";
             $executa = $conexao->query($verificar);
 
-            echo "<br><p class='estat cor_textos'>Itens no Inventário: ";
+            echo "<br><p class='estat cor_textos'>itens no Inventário: ";
             echo $executa->num_rows . "</p>";
 
             $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1";
@@ -147,8 +147,8 @@
     $graphics = false;
     include_once "../modules/menu_completo.php"; ?>
 
-    <script src="../JS/engine.js"></script>
-    <script src="../JS/custom.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/custom.js"></script>
 
     <script type="text/javascript">
         filtragem(10, 0)

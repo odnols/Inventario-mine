@@ -6,22 +6,22 @@
     <title>Detalhes do Item</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../CSS/anima.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/tooltip.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/att_item.css">
+    <link rel="stylesheet" type="text/css" href="../css/anima.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="../css/att_item.css">
 
-    <script src="../JS/jquery-3.4.1.js"></script>
-    <script src="../JS/engine.js"></script>
-    <script src="../JS/custom.js"></script>
-    <script src="../JS/crafting.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/crafting.js"></script>
 
-    <?php include_once "../PHP/conexao_obsoleta.php"; ?>
+    <?php include_once "../php/conexao_obsoleta.php"; ?>
 </head>
 
 <body onload="sincroniza_tema(undefined, 1)">
 
-    <!-- <div id="fundo_personali"></div> -->
+    <div id="fundo_personali"></div>
     <div id="filtro_colorido"></div>
 
     <div id="minetip-tooltip">
@@ -42,12 +42,14 @@
     if (isset($_GET["rlod"])) // Reload na página
         header("Location: ./item_detalhes.php?id=$id_item");
 
+    $nome_item = "";
+    $descricao_item = "";
+
     $renovavel = "";
     $coletavel_s = "";
     $oculto_invt = "";
     $programmer_art = "";
     $crafting = "";
-    $descricao_item = "";
 
     // Último ID registrado de item
     $ultimo_id = "SELECT id_item FROM item ORDER BY id_item DESC LIMIT 1";
@@ -60,65 +62,68 @@
 
     $dados = $executa->fetch_assoc();
 
-    $nome_icon = $dados["icon"];
+    if ($executa->num_rows > 0) {
 
-    $nome_item = $dados["nome"];
-    $nome_interno = $dados["internal"];
+        $nome_item = $dados["nome"];
+        $nome_interno = $dados["internal"];
 
-    $tipo_item = $dados["tipo"];
-    $empilhavel = $dados["empilhavel"];
-    $versao_add = $dados["versao"];
+        $nome_icon = $dados["icon"];
 
-    if ($versao_add == null)
-        $versao_add = "Outro";
+        $tipo_item = $dados["tipo"];
+        $empilhavel = $dados["empilhavel"];
+        $versao_add = $dados["versao"];
 
-    if ($dados["coletavel"])
-        $coletavel_s = "checked";
+        if ($versao_add == null)
+            $versao_add = "Outro";
 
-    if ($dados["renovavel"])
-        $renovavel = "checked";
+        if ($dados["coletavel"])
+            $coletavel_s = "checked";
 
-    if ($dados["fabricavel"])
-        $crafting = "checked";
+        if ($dados["renovavel"])
+            $renovavel = "checked";
 
-    $verifica_descricao_item = "SELECT * FROM item_descricao WHERE id_item = $id_item";
-    $executa_verificacao = $conexao->query($verifica_descricao_item);
-    $dados_descricao = $executa_verificacao->fetch_assoc();
+        if ($dados["fabricavel"])
+            $crafting = "checked";
 
-    if ($executa_verificacao->num_rows > 0)
-        $descricao_item = $dados_descricao["descricao"];
+        $verifica_descricao_item = "SELECT * FROM item_descricao WHERE id_item = $id_item";
+        $executa_verificacao = $conexao->query($verifica_descricao_item);
+        $dados_descricao = $executa_verificacao->fetch_assoc();
 
-    $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
-    $executa_verificacao = $conexao->query($verifica_oculto_item);
+        if ($executa_verificacao->num_rows > 0)
+            $descricao_item = $dados_descricao["descricao"];
 
-    if ($executa_verificacao->num_rows > 0)
-        $oculto_invt = "checked";
+        $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
+        $executa_verificacao = $conexao->query($verifica_oculto_item);
 
-    $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
-    $executa_verificacao = $conexao->query($verifica_legado_item);
+        if ($executa_verificacao->num_rows > 0)
+            $oculto_invt = "checked";
 
-    if ($executa_verificacao->num_rows > 0)
-        $programmer_art = "checked";
+        $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
+        $executa_verificacao = $conexao->query($verifica_legado_item);
 
-    $cor_item = 0;
-    $durabilidade = "";
+        if ($executa_verificacao->num_rows > 0)
+            $programmer_art = "checked";
 
-    $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+        $cor_item = 0;
+        $durabilidade = "";
 
-    if ($executa_item->num_rows > 0) {
-        $dados2 = $executa_item->fetch_assoc();
+        $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
+        $executa_item = $conexao->query($verificar_item);
 
-        $cor_item = $dados2["tipo_item"];
-    }
+        if ($executa_item->num_rows > 0) {
+            $dados2 = $executa_item->fetch_assoc();
 
-    $verificar_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+            $cor_item = $dados2["tipo_item"];
+        }
 
-    if ($executa_item->num_rows > 0) {
-        $dados3 = $executa_item->fetch_assoc();
+        $verificar_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
+        $executa_item = $conexao->query($verificar_item);
 
-        $durabilidade = $dados3["durabilidade"];
+        if ($executa_item->num_rows > 0) {
+            $dados3 = $executa_item->fetch_assoc();
+
+            $durabilidade = $dados3["durabilidade"];
+        }
     } ?>
 
     <button id="btn_voltar" onclick="voltar_pag()">Voltar</button>
@@ -143,12 +148,12 @@
 
         <button id="btn_apagar" onclick="apagarItem(<?php echo $id_item; ?>)">Apagar</button>
 
-        <?php echo "<img id='img_detalhes' src='../IMG/Itens/new/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite atual deste item\")' onmouseout='toolTip()'>";
+        <?php echo "<img id='img_detalhes' src='../img/itens/new/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite atual deste item\")' onmouseout='toolTip()'>";
 
         if ($programmer_art != "")
-            echo "<img id='img_detalhes_classic' src='../IMG/Itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite original deste item\")' onmouseout='toolTip()'>"; ?>
+            echo "<img id='img_detalhes_classic' src='../img/itens/classic/$tipo_item/$nome_icon' onmouseover='toolTip(\"O sprite original deste item\")' onmouseout='toolTip()'>"; ?>
 
-        <form id="prancheta_att" method="post" action="../PHP/item_atualizar.php" enctype="multipart/form-data">
+        <form id="prancheta_att" method="post" action="../php/item_atualizar.php" enctype="multipart/form-data">
             <div id="selecionador">
                 <div class="pag_1">
                     <input type="text" name="id_item" value="<?php echo $id_item; ?>" style="display: none;">
@@ -216,16 +221,16 @@
             <div id="checkboxes">
                 <div id="separador_checks">
                     <div id="opcoes_esquerda">
-                        <input class="input_check" type="checkbox" name="coletavel" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+                        <input class="input_check" type="checkbox" name="coletavel" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
-                        <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+                        <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../img/itens/new/decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
                     </div>
                     <div id="opcoes_direita">
-                        <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
+                        <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
 
-                        <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
+                        <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
 
-                        <input class="input_check" type="checkbox" name="fabricavel" <?php echo $crafting ?> onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+                        <input class="input_check" type="checkbox" name="fabricavel" <?php echo $crafting ?> onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
                     </div>
                 </div>
 
@@ -260,8 +265,8 @@
 
         echo "<style>
             #fundo_personali{
-                background: url('../IMG/Itens/new/$tipo_item/$nome_icon'),
-                url('../IMG/Itens/new/$tipo_item/$nome_icon');
+                background: url('../img/itens/new/$tipo_item/$nome_icon'),
+                url('../img/itens/new/$tipo_item/$nome_icon');
                 width: 100%;
                 height: 100%;
                 position: fixed;

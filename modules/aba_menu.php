@@ -4,17 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="../IMG/Itens/new/Construcao/grass_block.png">
+    <link rel="shortcut icon" href="../img/itens/new/construcao/grass_block.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../css/anima.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
-    <script src="../JS/jquery-3.4.1.js"></script>
-    <script src="../JS/engine.js"></script>
-    <script src="../JS/custom.js"></script>
-    <script src="../JS/crafting.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/crafting.js"></script>
 </head>
 
 <body onload="sincroniza_tema(undefined, 1)">
@@ -27,7 +27,7 @@
 
     <div id="filtro_colorido"></div>
 
-    <?php include_once "../PHP/conexao_obsoleta.php";
+    <?php include_once "../php/conexao_obsoleta.php";
     $id_item_alvo = $_GET["id"];
 
     $dados_item = "SELECT historico_guias FROM item WHERE id_item = $id_item_alvo";
@@ -47,7 +47,7 @@
 
     <a class="bttn_frrm" id="btn_fecha_tela_craft" href="../pages/item_detalhes.php?id=<?php echo $id_item_alvo ?>" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
 
-    <form id="craft_prancheta" action="../PHP/item_registra_abas.php" method="POST">
+    <form id="craft_prancheta" action="../php/item_registra_abas.php" method="POST">
 
         <span class="cor_textos textos_craft">Linha do tempo</span>
 

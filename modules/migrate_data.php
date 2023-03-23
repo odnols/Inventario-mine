@@ -1,4 +1,4 @@
-<?php include_once "../PHP/conexao_obsoleta.php";
+<?php include_once "../php/conexao_obsoleta.php";
 
 $verificar = "SELECT * FROM item ORDER BY id_item DESC";
 $executa = $conexao->query($verificar);
@@ -10,7 +10,7 @@ while ($dados = $executa->fetch_assoc()) {
 
     echo "<br>";
 
-    // Itens com descrição
+    // itens com descrição
     if (strlen($dados["descricao"]) > 0) {
         $verificar_registro = "SELECT * FROM item_descricao WHERE id_item = $id_item";
         $executa_var = $conexao->query($verificar_registro);
@@ -24,7 +24,7 @@ while ($dados = $executa->fetch_assoc()) {
         }
     }
 
-    // Itens ocultos do inventário
+    // itens ocultos do inventário
     if ($dados["oculto_invt"]) {
         $verificar_registro = "SELECT * FROM item_oculto WHERE id_item = $id_item";
         $executa_var = $conexao->query($verificar_registro);
@@ -35,7 +35,7 @@ while ($dados = $executa->fetch_assoc()) {
         }
     }
 
-    // Itens com sprites legados
+    // itens com sprites legados
     if ($dados["programmer_art"]) {
         $verificar_registro = "SELECT * FROM item_legado WHERE id_item = $id_item";
         $executa_var = $conexao->query($verificar_registro);

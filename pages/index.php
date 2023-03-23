@@ -4,18 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="../IMG/Itens/new/Construcao/grass_block.png">
+    <link rel="shortcut icon" href="../img/itens/new/construcao/grass_block.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../css/anima.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
-    <script src="../JS/jquery-3.4.1.js"></script>
-
-    <script src="../JS/custom.js"></script>
-
-    <?php include_once "../PHP/conexao_obsoleta.php"; ?>
+    <?php include_once "../php/conexao_obsoleta.php"; ?>
 </head>
 
 <body onload="sincroniza_tema(undefined, 1)">
@@ -40,8 +36,8 @@
     <div id="estatisticas_inventario">
         <img id="prancheta" src="#">
 
-        <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
-            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="../IMG/Interface/mascara_oculto.png">
+        <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('itens ocultos')" onmouseout="toolTip()">
+            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="../img/interface/mascara_oculto.png">
             <img id="img_ocultos" class="aba_menu opcoes_baixo pesquisa" src="#">
         </div>
 
@@ -64,9 +60,9 @@
             $verificar = "SELECT * FROM item";
             $executa = $conexao->query($verificar);
 
-            echo "<p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>";
+            echo "<p id='versao_referencia' class='estat cor_textos'>itens Adicionados na versão <span id='num_referencia'></span></p>";
 
-            echo "<br><p class='estat cor_textos'>Itens Registrados: ";
+            echo "<br><p class='estat cor_textos'>itens Registrados: ";
             echo $executa->num_rows . "</p>";
 
             $verificar = "SELECT * FROM item WHERE coletavel = 1";
@@ -117,16 +113,16 @@
     </div>
 
     <div id="botoes_ferramentas">
-        <a class="bttn_frrm" href="crafting.php" onmouseover="toolTip('O Crafting de todos os itens')" onmouseout="toolTip()"><img src="../IMG/interface/crafting_table.png"></a>
+        <a class="bttn_frrm" href="crafting.php" onmouseover="toolTip('O Crafting de todos os itens')" onmouseout="toolTip()"><img src="../img/interface/crafting_table.png"></a>
 
         <?php if ($executa->num_rows > 0) { ?>
             <!-- Só libera a utilização se houver dados -->
-            <a class="bttn_frrm" href="../PHP/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
-        <a class="bttn_frrm" id="button_importar_dados" href="../PHP/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
+            <a class="bttn_frrm" href="../php/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
+        <a class="bttn_frrm" id="button_importar_dados" href="../php/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
 
         <?php if ($executa->num_rows > 0) { ?>
             <!-- Só libera a utilização se houver dados -->
-            <a class="bttn_frrm" id="button_apagar_dados" href="../PHP/limpar_dados.php" onmouseover="toolTip('Apague todos os dados salvos no banco')" onmouseout="toolTip()">Limpar Dados</a>
+            <a class="bttn_frrm" id="button_apagar_dados" href="../php/limpar_dados.php" onmouseover="toolTip('Apague todos os dados salvos no banco')" onmouseout="toolTip()">Limpar Dados</a>
         <?php } ?>
     </div>
 
@@ -141,11 +137,11 @@
             <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a>
 
             <a class="bttn_frrm" href="../modules/criar_pagina.php" onmouseover="toolTip('Atualizar o site em HTML')" onmouseout="toolTip()">Atualizar HTML</a> <?php } ?>
-        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
+        <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>''
     </div>
 
     <!-- Adicionar item -->
-    <form id="prancheta_add" method="post" action="../PHP/item_registrar.php" enctype="multipart/form-data">
+    <form id="prancheta_add" method="post" action="../php/item_registrar.php" enctype="multipart/form-data">
         <div id="inputs_principais">
             <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required>
 
@@ -181,11 +177,11 @@
         </div>
 
         <div id="checkboxes">
-            <input class="input_check" type="checkbox" name="coletavel" checked onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+            <input class="input_check" type="checkbox" name="coletavel" checked onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
 
-            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Itens/new/Decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../img/itens/new/decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
 
-            <input class="input_check" type="checkbox" name="fabricavel" checked onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="../IMG/Interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+            <input class="input_check" type="checkbox" name="fabricavel" checked onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
 
             <div id="selecionar_sprite">
                 <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
@@ -202,8 +198,10 @@
     $versao_jogo = 20;
     include_once "../modules/menu_completo.php"; ?>
 
-    <script src="../JS/engine.js"></script>
-    <script src="../JS/crafting.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/crafting.js"></script>
+    <script src="../js/custom.js"></script>
 
     <script type="text/javascript">
         aba_menu(0, 0)

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Minecraftia";
-    src: url('../Files/Fonts/Minecraftia.ttf');
+    src: url('../files/fonts/Minecraftia.ttf');
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     font-family: "Minecraftia";
     image-rendering: pixelated;
     background-size: cover !important;
-    background: url('../IMG/Temas/1.19.png') no-repeat;
+    background: url('../img/Temas/1.20.png') no-repeat;
 }
 
 #filtro_colorido {
@@ -210,7 +210,7 @@ select {
 
 .slot_item:hover,
 .slot_item_add:hover {
-    background: url("../IMG/Interface/Claro/slot_hover.png") !important;
+    background: url("../img/interface/Claro/slot_hover.png") !important;
 }
 
 .icon_item {
@@ -589,7 +589,7 @@ select {
     padding-top: 100px;
     position: absolute;
     margin-left: -219px;
-    background: url("../IMG/Interface/Livro.png") no-repeat;
+    background: url("../img/interface/Livro.png") no-repeat;
 }
 
 a {
@@ -764,7 +764,7 @@ a {
     position: absolute;
     margin-top: -249px;
     margin-left: -535px;
-    background-image: url("../IMG/Interface/Claro/crafting.png");
+    background-image: url("../img/interface/Claro/crafting.png");
 }
 
 .item_crafting {
@@ -802,11 +802,11 @@ a {
     height: 51px;
     bottom: 99px;
     position: absolute;
-    background-image: url("../IMG/Interface/Claro/seta_esquerda.png");
+    background-image: url("../img/interface/Claro/seta_esquerda.png");
 }
 
 #seta_esquerda_crafting:hover {
-    background-image: url("../IMG/Interface/Claro/seta_esquerda_hover.png");
+    background-image: url("../img/interface/Claro/seta_esquerda_hover.png");
 }
 
 #seta_direita_crafting {
@@ -816,11 +816,11 @@ a {
     height: 51px;
     bottom: 99px;
     position: absolute;
-    background-image: url("../IMG/Interface/Claro/seta_direita.png");
+    background-image: url("../img/interface/Claro/seta_direita.png");
 }
 
 #seta_direta_crafting:hover {
-    background-image: url("../IMG/Interface/Claro/seta_direita_hover.png") !important;
+    background-image: url("../img/interface/Claro/seta_direita_hover.png") !important;
 }
 
 #abas_craft_organiza {
@@ -876,7 +876,7 @@ a {
     width: 75px;
     float: left;
     height: 75px;
-    background-image: url("../IMG/Interface/Claro/slot_item_crafting.png");
+    background-image: url("../img/interface/Claro/slot_item_crafting.png");
 }
 
 .sprite_slot_crafting {
@@ -893,7 +893,7 @@ a {
     width: 162px;
     height: 162px;
     position: absolute;
-    background-image: url("../IMG/Interface/Claro/slot.png");
+    background-image: url("../img/interface/Claro/slot.png");
 }
 
 .grid_craft {
@@ -901,7 +901,7 @@ a {
 }
 
 .grid_craft:hover {
-    background-image: url("../IMG/Interface/Claro/slot_hover.png") !important;
+    background-image: url("../img/interface/Claro/slot_hover.png") !important;
     background-position: -3px -3px;
 }
 
@@ -946,7 +946,7 @@ a {
 .gric_8,
 .gric_5 {
     background-repeat: no-repeat;
-    background-image: url("../IMG/Itens/new/Construcao/acacia_log.png");
+    background-image: url("../img/itens/new/construcao/acacia_log.png");
 }
 
 #craft_prancheta {
@@ -955,7 +955,7 @@ a {
     width: 528px;
     height: 498px;
     position: absolute;
-    background-image: url("../IMG/Interface/Claro/craft.png");
+    background-image: url("../img/interface/Claro/craft.png");
 }
 
 #slots_atalho_itens {
@@ -967,7 +967,7 @@ a {
 }
 
 #craft_ativo {
-    background-image: url("../IMG/Interface/Claro/slot_hover.png") !important;
+    background-image: url("../img/interface/Claro/slot_hover.png") !important;
 }
 
 #btn_confirma_craft {

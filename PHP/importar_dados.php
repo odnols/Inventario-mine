@@ -3,7 +3,7 @@
 $IDs_registrados = [];
 
 // Este arquivo está disponível por padrão em sua pasta JSON
-$arquivo = file_get_contents('../Files/JSON/dados_locais.json');
+$arquivo = file_get_contents('../files/JSON/dados_locais.json');
 $data = json_decode($arquivo);
 
 $verificar = "SELECT * FROM item";
@@ -81,7 +81,7 @@ foreach ($data as $key => $value) {
             $executa = $conexao->query($insere);
         }
 
-        // Itens com receitas de fabricação
+        // itens com receitas de fabricação
         if (property_exists($value, "recipe")) {
             $crafting = $value->recipe;
 
@@ -93,7 +93,7 @@ foreach ($data as $key => $value) {
             $executa = $conexao->query($insere);
         }
 
-        // Itens com histórico de várias guias no menu
+        // itens com histórico de várias guias no menu
         if (property_exists($value, "item_tab")) {
             $guias = $value->item_tab;
 

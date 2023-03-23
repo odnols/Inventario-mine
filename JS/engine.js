@@ -1,5 +1,5 @@
 // Variavéis Globais 
-var prancheta = false, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_ocultos = 0, tema = null, pesquisa = 0
+var prancheta = false, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_ocultos = 0, tema, pesquisa = 0
 
 var qtd_itens = 0
 
@@ -235,7 +235,7 @@ function nome_guia(alvo) {
     else if (alvo == 8)
         nome_aba = "Poções"
     else if (alvo == 9)
-        nome_aba = "Itens especiais"
+        nome_aba = "itens especiais"
     else if (alvo == 10)
         nome_aba = "Buscar"
     else
@@ -508,7 +508,7 @@ function previewImage(local) {
 
 function apagarItem(id_item) {
     if (confirm("Deseja realmente remover?"))
-        window.location = `../PHP/item_remover.php?id=${id_item}`
+        window.location = `../php/item_remover.php?id=${id_item}`
 }
 
 function troca_itens(pag) {

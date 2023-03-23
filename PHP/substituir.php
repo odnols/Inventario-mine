@@ -1,4 +1,4 @@
-<?php include_once "../PHP/conexao_obsoleta.php";
+<?php include_once "../php/conexao_obsoleta.php";
 
 // Base de dados em JSON
 $arquivo_json = file_get_contents("dados_locais.json");

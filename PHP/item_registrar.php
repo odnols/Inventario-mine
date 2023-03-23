@@ -41,7 +41,7 @@ if ($executa->num_rows == 0 || in_array($nome, $nomes_reservados)) {
     $executa = $conexao->query($insere);
 
     // Criando uma cópia da imagem
-    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\Itens\\new\\$abamenu/" . $arq_name);
+    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\itens\\new\\$abamenu/" . $arq_name);
 }
 
 Header("Location: ../pages/index.php");

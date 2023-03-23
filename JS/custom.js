@@ -108,22 +108,22 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
 function troca_tema(versao_jogo, local) {
 
     if (tema == null || tema == 1)
-        localStorage.setItem('tema_invent_mc', "0")
+        localStorage.setItem("tema_invent_mc", 0)
 
     if (tema == 0)
-        localStorage.setItem('tema_invent_mc', "1")
+        localStorage.setItem("tema_invent_mc", 1)
 
     sincroniza_tema(versao_jogo, local)
 }
 
 function sincroniza_tema(versao_jogo, local) {
 
-    let tema = localStorage.getItem("tema_invent_mc")
+    tema = localStorage.getItem("tema_invent_mc")
     let alvo = "claro", caminho = ""
 
     if (local) caminho = "../"
 
-    if (tema != null)
+    if (tema !== null)
         tema = parseInt(tema)
     else
         tema = 1
@@ -177,7 +177,7 @@ function sincroniza_tema(versao_jogo, local) {
         imagem = document.getElementById(lista_imagens[i])
 
         if (imagem != null)
-            imagem.src = `${caminho}IMG/Interface/${alvo}/${nome_arquivos[i]}`
+            imagem.src = `${caminho}img/interface/${alvo}/${nome_arquivos[i]}`
     }
 
     for (let i = 0; i < lista_templates.length; i++) {
@@ -187,14 +187,14 @@ function sincroniza_tema(versao_jogo, local) {
 
             objeto = document.getElementById(lista_templates[i])
             if (objeto != null)
-                objeto.style.background = `url('${caminho}IMG/Interface/${alvo}/${nome_template[i]}') no-repeat`
+                objeto.style.background = `url('${caminho}img/interface/${alvo}/${nome_template[i]}') no-repeat`
         } else { // Elementos que estão referenciados como classes
 
             lista_templates[i] = lista_templates[i].replace(".", "")
             let alvos = document.getElementsByClassName(lista_templates[i])
 
             for (let j = 0; j < alvos.length; j++)
-                alvos[j].style.background = `url('${caminho}IMG/Interface/${alvo}/${nome_template[i]}') no-repeat`
+                alvos[j].style.background = `url('${caminho}img/interface/${alvo}/${nome_template[i]}') no-repeat`
         }
     }
 

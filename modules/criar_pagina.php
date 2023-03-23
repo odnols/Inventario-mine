@@ -1,4 +1,4 @@
-<?php include_once "../PHP/conexao_obsoleta.php";
+<?php include_once "../php/conexao_obsoleta.php";
 
 ob_start(); ?>
 
@@ -7,14 +7,14 @@ ob_start(); ?>
 <head>
     <meta charset="utf-8">
     <title>Inventário</title>
-    <link rel="shortcut icon" href="IMG/Itens/new/Construcao/grass_block.png">
+    <link rel="shortcut icon" href="img/itens/new/construcao/grass_block.png">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/anima.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tooltip.css">
 
-    <script src="JS/jquery-3.4.1.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
 </head>
 
 <body onload="sincroniza_tema(undefined, 0)">
@@ -34,8 +34,8 @@ ob_start(); ?>
     <div id="estatisticas_inventario">
         <img id="prancheta" src="#">
 
-        <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('Itens ocultos')" onmouseout="toolTip()">
-            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="IMG/Interface/mascara_oculto.png">
+        <div onclick="filtragem_automatica('oculto')" onmouseover="toolTip('itens ocultos')" onmouseout="toolTip()">
+            <img id="img_ocultos_2" class="aba_menu opcoes_baixo" src="img/interface/mascara_oculto.png">
             <img id="img_ocultos" class="aba_menu opcoes_baixo pesquisa" src="#">
         </div>
 
@@ -44,9 +44,9 @@ ob_start(); ?>
                 <h2 class="cor_textos">Estatísticas</h2>
             </center>
 
-            <p id='versao_referencia' class='estat cor_textos'>Itens Adicionados na versão <span id='num_referencia'></span></p>
+            <p id='versao_referencia' class='estat cor_textos'>itens Adicionados na versão <span id='num_referencia'></span></p>
             <br>
-            <p class='estat cor_textos'>Itens Registrados: <span id='qtd_itens_inventario'>Carregando...</span></p>
+            <p class='estat cor_textos'>itens Registrados: <span id='qtd_itens_inventario'>Carregando...</span></p>
             <br>
             <p class='estat cor_textos'>Coletáveis: <span id='qtd_itens_inventario_colet'>Carregando...</span></p>
             <br>
@@ -80,8 +80,8 @@ ob_start(); ?>
 
         <div id="item_11" onclick="clique('prancheta')"></div>
 
-        <img id="img_construcao" class="aba_menu Construcao" src="#">
-        <img id="img_decorativos" class="aba_menu Decorativos" src="#">
+        <img id="img_construcao" class="aba_menu construcao" src="#">
+        <img id="img_decorativos" class="aba_menu decorativos" src="#">
         <img id="img_redstone" class="aba_menu Redstone" src="#">
         <img id="img_transportes" class="aba_menu Transportes" src="#">
         <img id="img_diversos" class="aba_menu Diversos" src="#">
@@ -91,31 +91,31 @@ ob_start(); ?>
         <img id="img_pocoes" class="aba_menu Pocoes" src="#">
 
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
-            <img id="img_configs_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_configs.png">
-            <img id="img_configs" class="aba_menu opcoes_laterais pesquisa" src="IMG/Interface/aba_configs.png">
+            <img id="img_configs_2" class="aba_menu opcoes_laterais" src="img/interface/mascara_configs.png">
+            <img id="img_configs" class="aba_menu opcoes_laterais pesquisa" src="img/interface/aba_configs.png">
         </div>
 
         <div onclick="filtragem_automatica('não_coletável')" onmouseover="toolTip('Mostrar itens que não são coletáveis no sobrevivência')" onmouseout="toolTip()">
-            <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="IMG/Interface/mascara_nao_coletaveis.png">
-            <img id="img_coletaveis" class="aba_menu opcoes_laterais pesquisa" src="IMG/Interface/aba_nao_coletaveis.png">
+            <img id="img_coletaveis_2" class="aba_menu opcoes_laterais" src="img/interface/mascara_nao_coletaveis.png">
+            <img id="img_coletaveis" class="aba_menu opcoes_laterais pesquisa" src="img/interface/aba_nao_coletaveis.png">
         </div>
 
         <div onclick="lista_versoes()" onmouseover="toolTip('Filtrar por versões')" onmouseout="toolTip()">
-            <img id="img_versoes_2" class="aba_menu" src="IMG/Interface/mascara_atts.png">
-            <img id="img_versoes" class="aba_menu opcoes_laterais pesquisa" src="IMG/Interface/aba_atts.png">
+            <img id="img_versoes_2" class="aba_menu" src="img/interface/mascara_atts.png">
+            <img id="img_versoes" class="aba_menu opcoes_laterais pesquisa" src="img/interface/aba_atts.png">
         </div>
 
         <img id="img_especiais" class="aba_menu especiais" src="#">
         <img id="img_pesquisa" class="aba_menu pesquisa" src="#">
 
-        <img id="img_prancheta" class="aba_menu prancheta" src="IMG/Interface/mascara_prancheta.png">
+        <img id="img_prancheta" class="aba_menu prancheta" src="img/interface/mascara_prancheta.png">
 
         <input class="pesquisa" id="barra_pesquisa_input" type="text" onkeyup="filtra_pesquisa()" />
 
         <span id="titulo_aba"></span>
 
         <div id="barra_rolagem">
-            <div id="barra_scroll" src="IMG/Interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
+            <div id="barra_scroll" src="img/interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
             <img id="barra_scroll_block" src="#">
         </div>
 
@@ -205,7 +205,7 @@ ob_start(); ?>
                         $descricao_pesq = str_replace($i, "", $descricao_pesq);
                     }
 
-                    $caminho_sprite = 'IMG/Itens/' . $geracao . '/' . $tipo_item . '/' . $nome_icon;
+                    $caminho_sprite = 'img/itens/' . $geracao . '/' . $tipo_item . '/' . $nome_icon;
 
                     if ($oculto_invt != "oculto") {
                         echo "<div class='slot_item $tipo_item' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
@@ -221,7 +221,7 @@ ob_start(); ?>
         </div>
     </div>
 
-    <script src="JS/engine.js"></script>
+    <script src="js/engine.js"></script>
     <script type="text/javascript">
         (function() {
             setTimeout(() => {
