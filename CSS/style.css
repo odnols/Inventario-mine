@@ -210,7 +210,7 @@ select {
 
 .slot_item:hover,
 .slot_item_add:hover {
-    background: url("../img/interface/Claro/slot_hover.png") !important;
+    background: url("../img/interface/claro/slot_hover.png") !important;
 }
 
 .icon_item {
@@ -764,7 +764,7 @@ a {
     position: absolute;
     margin-top: -249px;
     margin-left: -535px;
-    background-image: url("../img/interface/Claro/crafting.png");
+    background-image: url("../img/interface/claro/crafting.png");
 }
 
 .item_crafting {
@@ -802,11 +802,11 @@ a {
     height: 51px;
     bottom: 99px;
     position: absolute;
-    background-image: url("../img/interface/Claro/seta_esquerda.png");
+    background-image: url("../img/interface/claro/seta_esquerda.png");
 }
 
 #seta_esquerda_crafting:hover {
-    background-image: url("../img/interface/Claro/seta_esquerda_hover.png");
+    background-image: url("../img/interface/claro/seta_esquerda_hover.png");
 }
 
 #seta_direita_crafting {
@@ -816,11 +816,11 @@ a {
     height: 51px;
     bottom: 99px;
     position: absolute;
-    background-image: url("../img/interface/Claro/seta_direita.png");
+    background-image: url("../img/interface/claro/seta_direita.png");
 }
 
 #seta_direta_crafting:hover {
-    background-image: url("../img/interface/Claro/seta_direita_hover.png") !important;
+    background-image: url("../img/interface/claro/seta_direita_hover.png") !important;
 }
 
 #abas_craft_organiza {
@@ -876,7 +876,7 @@ a {
     width: 75px;
     float: left;
     height: 75px;
-    background-image: url("../img/interface/Claro/slot_item_crafting.png");
+    background-image: url("../img/interface/claro/slot_item_crafting.png");
 }
 
 .sprite_slot_crafting {
@@ -893,7 +893,7 @@ a {
     width: 162px;
     height: 162px;
     position: absolute;
-    background-image: url("../img/interface/Claro/slot.png");
+    background-image: url("../img/interface/claro/slot.png");
 }
 
 .grid_craft {
@@ -901,7 +901,7 @@ a {
 }
 
 .grid_craft:hover {
-    background-image: url("../img/interface/Claro/slot_hover.png") !important;
+    background-image: url("../img/interface/claro/slot_hover.png") !important;
     background-position: -3px -3px;
 }
 
@@ -955,7 +955,7 @@ a {
     width: 528px;
     height: 498px;
     position: absolute;
-    background-image: url("../img/interface/Claro/craft.png");
+    background-image: url("../img/interface/claro/craft.png");
 }
 
 #slots_atalho_itens {
@@ -967,7 +967,7 @@ a {
 }
 
 #craft_ativo {
-    background-image: url("../img/interface/Claro/slot_hover.png") !important;
+    background-image: url("../img/interface/claro/slot_hover.png") !important;
 }
 
 #btn_confirma_craft {

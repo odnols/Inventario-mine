@@ -530,7 +530,7 @@ function troca_itens(pag) {
 
 function sincroniza_itens(receita, produto, qtd, local, id_item) {
 
-    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/Files/JSON/dados_locais.json')
+    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/files/JSON/dados_locais.json')
         .then(response => response.json())
         .then(async res_artigo => {
 
