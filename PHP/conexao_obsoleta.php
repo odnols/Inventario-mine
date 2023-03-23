@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $user = "root";
-$password = "admin";
+$password = null;
 $banco = "mc_itens";
 
 $conexao = new mysqli($servidor, $user, $password, $banco);

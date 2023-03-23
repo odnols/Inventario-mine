@@ -24,6 +24,9 @@ foreach ($data as $key => $value) {
     $nome_icon = $value->icon;
     $nome_interno = $value->internal_name;
 
+    $oculto = $value->hide;
+    $legacy = $value->legacy;
+
     $versao = $value->version;
     $empilhavel = $value->stackable;
 
@@ -37,17 +40,17 @@ foreach ($data as $key => $value) {
         $executa = $conexao->query($insere);
 
         // Item com coloração de nome diferente
-        if (array_key_exists("title", $value)) {
-            $cor_item = $value->title;
+        if (property_exists($value, "title")) {
+            $dados = $value->title;
 
-            $tipo_item = $cor_item[0]->type;
+            $tipo_item = $dados[0]->type;
 
             $insere = "INSERT INTO item_titulo (id_item, tipo_item) VALUES ($id_item, $tipo_item)";
             $executa = $conexao->query($insere);
         }
 
         // Item com uma durabilidade informada
-        if (array_key_exists("durability", $value)) {
+        if (property_exists($value, "durability")) {
             $durabili = $value->durability;
 
             $durabilidade = $durabili[0]->value;
@@ -57,19 +60,19 @@ foreach ($data as $key => $value) {
         }
 
         // Item com sprites antigos disponíveis
-        if (array_key_exists("legacy", $value)) {
+        if ($legacy) {
             $insere = "INSERT INTO item_legado (id_item, status_item) VALUES ($id_item, 1)";
             $executa = $conexao->query($insere);
         }
 
         // Item oculto do inventário
-        if (array_key_exists("hide", $value)) {
+        if ($oculto) {
             $insere = "INSERT INTO item_oculto (id_item, status_item) VALUES ($id_item, 1)";
             $executa = $conexao->query($insere);
         }
 
         // Descrição dos itens
-        if (array_key_exists("description", $value)) {
+        if (property_exists($value, "description")) {
             $item_descricao = $value->description;
 
             $descricao = $item_descricao[0]->value;
@@ -79,7 +82,7 @@ foreach ($data as $key => $value) {
         }
 
         // Itens com receitas de fabricação
-        if (array_key_exists("recipe", $value)) {
+        if (property_exists($value, "recipe")) {
             $crafting = $value->recipe;
 
             $craft = $crafting[0]->recipe;
@@ -91,7 +94,7 @@ foreach ($data as $key => $value) {
         }
 
         // Itens com histórico de várias guias no menu
-        if (array_key_exists("item_tab", $value)) {
+        if (property_exists($value, "item_tab")) {
             $guias = $value->item_tab;
 
             $historico_guias = $guias[0]->tab_history;

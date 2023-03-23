@@ -21,7 +21,7 @@
 
 <body onload="sincroniza_tema(undefined, 1)">
 
-    <div id="fundo_personali"></div>
+    <!-- <div id="fundo_personali"></div> -->
     <div id="filtro_colorido"></div>
 
     <div id="minetip-tooltip">
@@ -47,6 +47,7 @@
     $oculto_invt = "";
     $programmer_art = "";
     $crafting = "";
+    $descricao_item = "";
 
     // Último ID registrado de item
     $ultimo_id = "SELECT id_item FROM item ORDER BY id_item DESC LIMIT 1";
@@ -84,20 +85,19 @@
     $executa_verificacao = $conexao->query($verifica_descricao_item);
     $dados_descricao = $executa_verificacao->fetch_assoc();
 
-    $descricao_item = $dados_descricao["descricao"];
+    if ($executa_verificacao->num_rows > 0)
+        $descricao_item = $dados_descricao["descricao"];
 
     $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
     $executa_verificacao = $conexao->query($verifica_oculto_item);
-    $dados_oculto = $executa_verificacao->fetch_assoc();
 
-    if ($dados_oculto["status_item"])
+    if ($executa_verificacao->num_rows > 0)
         $oculto_invt = "checked";
 
     $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
     $executa_verificacao = $conexao->query($verifica_legado_item);
-    $dados_legado = $executa_verificacao->fetch_assoc();
 
-    if ($dados_legado["status_item"])
+    if ($executa_verificacao->num_rows > 0)
         $programmer_art = "checked";
 
     $cor_item = 0;
