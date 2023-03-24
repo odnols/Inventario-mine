@@ -28117,16 +28117,11 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1475,
-        "icon": "sniffer_spawn_egg.png",
+        "icon": "sniffer_egg.png",
         "type": "diversos",
         "name": "Ovo de farejador",
         "internal_name": "sniffer_egg",
@@ -28136,12 +28131,7 @@
         "stackable": 16,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1476,
@@ -28155,12 +28145,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1477,
@@ -28174,12 +28159,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1478,
@@ -29318,12 +29298,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1533,
@@ -29337,12 +29312,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1534,
@@ -29356,18 +29326,13 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1535,
         "icon": "pottery_shard_arms_up.png",
         "type": "diversos",
-        "name": "\u00d3straco de bra\u00e7os no ar",
+        "name": "\u00d3straco de figura",
         "internal_name": "pottery_shard_arms_up",
         "version": "1.20",
         "collectable": true,
@@ -29375,12 +29340,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1536,
@@ -29394,12 +29354,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": null
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1537,
@@ -29419,11 +29374,6 @@
                 "recipe": ",197,,,199,,,198",
                 "products": 1,
                 "craft_type": 0
-            }
-        ],
-        "description": [
-            {
-                "value": null
             }
         ]
     },
@@ -29462,11 +29412,6 @@
         "title": [
             {
                 "type": 4
-            }
-        ],
-        "description": [
-            {
-                "value": null
             }
         ]
     },
@@ -30068,12 +30013,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1572,
@@ -30381,12 +30321,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1587,
@@ -30424,7 +30359,7 @@
         "internal_name": "decorated_pot",
         "version": "1.20",
         "collectable": true,
-        "renewable": false,
+        "renewable": true,
         "stackable": 0,
         "craftable": true,
         "hide": false,
@@ -30436,5 +30371,380 @@
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 1590,
+        "icon": "brewer_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de po\u00e7\u00e3o",
+        "internal_name": "brewer_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1591,
+        "icon": "shelter_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de \u00e1rvore",
+        "internal_name": "shelter_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1592,
+        "icon": "burn_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de fogo",
+        "internal_name": "burn_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1593,
+        "icon": "miner_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de picareta",
+        "internal_name": "miner_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1594,
+        "icon": "plenty_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de ba\u00fa",
+        "internal_name": "plenty_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1595,
+        "icon": "angler_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de pesca",
+        "internal_name": "angler_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1596,
+        "icon": "explorer_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de mapa",
+        "internal_name": "explorer_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1597,
+        "icon": "blade_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de espada",
+        "internal_name": "blade_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1598,
+        "icon": "howl_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de lobo",
+        "internal_name": "howl_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1599,
+        "icon": "heart_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de cora\u00e7\u00e3o",
+        "internal_name": "heart_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1600,
+        "icon": "mourner_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de defensor",
+        "internal_name": "mourner_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1601,
+        "icon": "sheaf_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de trigo",
+        "internal_name": "sheaf_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1602,
+        "icon": "snort_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de farejador",
+        "internal_name": "snort_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1603,
+        "icon": "danger_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de creeper",
+        "internal_name": "danger_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1604,
+        "icon": "heartbreak_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de cora\u00e7\u00e3o partido",
+        "internal_name": "heartbreak_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1605,
+        "icon": "friend_pottery_shard.png",
+        "type": "diversos",
+        "name": "\u00d3straco de amizade",
+        "internal_name": "friend_pottery_shard",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1606,
+        "icon": "host_armor_trim_smithing_template.png",
+        "type": "ferramentas",
+        "name": "Molde de ferraria",
+        "internal_name": "host_armor_trim_smithing_template",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rEnfeite de hospedeiro[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
+        ]
+    },
+    {
+        "id": 1607,
+        "icon": "raiser_armor_trim_smithing_template.png",
+        "type": "ferramentas",
+        "name": "Molde de ferraria",
+        "internal_name": "raiser_armor_trim_smithing_template",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rEnfeite de levantador[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
+        ]
+    },
+    {
+        "id": 1608,
+        "icon": "shaper_armor_trim_smithing_template.png",
+        "type": "ferramentas",
+        "name": "Molde de ferraria",
+        "internal_name": "shaper_armor_trim_smithing_template",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rEnfeite de moldador[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
+        ]
+    },
+    {
+        "id": 1609,
+        "icon": "wayfinder_armor_trim_smithing_template.png",
+        "type": "ferramentas",
+        "name": "Molde de ferraria",
+        "internal_name": "wayfinder_armor_trim_smithing_template",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rEnfeite de guia[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
+        ]
+    },
+    {
+        "id": 1610,
+        "icon": "silence_armor_trim_smithing_template.png",
+        "type": "ferramentas",
+        "name": "Molde de ferraria",
+        "internal_name": "silence_armor_trim_smithing_template",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rEnfeite de sil\u00eancio[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+            }
+        ]
+    },
+    {
+        "id": 1611,
+        "icon": "pitcher_plant.png",
+        "type": "decorativos",
+        "name": "Planta carn\u00edvora",
+        "internal_name": "pitcher_plant",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1612,
+        "icon": "pitcher_pod.png",
+        "type": "decorativos",
+        "name": "Muda de planta carn\u00edvora",
+        "internal_name": "pitcher_pod",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1613,
+        "icon": "suspicious_gravel.png",
+        "type": "construcao",
+        "name": "Cascalho suspeito",
+        "internal_name": "suspicious_gravel",
+        "version": "1.20",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1614,
+        "icon": "calibrated_sculk_sensor.png",
+        "type": "redstone",
+        "name": "Sensor de sculk calibrado",
+        "internal_name": "calibrated_sculk_sensor",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
     }
 ]

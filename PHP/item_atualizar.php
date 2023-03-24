@@ -62,7 +62,7 @@ $insere = "";
 // Atualizando a descrição do item
 if ($executa_verificacao->num_rows > 0) {
     if (strlen($descricao) < 1)
-        $insere = "UPDATE item_descricao SET descricao = null WHERE id_item = $id_item";
+        $insere = "DELETE FROM item_descricao WHERE id_item = $id_item";
     else
         $insere = "UPDATE item_descricao SET descricao = '$descricao' WHERE id_item = $id_item";
 } else

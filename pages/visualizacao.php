@@ -90,7 +90,7 @@
             </center>
 
             <?php
-            $verificar = "SELECT * FROM item WHERE versao = $versao_jogo";
+            $verificar = "SELECT * FROM item WHERE versao = 1.$versao_jogo";
             $executa = $conexao->query($verificar);
             echo "<p class='estat cor_textos'>itens adicionados na versão 1.$versao_jogo ( ";
             echo $executa->num_rows . " )</p>";

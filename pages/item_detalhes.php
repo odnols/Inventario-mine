@@ -252,6 +252,8 @@
             $executa_coleta = $conexao->query($coleta_receita);
 
             $dados4 = $executa_coleta->fetch_assoc();
+
+            if($executa_coleta->num_rows > 0)
             $receita = $dados4["crafting"]; ?>
 
             <div id="preview_item_craft">
@@ -267,17 +269,6 @@
             #fundo_personali{
                 background: url('../img/itens/new/$tipo_item/$nome_icon'),
                 url('../img/itens/new/$tipo_item/$nome_icon');
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                z-index: 0;
-                left: 0px;
-                top: 0px;
-                background-position: 150px 150px,
-                                     0px 0px;
-                background-size: 300px;
-                image-rendering: pixelated;
-                filter: blur(5px);
             }
         </style>";
     } else {
