@@ -9,10 +9,20 @@ function gerencia_scroll(valor) {
     libera_scroll = valor
 }
 
+function get(alvo) {
+
+    let alvos = document.getElementsByClassName(alvo)
+
+    if (alvos.length < 1)
+        alvos = document.getElementById(alvo)
+
+    return alvos
+}
+
 function scrollSincronizado(principal, sincronizado, versao_jogo) {
 
-    let elem = document.getElementById(sincronizado)
-    let doc = document.getElementById(principal)
+    let elem = get(sincronizado)
+    let doc = get(principal)
 
     if (principal == "listagem") {
         if (libera_scroll) {
@@ -55,14 +65,14 @@ function clique(valor, estado) {
 
     if (typeof valor == "string") {
 
-        let mostra = document.getElementsByClassName("prancheta")
+        let mostra = get("prancheta")
 
         if (!prancheta && estado != 1) {
-            document.getElementById("prancheta_add").style.display = "block"
+            get("prancheta_add").style.display = "block"
             mostra[0].style.display = "block";
             prancheta = true
         } else {
-            document.getElementById("prancheta_add").style.display = "none"
+            get("prancheta_add").style.display = "none"
             mostra[0].style.display = "none"
             prancheta = false
         }
@@ -92,9 +102,9 @@ function clique(valor, estado) {
 function aba_menu(alvo) {
     let categorias = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"]
 
-    if (document.getElementById("img_versoes_2")) {
-        document.getElementById("img_versoes_2").style.display = "none"
-        document.getElementById("lista_versoes").style.display = "none"
+    if (get("img_versoes_2")) {
+        get("img_versoes_2").style.display = "none"
+        get("lista_versoes").style.display = "none"
     }
 
     // Filtrando os itens da aba escolhida
@@ -107,7 +117,7 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
     if (local == 2) {
         local = 1, pesquisa_input = pesquisa_input.toString()
 
-        document.getElementById("barra_pesquisa_input").value = pesquisa_input
+        get("barra_pesquisa_input").value = pesquisa_input
     }
 
     if (pesquisa_input == null)
@@ -118,10 +128,10 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
 
         let texto = ""
 
-        if (document.getElementById("barra_pesquisa_input"))
-            texto = document.getElementById("barra_pesquisa_input").value
+        if (get("barra_pesquisa_input"))
+            texto = get("barra_pesquisa_input").value
 
-        document.getElementById("titulo_aba").innerHTML = "Buscar"
+        get("titulo_aba").innerHTML = "Buscar"
 
         if (texto.length > 0)
             texto = texto.toLowerCase(), pesquisa_input = texto, local = 1
@@ -141,13 +151,13 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
 
     if (pesquisa_input == "off" || pesquisa_input == "não_coletável" || pesquisa_input == "oculto")
         verifica_posicao(pesquisa_input)
-    else if (document.getElementById("img_configs_2")) {
-        document.getElementById("img_configs_2").style.display = "none"
-        document.getElementById("img_coletaveis_2").style.display = "none"
+    else if (get("img_configs_2")) {
+        get("img_configs_2").style.display = "none"
+        get("img_coletaveis_2").style.display = "none"
     }
 
     // Listando os itens que possuem a class com nome semelhante ao pesquisado
-    let itens = document.getElementsByClassName("slot_item")
+    let itens = get("slot_item")
 
     for (let i = 0; i < itens.length; i++) {
         if (itens[i].className.includes(pesquisa_input) && !itens[i].className.includes("oculto"))
@@ -159,7 +169,7 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
         if (itens_ocultos) mostrar_ocultos()
 
         cache_pesquisa = null
-        document.getElementById("barra_pesquisa_input").value = ""
+        get("barra_pesquisa_input").value = ""
     }
 
     // Limpa o cache de pesquisa
@@ -168,7 +178,7 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
 
     // Escondendo todos os itens de todas as categorias
     for (let i = 0; i < categorias.length; i++) {
-        let esconde = document.getElementsByClassName(categorias[i])
+        let esconde = get(categorias[i])
 
         if (typeof pesquisa_input !== "string") {
             for (let x = 0; x < esconde.length; x++) {
@@ -210,16 +220,16 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
 
     if (versoes.includes(pesquisa_input)) {
         $("#versao_referencia").fadeIn()
-        document.getElementById("num_referencia").innerHTML = `${pesquisa_input} ( ${alvos.length} )`
+        get("num_referencia").innerHTML = `${pesquisa_input} ( ${alvos.length} )`
     } else
         $("#versao_referencia").fadeOut()
 
     if (itens > 45 || alvos.length > 45) {
-        document.getElementById("barra_scroll").style.display = "block"
-        document.getElementById("barra_scroll_block").style.display = "none"
+        get("barra_scroll").style.display = "block"
+        get("barra_scroll_block").style.display = "none"
     } else {
-        document.getElementById("barra_scroll_block").style.display = "block"
-        document.getElementById("barra_scroll").style.display = "none"
+        get("barra_scroll_block").style.display = "block"
+        get("barra_scroll").style.display = "none"
     }
 }
 
@@ -242,12 +252,12 @@ function nome_guia(alvo) {
         nome_aba = categorias[alvo]
 
     if (nome_aba !== "Buscar")
-        document.getElementById("barra_pesquisa_input").style.display = "None"
+        get("barra_pesquisa_input").style.display = "None"
     else
-        document.getElementById("barra_pesquisa_input").style.display = "Block"
+        get("barra_pesquisa_input").style.display = "Block"
 
     if (typeof alvo !== "string")
-        document.getElementById("titulo_aba").innerHTML = nome_aba
+        get("titulo_aba").innerHTML = nome_aba
 
     if (nome_aba == "Buscar") {
         controla_menus(true)
@@ -276,12 +286,12 @@ function preenche_slots_livres(qtd_itens) {
     }
 
     if (slots_livres > 0) {
-        document.getElementById("complementa_slots").innerHTML = ""
+        get("complementa_slots").innerHTML = ""
 
         for (let j = 0; j < slots_livres; j++)
-            document.getElementById("complementa_slots").innerHTML += "<div class='slot_item'></div>"
+            get("complementa_slots").innerHTML += "<div class='slot_item'></div>"
     } else // Limpa os slots de outras abas
-        document.getElementById("complementa_slots").innerHTML = ""
+        get("complementa_slots").innerHTML = ""
 }
 
 function ordena_guias_ativas(categorias, alvos, force_filter, alvo) {
@@ -291,7 +301,7 @@ function ordena_guias_ativas(categorias, alvos, force_filter, alvo) {
     // Pesquisa sem inserção
     if (alvos.length < 1) {
         for (let i = 0; i < categorias.length; i++) {
-            let alvos_mostra = document.getElementsByClassName(categorias[i])
+            let alvos_mostra = get(categorias[i])
 
             if (alvos_mostra.length > 1) {
                 for (let x = 0; x < alvos_mostra.length; x++)
@@ -313,19 +323,19 @@ function ordena_guias_ativas(categorias, alvos, force_filter, alvo) {
 
     // Desabilitando todas as guias
     for (let i = 0; i < categorias.length; i++) {
-        let guia_alvo = document.getElementsByClassName(`aba_menu_${categorias[i].toLowerCase()}`)
+        let guia_alvo = get(`aba_menu_${categorias[i].toLowerCase()}`)
 
         if (guia_alvo.length > 0) guia_alvo[0].style.display = "none"
     }
 
     for (let i = 0; i < guias.length; i++) {
-        let guia_alvo = document.getElementsByClassName(`aba_menu_${guias[i].toLowerCase()}`)
+        let guia_alvo = get(`aba_menu_${guias[i].toLowerCase()}`)
         if (guia_alvo.length > 0) guia_alvo[0].style.display = "block"
     }
 }
 
 function mostrar_ocultos() {
-    let alvos = document.getElementsByClassName('oculto')
+    let alvos = get('oculto')
 
     if (itens_ocultos == 0) {
         for (let i = 0; i < alvos.length; i++)
@@ -336,14 +346,24 @@ function mostrar_ocultos() {
         for (let i = 0; i < alvos.length; i++)
             alvos[i].style.display = "none"
 
-        document.getElementById("img_ocultos_2").style.display = "none"
+        get("img_ocultos_2").style.display = "none"
 
         itens_ocultos = 0
     }
 }
 
+function esconde_ocultos() {
+
+    let alvos = get("oculto")
+
+    for (let i = 0; i < alvos.length; i++)
+        alvos[i].style.display = "none"
+
+    get("img_ocultos_2").style.display = "none"
+}
+
 function filtra_pesquisa() {
-    let texto = (document.getElementById("barra_pesquisa_input").value).toLowerCase()
+    let texto = (get("barra_pesquisa_input").value).toLowerCase()
 
     filtragem(texto, 1, false)
 }
@@ -351,22 +371,22 @@ function filtra_pesquisa() {
 function filtragem_automatica(alvo_filtragem, local) {
 
     if (local != null)
-        document.getElementById("lista_versoes").style.display = "none"
+        get("lista_versoes").style.display = "none"
 
     // Verifica se a requisição é igual a anterior e desabilita o elemento
     if (cache_pesquisa == "off" || cache_pesquisa == "não_coletável" || cache_pesquisa == "oculto") {
         if (cache_pesquisa != alvo_filtragem) {
             cache_pesquisa = alvo_filtragem
-            document.getElementById("barra_pesquisa_input").value = alvo_filtragem
+            get("barra_pesquisa_input").value = alvo_filtragem
             verifica_posicao(alvo_filtragem)
         } else {
-            document.getElementById("barra_pesquisa_input").value = ""
+            get("barra_pesquisa_input").value = ""
             cache_pesquisa = null
         }
     } else {
         cache_pesquisa = alvo_filtragem
 
-        document.getElementById("barra_pesquisa_input").value = alvo_filtragem
+        get("barra_pesquisa_input").value = alvo_filtragem
 
         verifica_posicao(alvo_filtragem)
     }
@@ -382,15 +402,15 @@ function lista_versoes() {
     $("#img_versoes_2").toggle()
 }
 
-dragElement(document.getElementById("barra_scroll"))
+dragElement(get("barra_scroll"))
 
 function dragElement(elmnt) {
 
     if (elmnt != null) {
         let pos2 = 0, pos4 = 0
 
-        if (document.getElementById(elmnt.id))
-            document.getElementById(elmnt.id).onmousedown = dragMouseDown
+        if (get(elmnt.id))
+            get(elmnt.id).onmousedown = dragMouseDown
         else
             elmnt.onmousedown = dragMouseDown
 
@@ -448,26 +468,26 @@ function verifica_posicao(caso) {
     alvos = ["img_configs", "img_coletaveis", "img_ocultos"]
     alvos_finais = ["img_configs_2", "img_coletaveis_2", "img_ocultos_2"]
 
-    elemento = document.getElementById(alvos[caso])
+    elemento = get(alvos[caso])
     posicao = elemento.getBoundingClientRect()
 
     for (let i = 0; i < alvos_finais.length; i++) {
-        document.getElementById(alvos_finais[i]).style.display = "none"
+        get(alvos_finais[i]).style.display = "none"
     }
 
     if (caso != 3) {
         if (posicao.x > 622)
-            document.getElementById(alvos_finais[caso]).style.animation = "none"
+            get(alvos_finais[caso]).style.animation = "none"
         else
-            document.getElementById(alvos_finais[caso]).style.animation = "puxa_campos .5s"
+            get(alvos_finais[caso]).style.animation = "puxa_campos .5s"
     } else {
         if (posicao.y > 510)
-            document.getElementById(alvos_finais[caso]).style.animation = "none"
+            get(alvos_finais[caso]).style.animation = "none"
         else
-            document.getElementById(alvos_finais[caso]).style.animation = "puxa_campos2 .5s"
+            get(alvos_finais[caso]).style.animation = "puxa_campos2 .5s"
     }
 
-    document.getElementById(alvos_finais[caso]).style.display = "block"
+    get(alvos_finais[caso]).style.display = "block"
 }
 
 function exibe_detalhes_item(id_item) {
@@ -484,22 +504,22 @@ function voltar_pag() {
 }
 
 function previewImage(local) {
-    let file = document.getElementById("input_img").files
+    let file = get("input_img").files
 
     // Criando o nome interno automaticamente
     nome_interno = file[0].name
     nome_interno = nome_interno.replace('.png', "")
 
     if (local == 0)
-        document.getElementById("barra_nome_interno_pr").value = nome_interno
+        get("barra_nome_interno_pr").value = nome_interno
     else
-        document.getElementById("barra_nome_interno").value = nome_interno
+        get("barra_nome_interno").value = nome_interno
 
     if (file.length > 0) {
         let fileReader = new FileReader()
 
         fileReader.onload = function (event) {
-            document.getElementById("preview_sprite").setAttribute("src", event.target.result)
+            get("preview_sprite").setAttribute("src", event.target.result)
         }
 
         fileReader.readAsDataURL(file[0])
@@ -513,24 +533,24 @@ function apagarItem(id_item) {
 
 function troca_itens(pag) {
 
-    const esconde1 = document.getElementsByClassName("pag_1")
+    const esconde1 = get("pag_1")
     esconde1[0].style.display = "none"
 
-    const esconde2 = document.getElementsByClassName("pag_2")
+    const esconde2 = get("pag_2")
     esconde2[0].style.display = "none"
 
-    document.getElementById("pag_1").style.display = "none"
-    document.getElementById("pag_2").style.display = "none"
+    get("pag_1").style.display = "none"
+    get("pag_2").style.display = "none"
 
-    const alvo = document.getElementsByClassName(`pag_${pag}`)
+    const alvo = get(`pag_${pag}`)
     alvo[0].style.display = "block"
 
-    document.getElementById("pag_" + (3 - pag)).style.display = "block"
+    get("pag_" + (3 - pag)).style.display = "block"
 }
 
 function sincroniza_itens(receita, produto, qtd, local, id_item) {
 
-    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/files/JSON/dados_locais.json')
+    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/Files/JSON/dados_locais.json')
         .then(response => response.json())
         .then(async res_artigo => {
 
@@ -547,7 +567,7 @@ function expande_sprite(caminho) {
     window.location.href = `./sprite.php?caminho=${caminho}`
 }
 
-if (document.getElementById("btn_fecha_tela_craft")) {
+if (get("btn_fecha_tela_craft")) {
     $("#btn_fecha_tela_craft").click(() => {
         $("#prancheta_criar_crafting").fadeOut()
         $("#btn_fecha_tela_craft").toggle()
@@ -560,11 +580,11 @@ function escolhe_aba_menu(id_item) {
 
 function controla_menus(caso) {
 
-    let alvos = document.getElementsByClassName("opcoes_laterais")
+    let alvos = get("opcoes_laterais")
     let status = "None"
 
     // Mostrando ou escondendo o icone da pesquisa clicada
-    let icon_busca = document.getElementsByClassName("aba_menu_pesquisa")
+    let icon_busca = get("aba_menu_pesquisa")
     icon_busca[0].style.display = status
 
     if (caso)

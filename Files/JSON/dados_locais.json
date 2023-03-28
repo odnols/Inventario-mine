@@ -13383,6 +13383,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": ""
+            }
         ]
     },
     {
@@ -19108,7 +19113,7 @@
     },
     {
         "id": 1005,
-        "icon": "tipped_arrow16.png",
+        "icon": "tipped_arrow1.png",
         "type": "combate",
         "name": "Flecha de vis\u00e3o noturna",
         "internal_name": "tipped_arrow",
@@ -19134,7 +19139,7 @@
     },
     {
         "id": 1006,
-        "icon": "tipped_arrow16.png",
+        "icon": "tipped_arrow1.png",
         "type": "combate",
         "name": "Flecha de vis\u00e3o noturna",
         "internal_name": "tipped_arrow",
@@ -19160,7 +19165,7 @@
     },
     {
         "id": 1007,
-        "icon": "tipped_arrow15.png",
+        "icon": "tipped_arrow2.png",
         "type": "combate",
         "name": "Flecha de invisibilidade",
         "internal_name": "tipped_arrow",
@@ -19186,7 +19191,7 @@
     },
     {
         "id": 1008,
-        "icon": "tipped_arrow15.png",
+        "icon": "tipped_arrow2.png",
         "type": "combate",
         "name": "Flecha de invisibilidade",
         "internal_name": "tipped_arrow",
@@ -19212,7 +19217,7 @@
     },
     {
         "id": 1009,
-        "icon": "tipped_arrow8.png",
+        "icon": "tipped_arrow3.png",
         "type": "combate",
         "name": "Flecha de salto",
         "internal_name": "tipped_arrow",
@@ -19238,7 +19243,7 @@
     },
     {
         "id": 1010,
-        "icon": "tipped_arrow8.png",
+        "icon": "tipped_arrow3.png",
         "type": "combate",
         "name": "Flecha de salto",
         "internal_name": "tipped_arrow",
@@ -19264,7 +19269,7 @@
     },
     {
         "id": 1011,
-        "icon": "tipped_arrow8.png",
+        "icon": "tipped_arrow3.png",
         "type": "combate",
         "name": "Flecha de salto",
         "internal_name": "tipped_arrow",
@@ -19290,7 +19295,7 @@
     },
     {
         "id": 1012,
-        "icon": "tipped_arrow7.png",
+        "icon": "tipped_arrow4.png",
         "type": "combate",
         "name": "Flecha de resist\u00eancia ao fogo",
         "internal_name": "tipped_arrow",
@@ -19316,7 +19321,7 @@
     },
     {
         "id": 1013,
-        "icon": "tipped_arrow7.png",
+        "icon": "tipped_arrow4.png",
         "type": "combate",
         "name": "Flecha de resist\u00eancia ao fogo",
         "internal_name": "tipped_arrow",
@@ -19342,7 +19347,7 @@
     },
     {
         "id": 1014,
-        "icon": "tipped_arrow6.png",
+        "icon": "tipped_arrow5.png",
         "type": "combate",
         "name": "Flecha de agilidade",
         "internal_name": "tipped_arrow",
@@ -19368,7 +19373,7 @@
     },
     {
         "id": 1015,
-        "icon": "tipped_arrow6.png",
+        "icon": "tipped_arrow5.png",
         "type": "combate",
         "name": "Flecha de agilidade",
         "internal_name": "tipped_arrow",
@@ -19394,7 +19399,7 @@
     },
     {
         "id": 1016,
-        "icon": "tipped_arrow6.png",
+        "icon": "tipped_arrow5.png",
         "type": "combate",
         "name": "Flecha de agilidade",
         "internal_name": "tipped_arrow",
@@ -19420,7 +19425,7 @@
     },
     {
         "id": 1017,
-        "icon": "tipped_arrow10.png",
+        "icon": "tipped_arrow6.png",
         "type": "combate",
         "name": "Flecha de lentid\u00e3o",
         "internal_name": "tipped_arrow",
@@ -19446,7 +19451,7 @@
     },
     {
         "id": 1018,
-        "icon": "tipped_arrow10.png",
+        "icon": "tipped_arrow6.png",
         "type": "combate",
         "name": "Flecha de lentid\u00e3o",
         "internal_name": "tipped_arrow",
@@ -19472,7 +19477,7 @@
     },
     {
         "id": 1019,
-        "icon": "tipped_arrow10.png",
+        "icon": "tipped_arrow6.png",
         "type": "combate",
         "name": "Flecha de lentid\u00e3o",
         "internal_name": "tipped_arrow",
@@ -19498,7 +19503,7 @@
     },
     {
         "id": 1020,
-        "icon": "tipped_arrow9.png",
+        "icon": "tipped_arrow7.png",
         "type": "combate",
         "name": "Flecha do mestre-tartaruga",
         "internal_name": "tipped_arrow",
@@ -19508,7 +19513,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1249,1000,1000,1000,1000",
@@ -19524,7 +19529,7 @@
     },
     {
         "id": 1021,
-        "icon": "tipped_arrow9.png",
+        "icon": "tipped_arrow7.png",
         "type": "combate",
         "name": "Flecha do mestre-tartaruga",
         "internal_name": "tipped_arrow",
@@ -19534,7 +19539,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1250,1000,1000,1000,1000",
@@ -19550,7 +19555,7 @@
     },
     {
         "id": 1022,
-        "icon": "tipped_arrow9.png",
+        "icon": "tipped_arrow7.png",
         "type": "combate",
         "name": "Flecha do mestre-tartaruga",
         "internal_name": "tipped_arrow",
@@ -19560,7 +19565,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1251,1000,1000,1000,1000",
@@ -19576,7 +19581,7 @@
     },
     {
         "id": 1023,
-        "icon": "tipped_arrow5.png",
+        "icon": "tipped_arrow8.png",
         "type": "combate",
         "name": "Flecha de respira\u00e7\u00e3o aqu\u00e1tica",
         "internal_name": "tipped_arrow",
@@ -19602,7 +19607,7 @@
     },
     {
         "id": 1024,
-        "icon": "tipped_arrow5.png",
+        "icon": "tipped_arrow8.png",
         "type": "combate",
         "name": "Flecha de respira\u00e7\u00e3o aqu\u00e1tica",
         "internal_name": "tipped_arrow",
@@ -19628,7 +19633,7 @@
     },
     {
         "id": 1025,
-        "icon": "tipped_arrow4.png",
+        "icon": "tipped_arrow9.png",
         "type": "combate",
         "name": "Flecha de cura",
         "internal_name": "tipped_arrow",
@@ -19654,7 +19659,7 @@
     },
     {
         "id": 1026,
-        "icon": "tipped_arrow4.png",
+        "icon": "tipped_arrow9.png",
         "type": "combate",
         "name": "Flecha de cura",
         "internal_name": "tipped_arrow",
@@ -19680,7 +19685,7 @@
     },
     {
         "id": 1027,
-        "icon": "tipped_arrow11.png",
+        "icon": "tipped_arrow10.png",
         "type": "combate",
         "name": "Flecha de dano",
         "internal_name": "tipped_arrow",
@@ -19706,7 +19711,7 @@
     },
     {
         "id": 1028,
-        "icon": "tipped_arrow11.png",
+        "icon": "tipped_arrow10.png",
         "type": "combate",
         "name": "Flecha de dano",
         "internal_name": "tipped_arrow",
@@ -19732,7 +19737,7 @@
     },
     {
         "id": 1029,
-        "icon": "tipped_arrow12.png",
+        "icon": "tipped_arrow11.png",
         "type": "combate",
         "name": "Flecha de veneno",
         "internal_name": "tipped_arrow",
@@ -19758,7 +19763,7 @@
     },
     {
         "id": 1030,
-        "icon": "tipped_arrow12.png",
+        "icon": "tipped_arrow11.png",
         "type": "combate",
         "name": "Flecha de veneno",
         "internal_name": "tipped_arrow",
@@ -19784,7 +19789,7 @@
     },
     {
         "id": 1031,
-        "icon": "tipped_arrow12.png",
+        "icon": "tipped_arrow11.png",
         "type": "combate",
         "name": "Flecha de veneno",
         "internal_name": "tipped_arrow",
@@ -19810,7 +19815,7 @@
     },
     {
         "id": 1032,
-        "icon": "tipped_arrow3.png",
+        "icon": "tipped_arrow12.png",
         "type": "combate",
         "name": "Flecha de regenera\u00e7\u00e3o",
         "internal_name": "tipped_arrow",
@@ -19836,7 +19841,7 @@
     },
     {
         "id": 1033,
-        "icon": "tipped_arrow3.png",
+        "icon": "tipped_arrow12.png",
         "type": "combate",
         "name": "Flecha de regenera\u00e7\u00e3o",
         "internal_name": "tipped_arrow",
@@ -19862,7 +19867,7 @@
     },
     {
         "id": 1034,
-        "icon": "tipped_arrow3.png",
+        "icon": "tipped_arrow12.png",
         "type": "combate",
         "name": "Flecha de regenera\u00e7\u00e3o",
         "internal_name": "tipped_arrow",
@@ -19888,7 +19893,7 @@
     },
     {
         "id": 1035,
-        "icon": "tipped_arrow14.png",
+        "icon": "tipped_arrow13.png",
         "type": "combate",
         "name": "Flecha de for\u00e7a",
         "internal_name": "tipped_arrow",
@@ -19914,7 +19919,7 @@
     },
     {
         "id": 1036,
-        "icon": "tipped_arrow14.png",
+        "icon": "tipped_arrow13.png",
         "type": "combate",
         "name": "Flecha de for\u00e7a",
         "internal_name": "tipped_arrow",
@@ -19940,7 +19945,7 @@
     },
     {
         "id": 1037,
-        "icon": "tipped_arrow14.png",
+        "icon": "tipped_arrow13.png",
         "type": "combate",
         "name": "Flecha de for\u00e7a",
         "internal_name": "tipped_arrow",
@@ -19966,7 +19971,7 @@
     },
     {
         "id": 1038,
-        "icon": "tipped_arrow13.png",
+        "icon": "tipped_arrow14.png",
         "type": "combate",
         "name": "Flecha de fraqueza",
         "internal_name": "tipped_arrow",
@@ -19992,7 +19997,7 @@
     },
     {
         "id": 1039,
-        "icon": "tipped_arrow13.png",
+        "icon": "tipped_arrow14.png",
         "type": "combate",
         "name": "Flecha de fraqueza",
         "internal_name": "tipped_arrow",
@@ -20018,7 +20023,7 @@
     },
     {
         "id": 1040,
-        "icon": "tipped_arrow.png",
+        "icon": "tipped_arrow15.png",
         "type": "combate",
         "name": "Flecha de sorte",
         "internal_name": "tipped_arrow",
@@ -20044,7 +20049,7 @@
     },
     {
         "id": 1041,
-        "icon": "tipped_arrow2.png",
+        "icon": "tipped_arrow16.png",
         "type": "combate",
         "name": "Flecha de queda lenta",
         "internal_name": "tipped_arrow",
@@ -20054,7 +20059,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1270,1000,1000,1000,1000",
@@ -20070,7 +20075,7 @@
     },
     {
         "id": 1042,
-        "icon": "tipped_arrow2.png",
+        "icon": "tipped_arrow16.png",
         "type": "combate",
         "name": "Flecha de queda lenta",
         "internal_name": "tipped_arrow",
@@ -20080,7 +20085,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1271,1000,1000,1000,1000",
@@ -20483,6 +20488,11 @@
                 "recipe": "363,363,363,363,719,363,363,1115,363",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": ""
             }
         ]
     },
@@ -20980,6 +20990,11 @@
         "title": [
             {
                 "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": ""
             }
         ]
     },
@@ -21671,7 +21686,7 @@
     },
     {
         "id": 1154,
-        "icon": "potion5.png",
+        "icon": "potion10.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de dano",
         "internal_name": "potion",
@@ -21690,7 +21705,7 @@
     },
     {
         "id": 1155,
-        "icon": "potion5.png",
+        "icon": "potion10.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de dano",
         "internal_name": "potion",
@@ -21709,7 +21724,7 @@
     },
     {
         "id": 1156,
-        "icon": "potion6.png",
+        "icon": "potion11.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de veneno",
         "internal_name": "potion",
@@ -21728,7 +21743,7 @@
     },
     {
         "id": 1157,
-        "icon": "potion6.png",
+        "icon": "potion11.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de veneno",
         "internal_name": "potion",
@@ -21747,7 +21762,7 @@
     },
     {
         "id": 1158,
-        "icon": "potion6.png",
+        "icon": "potion11.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de veneno",
         "internal_name": "potion",
@@ -21766,7 +21781,7 @@
     },
     {
         "id": 1159,
-        "icon": "potion7.png",
+        "icon": "potion12.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de regenera\u00e7\u00e3o",
         "internal_name": "potion",
@@ -21785,7 +21800,7 @@
     },
     {
         "id": 1160,
-        "icon": "potion7.png",
+        "icon": "potion12.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de regenera\u00e7\u00e3o",
         "internal_name": "potion",
@@ -21804,7 +21819,7 @@
     },
     {
         "id": 1161,
-        "icon": "potion7.png",
+        "icon": "potion12.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de regenera\u00e7\u00e3o",
         "internal_name": "potion",
@@ -21823,7 +21838,7 @@
     },
     {
         "id": 1162,
-        "icon": "potion8.png",
+        "icon": "potion13.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de for\u00e7a",
         "internal_name": "potion",
@@ -21842,7 +21857,7 @@
     },
     {
         "id": 1163,
-        "icon": "potion8.png",
+        "icon": "potion13.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de for\u00e7a",
         "internal_name": "potion",
@@ -21861,7 +21876,7 @@
     },
     {
         "id": 1164,
-        "icon": "potion8.png",
+        "icon": "potion13.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de for\u00e7a",
         "internal_name": "potion",
@@ -21880,7 +21895,7 @@
     },
     {
         "id": 1165,
-        "icon": "potion9.png",
+        "icon": "potion14.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de fraqueza",
         "internal_name": "potion",
@@ -21899,7 +21914,7 @@
     },
     {
         "id": 1166,
-        "icon": "potion9.png",
+        "icon": "potion14.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de fraqueza",
         "internal_name": "potion",
@@ -21907,7 +21922,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -21918,7 +21933,7 @@
     },
     {
         "id": 1167,
-        "icon": "potion10.png",
+        "icon": "potion15.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de sorte",
         "internal_name": "potion",
@@ -21926,7 +21941,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -21937,7 +21952,7 @@
     },
     {
         "id": 1168,
-        "icon": "potion11.png",
+        "icon": "potion16.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de queda lenta",
         "internal_name": "potion",
@@ -21945,7 +21960,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -21956,7 +21971,7 @@
     },
     {
         "id": 1169,
-        "icon": "potion11.png",
+        "icon": "potion16.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de queda lenta",
         "internal_name": "potion",
@@ -21964,7 +21979,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -21983,7 +21998,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22002,7 +22017,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22021,7 +22036,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22040,7 +22055,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22059,7 +22074,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22073,12 +22088,12 @@
         "icon": "potion3.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de salto",
-        "internal_name": "potion3",
+        "internal_name": "potion",
         "version": "1.8",
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22097,7 +22112,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22116,7 +22131,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22135,7 +22150,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22146,7 +22161,7 @@
     },
     {
         "id": 1179,
-        "icon": "potion12.png",
+        "icon": "potion5.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de agilidade",
         "internal_name": "potion",
@@ -22154,7 +22169,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22165,7 +22180,7 @@
     },
     {
         "id": 1180,
-        "icon": "potion12.png",
+        "icon": "potion5.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de agilidade",
         "internal_name": "potion",
@@ -22173,7 +22188,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22184,7 +22199,7 @@
     },
     {
         "id": 1181,
-        "icon": "potion12.png",
+        "icon": "potion5.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de agilidade",
         "internal_name": "potion",
@@ -22192,7 +22207,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22203,7 +22218,7 @@
     },
     {
         "id": 1182,
-        "icon": "potion13.png",
+        "icon": "potion6.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de lentid\u00e3o",
         "internal_name": "potion",
@@ -22211,7 +22226,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22222,7 +22237,7 @@
     },
     {
         "id": 1183,
-        "icon": "potion13.png",
+        "icon": "potion6.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de lentid\u00e3o",
         "internal_name": "potion",
@@ -22230,7 +22245,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22241,7 +22256,7 @@
     },
     {
         "id": 1184,
-        "icon": "potion13.png",
+        "icon": "potion6.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de lentid\u00e3o",
         "internal_name": "potion",
@@ -22249,7 +22264,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22260,7 +22275,7 @@
     },
     {
         "id": 1185,
-        "icon": "potion14.png",
+        "icon": "potion7.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o do mestre-tartaruga",
         "internal_name": "potion",
@@ -22268,7 +22283,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22279,7 +22294,7 @@
     },
     {
         "id": 1186,
-        "icon": "potion14.png",
+        "icon": "potion7.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o do mestre-tartaruga",
         "internal_name": "potion",
@@ -22287,7 +22302,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22298,7 +22313,7 @@
     },
     {
         "id": 1187,
-        "icon": "potion14.png",
+        "icon": "potion7.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o do mestre-tartaruga",
         "internal_name": "potion",
@@ -22306,7 +22321,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22317,7 +22332,7 @@
     },
     {
         "id": 1188,
-        "icon": "potion15.png",
+        "icon": "potion8.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de respira\u00e7\u00e3o aqu\u00e1tica",
         "internal_name": "potion",
@@ -22325,7 +22340,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22336,7 +22351,7 @@
     },
     {
         "id": 1189,
-        "icon": "potion15.png",
+        "icon": "potion8.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de respira\u00e7\u00e3o aqu\u00e1tica",
         "internal_name": "potion",
@@ -22344,7 +22359,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22355,7 +22370,7 @@
     },
     {
         "id": 1190,
-        "icon": "potion16.png",
+        "icon": "potion9.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de cura",
         "internal_name": "potion",
@@ -22363,7 +22378,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22374,7 +22389,7 @@
     },
     {
         "id": 1191,
-        "icon": "potion16.png",
+        "icon": "potion9.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de cura",
         "internal_name": "potion",
@@ -22382,7 +22397,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22396,12 +22411,12 @@
         "icon": "splash_potion1.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o arremess\u00e1vel de vis\u00e3o noturna",
-        "internal_name": "splash_potion1",
+        "internal_name": "splash_potion",
         "version": "1.4",
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22420,7 +22435,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22439,7 +22454,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22458,7 +22473,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22477,7 +22492,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22496,7 +22511,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22515,7 +22530,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22534,7 +22549,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22553,7 +22568,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22572,7 +22587,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22591,7 +22606,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22610,7 +22625,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22629,7 +22644,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22648,7 +22663,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22667,7 +22682,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22686,7 +22701,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22705,7 +22720,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22724,7 +22739,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22743,7 +22758,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22762,7 +22777,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22781,7 +22796,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22800,7 +22815,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22819,7 +22834,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22838,7 +22853,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22857,7 +22872,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22876,7 +22891,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22895,7 +22910,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22914,7 +22929,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22933,7 +22948,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22952,7 +22967,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22971,7 +22986,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -22990,7 +23005,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -23009,7 +23024,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -23028,7 +23043,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -23047,7 +23062,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -23066,7 +23081,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -23085,7 +23100,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -23104,7 +23119,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": true,
         "description": [
@@ -27706,6 +27721,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": ""
+            }
         ]
     },
     {
@@ -30609,6 +30629,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "59,1606,59,59,498,59,59,59,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&rEnfeite de hospedeiro[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
@@ -30628,6 +30655,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "59,1607,59,59,498,59,59,59,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&rEnfeite de levantador[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
@@ -30647,6 +30681,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "59,1608,59,59,498,59,59,59,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&rEnfeite de moldador[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
@@ -30666,6 +30707,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "59,1609,59,59,498,59,59,59,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&rEnfeite de guia[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
@@ -30685,6 +30733,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "59,1610,59,59,2,59,59,59,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&rEnfeite de sil\u00eancio[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
@@ -30745,6 +30800,117 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",696,,696,180,696",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1615,
+        "icon": "tipped_arrow.png",
+        "type": "combate",
+        "name": "Flecha com efeito",
+        "internal_name": "tipped_arrow",
+        "version": "1.9",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1230,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rNenhum efeito"
+            }
+        ]
+    },
+    {
+        "id": 1616,
+        "icon": "tipped_arrow.png",
+        "type": "combate",
+        "name": "Flecha com efeito",
+        "internal_name": "tipped_arrow",
+        "version": "1.9",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1231,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rNenhum efeito"
+            }
+        ]
+    },
+    {
+        "id": 1617,
+        "icon": "tipped_arrow.png",
+        "type": "combate",
+        "name": "Flecha com efeito",
+        "internal_name": "tipped_arrow",
+        "version": "1.9",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1232,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rNenhum efeito"
+            }
+        ]
+    },
+    {
+        "id": 1618,
+        "icon": "tipped_arrow.png",
+        "type": "combate",
+        "name": "Flecha com efeito",
+        "internal_name": "tipped_arrow",
+        "version": "1.9",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1233,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rNenhum efeito"
+            }
+        ]
     }
 ]

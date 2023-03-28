@@ -7,7 +7,7 @@
         echo "<div id='item_$i' onclick='aba_menu($i, 0)'></div>";
     }
 
-    if ($local_requisicao == 1) { // Apenas visivel na tela inicial, prancheta de inserção de novos itens
+    if ($local_requisicao === 1) { // Apenas visivel na tela inicial, prancheta de inserção de novos itens
     ?>
         <div id="item_11" onclick="clique('prancheta')"></div>
     <?php }
@@ -54,7 +54,7 @@
     </div>
 
     <div id="lista_itens">
-        <?php if ($local_requisicao != 3) { ?>
+        <?php if ($local_requisicao !== 3) { ?>
             <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
             <?php } else { ?>
                 <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll', <?php echo $versao_jogo; ?>)">
@@ -79,8 +79,17 @@
 
                 $programmer_art = 0;
 
-                // $oculto_invt = $dados["oculto_invt"];
-                // $programmer_art = $dados["programmer_art"];
+                $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
+                $executa_verificacao = $conexao->query($verifica_oculto_item);
+
+                if ($executa_verificacao->num_rows > 0)
+                    $oculto_invt = "oculto";
+
+                $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
+                $executa_verificacao = $conexao->query($verifica_legado_item);
+
+                if ($executa_verificacao->num_rows > 0)
+                    $programmer_art = 1;
 
                 $descricao = "[&1" . $tipo_item;
 
@@ -101,12 +110,12 @@
                 if ($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-                if ($versao_add == null)
+                if ($versao_add === null)
                     $versao_add = "off";
                 else
                     $versao_add = $versao_add;
 
-                if ($oculto_invt == 1)
+                if ($oculto_invt === 1)
                     $oculto_invt = "oculto";
 
                 if (!$renovavel)
@@ -114,12 +123,12 @@
                 else
                     $renovavel = "renovável";
 
-                if ($empilhavel != 0)
+                if ($empilhavel !== 0)
                     $empilhavel = "empilhável";
                 else
                     $empilhavel = "não_empilhavel";
 
-                if ($coletavel != 0)
+                if ($coletavel !== 0)
                     $coletavel = "coletável";
                 else
                     $coletavel = "não_coletável";
@@ -141,7 +150,7 @@
                 $slot_item = "slot_item";
                 $nome_pesq = strtolower($nome_item);
 
-                if ($local_requisicao == 3 && $versao_add == $versao_jogo)
+                if ($local_requisicao === 3 && $versao_add === $versao_jogo)
                     $slot_item = "slot_item_add";
 
                 for ($i = 0; $i < 20; $i++) { // Elimina todos os números de versão da descrição
@@ -149,13 +158,13 @@
                 }
 
                 if ($local_requisicao == 1) { // Requisição proveniente da página inicial
-                    if ($oculto_invt != "oculto") {
+                    if ($oculto_invt !== "oculto") {
                         echo "<div class='slot_item $tipo_item $versao_add $nome_interno $coletavel $nome_pesq $descricao_pesq' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     } else {
 
-                        if ($oculto_invt != "oculto")
+                        if ($oculto_invt !== "oculto")
                             echo "<div class='slot_item $tipo_item' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         else
                             echo "<div class='slot_item oculto' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
@@ -164,13 +173,13 @@
                         echo "</div>";
                     }
                 } else if ($local_requisicao == 2) { // Requisição proveniente da página de receitas
-                    if ($oculto_invt != "oculto") {
+                    if ($oculto_invt !== "oculto") {
                         echo "<div class='slot_item $tipo_item $nome_interno $versao_add $nome_pesq $descricao_pesq' onclick='seleciona_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     } else {
 
-                        if ($oculto_invt != "oculto")
+                        if ($oculto_invt !== "oculto")
                             echo "<div class='slot_item $tipo_item' onclick='seleciona_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         else
                             echo "<div class='slot_item oculto' onclick='seleciona_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
@@ -179,12 +188,12 @@
                         echo "</div>";
                     }
                 } else { // Requisição proveniente da máquina do tempo
-                    if ($oculto_invt != "oculto") {
+                    if ($oculto_invt !== "oculto") {
                         echo "<div onclick='expande_sprite(`../img/itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item $versao_add $nome_interno $coletavel $nome_pesq $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     } else {
-                        if ($oculto_invt != "oculto")
+                        if ($oculto_invt !== "oculto")
                             echo "<div onclick='expande_sprite(`../img/itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                         else
                             echo "<div onclick='expande_sprite(`../img/itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";

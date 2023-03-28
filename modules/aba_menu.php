@@ -27,48 +27,31 @@
 
     <div id="filtro_colorido"></div>
 
-    <?php include_once "../php/conexao_obsoleta.php";
-    $id_item_alvo = $_GET["id"];
-
-    $dados_item = "SELECT historico_guias FROM item WHERE id_item = $id_item_alvo";
-    $executa = $conexao->query($dados_item); 
-    $dados = $executa->fetch_assoc(); ?>
-
     <div id="menu_user">
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
-    <!-- Menu interativo -->
-    <?php $local_requisicao = 2;
+    <?php include_once "../php/conexao_obsoleta.php";
+    $id_item_alvo = $_GET["id"];
+
+    $dados_item = "SELECT historico_guias FROM item WHERE id_item = $id_item_alvo";
+    $executa = $conexao->query($dados_item);
+
+    if ($executa->num_rows > 0)
+        $dados = $executa->fetch_assoc();
+
+    // Menu interativo
+    $local_requisicao = 2;
     $graphics = false;
-    $versao_jogo = 20; 
-    
+    $versao_jogo = 20;
+
     echo $dados["nome"]; ?>
 
     <a class="bttn_frrm" id="btn_fecha_tela_craft" href="../pages/item_detalhes.php?id=<?php echo $id_item_alvo ?>" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
 
-    <form id="craft_prancheta" action="../php/item_registra_abas.php" method="POST">
+    <form id="prancheta_historico" action="../php/item_registra_abas.php" method="POST">
 
-        <span class="cor_textos textos_craft">Linha do tempo</span>
 
-        <div id="slots_atalho_itens"></div>
-
-        <div id="grid_crafting">
-            <?php for ($i = 0; $i < 9; $i++) {
-                echo "<div class='grid_craft gric' onclick='seta_item_craft($i)'></div>";
-            } ?>
-        </div>
-
-        <div id="produto_final">
-            <div id="sprite_produto"></div>
-            <div id="qtd_produto"></div>
-        </div>
-
-        <input type="text" class="input_hidden" name="id_item" value="<?php echo $id_item_alvo ?>">
-        <input type="text" class="input_hidden" id="array_craft" name="array_craft" required>
-        <input type="text" class="input_hidden" id="array_craft" name="qtd_produto" value="1">
-
-        <button id="btn_confirma_craft">Confirma</button>
     </form>
 </body>
 
