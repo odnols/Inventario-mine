@@ -1822,7 +1822,7 @@
         "id": 109,
         "icon": "spawner.png",
         "type": "especiais",
-        "name": "Gerador",
+        "name": "Gerador de criaturas",
         "internal_name": "spawner",
         "version": "1.0",
         "collectable": false,
@@ -1830,7 +1830,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": true
+        "legacy": true,
+        "description": [
+            {
+                "value": ""
+            }
+        ]
     },
     {
         "id": 110,
@@ -30750,7 +30755,7 @@
         "id": 1611,
         "icon": "pitcher_plant.png",
         "type": "decorativos",
-        "name": "Planta carn\u00edvora",
+        "name": "Planta ancestral",
         "internal_name": "pitcher_plant",
         "version": "1.20",
         "collectable": true,
@@ -30764,7 +30769,7 @@
         "id": 1612,
         "icon": "pitcher_pod.png",
         "type": "decorativos",
-        "name": "Muda de planta carn\u00edvora",
+        "name": "Vagem de planta ancestral",
         "internal_name": "pitcher_pod",
         "version": "1.20",
         "collectable": true,
@@ -30772,7 +30777,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": ""
+            }
+        ]
     },
     {
         "id": 1613,
@@ -30910,6 +30920,30 @@
         "description": [
             {
                 "value": "[&rNenhum efeito"
+            }
+        ]
+    },
+    {
+        "id": 1619,
+        "icon": "music_disc_relic.png",
+        "type": "diversos",
+        "name": "Disco musical",
+        "internal_name": "music_disc_relic",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rAaron Cherof - Relic"
             }
         ]
     }
