@@ -473,7 +473,7 @@
     },
     {
         "id": 28,
-        "icon": "crimsom_nylium.png",
+        "icon": "crimson_nylium.png",
         "type": "construcao",
         "name": "Nic\u00e9lio carmesim",
         "internal_name": "crimson_nylium",
@@ -504,7 +504,7 @@
         "icon": "crimson_stem.png",
         "type": "construcao",
         "name": "Caule carmesim",
-        "internal_name": "crimsom_stem",
+        "internal_name": "crimson_stem",
         "version": "1.16",
         "collectable": true,
         "renewable": true,
@@ -1830,12 +1830,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": true,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": true
     },
     {
         "id": 110,
@@ -13388,11 +13383,6 @@
                 "products": 1,
                 "craft_type": 0
             }
-        ],
-        "description": [
-            {
-                "value": ""
-            }
         ]
     },
     {
@@ -20494,11 +20484,6 @@
                 "products": 1,
                 "craft_type": 0
             }
-        ],
-        "description": [
-            {
-                "value": ""
-            }
         ]
     },
     {
@@ -20995,11 +20980,6 @@
         "title": [
             {
                 "type": 2
-            }
-        ],
-        "description": [
-            {
-                "value": ""
             }
         ]
     },
@@ -27726,11 +27706,6 @@
                 "products": 1,
                 "craft_type": 0
             }
-        ],
-        "description": [
-            {
-                "value": ""
-            }
         ]
     },
     {
@@ -30777,12 +30752,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1613,
@@ -30935,16 +30905,6 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "title": [
-            {
-                "type": 1
-            }
-        ],
-        "description": [
-            {
-                "value": "[&rAaron Cherof - Relic"
-            }
-        ]
+        "legacy": false
     }
 ]
