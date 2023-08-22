@@ -29293,12 +29293,17 @@
         "name": "Areia suspeita",
         "internal_name": "suspicious_sand",
         "version": "1.20",
-        "collectable": false,
+        "collectable": true,
         "renewable": false,
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": ""
+            }
+        ]
     },
     {
         "id": 1533,
@@ -30761,12 +30766,17 @@
         "name": "Cascalho suspeito",
         "internal_name": "suspicious_gravel",
         "version": "1.20",
-        "collectable": false,
+        "collectable": true,
         "renewable": false,
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": ""
+            }
+        ]
     },
     {
         "id": 1614,

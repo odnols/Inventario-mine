@@ -727,7 +727,7 @@ a {
     padding-left: 3%;
 }
 
-.pag_1 {
+.pag_1_opcoes {
     z-index: 1;
     width: 378px;
     height: 300px;
@@ -737,7 +737,7 @@ a {
     display: none;
 }
 
-.pag_2 {
+.pag_2_opcoes {
     z-index: 1;
     width: 378px;
     display: none;
@@ -1022,7 +1022,7 @@ a {
 }
 
 #preview_item_craft {
-    z-index: 2;
+    z-index: 99;
     width: 162px;
     right: 136px;
     height: 162px;

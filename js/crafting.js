@@ -89,6 +89,9 @@ function seta_item_criado(id_item) {
 
 function mostra_crafting(receita, produto, qtd, local) {
 
+    if (receita.length < 1)
+        return
+
     let caminho = ''
     if (local == 2 || local) {
         if (local == 2)
@@ -106,6 +109,10 @@ function mostra_crafting(receita, produto, qtd, local) {
 
     const grid = document.getElementsByClassName('grid_craft')
     let sprite_produto = "", dados_produto = ""
+
+    for (let i = 0; i < grid.length; i++) {
+        grid[i].style.backgroundImage = 'none'
+    }
 
     if (dados_itens.length < 1)
         return sincroniza_itens(receita, produto, qtd)

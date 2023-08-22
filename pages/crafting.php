@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="../css/tooltip.css">
 
     <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/crafting.js"></script>
+    <script src="../js/custom.js"></script>
 
     <?php include_once "../php/conexao_obsoleta.php";
 
@@ -83,19 +86,30 @@
 
             while ($dados = $executa->fetch_assoc()) {
 
-                $nome_item = $dados["nome"];
-                $nome_interno = $dados["nome_interno"];
+                $programmer_art = "new";
 
-                $programmer_art = $dados["programmer_art"];
-                $tipo_item = $dados["abamenu"];
+                $nome_item = $dados["nome"];
+                $nome_interno = $dados["internal"];
+
+                $tipo_item = $dados["tipo"];
                 $id_item = $dados["id_item"];
-                $nome_icon = $dados["nome_icon"];
+                $nome_icon = $dados["icon"];
+
                 $geracao = "new";
 
                 if ($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-                echo "<a href='#' onclick='mostra_crafting([], $id_item, null, 1)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'><div class='slot_item_crafting'><img class='sprite_slot_crafting' src='../img/itens/$geracao/$tipo_item/$nome_icon'></div></a>";
+                $verificar_receita = "SELECT * FROM item_receita WHERE id_item = $id_item";
+                $executa_receita = $conexao->query($verificar_receita);
+
+                $recipe = '';
+                $data_recipe = $executa_receita->fetch_assoc();
+
+                if (isset($data_recipe["crafting"]))
+                    $recipe = $data_recipe["crafting"];
+
+                echo "<a href='#' onclick='mostra_crafting(\"$recipe\", $id_item, null, 1)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'><div class='slot_item_crafting'><img class='sprite_slot_crafting' src='../img/itens/$geracao/$tipo_item/$nome_icon'></div></a>";
 
                 if ($i == 20)
                     break;

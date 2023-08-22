@@ -533,16 +533,19 @@ function apagarItem(id_item) {
 
 function troca_itens(pag) {
 
-    const esconde1 = get("pag_1")
+    const esconde1 = get("pag_1_opcoes")
     esconde1[0].style.display = "none"
 
-    const esconde2 = get("pag_2")
+    const esconde2 = get("pag_2_opcoes")
     esconde2[0].style.display = "none"
 
     get("pag_1").style.display = "none"
     get("pag_2").style.display = "none"
 
-    const alvo = get(`pag_${pag}`)
+    get("pag_1_opcoes")[0].style.display = "none"
+    get("pag_2_opcoes")[0].style.display = "none"
+
+    const alvo = get(`pag_${pag}_opcoes`)
     alvo[0].style.display = "block"
 
     get("pag_" + (3 - pag)).style.display = "block"
@@ -550,7 +553,7 @@ function troca_itens(pag) {
 
 function sincroniza_itens(receita, produto, qtd, local, id_item) {
 
-    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/Files/JSON/dados_locais.json')
+    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/files/JSON/dados_locais.json')
         .then(response => response.json())
         .then(async res_artigo => {
 

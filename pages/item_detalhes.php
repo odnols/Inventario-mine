@@ -155,7 +155,7 @@
 
         <form id="prancheta_att" method="post" action="../php/item_atualizar.php" enctype="multipart/form-data">
             <div id="selecionador">
-                <div class="pag_1">
+                <div class="pag_1_opcoes">
                     <input type="text" name="id_item" value="<?php echo $id_item; ?>" style="display: none;">
 
                     <input class="input_prancheta" id="barra_nome" type="text" placeholder="Nome" name="nome" required value="<?php echo $nome_item; ?>" onmouseover="toolTip('Nome do item')" onmouseout="toolTip()">
@@ -175,7 +175,7 @@
                     <?php echo "<input type='button' id='btn_abamenu' value='Guia no menu' onclick='escolhe_aba_menu($id_item)'>" ?>
                 </div>
 
-                <div id="selects" class="pag_2">
+                <div id="selects" class="pag_2_opcoes">
                     <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A Cor do item no inventário')" onmouseout="toolTip()">
                         <?php
                         $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa", "Laranja"];
