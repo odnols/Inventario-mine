@@ -18,7 +18,7 @@
     if (isset($_GET["versao_jogo"]))
         $versao_jogo = $_GET["versao_jogo"];
 
-    if (!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 20)
+    if (!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 21)
         $versao_jogo = 5; ?>
 </head>
 
@@ -32,7 +32,7 @@
         if (!isset($_GET["dg"]))
             $graphics = false;
 
-        for ($i = 0; $i < 20; $i += 3) {
+        for ($i = 0; $i < 21; $i += 3) {
             echo "-> <a href='#' onclick='filtragem(\"1.$i\", 2)'>1.$i</a>";
 
             $x = $i + 1;
@@ -58,7 +58,7 @@
                     < </button></a>
         <?php }
 
-        if ($versao_jogo < 20) { ?>
+        if ($versao_jogo < 21) { ?>
             <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>"><button class="navegacao" onmouseover="toolTip('Próxima versão')" onmouseout="toolTip()"> > </button></a>
         <?php } ?>
 

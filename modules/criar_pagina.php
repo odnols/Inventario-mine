@@ -22,7 +22,7 @@ ob_start(); ?>
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <script>
-            for (let i = 0; i < 20; i += 2) {
+            for (let i = 0; i < 21; i += 2) {
                 let x = i + 1
 
                 document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`)
@@ -201,7 +201,7 @@ ob_start(); ?>
                     $nome_pesq = strtolower($nome_item);
                     $descricao_pesq = strtolower($descricao_pes);
 
-                    for ($i = 0; $i < 20; $i++) { // Elimina todos os números de versão da descrição
+                    for ($i = 0; $i < 21; $i++) { // Elimina todos os números de versão da descrição
                         $descricao_pesq = str_replace($i, "", $descricao_pesq);
                     }
 

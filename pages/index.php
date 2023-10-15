@@ -19,7 +19,7 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-        for ($i = 0; $i < 20; $i += 3) {
+        for ($i = 0; $i < 21; $i += 3) {
 
             $x = $i + 1;
             $x2 = $i + 2;
@@ -169,7 +169,7 @@
                     <option value="outro">Outro</option>
                     <?php
 
-                    for ($i = 20; $i >= 0; $i--) {
+                    for ($i = 21; $i >= 0; $i--) {
                         echo "<option value='1.$i'>1.$i</option>";
                     } ?>
                 </select>
@@ -195,7 +195,7 @@
 
     <!-- Menu interativo -->
     <?php $local_requisicao = 1;
-    $versao_jogo = 20;
+    $versao_jogo = 21;
     include_once "../modules/menu_completo.php"; ?>
 
     <script src="../js/jquery-3.4.1.js"></script>
@@ -204,7 +204,7 @@
     <script src="../js/custom.js"></script>
 
     <script type="text/javascript">
-        aba_menu(0, 0)
+        aba_menu(10, 0)
         document.addEventListener("onKeyDown", clique())
     </script>
 </body>

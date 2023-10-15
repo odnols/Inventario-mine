@@ -3,11 +3,10 @@
 <div id="menu_completo">
     <img id="menu" src="#">
 
-    <?php for ($i = 0; $i < 11; $i++) {
+    <?php for ($i = 0; $i < 11; $i++)
         echo "<div id='item_$i' onclick='aba_menu($i, 0)'></div>";
-    }
 
-    if ($local_requisicao === 1) { // Apenas visivel na tela inicial, prancheta de inserção de novos itens
+    if ($local_requisicao === 1) { // Apenas visivel na tela inicial, prancheta de inserção de novos itens 
     ?>
         <div id="item_11" onclick="clique('prancheta')"></div>
     <?php }
@@ -153,9 +152,8 @@
                 if ($local_requisicao === 3 && $versao_add === $versao_jogo)
                     $slot_item = "slot_item_add";
 
-                for ($i = 0; $i < 20; $i++) { // Elimina todos os números de versão da descrição
+                for ($i = 0; $i < 21; $i++) // Elimina todos os números de versão da descrição
                     $descricao_pesq = str_replace($i, "", $descricao_pesq);
-                }
 
                 if ($local_requisicao == 1) { // Requisição proveniente da página inicial
                     if ($oculto_invt !== "oculto") {

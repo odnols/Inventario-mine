@@ -43,7 +43,7 @@
     // Menu interativo
     $local_requisicao = 2;
     $graphics = false;
-    $versao_jogo = 20;
+    $versao_jogo = 21;
 
     echo $dados["nome"]; ?>
 

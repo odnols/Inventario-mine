@@ -206,7 +206,7 @@
 
                         <?php echo "<option value='$versao_add'>$versao_add</option>";
 
-                        for ($i = 20; $i >= 0; $i--) {
+                        for ($i = 21; $i >= 0; $i--) {
                             if ($versao_add != "1." . $i)
                                 echo "<option value='1.$i'>1.$i</option>";
                         } ?>

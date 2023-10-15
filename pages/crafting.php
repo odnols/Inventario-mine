@@ -111,7 +111,7 @@
 
                 echo "<a href='#' onclick='mostra_crafting(\"$recipe\", $id_item, null, 1)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'><div class='slot_item_crafting'><img class='sprite_slot_crafting' src='../img/itens/$geracao/$tipo_item/$nome_icon'></div></a>";
 
-                if ($i == 20)
+                if ($i == 21)
                     break;
                 $i++;
             } ?>
