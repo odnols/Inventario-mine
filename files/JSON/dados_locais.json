@@ -29298,12 +29298,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1533,
@@ -30771,12 +30766,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1614,
@@ -30943,12 +30933,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1622,
@@ -30990,18 +30975,13 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1625,
         "icon": "allay_spawn_egg.png",
         "type": "diversos",
-        "name": "Breeze",
+        "name": "Ovo gerador de breeze",
         "internal_name": "breeze_spawn_egg",
         "version": "1.21",
         "collectable": false,
@@ -31013,7 +30993,7 @@
     },
     {
         "id": 1626,
-        "icon": "crafting_table.png",
+        "icon": "crafter.png",
         "type": "redstone",
         "name": "Fabricador",
         "internal_name": "crafter",
@@ -31023,7 +31003,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "200,200,200,200,162,200,217,183,217",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1627,
@@ -31037,12 +31024,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": ""
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 1628,
