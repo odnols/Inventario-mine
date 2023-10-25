@@ -65,7 +65,7 @@ if ($executa_verificacao->num_rows > 0) {
         $insere = "DELETE FROM item_descricao WHERE id_item = $id_item";
     else
         $insere = "UPDATE item_descricao SET descricao = '$descricao' WHERE id_item = $id_item";
-} else
+} else if (strlen($descricao > 0)) // Só adiciona uma decrição caso haja texto
     $insere = "INSERT INTO item_descricao VALUES (null, $id_item, '$descricao')";
 
 if ($insere !== "")

@@ -92,9 +92,10 @@ while ($dados = $executa->fetch_assoc()) {
         $dados = $executa_item->fetch_assoc();
         $descricao = $dados["descricao"];
 
-        array_push($item_descricao, array(
-            "value" => $descricao
-        ));
+        if (strlen($descricao) > 0)
+            array_push($item_descricao, array(
+                "value" => $descricao
+            ));
     }
 
     // Verifica se o item é oculto no inventário

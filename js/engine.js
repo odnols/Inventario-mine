@@ -5,6 +5,19 @@ var qtd_itens = 0
 
 var dados_itens = [], itens_atalho = [], array_crafting = [null, null, null, null, null, null, null, null, null]
 
+const categorias_map = {
+    0: "construcao",
+    1: "decorativos",
+    2: "redstone",
+    3: "transportes",
+    4: "diversos",
+    5: "alimentos",
+    6: "ferramentas",
+    7: "combate",
+    8: "pocoes",
+    9: "especiais"
+}
+
 function gerencia_scroll(valor) {
     libera_scroll = valor
 }
@@ -100,7 +113,6 @@ function clique(valor, estado) {
 }
 
 function aba_menu(alvo) {
-    let categorias = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"]
 
     if (get("img_versoes_2")) {
         get("img_versoes_2").style.display = "none"
@@ -108,7 +120,7 @@ function aba_menu(alvo) {
     }
 
     // Filtrando os itens da aba escolhida
-    filtragem(categorias[alvo], 0, true, alvo)
+    filtragem(categorias_map[alvo], 0, true, alvo)
     nome_guia(alvo)
 }
 
@@ -137,13 +149,11 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
             texto = texto.toLowerCase(), pesquisa_input = texto, local = 1
     }
 
-    let categorias = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"]
+    let alvos = []
     let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20", "1.21"]
 
-    let alvos = []
-
     // Descrição das abas do inventário para os itens
-    if ((categorias[pesquisa_input]) && (categorias[pesquisa_input] !== "pesquisa" && local !== 1))
+    if (categorias_map[pesquisa_input] && (categorias_map[pesquisa_input] !== "pesquisa" && local !== 1))
         pesquisa_input = 0
 
     if (typeof pesquisa_input == "string" && pesquisa_input.length == 0)
@@ -159,12 +169,11 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
     // Listando os itens que possuem a class com nome semelhante ao pesquisado
     let itens = get("slot_item")
 
-    for (let i = 0; i < itens.length; i++) {
+    for (let i = 0; i < itens.length; i++)
         if (itens[i].className.includes(pesquisa_input) && !itens[i].className.includes("oculto"))
             alvos.push(itens[i])
-    }
 
-    if ((versoes.includes(pesquisa_input) || categorias.includes(categorias[pesquisa_input])) && itens_ocultos) {
+    if ((versoes.includes(pesquisa_input) || categorias_map[pesquisa_input]) && itens_ocultos) {
 
         if (itens_ocultos) mostrar_ocultos()
 
@@ -173,18 +182,17 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
     }
 
     // Limpa o cache de pesquisa
-    if ((versoes.includes(pesquisa_input) || categorias.includes(categorias[pesquisa_input])) && cache_pesquisa != null)
+    if ((versoes.includes(pesquisa_input) || categorias_map[pesquisa_input]) && cache_pesquisa)
         cache_pesquisa = null
 
     // Escondendo todos os itens de todas as categorias
-    for (let i = 0; i < categorias.length; i++) {
-        let esconde = get(categorias[i])
+    for (let i = 0; i < Object.keys(categorias_map).length; i++) {
+        let esconde = get(categorias_map[i])
 
         if (typeof pesquisa_input !== "string") {
-            for (let x = 0; x < esconde.length; x++) {
+            for (let x = 0; x < esconde.length; x++)
                 if (pesquisa_input != 10)
                     esconde[x].style.display = "none"
-            }
         } else {
             for (let x = 0; x < esconde.length; x++) {
                 if (typeof esconde[x] !== "undefined") {
@@ -200,15 +208,14 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
                                 esconde[6].style.display = "block"
                         }
                     }
-                } else {
+                } else
                     if (typeof esconde[x] !== "undefined") {
                         esconde[x].style.display = "block"
                         itens++
                     }
-                }
             }
 
-            ordena_guias_ativas(categorias, alvos, force_filter, alvo)
+            ordena_guias_ativas(alvos, force_filter, alvo)
         }
     }
 
@@ -235,8 +242,6 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
 
 function nome_guia(alvo) {
 
-    let categorias = ["construcao", "decorativos", "Redstone", "Transportes", "Diversos", "Alimentos", "Ferramentas", "Combate", "pocoes", "especiais"]
-
     // Definindo o nome da guia seleciona
     if (alvo == 0)
         nome_aba = "Blocos de construção"
@@ -249,7 +254,7 @@ function nome_guia(alvo) {
     else if (alvo == 10)
         nome_aba = "Buscar"
     else
-        nome_aba = categorias[alvo]
+        nome_aba = `${categorias_map[alvo].slice(0, 1).toUpperCase()}${categorias_map[alvo].slice(1, categorias_map[alvo].length)}`
 
     if (nome_aba !== "Buscar")
         get("barra_pesquisa_input").style.display = "None"
@@ -294,20 +299,20 @@ function preenche_slots_livres(qtd_itens) {
         get("complementa_slots").innerHTML = ""
 }
 
-function ordena_guias_ativas(categorias, alvos, force_filter, alvo) {
+function ordena_guias_ativas(alvos, force_filter, alvo) {
 
     let guias = []
 
     // Pesquisa sem inserção
     if (alvos.length < 1) {
-        for (let i = 0; i < categorias.length; i++) {
-            let alvos_mostra = get(categorias[i])
+        for (let i = 0; i < Object.keys(categorias_map).length; i++) {
+            let alvos_mostra = get(categorias_map[i])
 
             if (alvos_mostra.length > 1) {
                 for (let x = 0; x < alvos_mostra.length; x++)
                     alvos_mostra[x].style.display = "block"
 
-                if (!guias.includes(categorias[i])) guias.push(categorias[i])
+                if (!guias.includes(categorias_map[i])) guias.push(categorias_map[i])
             }
         }
     } else {
@@ -318,12 +323,12 @@ function ordena_guias_ativas(categorias, alvos, force_filter, alvo) {
             }
         } else
             if (typeof alvo !== "undefined")
-                guias.push(categorias[alvo])
+                guias.push(categorias_map[alvo])
     }
 
     // Desabilitando todas as guias
-    for (let i = 0; i < categorias.length; i++) {
-        let guia_alvo = get(`aba_menu_${categorias[i].toLowerCase()}`)
+    for (let i = 0; i < Object.keys(categorias_map).length; i++) {
+        let guia_alvo = get(`aba_menu_${categorias_map[i].toLowerCase()}`)
 
         if (guia_alvo.length > 0) guia_alvo[0].style.display = "none"
     }
@@ -463,7 +468,7 @@ function verifica_posicao(caso) {
         caso = 1
 
     if (caso == "oculto")
-        caso = 3
+        caso = 2
 
     alvos = ["img_configs", "img_coletaveis", "img_ocultos"]
     alvos_finais = ["img_configs_2", "img_coletaveis_2", "img_ocultos_2"]
@@ -471,9 +476,8 @@ function verifica_posicao(caso) {
     elemento = get(alvos[caso])
     posicao = elemento.getBoundingClientRect()
 
-    for (let i = 0; i < alvos_finais.length; i++) {
+    for (let i = 0; i < alvos_finais.length; i++)
         get(alvos_finais[i]).style.display = "none"
-    }
 
     if (caso != 3) {
         if (posicao.x > 622)

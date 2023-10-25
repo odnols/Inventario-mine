@@ -166,10 +166,10 @@
                 </select><br><br>
 
                 <select name="versao" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
-                    <option value="outro">Outro</option>
+                    <option value='1.21'>1.21</option>
                     <?php
 
-                    for ($i = 21; $i >= 0; $i--) {
+                    for ($i = 20; $i >= 0; $i--) {
                         echo "<option value='1.$i'>1.$i</option>";
                     } ?>
                 </select>
@@ -204,7 +204,7 @@
     <script src="../js/custom.js"></script>
 
     <script type="text/javascript">
-        aba_menu(10, 0)
+        aba_menu(0, 0)
         document.addEventListener("onKeyDown", clique())
     </script>
 </body>

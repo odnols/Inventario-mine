@@ -28557,7 +28557,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": false,
+        "hide": true,
         "legacy": false
     },
     {
@@ -30937,35 +30937,49 @@
     },
     {
         "id": 1622,
-        "icon": "redstone_lamp.png",
+        "icon": "copper_bulb.png",
         "type": "redstone",
-        "name": "L\u00e2mpada de cobre",
-        "internal_name": "copper_lamp",
+        "name": "Bulbo de cobre",
+        "internal_name": "copper_bulb",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",271,,271,165,271,,217,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1623,
-        "icon": "copper_bars.png",
+        "icon": "copper_grate.png",
         "type": "decorativos",
-        "name": "Grades de cobre",
-        "internal_name": "copper_bars",
+        "name": "Grelhas de cobre",
+        "internal_name": "copper_grate",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",271,,271,,271,,271,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1624,
-        "icon": "tuff_wall.png",
+        "icon": "polished_tuff_wall.png",
         "type": "decorativos",
         "name": "Muro de tufo  polido",
         "internal_name": "polished_tuff_wall",
@@ -30975,7 +30989,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1642,1642,1642,1642,1642,1642,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1625,
@@ -31006,7 +31027,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": "200,200,200,200,162,200,217,183,217",
+                "recipe": "200,200,200,200,162,200,217,182,217",
                 "products": 1,
                 "craft_type": 0
             }
@@ -31014,7 +31035,7 @@
     },
     {
         "id": 1627,
-        "icon": "cut_copper.png",
+        "icon": "chiseled_copper.png",
         "type": "construcao",
         "name": "Cobre talhado",
         "internal_name": "chiseled_copper",
@@ -31024,11 +31045,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",604,,,604,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1628,
-        "icon": "exposed_cut_copper.png",
+        "icon": "exposed_chiseled_copper.png",
         "type": "construcao",
         "name": "Cobre talhado exposto",
         "internal_name": "exposed_chiseled_copper",
@@ -31038,11 +31066,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",605,,,605,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1629,
-        "icon": "weathered_cut_copper.png",
+        "icon": "weathered_chiseled_copper.png",
         "type": "construcao",
         "name": "Cobre talhado desgastado",
         "internal_name": "weathered_chiseled_copper",
@@ -31052,11 +31087,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",606,,,606,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1630,
-        "icon": "oxidized_cut_copper.png",
+        "icon": "oxidized_chiseled_copper.png",
         "type": "construcao",
         "name": "Cobre talhado oxidado",
         "internal_name": "oxidized_chiseled_copper",
@@ -31066,11 +31108,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",607,,,607,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1631,
-        "icon": "acacia_door.png",
+        "icon": "copper_door.png",
         "type": "redstone",
         "name": "Porta de cobre",
         "internal_name": "copper_door",
@@ -31080,11 +31129,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "271,271,,271,271,,271,271,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1632,
-        "icon": "acacia_door.png",
+        "icon": "exposed_copper_door.png",
         "type": "redstone",
         "name": "Porta de cobre exposta",
         "internal_name": "exposed_copper_door",
@@ -31094,11 +31150,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "272,272,,272,272,,272,272,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1633,
-        "icon": "acacia_door.png",
+        "icon": "weathered_copper_door.png",
         "type": "redstone",
         "name": "Porta de cobre desgastada",
         "internal_name": "weathered_copper_door",
@@ -31108,11 +31171,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "273,273,,273,273,,273,273,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1634,
-        "icon": "acacia_door.png",
+        "icon": "oxidized_copper_door.png",
         "type": "redstone",
         "name": "Porta de cobre oxidada",
         "internal_name": "oxidized_copper_door",
@@ -31122,95 +31192,144 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "274,274,,274,274,,274,274,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1635,
-        "icon": "copper_bars.png",
+        "icon": "exposed_copper_grate.png",
         "type": "decorativos",
-        "name": "Grades de cobre expostas",
-        "internal_name": "exposed_copper_bars",
+        "name": "Grelhas de cobre expostas",
+        "internal_name": "exposed_copper_grate",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",272,,272,,272,,272,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1636,
-        "icon": "copper_bars.png",
+        "icon": "weathered_copper_grate.png",
         "type": "decorativos",
-        "name": "Grades de cobre desgastadas",
-        "internal_name": "weathered_copper_bars",
+        "name": "Grelhas de cobre desgastadas",
+        "internal_name": "weathered_copper_grate",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",273,,273,,273,,273,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1637,
-        "icon": "copper_bars.png",
+        "icon": "oxidized_copper_grate.png",
         "type": "decorativos",
-        "name": "Grades de cobre oxidadas",
-        "internal_name": "oxidized_copper_bars",
+        "name": "Grelhas de cobre oxidadas",
+        "internal_name": "oxidized_copper_grate",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",274,,274,,274,,274,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1638,
-        "icon": "redstone_lamp.png",
+        "icon": "exposed_copper_bulb.png",
         "type": "redstone",
-        "name": "L\u00e2mpada de cobre exposta",
-        "internal_name": "exposed_copper_lamp",
+        "name": "Bulbo de cobre exposto",
+        "internal_name": "exposed_copper_bulb",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",272,,272,165,272,,217,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1639,
-        "icon": "redstone_lamp.png",
+        "icon": "weathered_copper_bulb.png",
         "type": "redstone",
-        "name": "L\u00e2mpada de cobre desgastada",
-        "internal_name": "weathered_copper_lamp",
+        "name": "Bulbo de cobre desgastado",
+        "internal_name": "weathered_copper_bulb",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",273,,273,165,273,,217,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1640,
-        "icon": "redstone_lamp.png",
+        "icon": "oxidized_copper_bulb.png",
         "type": "redstone",
-        "name": "L\u00e2mpada de cobre oxidada",
-        "internal_name": "oxidized_copper_lamp",
+        "name": "Bulbo de cobre oxidado",
+        "internal_name": "oxidized_copper_bulb",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",274,,274,165,274,,217,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1641,
-        "icon": "chiseled_stone_bricks.png",
+        "icon": "chiseled_tuff_bricks.png",
         "type": "construcao",
         "name": "Tijolos de tufo talhados",
         "internal_name": "chiseled_tuff_bricks",
@@ -31220,11 +31339,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",1652,,,1652,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1642,
-        "icon": "tuff.png",
+        "icon": "polished_tuff.png",
         "type": "construcao",
         "name": "Tufo polido",
         "internal_name": "polished_tuff",
@@ -31234,11 +31360,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "114,114,,114,114,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1643,
-        "icon": "stone_bricks.png",
+        "icon": "tuff_bricks.png",
         "type": "construcao",
         "name": "Tijolos de tufo",
         "internal_name": "tuff_bricks",
@@ -31248,7 +31381,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1642,1642,,1642,1642,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1650,
@@ -31280,7 +31420,7 @@
     },
     {
         "id": 1645,
-        "icon": "tuff_wall.png",
+        "icon": "tuff_brick_wall.png",
         "type": "decorativos",
         "name": "Muro de tijolos de tufo",
         "internal_name": "tuff_brick_wall",
@@ -31290,11 +31430,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1643,1643,1643,1643,1643,1643,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1646,
-        "icon": "acacia_trapdoor.png",
+        "icon": "copper_trapdoor.png",
         "type": "redstone",
         "name": "Al\u00e7ap\u00e3o de cobre",
         "internal_name": "copper_trapdoor",
@@ -31304,11 +31451,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "271,271,271,271,271,271,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1647,
-        "icon": "acacia_trapdoor.png",
+        "icon": "exposed_copper_trapdoor.png",
         "type": "redstone",
         "name": "Al\u00e7ap\u00e3o de cobre exposto",
         "internal_name": "exposed_copper_trapdoor",
@@ -31318,11 +31472,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "272,272,272,272,272,272,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1648,
-        "icon": "acacia_trapdoor.png",
+        "icon": "weathered_copper_trapdoor.png",
         "type": "redstone",
         "name": "Al\u00e7ap\u00e3o de cobre desgastado",
         "internal_name": "weathered_copper_trapdoor",
@@ -31332,11 +31493,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "273,273,273,273,273,273,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1649,
-        "icon": "acacia_trapdoor.png",
+        "icon": "oxidized_copper_trapdoor.png",
         "type": "redstone",
         "name": "Al\u00e7ap\u00e3o de cobre oxidado",
         "internal_name": "oxidized_copper_trapdoor",
@@ -31346,11 +31514,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "274,274,274,274,274,274,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1651,
-        "icon": "stone_brick_stairs.png",
+        "icon": "tuff_brick_stairs.png",
         "type": "construcao",
         "name": "Escadas de tijolos de tufo",
         "internal_name": "tuff_brick_stairs",
@@ -31360,11 +31535,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1643,,,1643,1643,,1643,1643,1643",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1652,
-        "icon": "stone_brick_slab.png",
+        "icon": "tuff_brick_slab.png",
         "type": "construcao",
         "name": "Laje de tijolos de tufo",
         "internal_name": "tuff_brick_slab",
@@ -31374,11 +31556,18 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1643,1643,1643",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1653,
-        "icon": "stone_stairs.png",
+        "icon": "polished_tuff_stairs.png",
         "type": "construcao",
         "name": "Escadas de tufo polido",
         "internal_name": "polished_tuff_stairs",
@@ -31388,14 +31577,399 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1642,,,1642,1642,,1642,1642,1642",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1654,
-        "icon": "stone_slab.png",
+        "icon": "polished_tuff_slab.png",
         "type": "construcao",
         "name": "Laje de tufo polido",
         "internal_name": "polished_tuff_slab",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1642,1642,1642",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1655,
+        "icon": "tuff_wall.png",
+        "type": "decorativos",
+        "name": "Muro de tufo",
+        "internal_name": "tuff_wall",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "114,114,114,114,114,114,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1656,
+        "icon": "tuff_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de tufo",
+        "internal_name": "tuff_stairs",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "114,,,114,114,,114,114,114",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1657,
+        "icon": "tuff_slab.png",
+        "type": "construcao",
+        "name": "Laje de tufo",
+        "internal_name": "tuff_slab",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,114,114,114",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1658,
+        "icon": "chiseled_copper.png",
+        "type": "construcao",
+        "name": "Cobre talhado encerado",
+        "internal_name": "waxed_chiseled_copper",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1627,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1659,
+        "icon": "exposed_chiseled_copper.png",
+        "type": "construcao",
+        "name": "Cobre talhado exposto encerado",
+        "internal_name": "waxed_exposed_chiseled_copper",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1628,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1660,
+        "icon": "weathered_chiseled_copper.png",
+        "type": "construcao",
+        "name": "Cobre talhado desgastado encerado",
+        "internal_name": "waxed_weathered_chiseled_copper",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1629,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1661,
+        "icon": "oxidized_chiseled_copper.png",
+        "type": "construcao",
+        "name": "Cobre talhado oxidado encerado",
+        "internal_name": "waxed_oxidized_chiseled_copper",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1630,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1662,
+        "icon": "copper_door.png",
+        "type": "redstone",
+        "name": "Porta de cobre encerada",
+        "internal_name": "waxed_copper_door",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1663,
+        "icon": "exposed_copper_door.png",
+        "type": "redstone",
+        "name": "Porta de cobre exposta encerada",
+        "internal_name": "waxed_exposed_copper_door",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1664,
+        "icon": "weathered_copper_door.png",
+        "type": "redstone",
+        "name": "Porta de cobre desgastada encerada",
+        "internal_name": "waxed_weathered_copper_door",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1666,
+        "icon": "oxidized_copper_door.png",
+        "type": "redstone",
+        "name": "Porta de cobre oxidada encerada",
+        "internal_name": "waxed_oxidized_copper_door",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1667,
+        "icon": "copper_grate.png",
+        "type": "decorativos",
+        "name": "Grelhas de cobre encerada",
+        "internal_name": "waxed_copper_grate",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1668,
+        "icon": "exposed_copper_grate.png",
+        "type": "decorativos",
+        "name": "Grelhas de cobre expostas encerada",
+        "internal_name": "waxed_exposed_copper_grate",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1669,
+        "icon": "weathered_copper_grate.png",
+        "type": "decorativos",
+        "name": "Grelhas de cobre desgastadas encerada",
+        "internal_name": "waxed_weathered_copper_grate",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1670,
+        "icon": "oxidized_copper_grate.png",
+        "type": "decorativos",
+        "name": "Grelhas de cobre oxidadas encerada",
+        "internal_name": "waxed_oxidized_copper_grate",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1671,
+        "icon": "copper_trapdoor.png",
+        "type": "redstone",
+        "name": "Al\u00e7ap\u00e3o de cobre encerado",
+        "internal_name": "waxed_copper_trapdoor",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1672,
+        "icon": "exposed_copper_trapdoor.png",
+        "type": "redstone",
+        "name": "Al\u00e7ap\u00e3o de cobre exposto encerado",
+        "internal_name": "waxed_exposed_copper_trapdoor",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1673,
+        "icon": "weathered_copper_trapdoor.png",
+        "type": "redstone",
+        "name": "Al\u00e7ap\u00e3o de cobre desgastado encerado",
+        "internal_name": "waxed_weathered_copper_trapdoor",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1674,
+        "icon": "oxidized_copper_trapdoor.png",
+        "type": "redstone",
+        "name": "Al\u00e7ap\u00e3o de cobre oxidado encerado",
+        "internal_name": "waxed_oxidized_copper_trapdoor",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1675,
+        "icon": "copper_bulb.png",
+        "type": "redstone",
+        "name": "Bulbo de cobre encerado",
+        "internal_name": "waxed_copper_bulb",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1676,
+        "icon": "exposed_copper_bulb.png",
+        "type": "redstone",
+        "name": "Bulbo de cobre exposto encerado",
+        "internal_name": "waxed_exposed_copper_bulb",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1677,
+        "icon": "weathered_copper_bulb.png",
+        "type": "redstone",
+        "name": "Bulbo de cobre desgastado encerado",
+        "internal_name": "waxed_weathered_copper_bulb",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1678,
+        "icon": "oxidized_copper_bulb.png",
+        "type": "redstone",
+        "name": "Bulbo de cobre oxidado encerado",
+        "internal_name": "waxed_oxidized_copper_bulb",
         "version": "1.21",
         "collectable": true,
         "renewable": true,
