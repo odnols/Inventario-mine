@@ -30919,10 +30919,10 @@
     },
     {
         "id": 1620,
-        "icon": "arnadillo_spawn_egg.png",
+        "icon": "armadillo_spawn_egg.png",
         "type": "diversos",
         "name": "Ovo gerador de tatu",
-        "internal_name": "arnadillo_spawn_egg",
+        "internal_name": "armadillo_spawn_egg",
         "version": "1.21",
         "collectable": false,
         "renewable": false,
