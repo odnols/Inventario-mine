@@ -31412,7 +31412,14 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1621,,,1621,1621,1621,1621,,1621",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1644,
@@ -32161,7 +32168,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1687,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1683,
@@ -32284,6 +32298,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "59,1690,59,59,271,59,59,59,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&rEnfeite de raio[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
@@ -32303,6 +32324,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "59,1691,59,59,1687,59,59,59,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&rEnfeite de fluxo[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
@@ -32327,7 +32355,7 @@
         "id": 1693,
         "icon": "mace.png",
         "type": "combate",
-        "name": "Ma\u00e7a",
+        "name": "Clava",
         "internal_name": "mace",
         "version": "1.21",
         "collectable": true,
@@ -32341,9 +32369,636 @@
                 "value": 250
             }
         ],
+        "recipe": [
+            {
+                "recipe": ",1692,,,1687,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 7 [&4Velocidade de ataque: 1.6"
+            }
+        ]
+    },
+    {
+        "id": 1695,
+        "icon": "ominous_bottle.png",
+        "type": "diversos",
+        "name": "Frasco amea\u00e7ador",
+        "internal_name": "ominous_bottle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1696,
+        "icon": "lingering_potion17.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o prolongada de ventania",
+        "internal_name": "lingering_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Ventania (00:45)"
+            }
+        ]
+    },
+    {
+        "id": 1697,
+        "icon": "splash_potion17.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o arremess\u00e1vel de ventania",
+        "internal_name": "splash_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Ventania (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1698,
+        "icon": "potion17.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o de ventania",
+        "internal_name": "potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Ventania (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1699,
+        "icon": "tipped_arrow17.png",
+        "type": "combate",
+        "name": "Flecha de ventania",
+        "internal_name": "tipped_arrow",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Ventania (00:22)"
+            }
+        ]
+    },
+    {
+        "id": 1700,
+        "icon": "lingering_potion18.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o prolongada de tecitura",
+        "internal_name": "lingering_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Tecitura (00:45)"
+            }
+        ]
+    },
+    {
+        "id": 1701,
+        "icon": "splash_potion18.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o arremess\u00e1vel de tecitura",
+        "internal_name": "splash_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Tecitura (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1702,
+        "icon": "potion18.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o de tecitura",
+        "internal_name": "potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Tecitura (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1703,
+        "icon": "tipped_arrow18.png",
+        "type": "combate",
+        "name": "Flecha de tecitura",
+        "internal_name": "tipped_arrow",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Tecitura (00:22)"
+            }
+        ]
+    },
+    {
+        "id": 1704,
+        "icon": "lingering_potion19.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o prolongada pegajosa",
+        "internal_name": "lingering_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Pegajoso (00:45)"
+            }
+        ]
+    },
+    {
+        "id": 1705,
+        "icon": "splash_potion19.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o arremess\u00e1vel pegajosa",
+        "internal_name": "splash_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Pegajoso (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1706,
+        "icon": "potion19.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o pegajosa",
+        "internal_name": "potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Pegajoso (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1707,
+        "icon": "tipped_arrow19.png",
+        "type": "combate",
+        "name": "Flecha pegajosa",
+        "internal_name": "tipped_arrow",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Pegajoso (00:22)"
+            }
+        ]
+    },
+    {
+        "id": 1708,
+        "icon": "lingering_potion20.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o prolongada de infesta\u00e7\u00e3o",
+        "internal_name": "lingering_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Infesta\u00e7\u00e3o (00:45)"
+            }
+        ]
+    },
+    {
+        "id": 1709,
+        "icon": "splash_potion20.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o arremess\u00e1vel de infesta\u00e7\u00e3o",
+        "internal_name": "splash_potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Infesta\u00e7\u00e3o (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1710,
+        "icon": "potion20.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o de infesta\u00e7\u00e3o",
+        "internal_name": "potion",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Infesta\u00e7\u00e3o (03:00)"
+            }
+        ]
+    },
+    {
+        "id": 1711,
+        "icon": "tipped_arrow20.png",
+        "type": "combate",
+        "name": "Flecha de infesta\u00e7\u00e3o",
+        "internal_name": "tipped_arrow",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&2Infesta\u00e7\u00e3o (00:22)"
+            }
+        ]
+    },
+    {
+        "id": 1712,
+        "icon": "ominous_trial_key.png",
+        "type": "diversos",
+        "name": "Chave do desafio amea\u00e7adora",
+        "internal_name": "ominous_trial_key",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1713,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rRuptura I"
+            }
+        ]
+    },
+    {
+        "id": 1714,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rRuptura II"
+            }
+        ]
+    },
+    {
+        "id": 1715,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rRuptura III"
+            }
+        ]
+    },
+    {
+        "id": 1716,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rRuptura IV"
+            }
+        ]
+    },
+    {
+        "id": 1717,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rRajada de vento I"
+            }
+        ]
+    },
+    {
+        "id": 1718,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rRajada de vento II"
+            }
+        ]
+    },
+    {
+        "id": 1719,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rRajada de vento III"
+            }
+        ]
+    },
+    {
+        "id": 1720,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDensidade I"
+            }
+        ]
+    },
+    {
+        "id": 1721,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDensidade II"
+            }
+        ]
+    },
+    {
+        "id": 1722,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDensidade III"
+            }
+        ]
+    },
+    {
+        "id": 1723,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDensidade IV"
+            }
+        ]
+    },
+    {
+        "id": 1724,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDensidade V"
             }
         ]
     }
