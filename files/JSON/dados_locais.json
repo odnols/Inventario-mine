@@ -32466,6 +32466,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1696,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&2Ventania (00:22)"
@@ -32542,6 +32549,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1700,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&2Tecitura (00:22)"
@@ -32618,6 +32632,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1704,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&2Pegajoso (00:22)"
@@ -32694,6 +32715,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,1708,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&2Infesta\u00e7\u00e3o (00:22)"
