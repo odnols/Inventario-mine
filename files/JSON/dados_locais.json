@@ -8022,6 +8022,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rFocinho"
@@ -19060,6 +19065,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ],
         "description": [
             {
                 "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 9 [&4 Velocidade de ataque: 1.1"
@@ -30923,7 +30933,7 @@
         "type": "diversos",
         "name": "Ovo gerador de tatu",
         "internal_name": "armadillo_spawn_egg",
-        "version": "1.21",
+        "version": "1.20",
         "collectable": false,
         "renewable": false,
         "stackable": 64,
@@ -30937,7 +30947,7 @@
         "type": "diversos",
         "name": "Escama de tatu",
         "internal_name": "armadillo_scute",
-        "version": "1.21",
+        "version": "1.20",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
@@ -31142,7 +31152,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": "271,271,,271,271,,271,271,",
+                "recipe": "199,199,,199,199,,199,199,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -31158,7 +31168,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
         "legacy": false,
         "recipe": [
@@ -31179,7 +31189,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
         "legacy": false,
         "recipe": [
@@ -31200,7 +31210,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
         "legacy": false,
         "recipe": [
@@ -31406,7 +31416,7 @@
         "type": "diversos",
         "name": "Armadura de lobo",
         "internal_name": "wolf_armor",
-        "version": "1.21",
+        "version": "1.20",
         "collectable": true,
         "renewable": true,
         "stackable": 0,
@@ -31471,7 +31481,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": "271,271,271,271,271,271,,,",
+                "recipe": "199,199,199,199,199,199,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -31487,7 +31497,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
         "legacy": false,
         "recipe": [
@@ -31508,7 +31518,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
         "legacy": false,
         "recipe": [
@@ -31529,7 +31539,7 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
         "legacy": false,
         "recipe": [
@@ -32260,6 +32270,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
         "description": [
             {
                 "value": "[&rFluxo"
@@ -32279,6 +32294,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
         "description": [
             {
                 "value": "[&rV\u00f3rtice"
@@ -32349,7 +32369,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
     },
     {
         "id": 1693,
@@ -32364,6 +32389,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ],
         "durability": [
             {
                 "value": 250
@@ -32386,7 +32416,7 @@
         "id": 1695,
         "icon": "ominous_bottle.png",
         "type": "diversos",
-        "name": "Frasco amea\u00e7ador",
+        "name": "Frasco sombrio",
         "internal_name": "ominous_bottle",
         "version": "1.21",
         "collectable": true,
@@ -32394,7 +32424,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Mau press\u00e1gio (01:40:00)"
+            }
+        ]
     },
     {
         "id": 1696,
@@ -33027,6 +33062,154 @@
         "description": [
             {
                 "value": "[&rDensidade V"
+            }
+        ]
+    },
+    {
+        "id": 1725,
+        "icon": "ominous_bottle.png",
+        "type": "diversos",
+        "name": "Frasco sombrio",
+        "internal_name": "ominous_bottle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Mau press\u00e1gio II (01:40:00)"
+            }
+        ]
+    },
+    {
+        "id": 1726,
+        "icon": "ominous_bottle.png",
+        "type": "diversos",
+        "name": "Frasco sombrio",
+        "internal_name": "ominous_bottle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Mau press\u00e1gio III (01:40:00)"
+            }
+        ]
+    },
+    {
+        "id": 1727,
+        "icon": "ominous_bottle.png",
+        "type": "diversos",
+        "name": "Frasco sombrio",
+        "internal_name": "ominous_bottle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Mau press\u00e1gio IV (01:40:00)"
+            }
+        ]
+    },
+    {
+        "id": 1728,
+        "icon": "ominous_bottle.png",
+        "type": "diversos",
+        "name": "Frasco sombrio",
+        "internal_name": "ominous_bottle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Mau press\u00e1gio V (01:40:00)"
+            }
+        ]
+    },
+    {
+        "id": 1729,
+        "icon": "music_disc_precipice.png",
+        "type": "diversos",
+        "name": "Disco musical",
+        "internal_name": "music_disc_precipice",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rAaron Cherof - Precipice"
+            }
+        ]
+    },
+    {
+        "id": 1730,
+        "icon": "music_disc_creator_music_box.png",
+        "type": "diversos",
+        "name": "Disco musical",
+        "internal_name": "music_disc_creator_music_box",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rLena Raine - Creator (caixa musical)"
+            }
+        ]
+    },
+    {
+        "id": 1731,
+        "icon": "music_disc_creator.png",
+        "type": "diversos",
+        "name": "Disco musical",
+        "internal_name": "music_disc_creator",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rLena Raine - Creator"
             }
         ]
     }

@@ -33,7 +33,7 @@ $verificar = "SELECT nome FROM item WHERE nome LIKE '$nome'";
 $executa = $conexao->query($verificar);
 
 // Nomes de itens que se repetem no inventário
-$nomes_reservados = array("Disco musical", "Livro encantado", "Chifre de cabra", "Luz", "Molde de ferraria", "Fragmento de cerâmica", "Quadro", "Flecha com efeito", "Desenho para estandarte");
+$nomes_reservados = array("Disco musical", "Livro encantado", "Chifre de cabra", "Luz", "Molde de ferraria", "Fragmento de cerâmica", "Quadro", "Flecha com efeito", "Desenho para estandarte", "Frasco sombrio");
 
 if ($executa->num_rows == 0 || in_array($nome, $nomes_reservados)) {
     $insere = "INSERT INTO item (nome, tipo, empilhavel, coletavel, icon, renovavel, versao, internal, fabricavel) VALUES ('$nome', '$abamenu', $empilhavel, $coletavel, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
