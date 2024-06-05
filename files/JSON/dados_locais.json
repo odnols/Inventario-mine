@@ -29459,7 +29459,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Alban\u00eas[&rKristoffer Zetterstrand[&61x1"
+                "value": "[&5Albanian[&rKristoffer Zetterstrand[&61x1"
             }
         ]
     },
@@ -29497,7 +29497,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Alvo bombardeado com sucesso[&61x1"
+                "value": "[&5Target Successfully Bombed[&rKristoffer Zetterstrand[&61x1"
             }
         ]
     },
@@ -29516,7 +29516,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Planta-jade[&rKristoffer Zetterstrand[&61x1"
+                "value": "[&5Paradistr\u00e4d[&rKristoffer Zetterstrand[&61x1"
             }
         ]
     },
@@ -29535,7 +29535,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Deserto[&rKristoffer Zetterstrand[&61x1"
+                "value": "[&5Wasteland[&rKristoffer Zetterstrand[&61x1"
             }
         ]
     },
@@ -29554,7 +29554,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Caminhante[&rKristoffer Zetterstrand[&61x2"
+                "value": "[&5Wanderer[&rKristoffer Zetterstrand[&61x2"
             }
         ]
     },
@@ -29592,7 +29592,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5A piscina[&rKristoffer Zetterstrand[&62x1"
+                "value": "[&5The Pool[&rKristoffer Zetterstrand[&62x1"
             }
         ]
     },
@@ -29630,7 +29630,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Litoral[&rKristoffer Zetterstrand[&62x1"
+                "value": "[&5Seaside[&rKristoffer Zetterstrand[&62x1"
             }
         ]
     },
@@ -29649,7 +29649,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5P\u00f4r do sol[&rKristoffer Zetterstrand[&62x1"
+                "value": "[&5sunset_dense[&rKristoffer Zetterstrand[&62x1"
             }
         ]
     },
@@ -29687,7 +29687,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5F\u00f3sforo[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5Match[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29706,7 +29706,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Busto[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5Bust[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29725,7 +29725,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5O palco est\u00e1 montado[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5The Stage Is Set[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29744,7 +29744,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5O vazio[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5The void[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29763,7 +29763,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Caveira e rosas[&rKristoffer Zetterstrand[&62x2"
+                "value": "[&5Skull and Roses[&rKristoffer Zetterstrand[&62x2"
             }
         ]
     },
@@ -29801,7 +29801,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Lutadores[&rKristoffer Zetterstrand[&64x2"
+                "value": "[&5Fighters[&rKristoffer Zetterstrand[&64x2"
             }
         ]
     },
@@ -29858,7 +29858,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Dedo indicador[&rKristoffer Zetterstrand[&64x4"
+                "value": "[&5Pointer[&rKristoffer Zetterstrand[&64x4"
             }
         ]
     },
@@ -29877,7 +29877,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5O porco[&rKristoffer Zetterstrand[&64x4"
+                "value": "[&5Pigscene[&rKristoffer Zetterstrand[&64x4"
             }
         ]
     },
@@ -29896,7 +29896,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Caveira em chamas[&rKristoffer Zetterstrand[&64x4"
+                "value": "[&5Skull On Fire[&rKristoffer Zetterstrand[&64x4"
             }
         ]
     },
@@ -29915,7 +29915,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Terra[&rMojang[&62x2"
+                "value": "[&5Earth[&rMojang[&62x2"
             }
         ]
     },
@@ -29934,7 +29934,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Ar[&rMojang[&62x2"
+                "value": "[&5Air[&rMojang[&62x2"
             }
         ]
     },
@@ -29953,7 +29953,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5\u00c1gua[&rMojang[&62x2"
+                "value": "[&5Water[&rMojang[&62x2"
             }
         ]
     },
@@ -29972,7 +29972,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&5Fogo[&rMojang[&62x2"
+                "value": "[&5Fire[&rMojang[&62x2"
             }
         ]
     },
@@ -32235,7 +32235,7 @@
         "type": "diversos",
         "name": "\u00d3straco de machado",
         "internal_name": "scrap_pottery_sherd",
-        "version": "1.21",
+        "version": "1.20",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
@@ -33210,6 +33210,386 @@
         "description": [
             {
                 "value": "[&rLena Raine - Creator"
+            }
+        ]
+    },
+    {
+        "id": 1732,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Unpacked[&rSara Boeving[&64x4"
+            }
+        ]
+    },
+    {
+        "id": 1733,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Meditative[&rSara Boeving[&61x1"
+            }
+        ]
+    },
+    {
+        "id": 1734,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Prairie Ride[&rSara Boeving[&61x2"
+            }
+        ]
+    },
+    {
+        "id": 1735,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Baroque[&rSara Boeving[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1736,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Humble[&rSara Boeving[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1737,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Changing[&rKristoffer Zetterstrand[&64x2"
+            }
+        ]
+    },
+    {
+        "id": 1738,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Finding[&rKristoffer Zetterstrand[&64x2"
+            }
+        ]
+    },
+    {
+        "id": 1739,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Lowmist[&rKristoffer Zetterstrand[&64x2"
+            }
+        ]
+    },
+    {
+        "id": 1740,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Passage[&rKristoffer Zetterstrand[&64x2"
+            }
+        ]
+    },
+    {
+        "id": 1741,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Bouquet[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1742,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Cavebird[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1743,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Cot\u00e1n[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1744,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Endboss[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1745,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Fern[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1746,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Owlemons[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1747,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Sunflowers[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1748,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Tides[&rKristoffer Zetterstrand[&63x3"
+            }
+        ]
+    },
+    {
+        "id": 1749,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Backyard[&rKristoffer Zetterstrand[&63x4"
+            }
+        ]
+    },
+    {
+        "id": 1750,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Pond[&rKristoffer Zetterstrand[&63x4"
+            }
+        ]
+    },
+    {
+        "id": 1751,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&5Orb[&rKristoffer Zetterstrand[&64x4"
             }
         ]
     }
