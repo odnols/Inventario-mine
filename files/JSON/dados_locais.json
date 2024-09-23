@@ -297,20 +297,6 @@
         "legacy": false
     },
     {
-        "id": 61,
-        "icon": "budding_amethyst.png",
-        "type": "construcao",
-        "name": "Drusa de ametista",
-        "internal_name": "budding_amethyst",
-        "version": "1.17",
-        "collectable": false,
-        "renewable": false,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": false
-    },
-    {
         "id": 19,
         "icon": "amethyst_block.png",
         "type": "construcao",
@@ -1016,6 +1002,20 @@
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 61,
+        "icon": "budding_amethyst.png",
+        "type": "construcao",
+        "name": "Drusa de ametista",
+        "internal_name": "budding_amethyst",
+        "version": "1.17",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
     },
     {
         "id": 62,
@@ -4824,20 +4824,6 @@
         "legacy": false
     },
     {
-        "id": 359,
-        "icon": "oak_log.png",
-        "type": "construcao",
-        "name": "Tronco de carvalho",
-        "internal_name": "oak_log",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": true
-    },
-    {
         "id": 267,
         "icon": "tinted_glass.png",
         "type": "construcao",
@@ -4906,27 +4892,6 @@
         "craftable": true,
         "hide": false,
         "legacy": false
-    },
-    {
-        "id": 353,
-        "icon": "oak_planks.png",
-        "type": "construcao",
-        "name": "T\u00e1buas de carvalho",
-        "internal_name": "oak_planks",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": true,
-        "recipe": [
-            {
-                "recipe": ",,,,359,,,,",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
     },
     {
         "id": 271,
@@ -5284,20 +5249,6 @@
                 "craft_type": 0
             }
         ]
-    },
-    {
-        "id": 368,
-        "icon": "stripped_oak_log.png",
-        "type": "construcao",
-        "name": "Tronco de carvalho descascado",
-        "internal_name": "stripped_oak_log",
-        "version": "1.13",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": false
     },
     {
         "id": 291,
@@ -5730,27 +5681,6 @@
         "craftable": false,
         "hide": false,
         "legacy": true
-    },
-    {
-        "id": 672,
-        "icon": "raw_iron_block.png",
-        "type": "construcao",
-        "name": "Bloco de ferro bruto",
-        "internal_name": "raw_iron_block",
-        "version": "1.17",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": false,
-        "recipe": [
-            {
-                "recipe": "245,245,245,245,245,245,245,245,245",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
     },
     {
         "id": 313,
@@ -6544,6 +6474,27 @@
         ]
     },
     {
+        "id": 353,
+        "icon": "oak_planks.png",
+        "type": "construcao",
+        "name": "T\u00e1buas de carvalho",
+        "internal_name": "oak_planks",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": ",,,,359,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 354,
         "icon": "spruce_planks.png",
         "type": "construcao",
@@ -6647,6 +6598,20 @@
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 359,
+        "icon": "oak_log.png",
+        "type": "construcao",
+        "name": "Tronco de carvalho",
+        "internal_name": "oak_log",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true
     },
     {
         "id": 360,
@@ -6759,6 +6724,20 @@
         "craftable": false,
         "hide": false,
         "legacy": true
+    },
+    {
+        "id": 368,
+        "icon": "stripped_oak_log.png",
+        "type": "construcao",
+        "name": "Tronco de carvalho descascado",
+        "internal_name": "stripped_oak_log",
+        "version": "1.13",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
     },
     {
         "id": 369,
@@ -8011,9 +7990,9 @@
     },
     {
         "id": 431,
-        "icon": "banner_pattern.png",
+        "icon": "piglin_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
+        "name": "Figura para estandarte de focinho",
         "internal_name": "piglin_banner_pattern",
         "version": "1.16",
         "collectable": true,
@@ -8025,11 +8004,6 @@
         "title": [
             {
                 "type": 2
-            }
-        ],
-        "description": [
-            {
-                "value": "[&rFocinho"
             }
         ]
     },
@@ -11590,145 +11564,6 @@
         ]
     },
     {
-        "id": 979,
-        "icon": "diamond_helmet.png",
-        "type": "combate",
-        "name": "Capacete de diamante",
-        "internal_name": "diamond_helmet",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 0,
-        "craftable": true,
-        "hide": false,
-        "legacy": true,
-        "durability": [
-            {
-                "value": 363
-            }
-        ],
-        "recipe": [
-            {
-                "recipe": "59,59,59,59,,59",
-                "products": 1,
-                "craft_type": 0
-            }
-        ],
-        "description": [
-            {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +3 [&1 Resist\u00eancia da armadura: +2"
-            }
-        ]
-    },
-    {
-        "id": 977,
-        "icon": "lapis_lazuli.png",
-        "type": "diversos",
-        "name": "L\u00e1pis-laz\u00fali",
-        "internal_name": "lapis_lazuli",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": true
-    },
-    {
-        "id": 654,
-        "icon": "map.png",
-        "type": "diversos",
-        "name": "Mapa em branco",
-        "internal_name": "map",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": true,
-        "recipe": [
-            {
-                "recipe": "193,193,193,193,695,193,193,193,193",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
-        "id": 681,
-        "icon": "wooden_axe.png",
-        "type": "ferramentas",
-        "name": "Machado de madeira",
-        "internal_name": "wooden_axe",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 0,
-        "craftable": true,
-        "hide": false,
-        "legacy": true,
-        "durability": [
-            {
-                "value": 59
-            }
-        ],
-        "recipe": [
-            {
-                "recipe": "353,353,,353,198,,,198",
-                "products": 1,
-                "craft_type": 0
-            }
-        ],
-        "description": [
-            {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 7 [&4Velocidade de ataque: 0.8"
-            }
-        ]
-    },
-    {
-        "id": 638,
-        "icon": "jukebox.png",
-        "type": "decorativos",
-        "name": "Toca-discos",
-        "internal_name": "jukebox",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": true,
-        "recipe": [
-            {
-                "recipe": "353,353,353,353,59,353,353,353,353",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
-        "id": 1000,
-        "icon": "arrow.png",
-        "type": "combate",
-        "name": "Flecha",
-        "internal_name": "arrow",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": true,
-        "recipe": [
-            {
-                "recipe": ",,190,,198,,197,",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
         "id": 613,
         "icon": "fern.png",
         "type": "decorativos",
@@ -12079,35 +11914,21 @@
         "legacy": false
     },
     {
-        "id": 978,
-        "icon": "glowstone_dust.png",
-        "type": "diversos",
-        "name": "P\u00f3 de pedra luminosa",
-        "internal_name": "glowstone_dust",
+        "id": 638,
+        "icon": "jukebox.png",
+        "type": "decorativos",
+        "name": "Toca-discos",
+        "internal_name": "jukebox",
         "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": true
-    },
-    {
-        "id": 903,
-        "icon": "white_dye.png",
-        "type": "diversos",
-        "name": "Corante branco",
-        "internal_name": "white_dye",
-        "version": "1.14",
         "collectable": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
-                "recipe": ",,,,722",
+                "recipe": "353,353,353,353,59,353,353,353,353",
                 "products": 1,
                 "craft_type": 0
             }
@@ -12345,11 +12166,11 @@
         ]
     },
     {
-        "id": 919,
-        "icon": "fermented_spider_eye.png",
-        "type": "pocoes",
-        "name": "Olho de aranha fermentado",
-        "internal_name": "fermented_spider_eye",
+        "id": 654,
+        "icon": "map.png",
+        "type": "diversos",
+        "name": "Mapa em branco",
+        "internal_name": "map",
         "version": "1.0",
         "collectable": true,
         "renewable": true,
@@ -12359,112 +12180,7 @@
         "legacy": true,
         "recipe": [
             {
-                "recipe": "313,723,39",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
-        "id": 718,
-        "icon": "ender_pearl.png",
-        "type": "diversos",
-        "name": "P\u00e9rola de ender",
-        "internal_name": "ender_pearl",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 16,
-        "craftable": false,
-        "hide": false,
-        "legacy": true
-    },
-    {
-        "id": 923,
-        "icon": "phantom_membrane.png",
-        "type": "pocoes",
-        "name": "Membrana de phantom",
-        "internal_name": "phantom_membrane",
-        "version": "1.13",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": false
-    },
-    {
-        "id": 823,
-        "icon": "chipped_anvil.png",
-        "type": "decorativos",
-        "name": "Bigorna danificada",
-        "internal_name": "chipped_anvil",
-        "version": "1.4",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": true
-    },
-    {
-        "id": 749,
-        "icon": "cartography_table.png",
-        "type": "decorativos",
-        "name": "Bancada de cartografia",
-        "internal_name": "cartography_table",
-        "version": "1.14",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": false,
-        "recipe": [
-            {
-                "recipe": "193,193,,353,353,,353,353",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
-        "id": 750,
-        "icon": "stonecutter.png",
-        "type": "decorativos",
-        "name": "Cortador de pedras",
-        "internal_name": "stonecutter",
-        "version": "1.14",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": false,
-        "recipe": [
-            {
-                "recipe": ",200,,46,46,46",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
-        "id": 746,
-        "icon": "loom.png",
-        "type": "decorativos",
-        "name": "Tear",
-        "internal_name": "loom",
-        "version": "1.14",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": false,
-        "recipe": [
-            {
-                "recipe": "239,239,,353,353",
+                "recipe": "193,193,193,193,695,193,193,193,193",
                 "products": 1,
                 "craft_type": 0
             }
@@ -12841,6 +12557,27 @@
         ]
     },
     {
+        "id": 672,
+        "icon": "raw_iron_block.png",
+        "type": "construcao",
+        "name": "Bloco de ferro bruto",
+        "internal_name": "raw_iron_block",
+        "version": "1.17",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "245,245,245,245,245,245,245,245,245",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 673,
         "icon": "raw_copper_block.png",
         "type": "construcao",
@@ -12965,6 +12702,37 @@
         "craftable": false,
         "hide": false,
         "legacy": false
+    },
+    {
+        "id": 681,
+        "icon": "wooden_axe.png",
+        "type": "ferramentas",
+        "name": "Machado de madeira",
+        "internal_name": "wooden_axe",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "durability": [
+            {
+                "value": 59
+            }
+        ],
+        "recipe": [
+            {
+                "recipe": "353,353,,353,198,,,198",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 7 [&4Velocidade de ataque: 0.8"
+            }
+        ]
     },
     {
         "id": 682,
@@ -13406,9 +13174,9 @@
     },
     {
         "id": 697,
-        "icon": "banner_pattern.png",
+        "icon": "flower_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
+        "name": "Figura para estandarte de flor",
         "internal_name": "flower_banner_pattern",
         "version": "1.14",
         "collectable": true,
@@ -13423,18 +13191,13 @@
                 "products": 1,
                 "craft_type": 0
             }
-        ],
-        "description": [
-            {
-                "value": "[&rFigura de flor"
-            }
         ]
     },
     {
         "id": 698,
-        "icon": "banner_pattern.png",
+        "icon": "creeper_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
+        "name": "Figura para estandarte de creeper",
         "internal_name": "creeper_banner_pattern",
         "version": "1.14",
         "collectable": true,
@@ -13454,19 +13217,14 @@
                 "products": 1,
                 "craft_type": 0
             }
-        ],
-        "description": [
-            {
-                "value": "[&rFigura de creeper"
-            }
         ]
     },
     {
         "id": 699,
-        "icon": "banner_pattern.png",
+        "icon": "skull_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
-        "internal_name": "banner_pattern",
+        "name": "Figura para estandarte de caveira",
+        "internal_name": "skull_banner_pattern",
         "version": "1.14",
         "collectable": true,
         "renewable": true,
@@ -13476,7 +13234,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "recipe": [
@@ -13485,18 +13243,13 @@
                 "products": 1,
                 "craft_type": 0
             }
-        ],
-        "description": [
-            {
-                "value": "[&rFigura de caveira"
-            }
         ]
     },
     {
         "id": 700,
-        "icon": "banner_pattern.png",
+        "icon": "mojang_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
+        "name": "Figura para estandarte de s\u00edmbolo",
         "internal_name": "mojang_banner_pattern",
         "version": "1.14",
         "collectable": true,
@@ -13507,7 +13260,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 3
+                "type": 1
             }
         ],
         "recipe": [
@@ -13516,18 +13269,13 @@
                 "products": 1,
                 "craft_type": 0
             }
-        ],
-        "description": [
-            {
-                "value": "[&rS\u00edmbolo"
-            }
         ]
     },
     {
         "id": 701,
-        "icon": "banner_pattern.png",
+        "icon": "globe_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
+        "name": "Figura para estandarte de globo",
         "internal_name": "globe_banner_pattern",
         "version": "1.14",
         "collectable": true,
@@ -13535,12 +13283,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": "[&rGlobo"
-            }
-        ]
+        "legacy": false
     },
     {
         "id": 702,
@@ -13793,6 +13536,20 @@
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 718,
+        "icon": "ender_pearl.png",
+        "type": "diversos",
+        "name": "P\u00e9rola de ender",
+        "internal_name": "ender_pearl",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": false,
+        "hide": false,
+        "legacy": true
     },
     {
         "id": 719,
@@ -14278,6 +14035,27 @@
         ]
     },
     {
+        "id": 746,
+        "icon": "loom.png",
+        "type": "decorativos",
+        "name": "Tear",
+        "internal_name": "loom",
+        "version": "1.14",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "239,239,,353,353",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 747,
         "icon": "composter.png",
         "type": "decorativos",
@@ -14314,6 +14092,48 @@
         "recipe": [
             {
                 "recipe": "353,408,353,353,,353,353,408,353",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 749,
+        "icon": "cartography_table.png",
+        "type": "decorativos",
+        "name": "Bancada de cartografia",
+        "internal_name": "cartography_table",
+        "version": "1.14",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "193,193,,353,353,,353,353",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 750,
+        "icon": "stonecutter.png",
+        "type": "decorativos",
+        "name": "Cortador de pedras",
+        "internal_name": "stonecutter",
+        "version": "1.14",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",200,,46,46,46",
                 "products": 1,
                 "craft_type": 0
             }
@@ -15818,6 +15638,20 @@
         ]
     },
     {
+        "id": 823,
+        "icon": "chipped_anvil.png",
+        "type": "decorativos",
+        "name": "Bigorna danificada",
+        "internal_name": "chipped_anvil",
+        "version": "1.4",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true
+    },
+    {
         "id": 824,
         "icon": "damaged_anvil.png",
         "type": "decorativos",
@@ -17309,6 +17143,27 @@
         "legacy": false
     },
     {
+        "id": 903,
+        "icon": "white_dye.png",
+        "type": "diversos",
+        "name": "Corante branco",
+        "internal_name": "white_dye",
+        "version": "1.14",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,722",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 904,
         "icon": "orange_dye.png",
         "type": "diversos",
@@ -17617,6 +17472,27 @@
         ]
     },
     {
+        "id": 919,
+        "icon": "fermented_spider_eye.png",
+        "type": "pocoes",
+        "name": "Olho de aranha fermentado",
+        "internal_name": "fermented_spider_eye",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": "313,723,39",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 920,
         "icon": "rabbit_foot.png",
         "type": "pocoes",
@@ -17671,6 +17547,20 @@
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 923,
+        "icon": "phantom_membrane.png",
+        "type": "pocoes",
+        "name": "Membrana de phantom",
+        "internal_name": "phantom_membrane",
+        "version": "1.13",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
     },
     {
         "id": 924,
@@ -18435,6 +18325,65 @@
         "legacy": false
     },
     {
+        "id": 977,
+        "icon": "lapis_lazuli.png",
+        "type": "diversos",
+        "name": "L\u00e1pis-laz\u00fali",
+        "internal_name": "lapis_lazuli",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true
+    },
+    {
+        "id": 978,
+        "icon": "glowstone_dust.png",
+        "type": "diversos",
+        "name": "P\u00f3 de pedra luminosa",
+        "internal_name": "glowstone_dust",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true
+    },
+    {
+        "id": 979,
+        "icon": "diamond_helmet.png",
+        "type": "combate",
+        "name": "Capacete de diamante",
+        "internal_name": "diamond_helmet",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "durability": [
+            {
+                "value": 363
+            }
+        ],
+        "recipe": [
+            {
+                "recipe": "59,59,59,59,,59",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +3 [&1 Resist\u00eancia da armadura: +2"
+            }
+        ]
+    },
+    {
         "id": 980,
         "icon": "iron_helmet.png",
         "type": "combate",
@@ -19023,6 +18972,27 @@
         "description": [
             {
                 "value": "[&s[&rNas pernas: [&1Pontos de armadura: +4"
+            }
+        ]
+    },
+    {
+        "id": 1000,
+        "icon": "arrow.png",
+        "type": "combate",
+        "name": "Flecha",
+        "internal_name": "arrow",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": ",,190,,198,,197,",
+                "products": 1,
+                "craft_type": 0
             }
         ]
     },
@@ -20269,25 +20239,6 @@
         ]
     },
     {
-        "id": 1084,
-        "icon": "structure_void.png",
-        "type": "especiais",
-        "name": "Vazio estrutural",
-        "internal_name": "structure_void",
-        "version": "1.10",
-        "collectable": false,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": true,
-        "title": [
-            {
-                "type": 3
-            }
-        ]
-    },
-    {
         "id": 1073,
         "icon": "zumbie_spawn_egg.png",
         "type": "diversos",
@@ -20445,6 +20396,25 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
+    },
+    {
+        "id": 1084,
+        "icon": "structure_void.png",
+        "type": "especiais",
+        "name": "Vazio estrutural",
+        "internal_name": "structure_void",
+        "version": "1.10",
+        "collectable": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
         "title": [
             {
                 "type": 3
@@ -27006,25 +26976,6 @@
         "legacy": false
     },
     {
-        "id": 1451,
-        "icon": "goat_horn.png",
-        "type": "diversos",
-        "name": "Chifre de cabra",
-        "internal_name": "goat_horn",
-        "version": "1.19",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 0,
-        "craftable": false,
-        "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": "[&rCanto"
-            }
-        ]
-    },
-    {
         "id": 1409,
         "icon": "tadpole_spawn_egg.png",
         "type": "diversos",
@@ -27546,27 +27497,6 @@
         ]
     },
     {
-        "id": 1441,
-        "icon": "muddy_mangrove_roots.png",
-        "type": "construcao",
-        "name": "Ra\u00edzes barrentas de mangue",
-        "internal_name": "muddy_mangrove_roots",
-        "version": "1.19",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": false,
-        "recipe": [
-            {
-                "recipe": ",,,1396,1390",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
         "id": 1438,
         "icon": "enchanted_book.png",
         "type": "combate",
@@ -27639,6 +27569,27 @@
         ]
     },
     {
+        "id": 1441,
+        "icon": "muddy_mangrove_roots.png",
+        "type": "construcao",
+        "name": "Ra\u00edzes barrentas de mangue",
+        "internal_name": "muddy_mangrove_roots",
+        "version": "1.19",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1396,1390",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 1442,
         "icon": "packed_mud.png",
         "type": "construcao",
@@ -27656,44 +27607,6 @@
                 "recipe": ",,,1390,55",
                 "products": 1,
                 "craft_type": 0
-            }
-        ]
-    },
-    {
-        "id": 1450,
-        "icon": "goat_horn.png",
-        "type": "diversos",
-        "name": "Chifre de cabra",
-        "internal_name": "goat_horn",
-        "version": "1.19",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 0,
-        "craftable": false,
-        "hide": false,
-        "legacy": false,
-        "description": [
-            {
-                "value": "[&rReflex\u00e3o"
-            }
-        ]
-    },
-    {
-        "id": 1447,
-        "icon": "dragon_egg.png",
-        "type": "especiais",
-        "name": "Ovo de drag\u00e3o",
-        "internal_name": "dragon_egg",
-        "version": "1.0",
-        "collectable": true,
-        "renewable": false,
-        "stackable": 64,
-        "craftable": false,
-        "hide": false,
-        "legacy": false,
-        "title": [
-            {
-                "type": 3
             }
         ]
     },
@@ -27731,6 +27644,25 @@
         "craftable": false,
         "hide": false,
         "legacy": false
+    },
+    {
+        "id": 1447,
+        "icon": "dragon_egg.png",
+        "type": "especiais",
+        "name": "Ovo de drag\u00e3o",
+        "internal_name": "dragon_egg",
+        "version": "1.0",
+        "collectable": true,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
     },
     {
         "id": 1448,
@@ -27774,6 +27706,44 @@
         "description": [
             {
                 "value": "[&rSamuel \u00c2berg - 5"
+            }
+        ]
+    },
+    {
+        "id": 1450,
+        "icon": "goat_horn.png",
+        "type": "diversos",
+        "name": "Chifre de cabra",
+        "internal_name": "goat_horn",
+        "version": "1.19",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rReflex\u00e3o"
+            }
+        ]
+    },
+    {
+        "id": 1451,
+        "icon": "goat_horn.png",
+        "type": "diversos",
+        "name": "Chifre de cabra",
+        "internal_name": "goat_horn",
+        "version": "1.19",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rCanto"
             }
         ]
     },
@@ -28988,7 +28958,7 @@
         "id": 1520,
         "icon": "wild_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de selva",
         "internal_name": "wild_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -28997,6 +28967,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1520,59,59,472,59,59,59,59",
@@ -29006,7 +28981,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite da selva[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29014,7 +28989,7 @@
         "id": 1521,
         "icon": "ward_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite das profundezas",
         "internal_name": "ward_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29023,6 +28998,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1521,59,59,2,59,59,59,59",
@@ -29032,7 +29012,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite das profundezas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29040,7 +29020,7 @@
         "id": 1522,
         "icon": "eye_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de olho",
         "internal_name": "eye_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29049,6 +29029,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1522,59,59,434,59,59,59,59",
@@ -29058,7 +29043,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de olho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29066,7 +29051,7 @@
         "id": 1523,
         "icon": "dune_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Efeite de dunas",
         "internal_name": "dune_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29075,6 +29060,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1523,59,59,91,59,59,59,59",
@@ -29084,7 +29074,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de dunas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29092,7 +29082,7 @@
         "id": 1524,
         "icon": "coast_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de litoral",
         "internal_name": "coast_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29101,6 +29091,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1524,59,59,47,59,59,59,59",
@@ -29110,7 +29105,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite do litoral[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29118,7 +29113,7 @@
         "id": 1525,
         "icon": "rib_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de costelas",
         "internal_name": "rib_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29127,6 +29122,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1525,59,59,29,59,59,59,59",
@@ -29136,7 +29136,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de costelas[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29144,7 +29144,7 @@
         "id": 1526,
         "icon": "sentry_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de sentinela",
         "internal_name": "sentry_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29153,6 +29153,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1526,59,59,47,59,59,59,59",
@@ -29162,7 +29167,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de sentinela[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29170,7 +29175,7 @@
         "id": 1527,
         "icon": "tide_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de mar\u00e9s",
         "internal_name": "tide_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29179,6 +29184,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1527,59,59,504,59,59,59,59",
@@ -29188,7 +29198,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de mar\u00e9s[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29196,7 +29206,7 @@
         "id": 1528,
         "icon": "spire_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de espiral",
         "internal_name": "spire_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29205,6 +29215,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1528,59,59,473,59,59,59,59",
@@ -29214,7 +29229,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de espiral[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29222,7 +29237,7 @@
         "id": 1529,
         "icon": "vex_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de vex",
         "internal_name": "vex_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29231,6 +29246,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1529,59,59,47,59,59,59,59",
@@ -29240,7 +29260,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de vex[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29248,7 +29268,7 @@
         "id": 1530,
         "icon": "snout_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de focinho",
         "internal_name": "snout_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29257,6 +29277,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1530,59,59,43,59,59,59,59",
@@ -29266,7 +29291,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de focinho[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -29274,7 +29299,7 @@
         "id": 1531,
         "icon": "netherite_upgrade_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Melhoria de netherita",
         "internal_name": "netherite_upgrade_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -29283,6 +29308,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1531,59,59,29,59,59,59,59",
@@ -29292,7 +29322,7 @@
         ],
         "description": [
             {
-                "value": "[&rMelhoria de netherita[&s[&rAplic\u00e1vel a:[&1Equipamento de diamante[&rIngredientes:[&1Barras de netherita"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Equipamento de diamante[&rIngredientes:[&1Barra de netherita"
             }
         ]
     },
@@ -29403,25 +29433,6 @@
         "description": [
             {
                 "value": "[&5Kebab med tre pepperoni[&rKristoffer Zetterstrand[&61x1"
-            }
-        ]
-    },
-    {
-        "id": 1568,
-        "icon": "white_banner_s.png",
-        "type": "decorativos",
-        "name": "Estandarte Amea\u00e7ador",
-        "internal_name": "white_banner",
-        "version": "1.19",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 16,
-        "craftable": false,
-        "hide": false,
-        "legacy": false,
-        "title": [
-            {
-                "type": 4
             }
         ]
     },
@@ -29973,6 +29984,25 @@
         "description": [
             {
                 "value": "[&5Fire[&rMojang[&62x2"
+            }
+        ]
+    },
+    {
+        "id": 1568,
+        "icon": "white_banner_s.png",
+        "type": "decorativos",
+        "name": "Estandarte Amea\u00e7ador",
+        "internal_name": "white_banner",
+        "version": "1.19",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 4
             }
         ]
     },
@@ -30610,7 +30640,7 @@
         "id": 1606,
         "icon": "host_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de hospedeiro",
         "internal_name": "host_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -30619,6 +30649,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1606,59,59,498,59,59,59,59",
@@ -30628,7 +30663,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de hospedeiro[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30636,7 +30671,7 @@
         "id": 1607,
         "icon": "raiser_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de levante",
         "internal_name": "raiser_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -30645,6 +30680,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1607,59,59,498,59,59,59,59",
@@ -30654,7 +30694,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de levantador[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30662,7 +30702,7 @@
         "id": 1608,
         "icon": "shaper_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de moldador",
         "internal_name": "shaper_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -30671,6 +30711,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1608,59,59,498,59,59,59,59",
@@ -30680,7 +30725,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de moldador[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30688,7 +30733,7 @@
         "id": 1609,
         "icon": "wayfinder_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de navegador",
         "internal_name": "wayfinder_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -30697,6 +30742,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1609,59,59,498,59,59,59,59",
@@ -30706,7 +30756,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de guia[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30714,7 +30764,7 @@
         "id": 1610,
         "icon": "silence_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de sil\u00eancio",
         "internal_name": "silence_armor_trim_smithing_template",
         "version": "1.20",
         "collectable": true,
@@ -30723,6 +30773,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1610,59,59,2,59,59,59,59",
@@ -30732,7 +30787,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de sil\u00eancio[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -31411,27 +31466,6 @@
         ]
     },
     {
-        "id": 1650,
-        "icon": "wolf_armor.png",
-        "type": "diversos",
-        "name": "Armadura de lobo",
-        "internal_name": "wolf_armor",
-        "version": "1.20",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 0,
-        "craftable": true,
-        "hide": false,
-        "legacy": false,
-        "recipe": [
-            {
-                "recipe": "1621,,,1621,1621,1621,1621,,1621",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
         "id": 1644,
         "icon": "trial_spawner.png",
         "type": "diversos",
@@ -31551,6 +31585,27 @@
         ]
     },
     {
+        "id": 1650,
+        "icon": "wolf_armor.png",
+        "type": "diversos",
+        "name": "Armadura de lobo",
+        "internal_name": "wolf_armor",
+        "version": "1.20",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1621,,,1621,1621,1621,1621,,1621",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 1651,
         "icon": "tuff_brick_stairs.png",
         "type": "construcao",
@@ -31629,27 +31684,6 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1642,1642,1642",
-                "products": 1,
-                "craft_type": 0
-            }
-        ]
-    },
-    {
-        "id": 1679,
-        "icon": "chiseled_tuff.png",
-        "type": "construcao",
-        "name": "Tufo talhado",
-        "internal_name": "chiseled_tuff",
-        "version": "1.21",
-        "collectable": true,
-        "renewable": true,
-        "stackable": 64,
-        "craftable": true,
-        "hide": false,
-        "legacy": false,
-        "recipe": [
-            {
-                "recipe": ",1657,,,1657,,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -32139,6 +32173,27 @@
         ]
     },
     {
+        "id": 1679,
+        "icon": "chiseled_tuff.png",
+        "type": "construcao",
+        "name": "Tufo talhado",
+        "internal_name": "chiseled_tuff",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",1657,,,1657,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
         "id": 1680,
         "icon": "trial_key.png",
         "type": "diversos",
@@ -32259,9 +32314,9 @@
     },
     {
         "id": 1688,
-        "icon": "banner_pattern.png",
+        "icon": "flow_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
+        "name": "Figura para estandarte de espiral",
         "internal_name": "flow_banner_pattern",
         "version": "1.21",
         "collectable": true,
@@ -32274,18 +32329,13 @@
             {
                 "type": 1
             }
-        ],
-        "description": [
-            {
-                "value": "[&rFluxo"
-            }
         ]
     },
     {
         "id": 1689,
-        "icon": "banner_pattern.png",
+        "icon": "guster_banner_pattern.png",
         "type": "diversos",
-        "name": "Desenho para estandarte",
+        "name": "Figura para estandarte de v\u00f3rtice",
         "internal_name": "guster_banner_pattern",
         "version": "1.21",
         "collectable": true,
@@ -32298,18 +32348,13 @@
             {
                 "type": 1
             }
-        ],
-        "description": [
-            {
-                "value": "[&rV\u00f3rtice"
-            }
         ]
     },
     {
         "id": 1690,
         "icon": "bolt_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de parafuso",
         "internal_name": "bolt_armor_trim_smithing_template",
         "version": "1.21",
         "collectable": true,
@@ -32318,6 +32363,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1690,59,59,271,59,59,59,59",
@@ -32327,7 +32377,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de raio[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -32335,7 +32385,7 @@
         "id": 1691,
         "icon": "flow_armor_trim_smithing_template.png",
         "type": "ferramentas",
-        "name": "Molde de ferraria",
+        "name": "Enfeite de fluxo",
         "internal_name": "flow_armor_trim_smithing_template",
         "version": "1.21",
         "collectable": true,
@@ -32344,6 +32394,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "59,1691,59,59,1687,59,59,59,59",
@@ -32353,7 +32408,7 @@
         ],
         "description": [
             {
-                "value": "[&rEnfeite de fluxo[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -32767,7 +32822,7 @@
         "id": 1712,
         "icon": "ominous_trial_key.png",
         "type": "diversos",
-        "name": "Chave do desafio amea\u00e7adora",
+        "name": "Chave sombria do desafio",
         "internal_name": "ominous_trial_key",
         "version": "1.21",
         "collectable": true,
@@ -33592,5 +33647,33 @@
                 "value": "[&5Orb[&rKristoffer Zetterstrand[&64x4"
             }
         ]
+    },
+    {
+        "id": 1752,
+        "icon": "field_masoned_banner_pattern.png",
+        "type": "diversos",
+        "name": "Figura para estandarte de muro",
+        "internal_name": "field_masoned_banner_pattern",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1753,
+        "icon": "bordure_banner_pattern.png",
+        "type": "diversos",
+        "name": "Figura para estandarte de bordadura dentada",
+        "internal_name": "bordure_banner_pattern",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
     }
 ]

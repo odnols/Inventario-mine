@@ -18,9 +18,7 @@
 
     <?php include_once "../php/conexao_obsoleta.php";
 
-    $verificar = "SELECT * FROM item WHERE fabricavel = 1 ORDER BY id_item";
-    $executa = $conexao->query($verificar);
-
+    $executa = $conexao->query("SELECT * FROM item WHERE fabricavel = 1 ORDER BY id_item");
     $graphics = true;
 
     if (!isset($_GET["dg"]))
@@ -100,8 +98,7 @@
                 if ($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-                $verificar_receita = "SELECT * FROM item_receita WHERE id_item = $id_item";
-                $executa_receita = $conexao->query($verificar_receita);
+                $executa_receita = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item");
 
                 $recipe = '';
                 $data_recipe = $executa_receita->fetch_assoc();

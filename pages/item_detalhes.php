@@ -52,13 +52,11 @@
     $crafting = "";
 
     // Último ID registrado de item
-    $ultimo_id = "SELECT id_item FROM item ORDER BY id_item DESC LIMIT 1";
-    $executa_ultimo_id = $conexao->query($ultimo_id);
+    $executa_ultimo_id = $conexao->query("SELECT id_item FROM item ORDER BY id_item DESC LIMIT 1");
     $dados = $executa_ultimo_id->fetch_assoc();
     $ultimo_id = $dados["id_item"];
 
-    $busca_dados = "SELECT * FROM item WHERE id_item = $id_item";
-    $executa = $conexao->query($busca_dados);
+    $executa = $conexao->query("SELECT * FROM item WHERE id_item = $id_item");
 
     $dados = $executa->fetch_assoc();
 
@@ -107,18 +105,14 @@
         $cor_item = 0;
         $durabilidade = "";
 
-        $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
-        $executa_item = $conexao->query($verificar_item);
-
+        $executa_item = $conexao->query("SELECT * FROM item_titulo WHERE id_item = $id_item");
         if ($executa_item->num_rows > 0) {
             $dados2 = $executa_item->fetch_assoc();
 
             $cor_item = $dados2["tipo_item"];
         }
 
-        $verificar_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
-        $executa_item = $conexao->query($verificar_item);
-
+        $executa_item = $conexao->query("SELECT * FROM item_durabilidade WHERE id_item = $id_item");
         if ($executa_item->num_rows > 0) {
             $dados3 = $executa_item->fetch_assoc();
 
@@ -248,13 +242,11 @@
 
         <?php if ($crafting == "checked") {
 
-            $coleta_receita = "SELECT * FROM item_receita WHERE id_item = $id_item";
-            $executa_coleta = $conexao->query($coleta_receita);
-
+            $executa_coleta = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item");
             $dados4 = $executa_coleta->fetch_assoc();
 
-            if($executa_coleta->num_rows > 0)
-            $receita = $dados4["crafting"]; ?>
+            if ($executa_coleta->num_rows > 0)
+                $receita = $dados4["crafting"]; ?>
 
             <div id="preview_item_craft">
                 <?php for ($i = 0; $i < 9; $i++) {

@@ -189,8 +189,7 @@ ob_start(); ?>
 
                     $cor_item = 0;
 
-                    $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
-                    $executa_item = $conexao->query($verificar_item);
+                    $executa_item = $conexao->query("SELECT * FROM item_titulo WHERE id_item = $id_item");
 
                     if ($executa_item->num_rows > 0) {
                         $dados2 = $executa_item->fetch_assoc();

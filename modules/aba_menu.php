@@ -34,8 +34,7 @@
     <?php include_once "../php/conexao_obsoleta.php";
     $id_item_alvo = $_GET["id"];
 
-    $dados_item = "SELECT historico_guias FROM item WHERE id_item = $id_item_alvo";
-    $executa = $conexao->query($dados_item);
+    $executa = $conexao->query("SELECT historico_guias FROM item WHERE id_item = $id_item_alvo");
 
     if ($executa->num_rows > 0)
         $dados = $executa->fetch_assoc();

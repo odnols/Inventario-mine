@@ -57,58 +57,42 @@
             if (!isset($_GET["dg"]))
                 $graphics = false;
 
-            $verificar = "SELECT * FROM item";
-            $executa = $conexao->query($verificar);
+            $executa = $conexao->query("SELECT * FROM item");
 
             echo "<p id='versao_referencia' class='estat cor_textos'>itens Adicionados na versão <span id='num_referencia'></span></p>";
 
             echo "<br><p class='estat cor_textos'>itens Registrados: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE coletavel = 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1");
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE fabricavel = 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE fabricavel = 1");
             echo "<br><p class='estat cor_textos'> Fabricáveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE renovavel = 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE renovavel = 1");
             echo "<br><p class='estat cor_textos'>Renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE empilhavel != 0";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE empilhavel != 0");
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE empilhavel != 0 AND coletavel = 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE empilhavel != 0 AND coletavel = 1");
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE coletavel = 1 AND empilhavel != 0 AND renovavel != 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1 AND empilhavel != 0 AND renovavel != 1");
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE empilhavel LIKE 0";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE empilhavel LIKE 0");
             echo "<br><p class='estat cor_textos'>Não empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item ORDER BY id_item DESC";
-            $executa = $conexao->query($verificar); ?>
+            $executa = $conexao->query("SELECT * FROM item ORDER BY id_item DESC"); ?>
         </div>
     </div>
 

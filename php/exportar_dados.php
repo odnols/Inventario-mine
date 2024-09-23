@@ -5,8 +5,7 @@ $file = fopen("../files/JSON/" . $arquivo, 'w');
 
 $data = array();
 
-$verificar = "SELECT * FROM item";
-$executa = $conexao->query($verificar);
+$executa = $conexao->query("SELECT * FROM item");
 
 $i = 0;
 
@@ -37,8 +36,7 @@ while ($dados = $executa->fetch_assoc()) {
     $item_durabilidade = array();
 
     // Verifica se o item possui registros de cores no título
-    $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+    $executa_item = $conexao->query("SELECT * FROM item_titulo WHERE id_item = $id_item");
 
     if ($executa_item->num_rows > 0) {
 
@@ -51,8 +49,7 @@ while ($dados = $executa->fetch_assoc()) {
     }
 
     // Verifica se o item possui registros de durabilidade
-    $verificar_item = "SELECT * FROM item_durabilidade WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+    $executa_item = $conexao->query("SELECT * FROM item_durabilidade WHERE id_item = $id_item");
 
     if ($executa_item->num_rows > 0) {
 
@@ -65,8 +62,7 @@ while ($dados = $executa->fetch_assoc()) {
     }
 
     // Verifica se o item possui registros de fabricação
-    $verificar_item = "SELECT * FROM item_receita WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+    $executa_item = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item");
 
     if ($executa_item->num_rows > 0) {
 
@@ -84,8 +80,7 @@ while ($dados = $executa->fetch_assoc()) {
     }
 
     // Verifica se o item possui registros de descrição
-    $verificar_item = "SELECT * FROM item_descricao WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+    $executa_item = $conexao->query("SELECT * FROM item_descricao WHERE id_item = $id_item");
 
     if ($executa_item->num_rows > 0) {
 
@@ -99,22 +94,15 @@ while ($dados = $executa->fetch_assoc()) {
     }
 
     // Verifica se o item é oculto no inventário
-    $verificar_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
-
-    if ($executa_item->num_rows > 0)
-        $item_oculto = true;
+    $executa_item = $conexao->query("SELECT * FROM item_oculto WHERE id_item = $id_item");
+    if ($executa_item->num_rows > 0) $item_oculto = true;
 
     // Verifica se o item possui registros de sprites legados
-    $verificar_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
-
-    if ($executa_item->num_rows > 0)
-        $item_legado = true;
+    $executa_item = $conexao->query("SELECT * FROM item_legado WHERE id_item = $id_item");
+    if ($executa_item->num_rows > 0) $item_legado = true;
 
     // Verifica se o item possui registros de várias guias
-    $verificar_item = "SELECT * FROM item_guia WHERE id_item = $id_item";
-    $executa_item = $conexao->query($verificar_item);
+    $executa_item = $conexao->query("SELECT * FROM item_guia WHERE id_item = $id_item");
 
     if ($executa_item->num_rows > 0) {
 

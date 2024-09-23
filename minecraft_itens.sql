@@ -1,9 +1,6 @@
 create database mc_itens;
 
 use mc_itens;
-select * from item_descricao order by id_item desc;
-
-delete from item_descricao where id_item = 1497;
 
 create table item(
     id_item int(11) not null primary key auto_increment,

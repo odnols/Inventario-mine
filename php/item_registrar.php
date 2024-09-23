@@ -29,19 +29,16 @@ if (isset($_POST["coletavel"]))
 if (isset($_POST["fabricavel"]))
     $fabricavel = 1;
 
-$verificar = "SELECT nome FROM item WHERE nome LIKE '$nome'";
-$executa = $conexao->query($verificar);
+$executa = $conexao->query("SELECT nome FROM item WHERE nome LIKE '$nome'");
 
 // Nomes de itens que se repetem no inventário
 $nomes_reservados = array("Disco musical", "Livro encantado", "Chifre de cabra", "Luz", "Molde de ferraria", "Fragmento de cerâmica", "Quadro", "Flecha com efeito", "Desenho para estandarte", "Frasco sombrio");
 
 if ($executa->num_rows == 0 || in_array($nome, $nomes_reservados)) {
-    $insere = "INSERT INTO item (nome, tipo, empilhavel, coletavel, icon, renovavel, versao, internal, fabricavel) VALUES ('$nome', '$abamenu', $empilhavel, $coletavel, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);";
-
-    $executa = $conexao->query($insere);
+    $conexao->query("INSERT INTO item (nome, tipo, empilhavel, coletavel, icon, renovavel, versao, internal, fabricavel) VALUES ('$nome', '$abamenu', $empilhavel, $coletavel, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);");
 
     // Criando uma cópia da imagem
-    move_uploaded_file($arq_tmp, "C:\wamp64\www\Minecraft\Img\itens\\new\\$abamenu/" . $arq_name);
+    move_uploaded_file($arq_tmp, "../img/itens/new/$abamenu/" . $arq_name);
 }
 
 Header("Location: ../pages/index.php");

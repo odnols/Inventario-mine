@@ -90,55 +90,39 @@
             </center>
 
             <?php
-            $verificar = "SELECT * FROM item WHERE versao = 1.$versao_jogo";
-            $executa = $conexao->query($verificar);
+            $executa = $conexao->query("SELECT * FROM item WHERE versao = 1.$versao_jogo");
             echo "<p class='estat cor_textos'>itens adicionados na versão 1.$versao_jogo ( ";
             echo $executa->num_rows . " )</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo");
             echo "<br><p class='estat cor_textos'>itens no Inventário: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1");
             echo "<br><p class='estat cor_textos'> Coletáveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND renovavel = 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND renovavel = 1");
             echo "<br><p class='estat cor_textos'>Renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0");
             echo "<br><p class='estat cor_textos'>Empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0 AND coletavel = 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0 AND coletavel = 1");
             echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1 AND empilhavel != 0 AND renovavel != 1";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1 AND empilhavel != 0 AND renovavel != 1");
             echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel LIKE 0";
-            $executa = $conexao->query($verificar);
-
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel LIKE 0");
             echo "<br><p class='estat cor_textos'>Não empilháveis: ";
             echo $executa->num_rows . "</p>";
 
-            $verificar = "SELECT * FROM item WHERE versao <= $versao_jogo ORDER BY id_item DESC";
-            $executa = $conexao->query($verificar); ?>
+            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo ORDER BY id_item DESC"); ?>
         </div>
     </div>
 

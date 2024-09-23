@@ -40,8 +40,7 @@
     <?php include_once "../php/conexao_obsoleta.php";
     $id_item_alvo = $_GET["id"];
 
-    $busca_itens = "SELECT * FROM item WHERE coletavel = 1";
-    $executa = $conexao->query($busca_itens); ?>
+    $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1"); ?>
 
     <div id="menu_user">
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
@@ -81,8 +80,7 @@
     </form>
 
     <?php
-    $coleta_receita = "SELECT * FROM item_receita WHERE id_item = $id_item_alvo";
-    $executa_coleta = $conexao->query($coleta_receita);
+    $executa_coleta = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item_alvo");
 
     $receita = "";
 

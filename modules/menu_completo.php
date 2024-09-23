@@ -78,23 +78,16 @@
 
                 $programmer_art = 0;
 
-                $verifica_oculto_item = "SELECT * FROM item_oculto WHERE id_item = $id_item";
-                $executa_verificacao = $conexao->query($verifica_oculto_item);
+                $executa_verificacao = $conexao->query("SELECT * FROM item_oculto WHERE id_item = $id_item");
+                if ($executa_verificacao->num_rows > 0) $oculto_invt = "oculto";
 
-                if ($executa_verificacao->num_rows > 0)
-                    $oculto_invt = "oculto";
-
-                $verifica_legado_item = "SELECT * FROM item_legado WHERE id_item = $id_item";
-                $executa_verificacao = $conexao->query($verifica_legado_item);
-
-                if ($executa_verificacao->num_rows > 0)
-                    $programmer_art = 1;
+                $executa_verificacao = $conexao->query("SELECT * FROM item_legado WHERE id_item = $id_item");
+                if ($executa_verificacao->num_rows > 0) $programmer_art = 1;
 
                 $descricao = "[&1" . $tipo_item;
 
                 // Descricao do item
-                $verifica_descricao_item = "SELECT descricao FROM item_descricao WHERE id_item = $id_item";
-                $executa_verificacao = $conexao->query($verifica_descricao_item);
+                $executa_verificacao = $conexao->query("SELECT descricao FROM item_descricao WHERE id_item = $id_item");
 
                 if ($executa_verificacao->num_rows > 0) {
                     $dados_descri = $executa_verificacao->fetch_assoc();
@@ -132,8 +125,7 @@
                 $cor_item = 0;
                 $descricao_pesq = "";
 
-                $verificar_item = "SELECT * FROM item_titulo WHERE id_item = $id_item";
-                $executa_item = $conexao->query($verificar_item);
+                $executa_item = $conexao->query("SELECT * FROM item_titulo WHERE id_item = $id_item");
 
                 if ($executa_item->num_rows > 0) {
                     $dados2 = $executa_item->fetch_assoc();
