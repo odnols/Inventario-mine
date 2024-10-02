@@ -1156,11 +1156,6 @@
         "craftable": true,
         "hide": false,
         "legacy": true,
-        "title": [
-            {
-                "type": 1
-            }
-        ],
         "recipe": [
             {
                 "recipe": "62,62,62,62,311,62,62,62,62",
@@ -1184,7 +1179,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 3
+                "type": 1
             }
         ]
     },
@@ -12245,7 +12240,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 659,
@@ -12262,7 +12262,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12286,7 +12286,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12310,7 +12310,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12334,7 +12334,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12358,7 +12358,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12382,7 +12382,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12406,7 +12406,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12430,7 +12430,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12454,7 +12454,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12478,7 +12478,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12502,7 +12502,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -12526,7 +12526,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -19037,7 +19037,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 3
+                "type": 1
             }
         ],
         "description": [
@@ -20453,11 +20453,6 @@
         "craftable": true,
         "hide": false,
         "legacy": true,
-        "title": [
-            {
-                "type": 1
-            }
-        ],
         "recipe": [
             {
                 "recipe": "363,363,363,363,719,363,363,1115,363",
@@ -20810,7 +20805,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": true
+        "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1113,
@@ -20959,7 +20959,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ]
     },
@@ -27623,6 +27623,11 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "recipe": [
             {
                 "recipe": "1446,1446,1446,1446,695,1446,1446,1446,1446",
@@ -27643,7 +27648,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1447,
@@ -27676,7 +27686,17 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDisco musical - 5"
+            }
+        ]
     },
     {
         "id": 1449,
@@ -27693,7 +27713,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "recipe": [
@@ -28111,7 +28131,12 @@
         "stackable": 16,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1476,
@@ -29352,7 +29377,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1534,
@@ -29366,7 +29396,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1535,
@@ -29380,7 +29415,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1536,
@@ -29394,7 +29434,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1537,
@@ -30424,7 +30469,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1591,
@@ -30438,7 +30488,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1592,
@@ -30452,7 +30507,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1593,
@@ -30466,7 +30526,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1594,
@@ -30480,7 +30545,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1595,
@@ -30494,7 +30564,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1596,
@@ -30508,7 +30583,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1597,
@@ -30522,7 +30602,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1598,
@@ -30536,7 +30621,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1599,
@@ -30550,7 +30640,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1600,
@@ -30564,7 +30659,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1601,
@@ -30578,7 +30678,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1602,
@@ -30592,7 +30697,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1603,
@@ -30606,7 +30716,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1604,
@@ -30620,7 +30735,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1605,
@@ -30634,7 +30754,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1606,
@@ -30973,7 +31098,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -32282,7 +32407,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1686,
@@ -32296,7 +32426,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1687,
@@ -32480,6 +32615,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&1Mau press\u00e1gio (01:40:00)"
@@ -33133,6 +33273,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&1Mau press\u00e1gio II (01:40:00)"
@@ -33152,6 +33297,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&1Mau press\u00e1gio III (01:40:00)"
@@ -33171,6 +33321,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&1Mau press\u00e1gio IV (01:40:00)"
@@ -33190,6 +33345,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&1Mau press\u00e1gio V (01:40:00)"
@@ -33211,7 +33371,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -33235,7 +33395,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 1
+                "type": 2
             }
         ],
         "description": [
@@ -33673,6 +33833,566 @@
         "renewable": true,
         "stackable": 0,
         "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1754,
+        "icon": "bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa",
+        "internal_name": "bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1755,
+        "icon": "white_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa branca",
+        "internal_name": "white_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1756,
+        "icon": "light_gray_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa cinza-clara",
+        "internal_name": "light_gray_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1757,
+        "icon": "gray_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa cinza",
+        "internal_name": "gray_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1758,
+        "icon": "black_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa preta",
+        "internal_name": "black_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1759,
+        "icon": "brown_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa marrom",
+        "internal_name": "brown_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1760,
+        "icon": "red_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa vermelha",
+        "internal_name": "red_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1761,
+        "icon": "orange_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa laranja",
+        "internal_name": "orange_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1762,
+        "icon": "yellow_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa amarela",
+        "internal_name": "yellow_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1763,
+        "icon": "lime_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa verde-lim\u00e3o",
+        "internal_name": "lime_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1764,
+        "icon": "green_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa verde",
+        "internal_name": "green_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1765,
+        "icon": "cyan_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa ciano",
+        "internal_name": "cyan_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1766,
+        "icon": "light_blue_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa azul-clara",
+        "internal_name": "light_blue_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1767,
+        "icon": "blue_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa azul",
+        "internal_name": "blue_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1768,
+        "icon": "purple_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa roxa",
+        "internal_name": "purple_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1769,
+        "icon": "magenta_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa magenta",
+        "internal_name": "magenta_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1770,
+        "icon": "pink_bundle.png",
+        "type": "ferramentas",
+        "name": "Trouxa rosa",
+        "internal_name": "pink_bundle",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1771,
+        "icon": "creaking_heart.png",
+        "type": "decorativos",
+        "name": "Cora\u00e7\u00e3o de estalador",
+        "internal_name": "creaking_heart",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1772,
+        "icon": "pale_moss_block.png",
+        "type": "decorativos",
+        "name": "Bloco de musgo p\u00e1lido",
+        "internal_name": "pale_moss_block",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1773,
+        "icon": "pale_moss_carpet.png",
+        "type": "decorativos",
+        "name": "Tapete de musgo p\u00e1lido",
+        "internal_name": "pale_moss_carpet",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1774,
+        "icon": "pale_oak_log.png",
+        "type": "construcao",
+        "name": "Tronco de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_log",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1775,
+        "icon": "creaking_spawn_egg.png",
+        "type": "diversos",
+        "name": "Ovo gerador de estalador",
+        "internal_name": "creaking_spawn_egg",
+        "version": "1.21",
+        "collectable": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1776,
+        "icon": "stripped_pale_oak_log.png",
+        "type": "construcao",
+        "name": "Tronco de carvalho p\u00e1lido descascado",
+        "internal_name": "stripped_pale_oak_log",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1777,
+        "icon": "pale_oak_wood.png",
+        "type": "construcao",
+        "name": "Madeira de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_wood",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1778,
+        "icon": "stripped_pale_oak_wood.png",
+        "type": "construcao",
+        "name": "Madeira de carvalho p\u00e1lido descascada",
+        "internal_name": "stripped_pale_oak_wood",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1779,
+        "icon": "pale_oak_leaves.png",
+        "type": "decorativos",
+        "name": "Folhas de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_leaves",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1780,
+        "icon": "pale_hanging_moss.png",
+        "type": "decorativos",
+        "name": "Musgo p\u00e1lido suspenso",
+        "internal_name": "pale_hanging_moss",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1781,
+        "icon": "pale_oak_boat.png",
+        "type": "transportes",
+        "name": "Bote de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_boat",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1782,
+        "icon": "pale_oak_chest_boat.png",
+        "type": "transportes",
+        "name": "Bote de carvalho p\u00e1lido com ba\u00fa",
+        "internal_name": "pale_oak_chest_boat",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1783,
+        "icon": "pale_oak_sign.png",
+        "type": "decorativos",
+        "name": "Placa de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_sign",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1784,
+        "icon": "pale_oak_hanging_sign.png",
+        "type": "decorativos",
+        "name": "Placa suspensa de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_hanging_sign",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1785,
+        "icon": "pale_oak_planks.png",
+        "type": "construcao",
+        "name": "T\u00e1buas de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_planks",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1786,
+        "icon": "pale_oak_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_stairs",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1787,
+        "icon": "pale_oak_slab.png",
+        "type": "construcao",
+        "name": "Laje de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_slab",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1788,
+        "icon": "pale_oak_trapdoor.png",
+        "type": "redstone",
+        "name": "Al\u00e7ap\u00e3o de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_trapdoor",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1789,
+        "icon": "pale_oak_door.png",
+        "type": "redstone",
+        "name": "Porta de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_door",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1790,
+        "icon": "pale_oak_button.png",
+        "type": "redstone",
+        "name": "Bot\u00e3o de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_button",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1791,
+        "icon": "pale_oak_fence_gate.png",
+        "type": "redstone",
+        "name": "Port\u00e3o de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_fence_gate",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1792,
+        "icon": "pale_oak_fence.png",
+        "type": "decorativos",
+        "name": "Cerca de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_fence",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1793,
+        "icon": "pale_oak_sapling.png",
+        "type": "decorativos",
+        "name": "Muda de carvalho p\u00e1lido",
+        "internal_name": "pale_oak_sapling",
+        "version": "1.21",
+        "collectable": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
         "hide": false,
         "legacy": false
     }
