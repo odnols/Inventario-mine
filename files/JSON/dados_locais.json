@@ -34408,7 +34408,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1799,1799,1799,1799,1799,1799,1799,1799,1799",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1795,
@@ -34422,7 +34429,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1798,1798,,1798,1798,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1796,
@@ -34436,7 +34450,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1795,,,1795,1795,,1795,1795,1795",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1797,
@@ -34450,7 +34471,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",1800,,,1800,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1798,
@@ -34476,9 +34504,16 @@
         "collectable": true,
         "renewable": true,
         "stackable": 64,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1794,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1800,
@@ -34492,7 +34527,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1795,1795,1795,,,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1801,
@@ -34506,7 +34548,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1795,1795,1795,1795,1795,1795,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1802,
