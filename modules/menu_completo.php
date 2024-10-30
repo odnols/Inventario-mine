@@ -102,25 +102,17 @@
                 if ($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-                if ($versao_add === null)
-                    $versao_add = "off";
-                else
-                    $versao_add = $versao_add;
+                if ($versao_add === null) $versao_add = "off";
+                else $versao_add = $versao_add;
 
-                if (!$renovavel)
-                    $renovavel = "não_renovável";
-                else
-                    $renovavel = "renovável";
+                if ($renovavel) $renovavel = "renovável";
+                else $renovavel = "não_renovável";
 
-                if ($empilhavel !== 0)
-                    $empilhavel = "empilhável";
-                else
-                    $empilhavel = "não_empilhavel";
+                if ($empilhavel !== 0) $empilhavel = "empilhável";
+                else $empilhavel = "não_empilhavel";
 
-                if ($coletavel !== 0)
-                    $coletavel = "coletável";
-                else
-                    $coletavel = "não_coletável";
+                if ($coletavel) $coletavel = "coletável";
+                else $coletavel = "não_coletável";
 
                 $cor_item = 0;
                 $descricao_pesq = "";

@@ -17,33 +17,26 @@ $arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
 $arq_tmp = $_FILES["img"]["tmp_name"]; //O nome temporário do arquivo
 
 // Verifica se o item é coletável no sobrevivência
-if (isset($_POST["coletavel"]))
-    $coletavel = 1;
-else
-    $coletavel = 0;
+if (isset($_POST["coletavel"])) $coletavel = 1;
+else $coletavel = 0;
 
-if (isset($_POST["renovavel"]))
-    $renovavel = 1;
-else
-    $renovavel = 0;
+if (isset($_POST["renovavel"])) $renovavel = 1;
+else $renovavel = 0;
 
-if (isset($_POST["oculto_invt"]))
-    $oculto_invt = 1;
-else
-    $oculto_invt = 0;
+if (isset($_POST["lancado"])) $lancado = 1;
+else $lancado = 0;
 
-if (isset($_POST["programmer_art"]))
-    $programmer_art = 1;
-else
-    $programmer_art = 0;
+if (isset($_POST["oculto_invt"])) $oculto_invt = 1;
+else $oculto_invt = 0;
 
-if (isset($_POST["fabricavel"]))
-    $crafting = 1;
-else
-    $crafting = 0;
+if (isset($_POST["programmer_art"])) $programmer_art = 1;
+else $programmer_art = 0;
+
+if (isset($_POST["fabricavel"])) $crafting = 1;
+else $crafting = 0;
 
 // Atualizando os campos principais
-$conexao->query("UPDATE item SET nome = '$nome', empilhavel = $empilhavel, coletavel = $coletavel, renovavel = $renovavel, fabricavel = $crafting WHERE id_item = $id_item");
+$conexao->query("UPDATE item SET nome = '$nome', empilhavel = $empilhavel, coletavel = $coletavel, renovavel = $renovavel, lancado = $lancado, fabricavel = $crafting WHERE id_item = $id_item");
 
 // Atualizando o nome interno
 if (strlen($nome_interno) < 1)

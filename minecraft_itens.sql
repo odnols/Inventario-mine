@@ -11,6 +11,7 @@ create table item(
     tipo varchar(20),
     empilhavel int(11),
     coletavel boolean,
+    lancado boolean,
     renovavel boolean,
     fabricavel boolean
 );

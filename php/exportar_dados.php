@@ -20,6 +20,7 @@ while ($dados = $executa->fetch_assoc()) {
 
     $renovavel = intval($dados["renovavel"]) ? true : false;
     $coletavel = intval($dados["coletavel"]) ? true : false;
+    $lancado = intval($dados["lancado"]) ? true : false;
     $empilhavel = intval($dados["empilhavel"]);
     $fabricavel = intval($dados["fabricavel"]) ? true : false;
 
@@ -125,6 +126,7 @@ while ($dados = $executa->fetch_assoc()) {
         "internal_name" => $nome_interno,
         "version" => $versao_add,
         "collectable" => $coletavel,
+        "released" => $lancado,
         "renewable" => $renovavel,
         "stackable" => $empilhavel,
         "craftable" => $fabricavel,

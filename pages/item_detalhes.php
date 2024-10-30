@@ -46,6 +46,7 @@
     $descricao_item = "";
 
     $renovavel = "";
+    $lancado = "";
     $coletavel_s = "";
     $oculto_invt = "";
     $programmer_art = "";
@@ -71,17 +72,11 @@
         $empilhavel = $dados["empilhavel"];
         $versao_add = $dados["versao"];
 
-        if ($versao_add == null)
-            $versao_add = "Outro";
-
-        if ($dados["coletavel"])
-            $coletavel_s = "checked";
-
-        if ($dados["renovavel"])
-            $renovavel = "checked";
-
-        if ($dados["fabricavel"])
-            $crafting = "checked";
+        if ($versao_add == null) $versao_add = "Outro";
+        if ($dados["coletavel"]) $coletavel_s = "checked";
+        if ($dados["renovavel"]) $renovavel = "checked";
+        if ($dados["lancado"]) $lancado = "checked";
+        if ($dados["fabricavel"]) $crafting = "checked";
 
         $verifica_descricao_item = "SELECT * FROM item_descricao WHERE id_item = $id_item";
         $executa_verificacao = $conexao->query($verifica_descricao_item);
@@ -170,7 +165,7 @@
                 </div>
 
                 <div id="selects" class="pag_2_opcoes">
-                    <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A Cor do item no inventário')" onmouseout="toolTip()">
+                    <select name="cor_tipo_item" style="width: 505px;" onmouseover="toolTip('A cor do item no inventário')" onmouseout="toolTip()">
                         <?php
                         $cores_nome = ["Branco", "Azul", "Amarelo", "Rosa", "Laranja"];
 
@@ -215,16 +210,36 @@
             <div id="checkboxes">
                 <div id="separador_checks">
                     <div id="opcoes_esquerda">
-                        <input class="input_check" type="checkbox" name="coletavel" <?php echo $coletavel_s ?> onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+                        <div onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()">
+                            <input class="input_check" type="checkbox" name="coletavel" <?php echo $coletavel_s ?>>
+                            <img class="icon_check" src="../img/interface/coracao.png">
+                        </div>
 
-                        <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?> onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../img/itens/new/decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+                        <div onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+                            <input class="input_check" type="checkbox" name="renovavel" <?php echo $renovavel ?>>
+                            <img class="icon_check" src="../img/itens/new/decorativos/anvil.png">
+                        </div>
+
+                        <div onmouseover="toolTip('Oficialmente lançado')" onmouseout="toolTip()">
+                            <input class="input_check" type="checkbox" name="lancado" <?php echo $lancado ?>>
+                            <img class="icon_check" src="../img/interface/checkmark.png">
+                        </div>
                     </div>
                     <div id="opcoes_direita">
-                        <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?> onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/oculto.png" onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
+                        <div onmouseover="toolTip('Oculto do inventário')" onmouseout="toolTip()">
+                            <input class="input_check" type="checkbox" name="oculto_invt" <?php echo $oculto_invt ?>>
+                            <img class="icon_check" src="../img/interface/oculto.png">
+                        </div>
 
-                        <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?> onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/grass_block.png" onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
+                        <div onmouseover="toolTip('Programmers Art')" onmouseout="toolTip()">
+                            <input class="input_check" type="checkbox" name="programmer_art" <?php echo $programmer_art ?>>
+                            <img class="icon_check" src="../img/interface/grass_block.png">
+                        </div>
 
-                        <input class="input_check" type="checkbox" name="fabricavel" <?php echo $crafting ?> onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+                        <div onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+                            <input class="input_check" type="checkbox" name="fabricavel" <?php echo $crafting ?>>
+                            <img class="icon_check" src="../img/interface/crafting_table.png">
+                        </div>
                     </div>
                 </div>
 

@@ -32,11 +32,12 @@ foreach ($data as $key => $value) {
     $renovavel = $value->renewable ? 1 : 0;
     $fabricavel = $value->craftable ? 1 : 0;
     $coletavel = $value->collectable ? 1 : 0;
+    $lancado = $value->released ? 1 : 0;
 
     # Inserindo o item no banco de dados
     if (!in_array($value->id, $IDs_registrados)) {
 
-        $conexao->query("INSERT into item (id_item, nome, empilhavel, coletavel, icon, renovavel, versao, internal, fabricavel, tipo) VALUES ($id_item, '$nome', $empilhavel, $coletavel, '$nome_icon', $renovavel, '$versao', '$nome_interno', $fabricavel, '$abamenu')");
+        $conexao->query("INSERT into item (id_item, nome, empilhavel, coletavel, lancado, icon, renovavel, versao, internal, fabricavel, tipo) VALUES ($id_item, '$nome', $empilhavel, $coletavel, $lancado, '$nome_icon', $renovavel, '$versao', '$nome_interno', $fabricavel, '$abamenu')");
 
         // Item com coloração de nome diferente
         if (property_exists($value, "title")) {

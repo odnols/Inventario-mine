@@ -250,7 +250,7 @@ function nome_guia(alvo) {
     else if (alvo == 8)
         nome_aba = "Poções"
     else if (alvo == 9)
-        nome_aba = "itens especiais"
+        nome_aba = "Itens especiais"
     else if (alvo == 10)
         nome_aba = "Buscar"
     else
@@ -270,6 +270,7 @@ function nome_guia(alvo) {
     } else {
         controla_menus(false)
         pesquisa = 0
+        get("barra_pesquisa_input").value = null
     }
 }
 

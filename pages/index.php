@@ -161,11 +161,20 @@
         </div>
 
         <div id="checkboxes">
-            <input class="input_check" type="checkbox" name="coletavel" checked onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/coracao.png" onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()"><br>
+            <div onmouseover="toolTip('Coletável no sobrevivência')" onmouseout="toolTip()">
+                <input class="input_check" type="checkbox" name="coletavel" checked>
+                <img class="icon_check" src="../img/interface/coracao.png">
+            </div>
 
-            <input class="input_check" type="checkbox" name="renovavel" checked onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()"> <img class="icon_check" src="../img/itens/new/decorativos/anvil.png" onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+            <div onmouseover="toolTip('Recurso renovável')" onmouseout="toolTip()">
+                <input class="input_check" type="checkbox" name="renovavel" checked>
+                <img class="icon_check" src="../img/itens/new/decorativos/anvil.png">
+            </div>
 
-            <input class="input_check" type="checkbox" name="fabricavel" checked onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()"> <img class="icon_check" src="../img/interface/crafting_table.png" onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+            <div onmouseover="toolTip('Pode fabricar')" onmouseout="toolTip()">
+                <input class="input_check" type="checkbox" name="fabricavel" checked>
+                <img class="icon_check" src="../img/interface/crafting_table.png">
+            </div>
 
             <div id="selecionar_sprite">
                 <input id="input_img" type="file" name="img" required accept="image/*" onchange="previewImage(0);" onmouseover="toolTip('Sprite do item')" onmouseout="toolTip()">
@@ -180,6 +189,7 @@
     <!-- Menu interativo -->
     <?php $local_requisicao = 1;
     $versao_jogo = 21;
+
     include_once "../modules/menu_completo.php"; ?>
 
     <script src="../js/jquery-3.4.1.js"></script>
