@@ -19,7 +19,7 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-        for ($i = 0; $i < 21; $i += 3) {
+        for ($i = 0; $i < 22; $i += 3) {
 
             $x = $i + 1;
             $x2 = $i + 2;
@@ -198,7 +198,7 @@
     <script src="../js/custom.js"></script>
 
     <script type="text/javascript">
-        aba_menu(0, 0)
+        aba_menu(10)
         document.addEventListener("onKeyDown", clique())
     </script>
 </body>

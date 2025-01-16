@@ -32,7 +32,7 @@ if (isset($_POST["fabricavel"]))
 $executa = $conexao->query("SELECT nome FROM item WHERE nome LIKE '$nome'");
 
 // Nomes de itens que se repetem no inventário
-$nomes_reservados = array("Disco musical", "Livro encantado", "Chifre de cabra", "Luz", "Molde de ferraria", "Fragmento de cerâmica", "Quadro", "Flecha com efeito", "Desenho para estandarte", "Frasco sombrio");
+$nomes_reservados = array("Disco Musical", "Livro Encantado", "Chifre de Cabra", "Luz", "Molde de Ferraria", "Fragmento de Cerâmica", "Quadro", "Flecha com Efeito", "Desenho para Estandarte", "Frasco Sombrio", "Bloco de Teste");
 
 if ($executa->num_rows == 0 || in_array($nome, $nomes_reservados)) {
     $conexao->query("INSERT INTO item (nome, tipo, empilhavel, coletavel, icon, renovavel, versao, internal, fabricavel) VALUES ('$nome', '$abamenu', $empilhavel, $coletavel, '$arq_name', $renovavel, '$versao', '$nome_interno', $fabricavel);");

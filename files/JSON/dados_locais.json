@@ -1509,7 +1509,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": true
+        "legacy": false
     },
     {
         "id": 87,
@@ -21430,7 +21430,7 @@
         "version": "1.9",
         "collectable": false,
         "released": true,
-        "renewable": true,
+        "renewable": false,
         "stackable": 64,
         "craftable": false,
         "hide": false,
@@ -21450,7 +21450,7 @@
         "version": "1.14",
         "collectable": false,
         "released": true,
-        "renewable": true,
+        "renewable": false,
         "stackable": 64,
         "craftable": false,
         "hide": false,
@@ -21470,7 +21470,7 @@
         "version": "1.10",
         "collectable": false,
         "released": true,
-        "renewable": true,
+        "renewable": false,
         "stackable": 64,
         "craftable": false,
         "hide": false,
@@ -21490,7 +21490,7 @@
         "version": "1.7",
         "collectable": false,
         "released": true,
-        "renewable": true,
+        "renewable": false,
         "stackable": 0,
         "craftable": false,
         "hide": false,
@@ -29072,7 +29072,7 @@
         "id": 1447,
         "icon": "dragon_egg.png",
         "type": "especiais",
-        "name": "Ovo de Drag\u00e3o",
+        "name": "Ovo do Drag\u00e3o",
         "internal_name": "dragon_egg",
         "version": "1.0",
         "collectable": true,
@@ -30051,7 +30051,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30071,7 +30071,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30091,7 +30091,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30111,7 +30111,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30131,7 +30131,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30151,7 +30151,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30171,7 +30171,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30191,7 +30191,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30211,7 +30211,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30231,7 +30231,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30251,7 +30251,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30271,7 +30271,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30291,7 +30291,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30311,7 +30311,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30331,7 +30331,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -30351,7 +30351,7 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
+        "hide": false,
         "legacy": false,
         "title": [
             {
@@ -35132,7 +35132,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Unpacked[&rSara Boeving[&64x4"
@@ -35152,7 +35152,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Meditative[&rSara Boeving[&61x1"
@@ -35172,7 +35172,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Prairie Ride[&rSara Boeving[&61x2"
@@ -35192,7 +35192,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Baroque[&rSara Boeving[&62x2"
@@ -35212,7 +35212,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Humble[&rSara Boeving[&62x2"
@@ -35232,7 +35232,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Changing[&rKristoffer Zetterstrand[&64x2"
@@ -35252,7 +35252,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Finding[&rKristoffer Zetterstrand[&64x2"
@@ -35272,7 +35272,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Lowmist[&rKristoffer Zetterstrand[&64x2"
@@ -35292,7 +35292,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Passage[&rKristoffer Zetterstrand[&64x2"
@@ -35312,7 +35312,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Bouquet[&rKristoffer Zetterstrand[&63x3"
@@ -35332,7 +35332,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Cavebird[&rKristoffer Zetterstrand[&63x3"
@@ -35352,7 +35352,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Cot\u00e1n[&rKristoffer Zetterstrand[&63x3"
@@ -35372,7 +35372,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Endboss[&rKristoffer Zetterstrand[&63x3"
@@ -35392,7 +35392,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Fern[&rKristoffer Zetterstrand[&63x3"
@@ -35412,7 +35412,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Owlemons[&rKristoffer Zetterstrand[&63x3"
@@ -35432,7 +35432,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Sunflowers[&rKristoffer Zetterstrand[&63x3"
@@ -35452,7 +35452,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Tides[&rKristoffer Zetterstrand[&63x3"
@@ -35472,7 +35472,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Backyard[&rKristoffer Zetterstrand[&63x4"
@@ -35492,7 +35492,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Pond[&rKristoffer Zetterstrand[&63x4"
@@ -35512,7 +35512,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "description": [
             {
                 "value": "[&5Orb[&rKristoffer Zetterstrand[&64x4"
@@ -36590,7 +36590,7 @@
         "id": 1804,
         "icon": "leaf_litter.png",
         "type": "decorativos",
-        "name": "Liteira",
+        "name": "Serrapilheira",
         "internal_name": "leaf_litter",
         "version": "1.21",
         "collectable": true,
@@ -36605,7 +36605,7 @@
         "id": 1805,
         "icon": "wildflowers.png",
         "type": "decorativos",
-        "name": "Flor-silvestre",
+        "name": "Flores-do-campo",
         "internal_name": "wildflowers",
         "version": "1.21",
         "collectable": true,
@@ -36615,5 +36615,105 @@
         "craftable": false,
         "hide": false,
         "legacy": false
+    },
+    {
+        "id": 1806,
+        "icon": "test_instance_block.png",
+        "type": "especiais",
+        "name": "Bloco de Inst\u00e2ncia de Teste",
+        "internal_name": "test_instance_block",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
+    },
+    {
+        "id": 1807,
+        "icon": "test_block_error.png",
+        "type": "especiais",
+        "name": "Bloco de Teste",
+        "internal_name": "test_block",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
+    },
+    {
+        "id": 1808,
+        "icon": "test_block_log.png",
+        "type": "especiais",
+        "name": "Bloco de Teste",
+        "internal_name": "test_block",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
+    },
+    {
+        "id": 1809,
+        "icon": "test_block_start.png",
+        "type": "especiais",
+        "name": "Bloco de Teste",
+        "internal_name": "test_block",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
+    },
+    {
+        "id": 1810,
+        "icon": "test_block_success.png",
+        "type": "especiais",
+        "name": "Bloco de Teste",
+        "internal_name": "test_block",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 3
+            }
+        ]
     }
 ]

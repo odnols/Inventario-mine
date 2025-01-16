@@ -235,7 +235,7 @@ ob_start(); ?>
             }, 1000)
         })()
 
-        aba_menu(0, 0)
+        aba_menu(0)
         document.addEventListener("onKeyDown", clique())
     </script>
 </body>

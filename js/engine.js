@@ -132,7 +132,7 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
         get("barra_pesquisa_input").value = pesquisa_input
     }
 
-    if (pesquisa_input == null)
+    if (!pesquisa_input)
         pesquisa_input = 10
 
     if (pesquisa_input == 10) {
@@ -186,44 +186,11 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
         cache_pesquisa = null
 
     // Escondendo todos os itens de todas as categorias
-    for (let i = 0; i < Object.keys(categorias_map).length; i++) {
-        let esconde = get(categorias_map[i])
+    for (let i = 0; i < itens.length; i++)
+        itens[i].style.display = "None"
 
-        if (typeof pesquisa_input !== "string") {
-            for (let x = 0; x < esconde.length; x++)
-                if (pesquisa_input != 10)
-                    esconde[x].style.display = "none"
-        } else {
-            for (let x = 0; x < esconde.length; x++) {
-                if (typeof esconde[x] !== "undefined") {
-                    esconde[x].style.display = "none"
-
-                    if (typeof pesquisa_input == "string") {
-
-                        if (i == 10) {
-                            for (let i = 1; i < 5; i++)
-                                esconde[i].style.display = "block"
-
-                            if (esconde.length > 6)
-                                esconde[6].style.display = "block"
-                        }
-                    }
-                } else
-                    if (typeof esconde[x] !== "undefined") {
-                        esconde[x].style.display = "block"
-                        itens++
-                    }
-            }
-
-            ordena_guias_ativas(alvos, force_filter, alvo)
-        }
-    }
-
-    // Exibindo os itens da categoria escolhida
-    for (let i = 0; i < alvos.length; i++)
-        alvos[i].style.display = "block"
-
-    preenche_slots_livres(qtd_itens)
+    ordena_guias_ativas(alvos, force_filter, alvo, pesquisa_input)
+    preenche_slots_livres(qtd_itens, pesquisa_input)
 
     if (versoes.includes(pesquisa_input)) {
         $("#versao_referencia").fadeIn()
@@ -237,6 +204,7 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
     } else {
         get("barra_scroll_block").style.display = "block"
         get("barra_scroll").style.display = "none"
+        get("barra_scroll").style.top = "0px"
     }
 }
 
@@ -274,21 +242,25 @@ function nome_guia(alvo) {
     }
 }
 
-function preenche_slots_livres(qtd_itens) {
+function preenche_slots_livres(qtd_itens, pesquisa_input) {
 
-    let slots_livres = ((qtd_itens.length - 1) % 9)
+    let slots_livres = qtd_itens % 9
+    let slots_porcentagem = qtd_itens / 9
 
-    if (((qtd_itens.length - 1) % 9 != 0) || qtd_itens.length < 45) {
-        if (qtd_itens.length < 45 && itens < 45)
-            if (typeof alvo !== "string")
-                slots_livres = 46 - qtd_itens.length
-            else
-                slots_livres = 45 - qtd_itens.length
+    if ((((qtd_itens - 1) % 9) !== 0) || qtd_itens < 45) {
+        if (qtd_itens < 45)
+            slots_livres = 45 - qtd_itens
         else
-            slots_livres = 9 - (qtd_itens.length % 9)
+            slots_livres = 9 - (qtd_itens % 9)
 
         if (slots_livres == 9)
             slots_livres = 0
+
+        if (slots_porcentagem - parseInt(slots_porcentagem) > 0)
+            slots_livres++
+
+        if (pesquisa_input || (qtd_itens + slots_livres) / 9 > 0)
+            slots_livres--
     }
 
     if (slots_livres > 0) {
@@ -300,23 +272,27 @@ function preenche_slots_livres(qtd_itens) {
         get("complementa_slots").innerHTML = ""
 }
 
-function ordena_guias_ativas(alvos, force_filter, alvo) {
+function ordena_guias_ativas(alvos, force_filter, alvo, pesquisa_input) {
 
     let guias = []
+    let versao_jogo
+    qtd_itens = 0
+
+    if (get("input_versao_jogo"))
+        versao_jogo = get("input_versao_jogo").value
 
     // Pesquisa sem inserção
-    if (alvos.length < 1) {
-        for (let i = 0; i < Object.keys(categorias_map).length; i++) {
-            let alvos_mostra = get(categorias_map[i])
-
-            if (alvos_mostra.length > 1) {
-                for (let x = 0; x < alvos_mostra.length; x++)
-                    alvos_mostra[x].style.display = "block"
-
-                if (!guias.includes(categorias_map[i])) guias.push(categorias_map[i])
+    if (alvo === 10 || typeof alvo === "undefined") {
+        for (let i = 0; i < Object.keys(categorias_map).length; i++)
+            if (!guias.includes(categorias_map[i])) {
+                exibe_itens_categoria(categorias_map[i], versao_jogo, pesquisa_input)
+                guias.push(categorias_map[i])
             }
-        }
     } else {
+
+        exibe_itens_categoria(categorias_map[alvo], versao_jogo)
+        guias.push(categorias_map[alvo])
+
         if (!force_filter) { // Listando guias com itens ativos
             for (let i = 0; i < alvos.length; i++) {
                 if (!guias.includes(alvos[i].classList[1]))
@@ -337,6 +313,30 @@ function ordena_guias_ativas(alvos, force_filter, alvo) {
     for (let i = 0; i < guias.length; i++) {
         let guia_alvo = get(`aba_menu_${guias[i].toLowerCase()}`)
         if (guia_alvo.length > 0) guia_alvo[0].style.display = "block"
+    }
+}
+
+function exibe_itens_categoria(alvo, versao_jogo, pesquisa_input) {
+
+    let alvos_mostra = get(alvo)
+    if (alvos_mostra.length > 1) {
+        for (let x = 0; x < alvos_mostra.length; x++) {
+
+            if (versao_jogo && alvos_mostra[x].className.includes("slot_item")) { // Utilizado para versionamento na página de histórico
+                if (parseInt((alvos_mostra[x].classList.toString()).split(".")[1].split(" ")[0]) <= parseInt(versao_jogo) && alvos_mostra[x].className.includes(alvo)) {
+                    alvos_mostra[x].style.display = "block"
+                    qtd_itens++
+                }
+            } else if (pesquisa_input) {
+                if (alvos_mostra[x].className.includes(pesquisa_input)) {
+                    alvos_mostra[x].style.display = "block"
+                    qtd_itens++
+                }
+            } else {
+                alvos_mostra[x].style.display = "block"
+                qtd_itens++
+            }
+        }
     }
 }
 

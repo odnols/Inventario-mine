@@ -81,7 +81,6 @@
 
     <?php
     $executa_coleta = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item_alvo");
-
     $receita = "";
 
     if ($executa_coleta->num_rows > 0) {
@@ -91,7 +90,7 @@
 </body>
 
 <script type="text/javascript">
-    aba_menu(0, 0)
+    aba_menu(0)
     document.addEventListener("onKeyDown", clique())
 
     seleciona_item('auto')

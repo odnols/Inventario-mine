@@ -4,7 +4,7 @@
     <img id="menu" src="#">
 
     <?php for ($i = 0; $i < 11; $i++)
-        echo "<div id='item_$i' onclick='aba_menu($i, 0)'></div>";
+        echo "<div id='item_$i' onclick='aba_menu($i)'></div>";
 
     if ($local_requisicao === 1) { // Apenas visivel na tela inicial, prancheta de inserção de novos itens 
     ?>
