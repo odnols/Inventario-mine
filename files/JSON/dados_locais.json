@@ -36165,7 +36165,7 @@
         "stackable": 16,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "1785,1785,1785,1785,1785,1785,,198,",
