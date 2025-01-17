@@ -1,7 +1,7 @@
 <?php include_once "conexao_obsoleta.php";
 
 $executa = $conexao->query("SELECT * FROM item");
-$ignorar = array("de", "com", "da", "do");
+$ignorar = array("de", "com", "da", "do", "das", "em");
 
 // Capitaliza a primeira letra de cada palavra do nome dos itens
 while ($dados = $executa->fetch_assoc()) {
