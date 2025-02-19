@@ -4621,7 +4621,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 249,
@@ -4636,7 +4636,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 250,
@@ -4688,7 +4688,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 253,
@@ -7041,7 +7041,7 @@
         "id": 365,
         "icon": "wet_sponge.png",
         "type": "construcao",
-        "name": "Esponja \u00famida",
+        "name": "Esponja \u00damida",
         "internal_name": "wet_sponge",
         "version": "1.8",
         "collectable": true,
@@ -13301,7 +13301,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 676,
@@ -13316,7 +13316,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 677,
@@ -13331,7 +13331,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 678,
@@ -13346,7 +13346,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 679,
@@ -13361,7 +13361,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 680,
@@ -13376,7 +13376,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 681,
@@ -18573,7 +18573,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 929,
@@ -18588,7 +18588,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 930,
@@ -18603,7 +18603,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 931,
@@ -18618,7 +18618,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 932,
@@ -18633,7 +18633,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 933,
@@ -18648,7 +18648,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 934,
@@ -18663,7 +18663,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 935,
@@ -18678,7 +18678,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 936,
@@ -18693,7 +18693,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 937,
@@ -18708,7 +18708,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 938,
@@ -18723,7 +18723,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 939,
@@ -18738,7 +18738,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 940,
@@ -18753,7 +18753,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 941,
@@ -18768,7 +18768,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 942,
@@ -18783,7 +18783,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 943,
@@ -18798,7 +18798,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 944,
@@ -18813,7 +18813,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 945,
@@ -18828,7 +18828,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 946,
@@ -18843,7 +18843,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 947,
@@ -18858,7 +18858,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 948,
@@ -18873,7 +18873,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 949,
@@ -18888,7 +18888,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 950,
@@ -18903,7 +18903,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 951,
@@ -18918,7 +18918,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 952,
@@ -18933,7 +18933,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 953,
@@ -18948,7 +18948,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 954,
@@ -18963,7 +18963,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 955,
@@ -18978,7 +18978,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 956,
@@ -18993,7 +18993,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 957,
@@ -19008,7 +19008,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 958,
@@ -19023,7 +19023,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 959,
@@ -19038,7 +19038,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 960,
@@ -19053,7 +19053,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 961,
@@ -19068,7 +19068,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 962,
@@ -19083,7 +19083,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 963,
@@ -19098,7 +19098,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 964,
@@ -19113,7 +19113,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 965,
@@ -19128,7 +19128,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 966,
@@ -19143,7 +19143,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 967,
@@ -19158,7 +19158,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 968,
@@ -19173,7 +19173,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 969,
@@ -19188,7 +19188,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 970,
@@ -19203,7 +19203,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 971,
@@ -19218,7 +19218,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 972,
@@ -19233,7 +19233,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 973,
@@ -19248,7 +19248,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 974,
@@ -19263,7 +19263,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 975,
@@ -19278,7 +19278,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 976,
@@ -19293,7 +19293,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 977,
@@ -21288,10 +21288,10 @@
     },
     {
         "id": 1073,
-        "icon": "zumbie_spawn_egg.png",
+        "icon": "zombie_spawn_egg.png",
         "type": "diversos",
         "name": "Ovo Gerador de Zumbi",
-        "internal_name": "zumbie_spawn_egg",
+        "internal_name": "zombie_spawn_egg",
         "version": "1.1",
         "collectable": false,
         "released": true,
@@ -21299,7 +21299,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1074,
@@ -21314,7 +21314,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1075,
@@ -21329,7 +21329,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1076,
@@ -21344,7 +21344,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1077,
@@ -21359,7 +21359,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1078,
@@ -21374,7 +21374,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1079,
@@ -21389,7 +21389,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1080,
@@ -21404,7 +21404,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1081,
@@ -21419,7 +21419,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1082,
@@ -28137,7 +28137,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1396,
@@ -28336,7 +28336,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1407,
@@ -28351,7 +28351,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1409,
@@ -28366,7 +28366,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1410,
@@ -29538,7 +29538,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1474,
@@ -29553,7 +29553,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1475,
@@ -29992,7 +29992,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1496,
@@ -30007,7 +30007,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1497,
@@ -30021,23 +30021,23 @@
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
-        "legacy": false
+        "hide": false,
+        "legacy": true
     },
     {
         "id": 1498,
-        "icon": "whiter_spawn_egg.png",
+        "icon": "wither_spawn_egg.png",
         "type": "diversos",
         "name": "Ovo Gerador de Wither",
-        "internal_name": "whiter_spawn_egg",
+        "internal_name": "wither_spawn_egg",
         "version": "1.19",
         "collectable": false,
         "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": false,
-        "hide": true,
-        "legacy": false
+        "hide": false,
+        "legacy": true
     },
     {
         "id": 1499,
@@ -32701,7 +32701,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1621,
@@ -32797,7 +32797,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1626,
@@ -34023,7 +34023,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1684,
@@ -36017,7 +36017,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 1776,
