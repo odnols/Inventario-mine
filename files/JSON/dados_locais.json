@@ -1931,7 +1931,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": true
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&r[&rAo interagir com ovos geradores:[&1Define o tipo de criatura"
+            }
+        ]
     },
     {
         "id": 110,
@@ -5759,7 +5764,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 3
             }
         ]
     },
@@ -8079,7 +8084,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +3 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +3 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
             }
         ]
     },
@@ -8104,7 +8109,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Pontos de armadura: +8 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
+                "value": "[&s[&rNo corpo: [&1Armadura: +8 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
             }
         ]
     },
@@ -8129,7 +8134,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNas pernas: [&1Pontos de armadura: +6 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
+                "value": "[&s[&rNas pernas: [&1Armadura: +6 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
             }
         ]
     },
@@ -8154,7 +8159,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +3 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
+                "value": "[&s[&rNos p\u00e9s: [&1Armadura: +3 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
             }
         ]
     },
@@ -14015,7 +14020,7 @@
         "id": 704,
         "icon": "leather_horse_armor.png",
         "type": "diversos",
-        "name": "Armadura de Couro Para Cavalo",
+        "name": "Armadura de Couro para Cavalo",
         "internal_name": "leather_horse_armor",
         "version": "1.14",
         "collectable": true,
@@ -14031,13 +14036,18 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +3"
+            }
         ]
     },
     {
         "id": 705,
         "icon": "iron_horse_armor.png",
         "type": "diversos",
-        "name": "Armadura de Ferro Para Cavalo",
+        "name": "Armadura de Ferro para Cavalo",
         "internal_name": "iron_horse_armor",
         "version": "1.6",
         "collectable": true,
@@ -14046,13 +14056,18 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": true
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +5"
+            }
+        ]
     },
     {
         "id": 706,
         "icon": "golden_horse_armor.png",
         "type": "diversos",
-        "name": "Armadura de Ouro Para Cavalo",
+        "name": "Armadura de Ouro para Cavalo",
         "internal_name": "golden_horse_armor",
         "version": "1.6",
         "collectable": true,
@@ -14061,13 +14076,18 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": true
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +7"
+            }
+        ]
     },
     {
         "id": 707,
         "icon": "diamond_horse_armor.png",
         "type": "diversos",
-        "name": "Armadura de Diamante Para Cavalo",
+        "name": "Armadura de Diamante para Cavalo",
         "internal_name": "diamond_horse_armor",
         "version": "1.6",
         "collectable": true,
@@ -14076,7 +14096,12 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": true
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +11[&1Resist\u00eancia da armadura: +2"
+            }
+        ]
     },
     {
         "id": 708,
@@ -14187,6 +14212,11 @@
                 "recipe": "188,193",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDura\u00e7\u00e3o do voo: 1"
             }
         ]
     },
@@ -19353,7 +19383,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +3 [&1 Resist\u00eancia da armadura: +2"
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +3 [&1 Resist\u00eancia da armadura: +2"
             }
         ]
     },
@@ -19385,7 +19415,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2"
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +2"
             }
         ]
     },
@@ -19417,7 +19447,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2"
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +2"
             }
         ]
     },
@@ -19449,7 +19479,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +1"
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +1"
             }
         ]
     },
@@ -19474,7 +19504,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2"
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +2"
             }
         ]
     },
@@ -19506,7 +19536,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa cabe\u00e7a: [&1Pontos de armadura: +2"
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +2"
             }
         ]
     },
@@ -19538,7 +19568,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Pontos de armadura: +8 [&1Resist\u00eancia da armadura: +2"
+                "value": "[&s[&rNo corpo: [&1Armadura: +8 [&1Resist\u00eancia da armadura: +2"
             }
         ]
     },
@@ -19570,7 +19600,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Pontos de armadura: +6"
+                "value": "[&s[&rNo corpo: [&1Armadura: +6"
             }
         ]
     },
@@ -19602,7 +19632,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Pontos de armadura: +5"
+                "value": "[&s[&rNo corpo: [&1Armadura: +5"
             }
         ]
     },
@@ -19634,7 +19664,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Pontos de armadura: +3"
+                "value": "[&s[&rNo corpo: [&1Armadura: +3"
             }
         ]
     },
@@ -19659,7 +19689,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Pontos de armadura: +5"
+                "value": "[&s[&rNo corpo: [&1Armadura: +5"
             }
         ]
     },
@@ -19691,7 +19721,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +3 [&1Resist\u00eancia da armadura: +2"
+                "value": "[&s[&rNos p\u00e9s: [&1Armadura: +3 [&1Resist\u00eancia da armadura: +2"
             }
         ]
     },
@@ -19723,7 +19753,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +2"
+                "value": "[&s[&rNos p\u00e9s: [&1Armadura: +2"
             }
         ]
     },
@@ -19755,7 +19785,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +1"
+                "value": "[&s[&rNos p\u00e9s: [&1Armadura: +1"
             }
         ]
     },
@@ -19787,7 +19817,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +1"
+                "value": "[&s[&rNos p\u00e9s: [&1Armadura: +1"
             }
         ]
     },
@@ -19812,7 +19842,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNos p\u00e9s: [&1Pontos de armadura: +1"
+                "value": "[&s[&rNos p\u00e9s: [&1Armadura: +1"
             }
         ]
     },
@@ -19844,7 +19874,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNas pernas: [&1Pontos de armadura: +6 [&1Resisit\u00eancia da armadura: +2"
+                "value": "[&s[&rNas pernas: [&1Armadura: +6 [&1Resisit\u00eancia da armadura: +2"
             }
         ]
     },
@@ -19876,7 +19906,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNas pernas: [&1Pontos de armadura: +5"
+                "value": "[&s[&rNas pernas: [&1Armadura: +5"
             }
         ]
     },
@@ -19908,7 +19938,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNas pernas: [&1Pontos de armadura: +3"
+                "value": "[&s[&rNas pernas: [&1Armadura: +3"
             }
         ]
     },
@@ -19940,7 +19970,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNas pernas: [&1Pontos de armadura: +2"
+                "value": "[&s[&rNas pernas: [&1Armadura: +2"
             }
         ]
     },
@@ -19965,7 +19995,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNas pernas: [&1Pontos de armadura: +4"
+                "value": "[&s[&rNas pernas: [&1Armadura: +4"
             }
         ]
     },
@@ -29159,6 +29189,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rReflex\u00e3o"
@@ -29179,6 +29214,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rCanto"
@@ -29199,6 +29239,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rBusca"
@@ -29219,6 +29264,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rSensa\u00e7\u00e3o"
@@ -29239,6 +29289,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rEncanto"
@@ -29259,6 +29314,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rApelo"
@@ -29279,6 +29339,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rAnseio"
@@ -29299,6 +29364,11 @@
         "craftable": false,
         "hide": false,
         "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "description": [
             {
                 "value": "[&rDevaneio"
@@ -30488,7 +30558,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30520,7 +30590,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30552,7 +30622,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30584,7 +30654,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30616,7 +30686,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30648,7 +30718,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30680,7 +30750,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30712,7 +30782,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30744,7 +30814,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30776,7 +30846,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30808,7 +30878,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -30840,7 +30910,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Equipamento de diamante[&rIngredientes:[&1Barra de netherita"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Equipamento de Diamante[&rIngredientes:[&1Barra de Netherita"
             }
         ]
     },
@@ -32356,7 +32426,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -32388,7 +32458,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -32420,7 +32490,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -32452,7 +32522,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -32484,7 +32554,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -33208,7 +33278,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&r[&rAo interagir com ovos geradores:[&1Define o tipo de criatura"
+            }
+        ]
     },
     {
         "id": 1645,
@@ -33339,6 +33414,11 @@
                 "recipe": "1621,,,1621,1621,1621,1621,,1621",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +11"
             }
         ]
     },
@@ -34163,7 +34243,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -34195,7 +34275,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
             }
         ]
     },
@@ -34252,7 +34332,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 7 [&4Velocidade de ataque: 1.6"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 6 [&4Velocidade de ataque: 0.6"
             }
         ]
     },
@@ -36629,7 +36709,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 3
@@ -36649,7 +36729,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 3
@@ -36669,7 +36749,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 3
@@ -36689,7 +36769,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 3
@@ -36709,7 +36789,7 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 3
@@ -36842,5 +36922,59 @@
         "craftable": false,
         "hide": false,
         "legacy": false
+    },
+    {
+        "id": 1819,
+        "icon": "firework_rocket.png",
+        "type": "diversos",
+        "name": "Fogo de Artif\u00edcio",
+        "internal_name": "firework_rocket",
+        "version": "1.4",
+        "collectable": true,
+        "released": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": ",,,188,193,,188,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDura\u00e7\u00e3o do voo: 2"
+            }
+        ]
+    },
+    {
+        "id": 1820,
+        "icon": "firework_rocket.png",
+        "type": "diversos",
+        "name": "Fogo de Artif\u00edcio",
+        "internal_name": "firework_rocket",
+        "version": "1.4",
+        "collectable": true,
+        "released": true,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": ",,,188,193,,188,188,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rDura\u00e7\u00e3o do voo: 3"
+            }
+        ]
     }
 ]
