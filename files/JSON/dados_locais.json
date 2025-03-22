@@ -8426,7 +8426,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 2
@@ -13881,7 +13881,7 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "193,631",
@@ -13903,7 +13903,7 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 2
@@ -13930,7 +13930,7 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 1
@@ -13957,7 +13957,7 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 1
@@ -13984,7 +13984,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": true
     },
     {
         "id": 702,
@@ -14704,7 +14704,7 @@
         "id": 740,
         "icon": "end_lamp.png",
         "type": "decorativos",
-        "name": "L\u00e2mpada do End",
+        "name": "Vara do End",
         "internal_name": "end_lamp",
         "version": "1.9",
         "collectable": true,
@@ -28061,7 +28061,7 @@
         "id": 1389,
         "icon": "sea_lantern.png",
         "type": "construcao",
-        "name": "Lanterna do Mar",
+        "name": "Lanterna Marinha",
         "internal_name": "sea_lantern",
         "version": "1.8",
         "collectable": true,
@@ -34188,7 +34188,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 1
@@ -34208,7 +34208,7 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "title": [
             {
                 "type": 1
@@ -35612,7 +35612,7 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": ",,,193,469,,,,",
@@ -35634,7 +35634,7 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": ",,,193,651,,,,",
@@ -36976,5 +36976,110 @@
                 "value": "[&rDura\u00e7\u00e3o do voo: 3"
             }
         ]
+    },
+    {
+        "id": 1821,
+        "icon": "Dried_Ghast.webp",
+        "type": "diversos",
+        "name": "Ghast Desidratado",
+        "internal_name": "dried_ghast",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1822,
+        "icon": "happy_ghast_spawn_egg.png",
+        "type": "diversos",
+        "name": "Ovo Gerador de Ghast Feliz",
+        "internal_name": "happy_ghast_spawn_egg",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1823,
+        "icon": "blue_harness.png",
+        "type": "transportes",
+        "name": "Arreio Azul",
+        "internal_name": "blue_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1824,
+        "icon": "red_harness.png",
+        "type": "transportes",
+        "name": "Arreio Vermelho",
+        "internal_name": "red_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1825,
+        "icon": "cyan_harness.png",
+        "type": "transportes",
+        "name": "Arreio Ciano",
+        "internal_name": "cyan_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1826,
+        "icon": "purple_harness.png",
+        "type": "transportes",
+        "name": "Arreio Roxo",
+        "internal_name": "purple_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1827,
+        "icon": "gray_harness.png",
+        "type": "transportes",
+        "name": "Arreio Cinza",
+        "internal_name": "gray_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
     }
 ]
