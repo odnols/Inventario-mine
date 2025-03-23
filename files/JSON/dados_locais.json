@@ -4656,7 +4656,12 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&rAbelha(s): 0 \/ 3[&rMel: 0 \/ 5"
+            }
+        ]
     },
     {
         "id": 251,
@@ -4677,6 +4682,11 @@
                 "recipe": "353,353,353,253,253,253,353,353,353",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rAbelha(s): 0 \/ 3[&rMel: 0 \/ 5"
             }
         ]
     },
@@ -8109,7 +8119,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Armadura: +8 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
+                "value": "[&s[&rNo peito: [&1Armadura: +8 [&1Resist\u00eancia da armadura: +3 [&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
             }
         ]
     },
@@ -18514,7 +18524,7 @@
         "id": 924,
         "icon": "splash_potion.png",
         "type": "pocoes",
-        "name": "Frasco de \u00e1gua Arremess\u00e1vel",
+        "name": "Frasco de \u00c1gua Arremess\u00e1vel",
         "internal_name": "splash_potion",
         "version": "1.9",
         "collectable": true,
@@ -19568,7 +19578,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Armadura: +8 [&1Resist\u00eancia da armadura: +2"
+                "value": "[&s[&rNo peito: [&1Armadura: +8 [&1Resist\u00eancia da armadura: +2"
             }
         ]
     },
@@ -19600,7 +19610,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Armadura: +6"
+                "value": "[&s[&rNo peito: [&1Armadura: +6"
             }
         ]
     },
@@ -19632,7 +19642,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Armadura: +5"
+                "value": "[&s[&rNo peito: [&1Armadura: +5"
             }
         ]
     },
@@ -19664,7 +19674,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Armadura: +3"
+                "value": "[&s[&rNo peito: [&1Armadura: +3"
             }
         ]
     },
@@ -19689,7 +19699,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNo corpo: [&1Armadura: +5"
+                "value": "[&s[&rNo peito: [&1Armadura: +5"
             }
         ]
     },
@@ -21990,7 +22000,7 @@
         "id": 1116,
         "icon": "potion.png",
         "type": "pocoes",
-        "name": "Frasco de \u00e1gua",
+        "name": "Frasco de \u00c1gua",
         "internal_name": "potion",
         "version": "1.0",
         "collectable": true,
@@ -24329,7 +24339,7 @@
         "id": 1230,
         "icon": "lingering_potion.png",
         "type": "pocoes",
-        "name": "Frasco de \u00e1gua Prolongado",
+        "name": "Frasco de \u00c1gua Prolongado",
         "internal_name": "lingering_potion",
         "version": "1.9",
         "collectable": true,
@@ -31647,7 +31657,7 @@
         "legacy": false,
         "title": [
             {
-                "type": 4
+                "type": 2
             }
         ]
     },
@@ -36981,7 +36991,7 @@
         "id": 1821,
         "icon": "Dried_Ghast.webp",
         "type": "diversos",
-        "name": "Ghast Desidratado",
+        "name": "Ghast Seco",
         "internal_name": "dried_ghast",
         "version": "1.21",
         "collectable": true,
@@ -36990,7 +37000,12 @@
         "stackable": 64,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ]
     },
     {
         "id": 1822,
@@ -37112,6 +37127,248 @@
         "recipe": [
             {
                 "recipe": "187,187,187,363,400,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1828,
+        "icon": "light_gray_harness.png",
+        "type": "transportes",
+        "name": "Arreio Cinza-claro",
+        "internal_name": "light_gray_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,400,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1829,
+        "icon": "black_harness.png",
+        "type": "transportes",
+        "name": "Arreio Preto",
+        "internal_name": "black_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,407,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1830,
+        "icon": "lime_harness.png",
+        "type": "transportes",
+        "name": "Arreio Verde-lim\u00e3o",
+        "internal_name": "lime_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,397,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1831,
+        "icon": "green_harness.png",
+        "type": "transportes",
+        "name": "Arreio Verde",
+        "internal_name": "green_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,405,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1832,
+        "icon": "pink_harness.png",
+        "type": "transportes",
+        "name": "Arreio Rosa",
+        "internal_name": "pink_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,398,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1833,
+        "icon": "magenta_harness.png",
+        "type": "transportes",
+        "name": "Arreio Magenta",
+        "internal_name": "magenta_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,394,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1834,
+        "icon": "white_harness.png",
+        "type": "transportes",
+        "name": "Arreio Branco",
+        "internal_name": "white_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,392,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1835,
+        "icon": "brown_harness.png",
+        "type": "transportes",
+        "name": "Arreio Marrom",
+        "internal_name": "brown_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,404,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1836,
+        "icon": "light_blue_harness.png",
+        "type": "transportes",
+        "name": "Arreio Azul-claro",
+        "internal_name": "light_blue_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,395,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1837,
+        "icon": "orange_harness.png",
+        "type": "transportes",
+        "name": "Arreio Laranja",
+        "internal_name": "orange_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,393,363,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1838,
+        "icon": "yellow_harness.png",
+        "type": "transportes",
+        "name": "Arreio Amarelo",
+        "internal_name": "yellow_harness",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "187,187,187,363,396,363,,,",
                 "products": 1,
                 "craft_type": 0
             }
