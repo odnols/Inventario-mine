@@ -12827,7 +12827,7 @@
         "id": 654,
         "icon": "map.png",
         "type": "diversos",
-        "name": "Mapa Em Branco",
+        "name": "Mapa em Branco",
         "internal_name": "map",
         "version": "1.0",
         "collectable": true,
@@ -15735,7 +15735,7 @@
         "id": 788,
         "icon": "dragon_head.png",
         "type": "decorativos",
-        "name": "Cabe\u00e7a de Drag\u00e3o",
+        "name": "Cabe\u00e7a do Drag\u00e3o",
         "internal_name": "dragon_head",
         "version": "1.9",
         "collectable": true,
@@ -15747,7 +15747,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 3
             }
         ]
     },
@@ -15787,7 +15787,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ]
     },
@@ -15795,7 +15795,7 @@
         "id": 791,
         "icon": "player_head.png",
         "type": "decorativos",
-        "name": "Cabe\u00e7a",
+        "name": "Cabe\u00e7a de Jogador",
         "internal_name": "player_head",
         "version": "1.4",
         "collectable": false,
@@ -16498,7 +16498,7 @@
         "id": 823,
         "icon": "chipped_anvil.png",
         "type": "decorativos",
-        "name": "Bigorna Danificada",
+        "name": "Bigorna Rachada",
         "internal_name": "chipped_anvil",
         "version": "1.4",
         "collectable": true,
@@ -16513,7 +16513,7 @@
         "id": 824,
         "icon": "damaged_anvil.png",
         "type": "decorativos",
-        "name": "Bigorna Muito Danificada",
+        "name": "Bigorna Danificada",
         "internal_name": "damaged_anvil",
         "version": "1.4",
         "collectable": true,
@@ -21245,7 +21245,7 @@
         "id": 1049,
         "icon": "flowering_azalea_leaves.png",
         "type": "decorativos",
-        "name": "Folhas de Azaleia Florescente",
+        "name": "Folhas de Azaleia Florescentes",
         "internal_name": "flowering_azalea_leaves",
         "version": "1.17",
         "collectable": true,
@@ -32112,7 +32112,7 @@
         "id": 1591,
         "icon": "shelter_pottery_shard.png",
         "type": "diversos",
-        "name": "\u00d3straco de \u00e1rvore",
+        "name": "\u00d3straco de \u00c1rvore",
         "internal_name": "shelter_pottery_sherd",
         "version": "1.20",
         "collectable": true,
