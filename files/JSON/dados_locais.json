@@ -4424,7 +4424,7 @@
         "legacy": true,
         "recipe": [
             {
-                "recipe": "239,239,,239,191,,,,239",
+                "recipe": "239,239,,239,239,,,,239",
                 "products": 1,
                 "craft_type": 0
             }
@@ -18934,7 +18934,7 @@
         "id": 950,
         "icon": "mooshroom_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo Gerador de Coguvaca",
+        "name": "Ovo Gerador de Mooshroom",
         "internal_name": "mooshroom_spawn_egg",
         "version": "1.1",
         "collectable": false,
@@ -36989,7 +36989,7 @@
     },
     {
         "id": 1821,
-        "icon": "Dried_Ghast.webp",
+        "icon": "dried_ghast.png",
         "type": "diversos",
         "name": "Ghast Seco",
         "internal_name": "dried_ghast",
@@ -36998,12 +36998,14 @@
         "released": false,
         "renewable": false,
         "stackable": 64,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
         "legacy": false,
-        "title": [
+        "recipe": [
             {
-                "type": 2
+                "recipe": "1115,1115,1115,1115,41,1115,1115,1115,1115",
+                "products": 1,
+                "craft_type": 0
             }
         ]
     },
