@@ -5666,9 +5666,16 @@
         "released": true,
         "renewable": true,
         "stackable": 0,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
-        "legacy": true
+        "legacy": true,
+        "recipe": [
+            {
+                "recipe": ",187,,187,200,187,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 297,
@@ -37373,6 +37380,31 @@
                 "recipe": "187,187,187,363,396,363,,,",
                 "products": 1,
                 "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1839,
+        "icon": "music_disc_tears.png",
+        "type": "diversos",
+        "name": "Disco Musical",
+        "internal_name": "music_disc",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rAmos Roddy - Tears"
             }
         ]
     }
