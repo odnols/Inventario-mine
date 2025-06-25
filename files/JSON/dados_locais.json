@@ -37407,5 +37407,50 @@
                 "value": "[&rAmos Roddy - Tears"
             }
         ]
+    },
+    {
+        "id": 1840,
+        "icon": "music_disc_lava_chicken.png",
+        "type": "diversos",
+        "name": "Disco Musical",
+        "internal_name": "music_disc_lava_chicken",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rHyper Potions - Lava Chicken"
+            }
+        ]
+    },
+    {
+        "id": 1841,
+        "icon": "painting.png",
+        "type": "decorativos",
+        "name": "Quadro",
+        "internal_name": "painting",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "description": [
+            {
+                "value": "[&5Dennis[&rSarah Boeving[&63x3"
+            }
+        ]
     }
 ]
