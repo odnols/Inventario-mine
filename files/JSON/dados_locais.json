@@ -37452,5 +37452,374 @@
                 "value": "[&5Dennis[&rSarah Boeving[&63x3"
             }
         ]
+    },
+    {
+        "id": 1842,
+        "icon": "copper_golem_spawn_egg.png",
+        "type": "diversos",
+        "name": "Ovo Gerador de Golem de Cobre",
+        "internal_name": "copper_golem_spawn_egg",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1843,
+        "icon": "copper_nugget.png",
+        "type": "diversos",
+        "name": "Pepita de Cobre",
+        "internal_name": "copper_nugget",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,199,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1844,
+        "icon": "copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre",
+        "internal_name": "copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,199,199,199,731,199,199,199,199",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1845,
+        "icon": "exposed_copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre Exposto",
+        "internal_name": "exposed_copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1846,
+        "icon": "weathered_copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre Desgastado",
+        "internal_name": "weathered_copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1847,
+        "icon": "oxidized_copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre Oxidado",
+        "internal_name": "oxidized_copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1848,
+        "icon": "copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre Encerado",
+        "internal_name": "waxed_copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1849,
+        "icon": "exposed_copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre Exposto Encerado",
+        "internal_name": "waxed_exposed_copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1850,
+        "icon": "weathered_copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre Desgastado Encerado",
+        "internal_name": "waxed_weathered_copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1851,
+        "icon": "oxidized_copper_chest.png",
+        "type": "decorativos",
+        "name": "Ba\u00fa de Cobre Oxidado Encerado",
+        "internal_name": "waxed_oxidized_copper_chest",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,253,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1852,
+        "icon": "copper_pickaxe.png",
+        "type": "ferramentas",
+        "name": "Picareta de Cobre",
+        "internal_name": "copper_pickaxe",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,199,199,,198,,,198,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1853,
+        "icon": "copper_axe.png",
+        "type": "ferramentas",
+        "name": "Machado de Cobre",
+        "internal_name": "copper_axe",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,199,,199,198,,,198,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1854,
+        "icon": "copper_shovel.png",
+        "type": "ferramentas",
+        "name": "P\u00e1 de Cobre",
+        "internal_name": "copper_shovel",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",199,,,198,,,198,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1855,
+        "icon": "copper_hoe.png",
+        "type": "ferramentas",
+        "name": "Enxada de Cobre",
+        "internal_name": "copper_hoe",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,199,,,198,,,198,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1856,
+        "icon": "copper_sword.png",
+        "type": "combate",
+        "name": "Espada de Cobre",
+        "internal_name": "copper_sword",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",199,,,199,,,198,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1857,
+        "icon": "copper_helmet.png",
+        "type": "combate",
+        "name": "Capacete de Cobre",
+        "internal_name": "copper_helmet",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,199,199,199,,199,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1858,
+        "icon": "copper_chestplate.png",
+        "type": "combate",
+        "name": "Peitoral de Cobre",
+        "internal_name": "copper_chestplate",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,,199,199,199,199,199,199,199",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1859,
+        "icon": "copper_leggings.png",
+        "type": "combate",
+        "name": "Cal\u00e7as de Cobre",
+        "internal_name": "copper_leggings",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,199,199,199,,199,199,,199",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1860,
+        "icon": "copper_boots.png",
+        "type": "combate",
+        "name": "Botas de Cobre",
+        "internal_name": "copper_boots",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "199,,199,199,,199,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     }
 ]
