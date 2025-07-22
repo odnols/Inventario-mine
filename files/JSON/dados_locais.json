@@ -18099,7 +18099,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": ",,,,722",
@@ -18341,7 +18341,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "977",
@@ -18363,7 +18363,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "1153,,,,,,,",
@@ -18422,7 +18422,7 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false,
+        "legacy": true,
         "recipe": [
             {
                 "recipe": "242",
@@ -37570,7 +37570,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1844,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1849,
@@ -37585,7 +37592,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1845,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1850,
@@ -37600,7 +37614,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1846,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1851,
@@ -37618,7 +37639,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,,,253,,,",
+                "recipe": ",,,1847,253,,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -37821,5 +37842,396 @@
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 1861,
+        "icon": "oak_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Carvalho",
+        "internal_name": "oak_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "368,368,368,,,,368,368,368",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1862,
+        "icon": "spruce_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Abeto",
+        "internal_name": "spruce_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "369,369,369,,,,369,369,369",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1863,
+        "icon": "birch_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de B\u00e9tula",
+        "internal_name": "birch_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "370,370,370,,,,370,370,370",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1864,
+        "icon": "jungle_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira da Selva",
+        "internal_name": "jungle_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "371,371,371,,,,371,371,371",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1865,
+        "icon": "acacia_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Ac\u00e1cia",
+        "internal_name": "acacia_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "372,372,372,,,,372,372,372",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1866,
+        "icon": "dark_oak_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Carvalho Escuro",
+        "internal_name": "dark_oak_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "373,373,373,,,,373,373,373",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1867,
+        "icon": "mangrove_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Mangue",
+        "internal_name": "mangrove_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1422,1422,1422,,,,1422,1422,1422",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1868,
+        "icon": "cherry_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Cerejeira",
+        "internal_name": "cherry_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1571,1571,1571,,,,1571,1571,1571",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1869,
+        "icon": "pale_oak_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Carvalho P\u00e1lido",
+        "internal_name": "pale_oak_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1776,1776,1776,,,,1776,1776,1776",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1870,
+        "icon": "bamboo_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira de Bambu",
+        "internal_name": "bamboo_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1516,1516,1516,,,,1516,1516,1516",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1871,
+        "icon": "crimson_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira Carmesim",
+        "internal_name": "crimson_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "374,374,374,,,,374,374,374",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1872,
+        "icon": "warped_shelf.png",
+        "type": "decorativos",
+        "name": "Prateleira Distorcida",
+        "internal_name": "warped_shelf",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "375,375,375,,,,375,375,375",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1873,
+        "icon": "copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre",
+        "internal_name": "copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1874,
+        "icon": "exposed_copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre Exposto",
+        "internal_name": "exposed_copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1875,
+        "icon": "weathered_copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre Desgastado",
+        "internal_name": "weathered_copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1876,
+        "icon": "oxidized_copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre Oxidado",
+        "internal_name": "oxidized_copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1877,
+        "icon": "copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre Encerado",
+        "internal_name": "waxed_copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1878,
+        "icon": "exposed_copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre Exposto Encerado",
+        "internal_name": "waxed_exposed_copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1879,
+        "icon": "weathered_copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre Desgastado Encerado",
+        "internal_name": "waxed_weathered_copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1880,
+        "icon": "oxidized_copper_golem_statue.png",
+        "type": "decorativos",
+        "name": "Est\u00e1tua de Golem de Cobre Oxidado Encerado",
+        "internal_name": "waxed_oxidized_copper_golem_statue",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
     }
 ]
