@@ -37665,6 +37665,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 3 [&4Velocidade de ataque: 1.2"
+            }
         ]
     },
     {
@@ -37686,6 +37691,11 @@
                 "recipe": "199,199,,199,198,,,198,",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 9 [&4Velocidade de ataque: 0.8"
             }
         ]
     },
@@ -37709,6 +37719,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 3.5 [&4Velocidade de ataque: 1"
+            }
         ]
     },
     {
@@ -37730,6 +37745,11 @@
                 "recipe": "199,199,,,198,,,198,",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 1 [&4Velocidade de ataque: 2"
             }
         ]
     },
@@ -37753,6 +37773,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Dano por golpe: 5 [&4Velocidade de ataque: 1.6"
+            }
         ]
     },
     {
@@ -37774,6 +37799,11 @@
                 "recipe": "199,199,199,199,,199,,,",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa cabe\u00e7a: [&1Armadura: +2"
             }
         ]
     },
@@ -37797,6 +37827,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNo peito: [&1Armadura: +4"
+            }
         ]
     },
     {
@@ -37818,6 +37853,11 @@
                 "recipe": "199,199,199,199,,199,199,,199",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNas pernas: [&1Armadura: +3"
             }
         ]
     },
@@ -37841,13 +37881,18 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNos p\u00e9s: [&1Armadura: +1"
+            }
         ]
     },
     {
         "id": 1861,
         "icon": "oak_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Carvalho",
+        "name": "Estante de Carvalho",
         "internal_name": "oak_shelf",
         "version": "1.21",
         "collectable": true,
@@ -37869,7 +37914,7 @@
         "id": 1862,
         "icon": "spruce_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Abeto",
+        "name": "Estante de Abeto",
         "internal_name": "spruce_shelf",
         "version": "1.21",
         "collectable": true,
@@ -37891,7 +37936,7 @@
         "id": 1863,
         "icon": "birch_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de B\u00e9tula",
+        "name": "Estante de B\u00e9tula",
         "internal_name": "birch_shelf",
         "version": "1.21",
         "collectable": true,
@@ -37913,7 +37958,7 @@
         "id": 1864,
         "icon": "jungle_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira da Selva",
+        "name": "Estante da Selva",
         "internal_name": "jungle_shelf",
         "version": "1.21",
         "collectable": true,
@@ -37935,7 +37980,7 @@
         "id": 1865,
         "icon": "acacia_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Ac\u00e1cia",
+        "name": "Estante de Ac\u00e1cia",
         "internal_name": "acacia_shelf",
         "version": "1.21",
         "collectable": true,
@@ -37957,7 +38002,7 @@
         "id": 1866,
         "icon": "dark_oak_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Carvalho Escuro",
+        "name": "Estante de Carvalho Escuro",
         "internal_name": "dark_oak_shelf",
         "version": "1.21",
         "collectable": true,
@@ -37979,7 +38024,7 @@
         "id": 1867,
         "icon": "mangrove_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Mangue",
+        "name": "Estante de Mangue",
         "internal_name": "mangrove_shelf",
         "version": "1.21",
         "collectable": true,
@@ -38001,7 +38046,7 @@
         "id": 1868,
         "icon": "cherry_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Cerejeira",
+        "name": "Estante de Cerejeira",
         "internal_name": "cherry_shelf",
         "version": "1.21",
         "collectable": true,
@@ -38023,7 +38068,7 @@
         "id": 1869,
         "icon": "pale_oak_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Carvalho P\u00e1lido",
+        "name": "Estante de Carvalho P\u00e1lido",
         "internal_name": "pale_oak_shelf",
         "version": "1.21",
         "collectable": true,
@@ -38045,7 +38090,7 @@
         "id": 1870,
         "icon": "bamboo_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira de Bambu",
+        "name": "Estante de Bambu",
         "internal_name": "bamboo_shelf",
         "version": "1.21",
         "collectable": true,
@@ -38067,7 +38112,7 @@
         "id": 1871,
         "icon": "crimson_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira Carmesim",
+        "name": "Estante Carmesim",
         "internal_name": "crimson_shelf",
         "version": "1.21",
         "collectable": true,
@@ -38089,7 +38134,7 @@
         "id": 1872,
         "icon": "warped_shelf.png",
         "type": "decorativos",
-        "name": "Prateleira Distorcida",
+        "name": "Estante Distorcida",
         "internal_name": "warped_shelf",
         "version": "1.21",
         "collectable": true,
@@ -38252,6 +38297,26 @@
                 "recipe": ",,,1876,253,,,,",
                 "products": 1,
                 "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1881,
+        "icon": "copper_horse_armor.png",
+        "type": "diversos",
+        "name": "Armadura de Cobre para Cavalo",
+        "internal_name": "copper_horse_armor",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +4"
             }
         ]
     }
