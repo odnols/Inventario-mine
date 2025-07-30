@@ -38319,5 +38319,117 @@
                 "value": "[&r[&rEm uso:[&1Armadura: +4"
             }
         ]
+    },
+    {
+        "id": 1882,
+        "icon": "exposed_lightning_rod.png",
+        "type": "redstone",
+        "name": "Para-raios Exposto",
+        "internal_name": "exposed_lightning_rod",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1883,
+        "icon": "weathered_lightning_rod.png",
+        "type": "redstone",
+        "name": "Para-raios Desgastado",
+        "internal_name": "weathered_lightning_rod",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1884,
+        "icon": "oxidized_lightning_rod.png",
+        "type": "redstone",
+        "name": "Para-raios Oxidado",
+        "internal_name": "oxidized_lightning_rod",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1885,
+        "icon": "lightning_rod.png",
+        "type": "redstone",
+        "name": "Para-raios Encerado",
+        "internal_name": "waxed_lightning_rod",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,177,253,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1886,
+        "icon": "exposed_lightning_rod.png",
+        "type": "redstone",
+        "name": "Para-raios Exposto Encerado",
+        "internal_name": "waxed_exposed_lightning_rod",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1887,
+        "icon": "weathered_lightning_rod.png",
+        "type": "redstone",
+        "name": "Para-raios Desgastado Encerado",
+        "internal_name": "waxed_weathered_lightning_rod",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1888,
+        "icon": "oxidized_lightning_rod.png",
+        "type": "redstone",
+        "name": "Para-raios Oxidado Encerado",
+        "internal_name": "waxed_oxidized_lightning_rod",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
     }
 ]
