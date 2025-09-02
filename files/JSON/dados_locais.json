@@ -8314,10 +8314,10 @@
     },
     {
         "id": 425,
-        "icon": "chains.png",
+        "icon": "iron_chain.png",
         "type": "decorativos",
-        "name": "Corrente",
-        "internal_name": "chain",
+        "name": "Corrente de Ferro",
+        "internal_name": "iron_chain",
         "version": "1.16",
         "collectable": true,
         "released": true,
@@ -12812,7 +12812,7 @@
         "id": 653,
         "icon": "iron_bars.png",
         "type": "decorativos",
-        "name": "Grades de Ferro",
+        "name": "Barras de Ferro",
         "internal_name": "iron_bars",
         "version": "1.0",
         "collectable": true,
@@ -30575,7 +30575,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30607,7 +30607,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30639,7 +30639,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30671,7 +30671,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30703,7 +30703,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30735,7 +30735,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30767,7 +30767,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30799,7 +30799,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30831,7 +30831,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30863,7 +30863,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30895,7 +30895,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -30927,7 +30927,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Equipamento de Diamante[&rIngredientes:[&1Barra de Netherita"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Equipamento de Diamante[&rIngredientes:[&1Lingote de Netherita"
             }
         ]
     },
@@ -32443,7 +32443,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -32475,7 +32475,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -32507,7 +32507,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -32539,7 +32539,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -32571,7 +32571,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -34260,7 +34260,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -34292,7 +34292,7 @@
         ],
         "description": [
             {
-                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel a:[&1Armadura[&rIngredientes:[&1Barras e cristais"
+                "value": "[&rMolde de Ferraria[&s[&rAplic\u00e1vel em:[&1Armadura[&rIngredientes:[&1Lingotes e cristais"
             }
         ]
     },
@@ -38479,7 +38479,7 @@
         "id": 1890,
         "icon": "copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre",
+        "name": "Barras de Cobre",
         "internal_name": "copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38501,7 +38501,7 @@
         "id": 1891,
         "icon": "exposed_copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre Exposto",
+        "name": "Barras de Cobre Exposto",
         "internal_name": "exposed_copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38516,7 +38516,7 @@
         "id": 1892,
         "icon": "weathered_copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre Desgastado",
+        "name": "Barras de Cobre Desgastado",
         "internal_name": "weathered_copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38531,7 +38531,7 @@
         "id": 1893,
         "icon": "oxidized_copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre Oxidado",
+        "name": "Barras de Cobre Oxidado",
         "internal_name": "oxidized_copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38546,7 +38546,7 @@
         "id": 1894,
         "icon": "copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre Encerado",
+        "name": "Barras de Cobre Encerado",
         "internal_name": "waxed_copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38568,7 +38568,7 @@
         "id": 1895,
         "icon": "exposed_copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre Exposto Encerado",
+        "name": "Barras de Cobre Exposto Encerado",
         "internal_name": "waxed_exposed_copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38590,7 +38590,7 @@
         "id": 1896,
         "icon": "weathered_copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre Desgastado Encerado",
+        "name": "Barras de Cobre Desgastado Encerado",
         "internal_name": "waxed_weathered_copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38612,7 +38612,7 @@
         "id": 1897,
         "icon": "oxidized_copper_bars.png",
         "type": "decorativos",
-        "name": "Grades de Cobre Oxidado Encerado",
+        "name": "Barras de Cobre Oxidado Encerado",
         "internal_name": "waxed_oxidized_copper_bars",
         "version": "1.21",
         "collectable": true,
@@ -38787,10 +38787,10 @@
     },
     {
         "id": 1906,
-        "icon": "copper_chains.png",
+        "icon": "copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre",
-        "internal_name": "copper_chains",
+        "internal_name": "copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -38809,10 +38809,10 @@
     },
     {
         "id": 1907,
-        "icon": "exposed_copper_chains.png",
+        "icon": "exposed_copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre Exposto",
-        "internal_name": "exposed_copper_chains",
+        "internal_name": "exposed_copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -38824,10 +38824,10 @@
     },
     {
         "id": 1908,
-        "icon": "weathered_copper_chains.png",
+        "icon": "weathered_copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre Desgastado",
-        "internal_name": "weathered_copper_chains",
+        "internal_name": "weathered_copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -38839,10 +38839,10 @@
     },
     {
         "id": 1909,
-        "icon": "oxidized_copper_chains.png",
+        "icon": "oxidized_copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre Oxidado",
-        "internal_name": "oxidized_copper_chains",
+        "internal_name": "oxidized_copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -38854,10 +38854,10 @@
     },
     {
         "id": 1910,
-        "icon": "copper_chains.png",
+        "icon": "copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre Encerado",
-        "internal_name": "waxed_copper_chains",
+        "internal_name": "waxed_copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -38876,10 +38876,10 @@
     },
     {
         "id": 1911,
-        "icon": "exposed_copper_chains.png",
+        "icon": "exposed_copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre Exposto Encerado",
-        "internal_name": "waxed_exposed_copper_chains",
+        "internal_name": "waxed_exposed_copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -38890,7 +38890,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,1907,253,,,,",
+                "recipe": ",,,,253,,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -38898,10 +38898,10 @@
     },
     {
         "id": 1912,
-        "icon": "weathered_copper_chains.png",
+        "icon": "weathered_copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre Desgastado Encerado",
-        "internal_name": "waxed_weathered_copper_chains",
+        "internal_name": "waxed_weathered_copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -38920,10 +38920,10 @@
     },
     {
         "id": 1913,
-        "icon": "oxidized_copper_chains.png",
+        "icon": "oxidized_copper_chain.png",
         "type": "decorativos",
         "name": "Corrente de Cobre Oxidado Encerado",
-        "internal_name": "waxed_oxidized_copper_chains",
+        "internal_name": "waxed_oxidized_copper_chain",
         "version": "1.21",
         "collectable": true,
         "released": false,
