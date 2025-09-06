@@ -718,7 +718,7 @@
         "id": 43,
         "icon": "blackstone.png",
         "type": "construcao",
-        "name": "Pedra-negra",
+        "name": "Pedra-Negra",
         "internal_name": "blackstone",
         "version": "1.16",
         "collectable": true,
@@ -733,7 +733,7 @@
         "id": 44,
         "icon": "polished_blackstone_block.png",
         "type": "construcao",
-        "name": "Pedra-negra Polida",
+        "name": "Pedra-Negra Polida",
         "internal_name": "polished_blackstone_block",
         "version": "1.16",
         "collectable": true,
@@ -755,7 +755,7 @@
         "id": 45,
         "icon": "chiseled_polished_blackstone.png",
         "type": "construcao",
-        "name": "Pedra-negra Polida Talhada",
+        "name": "Pedra-Negra Polida Talhada",
         "internal_name": "chiseled_polished_blackstone",
         "version": "1.16",
         "collectable": true,
@@ -829,7 +829,7 @@
         "id": 49,
         "icon": "blast_furnace.png",
         "type": "decorativos",
-        "name": "Alto-forno",
+        "name": "Alto-Forno",
         "internal_name": "blast_furnace",
         "version": "1.14",
         "collectable": true,
@@ -895,7 +895,7 @@
         "id": 52,
         "icon": "fletching_table.png",
         "type": "decorativos",
-        "name": "Bancada de Arco E Flecha",
+        "name": "Bancada de Arco e Flecha",
         "internal_name": "fletching_table",
         "version": "1.14",
         "collectable": true,
@@ -2072,7 +2072,7 @@
         "id": 118,
         "icon": "polished_blackstone_bricks.png",
         "type": "construcao",
-        "name": "Tijolos de Pedra-negra Polida",
+        "name": "Tijolos de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_bricks",
         "version": "1.16",
         "collectable": true,
@@ -2094,7 +2094,7 @@
         "id": 119,
         "icon": "cracked_polished_blackstone_bricks.png",
         "type": "construcao",
-        "name": "Tijolos de Pedra-negra Polida Rachados",
+        "name": "Tijolos de Pedra-Negra Polida Rachados",
         "internal_name": "cracked_polished_blackstone_bricks",
         "version": "1.16",
         "collectable": true,
@@ -2649,7 +2649,7 @@
         "id": 152,
         "icon": "lapis_ore.png",
         "type": "construcao",
-        "name": "Min\u00e9rio de L\u00e1pis Laz\u00fali",
+        "name": "Min\u00e9rio de L\u00e1pis-Laz\u00fali",
         "internal_name": "lapis_ore",
         "version": "1.2",
         "collectable": true,
@@ -2664,7 +2664,7 @@
         "id": 153,
         "icon": "deepslate_lapis_ore.png",
         "type": "construcao",
-        "name": "Min\u00e9rio de L\u00e1pis-laz\u00fali de Ardosiabissal",
+        "name": "Min\u00e9rio de L\u00e1pis-Laz\u00fali de Ardosiabissal",
         "internal_name": "deepslate_lapis_lazuli_ore",
         "version": "1.17",
         "collectable": true,
@@ -3140,7 +3140,7 @@
         "id": 177,
         "icon": "lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios",
+        "name": "Para-Raios",
         "internal_name": "lightning_rod",
         "version": "1.17",
         "collectable": true,
@@ -3869,7 +3869,7 @@
         "id": 212,
         "icon": "polished_blackstone_pressure_plate.png",
         "type": "redstone",
-        "name": "Placa de Press\u00e3o de Pedra-negra Polida",
+        "name": "Placa de Press\u00e3o de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_pressure_plate",
         "version": "1.16",
         "collectable": true,
@@ -4375,7 +4375,7 @@
         "id": 235,
         "icon": "polished_blackstone_button.png",
         "type": "redstone",
-        "name": "Bot\u00e3o de Pedra-negra Polida",
+        "name": "Bot\u00e3o de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_button",
         "version": "1.16",
         "collectable": true,
@@ -4617,7 +4617,7 @@
         "id": 248,
         "icon": "glow_squid_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo Gerador de Lula-brilhante",
+        "name": "Ovo Gerador de Lula-Brilhante",
         "internal_name": "glow_squid_spawn_egg",
         "version": "1.17",
         "collectable": false,
@@ -7536,7 +7536,7 @@
         "id": 390,
         "icon": "lapis_block.png",
         "type": "construcao",
-        "name": "Bloco de L\u00e1pis-laz\u00fali",
+        "name": "Bloco de L\u00e1pis-Laz\u00fali",
         "internal_name": "lapis_block",
         "version": "1.0",
         "collectable": true,
@@ -7646,7 +7646,7 @@
         "id": 395,
         "icon": "light_blue_wool.png",
         "type": "construcao",
-        "name": "L\u00e3 Azul-clara",
+        "name": "L\u00e3 Azul-Clara",
         "internal_name": "light_blue_wool",
         "version": "1.0",
         "collectable": true,
@@ -7690,7 +7690,7 @@
         "id": 397,
         "icon": "lime_wool.png",
         "type": "construcao",
-        "name": "L\u00e3 Verde-lim\u00e3o",
+        "name": "L\u00e3 Verde-Lim\u00e3o",
         "internal_name": "lime_wool",
         "version": "1.0",
         "collectable": true,
@@ -7756,7 +7756,7 @@
         "id": 400,
         "icon": "light_gray_wool.png",
         "type": "construcao",
-        "name": "L\u00e3 Cinza-clara",
+        "name": "L\u00e3 Cinza-Clara",
         "internal_name": "light_gray_wool",
         "version": "1.0",
         "collectable": true,
@@ -7969,7 +7969,7 @@
         "id": 410,
         "icon": "sea_pickle.png",
         "type": "decorativos",
-        "name": "Pepino-do-mar",
+        "name": "Pepino-do-Mar",
         "internal_name": "sea_pickle",
         "version": "1.13",
         "collectable": true,
@@ -8419,7 +8419,7 @@
         "id": 430,
         "icon": "gilded_blackstone.png",
         "type": "construcao",
-        "name": "Pedra-negra Dourada",
+        "name": "Pedra-Negra Dourada",
         "internal_name": "gilded_blackstone",
         "version": "1.16",
         "collectable": true,
@@ -9571,7 +9571,7 @@
         "id": 485,
         "icon": "light_blue_terracotta.png",
         "type": "construcao",
-        "name": "Terracota Azul-clara",
+        "name": "Terracota Azul-Clara",
         "internal_name": "light_blue_terracotta",
         "version": "1.6",
         "collectable": true,
@@ -9615,7 +9615,7 @@
         "id": 487,
         "icon": "lime_terracotta.png",
         "type": "construcao",
-        "name": "Terracota Verde-lim\u00e3o",
+        "name": "Terracota Verde-Lim\u00e3o",
         "internal_name": "lime_terracotta",
         "version": "1.6",
         "collectable": true,
@@ -9681,7 +9681,7 @@
         "id": 490,
         "icon": "light_gray_terracotta.png",
         "type": "construcao",
-        "name": "Terracota Cinza-clara",
+        "name": "Terracota Cinza-Clara",
         "internal_name": "light_gray_terracotta",
         "version": "1.6",
         "collectable": true,
@@ -10218,7 +10218,7 @@
         "id": 516,
         "icon": "light_blue_concrete.png",
         "type": "construcao",
-        "name": "Concreto Azul-claro",
+        "name": "Concreto Azul-Claro",
         "internal_name": "light_blue_concrete",
         "version": "1.12",
         "collectable": true,
@@ -10248,7 +10248,7 @@
         "id": 518,
         "icon": "lime_concrete.png",
         "type": "construcao",
-        "name": "Concreto Verde-lim\u00e3o",
+        "name": "Concreto Verde-Lim\u00e3o",
         "internal_name": "lime_concrete",
         "version": "1.12",
         "collectable": true,
@@ -10293,7 +10293,7 @@
         "id": 521,
         "icon": "light_gray_concrete.png",
         "type": "construcao",
-        "name": "Concreto Cinza-claro",
+        "name": "Concreto Cinza-Claro",
         "internal_name": "light_gray_concrete",
         "version": "1.12",
         "collectable": true,
@@ -10479,7 +10479,7 @@
         "id": 532,
         "icon": "light_blue_concrete_powder.png",
         "type": "construcao",
-        "name": "Cimento Azul-claro",
+        "name": "Cimento Azul-Claro",
         "internal_name": "light_blue_concrete_powder",
         "version": "1.12",
         "collectable": true,
@@ -10523,7 +10523,7 @@
         "id": 534,
         "icon": "lime_concrete_powder.png",
         "type": "construcao",
-        "name": "Cimento Verde-lim\u00e3o",
+        "name": "Cimento Verde-Lim\u00e3o",
         "internal_name": "lime_concrete_powder",
         "version": "1.12",
         "collectable": true,
@@ -10589,7 +10589,7 @@
         "id": 537,
         "icon": "light_gray_concrete_powder.png",
         "type": "construcao",
-        "name": "Cimento Cinza-claro",
+        "name": "Cimento Cinza-Claro",
         "internal_name": "light_gray_concrete_powder",
         "version": "1.12",
         "collectable": true,
@@ -10765,7 +10765,7 @@
         "id": 545,
         "icon": "dead_tube_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-tubo Morto",
+        "name": "Bloco de Coral-de-Tubo Morto",
         "internal_name": "dead_tube_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10780,7 +10780,7 @@
         "id": 546,
         "icon": "dead_brain_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-c\u00e9rebro Morto",
+        "name": "Bloco de Coral-de-C\u00e9rebro Morto",
         "internal_name": "dead_brain_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10795,7 +10795,7 @@
         "id": 547,
         "icon": "dead_bubble_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-bolha Morto",
+        "name": "Bloco de Coral-de-Bolha Morto",
         "internal_name": "dead_bubble_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10810,7 +10810,7 @@
         "id": 548,
         "icon": "dead_fire_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-fogo Morto",
+        "name": "Bloco de Coral-de-Fogo Morto",
         "internal_name": "dead_fire_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10825,7 +10825,7 @@
         "id": 549,
         "icon": "dead_horn_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-chifre Morto",
+        "name": "Bloco de Coral-de-Chifre Morto",
         "internal_name": "dead_horn_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10840,7 +10840,7 @@
         "id": 550,
         "icon": "tube_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-tubo",
+        "name": "Bloco de Coral-de-Tubo",
         "internal_name": "tube_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10855,7 +10855,7 @@
         "id": 551,
         "icon": "brain_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-c\u00e9rebro",
+        "name": "Bloco de Coral-de-C\u00e9rebro",
         "internal_name": "brain_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10870,7 +10870,7 @@
         "id": 552,
         "icon": "bubble_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-bolha",
+        "name": "Bloco de Coral-de-Bolha",
         "internal_name": "bubble_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10885,7 +10885,7 @@
         "id": 553,
         "icon": "fire_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-fogo",
+        "name": "Bloco de Coral-de-Fogo",
         "internal_name": "fire_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -10900,7 +10900,7 @@
         "id": 554,
         "icon": "horn_coral_block.png",
         "type": "construcao",
-        "name": "Bloco de Coral-de-chifre",
+        "name": "Bloco de Coral-de-Chifre",
         "internal_name": "horn_coral_block",
         "version": "1.13",
         "collectable": true,
@@ -11685,7 +11685,7 @@
         "id": 590,
         "icon": "blackstone_slab.png",
         "type": "construcao",
-        "name": "Laje de Pedra-negra",
+        "name": "Laje de Pedra-Negra",
         "internal_name": "blackstone_slab",
         "version": "1.16",
         "collectable": true,
@@ -11707,7 +11707,7 @@
         "id": 591,
         "icon": "blackstone_stairs.png",
         "type": "construcao",
-        "name": "Escadas de Pedra-negra",
+        "name": "Escadas de Pedra-Negra",
         "internal_name": "blackstone_stairs",
         "version": "1.16",
         "collectable": true,
@@ -11729,7 +11729,7 @@
         "id": 592,
         "icon": "polished_blackstone_slab.png",
         "type": "construcao",
-        "name": "Laje de Pedra-negra Polida",
+        "name": "Laje de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_slab",
         "version": "1.16",
         "collectable": true,
@@ -11751,7 +11751,7 @@
         "id": 593,
         "icon": "polished_blackstone_stairs.png",
         "type": "construcao",
-        "name": "Escadas de Pedra-negra Polida",
+        "name": "Escadas de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_stairs",
         "version": "1.16",
         "collectable": true,
@@ -11773,7 +11773,7 @@
         "id": 594,
         "icon": "polished_blackstone_brick_slab.png",
         "type": "construcao",
-        "name": "Laje de Tijolos de Pedra-negra Polida",
+        "name": "Laje de Tijolos de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_brick_slab",
         "version": "1.16",
         "collectable": true,
@@ -11795,7 +11795,7 @@
         "id": 595,
         "icon": "polished_blackstone_brick_stairs.png",
         "type": "construcao",
-        "name": "Escadas de Tijolos de Pedra-negra Polida",
+        "name": "Escadas de Tijolos de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_brick_stairs",
         "version": "1.16",
         "collectable": true,
@@ -12326,7 +12326,7 @@
         "id": 622,
         "icon": "yellow_flower.png",
         "type": "decorativos",
-        "name": "Dente-de-le\u00e3o",
+        "name": "Dente-de-Le\u00e3o",
         "internal_name": "yellow_flower",
         "version": "1.0",
         "collectable": true,
@@ -12356,7 +12356,7 @@
         "id": 624,
         "icon": "blue_orchid.png",
         "type": "decorativos",
-        "name": "Orqu\u00eddea Azul",
+        "name": "Orqu\u00eddea-Azul",
         "internal_name": "blue_orchid",
         "version": "1.7",
         "collectable": true,
@@ -12371,7 +12371,7 @@
         "id": 625,
         "icon": "allium.png",
         "type": "decorativos",
-        "name": "Alho-silvestre",
+        "name": "Alho-Silvestre",
         "internal_name": "allium",
         "version": "1.7",
         "collectable": true,
@@ -12386,7 +12386,7 @@
         "id": 626,
         "icon": "azure_bluet.png",
         "type": "decorativos",
-        "name": "Flor-silvestre-azul",
+        "name": "Flor-Silvestre-Azul",
         "internal_name": "azure_bluet",
         "version": "1.7",
         "collectable": true,
@@ -12506,7 +12506,7 @@
         "id": 634,
         "icon": "lily_of_the_valley.png",
         "type": "decorativos",
-        "name": "L\u00edrio do Vale",
+        "name": "L\u00edrio-do-Vale",
         "internal_name": "lily_of_the_valley",
         "version": "1.14",
         "collectable": true,
@@ -12566,7 +12566,7 @@
         "id": 638,
         "icon": "jukebox.png",
         "type": "decorativos",
-        "name": "Toca-discos",
+        "name": "Toca-Discos",
         "internal_name": "jukebox",
         "version": "1.0",
         "collectable": true,
@@ -12797,7 +12797,7 @@
         "id": 652,
         "icon": "lily_pad.png",
         "type": "decorativos",
-        "name": "Vit\u00f3ria-r\u00e9gia",
+        "name": "Vit\u00f3ria-R\u00e9gia",
         "internal_name": "lily_pad",
         "version": "1.0",
         "collectable": true,
@@ -15082,7 +15082,7 @@
         "id": 758,
         "icon": "light_blue_candle.png",
         "type": "decorativos",
-        "name": "Vela Azul-clara",
+        "name": "Vela Azul-Clara",
         "internal_name": "light_blue_candle",
         "version": "1.17",
         "collectable": true,
@@ -15126,7 +15126,7 @@
         "id": 760,
         "icon": "lime_candle.png",
         "type": "decorativos",
-        "name": "Vela Verde-lim\u00e3o",
+        "name": "Vela Verde-Lim\u00e3o",
         "internal_name": "lime_candle",
         "version": "1.17",
         "collectable": true,
@@ -15192,7 +15192,7 @@
         "id": 763,
         "icon": "light_gray_candle.png",
         "type": "decorativos",
-        "name": "Vela Cinza-clara",
+        "name": "Vela Cinza-Clara",
         "internal_name": "light_gray_candle",
         "version": "1.17",
         "collectable": true,
@@ -15434,7 +15434,7 @@
         "id": 774,
         "icon": "light_blue_banner.png",
         "type": "decorativos",
-        "name": "Estandarte Azul-claro",
+        "name": "Estandarte Azul-Claro",
         "internal_name": "light_blue_banner",
         "version": "1.8",
         "collectable": true,
@@ -15478,7 +15478,7 @@
         "id": 776,
         "icon": "lime_banner.png",
         "type": "decorativos",
-        "name": "Estandarte Verde-lim\u00e3o",
+        "name": "Estandarte Verde-Lim\u00e3o",
         "internal_name": "lime_banner",
         "version": "1.8",
         "collectable": true,
@@ -15544,7 +15544,7 @@
         "id": 779,
         "icon": "light_gray_banner.png",
         "type": "decorativos",
-        "name": "Estandarte Cinza-claro",
+        "name": "Estandarte Cinza-Claro",
         "internal_name": "light_gray_banner",
         "version": "1.8",
         "collectable": true,
@@ -15950,7 +15950,7 @@
         "id": 798,
         "icon": "light_blue_bed.png",
         "type": "decorativos",
-        "name": "Cama Azul-clara",
+        "name": "Cama Azul-Clara",
         "internal_name": "light_blue_bed",
         "version": "1.12",
         "collectable": true,
@@ -15994,7 +15994,7 @@
         "id": 800,
         "icon": "lime_bed.png",
         "type": "decorativos",
-        "name": "Cama Verde-lim\u00e3o",
+        "name": "Cama Verde-Lim\u00e3o",
         "internal_name": "lime_bed",
         "version": "1.12",
         "collectable": true,
@@ -16060,7 +16060,7 @@
         "id": 803,
         "icon": "light_gray_bed.png",
         "type": "decorativos",
-        "name": "Cama Cinza-clara",
+        "name": "Cama Cinza-Clara",
         "internal_name": "light_gray_bed",
         "version": "1.12",
         "collectable": true,
@@ -16843,7 +16843,7 @@
         "id": 839,
         "icon": "blackstone_wall.png",
         "type": "decorativos",
-        "name": "Muro de Pedra-negra",
+        "name": "Muro de Pedra-Negra",
         "internal_name": "blackstone_wall",
         "version": "1.16",
         "collectable": true,
@@ -16865,7 +16865,7 @@
         "id": 840,
         "icon": "polished_blackstone_wall.png",
         "type": "decorativos",
-        "name": "Muro de Pedra-negra Polida",
+        "name": "Muro de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_wall",
         "version": "1.16",
         "collectable": true,
@@ -16887,7 +16887,7 @@
         "id": 841,
         "icon": "polished_blackstone_brick_wall.png",
         "type": "decorativos",
-        "name": "Muro de Tijolos de Pedra-negra Polida",
+        "name": "Muro de Tijolos de Pedra-Negra Polida",
         "internal_name": "polished_blackstone_brick_wall",
         "version": "1.16",
         "collectable": true,
@@ -17085,7 +17085,7 @@
         "id": 850,
         "icon": "light_blue_carpet.png",
         "type": "decorativos",
-        "name": "Tapete Azul-claro",
+        "name": "Tapete Azul-Claro",
         "internal_name": "light_blue_carpet",
         "version": "1.6",
         "collectable": true,
@@ -17129,7 +17129,7 @@
         "id": 852,
         "icon": "lime_carpet.png",
         "type": "decorativos",
-        "name": "Tapete Verde-lim\u00e3o",
+        "name": "Tapete Verde-Lim\u00e3o",
         "internal_name": "lime_carpet",
         "version": "1.6",
         "collectable": true,
@@ -17195,7 +17195,7 @@
         "id": 855,
         "icon": "light_gray_carpet.png",
         "type": "decorativos",
-        "name": "Tapete Cinza-claro",
+        "name": "Tapete Cinza-Claro",
         "internal_name": "light_gray_carpet",
         "version": "1.6",
         "collectable": true,
@@ -17564,7 +17564,7 @@
         "id": 874,
         "icon": "light_blue_shulker_box.png",
         "type": "decorativos",
-        "name": "Caixa de Shulker Azul-clara",
+        "name": "Caixa de Shulker Azul-Clara",
         "internal_name": "light_blue_shulker_box",
         "version": "1.11",
         "collectable": true,
@@ -17608,7 +17608,7 @@
         "id": 876,
         "icon": "lime_shulker_box.png",
         "type": "decorativos",
-        "name": "Caixa de Shulker Verde-lim\u00e3o",
+        "name": "Caixa de Shulker Verde-Lim\u00e3o",
         "internal_name": "lime_shulker_box",
         "version": "1.11",
         "collectable": true,
@@ -17674,7 +17674,7 @@
         "id": 879,
         "icon": "light_gray_shulker_box.png",
         "type": "decorativos",
-        "name": "Caixa de Shulker Cinza-clara",
+        "name": "Caixa de Shulker Cinza-Clara",
         "internal_name": "light_gray_shulker_box",
         "version": "1.11",
         "collectable": true,
@@ -17895,7 +17895,7 @@
         "id": 890,
         "icon": "light_blue_glazed_terracotta.png",
         "type": "decorativos",
-        "name": "Azulejo Azul-claro",
+        "name": "Azulejo Azul-Claro",
         "internal_name": "light_blue_glazed_terracotta",
         "version": "1.12",
         "collectable": true,
@@ -17925,7 +17925,7 @@
         "id": 892,
         "icon": "lime_glazed_terracotta.png",
         "type": "decorativos",
-        "name": "Azulejo Verde-lim\u00e3o",
+        "name": "Azulejo Verde-Lim\u00e3o",
         "internal_name": "lime_glazed_terracotta",
         "version": "1.12",
         "collectable": true,
@@ -17970,7 +17970,7 @@
         "id": 895,
         "icon": "light_gray_glazed_terracotta.png",
         "type": "decorativos",
-        "name": "Azulejo Cinza-claro",
+        "name": "Azulejo Cinza-Claro",
         "internal_name": "light_gray_glazed_terracotta",
         "version": "1.12",
         "collectable": true,
@@ -18156,7 +18156,7 @@
         "id": 906,
         "icon": "light_blue_dye.png",
         "type": "diversos",
-        "name": "Corante Azul-claro",
+        "name": "Corante Azul-Claro",
         "internal_name": "light_blue_dye",
         "version": "1.0",
         "collectable": true,
@@ -18200,7 +18200,7 @@
         "id": 908,
         "icon": "lime_dye.png",
         "type": "diversos",
-        "name": "Corante Verde-lim\u00e3o",
+        "name": "Corante Verde-Lim\u00e3o",
         "internal_name": "lime_dye",
         "version": "1.0",
         "collectable": true,
@@ -18266,7 +18266,7 @@
         "id": 911,
         "icon": "light_gray_dye.png",
         "type": "diversos",
-        "name": "Corante Cinza-claro",
+        "name": "Corante Cinza-Claro",
         "internal_name": "light_gray_dye",
         "version": "1.0",
         "collectable": true,
@@ -18611,7 +18611,7 @@
         "id": 928,
         "icon": "zombie_horse_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo Gerador de Cavalo-zumbi",
+        "name": "Ovo Gerador de Cavalo-Zumbi",
         "internal_name": "zombie_horse_spawn_egg",
         "version": "1.10",
         "collectable": false,
@@ -18641,7 +18641,7 @@
         "id": 930,
         "icon": "zombified_piglin_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo Gerador de Piglin-zumbi",
+        "name": "Ovo Gerador de Piglin-Zumbi",
         "internal_name": "zombified_piglin_spawn_egg",
         "version": "1.1",
         "collectable": false,
@@ -18761,7 +18761,7 @@
         "id": 938,
         "icon": "elder_guardian_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo Gerador de Guardi\u00e3o-mestre",
+        "name": "Ovo Gerador de Guardi\u00e3o-Mestre",
         "internal_name": "elder_guardian_spawn_egg",
         "version": "1.10",
         "collectable": false,
@@ -18896,7 +18896,7 @@
         "id": 947,
         "icon": "husk_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo Gerador de Zumbi-m\u00famia",
+        "name": "Ovo Gerador de Zumbi-M\u00famia",
         "internal_name": "husk_spawn_egg",
         "version": "1.10",
         "collectable": false,
@@ -19331,7 +19331,7 @@
         "id": 976,
         "icon": "skeleton_horse_spawn_egg.png",
         "type": "diversos",
-        "name": "Ovo Gerador de Cavalo-esqueleto",
+        "name": "Ovo Gerador de Cavalo-Esqueleto",
         "internal_name": "skeleton_horse_spawn_egg",
         "version": "1.10",
         "collectable": false,
@@ -19346,7 +19346,7 @@
         "id": 977,
         "icon": "lapis_lazuli.png",
         "type": "diversos",
-        "name": "L\u00e1pis-laz\u00fali",
+        "name": "L\u00e1pis-Laz\u00fali",
         "internal_name": "lapis_lazuli",
         "version": "1.0",
         "collectable": true,
@@ -19514,6 +19514,11 @@
         "craftable": false,
         "hide": false,
         "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "durability": [
             {
                 "value": 165
@@ -19699,6 +19704,11 @@
         "craftable": false,
         "hide": false,
         "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "durability": [
             {
                 "value": 240
@@ -19852,6 +19862,11 @@
         "craftable": false,
         "hide": false,
         "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "durability": [
             {
                 "value": 195
@@ -20005,6 +20020,11 @@
         "craftable": false,
         "hide": false,
         "legacy": true,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
         "durability": [
             {
                 "value": 225
@@ -20209,7 +20229,7 @@
         ],
         "description": [
             {
-                "value": "[&1Invisibilidade (0:22)"
+                "value": "[&1Invisibilidade (0:22)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -20236,7 +20256,7 @@
         ],
         "description": [
             {
-                "value": "[&1Invisibilidade (1:00)"
+                "value": "[&1Invisibilidade (1:00)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -20541,7 +20561,7 @@
         "id": 1020,
         "icon": "tipped_arrow7.png",
         "type": "combate",
-        "name": "Flecha do Mestre-tartaruga",
+        "name": "Flecha do Mestre-Tartaruga",
         "internal_name": "tipped_arrow",
         "version": "1.13",
         "collectable": true,
@@ -20568,7 +20588,7 @@
         "id": 1021,
         "icon": "tipped_arrow7.png",
         "type": "combate",
-        "name": "Flecha do Mestre-tartaruga",
+        "name": "Flecha do Mestre-Tartaruga",
         "internal_name": "tipped_arrow",
         "version": "1.13",
         "collectable": true,
@@ -20595,7 +20615,7 @@
         "id": 1022,
         "icon": "tipped_arrow7.png",
         "type": "combate",
-        "name": "Flecha do Mestre-tartaruga",
+        "name": "Flecha do Mestre-Tartaruga",
         "internal_name": "tipped_arrow",
         "version": "1.13",
         "collectable": true,
@@ -21267,7 +21287,7 @@
         "id": 1050,
         "icon": "sugar_cane.png",
         "type": "decorativos",
-        "name": "Cana-de-a\u00e7\u00facar",
+        "name": "Cana-de-A\u00e7\u00facar",
         "internal_name": "sugar_cane",
         "version": "1.0",
         "collectable": true,
@@ -21628,7 +21648,7 @@
         "id": 1091,
         "icon": "brain_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-c\u00e9rebro",
+        "name": "Coral-de-C\u00e9rebro",
         "internal_name": "brain_coral",
         "version": "1.13",
         "collectable": true,
@@ -21643,7 +21663,7 @@
         "id": 1093,
         "icon": "tube_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-tubo",
+        "name": "Coral-de-Tubo",
         "internal_name": "tube_coral",
         "version": "1.13",
         "collectable": true,
@@ -21658,7 +21678,7 @@
         "id": 1094,
         "icon": "bubble_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-bolha",
+        "name": "Coral-de-Bolha",
         "internal_name": "bubble_coral",
         "version": "1.13",
         "collectable": true,
@@ -21673,7 +21693,7 @@
         "id": 1095,
         "icon": "fire_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-fogo",
+        "name": "Coral-de-Fogo",
         "internal_name": "fire_coral",
         "version": "1.13",
         "collectable": true,
@@ -21688,7 +21708,7 @@
         "id": 1096,
         "icon": "horn_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-chifre",
+        "name": "Coral-de-Chifre",
         "internal_name": "horn_coral",
         "version": "1.13",
         "collectable": true,
@@ -21703,7 +21723,7 @@
         "id": 1097,
         "icon": "dead_brain_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-c\u00e9rero Morto",
+        "name": "Coral-de-C\u00e9rero Morto",
         "internal_name": "dead_brain_coral",
         "version": "1.13",
         "collectable": true,
@@ -21718,7 +21738,7 @@
         "id": 1098,
         "icon": "dead_tube_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-tubo Morto",
+        "name": "Coral-de-Tubo Morto",
         "internal_name": "dead_tube_coral",
         "version": "1.13",
         "collectable": true,
@@ -21733,7 +21753,7 @@
         "id": 1099,
         "icon": "dead_bubble_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-bolha Morto",
+        "name": "Coral-de-Bolha Morto",
         "internal_name": "dead_bubble_coral",
         "version": "1.13",
         "collectable": true,
@@ -21748,7 +21768,7 @@
         "id": 1100,
         "icon": "dead_fire_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-fogo Morto",
+        "name": "Coral-de-Fogo Morto",
         "internal_name": "dead_fire_coral",
         "version": "1.13",
         "collectable": true,
@@ -21763,7 +21783,7 @@
         "id": 1101,
         "icon": "dead_horn_coral.png",
         "type": "decorativos",
-        "name": "Coral-de-chifre Morto",
+        "name": "Coral-de-Chifre Morto",
         "internal_name": "dead_horn_coral",
         "version": "1.13",
         "collectable": true,
@@ -21778,7 +21798,7 @@
         "id": 1102,
         "icon": "brain_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-c\u00e9rebro",
+        "name": "Gorg\u00f4nia-de-C\u00e9rebro",
         "internal_name": "brain_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21793,7 +21813,7 @@
         "id": 1103,
         "icon": "tube_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-tubo",
+        "name": "Gorg\u00f4nia-de-Tubo",
         "internal_name": "tube_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21808,7 +21828,7 @@
         "id": 1104,
         "icon": "bubble_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-bolha",
+        "name": "Gorg\u00f4nia-de-Bolha",
         "internal_name": "bubble_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21823,7 +21843,7 @@
         "id": 1105,
         "icon": "fire_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-fogo",
+        "name": "Gorg\u00f4nia-de-Fogo",
         "internal_name": "fire_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21838,7 +21858,7 @@
         "id": 1106,
         "icon": "horn_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-chifre",
+        "name": "Gorg\u00f4nia-de-Chifre",
         "internal_name": "horn_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21853,7 +21873,7 @@
         "id": 1107,
         "icon": "dead_brain_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-c\u00e9rebro Morta",
+        "name": "Gorg\u00f4nia-de-C\u00e9rebro Morta",
         "internal_name": "dead_brain_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21868,7 +21888,7 @@
         "id": 1108,
         "icon": "dead_tube_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-tubo Morta",
+        "name": "Gorg\u00f4nia-de-Tubo Morta",
         "internal_name": "dead_tube_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21883,7 +21903,7 @@
         "id": 1109,
         "icon": "dead_bubble_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-bolha Morta",
+        "name": "Gorg\u00f4nia-de-Bolha Morta",
         "internal_name": "dead_bubble_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21898,7 +21918,7 @@
         "id": 1110,
         "icon": "dead_fire_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-fogo Morta",
+        "name": "Gorg\u00f4nia-de-Fogo Morta",
         "internal_name": "dead_fire_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -21913,7 +21933,7 @@
         "id": 1111,
         "icon": "dead_horn_coral_fan.png",
         "type": "decorativos",
-        "name": "Gorg\u00f4nia-de-chifre Morta",
+        "name": "Gorg\u00f4nia-de-Chifre Morta",
         "internal_name": "dead_horn_coral_fan",
         "version": "1.13",
         "collectable": true,
@@ -22261,7 +22281,7 @@
         "id": 1128,
         "icon": "light_gray_stained_glass_pane.png",
         "type": "decorativos",
-        "name": "Vidra\u00e7a Cinza-clara",
+        "name": "Vidra\u00e7a Cinza-Clara",
         "internal_name": "light_gray_stained_glass_pane",
         "version": "1.7",
         "collectable": true,
@@ -22327,7 +22347,7 @@
         "id": 1131,
         "icon": "lime_stained_glass_pane.png",
         "type": "decorativos",
-        "name": "Vidra\u00e7a Verde-lim\u00e3o",
+        "name": "Vidra\u00e7a Verde-Lim\u00e3o",
         "internal_name": "lime_stained_glass_pane",
         "version": "1.7",
         "collectable": true,
@@ -22371,7 +22391,7 @@
         "id": 1133,
         "icon": "light_blue_stained_glass_pane.png",
         "type": "decorativos",
-        "name": "Vidra\u00e7a Azul-clara",
+        "name": "Vidra\u00e7a Azul-Clara",
         "internal_name": "light_blue_stained_glass_pane",
         "version": "1.7",
         "collectable": true,
@@ -22613,7 +22633,7 @@
         "id": 1144,
         "icon": "light_gray_stained_glass.png",
         "type": "construcao",
-        "name": "Vidro Cinza-claro",
+        "name": "Vidro Cinza-Claro",
         "internal_name": "light_gray_stained_glass",
         "version": "1.7",
         "collectable": true,
@@ -22679,7 +22699,7 @@
         "id": 1147,
         "icon": "lime_stained_glass.png",
         "type": "construcao",
-        "name": "Vidro Verde-lim\u00e3o",
+        "name": "Vidro Verde-Lim\u00e3o",
         "internal_name": "lime_stained_glass",
         "version": "1.7",
         "collectable": true,
@@ -22723,7 +22743,7 @@
         "id": 1149,
         "icon": "light_blue_stained_glass.png",
         "type": "construcao",
-        "name": "Vidro Azul-claro",
+        "name": "Vidro Azul-Claro",
         "internal_name": "light_blue_stained_glass",
         "version": "1.7",
         "collectable": true,
@@ -23198,7 +23218,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&1Invisibilidade (3:00)"
+                "value": "[&1Invisibilidade (3:00)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -23218,7 +23238,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&1Invisibilidade (8:00)"
+                "value": "[&1Invisibilidade (8:00)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -23446,7 +23466,7 @@
         "id": 1185,
         "icon": "potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o do Mestre-Tartaruga",
         "internal_name": "potion",
         "version": "1.13",
         "collectable": true,
@@ -23466,7 +23486,7 @@
         "id": 1186,
         "icon": "potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o do Mestre-Tartaruga",
         "internal_name": "potion",
         "version": "1.13",
         "collectable": true,
@@ -23486,7 +23506,7 @@
         "id": 1187,
         "icon": "potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o do Mestre-Tartaruga",
         "internal_name": "potion",
         "version": "1.13",
         "collectable": true,
@@ -23638,7 +23658,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&1Invisibilidade (3:00)"
+                "value": "[&1Invisibilidade (3:00)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -23658,7 +23678,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&1Invisibilidade (8:00)"
+                "value": "[&1Invisibilidade (8:00)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -23886,7 +23906,7 @@
         "id": 1207,
         "icon": "splash_potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o Arremess\u00e1vel do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o Arremess\u00e1vel do Mestre-Tartaruga",
         "internal_name": "splash_potion",
         "version": "1.13",
         "collectable": true,
@@ -23906,7 +23926,7 @@
         "id": 1208,
         "icon": "splash_potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o Arremess\u00e1vel do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o Arremess\u00e1vel do Mestre-Tartaruga",
         "internal_name": "splash_potion",
         "version": "1.13",
         "collectable": true,
@@ -23926,7 +23946,7 @@
         "id": 1209,
         "icon": "splash_potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o Arremess\u00e1vel do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o Arremess\u00e1vel do Mestre-Tartaruga",
         "internal_name": "splash_potion",
         "version": "1.13",
         "collectable": true,
@@ -24478,7 +24498,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&1Invisibilidade (0:45)"
+                "value": "[&1Invisibilidade (0:45)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -24498,7 +24518,7 @@
         "legacy": true,
         "description": [
             {
-                "value": "[&1Invisibilidade (2:00)"
+                "value": "[&1Invisibilidade (2:00)[&r[&3Efeito aplicado:[&2Alcance de transmiss\u00e3o do marcador: -100%"
             }
         ]
     },
@@ -24726,7 +24746,7 @@
         "id": 1249,
         "icon": "lingering_potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o Prolongada do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o Prolongada do Mestre-Tartaruga",
         "internal_name": "lingering_potion",
         "version": "1.13",
         "collectable": true,
@@ -24746,7 +24766,7 @@
         "id": 1250,
         "icon": "lingering_potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o Prolongada do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o Prolongada do Mestre-Tartaruga",
         "internal_name": "lingering_potion",
         "version": "1.13",
         "collectable": true,
@@ -24766,7 +24786,7 @@
         "id": 1251,
         "icon": "lingering_potion7.png",
         "type": "pocoes",
-        "name": "Po\u00e7\u00e3o Prolongada do Mestre-tartaruga",
+        "name": "Po\u00e7\u00e3o Prolongada do Mestre-Tartaruga",
         "internal_name": "lingering_potion",
         "version": "1.13",
         "collectable": true,
@@ -25218,12 +25238,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&2Maldi\u00e7\u00e3o do desaparecimento"
+                "value": "[&2Maldi\u00e7\u00e3o do Desaparecimento"
             }
         ]
     },
@@ -25243,7 +25263,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25268,12 +25288,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&2Maldi\u00e7\u00e3o do ligamento"
+                "value": "[&2Maldi\u00e7\u00e3o do Ligamento"
             }
         ]
     },
@@ -25293,7 +25313,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25318,7 +25338,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25343,7 +25363,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25368,7 +25388,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25393,7 +25413,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25418,7 +25438,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25443,12 +25463,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rToque suave"
+                "value": "[&rToque Suave"
             }
         ]
     },
@@ -25468,7 +25488,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25493,7 +25513,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25518,7 +25538,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25543,12 +25563,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rDurabilidade I"
+                "value": "[&rInquebr\u00e1vel I"
             }
         ]
     },
@@ -25568,12 +25588,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rDurabilidade II"
+                "value": "[&rInquebr\u00e1vel II"
             }
         ]
     },
@@ -25593,12 +25613,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rDurabilidade III"
+                "value": "[&rInquebr\u00e1vel III"
             }
         ]
     },
@@ -25618,12 +25638,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rSorte do mar I"
+                "value": "[&rSorte do Mar I"
             }
         ]
     },
@@ -25643,12 +25663,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rSorte do mar II"
+                "value": "[&rSorte do Mar II"
             }
         ]
     },
@@ -25668,12 +25688,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rSorte do mar III"
+                "value": "[&rSorte do Mar III"
             }
         ]
     },
@@ -25693,7 +25713,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25718,7 +25738,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25743,7 +25763,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25768,7 +25788,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25793,7 +25813,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25818,7 +25838,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25843,7 +25863,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25868,7 +25888,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25893,7 +25913,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -25918,12 +25938,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra o fogo I"
+                "value": "[&rProte\u00e7\u00e3o contra Fogo I"
             }
         ]
     },
@@ -25943,12 +25963,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra o fogo II"
+                "value": "[&rProte\u00e7\u00e3o contra Fogo II"
             }
         ]
     },
@@ -25968,12 +25988,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra o fogo III"
+                "value": "[&rProte\u00e7\u00e3o contra Fogo III"
             }
         ]
     },
@@ -25993,12 +26013,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra o fogo IV"
+                "value": "[&rProte\u00e7\u00e3o contra Fogo IV"
             }
         ]
     },
@@ -26018,12 +26038,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPeso-pena I"
+                "value": "[&rPeso-Pena I"
             }
         ]
     },
@@ -26043,12 +26063,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPeso-pena II"
+                "value": "[&rPeso-Pena II"
             }
         ]
     },
@@ -26068,12 +26088,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPeso-pena III"
+                "value": "[&rPeso-Pena III"
             }
         ]
     },
@@ -26093,12 +26113,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPeso-pena IV"
+                "value": "[&rPeso-Pena IV"
             }
         ]
     },
@@ -26118,12 +26138,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra explos\u00f5es I"
+                "value": "[&rProte\u00e7\u00e3o contra Explos\u00f5es I"
             }
         ]
     },
@@ -26143,12 +26163,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra explos\u00f5es II"
+                "value": "[&rProte\u00e7\u00e3o contra Explos\u00f5es II"
             }
         ]
     },
@@ -26168,12 +26188,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra explos\u00f5es III"
+                "value": "[&rProte\u00e7\u00e3o contra Explos\u00f5es III"
             }
         ]
     },
@@ -26193,12 +26213,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra explos\u00f5es IV"
+                "value": "[&rProte\u00e7\u00e3o contra Explos\u00f5es IV"
             }
         ]
     },
@@ -26218,12 +26238,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra proj\u00e9teis I"
+                "value": "[&rProte\u00e7\u00e3o contra Proj\u00e9teis I"
             }
         ]
     },
@@ -26243,12 +26263,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra proj\u00e9teis II"
+                "value": "[&rProte\u00e7\u00e3o contra Proj\u00e9teis II"
             }
         ]
     },
@@ -26268,12 +26288,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra proj\u00e9teis III"
+                "value": "[&rProte\u00e7\u00e3o contra Proj\u00e9teis III"
             }
         ]
     },
@@ -26293,12 +26313,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rProte\u00e7\u00e3o contra proj\u00e9teis IV"
+                "value": "[&rProte\u00e7\u00e3o contra Proj\u00e9teis IV"
             }
         ]
     },
@@ -26318,7 +26338,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26343,7 +26363,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26368,7 +26388,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26393,12 +26413,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rAfinidade aqu\u00e1tica"
+                "value": "[&rAfinidade Aqu\u00e1tica"
             }
         ]
     },
@@ -26418,7 +26438,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26443,7 +26463,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26468,7 +26488,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26493,12 +26513,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos profundos I"
+                "value": "[&rPassos Profundos I"
             }
         ]
     },
@@ -26518,12 +26538,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos profundos II"
+                "value": "[&rPassos Profundos II"
             }
         ]
     },
@@ -26543,12 +26563,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos profundos III"
+                "value": "[&rPassos Profundos III"
             }
         ]
     },
@@ -26568,12 +26588,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos gelados I"
+                "value": "[&rPassos Gelados I"
             }
         ]
     },
@@ -26589,41 +26609,16 @@
         "renewable": true,
         "stackable": 0,
         "craftable": false,
-        "hide": true,
-        "legacy": true,
-        "title": [
-            {
-                "type": 2
-            }
-        ],
-        "description": [
-            {
-                "value": "[&rPassos gelados II"
-            }
-        ]
-    },
-    {
-        "id": 1330,
-        "icon": "enchanted_book.png",
-        "type": "combate",
-        "name": "Livro Encantado",
-        "internal_name": "enchanted_book",
-        "version": "1.9",
-        "collectable": true,
-        "released": true,
-        "renewable": true,
-        "stackable": 0,
-        "craftable": false,
         "hide": false,
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos gelados III"
+                "value": "[&rPassos Gelados II"
             }
         ]
     },
@@ -26643,12 +26638,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rVelocidade das almas I"
+                "value": "[&rVelocidade das Almas I"
             }
         ]
     },
@@ -26668,12 +26663,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rVelocidade das almas II"
+                "value": "[&rVelocidade das Almas II"
             }
         ]
     },
@@ -26693,12 +26688,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rVelocidade das almas III"
+                "value": "[&rVelocidade das Almas III"
             }
         ]
     },
@@ -26718,7 +26713,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26743,7 +26738,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26768,7 +26763,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26793,7 +26788,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26818,7 +26813,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26843,7 +26838,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26868,7 +26863,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26893,7 +26888,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26918,7 +26913,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26943,7 +26938,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -26968,12 +26963,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRu\u00edna dos artr\u00f3podes I"
+                "value": "[&rRu\u00edna dos Artr\u00f3podes I"
             }
         ]
     },
@@ -26993,12 +26988,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRu\u00edna dos artr\u00f3podes II"
+                "value": "[&rRu\u00edna dos Artr\u00f3podes II"
             }
         ]
     },
@@ -27018,12 +27013,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRu\u00edna dos artr\u00f3podes III"
+                "value": "[&rRu\u00edna dos Artr\u00f3podes III"
             }
         ]
     },
@@ -27043,12 +27038,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRu\u00edna dos artr\u00f3podes IV"
+                "value": "[&rRu\u00edna dos Artr\u00f3podes IV"
             }
         ]
     },
@@ -27068,12 +27063,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRu\u00edna dos artr\u00f3podes V"
+                "value": "[&rRu\u00edna dos Artr\u00f3podes V"
             }
         ]
     },
@@ -27093,7 +27088,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27118,7 +27113,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27143,12 +27138,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rAspecto flamejante I"
+                "value": "[&rAspecto Flamejante I"
             }
         ]
     },
@@ -27168,12 +27163,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rAspecto flamejante II"
+                "value": "[&rAspecto Flamejante II"
             }
         ]
     },
@@ -27193,7 +27188,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27218,7 +27213,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27243,7 +27238,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27268,7 +27263,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27293,7 +27288,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27318,7 +27313,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27343,12 +27338,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rDurabilidade I"
+                "value": "[&rInquebr\u00e1vel I"
             }
         ]
     },
@@ -27368,12 +27363,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rDurabilidade II"
+                "value": "[&rInquebr\u00e1vel II"
             }
         ]
     },
@@ -27393,12 +27388,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rDurabilidade III"
+                "value": "[&rInquebr\u00e1vel III"
             }
         ]
     },
@@ -27418,7 +27413,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27443,7 +27438,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27468,7 +27463,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27493,7 +27488,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27518,7 +27513,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27543,7 +27538,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27568,7 +27563,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27593,7 +27588,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27618,7 +27613,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27643,7 +27638,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27668,12 +27663,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPenetra\u00e7\u00e3o I"
+                "value": "[&rEmpalamento I"
             }
         ]
     },
@@ -27693,12 +27688,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPenetra\u00e7\u00e3o II"
+                "value": "[&rEmpalamento II"
             }
         ]
     },
@@ -27718,12 +27713,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPenetra\u00e7\u00e3o III"
+                "value": "[&rEmpalamento III"
             }
         ]
     },
@@ -27743,12 +27738,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPenetra\u00e7\u00e3o IV"
+                "value": "[&rEmpalamento IV"
             }
         ]
     },
@@ -27768,12 +27763,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPenetra\u00e7\u00e3o V"
+                "value": "[&rEmpalamento V"
             }
         ]
     },
@@ -27793,7 +27788,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27818,7 +27813,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27843,7 +27838,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27868,7 +27863,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27893,12 +27888,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rCarga r\u00e1pida I"
+                "value": "[&rCarga R\u00e1pida I"
             }
         ]
     },
@@ -27918,12 +27913,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rCarga r\u00e1pida II"
+                "value": "[&rCarga R\u00e1pida II"
             }
         ]
     },
@@ -27943,12 +27938,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rCarga r\u00e1pida III"
+                "value": "[&rCarga R\u00e1pida III"
             }
         ]
     },
@@ -27968,7 +27963,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -27993,7 +27988,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -28018,7 +28013,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -28043,7 +28038,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -28217,7 +28212,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,,,,,1411",
+                "recipe": ",,,,1411,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -28965,12 +28960,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos furtivos I"
+                "value": "[&rPassos Furtivos I"
             }
         ]
     },
@@ -28990,12 +28985,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos furtivos II"
+                "value": "[&rPassos Furtivos II"
             }
         ]
     },
@@ -29015,12 +29010,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rPassos furtivos III"
+                "value": "[&rPassos Furtivos III"
             }
         ]
     },
@@ -29740,7 +29735,7 @@
         "id": 1480,
         "icon": "chiseled_bookshelf.png",
         "type": "redstone",
-        "name": "Porta-livros",
+        "name": "Porta-Livros",
         "internal_name": "chiseled_bookshelf",
         "version": "1.20",
         "collectable": true,
@@ -32646,7 +32641,7 @@
         "id": 1615,
         "icon": "tipped_arrow.png",
         "type": "combate",
-        "name": "Flecha com Efeito",
+        "name": "Flecha sem Efeito",
         "internal_name": "tipped_arrow",
         "version": "1.9",
         "collectable": true,
@@ -34374,7 +34369,7 @@
         ],
         "description": [
             {
-                "value": "[&1Mau press\u00e1gio (01:40:00)"
+                "value": "[&1Mau Press\u00e1gio (01:40:00)"
             }
         ]
     },
@@ -34757,7 +34752,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -34782,7 +34777,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -34807,7 +34802,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -34832,7 +34827,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -34857,12 +34852,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRajada de vento I"
+                "value": "[&rRajada de Vento I"
             }
         ]
     },
@@ -34882,12 +34877,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRajada de vento II"
+                "value": "[&rRajada de Vento II"
             }
         ]
     },
@@ -34907,12 +34902,12 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
             {
-                "value": "[&rRajada de vento III"
+                "value": "[&rRajada de Vento III"
             }
         ]
     },
@@ -34932,7 +34927,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -34957,7 +34952,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -34982,7 +34977,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -35007,7 +35002,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -35032,7 +35027,7 @@
         "legacy": true,
         "title": [
             {
-                "type": 2
+                "type": 1
             }
         ],
         "description": [
@@ -35062,7 +35057,7 @@
         ],
         "description": [
             {
-                "value": "[&1Mau press\u00e1gio II (01:40:00)"
+                "value": "[&1Mau Press\u00e1gio II (01:40:00)"
             }
         ]
     },
@@ -35087,7 +35082,7 @@
         ],
         "description": [
             {
-                "value": "[&1Mau press\u00e1gio III (01:40:00)"
+                "value": "[&1Mau Press\u00e1gio III (01:40:00)"
             }
         ]
     },
@@ -35112,7 +35107,7 @@
         ],
         "description": [
             {
-                "value": "[&1Mau press\u00e1gio IV (01:40:00)"
+                "value": "[&1Mau Press\u00e1gio IV (01:40:00)"
             }
         ]
     },
@@ -35137,7 +35132,7 @@
         ],
         "description": [
             {
-                "value": "[&1Mau press\u00e1gio V (01:40:00)"
+                "value": "[&1Mau Press\u00e1gio V (01:40:00)"
             }
         ]
     },
@@ -35701,7 +35696,7 @@
         "id": 1756,
         "icon": "light_gray_bundle.png",
         "type": "ferramentas",
-        "name": "Trouxa Cinza-clara",
+        "name": "Trouxa Cinza-Clara",
         "internal_name": "light_gray_bundle",
         "version": "1.21",
         "collectable": true,
@@ -35855,7 +35850,7 @@
         "id": 1763,
         "icon": "lime_bundle.png",
         "type": "ferramentas",
-        "name": "Trouxa Verde-lim\u00e3o",
+        "name": "Trouxa Verde-Lim\u00e3o",
         "internal_name": "lime_bundle",
         "version": "1.21",
         "collectable": true,
@@ -35921,7 +35916,7 @@
         "id": 1766,
         "icon": "light_blue_bundle.png",
         "type": "ferramentas",
-        "name": "Trouxa Azul-clara",
+        "name": "Trouxa Azul-Clara",
         "internal_name": "light_blue_bundle",
         "version": "1.21",
         "collectable": true,
@@ -36702,7 +36697,7 @@
         "id": 1805,
         "icon": "wildflowers.png",
         "type": "decorativos",
-        "name": "Flores-do-campo",
+        "name": "Flores-do-Campo",
         "internal_name": "wildflowers",
         "version": "1.21",
         "collectable": true,
@@ -36854,7 +36849,7 @@
         "id": 1813,
         "icon": "firefly_bush.png",
         "type": "decorativos",
-        "name": "Arbusto-vaga-lume",
+        "name": "Arbusto-Vaga-Lume",
         "internal_name": "firefly_bush",
         "version": "1.21",
         "collectable": true,
@@ -37145,7 +37140,7 @@
         "id": 1828,
         "icon": "light_gray_harness.png",
         "type": "transportes",
-        "name": "Arreio Cinza-claro",
+        "name": "Arreio Cinza-Claro",
         "internal_name": "light_gray_harness",
         "version": "1.21",
         "collectable": true,
@@ -37189,7 +37184,7 @@
         "id": 1830,
         "icon": "lime_harness.png",
         "type": "transportes",
-        "name": "Arreio Verde-lim\u00e3o",
+        "name": "Arreio Verde-Lim\u00e3o",
         "internal_name": "lime_harness",
         "version": "1.21",
         "collectable": true,
@@ -37321,7 +37316,7 @@
         "id": 1836,
         "icon": "light_blue_harness.png",
         "type": "transportes",
-        "name": "Arreio Azul-claro",
+        "name": "Arreio Azul-Claro",
         "internal_name": "light_blue_harness",
         "version": "1.21",
         "collectable": true,
@@ -38324,7 +38319,7 @@
         "id": 1882,
         "icon": "exposed_lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios Exposto",
+        "name": "Para-Raios Exposto",
         "internal_name": "exposed_lightning_rod",
         "version": "1.21",
         "collectable": true,
@@ -38339,7 +38334,7 @@
         "id": 1883,
         "icon": "weathered_lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios Desgastado",
+        "name": "Para-Raios Desgastado",
         "internal_name": "weathered_lightning_rod",
         "version": "1.21",
         "collectable": true,
@@ -38354,7 +38349,7 @@
         "id": 1884,
         "icon": "oxidized_lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios Oxidado",
+        "name": "Para-Raios Oxidado",
         "internal_name": "oxidized_lightning_rod",
         "version": "1.21",
         "collectable": true,
@@ -38369,7 +38364,7 @@
         "id": 1885,
         "icon": "lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios Encerado",
+        "name": "Para-Raios Encerado",
         "internal_name": "waxed_lightning_rod",
         "version": "1.21",
         "collectable": true,
@@ -38391,7 +38386,7 @@
         "id": 1886,
         "icon": "exposed_lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios Exposto Encerado",
+        "name": "Para-Raios Exposto Encerado",
         "internal_name": "waxed_exposed_lightning_rod",
         "version": "1.21",
         "collectable": true,
@@ -38413,7 +38408,7 @@
         "id": 1887,
         "icon": "weathered_lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios Desgastado Encerado",
+        "name": "Para-Raios Desgastado Encerado",
         "internal_name": "waxed_weathered_lightning_rod",
         "version": "1.21",
         "collectable": true,
@@ -38435,7 +38430,7 @@
         "id": 1888,
         "icon": "oxidized_lightning_rod.png",
         "type": "redstone",
-        "name": "Para-raios Oxidado Encerado",
+        "name": "Para-Raios Oxidado Encerado",
         "internal_name": "waxed_oxidized_lightning_rod",
         "version": "1.21",
         "collectable": true,
