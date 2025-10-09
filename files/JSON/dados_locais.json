@@ -38955,6 +38955,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.54[&s[&rNa m\u00e3o:[&4Dano por golpe: 1"
+            }
         ]
     },
     {
@@ -38976,6 +38981,11 @@
                 "recipe": ",,47,,198,,198,,",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.33[&s[&rNa m\u00e3o:[&4Dano por golpe: 2"
             }
         ]
     },
@@ -38999,6 +39009,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.18[&s[&rNa m\u00e3o:[&4Dano por golpe: 2"
+            }
         ]
     },
     {
@@ -39021,14 +39036,19 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.05[&s[&rNa m\u00e3o:[&4Dano por golpe: 3"
+            }
         ]
     },
     {
         "id": 1918,
-        "icon": "golden_spear.png",
+        "icon": "gold_spear.png",
         "type": "combate",
         "name": "Lan\u00e7a de Ouro",
-        "internal_name": "golden_spear",
+        "internal_name": "gold_spear",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -39042,6 +39062,11 @@
                 "recipe": ",,62,,198,,198,,",
                 "products": 1,
                 "craft_type": 0
+            }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.05[&s[&rNa m\u00e3o:[&4Dano por golpe: 1"
             }
         ]
     },
@@ -39065,6 +39090,11 @@
                 "products": 1,
                 "craft_type": 0
             }
+        ],
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 0.95[&s[&rNa m\u00e3o:[&4Dano por golpe: 4"
+            }
         ]
     },
     {
@@ -39080,11 +39110,16 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 0.87[&s[&rNa m\u00e3o:[&4Dano por golpe: 5"
+            }
+        ]
     },
     {
         "id": 1921,
-        "icon": "nautilus_shell.png",
+        "icon": "nautilus_spawn_egg.png",
         "type": "diversos",
         "name": "Ovo Gerador de N\u00e1utilo",
         "internal_name": "nautilus_spawn_egg",
@@ -39099,7 +39134,7 @@
     },
     {
         "id": 1922,
-        "icon": "nautilus_shell.png",
+        "icon": "zombie_nautilus_spawn_egg.png",
         "type": "diversos",
         "name": "Ovo Gerador de N\u00e1utilo-Zumbi",
         "internal_name": "zombie_nautilus_spawn_egg",
@@ -39114,7 +39149,7 @@
     },
     {
         "id": 1923,
-        "icon": "copper_chestplate.png",
+        "icon": "copper_nautilus_armor.png",
         "type": "diversos",
         "name": "Armadura de Cobre para N\u00e1utilo",
         "internal_name": "copper_nautilus_armor",
@@ -39125,11 +39160,16 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +4"
+            }
+        ]
     },
     {
         "id": 1924,
-        "icon": "iron_chestplate.png",
+        "icon": "iron_nautilus_armor.png",
         "type": "diversos",
         "name": "Armadura de Ferro para N\u00e1utilo",
         "internal_name": "iron_nautilus_armor",
@@ -39140,14 +39180,19 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +5"
+            }
+        ]
     },
     {
         "id": 1925,
-        "icon": "golden_chestplate.png",
+        "icon": "gold_nautilus_armor.png",
         "type": "diversos",
         "name": "Armadura de Ouro para N\u00e1utilo",
-        "internal_name": "golden_nautilus_armor",
+        "internal_name": "gold_nautilus_armor",
         "version": "1.21",
         "collectable": true,
         "released": false,
@@ -39155,11 +39200,16 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +7"
+            }
+        ]
     },
     {
         "id": 1926,
-        "icon": "diamond_chestplate.png",
+        "icon": "diamond_nautilus_armor.png",
         "type": "diversos",
         "name": "Armadura de Diamante para N\u00e1utilo",
         "internal_name": "diamond_nautilus_armor",
@@ -39170,11 +39220,16 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +11[&1Resist\u00eancia da armadura: +2"
+            }
+        ]
     },
     {
         "id": 1927,
-        "icon": "netherite_chestplate.png",
+        "icon": "netherite_nautilus_armor.png",
         "type": "diversos",
         "name": "Armadura de Netherita para N\u00e1utilo",
         "internal_name": "netherite_nautilus_armor",
@@ -39185,6 +39240,86 @@
         "stackable": 0,
         "craftable": false,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&r[&rEm uso:[&1Armadura: +19[&1Resist\u00eancia da armadura: +3[&1Resist\u00eancia \u00e0 repuls\u00e3o: +1"
+            }
+        ]
+    },
+    {
+        "id": 1928,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro Encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rEstocada I"
+            }
+        ]
+    },
+    {
+        "id": 1929,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro Encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": true,
+        "legacy": true,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rEstocada II"
+            }
+        ]
+    },
+    {
+        "id": 1930,
+        "icon": "enchanted_book.png",
+        "type": "combate",
+        "name": "Livro Encantado",
+        "internal_name": "enchanted_book",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": true,
+        "title": [
+            {
+                "type": 1
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rEstocada III"
+            }
+        ]
     }
 ]

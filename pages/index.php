@@ -61,15 +61,15 @@
 
             echo "<p id='versao_referencia' class='estat cor_textos'>itens Adicionados na versão <span id='num_referencia'></span></p>";
 
-            echo "<br><p class='estat cor_textos'>itens Registrados: ";
+            echo "<br><p class='estat cor_textos'>Itens registrados: ";
             echo $executa->num_rows . "</p>";
 
             $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1");
-            echo "<br><p class='estat cor_textos'> Coletáveis: ";
+            echo "<br><p class='estat cor_textos'>Coletáveis: ";
             echo $executa->num_rows . "</p>";
 
             $executa = $conexao->query("SELECT * FROM item WHERE fabricavel = 1");
-            echo "<br><p class='estat cor_textos'> Fabricáveis: ";
+            echo "<br><p class='estat cor_textos'>Fabricáveis: ";
             echo $executa->num_rows . "</p>";
 
             $executa = $conexao->query("SELECT * FROM item WHERE renovavel = 1");

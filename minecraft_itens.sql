@@ -13,8 +13,7 @@ create table item(
     coletavel boolean,
     lancado boolean,
     renovavel boolean,
-    fabricavel boolean,
-    lancado boolean
+    fabricavel boolean
 );
 
 create table item_titulo(

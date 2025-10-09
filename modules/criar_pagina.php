@@ -46,7 +46,7 @@ ob_start(); ?>
 
             <p id='versao_referencia' class='estat cor_textos'>itens Adicionados na versão <span id='num_referencia'></span></p>
             <br>
-            <p class='estat cor_textos'>itens Registrados: <span id='qtd_itens_inventario'>Carregando...</span></p>
+            <p class='estat cor_textos'>Itens registrados: <span id='qtd_itens_inventario'>Carregando...</span></p>
             <br>
             <p class='estat cor_textos'>Coletáveis: <span id='qtd_itens_inventario_colet'>Carregando...</span></p>
             <br>
