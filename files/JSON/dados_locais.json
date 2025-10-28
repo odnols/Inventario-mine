@@ -38958,7 +38958,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.54[&s[&rNa m\u00e3o:[&4Dano por golpe: 1"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.54[&4Dano por golpe: 1"
             }
         ]
     },
@@ -38985,7 +38985,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.33[&s[&rNa m\u00e3o:[&4Dano por golpe: 2"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.33[&4Dano por golpe: 2"
             }
         ]
     },
@@ -39012,7 +39012,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.18[&s[&rNa m\u00e3o:[&4Dano por golpe: 2"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.18[&4Dano por golpe: 2"
             }
         ]
     },
@@ -39039,7 +39039,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.05[&s[&rNa m\u00e3o:[&4Dano por golpe: 3"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.05[&4Dano por golpe: 3"
             }
         ]
     },
@@ -39066,7 +39066,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.05[&s[&rNa m\u00e3o:[&4Dano por golpe: 1"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 1.05[&4Dano por golpe: 1"
             }
         ]
     },
@@ -39093,7 +39093,7 @@
         ],
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 0.95[&s[&rNa m\u00e3o:[&4Dano por golpe: 4"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 0.95[&4Dano por golpe: 4"
             }
         ]
     },
@@ -39113,7 +39113,7 @@
         "legacy": false,
         "description": [
             {
-                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 0.87[&s[&rNa m\u00e3o:[&4Dano por golpe: 5"
+                "value": "[&s[&rNa m\u00e3o principal: [&4Velocidade de ataque: 0.87[&4Dano por golpe: 5"
             }
         ]
     },
@@ -39321,5 +39321,35 @@
                 "value": "[&rEstocada III"
             }
         ]
+    },
+    {
+        "id": 1931,
+        "icon": "parched_spawn_egg.png",
+        "type": "diversos",
+        "name": "Ovo Gerador de Ressecado",
+        "internal_name": "parched_spawn_egg",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1932,
+        "icon": "camel_husk_spawn_egg.png",
+        "type": "diversos",
+        "name": "Ovo Gerador de Camelo-M\u00famia",
+        "internal_name": "camel_husk_spawn_egg",
+        "version": "1.21",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
     }
 ]
