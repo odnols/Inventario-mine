@@ -39429,7 +39429,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1935,,,1935,1935,,1935,1935,1935",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1937,
@@ -39444,7 +39451,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1935,1935,1935",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1938,
@@ -39459,7 +39473,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1935,1935,1935,1935,1935,1935",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1939,
@@ -39474,7 +39495,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1935,1935,,1935,1935,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1940,
@@ -39489,7 +39517,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1939,,,1939,1939,,1939,1939,1939",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1941,
@@ -39504,7 +39539,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1939,1939,1939",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1942,
@@ -39519,7 +39561,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1939,1939,1939,1939,1939,1939",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1943,
@@ -39534,7 +39583,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1939,1939,,1939,1939,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1944,
@@ -39549,7 +39605,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1943,,,1943,1943,,1943,1943,1943",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1945,
@@ -39564,7 +39627,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1943,1943,1943",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1946,
@@ -39579,7 +39649,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1943,1943,1943,1943,1943,1943",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1947,
@@ -39594,7 +39671,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1945,,,1945,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1948,
@@ -39624,7 +39708,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1948,,,1948,1948,,1948,1948,1948",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1950,
@@ -39639,7 +39730,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1948,1948,1948",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1951,
@@ -39654,7 +39752,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1948,1948,1948,1948,1948,1948",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1952,
@@ -39669,7 +39774,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1948,1948,,1948,1948,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1953,
@@ -39684,7 +39796,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1952,,,1952,1952,,1952,1952,1952",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1954,
@@ -39699,7 +39818,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1952,1952,1952",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1955,
@@ -39714,7 +39840,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1952,1952,1952,1952,1952,1952",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1956,
@@ -39729,7 +39862,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1952,1952,,1952,1952,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1957,
@@ -39744,7 +39884,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1956,,,1956,1956,,1956,1956,1956",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1958,
@@ -39759,7 +39906,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,1956,1956,1956",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1959,
@@ -39774,7 +39928,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1956,1956,1956,1956,1956,1956",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1960,
@@ -39789,7 +39950,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1958,,,1958,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1961,
@@ -39799,6 +39967,21 @@
         "internal_name": "sulfur_cube_spawn_egg",
         "version": "26.2",
         "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1962,
+        "icon": "gold_block.png",
+        "type": "decorativos",
+        "name": "Enxofre Potente",
+        "internal_name": "potent_sulfur",
+        "version": "26.2",
+        "collectable": true,
         "released": false,
         "renewable": false,
         "stackable": 64,
