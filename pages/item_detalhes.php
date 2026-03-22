@@ -195,6 +195,14 @@
 
                         <?php echo "<option value='$versao_add'>$versao_add</option>";
 
+                        $drops = ["26"];
+
+                        for ($x = 0; $x < sizeof($drops); $x++) {
+                            for ($i = 4; $i > 0; $i--)
+                                if ($versao_add != $drops[$x] . "." . $i)
+                                    echo "<option value='$drops[$x].$i'>$drops[$x].$i</option>";
+                        }
+
                         for ($i = 21; $i >= 0; $i--) {
                             if ($versao_add != "1." . $i)
                                 echo "<option value='1.$i'>1.$i</option>";
