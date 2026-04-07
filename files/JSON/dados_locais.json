@@ -39403,7 +39403,7 @@
     },
     {
         "id": 1935,
-        "icon": "bamboo_planks.png",
+        "icon": "sulfur.png",
         "type": "construcao",
         "name": "Enxofre",
         "internal_name": "sulfur",
@@ -39418,7 +39418,7 @@
     },
     {
         "id": 1936,
-        "icon": "bamboo_stairs.png",
+        "icon": "sulfur_stairs.png",
         "type": "construcao",
         "name": "Escadas de Enxofre",
         "internal_name": "sulfur_stairs",
@@ -39440,7 +39440,7 @@
     },
     {
         "id": 1937,
-        "icon": "bamboo_slab.png",
+        "icon": "sulfur_slab.png",
         "type": "construcao",
         "name": "Laje de Enxofre",
         "internal_name": "sulfur_slab",
@@ -39462,7 +39462,7 @@
     },
     {
         "id": 1938,
-        "icon": "bamboo_fence.png",
+        "icon": "sulfur_wall.png",
         "type": "decorativos",
         "name": "Muro de Enxofre",
         "internal_name": "sulfur_wall",
@@ -39484,7 +39484,7 @@
     },
     {
         "id": 1939,
-        "icon": "birch_planks.png",
+        "icon": "polished_sulfur.png",
         "type": "construcao",
         "name": "Enxofre Polido",
         "internal_name": "polished_sulfur",
@@ -39506,7 +39506,7 @@
     },
     {
         "id": 1940,
-        "icon": "birch_stairs.png",
+        "icon": "polished_sulfur_stairs.png",
         "type": "construcao",
         "name": "Escadas de Enxofre Polido",
         "internal_name": "polished_sulfur_stairs",
@@ -39528,7 +39528,7 @@
     },
     {
         "id": 1941,
-        "icon": "birch_slab.png",
+        "icon": "polished_sulfur_slab.png",
         "type": "construcao",
         "name": "Laje de Enxofre Polido",
         "internal_name": "polished_sulfur_slab",
@@ -39550,7 +39550,7 @@
     },
     {
         "id": 1942,
-        "icon": "birch_fence.png",
+        "icon": "polished_sulfur_wall.png",
         "type": "decorativos",
         "name": "Muro de Enxofre Polido",
         "internal_name": "polished_sulfur_wall",
@@ -39572,7 +39572,7 @@
     },
     {
         "id": 1943,
-        "icon": "end_stone_bricks.png",
+        "icon": "sulfur_bricks.png",
         "type": "construcao",
         "name": "Tijolos de Enxofre",
         "internal_name": "sulfur_bricks",
@@ -39594,7 +39594,7 @@
     },
     {
         "id": 1944,
-        "icon": "end_stone_stairs.png",
+        "icon": "sulfur_brick_stairs.png",
         "type": "construcao",
         "name": "Escadas de Tijolos de Enxofre",
         "internal_name": "sulfur_brick_stairs",
@@ -39616,7 +39616,7 @@
     },
     {
         "id": 1945,
-        "icon": "end_stone_bricks_slab.png",
+        "icon": "sulfur_brick_slab.png",
         "type": "construcao",
         "name": "Laje de Tijolos de Enxofre",
         "internal_name": "sulfur_brick_slab",
@@ -39638,7 +39638,7 @@
     },
     {
         "id": 1946,
-        "icon": "end_stone_brick_wall.png",
+        "icon": "sulfur_brick_wall.png",
         "type": "decorativos",
         "name": "Muro de Tijolos de Enxofre",
         "internal_name": "sulfur_brick_wall",
@@ -39660,10 +39660,10 @@
     },
     {
         "id": 1947,
-        "icon": "bamboo_mosaic.png",
+        "icon": "chiseled_sulfur.png",
         "type": "construcao",
-        "name": "Tijolos de Enxofre Talhados",
-        "internal_name": "chiseled_sulfur_bricks",
+        "name": "Enxofre Talhado",
+        "internal_name": "chiseled_sulfur",
         "version": "26.2",
         "collectable": true,
         "released": false,
@@ -39682,7 +39682,7 @@
     },
     {
         "id": 1948,
-        "icon": "crimson_planks.png",
+        "icon": "cinnabar.png",
         "type": "construcao",
         "name": "Cin\u00e1brio",
         "internal_name": "cinnabar",
@@ -39697,7 +39697,7 @@
     },
     {
         "id": 1949,
-        "icon": "crimson_stairs.png",
+        "icon": "cinnabar_stairs.png",
         "type": "construcao",
         "name": "Escadas de Cin\u00e1brio",
         "internal_name": "cinnabar_stairs",
@@ -39719,7 +39719,7 @@
     },
     {
         "id": 1950,
-        "icon": "crimson_slab.png",
+        "icon": "cinnabar_slab.png",
         "type": "construcao",
         "name": "Laje de Cin\u00e1brio",
         "internal_name": "cinnabar_slab",
@@ -39741,7 +39741,7 @@
     },
     {
         "id": 1951,
-        "icon": "crimson_fence.png",
+        "icon": "cinnabar_wall.png",
         "type": "decorativos",
         "name": "Muro de Cin\u00e1brio",
         "internal_name": "cinnabar_wall",
@@ -39763,7 +39763,7 @@
     },
     {
         "id": 1952,
-        "icon": "mangrove_planks.png",
+        "icon": "polished_cinnabar.png",
         "type": "construcao",
         "name": "Cin\u00e1brio Polido",
         "internal_name": "polished_cinnabar",
@@ -39785,7 +39785,7 @@
     },
     {
         "id": 1953,
-        "icon": "mangrove_stairs.png",
+        "icon": "polished_cinnabar_stairs.png",
         "type": "construcao",
         "name": "Escadas de Cin\u00e1brio Polido",
         "internal_name": "polished_cinnabar_stairs",
@@ -39807,7 +39807,7 @@
     },
     {
         "id": 1954,
-        "icon": "mangrove_slab.png",
+        "icon": "polished_cinnabar_slab.png",
         "type": "construcao",
         "name": "Laje de Cin\u00e1brio Polido",
         "internal_name": "polished_cinnabar_slab",
@@ -39829,7 +39829,7 @@
     },
     {
         "id": 1955,
-        "icon": "mangrove_fence.png",
+        "icon": "polished_cinnabar_wall.png",
         "type": "decorativos",
         "name": "Muro de Cin\u00e1brio Polido",
         "internal_name": "polished_cinnabar_wall",
@@ -39851,7 +39851,7 @@
     },
     {
         "id": 1956,
-        "icon": "red_sandstone.png",
+        "icon": "cinnabar_bricks.png",
         "type": "construcao",
         "name": "Tijolos de Cin\u00e1brio",
         "internal_name": "cinnabar_bricks",
@@ -39873,7 +39873,7 @@
     },
     {
         "id": 1957,
-        "icon": "red_sandstone_stairs.png",
+        "icon": "cinnabar_brick_stairs.png",
         "type": "construcao",
         "name": "Escadas de Tijolos de Cin\u00e1brio",
         "internal_name": "cinnabar_brick_stairs",
@@ -39895,7 +39895,7 @@
     },
     {
         "id": 1958,
-        "icon": "red_sandstone_slab.png",
+        "icon": "cinnabar_brick_slab.png",
         "type": "construcao",
         "name": "Laje de Tijolos de Cin\u00e1brio",
         "internal_name": "cinnabar_brick_slab",
@@ -39917,7 +39917,7 @@
     },
     {
         "id": 1959,
-        "icon": "red_sandstone_wall.png",
+        "icon": "cinnabar_brick_wall.png",
         "type": "decorativos",
         "name": "Muro de Tijolos de Cin\u00e1brio",
         "internal_name": "cinnabar_brick_wall",
@@ -39939,10 +39939,10 @@
     },
     {
         "id": 1960,
-        "icon": "chiseled_red_sandstone.png",
+        "icon": "chiseled_cinnabar.png",
         "type": "construcao",
-        "name": "Tijolos de Cin\u00e1brio Talhados",
-        "internal_name": "chiseled_cinnabar_bricks",
+        "name": "Cin\u00e1brio Talhado",
+        "internal_name": "chiseled_cinnabar",
         "version": "26.2",
         "collectable": true,
         "released": false,
@@ -39961,7 +39961,7 @@
     },
     {
         "id": 1961,
-        "icon": "blaze_spawn_egg.png",
+        "icon": "sulfur_cube_spawn_egg.png",
         "type": "diversos",
         "name": "Ovo Gerador de Cubo de Enxofre",
         "internal_name": "sulfur_cube_spawn_egg",
@@ -39976,7 +39976,7 @@
     },
     {
         "id": 1962,
-        "icon": "gold_block.png",
+        "icon": "potent_sulfur.png",
         "type": "decorativos",
         "name": "Enxofre Potente",
         "internal_name": "potent_sulfur",
@@ -39985,6 +39985,21 @@
         "released": false,
         "renewable": false,
         "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1963,
+        "icon": "sulfur_cube_bucket.png",
+        "type": "diversos",
+        "name": "Balde com Cubo de Enxofre",
+        "internal_name": "sulfur_cube_bucket",
+        "version": "26.2",
+        "collectable": false,
+        "released": false,
+        "renewable": false,
+        "stackable": 0,
         "craftable": false,
         "hide": false,
         "legacy": false
