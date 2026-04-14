@@ -39410,11 +39410,18 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1964,1964,,1964,1964,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1936,
@@ -39425,7 +39432,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39447,7 +39454,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39469,7 +39476,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39491,7 +39498,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39513,7 +39520,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39535,7 +39542,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39557,7 +39564,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39579,7 +39586,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39601,7 +39608,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39623,7 +39630,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39645,7 +39652,7 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
@@ -39667,14 +39674,14 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
         "craftable": true,
         "hide": false,
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,,1945,,,1945,",
+                "recipe": ",,,,1937,,,1937,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -39953,7 +39960,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,,1958,,,1958,",
+                "recipe": ",,,,1950,,,1950,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -39983,11 +39990,18 @@
         "version": "26.2",
         "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 64,
-        "craftable": false,
+        "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1935,1935,1935,1935,1935,1935,1935,1935,1935",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1963,
@@ -39996,10 +40010,25 @@
         "name": "Balde com Cubo de Enxofre",
         "internal_name": "sulfur_cube_bucket",
         "version": "26.2",
-        "collectable": false,
+        "collectable": true,
         "released": false,
-        "renewable": false,
+        "renewable": true,
         "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1964,
+        "icon": "sulfur_spike.png",
+        "type": "decorativos",
+        "name": "Espeleotema de Enxofre",
+        "internal_name": "sulfur_spike",
+        "version": "26.2",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
         "craftable": false,
         "hide": false,
         "legacy": false
