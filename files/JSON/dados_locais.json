@@ -39417,7 +39417,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,1964,1964,,1964,1964,",
+                "recipe": "1964,1964,,1964,1964,,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -40032,5 +40032,1109 @@
         "craftable": false,
         "hide": false,
         "legacy": false
+    },
+    {
+        "id": 1965,
+        "icon": "music_disc_bounce.png",
+        "type": "diversos",
+        "name": "Disco Musical",
+        "internal_name": "music_disc_bounce",
+        "version": "26.2",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rfingerspit - Bounce"
+            }
+        ]
+    },
+    {
+        "id": 1966,
+        "icon": "crimson_roots.png",
+        "type": "decorativos",
+        "name": "Arbusto Vermelho",
+        "internal_name": "red_bush",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1967,
+        "icon": "brown_mushroom.png",
+        "type": "decorativos",
+        "name": "Orelha-de-Pau",
+        "internal_name": "shelf_mushroom",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1968,
+        "icon": "acacia_sapling.png",
+        "type": "decorativos",
+        "name": "Muda de Choupo",
+        "internal_name": "poplar_sapling",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1969,
+        "icon": "red_bed.png",
+        "type": "decorativos",
+        "name": "Cama de Palha",
+        "internal_name": "straw_bed",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1970,
+        "icon": "birch_leaves.png",
+        "type": "decorativos",
+        "name": "Folhas de Choupo Vermelhas",
+        "internal_name": "red_poplar_leaves",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1971,
+        "icon": "acacia_leaves.png",
+        "type": "decorativos",
+        "name": "Folhas de Choupo Laranjas",
+        "internal_name": "orange_poplar_leaves",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1972,
+        "icon": "azalea_leaves.png",
+        "type": "decorativos",
+        "name": "Folhas de Choupo Amarelas",
+        "internal_name": "yellow_poplar_leaves",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1973,
+        "icon": "birch_log.png",
+        "type": "construcao",
+        "name": "Tronco de Choupo",
+        "internal_name": "poplar_log",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1974,
+        "icon": "birch_wood.png",
+        "type": "construcao",
+        "name": "Madeira de Choupo",
+        "internal_name": "poplar_wood",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1975,
+        "icon": "stripped_birch_log.png",
+        "type": "construcao",
+        "name": "Tronco de Choupo Descascado",
+        "internal_name": "stripped_poplar_log",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1976,
+        "icon": "stripped_birch_wood.png",
+        "type": "construcao",
+        "name": "Madeira de Choupo Descascada",
+        "internal_name": "stripped_poplar_wood",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1977,
+        "icon": "birch_planks.png",
+        "type": "construcao",
+        "name": "T\u00e1buas de Choupo",
+        "internal_name": "poplar_planks",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1978,
+        "icon": "birch_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Choupo",
+        "internal_name": "poplar_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1979,
+        "icon": "birch_slab.png",
+        "type": "construcao",
+        "name": "Laje de Choupo",
+        "internal_name": "poplar_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1980,
+        "icon": "birch_fence.png",
+        "type": "decorativos",
+        "name": "Cerca de Choupo",
+        "internal_name": "poplar_fence",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1981,
+        "icon": "birch_fence_gate.png",
+        "type": "redstone",
+        "name": "Port\u00e3o de Choupo",
+        "internal_name": "poplar_fence_gate",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1982,
+        "icon": "birch_button.png",
+        "type": "redstone",
+        "name": "Bot\u00e3o de Choupo",
+        "internal_name": "poplar_button",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1983,
+        "icon": "birch_door.png",
+        "type": "redstone",
+        "name": "Porta de Choupo",
+        "internal_name": "poplar_door",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1984,
+        "icon": "birch_pressure_plate.png",
+        "type": "redstone",
+        "name": "Placa de Press\u00e3o de Choupo",
+        "internal_name": "poplar_pressure_plate",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1985,
+        "icon": "birch_trapdoor.png",
+        "type": "redstone",
+        "name": "Al\u00e7ap\u00e3o de Choupo",
+        "internal_name": "poplar_trapdoor",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1986,
+        "icon": "birch_boat.png",
+        "type": "transportes",
+        "name": "Bote de Choupo",
+        "internal_name": "poplar_boat",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1987,
+        "icon": "birch_chest_boat.png",
+        "type": "transportes",
+        "name": "Bote de Choupo com Ba\u00fa",
+        "internal_name": "poplar_chest_boat",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1988,
+        "icon": "birch_sign.png",
+        "type": "decorativos",
+        "name": "Placa de Choupo",
+        "internal_name": "poplar_sign",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1989,
+        "icon": "birch_hanging_sign.png",
+        "type": "decorativos",
+        "name": "Placa Suspensa de Choupo",
+        "internal_name": "poplar_hanging_sign",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 16,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1990,
+        "icon": "birch_shelf.png",
+        "type": "decorativos",
+        "name": "Estante de Choupo",
+        "internal_name": "poplar_shelf",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 1991,
+        "icon": "white_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Branca",
+        "internal_name": "white_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "392,,,392,392,,392,392,392",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1992,
+        "icon": "orange_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Laranja",
+        "internal_name": "orange_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "393,,,393,393,,393,393,393",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1993,
+        "icon": "magenta_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Magenta",
+        "internal_name": "magenta_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "394,,,394,394,,394,394,394",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1994,
+        "icon": "light_blue_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Azul-Clara",
+        "internal_name": "light_blue_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "395,,,395,395,,395,395,395",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1995,
+        "icon": "yellow_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Amarela",
+        "internal_name": "yellow_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "396,,,396,396,,396,396,396",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1996,
+        "icon": "lime_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Verde-Lim\u00e3o",
+        "internal_name": "lime_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "397,,,397,397,,397,397,397",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1997,
+        "icon": "pink_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Rosa",
+        "internal_name": "pink_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "398,,,398,398,,398,398,398",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1998,
+        "icon": "gray_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Cinza",
+        "internal_name": "gray_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "399,,,399,399,,399,399,399",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 1999,
+        "icon": "light_gray_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Cinza-Clara",
+        "internal_name": "light_gray_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "400,,,400,400,,400,400,400",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2000,
+        "icon": "cyan_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Ciano",
+        "internal_name": "cyan_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "401,,,401,401,,401,401,401",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2001,
+        "icon": "purple_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Roxa",
+        "internal_name": "purple_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "402,,,402,402,,402,402,402",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2002,
+        "icon": "blue_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Azul",
+        "internal_name": "blue_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "403,,,403,403,,403,403,403",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2003,
+        "icon": "brown_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Marrom",
+        "internal_name": "brown_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "404,,,404,404,,404,404,404",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2004,
+        "icon": "green_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Verde",
+        "internal_name": "green_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "405,,,405,405,,405,405,405",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2005,
+        "icon": "red_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Vermelha",
+        "internal_name": "red_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "406,,,406,406,,406,406,406",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2006,
+        "icon": "black_wool.png",
+        "type": "construcao",
+        "name": "Escadas de L\u00e3 Preta",
+        "internal_name": "black_wool_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "407,,,407,407,,407,407,407",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2007,
+        "icon": "white_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Branca",
+        "internal_name": "white_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,392,392,392",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2008,
+        "icon": "orange_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Laranja",
+        "internal_name": "orange_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,393,393,393",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2009,
+        "icon": "magenta_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Magenta",
+        "internal_name": "magenta_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,394,394,394",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2010,
+        "icon": "light_blue_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Azul-Clara",
+        "internal_name": "light_blue_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,395,395,395",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2011,
+        "icon": "yellow_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Amarela",
+        "internal_name": "yellow_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,396,396,396",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2012,
+        "icon": "lime_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Verde-Lim\u00e3o",
+        "internal_name": "lime_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,397,397,397",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2013,
+        "icon": "pink_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Rosa",
+        "internal_name": "pink_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,398,398,398",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2014,
+        "icon": "gray_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Cinza",
+        "internal_name": "gray_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,399,399,399",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2015,
+        "icon": "light_gray_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Cinza-Clara",
+        "internal_name": "light_gray_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,400,400,400",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2016,
+        "icon": "cyan_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Ciano",
+        "internal_name": "cyan_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,401,401,401",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2017,
+        "icon": "purple_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Roxa",
+        "internal_name": "purple_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,402,402,402",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2018,
+        "icon": "blue_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Azul",
+        "internal_name": "blue_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,403,403,403",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2019,
+        "icon": "brown_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Marrom",
+        "internal_name": "brown_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,404,404,404",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2020,
+        "icon": "green_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Verde",
+        "internal_name": "green_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,405,405,405",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2021,
+        "icon": "red_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Vermelha",
+        "internal_name": "red_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,406,406,406",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2022,
+        "icon": "black_wool.png",
+        "type": "construcao",
+        "name": "Laje de L\u00e3 Preta",
+        "internal_name": "black_wool_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,407,407,407",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     }
 ]

@@ -150,14 +150,14 @@
                 </select><br><br>
 
                 <select name="versao" onmouseover="toolTip('A Versão que o item foi adicionado')" onmouseout="toolTip()">
-                    <option value='26.2'>26.2</option>
+                    <option value='26.3'>26.3</option>
                     <?php
 
                     $drops = ["26"];
 
                     for ($x = 0; $x < sizeof($drops); $x++) {
                         for ($i = 4; $i > 0; $i--)
-                            if ($versao_add != $drops[$x] . "." . $i && $i !== 2)
+                            if ($versao_add != $drops[$x] . "." . $i && $i !== 3)
                                 echo "<option value='$drops[$x].$i'>$drops[$x].$i</option>";
                     }
 
