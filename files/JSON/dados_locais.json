@@ -39409,7 +39409,7 @@
         "internal_name": "sulfur",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39431,7 +39431,7 @@
         "internal_name": "sulfur_stairs",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39453,7 +39453,7 @@
         "internal_name": "sulfur_slab",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39475,7 +39475,7 @@
         "internal_name": "sulfur_wall",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39497,7 +39497,7 @@
         "internal_name": "polished_sulfur",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39519,7 +39519,7 @@
         "internal_name": "polished_sulfur_stairs",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39541,7 +39541,7 @@
         "internal_name": "polished_sulfur_slab",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39563,7 +39563,7 @@
         "internal_name": "polished_sulfur_wall",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39585,7 +39585,7 @@
         "internal_name": "sulfur_bricks",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39607,7 +39607,7 @@
         "internal_name": "sulfur_brick_stairs",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39629,7 +39629,7 @@
         "internal_name": "sulfur_brick_slab",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39651,7 +39651,7 @@
         "internal_name": "sulfur_brick_wall",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39673,7 +39673,7 @@
         "internal_name": "chiseled_sulfur",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -39695,7 +39695,7 @@
         "internal_name": "cinnabar",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": false,
@@ -39710,7 +39710,7 @@
         "internal_name": "cinnabar_stairs",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39732,7 +39732,7 @@
         "internal_name": "cinnabar_slab",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39754,7 +39754,7 @@
         "internal_name": "cinnabar_wall",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39776,7 +39776,7 @@
         "internal_name": "polished_cinnabar",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39798,7 +39798,7 @@
         "internal_name": "polished_cinnabar_stairs",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39820,7 +39820,7 @@
         "internal_name": "polished_cinnabar_slab",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39842,7 +39842,7 @@
         "internal_name": "polished_cinnabar_wall",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39864,7 +39864,7 @@
         "internal_name": "cinnabar_bricks",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39886,7 +39886,7 @@
         "internal_name": "cinnabar_brick_stairs",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39908,7 +39908,7 @@
         "internal_name": "cinnabar_brick_slab",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39930,7 +39930,7 @@
         "internal_name": "cinnabar_brick_wall",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39952,7 +39952,7 @@
         "internal_name": "chiseled_cinnabar",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": true,
@@ -39974,7 +39974,7 @@
         "internal_name": "sulfur_cube_spawn_egg",
         "version": "26.2",
         "collectable": false,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 64,
         "craftable": false,
@@ -39989,7 +39989,7 @@
         "internal_name": "potent_sulfur",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -40011,7 +40011,7 @@
         "internal_name": "sulfur_cube_bucket",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 0,
         "craftable": false,
@@ -40026,7 +40026,7 @@
         "internal_name": "sulfur_spike",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": false,
@@ -40041,7 +40041,7 @@
         "internal_name": "music_disc_bounce",
         "version": "26.2",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": false,
         "stackable": 0,
         "craftable": false,
@@ -40116,7 +40116,14 @@
         "stackable": 16,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,500,500,500",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1970,
@@ -40191,7 +40198,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1973,1973,,1973,1973,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1975,
@@ -40204,7 +40218,7 @@
         "released": false,
         "renewable": true,
         "stackable": 64,
-        "craftable": true,
+        "craftable": false,
         "hide": false,
         "legacy": false
     },
@@ -40221,7 +40235,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1975,1975,,1975,1975,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1977,
@@ -40236,7 +40257,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1973,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1978,
@@ -40251,7 +40279,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1977,,,1977,1977,,1977,1977,1977",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1979,
@@ -40266,7 +40301,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1977,1977,1977,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1980,
@@ -40281,7 +40323,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1977,198,1977,1977,198,1977,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1981,
@@ -40296,7 +40345,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "198,1977,198,198,1977,198,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1982,
@@ -40311,7 +40367,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,1977,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1983,
@@ -40326,7 +40389,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",1977,1977,,1977,1977,,1977,1977",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1984,
@@ -40341,7 +40411,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1977,1977,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1985,
@@ -40356,7 +40433,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1977,1977,1977,1977,1977,1977",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1986,
@@ -40371,7 +40455,14 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,1977,,1977,1977,1977,1977",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1987,
@@ -40386,7 +40477,14 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",731,,,1986,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1988,
@@ -40401,7 +40499,14 @@
         "stackable": 16,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1977,1977,1977,1977,1977,1977,,198,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1989,
@@ -40416,7 +40521,14 @@
         "stackable": 16,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "425,,425,1975,1975,1975,1975,1975,1975",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1990,
@@ -40431,7 +40543,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1975,1975,1975,,,,1975,1975,1975",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 1991,
