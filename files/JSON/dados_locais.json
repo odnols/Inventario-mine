@@ -39387,7 +39387,7 @@
         "internal_name": "golden_dandelion",
         "version": "26.1",
         "collectable": true,
-        "released": false,
+        "released": true,
         "renewable": true,
         "stackable": 64,
         "craftable": true,
@@ -40060,10 +40060,10 @@
     },
     {
         "id": 1966,
-        "icon": "crimson_roots.png",
+        "icon": "red_shrub.png",
         "type": "decorativos",
         "name": "Arbusto Vermelho",
-        "internal_name": "red_bush",
+        "internal_name": "red_shrub",
         "version": "26.3",
         "collectable": true,
         "released": false,
@@ -40075,9 +40075,9 @@
     },
     {
         "id": 1967,
-        "icon": "brown_mushroom.png",
+        "icon": "shelf_mushroom.png",
         "type": "decorativos",
-        "name": "Orelha-de-Pau",
+        "name": "Pol\u00edporo",
         "internal_name": "shelf_mushroom",
         "version": "26.3",
         "collectable": true,
@@ -40090,9 +40090,9 @@
     },
     {
         "id": 1968,
-        "icon": "acacia_sapling.png",
+        "icon": "poplar_sapling.png",
         "type": "decorativos",
-        "name": "Muda de Choupo",
+        "name": "Muda de \u00c1lamo",
         "internal_name": "poplar_sapling",
         "version": "26.3",
         "collectable": true,
@@ -40105,7 +40105,7 @@
     },
     {
         "id": 1969,
-        "icon": "red_bed.png",
+        "icon": "straw_bed.png",
         "type": "decorativos",
         "name": "Cama de Palha",
         "internal_name": "straw_bed",
@@ -40127,9 +40127,9 @@
     },
     {
         "id": 1970,
-        "icon": "birch_leaves.png",
+        "icon": "red_poplar_leaves.png",
         "type": "decorativos",
-        "name": "Folhas de Choupo Vermelhas",
+        "name": "Folhas de \u00c1lamo Vermelhas",
         "internal_name": "red_poplar_leaves",
         "version": "26.3",
         "collectable": true,
@@ -40142,9 +40142,9 @@
     },
     {
         "id": 1971,
-        "icon": "acacia_leaves.png",
+        "icon": "orange_poplar_leaves.png",
         "type": "decorativos",
-        "name": "Folhas de Choupo Laranjas",
+        "name": "Folhas de \u00c1lamo Laranjas",
         "internal_name": "orange_poplar_leaves",
         "version": "26.3",
         "collectable": true,
@@ -40157,9 +40157,9 @@
     },
     {
         "id": 1972,
-        "icon": "azalea_leaves.png",
+        "icon": "yellow_poplar_leaves.png",
         "type": "decorativos",
-        "name": "Folhas de Choupo Amarelas",
+        "name": "Folhas de \u00c1lamo Amarelas",
         "internal_name": "yellow_poplar_leaves",
         "version": "26.3",
         "collectable": true,
@@ -40172,9 +40172,9 @@
     },
     {
         "id": 1973,
-        "icon": "birch_log.png",
+        "icon": "poplar_log.png",
         "type": "construcao",
-        "name": "Tronco de Choupo",
+        "name": "Tronco de \u00c1lamo",
         "internal_name": "poplar_log",
         "version": "26.3",
         "collectable": true,
@@ -40187,9 +40187,9 @@
     },
     {
         "id": 1974,
-        "icon": "birch_wood.png",
+        "icon": "poplar_wood.png",
         "type": "construcao",
-        "name": "Madeira de Choupo",
+        "name": "Madeira de \u00c1lamo",
         "internal_name": "poplar_wood",
         "version": "26.3",
         "collectable": true,
@@ -40209,9 +40209,9 @@
     },
     {
         "id": 1975,
-        "icon": "stripped_birch_log.png",
+        "icon": "stripped_poplar_log.png",
         "type": "construcao",
-        "name": "Tronco de Choupo Descascado",
+        "name": "Tronco de \u00c1lamo Descascado",
         "internal_name": "stripped_poplar_log",
         "version": "26.3",
         "collectable": true,
@@ -40224,9 +40224,9 @@
     },
     {
         "id": 1976,
-        "icon": "stripped_birch_wood.png",
+        "icon": "stripped_poplar_wood.png",
         "type": "construcao",
-        "name": "Madeira de Choupo Descascada",
+        "name": "Madeira de \u00c1lamo Descascada",
         "internal_name": "stripped_poplar_wood",
         "version": "26.3",
         "collectable": true,
@@ -40246,9 +40246,9 @@
     },
     {
         "id": 1977,
-        "icon": "birch_planks.png",
+        "icon": "poplar_planks.png",
         "type": "construcao",
-        "name": "T\u00e1buas de Choupo",
+        "name": "T\u00e1buas de \u00c1lamo",
         "internal_name": "poplar_planks",
         "version": "26.3",
         "collectable": true,
@@ -40268,9 +40268,9 @@
     },
     {
         "id": 1978,
-        "icon": "birch_stairs.png",
+        "icon": "poplar_stairs.png",
         "type": "construcao",
-        "name": "Escadas de Choupo",
+        "name": "Escadas de \u00c1lamo",
         "internal_name": "poplar_stairs",
         "version": "26.3",
         "collectable": true,
@@ -40290,9 +40290,9 @@
     },
     {
         "id": 1979,
-        "icon": "birch_slab.png",
+        "icon": "poplar_slab.png",
         "type": "construcao",
-        "name": "Laje de Choupo",
+        "name": "Laje de \u00c1lamo",
         "internal_name": "poplar_slab",
         "version": "26.3",
         "collectable": true,
@@ -40312,9 +40312,9 @@
     },
     {
         "id": 1980,
-        "icon": "birch_fence.png",
+        "icon": "poplar_fence.png",
         "type": "decorativos",
-        "name": "Cerca de Choupo",
+        "name": "Cerca de \u00c1lamo",
         "internal_name": "poplar_fence",
         "version": "26.3",
         "collectable": true,
@@ -40334,9 +40334,9 @@
     },
     {
         "id": 1981,
-        "icon": "birch_fence_gate.png",
+        "icon": "poplar_fence_gate.png",
         "type": "redstone",
-        "name": "Port\u00e3o de Choupo",
+        "name": "Port\u00e3o de \u00c1lamo",
         "internal_name": "poplar_fence_gate",
         "version": "26.3",
         "collectable": true,
@@ -40356,9 +40356,9 @@
     },
     {
         "id": 1982,
-        "icon": "birch_button.png",
+        "icon": "poplar_button.png",
         "type": "redstone",
-        "name": "Bot\u00e3o de Choupo",
+        "name": "Bot\u00e3o de \u00c1lamo",
         "internal_name": "poplar_button",
         "version": "26.3",
         "collectable": true,
@@ -40378,9 +40378,9 @@
     },
     {
         "id": 1983,
-        "icon": "birch_door.png",
+        "icon": "poplar_door.png",
         "type": "redstone",
-        "name": "Porta de Choupo",
+        "name": "Porta de \u00c1lamo",
         "internal_name": "poplar_door",
         "version": "26.3",
         "collectable": true,
@@ -40400,9 +40400,9 @@
     },
     {
         "id": 1984,
-        "icon": "birch_pressure_plate.png",
+        "icon": "poplar_pressure_plate.png",
         "type": "redstone",
-        "name": "Placa de Press\u00e3o de Choupo",
+        "name": "Placa de Press\u00e3o de \u00c1lamo",
         "internal_name": "poplar_pressure_plate",
         "version": "26.3",
         "collectable": true,
@@ -40422,9 +40422,9 @@
     },
     {
         "id": 1985,
-        "icon": "birch_trapdoor.png",
+        "icon": "poplar_trapdoor.png",
         "type": "redstone",
-        "name": "Al\u00e7ap\u00e3o de Choupo",
+        "name": "Al\u00e7ap\u00e3o de \u00c1lamo",
         "internal_name": "poplar_trapdoor",
         "version": "26.3",
         "collectable": true,
@@ -40444,9 +40444,9 @@
     },
     {
         "id": 1986,
-        "icon": "birch_boat.png",
+        "icon": "poplar_boat.png",
         "type": "transportes",
-        "name": "Bote de Choupo",
+        "name": "Bote de \u00c1lamo",
         "internal_name": "poplar_boat",
         "version": "26.3",
         "collectable": true,
@@ -40466,9 +40466,9 @@
     },
     {
         "id": 1987,
-        "icon": "birch_chest_boat.png",
+        "icon": "poplar_chest_boat.png",
         "type": "transportes",
-        "name": "Bote de Choupo com Ba\u00fa",
+        "name": "Bote de \u00c1lamo com Ba\u00fa",
         "internal_name": "poplar_chest_boat",
         "version": "26.3",
         "collectable": true,
@@ -40488,9 +40488,9 @@
     },
     {
         "id": 1988,
-        "icon": "birch_sign.png",
+        "icon": "poplar_sign.png",
         "type": "decorativos",
-        "name": "Placa de Choupo",
+        "name": "Placa de \u00c1lamo",
         "internal_name": "poplar_sign",
         "version": "26.3",
         "collectable": true,
@@ -40510,9 +40510,9 @@
     },
     {
         "id": 1989,
-        "icon": "birch_hanging_sign.png",
+        "icon": "poplar_hanging_sign.png",
         "type": "decorativos",
-        "name": "Placa Suspensa de Choupo",
+        "name": "Placa Suspensa de \u00c1lamo",
         "internal_name": "poplar_hanging_sign",
         "version": "26.3",
         "collectable": true,
@@ -40532,9 +40532,9 @@
     },
     {
         "id": 1990,
-        "icon": "birch_shelf.png",
+        "icon": "poplar_shelf.png",
         "type": "decorativos",
-        "name": "Estante de Choupo",
+        "name": "Estante de \u00c1lamo",
         "internal_name": "poplar_shelf",
         "version": "26.3",
         "collectable": true,
@@ -40554,7 +40554,7 @@
     },
     {
         "id": 1991,
-        "icon": "white_wool.png",
+        "icon": "white_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Branca",
         "internal_name": "white_wool_stairs",
@@ -40576,7 +40576,7 @@
     },
     {
         "id": 1992,
-        "icon": "orange_wool.png",
+        "icon": "orange_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Laranja",
         "internal_name": "orange_wool_stairs",
@@ -40598,7 +40598,7 @@
     },
     {
         "id": 1993,
-        "icon": "magenta_wool.png",
+        "icon": "magenta_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Magenta",
         "internal_name": "magenta_wool_stairs",
@@ -40620,7 +40620,7 @@
     },
     {
         "id": 1994,
-        "icon": "light_blue_wool.png",
+        "icon": "light_blue_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Azul-Clara",
         "internal_name": "light_blue_wool_stairs",
@@ -40642,7 +40642,7 @@
     },
     {
         "id": 1995,
-        "icon": "yellow_wool.png",
+        "icon": "yellow_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Amarela",
         "internal_name": "yellow_wool_stairs",
@@ -40664,7 +40664,7 @@
     },
     {
         "id": 1996,
-        "icon": "lime_wool.png",
+        "icon": "lime_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Verde-Lim\u00e3o",
         "internal_name": "lime_wool_stairs",
@@ -40686,7 +40686,7 @@
     },
     {
         "id": 1997,
-        "icon": "pink_wool.png",
+        "icon": "pink_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Rosa",
         "internal_name": "pink_wool_stairs",
@@ -40708,7 +40708,7 @@
     },
     {
         "id": 1998,
-        "icon": "gray_wool.png",
+        "icon": "gray_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Cinza",
         "internal_name": "gray_wool_stairs",
@@ -40730,7 +40730,7 @@
     },
     {
         "id": 1999,
-        "icon": "light_gray_wool.png",
+        "icon": "light_gray_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Cinza-Clara",
         "internal_name": "light_gray_wool_stairs",
@@ -40752,7 +40752,7 @@
     },
     {
         "id": 2000,
-        "icon": "cyan_wool.png",
+        "icon": "cyan_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Ciano",
         "internal_name": "cyan_wool_stairs",
@@ -40774,7 +40774,7 @@
     },
     {
         "id": 2001,
-        "icon": "purple_wool.png",
+        "icon": "purple_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Roxa",
         "internal_name": "purple_wool_stairs",
@@ -40796,7 +40796,7 @@
     },
     {
         "id": 2002,
-        "icon": "blue_wool.png",
+        "icon": "blue_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Azul",
         "internal_name": "blue_wool_stairs",
@@ -40818,7 +40818,7 @@
     },
     {
         "id": 2003,
-        "icon": "brown_wool.png",
+        "icon": "brown_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Marrom",
         "internal_name": "brown_wool_stairs",
@@ -40840,7 +40840,7 @@
     },
     {
         "id": 2004,
-        "icon": "green_wool.png",
+        "icon": "green_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Verde",
         "internal_name": "green_wool_stairs",
@@ -40862,7 +40862,7 @@
     },
     {
         "id": 2005,
-        "icon": "red_wool.png",
+        "icon": "red_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Vermelha",
         "internal_name": "red_wool_stairs",
@@ -40884,7 +40884,7 @@
     },
     {
         "id": 2006,
-        "icon": "black_wool.png",
+        "icon": "black_wool_stairs.png",
         "type": "construcao",
         "name": "Escadas de L\u00e3 Preta",
         "internal_name": "black_wool_stairs",
@@ -40906,7 +40906,7 @@
     },
     {
         "id": 2007,
-        "icon": "white_wool.png",
+        "icon": "white_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Branca",
         "internal_name": "white_wool_slab",
@@ -40928,7 +40928,7 @@
     },
     {
         "id": 2008,
-        "icon": "orange_wool.png",
+        "icon": "orange_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Laranja",
         "internal_name": "orange_wool_slab",
@@ -40950,7 +40950,7 @@
     },
     {
         "id": 2009,
-        "icon": "magenta_wool.png",
+        "icon": "magenta_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Magenta",
         "internal_name": "magenta_wool_slab",
@@ -40972,7 +40972,7 @@
     },
     {
         "id": 2010,
-        "icon": "light_blue_wool.png",
+        "icon": "light_blue_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Azul-Clara",
         "internal_name": "light_blue_wool_slab",
@@ -40994,7 +40994,7 @@
     },
     {
         "id": 2011,
-        "icon": "yellow_wool.png",
+        "icon": "yellow_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Amarela",
         "internal_name": "yellow_wool_slab",
@@ -41016,7 +41016,7 @@
     },
     {
         "id": 2012,
-        "icon": "lime_wool.png",
+        "icon": "lime_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Verde-Lim\u00e3o",
         "internal_name": "lime_wool_slab",
@@ -41038,7 +41038,7 @@
     },
     {
         "id": 2013,
-        "icon": "pink_wool.png",
+        "icon": "pink_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Rosa",
         "internal_name": "pink_wool_slab",
@@ -41060,7 +41060,7 @@
     },
     {
         "id": 2014,
-        "icon": "gray_wool.png",
+        "icon": "gray_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Cinza",
         "internal_name": "gray_wool_slab",
@@ -41082,7 +41082,7 @@
     },
     {
         "id": 2015,
-        "icon": "light_gray_wool.png",
+        "icon": "light_gray_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Cinza-Clara",
         "internal_name": "light_gray_wool_slab",
@@ -41104,7 +41104,7 @@
     },
     {
         "id": 2016,
-        "icon": "cyan_wool.png",
+        "icon": "cyan_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Ciano",
         "internal_name": "cyan_wool_slab",
@@ -41126,7 +41126,7 @@
     },
     {
         "id": 2017,
-        "icon": "purple_wool.png",
+        "icon": "purple_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Roxa",
         "internal_name": "purple_wool_slab",
@@ -41148,7 +41148,7 @@
     },
     {
         "id": 2018,
-        "icon": "blue_wool.png",
+        "icon": "blue_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Azul",
         "internal_name": "blue_wool_slab",
@@ -41170,7 +41170,7 @@
     },
     {
         "id": 2019,
-        "icon": "brown_wool.png",
+        "icon": "brown_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Marrom",
         "internal_name": "brown_wool_slab",
@@ -41192,7 +41192,7 @@
     },
     {
         "id": 2020,
-        "icon": "green_wool.png",
+        "icon": "green_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Verde",
         "internal_name": "green_wool_slab",
@@ -41214,7 +41214,7 @@
     },
     {
         "id": 2021,
-        "icon": "red_wool.png",
+        "icon": "red_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Vermelha",
         "internal_name": "red_wool_slab",
@@ -41236,7 +41236,7 @@
     },
     {
         "id": 2022,
-        "icon": "black_wool.png",
+        "icon": "black_wool_slab.png",
         "type": "construcao",
         "name": "Laje de L\u00e3 Preta",
         "internal_name": "black_wool_slab",
@@ -41251,6 +41251,358 @@
         "recipe": [
             {
                 "recipe": ",,,,,,407,407,407",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2023,
+        "icon": "white_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Branca",
+        "internal_name": "white_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2007,2007,2007",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2024,
+        "icon": "orange_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Laranja",
+        "internal_name": "orange_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2008,2008,2008",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2025,
+        "icon": "magenta_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Magenta",
+        "internal_name": "magenta_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2009,2009,2009",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2026,
+        "icon": "light_blue_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Azul-Clara",
+        "internal_name": "light_blue_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2010,2010,2010",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2027,
+        "icon": "yellow_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Amarela",
+        "internal_name": "yellow_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2011,2011,2011",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2028,
+        "icon": "lime_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Verde-Lim\u00e3o",
+        "internal_name": "lime_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2012,2012,2012",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2029,
+        "icon": "pink_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Rosa",
+        "internal_name": "pink_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2013,2013,2013",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2030,
+        "icon": "gray_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Cinza",
+        "internal_name": "gray_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2014,2014,2014",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2031,
+        "icon": "light_gray_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Cinza-Clara",
+        "internal_name": "light_gray_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2015,2015,2015",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2032,
+        "icon": "cyan_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Ciano",
+        "internal_name": "cyan_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2016,2016,2016",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2033,
+        "icon": "purple_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Roxa",
+        "internal_name": "purple_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2017,2017,2017",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2034,
+        "icon": "blue_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Azul",
+        "internal_name": "blue_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2018,2018,2018",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2035,
+        "icon": "brown_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Marrom",
+        "internal_name": "brown_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2019,2019,2019",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2036,
+        "icon": "green_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Verde",
+        "internal_name": "green_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2020,2020,2020",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2037,
+        "icon": "red_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Vermelha",
+        "internal_name": "red_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2021,2021,2021",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2038,
+        "icon": "black_cushion.png",
+        "type": "decorativos",
+        "name": "Almofada Preta",
+        "internal_name": "black_cushion",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2022,2022,2022",
                 "products": 1,
                 "craft_type": 0
             }
