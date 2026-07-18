@@ -30,15 +30,13 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
             else
                 document.getElementById(id_nome_item).innerHTML = nome
 
-        if (typeof descricao !== "undefined") {
+        if (descricao) {
             if (descricao.indexOf("&") == -1) {
                 document.getElementById(id_descricao_item).style.color = "#a8a8a8"
                 document.getElementById(id_descricao_item).style.textShadow = "3px 3px 0 #2a2a2a"
 
-                if (typeof descricao !== "undefined")
-                    document.getElementById(id_descricao_item).innerHTML = descricao
-                else
-                    document.getElementById(id_descricao_item).innerHTML = ""
+                document.getElementById(id_descricao_item).innerHTML = descricao
+
             } else {
 
                 const alvos_replace = ["construcao", "decorativos", "redstone", "transportes", "diversos", "alimentos", "ferramentas", "combate", "pocoes", "especiais"]
@@ -74,7 +72,8 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
                     }
                 }
             }
-        }
+        } else
+            document.getElementById(id_descricao_item).innerHTML = ""
 
         if (typeof nome_interno !== "undefined")
             document.getElementById(id_nome_interno).innerHTML = `minecraft:${nome_interno}`

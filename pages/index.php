@@ -156,8 +156,7 @@
                     $drops = ["26"];
 
                     for ($x = 0; $x < sizeof($drops); $x++) {
-                        for ($i = 4; $i > 0; $i--)
-                            if ($versao_add != $drops[$x] . "." . $i && $i !== 3)
+                        for ($i = 2; $i > 0; $i--)
                                 echo "<option value='$drops[$x].$i'>$drops[$x].$i</option>";
                     }
 

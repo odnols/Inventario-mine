@@ -38,7 +38,7 @@ function seleciona_item(id_item) {
                     slot_craft_ativo = "id='slot_craft_ativo'"
 
                 slots_atalho.innerHTML += `<div class='slot_item' ${slot_craft_ativo} onclick='seleciona_item(${itens_atalho[i]})'>
-                    <img class='icon_item' src='${sprite_item}'>
+                    <img class='icon_item' src='${sprite_item}' onmouseover='toolTip(\"${dados_itens[k]["name"]}\", null, \"${dados_itens[k]["internal_name"]}\")', onmouseout='toolTip()'>
                 </div>`
             }
         })
@@ -119,19 +119,21 @@ function mostra_crafting(receita, produto, qtd, local) {
 
     for (let i = 0; i < grid.length; i++) {
 
-        let sprite_item = ""
+        let sprite_item = "", nome_item = ""
 
         if (array_crafting[i] !== null || typeof array_crafting[i] !== "undefined") {
             Object.keys(dados_itens).forEach(function (k) {
 
-                if (dados_itens[k]["id"] == array_crafting[i])
+                if (dados_itens[k]["id"] == array_crafting[i]) {
                     sprite_item = `${caminho}img/itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
+                    nome_item = dados_itens[k]["name"]
+                }
 
                 if (dados_itens[k]["id"] == produto)
                     sprite_produto = `${caminho}img/itens/new/${dados_itens[k]["type"]}/${dados_itens[k]["icon"]}`
             })
 
-            if (typeof array_crafting[i] !== "undefined" && sprite_item.length > 0) // Altera o sprite para o item do grid
+            if (sprite_item.length > 0) // Altera o sprite para o item do grid
                 grid[i].style.backgroundImage = `url('${sprite_item}')`
         } else
             grid[i].style.backgroundImage = 'none'
@@ -164,7 +166,7 @@ function mostra_crafting(receita, produto, qtd, local) {
         document.getElementById("sprite_produto").innerHTML = ""
         document.getElementById("sprite_produto").innerHTML += `<img src='${sprite_produto}' style='width: 48px'>`
 
-        document.getElementById("sprite_produto").setAttribute('onMouseOver', `toolTip("${dados_produto.nome_item}", "${dados_produto.descricao}", "${dados_produto.nome_interno}", null)`)
+        document.getElementById("sprite_produto").setAttribute('onMouseOver', `toolTip("${dados_produto.name}", null, "${dados_produto.internal_name}", null)`)
         document.getElementById("sprite_produto").setAttribute('onMouseOut', `toolTip()`)
 
         // document.getElementById("qtd_produto").innerHTML = typeof qtd !== "undefined" ? qtd : null

@@ -40,7 +40,7 @@
     <?php include_once "../php/conexao_obsoleta.php";
     $id_item_alvo = $_GET["id"];
 
-    $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1"); ?>
+    $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1 ORDER BY id_item DESC"); ?>
 
     <div id="menu_user">
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
@@ -63,7 +63,7 @@
 
         <div id="grid_crafting">
             <?php for ($i = 0; $i < 9; $i++) {
-                echo "<div class='grid_craft gric'onclick='seta_item_craft($i)'></div>";
+                echo "<div class='grid_craft gric' onclick='seta_item_craft($i)'></div>";
             } ?>
         </div>
 
@@ -90,7 +90,7 @@
 </body>
 
 <script type="text/javascript">
-    aba_menu(0)
+    aba_menu(10)
     document.addEventListener("onKeyDown", clique())
 
     seleciona_item('auto')
