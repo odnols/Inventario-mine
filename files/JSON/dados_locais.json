@@ -41607,5 +41607,1084 @@
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 2039,
+        "icon": "filled_map.png",
+        "type": "diversos",
+        "name": "Mapa",
+        "internal_name": "filled_map",
+        "version": "1.0",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2040,
+        "icon": "ocean_explorer_map.png",
+        "type": "diversos",
+        "name": "Mapa de Explora\u00e7\u00e3o de Monumento Oce\u00e2nico",
+        "internal_name": "ocean_explorer_map",
+        "version": "1.11",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2041,
+        "icon": "woodland_explorer_map.png",
+        "type": "diversos",
+        "name": "Mapa de Explora\u00e7\u00e3o da Mans\u00e3o da Floresta",
+        "internal_name": "woodland_explorer_map",
+        "version": "1.11",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2042,
+        "icon": "trial_explorer_map.png",
+        "type": "diversos",
+        "name": "Mapa de Explora\u00e7\u00e3o de C\u00e2maras do Desafio",
+        "internal_name": "trial_explorer_map",
+        "version": "1.21",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2043,
+        "icon": "buried_treasure_map.png",
+        "type": "diversos",
+        "name": "Mapa de Tesouro Enterrado",
+        "internal_name": "buried_treasure_map",
+        "version": "1.13",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2044,
+        "icon": "desert_village_map.png",
+        "type": "diversos",
+        "name": "Mapa de Vila do Deserto",
+        "internal_name": "desert_village_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2045,
+        "icon": "plains_village_map.png",
+        "type": "diversos",
+        "name": "Mapa de Vila da Plan\u00edcie",
+        "internal_name": "plains_village_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2046,
+        "icon": "savanna_village_map.png",
+        "type": "diversos",
+        "name": "Mapa de Vila da Savana",
+        "internal_name": "savanna_village_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2047,
+        "icon": "snowy_village_map.png",
+        "type": "diversos",
+        "name": "Mapa de Vila da Plan\u00edcie Nevada",
+        "internal_name": "snowy_village_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2048,
+        "icon": "taiga_village_map.png",
+        "type": "diversos",
+        "name": "Mapa de Vila da Taiga",
+        "internal_name": "taiga_village_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2049,
+        "icon": "jungle_explorer_map.png",
+        "type": "diversos",
+        "name": "Mapa de Explora\u00e7\u00e3o de Pir\u00e2mide da Selva",
+        "internal_name": "jungle_explorer_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2050,
+        "icon": "desert_pyramid_map.png",
+        "type": "diversos",
+        "name": "Mapa de Pir\u00e2mide do Deserto",
+        "internal_name": "desert_pyramid_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2051,
+        "icon": "ancient_city_map.png",
+        "type": "diversos",
+        "name": "Mapa da Cidade Ancestral",
+        "internal_name": "ancient_city_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2052,
+        "icon": "mineshaft_map.png",
+        "type": "diversos",
+        "name": "Mapa de Mina Abandonada",
+        "internal_name": "mineshaft_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2053,
+        "icon": "swamp_explorer_map.png",
+        "type": "diversos",
+        "name": "Mapa de Explora\u00e7\u00e3o de Cabana do P\u00e2ntano",
+        "internal_name": "swamp_explorer_map",
+        "version": "1.20",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2054,
+        "icon": "warm_ocean_ruins_map.png",
+        "type": "diversos",
+        "name": "Mapa de Ru\u00ednas Oce\u00e2nicas Quentes",
+        "internal_name": "warm_ocean_ruins_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2055,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2056,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado da Selva de Bambu",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2057,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado da Floresta de B\u00e9tulas",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2058,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado do Cerejal",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2059,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado da Floresta Salpicada",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2060,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado da Floresta de Flores",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2061,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado do Jardim P\u00e1lido",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2062,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado do P\u00e2ntano",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2063,
+        "icon": "abandoned_campsite_map.png",
+        "type": "diversos",
+        "name": "Mapa de Acampamento Abandonado da Floresta das Ventanias",
+        "internal_name": "abandoned_campsite_map",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2064,
+        "icon": "white_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Branco",
+        "internal_name": "white_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "513,,,513,513,,513,513,513",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2065,
+        "icon": "orange_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Laranja",
+        "internal_name": "orange_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "514,,,514,514,,514,514,514",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2066,
+        "icon": "magenta_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Magenta",
+        "internal_name": "magenta_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "515,,,515,515,,515,515,515",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2067,
+        "icon": "light_blue_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Azul-Claro",
+        "internal_name": "light_blue_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "516,,,516,516,,516,516,516",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2068,
+        "icon": "yellow_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Amarelo",
+        "internal_name": "yellow_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "517,,,517,517,,517,517,517",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2069,
+        "icon": "lime_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Verde-Lim\u00e3o",
+        "internal_name": "lime_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "518,,,518,518,,518,518,518",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2070,
+        "icon": "pink_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Rosa",
+        "internal_name": "pink_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "519,,,519,519,,519,519,519",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2071,
+        "icon": "gray_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Cinza",
+        "internal_name": "gray_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "520,,,520,520,,520,520,520",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2072,
+        "icon": "light_gray_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Cinza-Claro",
+        "internal_name": "light_gray_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "521,,,521,521,,521,521,521",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2073,
+        "icon": "cyan_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Ciano",
+        "internal_name": "cyan_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "522,,,522,522,,522,522,522",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2074,
+        "icon": "purple_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Roxo",
+        "internal_name": "purple_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "523,,,523,523,,523,523,523",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2075,
+        "icon": "blue_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Azul",
+        "internal_name": "blue_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "524,,,524,524,,524,524,524",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2076,
+        "icon": "brown_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Marrom",
+        "internal_name": "brown_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "525,,,525,525,,525,525,525",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2077,
+        "icon": "green_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Verde",
+        "internal_name": "green_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "526,,,526,526,,526,526,526",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2078,
+        "icon": "red_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Vermelho",
+        "internal_name": "red_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "527,,,527,527,,527,527,527",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2079,
+        "icon": "black_concrete_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Concreto Preto",
+        "internal_name": "black_concrete_stairs",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "528,,,528,528,,528,528,528",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2080,
+        "icon": "white_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Branco",
+        "internal_name": "white_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,513,513,513",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2081,
+        "icon": "orange_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Laranja",
+        "internal_name": "orange_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,514,514,514",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2082,
+        "icon": "magenta_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Magenta",
+        "internal_name": "magenta_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,515,515,515",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2083,
+        "icon": "light_blue_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Azul-Claro",
+        "internal_name": "light_blue_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,516,516,516",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2084,
+        "icon": "yellow_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Amarelo",
+        "internal_name": "yellow_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,517,517,517",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2085,
+        "icon": "lime_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Verde-Lim\u00e3o",
+        "internal_name": "lime_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,518,518,518",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2086,
+        "icon": "pink_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Rosa",
+        "internal_name": "pink_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,519,519,519",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2087,
+        "icon": "gray_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Cinza",
+        "internal_name": "gray_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,520,520,520",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2088,
+        "icon": "light_gray_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Cinza-Claro",
+        "internal_name": "light_gray_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,521,521,521",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2089,
+        "icon": "cyan_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Ciano",
+        "internal_name": "cyan_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,522,522,522",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2090,
+        "icon": "purple_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Roxo",
+        "internal_name": "purple_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,523,523,523",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2091,
+        "icon": "blue_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Azul",
+        "internal_name": "blue_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,524,524,524",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2092,
+        "icon": "brown_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Marrom",
+        "internal_name": "brown_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,525,525,525",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2093,
+        "icon": "green_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Verde",
+        "internal_name": "green_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,526,526,526",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2094,
+        "icon": "red_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Vermelho",
+        "internal_name": "red_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,527,527,527",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2095,
+        "icon": "black_concrete_slab.png",
+        "type": "construcao",
+        "name": "Laje de Concreto Preto",
+        "internal_name": "black_concrete_slab",
+        "version": "26.3",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,528,528,528",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     }
 ]
