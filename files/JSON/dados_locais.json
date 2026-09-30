@@ -42689,7 +42689,7 @@
     },
     {
         "id": 2097,
-        "icon": "amethyst_cluster.png",
+        "icon": "ice_crystal.png",
         "type": "decorativos",
         "name": "Cristal de Gelo",
         "internal_name": "ice_crystal",
@@ -42704,10 +42704,10 @@
     },
     {
         "id": 2098,
-        "icon": "pointed_dripstone.png",
+        "icon": "icicle.png",
         "type": "decorativos",
         "name": "Espeleotema de Gelo",
-        "internal_name": "pointed_ice",
+        "internal_name": "icicle",
         "version": "26.4",
         "collectable": true,
         "released": false,
@@ -42719,7 +42719,7 @@
     },
     {
         "id": 2099,
-        "icon": "snow_ball.png",
+        "icon": "ice_ball.png",
         "type": "diversos",
         "name": "Bola de Gelo",
         "internal_name": "ice_ball",
@@ -42734,10 +42734,10 @@
     },
     {
         "id": 2100,
-        "icon": "zombie_spawn_egg.png",
+        "icon": "frostbite_spawn_egg.png",
         "type": "diversos",
         "name": "Ovo Gerador de Zumbi Congelado",
-        "internal_name": "ice_zombie_spawn_egg",
+        "internal_name": "frostbite_spawn_egg",
         "version": "26.4",
         "collectable": false,
         "released": false,
@@ -42749,10 +42749,10 @@
     },
     {
         "id": 2101,
-        "icon": "potion2.png",
+        "icon": "freezing_potion.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o de Congelamento",
-        "internal_name": "potion21",
+        "internal_name": "potion",
         "version": "26.4",
         "collectable": true,
         "released": false,
@@ -42760,14 +42760,19 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (0:45)"
+            }
+        ]
     },
     {
         "id": 2102,
-        "icon": "lingering_potion2.png",
+        "icon": "lingering_freezing_potion.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o Prolongada de Congelamento",
-        "internal_name": "lingering_potion21",
+        "internal_name": "lingering_potion",
         "version": "26.4",
         "collectable": true,
         "released": false,
@@ -42775,14 +42780,19 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (0:11)"
+            }
+        ]
     },
     {
         "id": 2103,
-        "icon": "splash_potion2.png",
+        "icon": "splash_freezing_potion.png",
         "type": "pocoes",
         "name": "Po\u00e7\u00e3o Arremess\u00e1vel de Congelamento",
-        "internal_name": "splash_potion21",
+        "internal_name": "splash_potion",
         "version": "26.4",
         "collectable": true,
         "released": false,
@@ -42790,6 +42800,111 @@
         "stackable": 0,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (0:45)"
+            }
+        ]
+    },
+    {
+        "id": 2104,
+        "icon": "freezing_arrow.png",
+        "type": "combate",
+        "name": "Flecha de Congelamento",
+        "internal_name": "tipped_arrow",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (0:05)"
+            }
+        ]
+    },
+    {
+        "id": 2105,
+        "icon": "freezing_potion.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o de Congelamento",
+        "internal_name": "potion",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (1:30)"
+            }
+        ]
+    },
+    {
+        "id": 2106,
+        "icon": "lingering_freezing_potion.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o Prolongada de Congelamento",
+        "internal_name": "lingering_potion",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (0:22)"
+            }
+        ]
+    },
+    {
+        "id": 2107,
+        "icon": "splash_freezing_potion.png",
+        "type": "pocoes",
+        "name": "Po\u00e7\u00e3o Arremess\u00e1vel de Congelamento",
+        "internal_name": "splash_potion",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (1:30)"
+            }
+        ]
+    },
+    {
+        "id": 2108,
+        "icon": "freezing_arrow.png",
+        "type": "combate",
+        "name": "Flecha de Congelamento",
+        "internal_name": "tipped_arrow",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "description": [
+            {
+                "value": "[&1Congelamento I (0:11)"
+            }
+        ]
     }
 ]
