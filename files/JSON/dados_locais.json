@@ -12393,7 +12393,7 @@
         "id": 626,
         "icon": "azure_bluet.png",
         "type": "decorativos",
-        "name": "Azul-Azul",
+        "name": "Pequena-Azul",
         "internal_name": "azure_bluet",
         "version": "1.7",
         "collectable": true,
@@ -12573,7 +12573,7 @@
         "id": 638,
         "icon": "jukebox.png",
         "type": "decorativos",
-        "name": "Toca-Discos",
+        "name": "Jukebox",
         "internal_name": "jukebox",
         "version": "1.0",
         "collectable": true,
@@ -12804,7 +12804,7 @@
         "id": 652,
         "icon": "lily_pad.png",
         "type": "decorativos",
-        "name": "Vit\u00f3ria-R\u00e9gia",
+        "name": "Nen\u00fafar",
         "internal_name": "lily_pad",
         "version": "1.0",
         "collectable": true,
@@ -29742,7 +29742,7 @@
         "id": 1480,
         "icon": "chiseled_bookshelf.png",
         "type": "redstone",
-        "name": "Porta-Livros",
+        "name": "Estante Talhada",
         "internal_name": "chiseled_bookshelf",
         "version": "1.20",
         "collectable": true,
@@ -42906,5 +42906,20 @@
                 "value": "[&1Congelamento I (0:11)"
             }
         ]
+    },
+    {
+        "id": 2109,
+        "icon": "brittle_ice.png",
+        "type": "construcao",
+        "name": "Gelo Quebradi\u00e7o",
+        "internal_name": "brittle_ice",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
     }
 ]
