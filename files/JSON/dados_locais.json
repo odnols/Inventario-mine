@@ -42948,7 +42948,7 @@
         "id": 2111,
         "icon": "packed_ice_brick_stairs.png",
         "type": "construcao",
-        "name": "Escadas de Gelo Compactado",
+        "name": "Escadas de Tijolos de Gelo Compactado",
         "internal_name": "packed_ice_brick_stairs",
         "version": "26.4",
         "collectable": true,
@@ -42970,7 +42970,7 @@
         "id": 2112,
         "icon": "packed_ice_brick_slab.png",
         "type": "construcao",
-        "name": "Laje de Gelo Compactado",
+        "name": "Laje de Tijolos de Gelo Compactado",
         "internal_name": "packed_ice_brick_slab",
         "version": "26.4",
         "collectable": true,
@@ -42982,7 +42982,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,,,,2110,2110,2110",
+                "recipe": ",,,2110,2110,2110,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -42992,7 +42992,7 @@
         "id": 2113,
         "icon": "packed_ice_brick_wall.png",
         "type": "decorativos",
-        "name": "Muro de Gelo Compactado",
+        "name": "Muro de Tijolos de Gelo Compactado",
         "internal_name": "packed_ice_brick_wall",
         "version": "26.4",
         "collectable": true,
@@ -43004,7 +43004,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,2110,2110,2110,2110,2110,2110",
+                "recipe": "2110,2110,2110,2110,2110,2110,,,",
                 "products": 1,
                 "craft_type": 0
             }
