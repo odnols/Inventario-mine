@@ -42921,5 +42921,115 @@
         "craftable": false,
         "hide": false,
         "legacy": false
+    },
+    {
+        "id": 2110,
+        "icon": "packed_ice_bricks.png",
+        "type": "construcao",
+        "name": "Tijolos de Gelo Compactado",
+        "internal_name": "packed_ice_bricks",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "137,137,,137,137,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2111,
+        "icon": "packed_ice_brick_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Gelo Compactado",
+        "internal_name": "packed_ice_brick_stairs",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "2110,,,2110,2110,,2110,2110,2110",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2112,
+        "icon": "packed_ice_brick_slab.png",
+        "type": "construcao",
+        "name": "Laje de Gelo Compactado",
+        "internal_name": "packed_ice_brick_slab",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2110,2110,2110",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2113,
+        "icon": "packed_ice_brick_wall.png",
+        "type": "decorativos",
+        "name": "Muro de Gelo Compactado",
+        "internal_name": "packed_ice_brick_wall",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,2110,2110,2110,2110,2110,2110",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2114,
+        "icon": "chiseled_packed_ice.png",
+        "type": "construcao",
+        "name": "Gelo Compactado Talhado",
+        "internal_name": "chiseled_packed_ice",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",2112,,,2112,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     }
 ]
