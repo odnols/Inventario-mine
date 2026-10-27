@@ -42982,7 +42982,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,2110,2110,2110,,,",
+                "recipe": ",,,,,,2110,2110,2110",
                 "products": 1,
                 "craft_type": 0
             }
@@ -43004,7 +43004,7 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": "2110,2110,2110,2110,2110,2110,,,",
+                "recipe": ",,,2110,2110,2110,2110,2110,2110",
                 "products": 1,
                 "craft_type": 0
             }
@@ -43026,10 +43026,77 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",2112,,,2112,,,,",
+                "recipe": ",,,,2112,,,2112,",
                 "products": 1,
                 "craft_type": 0
             }
         ]
+    },
+    {
+        "id": 2115,
+        "icon": "snow_bricks.png",
+        "type": "construcao",
+        "name": "Tijolos de Neve",
+        "internal_name": "snow_bricks",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "135,135,,135,135,,,,",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2116,
+        "icon": "snow_brick_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Tijolos de Neve",
+        "internal_name": "snow_brick_stairs",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2117,
+        "icon": "snow_brick_slab.png",
+        "type": "construcao",
+        "name": "Laje de Tijolos de Neve",
+        "internal_name": "snow_brick_slab",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2118,
+        "icon": "snow_brick_wall.png",
+        "type": "construcao",
+        "name": "Muro de Tijolos de Neve",
+        "internal_name": "snow_brick_wall",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false
     }
 ]
