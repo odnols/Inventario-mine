@@ -43067,7 +43067,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "2115,,,2115,2115,,2115,2115,2115",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 2117,
@@ -43082,7 +43089,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2115,2115,2115",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 2118,
@@ -43097,6 +43111,13 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,2115,2115,2115,2115,2115,2115",
+                "products": 1,
+                "craft_type": 0
+            }
+        ]
     }
 ]
