@@ -16,9 +16,24 @@
     <script src="../js/crafting.js"></script>
     <script src="../js/custom.js"></script>
 
-    <?php include_once "../php/conexao_obsoleta.php";
+    <?php
+    include_once "../php/conexao_obsoleta.php";
 
-    $executa = $conexao->query("SELECT * FROM item WHERE fabricavel = 1 ORDER BY id_item");
+    $executa = $conexao->query(
+        "SELECT item.id_item, item.nome, item.tipo, item.icon,
+                (SELECT item_receita.crafting
+                 FROM item_receita
+                 WHERE item_receita.id_item = item.id_item
+                 LIMIT 1) AS receita
+         FROM item
+         WHERE item.fabricavel = 1
+         ORDER BY item.id_item"
+    );
+
+    if (!$executa) {
+        throw new RuntimeException("Falha ao carregar os itens de criação: " . $conexao->error);
+    }
+
     $graphics = true;
 
     if (!isset($_GET["dg"]))
@@ -60,12 +75,18 @@
         <img id="img_craft_redstone" class="aba_menu_craft" src="#">
     </div>
 
-    <a href="#" id="seta_esquerda_crafting"></a>
-    <a href="#" id="seta_direita_crafting"></a>
-
     <div id="menu_criacao">
 
         <a id="click_abrir_crafting" href="#"></a>
+
+        <a href="#" id="seta_esquerda_crafting" aria-label="Página anterior de itens"
+            aria-controls="prancheta_itens_crafting" aria-expanded="false"></a>
+        <a href="#" id="seta_direita_crafting" aria-label="Próxima página de itens"
+            aria-controls="prancheta_itens_crafting" aria-expanded="false"></a>
+
+        <input id="busca_crafting" type="search" placeholder="Buscar" aria-label="Buscar itens fabricáveis"
+            autocomplete="off" aria-controls="prancheta_itens_crafting">
+        <button id="limpar_busca_crafting" type="button" aria-label="Limpar pesquisa"></button>
 
         <div id="grid_crafting">
             <?php for ($i = 0; $i < 9; $i++) {
@@ -80,41 +101,40 @@
 
         <div id="prancheta_itens_crafting">
 
-            <?php $i = 0;
-
+            <?php
             while ($dados = $executa->fetch_assoc()) {
 
                 $programmer_art = "new";
 
-                $nome_item = $dados["nome"];
-                $nome_interno = $dados["internal"];
-
-                $tipo_item = $dados["tipo"];
                 $id_item = $dados["id_item"];
-                $nome_icon = $dados["icon"];
-
+                $tipo_item = $dados["tipo"] ?? "";
+                $nome_icon = $dados["icon"] ?? "";
                 $geracao = "new";
 
                 if ($programmer_art == 1 && $graphics)
                     $geracao = "classic";
 
-                $executa_receita = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item");
+                $recipe = $dados["receita"] ?? "";
+                $json_flags = JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_TAG | JSON_HEX_AMP;
+                $recipe_argument = htmlspecialchars(json_encode($recipe, $json_flags), ENT_QUOTES, "UTF-8");
+                $name_argument = htmlspecialchars(json_encode($dados["nome"], $json_flags), ENT_QUOTES, "UTF-8");
+                $item_name = htmlspecialchars($dados["nome"], ENT_QUOTES, "UTF-8");
+                $search_name = htmlspecialchars($dados["nome"], ENT_QUOTES, "UTF-8");
+                $image_path = htmlspecialchars(
+                    "../img/itens/$geracao/$tipo_item/$nome_icon",
+                    ENT_QUOTES,
+                    "UTF-8"
+                );
 
-                $recipe = '';
-                $data_recipe = $executa_receita->fetch_assoc();
-
-                if (isset($data_recipe["crafting"]))
-                    $recipe = $data_recipe["crafting"];
-
-                echo "<a href='#' onclick='mostra_crafting(\"$recipe\", $id_item, null, 1)' onmouseover='toolTip(\"$nome_item\")' onmouseout='toolTip()'><div class='slot_item_crafting'><img class='sprite_slot_crafting' src='../img/itens/$geracao/$tipo_item/$nome_icon'></div></a>";
-
-                if ($i == 21) break;
-
-                $i++;
+                echo '<a href="#" data-item-name="' . $search_name . '"'
+                    . ' onclick="mostra_crafting(' . $recipe_argument . ', ' . (int) $id_item . ', null, 1); return false;"'
+                    . ' onmouseover="toolTip(' . $name_argument . ')" onmouseout="toolTip()">'
+                    . '<div class="slot_item_crafting"><img class="sprite_slot_crafting" src="' . $image_path
+                    . '" alt="' . $item_name . '"></div></a>';
             } ?>
         </div>
 
-        <p id="num_pagina_craft">13/21</p>
+        <p id="num_pagina_craft" aria-live="polite"></p>
     </div>
 
     <script type="text/javascript" src="../files/JSON/dados_locais.json"></script>

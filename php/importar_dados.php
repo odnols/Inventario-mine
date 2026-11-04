@@ -92,4 +92,10 @@ foreach ($data as $key => $value) {
     }
 }
 
+if (isset($_GET["ajax"])) {
+    header("Content-Type: application/json");
+    echo json_encode(["ok" => true]);
+    exit;
+}
+
 Header("Location: ../pages/index.php");

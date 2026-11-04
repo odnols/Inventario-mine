@@ -21,14 +21,14 @@ ob_start(); ?>
 
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
-        <script>
-            for (let i = 0; i < 21; i += 2) {
-                let x = i + 1
+        <?php $lista_versoes = [];
+        for ($i = 0; $i <= 21; $i++) $lista_versoes[] = "1.$i";
+        for ($i = 1; $i <= 4; $i++) $lista_versoes[] = "26.$i";
 
-                document.write(`-> <a href='#' onclick='categoria(\"1.${i}\", 2)'>1.${i}</a> |`)
-                document.write(` <a href='#' onclick='categoria(\"1.${x}\", 2)'>1.${x}</a><br>`)
-            }
-        </script>
+        foreach (array_chunk($lista_versoes, 3) as $linha) {
+            $links = array_map(fn($v) => "<a href='#' onclick='filtragem(\"$v\", 2)'>$v</a>", $linha);
+            echo "-> " . implode(" | ", $links) . "<br>";
+        } ?>
     </div>
 
     <div id="estatisticas_inventario">
@@ -74,21 +74,21 @@ ob_start(); ?>
 
         <script>
             for (let i = 0; i < 11; i++) {
-                document.write(`<div id='item_${i}' onclick='categoria(${i}, 0)'></div>`)
+                document.write(`<div id='item_${i}' onclick='aba_menu(${i})'></div>`)
             }
         </script>
 
         <div id="item_11" onclick="clique('prancheta')"></div>
 
-        <img id="img_construcao" class="aba_menu construcao" src="#">
-        <img id="img_decorativos" class="aba_menu decorativos" src="#">
-        <img id="img_redstone" class="aba_menu Redstone" src="#">
-        <img id="img_transportes" class="aba_menu Transportes" src="#">
-        <img id="img_diversos" class="aba_menu Diversos" src="#">
-        <img id="img_alimentos" class="aba_menu Alimentos" src="#">
-        <img id="img_ferramentas" class="aba_menu Ferramentas" src="#">
-        <img id="img_combate" class="aba_menu Combate" src="#">
-        <img id="img_pocoes" class="aba_menu Pocoes" src="#">
+        <img id="img_construcao" class="aba_menu aba_menu_construcao construcao" src="#">
+        <img id="img_decorativos" class="aba_menu aba_menu_decorativos decorativos" src="#">
+        <img id="img_redstone" class="aba_menu aba_menu_redstone redstone" src="#">
+        <img id="img_transportes" class="aba_menu aba_menu_transportes transportes" src="#">
+        <img id="img_diversos" class="aba_menu aba_menu_diversos diversos" src="#">
+        <img id="img_alimentos" class="aba_menu aba_menu_alimentos alimentos" src="#">
+        <img id="img_ferramentas" class="aba_menu aba_menu_ferramentas ferramentas" src="#">
+        <img id="img_combate" class="aba_menu aba_menu_combate combate" src="#">
+        <img id="img_pocoes" class="aba_menu aba_menu_pocoes pocoes" src="#">
 
         <div onclick="filtragem_automatica('off')" onmouseover="toolTip('Mostrar itens sem versão informada ou sem nome interno')" onmouseout="toolTip()">
             <img id="img_configs_2" class="aba_menu opcoes_laterais" src="img/interface/mascara_configs.png">
@@ -105,8 +105,8 @@ ob_start(); ?>
             <img id="img_versoes" class="aba_menu opcoes_laterais pesquisa" src="img/interface/aba_atts.png">
         </div>
 
-        <img id="img_especiais" class="aba_menu especiais" src="#">
-        <img id="img_pesquisa" class="aba_menu pesquisa" src="#">
+        <img id="img_especiais" class="aba_menu aba_menu_especiais especiais" src="#">
+        <img id="img_pesquisa" class="aba_menu aba_menu_pesquisa pesquisa" src="#">
 
         <img id="img_prancheta" class="aba_menu prancheta" src="img/interface/mascara_prancheta.png">
 
@@ -115,7 +115,7 @@ ob_start(); ?>
         <span id="titulo_aba"></span>
 
         <div id="barra_rolagem">
-            <div id="barra_scroll" src="img/interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
+            <div id="barra_scroll" src="img/interface/scroll.png"></div>
             <img id="barra_scroll_block" src="#">
         </div>
 
@@ -129,6 +129,22 @@ ob_start(); ?>
             <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll')">
 
                 <?php
+                // Tabelas auxiliares carregadas de uma vez, evitando consultas por item
+                $mapa_ocultos = [];
+                $mapa_descricoes = [];
+                $mapa_titulos = [];
+
+                $consulta_aux = $conexao->query("SELECT id_item FROM item_oculto");
+                while ($linha = $consulta_aux->fetch_assoc()) $mapa_ocultos[$linha["id_item"]] = true;
+
+                $consulta_aux = $conexao->query("SELECT id_item, descricao FROM item_descricao");
+                while ($linha = $consulta_aux->fetch_assoc())
+                    if (!isset($mapa_descricoes[$linha["id_item"]])) $mapa_descricoes[$linha["id_item"]] = $linha["descricao"];
+
+                $consulta_aux = $conexao->query("SELECT id_item, tipo_item FROM item_titulo");
+                while ($linha = $consulta_aux->fetch_assoc())
+                    if (!isset($mapa_titulos[$linha["id_item"]])) $mapa_titulos[$linha["id_item"]] = $linha["tipo_item"];
+
                 $verificar = "SELECT * FROM item ORDER BY id_item DESC";
                 $executa = $conexao->query($verificar);
 
@@ -149,12 +165,13 @@ ob_start(); ?>
                     $versao_add = $dados["versao"];
                     $renovavel = $dados["renovavel"];
 
-                    $oculto_invt = null;
+                    $oculto_invt = isset($mapa_ocultos[$id_item]) ? "oculto" : null;
                     $programmer_art = null;
 
                     $descricao = "[&1" . $tipo_item;
 
-                    $descricao = $descricao . " " . $dados["descricao"];
+                    if (isset($mapa_descricoes[$id_item]))
+                        $descricao = $descricao . " " . $mapa_descricoes[$id_item];
 
                     $descricao_pes = str_replace("[&r", "", $descricao);
 
@@ -187,15 +204,7 @@ ob_start(); ?>
                     else
                         $coletavel = "não_coletável";
 
-                    $cor_item = 0;
-
-                    $executa_item = $conexao->query("SELECT * FROM item_titulo WHERE id_item = $id_item");
-
-                    if ($executa_item->num_rows > 0) {
-                        $dados2 = $executa_item->fetch_assoc();
-
-                        $cor_item = $dados2["tipo_item"];
-                    }
+                    $cor_item = $mapa_titulos[$id_item] ?? 0;
 
                     $nome_pesq = strtolower($nome_item);
                     $descricao_pesq = strtolower($descricao_pes);
@@ -207,12 +216,12 @@ ob_start(); ?>
                     $caminho_sprite = 'img/itens/' . $geracao . '/' . $tipo_item . '/' . $nome_icon;
 
                     if ($oculto_invt != "oculto") {
-                        echo "<div class='slot_item $tipo_item' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div class='slot_item $tipo_item $versao_add $nome_interno $coletavel $nome_pesq $descricao_pesq' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     } else {
                         echo "<div class='slot_item oculto' onclick='exibe_item(`$caminho_sprite`)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
                     }
 
-                    echo "<img class='icon_item' src='$caminho_sprite'>";
+                    echo "<img class='icon_item' loading='lazy' decoding='async' src='$caminho_sprite'>";
                     echo "</div>";
                 } ?>
                 <div id="complementa_slots"></div>
@@ -221,18 +230,28 @@ ob_start(); ?>
     </div>
 
     <script src="js/engine.js"></script>
+    <script src="js/custom.js"></script>
     <script type="text/javascript">
         (function() {
-            setTimeout(() => {
-                document.getElementById("qtd_itens_inventario").innerHTML = 1424
-                document.getElementById("qtd_itens_inventario_colet").innerHTML = 1327
-                document.getElementById("qtd_itens_fabricaveis").innerHTML = 782
-                document.getElementById("qtd_itens_inventario_renov").innerHTML = 1261
-                document.getElementById("qtd_itens_inventario_empil").innerHTML = 1007
-                document.getElementById("qtd_itens_inventario_colet_empil").innerHTML = 915
-                document.getElementById("qtd_itens_inventario_colet_empil_n_renov").innerHTML = 55
-                document.getElementById("qtd_itens_inventario_n_empil").innerHTML = 417
-            }, 1000)
+            const estatisticas = <?php
+                $contar = function ($filtro) use ($conexao) {
+                    return (int) $conexao->query("SELECT COUNT(*) c FROM item" . ($filtro ? " WHERE $filtro" : ""))->fetch_assoc()["c"];
+                };
+                echo json_encode([
+                    "qtd_itens_inventario" => $contar(""),
+                    "qtd_itens_inventario_colet" => $contar("coletavel = 1"),
+                    "qtd_itens_fabricaveis" => $contar("fabricavel = 1"),
+                    "qtd_itens_inventario_renov" => $contar("renovavel = 1"),
+                    "qtd_itens_inventario_empil" => $contar("empilhavel != 0"),
+                    "qtd_itens_inventario_colet_empil" => $contar("empilhavel != 0 AND coletavel = 1"),
+                    "qtd_itens_inventario_colet_empil_n_renov" => $contar("coletavel = 1 AND empilhavel != 0 AND renovavel != 1"),
+                    "qtd_itens_inventario_n_empil" => $contar("empilhavel = 0")
+                ]); ?>;
+
+            Object.keys(estatisticas).forEach(id => {
+                const alvo = document.getElementById(id)
+                if (alvo) alvo.innerHTML = estatisticas[id]
+            })
         })()
 
         aba_menu(0)
@@ -247,4 +266,11 @@ $gerado = ob_get_contents();
 ob_end_clean();
 
 file_put_contents('../index.html', $gerado);
+
+if (isset($_GET["ajax"])) {
+    header("Content-Type: application/json");
+    echo json_encode(["ok" => true, "bytes" => strlen($gerado)]);
+    exit;
+}
+
 header("Location: ../pages/index.php") ?>

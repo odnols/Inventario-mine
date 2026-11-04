@@ -158,4 +158,10 @@ fwrite($file, $json);
 
 fclose($file);
 
+if (isset($_GET["ajax"])) {
+    header("Content-Type: application/json");
+    echo json_encode(["ok" => true, "itens" => count($data)]);
+    exit;
+}
+
 Header("Location: ../pages/index.php");

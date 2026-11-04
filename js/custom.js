@@ -1,3 +1,31 @@
+// Posiciona o tooltip ao lado do cursor, invertendo o lado quando ele ultrapassa a borda da tela
+function posiciona_tooltip(evento) {
+    const tooltip = document.getElementById("minetip-tooltip")
+    if (!tooltip) return
+
+    const margem = 20
+    const largura = tooltip.offsetWidth, altura = tooltip.offsetHeight
+    let esquerda = evento.clientX + margem
+    let topo = evento.clientY - altura - margem / 2
+
+    if (esquerda + largura > window.innerWidth)
+        esquerda = evento.clientX - largura - margem
+
+    if (topo < 0)
+        topo = evento.clientY + margem
+
+    tooltip.style.left = `${Math.max(0, esquerda)}px`
+    tooltip.style.top = `${Math.max(0, Math.min(topo, window.innerHeight - altura))}px`
+}
+
+// O tooltip acompanha o mouse em qualquer elemento, respeitando os limites da tela
+let ultimo_mouse = null
+document.addEventListener("mousemove", evento => {
+    ultimo_mouse = evento
+    const tooltip = document.getElementById("minetip-tooltip")
+    if (tooltip && tooltip.style.display === "block") posiciona_tooltip(evento)
+})
+
 function toolTip(nome, descricao, nome_interno, cor_item, local) {
 
     let id_nome_item, id_descricao_item, id_nome_interno
@@ -83,23 +111,8 @@ function toolTip(nome, descricao, nome_interno, cor_item, local) {
         if (typeof local === "undefined")
             document.getElementById("minetip-tooltip").style.display = "block"
 
-        // Verifica se existem muitos alvos para poder acompanhar o mouse            
-        const verifica = document.getElementsByClassName("slot_item")
-        const verifica_2 = document.getElementsByClassName("slot_item_crafting")
-
-        if (verifica.length > 1 || verifica_2.length > 1) {
-            $(".slot_item").on("mousemove", function (event) {
-                $("#minetip-tooltip").css({ left: event.pageX + 30, top: event.pageY - 50 })
-            })
-
-            $(".slot_item_add").on("mousemove", function (event) {
-                $("#minetip-tooltip").css({ left: event.pageX + 30, top: event.pageY - 50 })
-            })
-
-            $(".slot_item_crafting").on("mousemove", function (event) {
-                $("#minetip-tooltip").css({ left: event.pageX + 30, top: event.pageY - 50 })
-            })
-        }
+        if (typeof local === "undefined" && ultimo_mouse)
+            posiciona_tooltip(ultimo_mouse)
     } else
         document.getElementById("minetip-tooltip").style.display = "none"
 }
@@ -164,6 +177,9 @@ function sincroniza_tema(versao_jogo, local) {
             document.getElementById("barra_rolagem").style.top = "69px"
             document.getElementById("barra_rolagem").style.right = "111px"
             document.getElementById("barra_rolagem").style.height = "480px"
+
+            // A lista foi redimensionada, então os slots extras precisam ser recalculados
+            preenche_slots_livres()
         }
         else {
             botoes_menu = document.getElementsByClassName("botoes_menu")
@@ -196,6 +212,20 @@ function sincroniza_tema(versao_jogo, local) {
                 alvos[j].style.background = `url('${caminho}img/interface/${alvo}/${nome_template[i]}') no-repeat`
         }
     }
+
+    const craftingTipo = document.getElementById("tipo_craft")
+    const craftGrid = document.getElementById("grid_crafting")
+    const craftOutput = document.getElementById("produto_final")
+    if (craftingTipo && Number(craftingTipo.value) !== 0) {
+        if (craftGrid)
+            craftGrid.style.background = "none"
+        if (craftOutput)
+            craftOutput.style.background = `url('${caminho}img/interface/${alvo}/slot.png') no-repeat center`
+    }
+
+    const buscaCrafting = document.getElementById("busca_crafting")
+    if (buscaCrafting)
+        buscaCrafting.style.cursor = `url('${caminho}img/interface/${alvo}/ponteiro_insercao.png') 2 7, text`
 
     const textos = document.getElementsByClassName("cor_textos")
     const textos_craft = document.getElementsByClassName("textos_craft")

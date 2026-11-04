@@ -492,6 +492,12 @@ select {
     font-family: 'Minecraftia';
 }
 
+#seletor_guia_menu {
+    width: 368px;
+    height: 45px;
+    font-family: 'Minecraftia';
+}
+
 #titulo_aba {
     top: 370%;
     z-index: 3;
@@ -630,12 +636,14 @@ a {
     background-color: rgb(224, 193, 135);
 }
 
-#bttn_programmers_atv {
+#bttn_programmers_atv,
+#button_graficos.programmers_ativo {
     transition: background-color .2s;
     background-color: rgb(224, 193, 135);
 }
 
-#bttn_programmers_atv:hover {
+#bttn_programmers_atv:hover,
+#button_graficos.programmers_ativo:hover {
     background-color: rgb(180, 147, 85);
 }
 
@@ -794,12 +802,13 @@ a {
 
 #seta_esquerda_crafting {
     z-index: 3;
-    left: 361px;
+    left: 220px;
     width: 33px;
     height: 51px;
-    bottom: 99px;
+    bottom: 35px;
     position: absolute;
     background-image: url("../img/interface/claro/seta_esquerda.png");
+    background-repeat: no-repeat;
 }
 
 #seta_esquerda_crafting:hover {
@@ -808,16 +817,65 @@ a {
 
 #seta_direita_crafting {
     z-index: 3;
-    left: 523px;
+    left: 379px;
     width: 33px;
     height: 51px;
-    bottom: 99px;
+    bottom: 35px;
     position: absolute;
     background-image: url("../img/interface/claro/seta_direita.png");
+    background-repeat: no-repeat;
 }
 
-#seta_direta_crafting:hover {
+#seta_direita_crafting:hover {
     background-image: url("../img/interface/claro/seta_direita_hover.png") !important;
+}
+
+#busca_crafting {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 27px;
+    left: 160px;
+    width: 263px;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 8px;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    color: white;
+    caret-color: white;
+    cursor: url("../img/interface/claro/ponteiro_insercao.png") 2 7, text;
+    background: transparent;
+    font: inherit;
+}
+
+#busca_crafting:focus {
+    border: 0;
+    outline: none;
+}
+
+#busca_crafting::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#busca_crafting::-webkit-search-cancel-button {
+    display: none;
+}
+
+#limpar_busca_crafting {
+    display: none;
+    position: absolute;
+    z-index: 6;
+    top: 27px;
+    left: 419px;
+    width: 85px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }
 
 #abas_craft_organiza {
@@ -837,13 +895,14 @@ a {
 }
 
 #prancheta_itens_crafting {
+    display: none;
     top: 93px;
     z-index: 2;
     left: 129px;
     width: 375px;
     height: 300px;
     position: absolute;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 #img_craft_ferramentas {
@@ -863,10 +922,19 @@ a {
 }
 
 #num_pagina_craft {
+    display: none;
     color: white;
     font-size: 24px;
     padding-top: 393px;
     padding-left: 270px;
+}
+
+.crafting_sem_resultados {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
 }
 
 .slot_item_crafting {
@@ -898,8 +966,8 @@ a {
 }
 
 .grid_craft:hover {
-    background-image: url("../img/interface/claro/slot_hover.png") !important;
-    background-position: -3px -3px;
+    background-color: rgba(255, 255, 255, 0.18);
+    background-position: center;
 }
 
 #produto_final {
@@ -931,6 +999,47 @@ a {
     text-shadow: 3px 3px 0px #3e3e3e;
 }
 
+#input_qtd_produto {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: -3px;
+    width: 38px;
+    margin-bottom: 0px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    color: white;
+    background: transparent;
+    font-family: 'Minecraftia';
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    text-shadow: 2px 2px 0 #3e3e3e;
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+#input_qtd_produto:focus {
+    outline: none;
+}
+
+#input_qtd_produto::-webkit-inner-spin-button,
+#input_qtd_produto::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+#preview_item_craft #qtd_produto {
+    top: 55%;
+    right: -30px;
+    bottom: auto;
+    padding: 0;
+    line-height: 1;
+    transform: translateY(-50%);
+}
+
 .gric {
     width: 48px;
     float: left;
@@ -948,11 +1057,162 @@ a {
 
 #craft_prancheta {
     top: 5%;
-    right: 5%;
+    right: 15%;
     width: 528px;
     height: 498px;
     position: absolute;
     background-image: url("../img/interface/claro/craft.png");
+}
+
+#craft_station_interface {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 528px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 8px solid #f4f4f4;
+    background-color: #c6c6c6;
+    box-shadow: inset 0 0 0 3px #555;
+    background-repeat: no-repeat;
+    background-position: right 34px center;
+    background-size: 112px 112px;
+}
+
+#craft_station_interface::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(198, 198, 198, 0) 58%, rgba(198, 198, 198, 0.28));
+}
+
+#craft_prancheta[data-tipo-craft="1"] #craft_station_interface,
+#craft_prancheta[data-tipo-craft="2"] #craft_station_interface,
+#craft_prancheta[data-tipo-craft="3"] #craft_station_interface {
+    display: block;
+}
+
+#craft_prancheta[data-tipo-craft="1"] #craft_station_interface {
+    background-image: url("../img/itens/new/decorativos/smithing_table.png");
+}
+
+#craft_prancheta[data-tipo-craft="2"] #craft_station_interface {
+    background-image: url("../img/itens/new/decorativos/furnace.png");
+}
+
+#craft_prancheta[data-tipo-craft="3"] #craft_station_interface {
+    background-image: url("../img/itens/new/pocoes/brewing_stand.png");
+}
+
+#craft_prancheta[data-tipo-craft="1"] .textos_craft,
+#craft_prancheta[data-tipo-craft="2"] .textos_craft,
+#craft_prancheta[data-tipo-craft="3"] .textos_craft {
+    z-index: 2;
+}
+
+#craft_prancheta[data-tipo-craft="1"] #grid_crafting,
+#craft_prancheta[data-tipo-craft="2"] #grid_crafting,
+#craft_prancheta[data-tipo-craft="3"] #grid_crafting {
+    top: 88px;
+    left: 104px;
+    right: auto;
+    display: flex;
+    width: auto;
+    height: 54px;
+    background: none;
+}
+
+#craft_prancheta[data-tipo-craft="1"] #grid_crafting {
+    gap: 5px;
+}
+
+#craft_prancheta[data-tipo-craft="2"] #grid_crafting,
+#craft_prancheta[data-tipo-craft="3"] #grid_crafting {
+    left: 158px;
+}
+
+#craft_prancheta[data-tipo-craft="3"] #grid_crafting {
+    top: 60px;
+    left: 24px;
+    right: auto;
+    gap: 12px;
+}
+
+#craft_prancheta[data-tipo-craft="1"] .grid_craft,
+#craft_prancheta[data-tipo-craft="2"] .grid_craft,
+#craft_prancheta[data-tipo-craft="3"] .grid_craft {
+    display: none;
+    float: none;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #8b8b8b;
+    box-shadow: inset 0 0 0 2px #555;
+}
+
+#craft_prancheta[data-tipo-craft="1"] .grid_craft:nth-child(-n+3),
+#craft_prancheta[data-tipo-craft="2"] .grid_craft:first-child,
+#craft_prancheta[data-tipo-craft="3"] .grid_craft:nth-child(-n+9) {
+    display: block;
+}
+
+#craft_prancheta[data-tipo-craft="3"] .grid_craft {
+    position: relative;
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    box-shadow: inset 0 0 0 2px #555;
+}
+
+#craft_prancheta[data-tipo-craft="3"] .grid_craft:not(:last-child)::after {
+    content: "›";
+    position: absolute;
+    top: 0;
+    right: -11px;
+    width: 10px;
+    color: #777;
+    font-family: 'Minecraftia';
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#craft_prancheta[data-tipo-craft="2"] #produto_final,
+#craft_prancheta[data-tipo-craft="3"] #produto_final {
+    top: 76px;
+    right: 76px;
+    width: 72px;
+    height: 72px;
+    background: url("../img/interface/claro/slot.png") no-repeat center;
+}
+
+#craft_prancheta[data-tipo-craft="3"] #produto_final {
+    top: 132px;
+    right: 220px;
+}
+
+#craft_prancheta[data-tipo-craft="1"] #produto_final {
+    top: 76px;
+    right: 76px;
+    width: 72px;
+    height: 72px;
+    background: url("../img/interface/claro/slot.png") no-repeat center;
+}
+
+#craft_prancheta[data-tipo-craft="1"] #grid_crafting::after {
+    content: "➜";
+    position: absolute;
+    top: 4px;
+    left: 164px;
+    color: #777;
+    font-size: 34px;
+    line-height: 48px;
+    pointer-events: none;
 }
 
 #slots_atalho_itens {
@@ -961,6 +1221,37 @@ a {
     width: 486px;
     bottom: 21px;
     position: absolute;
+}
+
+#aba_remover_item_selecionado {
+    display: none;
+    position: absolute;
+    top: 400px;
+    right: -5.9%;
+    z-index: 1;
+    width: 67px;
+    height: 84px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    animation: puxa_campos .5s;
+}
+
+#aba_remover_item_selecionado img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#item_na_mao {
+    position: fixed;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    pointer-events: none;
 }
 
 #craft_ativo {
@@ -982,6 +1273,40 @@ a {
 
 #btn_confirma_craft:hover {
     background-color: rgb(100, 197, 173);
+}
+
+#seletor_tipo_craft {
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: -20%;
+    width: 220px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.tipo_craft_opcao {
+    width: 104px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #555;
+    background: rgba(32, 32, 32, 0.78);
+    cursor: pointer;
+}
+
+.tipo_craft_opcao img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+}
+
+.tipo_craft_opcao:hover,
+.tipo_craft_opcao.ativa {
+    border-color: #fff;
+    background: rgba(90, 90, 90, 0.92);
 }
 
 .input_hidden {
@@ -1047,4 +1372,10 @@ a {
     background-size: 300px !important;
     background-position: 150px 150px,
         0px 0px !important;
+}
+
+/* Imagens não podem ser selecionadas nem arrastadas */
+img {
+    -webkit-user-drag: none;
+    user-select: none;
 }

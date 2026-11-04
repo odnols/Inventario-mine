@@ -1,5 +1,5 @@
 // Variavéis Globais 
-var prancheta = false, posicao_scroll = 0, libera_scroll = 1, cache_pesquisa = null, itens_ocultos = 0, tema, pesquisa = 0
+var prancheta = false, cache_pesquisa = null, itens_ocultos = 0, tema, pesquisa = 0
 
 var qtd_itens = 0
 
@@ -18,10 +18,6 @@ const categorias_map = {
     9: "especiais"
 }
 
-function gerencia_scroll(valor) {
-    libera_scroll = valor
-}
-
 function get(alvo) {
 
     let alvos = document.getElementsByClassName(alvo)
@@ -33,30 +29,32 @@ function get(alvo) {
 }
 
 function scrollSincronizado(principal, sincronizado, versao_jogo) {
+    const listagem = document.getElementById(principal === "listagem" ? principal : sincronizado)
+    const puxador = document.getElementById(principal === "listagem" ? sincronizado : "barra_scroll")
+    const trilho = puxador && puxador.parentElement
 
-    let elem = get(sincronizado)
-    let doc = get(principal)
+    if (!listagem || !puxador || !trilho)
+        return
 
-    if (principal == "listagem") {
-        if (libera_scroll) {
-            if (versao_jogo > 2 || typeof versao_jogo == "undefined")
-                value = parseInt(86 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
-            else
-                value = parseFloat(90.7 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
+    const maximoScroll = listagem.scrollHeight - listagem.clientHeight
+    const maximoPuxador = trilho.clientHeight - puxador.offsetHeight
 
-            elem.style.top = `${value}%`
-        }
+    if (maximoScroll <= 0 || maximoPuxador <= 0) {
+        puxador.style.top = "0px"
+        if (maximoScroll <= 0)
+            listagem.scrollTop = 0
+        return
+    }
+
+    if (principal === "listagem") {
+        puxador.style.top = `${(listagem.scrollTop / maximoScroll) * maximoPuxador}px`
     } else {
-        if (versao_jogo > 2 || typeof versao_jogo == "undefined") {
-            porcentagem = parseInt(86 * posicao_scroll / (elem.scrollHeight - elem.clientHeight))
-            porcentagem = porcentagem - 59
-        } else {
-            porcentagem = parseFloat(90.9 * posicao_scroll / (elem.scrollHeight - elem.clientHeight))
-            porcentagem = porcentagem - 90
-        }
-
-        value = parseInt((elem.scrollHeight / 180) * porcentagem)
-        elem.scrollTop = value
+        const posicaoPuxador = Math.max(0, Math.min(puxador.offsetTop, maximoPuxador))
+        const scrollProposto = (posicaoPuxador / maximoPuxador) * maximoScroll
+        const passoSlot = 54
+        const scrollPorSlots = Math.round(scrollProposto / passoSlot) * passoSlot
+        listagem.scrollTop = Math.min(scrollPorSlots, maximoScroll)
+        puxador.style.top = `${(listagem.scrollTop / maximoScroll) * maximoPuxador}px`
     }
 }
 
@@ -112,6 +110,20 @@ function clique(valor, estado) {
     }
 }
 
+// As máscaras das abas laterais (off, não coletáveis, ocultos) só aparecem quando o termo correspondente está digitado na barra
+function sincroniza_mascaras_pesquisa() {
+    const barra = get("barra_pesquisa_input")
+    const termo = barra ? barra.value.trim().toLowerCase() : ""
+    const abas = { img_configs: "off", img_coletaveis: "não_coletável", img_ocultos: "oculto" }
+
+    for (const id in abas) {
+        const mascara = get(id + "_2")
+        const ativa = termo === abas[id]
+
+        if (mascara && !ativa) mascara.style.display = "none"
+    }
+}
+
 function aba_menu(alvo) {
 
     if (get("img_versoes_2")) {
@@ -121,6 +133,13 @@ function aba_menu(alvo) {
 
     // Filtrando os itens da aba escolhida
     filtragem(categorias_map[alvo], 0, true, alvo)
+    const listagem = document.getElementById("listagem")
+    const puxador = document.getElementById("barra_scroll")
+    if (listagem)
+        listagem.scrollTop = 0
+    if (puxador)
+        puxador.style.top = "0px"
+
     nome_guia(alvo)
 }
 
@@ -147,10 +166,12 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
 
         if (texto.length > 0)
             texto = texto.toLowerCase(), pesquisa_input = texto, local = 1
+        else
+            pesquisa_input = "slot_item" // Todos os slots possuem essa classe, então nenhum item é filtrado
     }
 
     let alvos = []
-    let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20", "1.21"]
+    let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20", "1.21", "26.1", "26.2", "26.3", "26.4"]
 
     // Descrição das abas do inventário para os itens
     if (categorias_map[pesquisa_input] && (categorias_map[pesquisa_input] !== "pesquisa" && local !== 1))
@@ -167,7 +188,7 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
     }
 
     // Listando os itens que possuem a class com nome semelhante ao pesquisado
-    let itens = get("slot_item")
+    let itens = document.getElementsByClassName("slot_item")
 
     for (let i = 0; i < itens.length; i++)
         if (itens[i].className.includes(pesquisa_input) && !itens[i].className.includes("oculto"))
@@ -190,7 +211,8 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
         itens[i].style.display = "None"
 
     ordena_guias_ativas(alvos, force_filter, alvo, pesquisa_input)
-    preenche_slots_livres(qtd_itens, pesquisa_input)
+    preenche_slots_livres()
+    sincroniza_mascaras_pesquisa()
 
     if (versoes.includes(pesquisa_input)) {
         $("#versao_referencia").fadeIn()
@@ -242,34 +264,30 @@ function nome_guia(alvo) {
     }
 }
 
-function preenche_slots_livres(qtd_itens, pesquisa_input) {
+function preenche_slots_livres() {
+    const complemento = document.getElementById("complementa_slots")
+    const listagem = document.getElementById("listagem")
 
-    let slots_livres = qtd_itens % 9
-    let slots_porcentagem = qtd_itens / 9
+    if (!complemento || !listagem)
+        return
 
-    if ((((qtd_itens - 1) % 9) !== 0) || qtd_itens < 45) {
-        if (qtd_itens < 45)
-            slots_livres = 45 - qtd_itens
-        else
-            slots_livres = 9 - (qtd_itens % 9)
+    // Colunas e linhas visíveis dependem do tamanho da lista (8 colunas nas versões 1.0 a 1.2)
+    const colunas = Math.max(1, Math.floor(listagem.clientWidth / 54))
+    const linhasVisiveis = Math.max(1, Math.floor(listagem.clientHeight / 54))
+    const slotsPrimeiraTela = colunas * linhasVisiveis
 
-        if (slots_livres == 9)
-            slots_livres = 0
+    const quantidadeItens = Array.from(listagem.querySelectorAll(".slot_item"))
+        .filter(item => !item.closest("#complementa_slots") && item.style.display !== "none")
+        .length
 
-        if (slots_porcentagem - parseInt(slots_porcentagem) > 0)
-            slots_livres++
+    const slotsLivres = quantidadeItens < slotsPrimeiraTela
+        ? slotsPrimeiraTela - quantidadeItens
+        : (colunas - quantidadeItens % colunas) % colunas
 
-        if (pesquisa_input || (qtd_itens + slots_livres) / 9 > 0)
-            slots_livres--
-    }
+    complemento.replaceChildren()
 
-    if (slots_livres > 0) {
-        get("complementa_slots").innerHTML = ""
-
-        for (let j = 0; j < slots_livres; j++)
-            get("complementa_slots").innerHTML += "<div class='slot_item'></div>"
-    } else // Limpa os slots de outras abas
-        get("complementa_slots").innerHTML = ""
+    for (let indice = 0; indice < slotsLivres; indice++)
+        complemento.appendChild(document.createElement("div")).className = "slot_item"
 }
 
 function ordena_guias_ativas(alvos, force_filter, alvo, pesquisa_input) {
@@ -305,37 +323,48 @@ function ordena_guias_ativas(alvos, force_filter, alvo, pesquisa_input) {
 
     // Desabilitando todas as guias
     for (let i = 0; i < Object.keys(categorias_map).length; i++) {
-        let guia_alvo = get(`aba_menu_${categorias_map[i].toLowerCase()}`)
+        const guia_alvo = document.getElementsByClassName(`aba_menu_${categorias_map[i].toLowerCase()}`)
 
         if (guia_alvo.length > 0) guia_alvo[0].style.display = "none"
     }
 
     for (let i = 0; i < guias.length; i++) {
-        let guia_alvo = get(`aba_menu_${guias[i].toLowerCase()}`)
+        const guia_alvo = document.getElementsByClassName(`aba_menu_${guias[i].toLowerCase()}`)
         if (guia_alvo.length > 0) guia_alvo[0].style.display = "block"
     }
 }
 
+function ordinal_versao(versao) {
+    const partes = String(versao).split(".")
+    const principal = parseInt(partes[0]), secundaria = parseInt(partes[1])
+
+    if (isNaN(principal) || isNaN(secundaria))
+        return NaN
+
+    // As versões 26.x vêm logo após a 1.21
+    return principal >= 26 ? 21 + secundaria : secundaria
+}
+
 function exibe_itens_categoria(alvo, versao_jogo, pesquisa_input) {
 
-    let alvos_mostra = get(alvo)
-    if (alvos_mostra.length > 1) {
-        for (let x = 0; x < alvos_mostra.length; x++) {
+    const alvos_mostra = document.getElementsByClassName(alvo)
+    for (let x = 0; x < alvos_mostra.length; x++) {
 
-            if (versao_jogo && alvos_mostra[x].className.includes("slot_item")) { // Utilizado para versionamento na página de histórico
-                if (parseInt((alvos_mostra[x].classList.toString()).split(".")[1].split(" ")[0]) <= parseInt(versao_jogo) && alvos_mostra[x].className.includes(alvo)) {
-                    alvos_mostra[x].style.display = "block"
-                    qtd_itens++
-                }
-            } else if (pesquisa_input) {
-                if (alvos_mostra[x].className.includes(pesquisa_input)) {
-                    alvos_mostra[x].style.display = "block"
-                    qtd_itens++
-                }
-            } else {
+        if (versao_jogo && alvos_mostra[x].className.includes("slot_item")) { // Utilizado para versionamento na página de histórico
+            const versao_item = Array.from(alvos_mostra[x].classList).find(classe => /^\d+\.\d+$/.test(classe))
+
+            if (ordinal_versao(versao_item) <= parseInt(versao_jogo) && alvos_mostra[x].className.includes(alvo)) {
                 alvos_mostra[x].style.display = "block"
                 qtd_itens++
             }
+        } else if (pesquisa_input) {
+            if (alvos_mostra[x].className.includes(pesquisa_input)) {
+                alvos_mostra[x].style.display = "block"
+                qtd_itens++
+            }
+        } else {
+            alvos_mostra[x].style.display = "block"
+            qtd_itens++
         }
     }
 }
@@ -408,59 +437,98 @@ function lista_versoes() {
     $("#img_versoes_2").toggle()
 }
 
-dragElement(get("barra_scroll"))
+function inicia_arraste_scroll() {
+    const puxador = document.getElementById("barra_scroll")
+    const lista = document.getElementById("listagem")
+
+    dragElement(puxador)
+
+    if (puxador && puxador.parentElement && !puxador.parentElement.dataset.clickScrollInicializado) {
+        puxador.parentElement.dataset.clickScrollInicializado = "true"
+        puxador.parentElement.addEventListener("click", event => {
+            if (event.target === puxador || puxador.contains(event.target))
+                return
+
+            const trilho = puxador.parentElement
+            const limitesTrilho = trilho.getBoundingClientRect()
+            const maximoPuxador = trilho.clientHeight - puxador.offsetHeight
+            const posicaoPuxador = Math.max(
+                0,
+                Math.min(event.clientY - limitesTrilho.top - puxador.offsetHeight / 2, maximoPuxador)
+            )
+
+            puxador.style.top = `${posicaoPuxador}px`
+            scrollSincronizado(trilho.id, "listagem")
+        })
+    }
+
+    if (lista && !lista.dataset.wheelScrollInicializado) {
+        lista.dataset.wheelScrollInicializado = "true"
+
+        const rolaPorSlot = event => {
+            if (event.deltaY === 0)
+                return
+
+            event.preventDefault()
+            const passoSlot = 54
+            const maximoScroll = lista.scrollHeight - lista.clientHeight
+            const indiceSlot = Math.round(lista.scrollTop / passoSlot)
+            const proximoScroll = (indiceSlot + Math.sign(event.deltaY)) * passoSlot
+            lista.scrollTop = Math.max(0, Math.min(proximoScroll, maximoScroll))
+        }
+
+        lista.addEventListener("wheel", rolaPorSlot, { passive: false })
+
+        // A barra de scroll fica fora da lista, então também precisa responder à roda
+        const trilho = puxador && puxador.parentElement
+        if (trilho)
+            trilho.addEventListener("wheel", rolaPorSlot, { passive: false })
+    }
+}
+
+if (document.readyState === "loading")
+    document.addEventListener("DOMContentLoaded", inicia_arraste_scroll, { once: true })
+else
+    inicia_arraste_scroll()
 
 function dragElement(elmnt) {
 
     if (elmnt != null) {
-        let pos2 = 0, pos4 = 0
-
-        if (get(elmnt.id))
-            get(elmnt.id).onmousedown = dragMouseDown
-        else
-            elmnt.onmousedown = dragMouseDown
+        const trilho = elmnt.parentElement
+        let distanciaPuxador = 0
 
         function dragMouseDown(e) {
-            e = e || window.event
             e.preventDefault()
-            // get the mouse cursor position at startup:
-            pos4 = e.clientY
+            const limitesPuxador = elmnt.getBoundingClientRect()
+            distanciaPuxador = e.clientY - limitesPuxador.top
             document.onmouseup = closeDragElement
-            // call a function whenever the cursor moves:
             document.onmousemove = elementDrag
         }
 
         function elementDrag(e) {
-            e = e || window.event
             e.preventDefault()
-            // calculate the new cursor position:
-            pos2 = pos4 - e.clientY
-            pos4 = e.clientY
+            const maximoPuxador = trilho.clientHeight - elmnt.offsetHeight
+            const limitesTrilho = trilho.getBoundingClientRect()
+            const posicaoPuxador = Math.max(
+                0,
+                Math.min(e.clientY - limitesTrilho.top - distanciaPuxador, maximoPuxador)
+            )
 
-            // set the element's new position:
-            scrollSincronizado('barra_rolagem', 'listagem')
-
-            if (pos4 > 185 && pos4 < 484) {
-                elmnt.style.top = `${(elmnt.offsetTop - pos2)}px`
-                posicao_scroll = pos4
-            }
-
-            if (elmnt.offsetTop - pos2 < 0)
-                elmnt.style.top = "0px"
-
-            if (elmnt.offsetTop - pos2 > 286)
-                elmnt.style.top = "286px"
+            elmnt.style.top = `${posicaoPuxador}px`
+            scrollSincronizado(trilho.id, "listagem")
         }
 
         function closeDragElement() {
-            /* stop moving when mouse button is released:*/
             document.onmouseup = null
             document.onmousemove = null
         }
+
+        elmnt.onmousedown = dragMouseDown
     }
 }
 
 function verifica_posicao(caso) {
+    sincroniza_mascaras_pesquisa()
 
     if (caso == "off")
         caso = 0
@@ -562,7 +630,18 @@ function sincroniza_itens(receita, produto, qtd, local, id_item) {
         .then(response => response.json())
         .then(async res_artigo => {
 
-            dados_itens = res_artigo
+            const idsItensJson = new Set(res_artigo.map(item => String(item.id)))
+            const itensBanco = Array.from(document.querySelectorAll("[data-craft-item-id]"), elemento => ({
+                id: Number(elemento.dataset.craftItemId),
+                type: elemento.dataset.craftItemType,
+                icon: elemento.dataset.craftItemIcon,
+                name: elemento.dataset.craftItemName,
+                internal_name: elemento.dataset.craftItemInternalName
+            }))
+
+            dados_itens = res_artigo.concat(
+                itensBanco.filter(item => !idsItensJson.has(String(item.id)))
+            )
 
             if (local !== 1)
                 mostra_crafting(receita, produto, qtd, 1)
@@ -582,8 +661,14 @@ if (get("btn_fecha_tela_craft")) {
     })
 }
 
-function escolhe_aba_menu(id_item) {
-    window.location = `../modules/aba_menu.php?id=${id_item}`
+function escolhe_aba_menu() {
+    const seletor = document.getElementById("seletor_guia_menu")
+    if (!seletor)
+        return
+
+    seletor.hidden = !seletor.hidden
+    if (!seletor.hidden)
+        seletor.focus()
 }
 
 function controla_menus(caso) {
@@ -601,4 +686,196 @@ function controla_menus(caso) {
     // Mostrando ou escondendo as guias laterais
     for (let i = 0; i < alvos.length; i++)
         alvos[i].style.display = status
+
+    // As máscaras também têm a classe opcoes_laterais e não podem ser reexibidas aqui
+    sincroniza_mascaras_pesquisa()
 }
+function exportar_dados(evento) {
+    evento.preventDefault();
+    const botao = document.getElementById("button_exportar_dados");
+    if (botao.dataset.exportando) return;
+
+    const texto_original = botao.textContent;
+    botao.dataset.exportando = "1";
+    botao.textContent = "Exportando...";
+
+    fetch("../php/exportar_dados.php?ajax=1")
+        .then(resposta => resposta.json())
+        .then(resultado => {
+            botao.textContent = resultado.ok ? "Exportado (" + resultado.itens + ")" : "Falha ao exportar";
+        })
+        .catch(() => { botao.textContent = "Falha ao exportar"; })
+        .finally(() => {
+            setTimeout(() => {
+                botao.textContent = texto_original;
+                delete botao.dataset.exportando;
+            }, 2000);
+        });
+}
+
+// Atualiza estatísticas e botões do index sem recarregar a página
+async function atualiza_painel_index() {
+    // Evita que as animações de entrada das guias laterais reiniciem ao refazer o filtro
+    document.querySelectorAll(".opcoes_laterais, .opcoes_baixo, #img_configs_2, #img_coletaveis_2, #img_ocultos_2, #img_versoes_2")
+        .forEach(elemento => { elemento.style.animation = "none"; });
+
+    const resposta = await fetch(window.location.href, { cache: "no-store" });
+    const novo = new DOMParser().parseFromString(await resposta.text(), "text/html");
+
+    ["text_estatsc", "botoes_ferramentas"].forEach(id => {
+        const atual = document.getElementById(id);
+        const atualizado = novo.getElementById(id);
+        if (atual && atualizado) atual.innerHTML = atualizado.innerHTML;
+    });
+
+    const listagem_atual = document.getElementById("listagem");
+    const listagem_nova = novo.getElementById("listagem");
+    if (listagem_atual && listagem_nova) {
+        listagem_atual.innerHTML = listagem_nova.innerHTML;
+
+        const busca = document.getElementById("barra_pesquisa_input");
+        if (busca) busca.value = "";
+        itens_ocultos = 0;
+        cache_pesquisa = null;
+        try { aba_menu(10); } finally { sincroniza_tema(undefined, 1); }
+    } else sincroniza_tema(undefined, 1);
+}
+
+function executa_acao_segundo_plano(evento, botao_id, url, texto_andamento, texto_final) {
+    evento.preventDefault();
+    const botao = document.getElementById(botao_id);
+    if (botao.dataset.executando) return;
+    botao.dataset.executando = "1";
+    botao.textContent = texto_andamento;
+
+    fetch(url)
+        .then(resposta => resposta.json())
+        .then(resultado => {
+            if (!resultado.ok) throw new Error("falha");
+            return atualiza_painel_index();
+        })
+        .catch(() => {
+            botao.textContent = "Falha na operação";
+            setTimeout(() => atualiza_painel_index().catch(() => { }), 2000);
+        });
+}
+
+function importar_dados(evento) {
+    executa_acao_segundo_plano(evento, "button_importar_dados", "../php/importar_dados.php?ajax=1", "Importando...");
+}
+
+function limpar_dados(evento) {
+    if (!confirm("Apagar todos os dados salvos no banco?")) return evento.preventDefault();
+    executa_acao_segundo_plano(evento, "button_apagar_dados", "../php/limpar_dados.php?ajax=1", "Limpando...");
+}
+
+function atualizar_html(evento) {
+    evento.preventDefault();
+    const botao = document.getElementById("button_atualizar_html");
+    if (botao.dataset.executando) return;
+
+    const texto_original = botao.textContent;
+    botao.dataset.executando = "1";
+    botao.textContent = "Atualizando...";
+
+    fetch("../modules/criar_pagina.php?ajax=1")
+        .then(resposta => resposta.json())
+        .then(resultado => { botao.textContent = resultado.ok ? "HTML atualizado" : "Falha ao atualizar"; })
+        .catch(() => { botao.textContent = "Falha ao atualizar"; })
+        .finally(() => {
+            setTimeout(() => {
+                botao.textContent = texto_original;
+                delete botao.dataset.executando;
+            }, 2000);
+        });
+}
+
+// Alterna entre os sprites atuais e os originais (Programmer Art) sem recarregar a página
+function alterna_graficos(evento) {
+    evento.preventDefault();
+    const botao = document.getElementById("button_graficos");
+    const ativar = !botao.classList.contains("programmers_ativo");
+    const [origem, destino] = ativar ? ["/new/", "/classic/"] : ["/classic/", "/new/"];
+
+    document.querySelectorAll("img[data-legado]").forEach(imagem => {
+        const caminho = imagem.getAttribute("src");
+        if (caminho.includes(origem))
+            imagem.setAttribute("src", caminho.replace(origem, destino));
+    });
+
+    const url = new URL(window.location.href);
+    if (ativar) url.searchParams.set("dg", "true");
+    else url.searchParams.delete("dg");
+    history.replaceState(null, "", url);
+
+    botao.classList.toggle("programmers_ativo", ativar);
+    botao.textContent = ativar ? "Gráficos padrões" : "Programmer Art";
+    const dica = ativar ? "Volte para os sprites atuais do Minecraft" : "Os gráficos originais do Minecraft";
+    botao.setAttribute("onmouseover", `toolTip('${dica}')`);
+    toolTip(dica);
+    // O link do botão leva ao estado oposto ao atual, como na renderização do servidor
+    const link_botao = new URL(botao.getAttribute("href"), window.location.href);
+    if (ativar) link_botao.searchParams.delete("dg");
+    else link_botao.searchParams.set("dg", "true");
+    botao.setAttribute("href", link_botao.pathname.split("/").pop() + link_botao.search);
+
+    // Mantém a escolha nos links de navegação entre versões
+    document.querySelectorAll("#menu_user a[href*='versao_jogo=']").forEach(link => {
+        if (link === botao) return;
+        const destino_link = new URL(link.getAttribute("href"), window.location.href);
+        if (ativar) destino_link.searchParams.set("dg", "true");
+        else destino_link.searchParams.delete("dg");
+        link.setAttribute("href", destino_link.pathname.split("/").pop() + destino_link.search);
+    });
+}
+
+// Troca de versão na máquina do tempo sem recarregar a página
+let navegando_versao = false
+
+async function carrega_versao(url) {
+    const resposta = await fetch(url, { cache: "no-store" })
+    const novo = new DOMParser().parseFromString(await resposta.text(), "text/html")
+
+    const novo_menu = novo.getElementById("menu_completo")
+    const novo_input = novo.getElementById("input_versao_jogo")
+    if (!novo_menu || !novo_input) throw new Error("resposta inválida");
+
+    ["menu_completo", "estatisticas_inventario", "lista_versoes", "menu_user", "infos_versao"].forEach(id => {
+        const atual = document.getElementById(id)
+        const atualizado = novo.getElementById(id)
+        if (atual && atualizado) atual.replaceWith(document.importNode(atualizado, true))
+    })
+
+    document.getElementById("input_versao_jogo").value = novo_input.value
+    itens_ocultos = 0
+    cache_pesquisa = null
+    pesquisa = 0
+
+    document.querySelectorAll(".opcoes_laterais, .opcoes_baixo, #img_configs_2, #img_coletaveis_2, #img_ocultos_2, #img_versoes_2")
+        .forEach(elemento => { elemento.style.animation = "none" })
+
+    inicia_arraste_scroll()
+    try { filtragem(10, 0) } finally { sincroniza_tema(parseInt(novo_input.value), 1) }
+}
+
+function navega_versao(evento) {
+    evento.preventDefault()
+    if (navegando_versao) return
+
+    const url = evento.currentTarget.href
+    navegando_versao = true
+    carrega_versao(url)
+        .then(() => history.pushState(null, "", url))
+        .catch(() => { window.location.href = url })
+        .finally(() => { navegando_versao = false })
+}
+
+window.addEventListener("popstate", () => {
+    if (window.location.pathname.endsWith("visualizacao.php"))
+        carrega_versao(window.location.href).catch(() => window.location.reload())
+})
+
+// Garante que nenhuma imagem (inclusive as criadas depois) possa ser arrastada
+document.addEventListener("dragstart", evento => {
+    if (evento.target.tagName === "IMG") evento.preventDefault()
+})

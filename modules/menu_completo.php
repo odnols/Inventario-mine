@@ -3,8 +3,19 @@
 <div id="menu_completo">
     <img id="menu" src="#">
 
-    <?php for ($i = 0; $i < 11; $i++)
-        echo "<div id='item_$i' onclick='aba_menu($i)'></div>";
+    <?php if (!empty($mostrar_aba_remover)) { ?>
+        <button id="aba_remover_item_selecionado" type="button" onclick="remove_item_selecionado()"
+            aria-label="Remover item selecionado" title="Remover item selecionado" onmouseover="toolTip('Remover item selecionado')" onmouseout="toolTip()">
+            <img src="../img/interface/aba_generic.png" alt="">
+        </button>
+    <?php } ?>
+
+    <?php // Nas versões 1.0 a 1.2 o menu não tem abas visuais, então elas nem são renderizadas
+    $menu_sem_abas = isset($versao_jogo) && $versao_jogo <= 2;
+
+    if (!$menu_sem_abas)
+        for ($i = 0; $i < 11; $i++)
+            echo "<div id='item_$i' onclick='aba_menu($i)'></div>";
 
     if ($local_requisicao === 1) { // Apenas visivel na tela inicial, prancheta de inserção de novos itens 
     ?>
@@ -48,7 +59,7 @@
     <span id="titulo_aba"></span>
 
     <div id="barra_rolagem">
-        <div id="barra_scroll" src="../img/interface/scroll.png" onmouseover="gerencia_scroll(0)" onmouseout="gerencia_scroll(1)"></div>
+        <div id="barra_scroll" src="../img/interface/scroll.png"></div>
         <img id="barra_scroll_block" src="#">
     </div>
 
@@ -58,6 +69,26 @@
             <?php } else { ?>
                 <div id="listagem" onscroll="scrollSincronizado('listagem', 'barra_scroll', <?php echo $versao_jogo; ?>)">
                 <?php }
+
+            // Carrega as tabelas auxiliares de uma vez para evitar uma consulta por item
+            $mapa_ocultos = [];
+            $mapa_legados = [];
+            $mapa_descricoes = [];
+            $mapa_titulos = [];
+
+            $consulta_aux = $conexao->query("SELECT id_item FROM item_oculto");
+            while ($linha = $consulta_aux->fetch_assoc()) $mapa_ocultos[$linha["id_item"]] = true;
+
+            $consulta_aux = $conexao->query("SELECT id_item FROM item_legado");
+            while ($linha = $consulta_aux->fetch_assoc()) $mapa_legados[$linha["id_item"]] = true;
+
+            $consulta_aux = $conexao->query("SELECT id_item, descricao FROM item_descricao");
+            while ($linha = $consulta_aux->fetch_assoc())
+                if (!isset($mapa_descricoes[$linha["id_item"]])) $mapa_descricoes[$linha["id_item"]] = $linha["descricao"];
+
+            $consulta_aux = $conexao->query("SELECT id_item, tipo_item FROM item_titulo");
+            while ($linha = $consulta_aux->fetch_assoc())
+                if (!isset($mapa_titulos[$linha["id_item"]])) $mapa_titulos[$linha["id_item"]] = $linha["tipo_item"];
 
             while ($dados = $executa->fetch_assoc()) {
 
@@ -78,26 +109,22 @@
 
                 $programmer_art = 0;
 
-                $executa_verificacao = $conexao->query("SELECT * FROM item_oculto WHERE id_item = $id_item");
-                if ($executa_verificacao->num_rows > 0) $oculto_invt = "oculto";
+                if (isset($mapa_ocultos[$id_item])) $oculto_invt = "oculto";
 
-                $executa_verificacao = $conexao->query("SELECT * FROM item_legado WHERE id_item = $id_item");
-                if ($executa_verificacao->num_rows > 0) $programmer_art = 1;
+                if (isset($mapa_legados[$id_item])) $programmer_art = 1;
 
                 $descricao = "[&1" . $tipo_item;
 
                 // Descricao do item
-                $executa_verificacao = $conexao->query("SELECT descricao FROM item_descricao WHERE id_item = $id_item");
-
-                if ($executa_verificacao->num_rows > 0) {
-                    $dados_descri = $executa_verificacao->fetch_assoc();
-                    $descricao = $descricao . " " . $dados_descri["descricao"];
-                }
+                if (isset($mapa_descricoes[$id_item]))
+                    $descricao = $descricao . " " . $mapa_descricoes[$id_item];
 
                 $descricao_pes = str_replace("[&r", "", $descricao);
 
                 if (!$nome_interno)
                     $nome_interno = "off";
+
+                $atributo_legado = $programmer_art == 1 ? " data-legado='1'" : "";
 
                 if ($programmer_art == 1 && $graphics)
                     $geracao = "classic";
@@ -117,60 +144,64 @@
                 $cor_item = 0;
                 $descricao_pesq = "";
 
-                $executa_item = $conexao->query("SELECT * FROM item_titulo WHERE id_item = $id_item");
-
-                if ($executa_item->num_rows > 0) {
-                    $dados2 = $executa_item->fetch_assoc();
-
-                    $cor_item = $dados2["tipo_item"];
-                }
+                if (isset($mapa_titulos[$id_item]))
+                    $cor_item = $mapa_titulos[$id_item];
 
                 $descricao_pesq = strtolower($descricao_pesq);
 
                 $slot_item = "slot_item";
                 $nome_pesq = strtolower($nome_item);
 
-                if ($local_requisicao === 3 && $versao_add === $versao_jogo)
-                    $slot_item = "slot_item_add";
+                if ($local_requisicao === 3 && $versao_add === ($rotulo_versao_jogo ?? null))
+                    $slot_item = "slot_item slot_item_add"; // Mantém "slot_item" para os filtros e usa o fundo de slot_add
 
                 for ($i = 0; $i < 21; $i++) // Elimina todos os números de versão da descrição
                     $descricao_pesq = str_replace($i, "", $descricao_pesq);
+
+                $atributos_craft = "";
+                if ($local_requisicao == 2) {
+                    $atributos_craft = " data-craft-item-id='" . (int) $id_item . "'"
+                        . " data-craft-item-type='" . htmlspecialchars((string) $tipo_item, ENT_QUOTES, "UTF-8") . "'"
+                        . " data-craft-item-icon='" . htmlspecialchars((string) $nome_icon, ENT_QUOTES, "UTF-8") . "'"
+                        . " data-craft-item-name='" . htmlspecialchars((string) $nome_item, ENT_QUOTES, "UTF-8") . "'"
+                        . " data-craft-item-internal-name='" . htmlspecialchars((string) $nome_interno, ENT_QUOTES, "UTF-8") . "'";
+                }
 
                 if ($local_requisicao == 1) { // Requisição proveniente da página inicial
                     if ($oculto_invt !== "oculto") {
 
                         echo "<div class='slot_item $tipo_item $versao_add $nome_interno $coletavel $nome_pesq $descricao_pesq' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item'$atributo_legado loading='lazy' decoding='async' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     } else {
 
                         echo "<div class='slot_item oculto' onclick='exibe_detalhes_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
 
-                        echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item'$atributo_legado loading='lazy' decoding='async' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     }
                 } else if ($local_requisicao == 2) { // Requisição proveniente da página de receitas
                     if ($oculto_invt !== "oculto") {
-                        echo "<div class='slot_item $tipo_item $nome_interno $versao_add $nome_pesq $descricao_pesq' onclick='seleciona_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<div class='slot_item $tipo_item $nome_interno $versao_add $nome_pesq $descricao_pesq'$atributos_craft onclick='seleciona_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item'$atributo_legado loading='lazy' decoding='async' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     } else {
 
-                        echo "<div class='slot_item oculto' onclick='seleciona_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div class='slot_item oculto'$atributos_craft onclick='seleciona_item($id_item)' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
 
-                        echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item'$atributo_legado loading='lazy' decoding='async' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     }
                 } else { // Requisição proveniente da máquina do tempo
                     if ($oculto_invt !== "oculto") {
-                        echo "<div onclick='expande_sprite(`../img/itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item $tipo_item $versao_add $nome_interno $coletavel $nome_pesq $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
-                        echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<div onclick='expande_sprite(this.querySelector(\"img\").getAttribute(\"src\"))' class='$slot_item $tipo_item $versao_add $nome_interno $coletavel $nome_pesq $descricao_pesq' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<img class='icon_item'$atributo_legado loading='lazy' decoding='async' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     } else {
 
-                        echo "<div onclick='expande_sprite(`../img/itens/$geracao/$tipo_item/$nome_icon`)' class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
+                        echo "<div onclick='expande_sprite(this.querySelector(\"img\").getAttribute(\"src\"))' class='$slot_item oculto' onmouseover='toolTip(\"$nome_item\", \"$descricao\", \"$nome_interno\", $cor_item)' onmouseout='toolTip()'>";
 
-                        echo "<img class='icon_item' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
+                        echo "<img class='icon_item'$atributo_legado loading='lazy' decoding='async' src='../img/itens/$geracao/$tipo_item/$nome_icon'>";
                         echo "</div>";
                     }
                 }

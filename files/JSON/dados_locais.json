@@ -93,7 +93,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,4,4,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -1543,7 +1543,7 @@
         "recipe": [
             {
                 "recipe": "1,85,,85,1",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -1595,7 +1595,7 @@
         "recipe": [
             {
                 "recipe": ",,,89,89,,89,89",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -1617,7 +1617,7 @@
         "recipe": [
             {
                 "recipe": ",,,90,90,,90,90",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -1691,7 +1691,7 @@
         "recipe": [
             {
                 "recipe": "92,92,,92,92",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -1713,7 +1713,7 @@
         "recipe": [
             {
                 "recipe": ",,,91,91,,91,91",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -1757,7 +1757,7 @@
         "recipe": [
             {
                 "recipe": ",,92,,92,92,92,92,92",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -1779,7 +1779,7 @@
         "recipe": [
             {
                 "recipe": ",,93,,93,93,93,93,93",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -1801,7 +1801,7 @@
         "recipe": [
             {
                 "recipe": ",,91,,91,91,91,91,91",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -2085,7 +2085,7 @@
         "recipe": [
             {
                 "recipe": "44,44,,44,44",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -2122,7 +2122,7 @@
         "recipe": [
             {
                 "recipe": "13,13,,13,13",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -2144,7 +2144,7 @@
         "recipe": [
             {
                 "recipe": ",,,353,,353,,353",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -2166,7 +2166,7 @@
         "recipe": [
             {
                 "recipe": ",,,363,,363,,363",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -2345,7 +2345,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,135,135",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -2468,7 +2468,7 @@
         "recipe": [
             {
                 "recipe": ",,,,141,,,",
-                "products": 1,
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -3438,7 +3438,7 @@
         "recipe": [
             {
                 "recipe": ",,,,184,,,",
-                "products": 1,
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -3482,7 +3482,7 @@
         "recipe": [
             {
                 "recipe": ",,,1050,1050,1050",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -3571,7 +3571,7 @@
         "recipe": [
             {
                 "recipe": ",,,,353,,,353",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -3592,8 +3592,8 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,,,271,,",
-                "products": 1,
+                "recipe": ",,,,271,,,",
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -3614,8 +3614,8 @@
         "legacy": true,
         "recipe": [
             {
-                "recipe": ",,,,,,,391",
-                "products": 1,
+                "recipe": ",,,,391,,,",
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -3651,8 +3651,8 @@
         "legacy": true,
         "recipe": [
             {
-                "recipe": ",,,,,,,499,",
-                "products": 1,
+                "recipe": ",,,,499,,,,",
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -3728,7 +3728,7 @@
         "recipe": [
             {
                 "recipe": "351,47",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -3991,8 +3991,8 @@
         "legacy": true,
         "recipe": [
             {
-                "recipe": ",,,,,,,175",
-                "products": 1,
+                "recipe": ",,,,175,,,",
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -4168,7 +4168,7 @@
         "recipe": [
             {
                 "recipe": ",200,,,198,,,353",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -4432,7 +4432,7 @@
         "recipe": [
             {
                 "recipe": "239,239,,239,239,,,,239",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -4571,7 +4571,7 @@
         "recipe": [
             {
                 "recipe": ",,,,672",
-                "products": 1,
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -4593,7 +4593,7 @@
         "recipe": [
             {
                 "recipe": ",,,,673",
-                "products": 1,
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -4615,7 +4615,7 @@
         "recipe": [
             {
                 "recipe": ",,,,674",
-                "products": 1,
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -5119,7 +5119,7 @@
         "recipe": [
             {
                 "recipe": ",696,,696,363,696,,696",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -5156,7 +5156,7 @@
         "recipe": [
             {
                 "recipe": "268,268,,268,268",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -5260,7 +5260,7 @@
         "recipe": [
             {
                 "recipe": "271,271,,271,271",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ]
@@ -5278,7 +5278,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "272,272,,272,272,,,,",
+                "products": 8,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 277,
@@ -5293,7 +5300,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "273,273,,273,273,,,,",
+                "products": 8,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 278,
@@ -5308,7 +5322,14 @@
         "stackable": 64,
         "craftable": true,
         "hide": false,
-        "legacy": false
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "278,278,,278,278,,,,",
+                "products": 8,
+                "craft_type": 0
+            }
+        ]
     },
     {
         "id": 279,
@@ -5490,7 +5511,7 @@
         "id": 287,
         "icon": "item_frame.png",
         "type": "decorativos",
-        "name": "Moldura",
+        "name": "Moldura de Item",
         "internal_name": "item_frame",
         "version": "1.4",
         "collectable": true,
@@ -5512,7 +5533,7 @@
         "id": 288,
         "icon": "glow_item_frame.png",
         "type": "decorativos",
-        "name": "Moldura Brilhante",
+        "name": "Moldura de Item Brilhante",
         "internal_name": "glow_item_frame",
         "version": "1.17",
         "collectable": true,
@@ -5569,7 +5590,7 @@
         "recipe": [
             {
                 "recipe": "200,,200,200,198,200,200,,200",
-                "products": 1,
+                "products": 16,
                 "craft_type": 0
             }
         ]
@@ -5591,7 +5612,7 @@
         "recipe": [
             {
                 "recipe": "62,,62,62,198,62,62,217,62",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -5613,7 +5634,7 @@
         "recipe": [
             {
                 "recipe": "200,,200,200,173,200,200,217,200",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -5635,7 +5656,7 @@
         "recipe": [
             {
                 "recipe": "200,198,200,200,216,200,200,198,200",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -5744,7 +5765,7 @@
         "legacy": true,
         "recipe": [
             {
-                "recipe": ",,,178,,,295,,",
+                "recipe": "178,,,295,,,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -5766,7 +5787,7 @@
         "legacy": true,
         "recipe": [
             {
-                "recipe": ",,,206,,,295,,",
+                "recipe": "206,,,295,,,,,",
                 "products": 1,
                 "craft_type": 0
             }
@@ -5955,8 +5976,8 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": ",,,,,589,,",
-                "products": 1,
+                "recipe": ",,,,589,,,",
+                "products": 9,
                 "craft_type": 0
             }
         ]
@@ -6045,7 +6066,7 @@
         "recipe": [
             {
                 "recipe": ",353,353,,353,353,,353,353",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6067,7 +6088,7 @@
         "recipe": [
             {
                 "recipe": ",200,200,,200,200,,200,200",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6089,7 +6110,7 @@
         "recipe": [
             {
                 "recipe": ",354,354,,354,354,,354,354",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6111,7 +6132,7 @@
         "recipe": [
             {
                 "recipe": ",355,355,,355,355,,355,355",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6133,7 +6154,7 @@
         "recipe": [
             {
                 "recipe": ",356,356,,356,356,,356,356",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6155,7 +6176,7 @@
         "recipe": [
             {
                 "recipe": ",357,357,,357,357,,357,357",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6177,7 +6198,7 @@
         "recipe": [
             {
                 "recipe": ",358,358,,358,358,,358,358",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6199,7 +6220,7 @@
         "recipe": [
             {
                 "recipe": ",426,426,,426,426,,426,426",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6221,7 +6242,7 @@
         "recipe": [
             {
                 "recipe": ",427,427,,427,427,,427,427",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -6265,7 +6286,7 @@
         "recipe": [
             {
                 "recipe": ",,,353,353,353,353,353,353",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -6287,7 +6308,7 @@
         "recipe": [
             {
                 "recipe": ",,,354,354,354,354,354,354",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -6309,7 +6330,7 @@
         "recipe": [
             {
                 "recipe": ",,,355,355,355,355,355,355",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -6331,7 +6352,7 @@
         "recipe": [
             {
                 "recipe": ",,,356,356,356,356,356,356",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -6353,7 +6374,7 @@
         "recipe": [
             {
                 "recipe": ",,,357,357,357,357,357,357",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -6375,7 +6396,7 @@
         "recipe": [
             {
                 "recipe": ",,,358,358,358,358,358,358",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -6397,7 +6418,7 @@
         "recipe": [
             {
                 "recipe": ",,,426,426,426,426,426,426",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -6419,7 +6440,7 @@
         "recipe": [
             {
                 "recipe": ",,,427,427,427,427,427,427",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -7248,7 +7269,7 @@
         "recipe": [
             {
                 "recipe": "359,359,,359,359",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7270,7 +7291,7 @@
         "recipe": [
             {
                 "recipe": "360,360,,360,360",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7292,7 +7313,7 @@
         "recipe": [
             {
                 "recipe": "361,361,,361,361",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7314,7 +7335,7 @@
         "recipe": [
             {
                 "recipe": "362,362,,362,362",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7336,7 +7357,7 @@
         "recipe": [
             {
                 "recipe": "366,366,,366,366",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7358,7 +7379,7 @@
         "recipe": [
             {
                 "recipe": "367,367,,367,367",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7380,7 +7401,7 @@
         "recipe": [
             {
                 "recipe": "368,368,,368,368",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7402,7 +7423,7 @@
         "recipe": [
             {
                 "recipe": "369,369,,369,369",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7424,7 +7445,7 @@
         "recipe": [
             {
                 "recipe": "370,370,,370,370",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7446,7 +7467,7 @@
         "recipe": [
             {
                 "recipe": "371,371,,371,371",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -7952,7 +7973,7 @@
         "recipe": [
             {
                 "recipe": ",,,353,353,353",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8270,7 +8291,7 @@
         "recipe": [
             {
                 "recipe": "426,198,426,426,198,426",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -8292,7 +8313,7 @@
         "recipe": [
             {
                 "recipe": "427,198,427,427,198,427",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -8622,7 +8643,7 @@
         "recipe": [
             {
                 "recipe": ",,7,,7,7,7,7,7",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -8644,7 +8665,7 @@
         "recipe": [
             {
                 "recipe": ",,469,,469,469,469,469,469",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -8666,7 +8687,7 @@
         "recipe": [
             {
                 "recipe": ",,437,,437,437,437,437,437",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -8688,7 +8709,7 @@
         "recipe": [
             {
                 "recipe": ",,47,,47,47,47,47,47",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -8710,7 +8731,7 @@
         "recipe": [
             {
                 "recipe": ",,354,,354,354,354,354,354",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -8732,7 +8753,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,354,354,354",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8754,7 +8775,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,355,355,355",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8776,7 +8797,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,356,356,356",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8798,7 +8819,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,357,357,357",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8820,7 +8841,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,358,358,358",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8842,7 +8863,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,426,426,426",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8864,7 +8885,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,427,427,427",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8886,7 +8907,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,46,46,46",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8908,7 +8929,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,470,470,470",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8930,7 +8951,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,91,91,91",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8952,7 +8973,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,97,97,97",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -8989,7 +9010,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,47,47,47",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9011,7 +9032,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,469,469,469",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9033,7 +9054,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,7,7,7",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9055,7 +9076,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,437,437,437",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9077,7 +9098,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,475,475,475",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9099,7 +9120,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,92,92,92",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9121,7 +9142,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,96,96,96",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9143,7 +9164,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,473,473,473",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9165,7 +9186,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,504,504,504",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9187,7 +9208,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,505,505,505",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9209,7 +9230,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,506,506,506",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -9459,7 +9480,7 @@
         "recipe": [
             {
                 "recipe": ",,475,,475,475,475,475,475",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -9481,7 +9502,7 @@
         "recipe": [
             {
                 "recipe": ",,426,,426,426,426,426,426",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -9503,7 +9524,7 @@
         "recipe": [
             {
                 "recipe": ",,427,,427,427,427,427,427",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -9936,7 +9957,7 @@
         "recipe": [
             {
                 "recipe": ",,357,,357,357,357,357,357",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -9958,7 +9979,7 @@
         "recipe": [
             {
                 "recipe": ",,358,,358,358,358,358,358",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -9980,7 +10001,7 @@
         "recipe": [
             {
                 "recipe": ",,356,,356,356,356,356,356",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -10105,7 +10126,7 @@
         "recipe": [
             {
                 "recipe": ",,504,,504,504,504,504,504",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -10127,7 +10148,7 @@
         "recipe": [
             {
                 "recipe": ",,505,,505,505,505,505,505",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -10149,7 +10170,7 @@
         "recipe": [
             {
                 "recipe": ",,506,,506,506,506,506,506",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -10935,7 +10956,7 @@
         "recipe": [
             {
                 "recipe": ",,349,,349,349,349,349,349",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -10957,7 +10978,7 @@
         "recipe": [
             {
                 "recipe": ",,94,,94,94,94,94,94",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -10979,7 +11000,7 @@
         "recipe": [
             {
                 "recipe": ",,9,,9,9,9,9,9",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11001,7 +11022,7 @@
         "recipe": [
             {
                 "recipe": ",,352,,352,352,352,352,352",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11023,7 +11044,7 @@
         "recipe": [
             {
                 "recipe": ",,472,,472,472,472,472,472",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11045,7 +11066,7 @@
         "recipe": [
             {
                 "recipe": ",,435,,435,435,435,435,435",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11067,7 +11088,7 @@
         "recipe": [
             {
                 "recipe": ",,46,,46,46,46,46,46",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11089,7 +11110,7 @@
         "recipe": [
             {
                 "recipe": ",,468,,468,468,468,468,468",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11111,7 +11132,7 @@
         "recipe": [
             {
                 "recipe": ",,348,,348,348,348,348,348",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11133,7 +11154,7 @@
         "recipe": [
             {
                 "recipe": ",,205,,205,205,205,205,205",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11155,7 +11176,7 @@
         "recipe": [
             {
                 "recipe": ",,507,,507,507,507,507,507",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11177,7 +11198,7 @@
         "recipe": [
             {
                 "recipe": ",,350,,350,350,350,350,350",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11199,7 +11220,7 @@
         "recipe": [
             {
                 "recipe": ",,351,,351,351,351,351,351",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11221,7 +11242,7 @@
         "recipe": [
             {
                 "recipe": ",,2,,2,2,2,2,2",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11243,7 +11264,7 @@
         "recipe": [
             {
                 "recipe": ",,13,,13,13,13,13,13",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11265,7 +11286,7 @@
         "recipe": [
             {
                 "recipe": ",,12,,12,12,12,12,12",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11287,7 +11308,7 @@
         "recipe": [
             {
                 "recipe": ",,120,,120,120,120,120,120",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11309,7 +11330,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,349,349,349",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11331,7 +11352,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,94,94,94",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11353,7 +11374,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,9,9,9",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11375,7 +11396,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,352,352,352",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11397,7 +11418,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,472,472,472",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11419,7 +11440,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,435,435,435",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11441,7 +11462,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,93,93,93",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11463,7 +11484,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,468,468,468",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11485,7 +11506,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,348,348,348",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11507,7 +11528,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,205,205,205",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11529,7 +11550,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,507,507,507",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11551,7 +11572,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,350,350,350",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11573,7 +11594,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,351,351,351",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11595,7 +11616,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,2,2,2",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11617,7 +11638,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,13,13,13",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11639,7 +11660,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,120,120,120",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11661,7 +11682,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,12,12,12",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11705,7 +11726,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,43,43,43",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11727,7 +11748,7 @@
         "recipe": [
             {
                 "recipe": ",,43,,43,43,43,43,43",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11749,7 +11770,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,44,44,44",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11771,7 +11792,7 @@
         "recipe": [
             {
                 "recipe": ",,44,,44,44,44,44,44",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11793,7 +11814,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,118,118,118",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -11815,7 +11836,7 @@
         "recipe": [
             {
                 "recipe": ",,118,,118,118,118,118,118",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11837,7 +11858,7 @@
         "recipe": [
             {
                 "recipe": ",,275,,275,275,275,275,275",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11859,7 +11880,7 @@
         "recipe": [
             {
                 "recipe": ",,276,,276,276,276,276,276",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11881,7 +11902,7 @@
         "recipe": [
             {
                 "recipe": ",,277,,277,277,277,277,277",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11903,7 +11924,7 @@
         "recipe": [
             {
                 "recipe": ",,278,,278,278,278,278,278",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11925,7 +11946,7 @@
         "recipe": [
             {
                 "recipe": ",,,596,253",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11947,7 +11968,7 @@
         "recipe": [
             {
                 "recipe": ",,,597,253",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11969,7 +11990,7 @@
         "recipe": [
             {
                 "recipe": ",,,598,253",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -11991,7 +12012,7 @@
         "recipe": [
             {
                 "recipe": ",,,599,253",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -12013,7 +12034,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,275,275,275",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -12035,7 +12056,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,276,276,276",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -12057,7 +12078,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,277,277,277",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -12079,7 +12100,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,278,278,278",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -12101,7 +12122,7 @@
         "recipe": [
             {
                 "recipe": ",,,604,253",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -12123,7 +12144,7 @@
         "recipe": [
             {
                 "recipe": ",,,605,253",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -12145,7 +12166,7 @@
         "recipe": [
             {
                 "recipe": ",,,606,253",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -12167,7 +12188,7 @@
         "recipe": [
             {
                 "recipe": ",,,607,253",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -14594,7 +14615,7 @@
         "recipe": [
             {
                 "recipe": "353,198,353,353,198,353",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -14616,7 +14637,7 @@
         "recipe": [
             {
                 "recipe": "354,198,354,354,198,354",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -14638,7 +14659,7 @@
         "recipe": [
             {
                 "recipe": "355,198,355,355,198,355",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -14660,7 +14681,7 @@
         "recipe": [
             {
                 "recipe": "356,198,356,356,198,356",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -14682,7 +14703,7 @@
         "recipe": [
             {
                 "recipe": "357,198,357,357,198,357",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -14704,7 +14725,7 @@
         "recipe": [
             {
                 "recipe": "358,198,358,358,198,358",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -14741,7 +14762,7 @@
         "recipe": [
             {
                 "recipe": ",165,,,703",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -16256,7 +16277,7 @@
         "recipe": [
             {
                 "recipe": "353,353,353,353,353,353,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16278,7 +16299,7 @@
         "recipe": [
             {
                 "recipe": "354,354,354,354,354,354,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16300,7 +16321,7 @@
         "recipe": [
             {
                 "recipe": "355,355,355,355,355,355,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16322,7 +16343,7 @@
         "recipe": [
             {
                 "recipe": "356,356,356,356,356,356,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16344,7 +16365,7 @@
         "recipe": [
             {
                 "recipe": "357,357,357,357,357,357,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16366,7 +16387,7 @@
         "recipe": [
             {
                 "recipe": "358,358,358,358,358,358,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16388,7 +16409,7 @@
         "recipe": [
             {
                 "recipe": "426,426,426,426,426,426,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16410,7 +16431,7 @@
         "recipe": [
             {
                 "recipe": "427,427,427,427,427,427,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -16555,7 +16576,7 @@
         "recipe": [
             {
                 "recipe": "47,47,47,47,47,47",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16577,7 +16598,7 @@
         "recipe": [
             {
                 "recipe": "472,472,472,472,472,472",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16599,7 +16620,7 @@
         "recipe": [
             {
                 "recipe": "469,469,469,469,469,469",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16621,7 +16642,7 @@
         "recipe": [
             {
                 "recipe": "504,504,504,504,504,504",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16643,7 +16664,7 @@
         "recipe": [
             {
                 "recipe": "92,92,92,92,92,92",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16665,7 +16686,7 @@
         "recipe": [
             {
                 "recipe": "9,9,9,9,9,9",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16687,7 +16708,7 @@
         "recipe": [
             {
                 "recipe": "348,348,348,348,348,348",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16709,7 +16730,7 @@
         "recipe": [
             {
                 "recipe": "7,7,7,7,7,7",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16731,7 +16752,7 @@
         "recipe": [
             {
                 "recipe": "437,437,437,437,437,437",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16753,7 +16774,7 @@
         "recipe": [
             {
                 "recipe": "205,205,205,205,205,205",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16775,7 +16796,7 @@
         "recipe": [
             {
                 "recipe": "507,507,507,507,507,507",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16797,7 +16818,7 @@
         "recipe": [
             {
                 "recipe": "91,91,91,91,91,91",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16819,7 +16840,7 @@
         "recipe": [
             {
                 "recipe": "435,435,435,435,435,435",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16841,7 +16862,7 @@
         "recipe": [
             {
                 "recipe": "351,351,351,351,351,351",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16863,7 +16884,7 @@
         "recipe": [
             {
                 "recipe": "43,43,43,43,43,43",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16885,7 +16906,7 @@
         "recipe": [
             {
                 "recipe": "44,44,44,44,44,44",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16907,7 +16928,7 @@
         "recipe": [
             {
                 "recipe": "118,118,118,118,118,118",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16929,7 +16950,7 @@
         "recipe": [
             {
                 "recipe": "2,2,2,2,2,2",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16951,7 +16972,7 @@
         "recipe": [
             {
                 "recipe": "13,13,13,13,13,13",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16973,7 +16994,7 @@
         "recipe": [
             {
                 "recipe": "120,120,120,120,120,120",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -16995,7 +17016,7 @@
         "recipe": [
             {
                 "recipe": "12,12,12,12,12,12",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -17017,7 +17038,7 @@
         "recipe": [
             {
                 "recipe": "437,712,437,437,712,437",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -17039,7 +17060,7 @@
         "recipe": [
             {
                 "recipe": "392,392",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17061,7 +17082,7 @@
         "recipe": [
             {
                 "recipe": "393,393",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17083,7 +17104,7 @@
         "recipe": [
             {
                 "recipe": "394,394",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17105,7 +17126,7 @@
         "recipe": [
             {
                 "recipe": "395,395",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17127,7 +17148,7 @@
         "recipe": [
             {
                 "recipe": "396,396",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17149,7 +17170,7 @@
         "recipe": [
             {
                 "recipe": "397,397",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17171,7 +17192,7 @@
         "recipe": [
             {
                 "recipe": "398,398",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17193,7 +17214,7 @@
         "recipe": [
             {
                 "recipe": "399,399",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17215,7 +17236,7 @@
         "recipe": [
             {
                 "recipe": "400,400",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17237,7 +17258,7 @@
         "recipe": [
             {
                 "recipe": "401,401",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17259,7 +17280,7 @@
         "recipe": [
             {
                 "recipe": "402,402",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17281,7 +17302,7 @@
         "recipe": [
             {
                 "recipe": "403,403",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17303,7 +17324,7 @@
         "recipe": [
             {
                 "recipe": "404,404",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17325,7 +17346,7 @@
         "recipe": [
             {
                 "recipe": "405,405",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17347,7 +17368,7 @@
         "recipe": [
             {
                 "recipe": "406,406",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -17369,7 +17390,7 @@
         "recipe": [
             {
                 "recipe": "407,407",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -20154,7 +20175,7 @@
         "recipe": [
             {
                 "recipe": ",978,,978,1000,978,,978",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -20176,7 +20197,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1234,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20203,7 +20224,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1235,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20230,7 +20251,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1236,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20257,7 +20278,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1237,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20284,7 +20305,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1238,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20311,7 +20332,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1239,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20338,7 +20359,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1240,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20365,7 +20386,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1241,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20392,7 +20413,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1242,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20419,7 +20440,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1243,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20446,7 +20467,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1244,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20473,7 +20494,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1245,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20500,7 +20521,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1246,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20527,7 +20548,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1247,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20554,7 +20575,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1248,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20581,7 +20602,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1249,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20608,7 +20629,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1250,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20635,7 +20656,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1251,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20662,7 +20683,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1252,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20689,7 +20710,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1253,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20716,7 +20737,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1254,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20743,7 +20764,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1255,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20770,7 +20791,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1256,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20797,7 +20818,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1257,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20824,7 +20845,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1258,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20851,7 +20872,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1259,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20878,7 +20899,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1260,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20905,7 +20926,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1261,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20932,7 +20953,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1262,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20959,7 +20980,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1263,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -20986,7 +21007,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1264,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -21013,7 +21034,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1265,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -21040,7 +21061,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1266,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -21067,7 +21088,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1267,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -21094,7 +21115,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1268,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -21121,7 +21142,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1269,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -21148,7 +21169,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1270,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -21175,7 +21196,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1271,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -28071,7 +28092,7 @@
         "recipe": [
             {
                 "recipe": "473,,,473,473,,473,473,473",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -28486,7 +28507,7 @@
         "recipe": [
             {
                 "recipe": ",,1397,,1397,1397,1397,1397,1397",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -28508,7 +28529,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1397,1397,1397",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -28574,7 +28595,7 @@
         "recipe": [
             {
                 "recipe": ",1397,1397,,1397,1397,,1397,1397",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -28596,7 +28617,7 @@
         "recipe": [
             {
                 "recipe": ",,,1397,1397,1397,1397,1397,1397",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -28640,7 +28661,7 @@
         "recipe": [
             {
                 "recipe": "1397,198,1397,1397,198,1397",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -28662,7 +28683,7 @@
         "recipe": [
             {
                 "recipe": "1397,1397,1397,1397,1397,1397,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -28699,7 +28720,7 @@
         "recipe": [
             {
                 "recipe": ",,,1411,1411,,1411,1411",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -28721,7 +28742,7 @@
         "recipe": [
             {
                 "recipe": ",,,1422,1422,,1422,1422",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -28902,7 +28923,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1410,1410,1410",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -28924,7 +28945,7 @@
         "recipe": [
             {
                 "recipe": ",,1410,,1410,1410,1410,1410,1410",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -28946,7 +28967,7 @@
         "recipe": [
             {
                 "recipe": ",,,1410,1410,1410,1410,1410,1410",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29411,7 +29432,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,368,368,368,368,368,368",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29433,7 +29454,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,369,369,369,369,369,369",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29455,7 +29476,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,370,370,370,370,370,370",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29477,7 +29498,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,371,371,371,371,371,371",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29499,7 +29520,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,372,372,372,372,372,372",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29521,7 +29542,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,373,373,373,373,373,373",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29543,7 +29564,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,374,374,374,374,374,374",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29565,7 +29586,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,375,375,375,375,375,375",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29587,7 +29608,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,1422,1422,1422,1422,1422,1422",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29777,7 +29798,7 @@
         "recipe": [
             {
                 "recipe": "1472,1472,1472,1472,1472,1472,,,",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -29799,7 +29820,7 @@
         "recipe": [
             {
                 "recipe": "1472,198,1472,1472,198,1472",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -29865,7 +29886,7 @@
         "recipe": [
             {
                 "recipe": ",,,1472,1472,1472",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -29887,7 +29908,7 @@
         "recipe": [
             {
                 "recipe": "355,,,355,355,,355,355,355",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -29909,7 +29930,7 @@
         "recipe": [
             {
                 "recipe": "1472,,,1472,1472,,1472,1472,1472",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -29931,7 +29952,7 @@
         "recipe": [
             {
                 "recipe": "1472,1472,,1472,1472,,1472,1472",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -29975,7 +29996,7 @@
         "recipe": [
             {
                 "recipe": "1472,1472,1472,1472,1472,1472,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -29997,7 +30018,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,1516,1516,1516,1516,1516,1516",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -30041,7 +30062,7 @@
         "recipe": [
             {
                 "recipe": ",,,1492,1492,1492",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -30063,7 +30084,7 @@
         "recipe": [
             {
                 "recipe": "1492,,,1492,1492,,1492,1492,1492",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -30522,7 +30543,7 @@
         "recipe": [
             {
                 "recipe": ",,,373,373,,373,373",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -30544,7 +30565,7 @@
         "recipe": [
             {
                 "recipe": ",,,372,372,,372,372",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -31702,7 +31723,7 @@
         "recipe": [
             {
                 "recipe": ",,,1569,1569,,1569,1569",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -31739,7 +31760,7 @@
         "recipe": [
             {
                 "recipe": ",,,1571,1571,,1571,1571",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -31783,7 +31804,7 @@
         "recipe": [
             {
                 "recipe": ",,1573,,1573,1573,1573,1573,1573",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -31805,7 +31826,7 @@
         "recipe": [
             {
                 "recipe": ",,,1573,1573,1573",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -31827,7 +31848,7 @@
         "recipe": [
             {
                 "recipe": "1573,198,1573,1573,198,1573",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -31893,7 +31914,7 @@
         "recipe": [
             {
                 "recipe": ",1573,1573,,1573,1573,,1573,1573",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -31937,7 +31958,7 @@
         "recipe": [
             {
                 "recipe": ",,,1573,1573,1573,1573,1573,1573",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -32003,7 +32024,7 @@
         "recipe": [
             {
                 "recipe": "1573,1573,1573,1573,1573,1573,,198",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -32025,7 +32046,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,1571,1571,1571,1571,1571,1571",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -32661,7 +32682,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1230,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -32688,7 +32709,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1231,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -32715,7 +32736,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1232,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -32742,7 +32763,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1233,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -32868,7 +32889,7 @@
         "recipe": [
             {
                 "recipe": "1642,1642,1642,1642,1642,1642,,,",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -33015,7 +33036,7 @@
         "recipe": [
             {
                 "recipe": "199,199,,199,199,,199,199,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -33037,7 +33058,7 @@
         "recipe": [
             {
                 "recipe": "272,272,,272,272,,272,272,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -33059,7 +33080,7 @@
         "recipe": [
             {
                 "recipe": "273,273,,273,273,,273,273,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -33081,7 +33102,7 @@
         "recipe": [
             {
                 "recipe": "274,274,,274,274,,274,274,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -33321,7 +33342,7 @@
         "recipe": [
             {
                 "recipe": "1643,1643,1643,1643,1643,1643,,,",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -33365,7 +33386,7 @@
         "recipe": [
             {
                 "recipe": "272,272,272,272,272,272,,,",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -33387,7 +33408,7 @@
         "recipe": [
             {
                 "recipe": "273,273,273,273,273,273,,,",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -33409,7 +33430,7 @@
         "recipe": [
             {
                 "recipe": "274,274,274,274,274,274,,,",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -33458,7 +33479,7 @@
         "recipe": [
             {
                 "recipe": "1643,,,1643,1643,,1643,1643,1643",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -33480,7 +33501,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1643,1643,1643",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -33502,7 +33523,7 @@
         "recipe": [
             {
                 "recipe": "1642,,,1642,1642,,1642,1642,1642",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -33524,7 +33545,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1642,1642,1642",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -33545,8 +33566,8 @@
         "legacy": false,
         "recipe": [
             {
-                "recipe": "114,114,114,114,114,114,,,",
-                "products": 1,
+                "recipe": ",,,114,114,114,114,114,114",
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -33568,7 +33589,7 @@
         "recipe": [
             {
                 "recipe": "114,,,114,114,,114,114,114",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -33590,7 +33611,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,114,114,114",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -34457,7 +34478,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1696,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -34544,7 +34565,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1700,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -34631,7 +34652,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1704,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -34718,7 +34739,7 @@
         "recipe": [
             {
                 "recipe": "1000,1000,1000,1000,1708,1000,1000,1000,1000",
-                "products": 1,
+                "products": 8,
                 "craft_type": 0
             }
         ],
@@ -35635,7 +35656,7 @@
         "recipe": [
             {
                 "recipe": ",,,193,469,,,,",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -36083,7 +36104,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1772,1772,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -36150,7 +36171,7 @@
         "recipe": [
             {
                 "recipe": "1774,1774,,1774,1774,,,,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -36172,7 +36193,7 @@
         "recipe": [
             {
                 "recipe": "1776,1776,,1776,1776,,,,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -36268,7 +36289,7 @@
         "recipe": [
             {
                 "recipe": "1785,1785,1785,1785,1785,1785,,198,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -36290,7 +36311,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,1776,1776,1776,1776,1776,1776",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -36334,7 +36355,7 @@
         "recipe": [
             {
                 "recipe": "1785,,,1785,1785,,1785,1785,1785",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -36356,7 +36377,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1785,1785,1785",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -36378,7 +36399,7 @@
         "recipe": [
             {
                 "recipe": ",,,1785,1785,1785,1785,1785,1785",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -36400,7 +36421,7 @@
         "recipe": [
             {
                 "recipe": "1785,1785,,1785,1785,,1785,1785,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -36466,7 +36487,7 @@
         "recipe": [
             {
                 "recipe": "1785,198,1785,1785,198,1785,,,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -36547,7 +36568,7 @@
         "recipe": [
             {
                 "recipe": "1795,,,1795,1795,,1795,1795,1795",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -36628,7 +36649,7 @@
         "recipe": [
             {
                 "recipe": "1795,1795,1795,,,,,,",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -36650,7 +36671,7 @@
         "recipe": [
             {
                 "recipe": "1795,1795,1795,1795,1795,1795,,,",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -37907,7 +37928,7 @@
         "recipe": [
             {
                 "recipe": "368,368,368,,,,368,368,368",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -37929,7 +37950,7 @@
         "recipe": [
             {
                 "recipe": "369,369,369,,,,369,369,369",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -37951,7 +37972,7 @@
         "recipe": [
             {
                 "recipe": "370,370,370,,,,370,370,370",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -37973,7 +37994,7 @@
         "recipe": [
             {
                 "recipe": "371,371,371,,,,371,371,371",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -37995,7 +38016,7 @@
         "recipe": [
             {
                 "recipe": "372,372,372,,,,372,372,372",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -38017,7 +38038,7 @@
         "recipe": [
             {
                 "recipe": "373,373,373,,,,373,373,373",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -38039,7 +38060,7 @@
         "recipe": [
             {
                 "recipe": "1422,1422,1422,,,,1422,1422,1422",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -38061,7 +38082,7 @@
         "recipe": [
             {
                 "recipe": "1571,1571,1571,,,,1571,1571,1571",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -38083,7 +38104,7 @@
         "recipe": [
             {
                 "recipe": "1776,1776,1776,,,,1776,1776,1776",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -38105,7 +38126,7 @@
         "recipe": [
             {
                 "recipe": "1516,1516,1516,,,,1516,1516,1516",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -38127,7 +38148,7 @@
         "recipe": [
             {
                 "recipe": "374,374,374,,,,374,374,374",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -38149,7 +38170,7 @@
         "recipe": [
             {
                 "recipe": "375,375,375,,,,375,375,375",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39440,7 +39461,7 @@
         "recipe": [
             {
                 "recipe": "1935,,,1935,1935,,1935,1935,1935",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -39462,7 +39483,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1935,1935,1935",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39484,7 +39505,7 @@
         "recipe": [
             {
                 "recipe": ",,,1935,1935,1935,1935,1935,1935",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39528,7 +39549,7 @@
         "recipe": [
             {
                 "recipe": "1939,,,1939,1939,,1939,1939,1939",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -39550,7 +39571,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1939,1939,1939",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39572,7 +39593,7 @@
         "recipe": [
             {
                 "recipe": ",,,1939,1939,1939,1939,1939,1939",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39616,7 +39637,7 @@
         "recipe": [
             {
                 "recipe": "1943,,,1943,1943,,1943,1943,1943",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -39638,7 +39659,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1943,1943,1943",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39660,7 +39681,7 @@
         "recipe": [
             {
                 "recipe": ",,,1943,1943,1943,1943,1943,1943",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39719,7 +39740,7 @@
         "recipe": [
             {
                 "recipe": "1948,,,1948,1948,,1948,1948,1948",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -39741,7 +39762,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1948,1948,1948",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39763,7 +39784,7 @@
         "recipe": [
             {
                 "recipe": ",,,1948,1948,1948,1948,1948,1948",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39807,7 +39828,7 @@
         "recipe": [
             {
                 "recipe": "1952,,,1952,1952,,1952,1952,1952",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -39829,7 +39850,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1952,1952,1952",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39851,7 +39872,7 @@
         "recipe": [
             {
                 "recipe": ",,,1952,1952,1952,1952,1952,1952",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39895,7 +39916,7 @@
         "recipe": [
             {
                 "recipe": "1956,,,1956,1956,,1956,1956,1956",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -39917,7 +39938,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,1956,1956,1956",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -39939,7 +39960,7 @@
         "recipe": [
             {
                 "recipe": ",,,1956,1956,1956,1956,1956,1956",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -40120,7 +40141,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,500,500,500",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40202,7 +40223,7 @@
         "recipe": [
             {
                 "recipe": ",,,1973,1973,,1973,1973,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -40239,7 +40260,7 @@
         "recipe": [
             {
                 "recipe": ",,,1975,1975,,1975,1975,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -40283,7 +40304,7 @@
         "recipe": [
             {
                 "recipe": "1977,,,1977,1977,,1977,1977,1977",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40305,7 +40326,7 @@
         "recipe": [
             {
                 "recipe": ",,,1977,1977,1977,,,",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -40327,7 +40348,7 @@
         "recipe": [
             {
                 "recipe": "1977,198,1977,1977,198,1977,,,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -40393,7 +40414,7 @@
         "recipe": [
             {
                 "recipe": ",1977,1977,,1977,1977,,1977,1977",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -40437,7 +40458,7 @@
         "recipe": [
             {
                 "recipe": ",,,1977,1977,1977,1977,1977,1977",
-                "products": 1,
+                "products": 2,
                 "craft_type": 0
             }
         ]
@@ -40503,7 +40524,7 @@
         "recipe": [
             {
                 "recipe": "1977,1977,1977,1977,1977,1977,,198,",
-                "products": 1,
+                "products": 3,
                 "craft_type": 0
             }
         ]
@@ -40525,7 +40546,7 @@
         "recipe": [
             {
                 "recipe": "425,,425,1975,1975,1975,1975,1975,1975",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -40547,7 +40568,7 @@
         "recipe": [
             {
                 "recipe": "1975,1975,1975,,,,1975,1975,1975",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -40569,7 +40590,7 @@
         "recipe": [
             {
                 "recipe": "392,,,392,392,,392,392,392",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40591,7 +40612,7 @@
         "recipe": [
             {
                 "recipe": "393,,,393,393,,393,393,393",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40613,7 +40634,7 @@
         "recipe": [
             {
                 "recipe": "394,,,394,394,,394,394,394",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40635,7 +40656,7 @@
         "recipe": [
             {
                 "recipe": "395,,,395,395,,395,395,395",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40657,7 +40678,7 @@
         "recipe": [
             {
                 "recipe": "396,,,396,396,,396,396,396",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40679,7 +40700,7 @@
         "recipe": [
             {
                 "recipe": "397,,,397,397,,397,397,397",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40701,7 +40722,7 @@
         "recipe": [
             {
                 "recipe": "398,,,398,398,,398,398,398",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40723,7 +40744,7 @@
         "recipe": [
             {
                 "recipe": "399,,,399,399,,399,399,399",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40745,7 +40766,7 @@
         "recipe": [
             {
                 "recipe": "400,,,400,400,,400,400,400",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40767,7 +40788,7 @@
         "recipe": [
             {
                 "recipe": "401,,,401,401,,401,401,401",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40789,7 +40810,7 @@
         "recipe": [
             {
                 "recipe": "402,,,402,402,,402,402,402",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40811,7 +40832,7 @@
         "recipe": [
             {
                 "recipe": "403,,,403,403,,403,403,403",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40833,7 +40854,7 @@
         "recipe": [
             {
                 "recipe": "404,,,404,404,,404,404,404",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40855,7 +40876,7 @@
         "recipe": [
             {
                 "recipe": "405,,,405,405,,405,405,405",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40877,7 +40898,7 @@
         "recipe": [
             {
                 "recipe": "406,,,406,406,,406,406,406",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40899,7 +40920,7 @@
         "recipe": [
             {
                 "recipe": "407,,,407,407,,407,407,407",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -40921,7 +40942,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,392,392,392",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -40943,7 +40964,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,393,393,393",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -40965,7 +40986,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,394,394,394",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -40987,7 +41008,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,395,395,395",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41009,7 +41030,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,396,396,396",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41031,7 +41052,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,397,397,397",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41053,7 +41074,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,398,398,398",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41075,7 +41096,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,399,399,399",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41097,7 +41118,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,400,400,400",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41119,7 +41140,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,401,401,401",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41141,7 +41162,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,402,402,402",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41163,7 +41184,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,403,403,403",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41185,7 +41206,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,404,404,404",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41207,7 +41228,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,405,405,405",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41229,7 +41250,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,406,406,406",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -41251,7 +41272,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,407,407,407",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42000,7 +42021,7 @@
         "recipe": [
             {
                 "recipe": "513,,,513,513,,513,513,513",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42022,7 +42043,7 @@
         "recipe": [
             {
                 "recipe": "514,,,514,514,,514,514,514",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42044,7 +42065,7 @@
         "recipe": [
             {
                 "recipe": "515,,,515,515,,515,515,515",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42066,7 +42087,7 @@
         "recipe": [
             {
                 "recipe": "516,,,516,516,,516,516,516",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42088,7 +42109,7 @@
         "recipe": [
             {
                 "recipe": "517,,,517,517,,517,517,517",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42110,7 +42131,7 @@
         "recipe": [
             {
                 "recipe": "518,,,518,518,,518,518,518",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42132,7 +42153,7 @@
         "recipe": [
             {
                 "recipe": "519,,,519,519,,519,519,519",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42154,7 +42175,7 @@
         "recipe": [
             {
                 "recipe": "520,,,520,520,,520,520,520",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42176,7 +42197,7 @@
         "recipe": [
             {
                 "recipe": "521,,,521,521,,521,521,521",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42198,7 +42219,7 @@
         "recipe": [
             {
                 "recipe": "522,,,522,522,,522,522,522",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42220,7 +42241,7 @@
         "recipe": [
             {
                 "recipe": "523,,,523,523,,523,523,523",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42242,7 +42263,7 @@
         "recipe": [
             {
                 "recipe": "524,,,524,524,,524,524,524",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42264,7 +42285,7 @@
         "recipe": [
             {
                 "recipe": "525,,,525,525,,525,525,525",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42286,7 +42307,7 @@
         "recipe": [
             {
                 "recipe": "526,,,526,526,,526,526,526",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42308,7 +42329,7 @@
         "recipe": [
             {
                 "recipe": "527,,,527,527,,527,527,527",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42330,7 +42351,7 @@
         "recipe": [
             {
                 "recipe": "528,,,528,528,,528,528,528",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42352,7 +42373,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,513,513,513",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42374,7 +42395,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,514,514,514",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42396,7 +42417,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,515,515,515",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42418,7 +42439,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,516,516,516",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42440,7 +42461,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,517,517,517",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42462,7 +42483,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,518,518,518",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42484,7 +42505,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,519,519,519",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42506,7 +42527,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,520,520,520",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42528,7 +42549,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,521,521,521",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42550,7 +42571,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,522,522,522",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42572,7 +42593,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,523,523,523",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42594,7 +42615,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,524,524,524",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42616,7 +42637,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,525,525,525",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42638,7 +42659,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,526,526,526",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42660,7 +42681,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,527,527,527",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42682,7 +42703,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,528,528,528",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -42821,6 +42842,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,2102,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&1Congelamento I (0:05)"
@@ -42901,6 +42929,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1000,1000,1000,1000,2106,1000,1000,1000,1000",
+                "products": 1,
+                "craft_type": 0
+            }
+        ],
         "description": [
             {
                 "value": "[&1Congelamento I (0:11)"
@@ -42939,7 +42974,7 @@
         "recipe": [
             {
                 "recipe": "137,137,,137,137,,,,",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42961,7 +42996,7 @@
         "recipe": [
             {
                 "recipe": "2110,,,2110,2110,,2110,2110,2110",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -42983,7 +43018,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,2110,2110,2110",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -43005,7 +43040,7 @@
         "recipe": [
             {
                 "recipe": ",,,2110,2110,2110,2110,2110,2110",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -43049,7 +43084,7 @@
         "recipe": [
             {
                 "recipe": "135,135,,135,135,,,,",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -43071,7 +43106,7 @@
         "recipe": [
             {
                 "recipe": "2115,,,2115,2115,,2115,2115,2115",
-                "products": 1,
+                "products": 4,
                 "craft_type": 0
             }
         ]
@@ -43093,7 +43128,7 @@
         "recipe": [
             {
                 "recipe": ",,,,,,2115,2115,2115",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
             }
         ]
@@ -43101,7 +43136,7 @@
     {
         "id": 2118,
         "icon": "snow_brick_wall.png",
-        "type": "construcao",
+        "type": "decorativos",
         "name": "Muro de Tijolos de Neve",
         "internal_name": "snow_brick_wall",
         "version": "26.4",
@@ -43115,8 +43150,312 @@
         "recipe": [
             {
                 "recipe": ",,,2115,2115,2115,2115,2115,2115",
-                "products": 1,
+                "products": 6,
                 "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2119,
+        "icon": "calcite_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Calcita",
+        "internal_name": "calcite_stairs",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "115,,,115,115,,115,115,115",
+                "products": 4,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2120,
+        "icon": "calcite_slab.png",
+        "type": "construcao",
+        "name": "Laje de Calcita",
+        "internal_name": "calcite_slab",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,115,115,115",
+                "products": 6,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2121,
+        "icon": "calcite_wall.png",
+        "type": "decorativos",
+        "name": "Muro de Calcita",
+        "internal_name": "calcite_wall",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,115,115,115,115,115,115",
+                "products": 6,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2122,
+        "icon": "polished_calcite.png",
+        "type": "construcao",
+        "name": "Calcita Polida",
+        "internal_name": "polished_calcite",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "115,115,,115,115,,,,",
+                "products": 4,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2123,
+        "icon": "polished_calcite_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Calcita Polida",
+        "internal_name": "polished_calcite_stairs",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "2122,,,2122,2122,,2122,2122,2122",
+                "products": 4,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2124,
+        "icon": "polished_calcite_slab.png",
+        "type": "construcao",
+        "name": "Laje de Calcita Polida",
+        "internal_name": "polished_calcite_slab",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2122,2122,2122",
+                "products": 6,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2125,
+        "icon": "polished_calcite_wall.png",
+        "type": "decorativos",
+        "name": "Muro de Calcita Polida",
+        "internal_name": "polished_calcite_wall",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,2122,2122,2122,2122,2122,2122",
+                "products": 6,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2126,
+        "icon": "polished_calcite_bricks.png",
+        "type": "construcao",
+        "name": "Tijolos de Calcita Polida",
+        "internal_name": "polished_calcite_bricks",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "2122,2122,,2122,2122,,,,",
+                "products": 4,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2127,
+        "icon": "polished_calcite_brick_stairs.png",
+        "type": "construcao",
+        "name": "Escadas de Tijolos de Calcita Polida",
+        "internal_name": "polished_calcite_brick_stairs",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "2126,,,2126,2126,,2126,2126,2126",
+                "products": 4,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2128,
+        "icon": "polished_calcite_brick_slab.png",
+        "type": "construcao",
+        "name": "Laje de Tijolos de Calcita Polida",
+        "internal_name": "polished_calcite_brick_slab",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,,,2126,2126,2126",
+                "products": 6,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2129,
+        "icon": "polished_calcite_brick_wall.png",
+        "type": "decorativos",
+        "name": "Muro de Tijolos de Calcita Polida",
+        "internal_name": "polished_calcite_brick_wall",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,2126,2126,2126,2126,2126,2126",
+                "products": 6,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2130,
+        "icon": "chiseled_soulshale.png",
+        "type": "decorativos",
+        "name": "Almaxisto Talhado",
+        "internal_name": "chiseled_soulshale",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": false,
+        "hide": false,
+        "legacy": false
+    },
+    {
+        "id": 2131,
+        "icon": "calcite_pillar.png",
+        "type": "construcao",
+        "name": "Pilar de Calcita",
+        "internal_name": "calcite_pillar",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 64,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",,,,115,,,115,",
+                "products": 2,
+                "craft_type": 0
+            }
+        ]
+    },
+    {
+        "id": 2132,
+        "icon": "music_disc_flurry.png",
+        "type": "diversos",
+        "name": "Disco Musical",
+        "internal_name": "music_disc_flurry",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": false,
+        "stackable": 0,
+        "craftable": false,
+        "hide": false,
+        "legacy": false,
+        "title": [
+            {
+                "type": 2
+            }
+        ],
+        "description": [
+            {
+                "value": "[&rHyper Potions - flurry"
             }
         ]
     }

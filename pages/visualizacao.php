@@ -15,11 +15,22 @@
 
     <?php include_once "../php/conexao_obsoleta.php";
 
-    if (isset($_GET["versao_jogo"]))
-        $versao_jogo = $_GET["versao_jogo"];
+    // Índice da versão: 0 a 21 = 1.0 a 1.21, 22 a 25 = 26.1 a 26.4
+    $ultima_versao = 25;
+    $versao_jogo = isset($_GET["versao_jogo"]) ? (int) $_GET["versao_jogo"] : 5;
 
-    if (!isset($versao_jogo) || $versao_jogo < 0 || $versao_jogo > 21)
-        $versao_jogo = 5; ?>
+    if ($versao_jogo < 0 || $versao_jogo > $ultima_versao)
+        $versao_jogo = 5;
+
+    $rotulos_versoes = [];
+    for ($i = 0; $i <= 21; $i++) $rotulos_versoes[] = "1.$i";
+    for ($i = 1; $i <= 4; $i++) $rotulos_versoes[] = "26.$i";
+
+    $rotulo_versao_jogo = $rotulos_versoes[$versao_jogo];
+
+    // Mesma ordem de versões usada no filtro em JavaScript
+    $ordem_versao_sql = "(IF(SUBSTRING_INDEX(versao, '.', 1) >= 26, 21, 0) + CAST(SUBSTRING_INDEX(versao, '.', -1) AS UNSIGNED))";
+    $filtro_versao_sql = "versao REGEXP '^[0-9]+\\\\.[0-9]+$' AND $ordem_versao_sql <= $versao_jogo"; ?>
 </head>
 
 <body>
@@ -40,46 +51,31 @@
         if (!isset($_GET["dg"]))
             $graphics = false;
 
-        for ($i = 0; $i < 22; $i += 3) {
-            echo "-> <a href='#' onclick='filtragem(\"1.$i\", 2)'>1.$i</a>";
+        foreach (array_chunk(array_slice($rotulos_versoes, 0, $versao_jogo + 1), 3) as $linha) {
+            $links = array_map(fn($v) => "<a href='#' onclick='filtragem(\"$v\", 2)'>$v</a>", $linha);
 
-            $x = $i + 1;
-            $x2 = $i + 2;
-
-            if ($i + 1 <= $versao_jogo)
-                echo " | <a href='#' onclick='filtragem(\"1.$x\", 2)'>1.$x</a>";
-
-            if ($i + 2 <= $versao_jogo)
-                echo " | <a href='#' onclick='filtragem(\"1.$x2\", 2)'>1.$x2</a>";
-
-            echo "<br>";
-
-            if ($versao_jogo == $i || $versao_jogo == $i + 1 || $versao_jogo == $i + 2) // Para o menu
-                break;
+            echo "-> " . implode(" | ", $links) . "<br>";
         } ?>
     </div>
 
     <div id="menu_user">
 
         <?php if (($versao_jogo - 1) > -1) { ?>
-            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo - 1; ?>&dg=<?php echo $graphics ?>"><button class="navegacao" onmouseover="toolTip('Versão anterior')" onmouseout="toolTip()">
+            <a class="nav_versao" onclick="navega_versao(event)" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo - 1; ?><?php echo $graphics ? "&dg=true" : "" ?>"><button class="navegacao" onmouseover="toolTip('Versão anterior')" onmouseout="toolTip()">
                     < </button></a>
         <?php }
 
-        if ($versao_jogo < 21) { ?>
-            <a href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?>&dg=<?php echo $graphics ?>"><button class="navegacao" onmouseover="toolTip('Próxima versão')" onmouseout="toolTip()"> > </button></a>
+        if ($versao_jogo < $ultima_versao) { ?>
+            <a class="nav_versao" onclick="navega_versao(event)" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo + 1; ?><?php echo $graphics ? "&dg=true" : "" ?>"><button class="navegacao" onmouseover="toolTip('Próxima versão')" onmouseout="toolTip()"> > </button></a>
         <?php } ?>
 
-        <?php if (!isset($_GET["dg"])) { ?>
-            <a class="bttn_frrm" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>&dg=true" onclick="#" onmouseover="toolTip('Os gráficos originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
-            <a class="bttn_frrm" id="bttn_programmers_atv" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo; ?>" onmouseover="toolTip('Volte para os sprites atuais do Minecraft')" onmouseout="toolTip()">Gráficos padrões</a> <?php } ?>
-
+        <a class="bttn_frrm<?php echo $graphics ? " programmers_ativo" : "" ?>" id="button_graficos" href="visualizacao.php?versao_jogo=<?php echo $versao_jogo . ($graphics ? "" : "&dg=true"); ?>" onclick="alterna_graficos(event)" onmouseover="toolTip('<?php echo $graphics ? "Volte para os sprites atuais do Minecraft" : "Os gráficos originais do Minecraft" ?>')" onmouseout="toolTip()"><?php echo $graphics ? "Gráficos padrões" : "Programmer Art" ?></a>
         <a class="bttn_frrm" href="index.php" onmouseover="toolTip('O gerenciador de itens')" onmouseout="toolTip()">Gerenciador</a>
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(<?php echo $versao_jogo ?>, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>
     </div>
 
     <div id="infos_versao">
-        Edição Java 1.<?php echo $versao_jogo; ?>
+        Edição Java <?php echo $rotulo_versao_jogo; ?>
     </div>
 
     <div id="estatisticas_inventario">
@@ -98,39 +94,33 @@
             </center>
 
             <?php
-            $executa = $conexao->query("SELECT * FROM item WHERE versao = 1.$versao_jogo");
-            echo "<p class='estat cor_textos'>itens adicionados na versão 1.$versao_jogo ( ";
-            echo $executa->num_rows . " )</p>";
+            $totais = $conexao->query(
+                "SELECT COUNT(*) AS total,
+                    COALESCE(SUM(versao = '$rotulo_versao_jogo'), 0) AS adicionados,
+                    COALESCE(SUM(coletavel = 1), 0) AS coletaveis,
+                    COALESCE(SUM(renovavel = 1), 0) AS renovaveis,
+                    COALESCE(SUM(empilhavel != 0), 0) AS empilhaveis,
+                    COALESCE(SUM(empilhavel != 0 AND coletavel = 1), 0) AS coletaveis_empilhaveis,
+                    COALESCE(SUM(coletavel = 1 AND empilhavel != 0 AND renovavel != 1), 0) AS coletaveis_empilhaveis_nao_renovaveis,
+                    COALESCE(SUM(empilhavel = 0), 0) AS nao_empilhaveis
+                 FROM item WHERE $filtro_versao_sql"
+            )->fetch_assoc();
 
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo");
-            echo "<br><p class='estat cor_textos'>itens no Inventário: ";
-            echo $executa->num_rows . "</p>";
+            echo "<p class='estat cor_textos'>itens adicionados na versão $rotulo_versao_jogo ( " . (int) $totais["adicionados"] . " )</p>";
 
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1");
-            echo "<br><p class='estat cor_textos'> Coletáveis: ";
-            echo $executa->num_rows . "</p>";
+            $estatisticas = [
+                "itens no Inventário" => "total",
+                " Coletáveis" => "coletaveis",
+                "Renováveis" => "renovaveis",
+                "Empilháveis" => "empilhaveis",
+                "Coletáveis e empilháveis" => "coletaveis_empilhaveis",
+                "Coletáveis empilháveis e não renováveis" => "coletaveis_empilhaveis_nao_renovaveis",
+                "Não empilháveis" => "nao_empilhaveis"
+            ];
 
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND renovavel = 1");
-            echo "<br><p class='estat cor_textos'>Renováveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0");
-            echo "<br><p class='estat cor_textos'>Empilháveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel != 0 AND coletavel = 1");
-            echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND coletavel = 1 AND empilhavel != 0 AND renovavel != 1");
-            echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo AND empilhavel LIKE 0");
-            echo "<br><p class='estat cor_textos'>Não empilháveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE versao <= $versao_jogo ORDER BY id_item DESC"); ?>
+            foreach ($estatisticas as $rotulo => $campo)
+                echo "<br><p class='estat cor_textos'>$rotulo: " . (int) $totais[$campo] . "</p>";
+            $executa = $conexao->query("SELECT * FROM item WHERE $filtro_versao_sql ORDER BY id_item DESC"); ?>
         </div>
     </div>
 

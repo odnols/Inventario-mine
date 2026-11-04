@@ -19,16 +19,15 @@
     <div id="filtro_colorido"></div>
     <div id="lista_versoes" style="display: none">
         <?php
-        for ($i = 0; $i < 22; $i += 3) {
+        $lista_versoes = [];
 
-            $x = $i + 1;
-            $x2 = $i + 2;
+        for ($i = 0; $i <= 21; $i++) $lista_versoes[] = "1.$i";
+        for ($i = 1; $i <= 4; $i++) $lista_versoes[] = "26.$i";
 
-            echo "-> <a href='#' onclick='filtragem(\"1.$i\", 2)'>1.$i</a>";
-            echo " | <a href='#' onclick='filtragem(\"1.$x\", 2)'>1.$x</a>";
-            echo " | <a href='#' onclick='filtragem(\"1.$x2\", 2)'>1.$x2</a>";
+        foreach (array_chunk($lista_versoes, 3) as $linha) {
+            $links = array_map(fn($v) => "<a href='#' onclick='filtragem(\"$v\", 2)'>$v</a>", $linha);
 
-            echo "<br>";
+            echo "-> " . implode(" | ", $links) . "<br>";
         }
         ?>
     </div>
@@ -57,41 +56,34 @@
             if (!isset($_GET["dg"]))
                 $graphics = false;
 
-            $executa = $conexao->query("SELECT * FROM item");
+            // Uma única consulta agregada em vez de uma por estatística
+            $totais = $conexao->query(
+                "SELECT COUNT(*) AS total,
+                    COALESCE(SUM(coletavel = 1), 0) AS coletaveis,
+                    COALESCE(SUM(fabricavel = 1), 0) AS fabricaveis,
+                    COALESCE(SUM(renovavel = 1), 0) AS renovaveis,
+                    COALESCE(SUM(empilhavel != 0), 0) AS empilhaveis,
+                    COALESCE(SUM(empilhavel != 0 AND coletavel = 1), 0) AS coletaveis_empilhaveis,
+                    COALESCE(SUM(coletavel = 1 AND empilhavel != 0 AND renovavel != 1), 0) AS coletaveis_empilhaveis_nao_renovaveis,
+                    COALESCE(SUM(empilhavel = 0), 0) AS nao_empilhaveis
+                 FROM item"
+            )->fetch_assoc();
+
+            $estatisticas = [
+                "Itens registrados" => "total",
+                "Coletáveis" => "coletaveis",
+                "Fabricáveis" => "fabricaveis",
+                "Renováveis" => "renovaveis",
+                "Empilháveis" => "empilhaveis",
+                "Coletáveis e empilháveis" => "coletaveis_empilhaveis",
+                "Coletáveis empilháveis e não renováveis" => "coletaveis_empilhaveis_nao_renovaveis",
+                "Não empilháveis" => "nao_empilhaveis"
+            ];
 
             echo "<p id='versao_referencia' class='estat cor_textos'>itens Adicionados na versão <span id='num_referencia'></span></p>";
 
-            echo "<br><p class='estat cor_textos'>Itens registrados: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1");
-            echo "<br><p class='estat cor_textos'>Coletáveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE fabricavel = 1");
-            echo "<br><p class='estat cor_textos'>Fabricáveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE renovavel = 1");
-            echo "<br><p class='estat cor_textos'>Renováveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE empilhavel != 0");
-            echo "<br><p class='estat cor_textos'>Empilháveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE empilhavel != 0 AND coletavel = 1");
-            echo "<br><p class='estat cor_textos'>Coletáveis e empilháveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1 AND empilhavel != 0 AND renovavel != 1");
-            echo "<br><p class='estat cor_textos'>Coletáveis empilháveis e não renováveis: ";
-            echo $executa->num_rows . "</p>";
-
-            $executa = $conexao->query("SELECT * FROM item WHERE empilhavel LIKE 0");
-            echo "<br><p class='estat cor_textos'>Não empilháveis: ";
-            echo $executa->num_rows . "</p>";
-
+            foreach ($estatisticas as $rotulo => $campo)
+                echo "<br><p class='estat cor_textos'>$rotulo: " . (int) $totais[$campo] . "</p>";
             $executa = $conexao->query("SELECT * FROM item ORDER BY id_item DESC"); ?>
         </div>
     </div>
@@ -101,26 +93,24 @@
 
         <?php if ($executa->num_rows > 0) { ?>
             <!-- Só libera a utilização se houver dados -->
-            <a class="bttn_frrm" href="../php/exportar_dados.php" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
-        <a class="bttn_frrm" id="button_importar_dados" href="../php/importar_dados.php" onclick="importar_dados()" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
+            <a class="bttn_frrm" id="button_exportar_dados" href="../php/exportar_dados.php" onclick="exportar_dados(event)" onmouseover="toolTip('Exporte todos os dados para um JSON externo')" onmouseout="toolTip()">Exportar Dados</a> <?php } ?>
+        <a class="bttn_frrm" id="button_importar_dados" href="../php/importar_dados.php" onclick="importar_dados(event)" onmouseover="toolTip('Importe todos os dados de um JSON externo')" onmouseout="toolTip()">Importar Dados</a>
 
         <?php if ($executa->num_rows > 0) { ?>
             <!-- Só libera a utilização se houver dados -->
-            <a class="bttn_frrm" id="button_apagar_dados" href="../php/limpar_dados.php" onmouseover="toolTip('Apague todos os dados salvos no banco')" onmouseout="toolTip()">Limpar Dados</a>
+            <a class="bttn_frrm" id="button_apagar_dados" href="../php/limpar_dados.php" onclick="limpar_dados(event)" onmouseover="toolTip('Apague todos os dados salvos no banco')" onmouseout="toolTip()">Limpar Dados</a>
         <?php } ?>
     </div>
 
     <div id="menu_user">
-        <?php if ($executa->num_rows > 0) {
-            if (!isset($_GET["dg"])) { ?>
-                <a class="bttn_frrm" href="index.php?dg=true" onmouseover="toolTip('Os sprites originais do Minecraft')" onmouseout="toolTip()">Programmer Art</a> <?php } else { ?>
-                <a class="bttn_frrm" id="bttn_programmers_atv" href="index.php" onmouseover="toolTip('Volte para os sprites atuais do Minecraft')" onmouseout="toolTip()">Gráficos padrões</a> <?php }
-                                                                                                                                                                                        } ?>
+        <?php if ($executa->num_rows > 0) { ?>
+            <a class="bttn_frrm<?php echo $graphics ? " programmers_ativo" : "" ?>" id="button_graficos" href="index.php<?php echo $graphics ? "" : "?dg=true" ?>" onclick="alterna_graficos(event)" onmouseover="toolTip('<?php echo $graphics ? "Volte para os sprites atuais do Minecraft" : "Os sprites originais do Minecraft" ?>')" onmouseout="toolTip()"><?php echo $graphics ? "Gráficos padrões" : "Programmer Art" ?></a>
+        <?php } ?>
 
         <?php if ($executa->num_rows > 0) { ?>
             <a class="bttn_frrm" href="visualizacao.php" onmouseover="toolTip('Uma volta ao passado...')" onmouseout="toolTip()">Máquina do tempo</a>
 
-            <a class="bttn_frrm" href="../modules/criar_pagina.php" onmouseover="toolTip('Atualizar o site em HTML')" onmouseout="toolTip()">Atualizar HTML</a> <?php } ?>
+            <a class="bttn_frrm" id="button_atualizar_html" href="../modules/criar_pagina.php" onclick="atualizar_html(event)" onmouseover="toolTip('Atualizar o site em HTML')" onmouseout="toolTip()">Atualizar HTML</a> <?php } ?>
         <a class="bttn_frrm" id="bttn_troca_tema" href="#" onclick="troca_tema(undefined, 1)" onmouseover="toolTip('Altere entre o modo escuro e claro')" onmouseout="toolTip()"><span id="icone_tema">☀️</span></a>''
     </div>
 
@@ -157,7 +147,7 @@
 
                     for ($x = 0; $x < sizeof($drops); $x++) {
                         for ($i = 3; $i > 0; $i--)
-                                echo "<option value='$drops[$x].$i'>$drops[$x].$i</option>";
+                            echo "<option value='$drops[$x].$i'>$drops[$x].$i</option>";
                     }
 
                     for ($i = 21; $i >= 0; $i--) {

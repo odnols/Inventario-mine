@@ -20,7 +20,7 @@
 	padding-right: 10px;
 	white-space: nowrap;
 	pointer-events: none;
-	z-index: 99 !important;
+	z-index: 999 !important;
 	background-color: #100010;
 	background-color: rgba(16, 0, 16, 0.94);
 	font-family: Minecraftia, Minecraft, sans-serif;
@@ -161,4 +161,22 @@
 	float: left;
 	width: 100%;
 	padding-top: 5px;
+}
+
+/* Cada linha começa abaixo da anterior para a largura da caixa seguir a linha mais longa */
+#descricao_item_minetip,
+#nome_interno_minetip,
+#descricao_item_minetp,
+#nome_interno_minetp,
+.efeito_colorido,
+.espaco {
+	clear: both;
+}
+
+/* Linhas vazias não podem ocupar altura (o nome interno tem padding próprio) */
+#descricao_item_minetip:empty,
+#nome_interno_minetip:empty,
+#descricao_item_minetp:empty,
+#nome_interno_minetp:empty {
+	display: none;
 }

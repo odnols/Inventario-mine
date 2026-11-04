@@ -1,20 +1,55 @@
 <?php include_once "conexao_obsoleta.php";
 
-$id_item = $_POST["id_item"];
+$id_item = filter_var($_POST["id_item"] ?? null, FILTER_VALIDATE_INT);
+if ($id_item === false || $id_item < 1) {
+    http_response_code(400);
+    exit("ID do item inválido.");
+}
 
 $nome = $_POST["nome"];
 $nome_interno = $_POST["nome_interno"];
 $empilhavel = $_POST["empilhavel"];
 $versao = $_POST["versao"];
-$tipo_item = $_POST["tipo_item"];
+$tipo_item = $_POST["tipo_item"] ?? "";
+$guias_validas = [
+    "construcao", "decorativos", "redstone", "transportes", "diversos",
+    "alimentos", "ferramentas", "combate", "pocoes", "especiais"
+];
+if (!in_array($tipo_item, $guias_validas, true)) {
+    http_response_code(400);
+    exit("Guia do menu inválida.");
+}
+
+$resultado_item_atual = $conexao->query(
+    "SELECT tipo, icon FROM item WHERE id_item = $id_item LIMIT 1"
+);
+if (!$resultado_item_atual || $resultado_item_atual->num_rows !== 1) {
+    http_response_code(404);
+    exit("Item não encontrado.");
+}
+$item_atual = $resultado_item_atual->fetch_assoc();
+$tipo_anterior = $item_atual["tipo"];
+$icon_anterior = basename((string) $item_atual["icon"]);
+if (!in_array($tipo_anterior, $guias_validas, true)) {
+    throw new RuntimeException("A guia atual do item é inválida.");
+}
 
 $cor_tipo_item = $_POST["cor_tipo_item"];
 $descricao = $_POST["descricao"];
-$durabilidade = $_POST["durabilidade"];
+$durabilidade = $_POST["durabilidade"] ?? "";
 
-$arq_name = $_FILES["img"]["name"]; //O nome do ficheiro
-$arq_size = $_FILES["img"]["size"]; //O tamanho do ficheiro
-$arq_tmp = $_FILES["img"]["tmp_name"]; //O nome temporário do arquivo
+$upload_erro = $_FILES["img"]["error"] ?? UPLOAD_ERR_NO_FILE;
+if ($upload_erro !== UPLOAD_ERR_OK && $upload_erro !== UPLOAD_ERR_NO_FILE) {
+    http_response_code(400);
+    exit("Falha ao receber o sprite enviado.");
+}
+$tem_upload_sprite = $upload_erro === UPLOAD_ERR_OK;
+$arq_name = $tem_upload_sprite ? basename($_FILES["img"]["name"]) : "";
+$arq_tmp = $tem_upload_sprite ? $_FILES["img"]["tmp_name"] : "";
+if ($tem_upload_sprite && $arq_name === "") {
+    http_response_code(400);
+    exit("O nome do sprite enviado é inválido.");
+}
 
 // Verifica se o item é coletável no sobrevivência
 if (isset($_POST["coletavel"])) $coletavel = 1;
@@ -104,12 +139,132 @@ if ($executa_verificacao->num_rows > 0) {
 } else if ($oculto_invt)
     $conexao->query("INSERT INTO item_oculto values (null, $id_item, 1)");
 
-// Atualizando a imagem que está sendo utilizada
-if (strlen($arq_name) > 0) {
-    $conexao->query("UPDATE item SET icon = '$arq_name' WHERE id_item = $id_item");
+// Copia os sprites para a nova guia antes de atualizar os caminhos do item.
+$icon_novo = $tem_upload_sprite ? $arq_name : $icon_anterior;
+$sprites = [];
+$sprites_antigos = [];
+$diretorio_itens = realpath(__DIR__ . "/../img/itens");
 
-    // Criando uma cópia da imagem
-    move_uploaded_file($arq_tmp, "../img/itens/new/$tipo_item/" . $arq_name);
+if ($diretorio_itens === false) {
+    throw new RuntimeException("Diretório de sprites não encontrado.");
+}
+
+if ($icon_anterior !== "") {
+    $sprite_novo_atual = "$diretorio_itens/new/$tipo_anterior/$icon_anterior";
+    if (is_file($sprite_novo_atual)) {
+        $sprites_antigos["new"] = $sprite_novo_atual;
+        if (!$tem_upload_sprite)
+            $sprites["new"] = $sprite_novo_atual;
+    }
+
+    $sprite_classic_atual = "$diretorio_itens/classic/$tipo_anterior/$icon_anterior";
+    if (is_file($sprite_classic_atual)) {
+        $sprites["classic"] = $sprite_classic_atual;
+        $sprites_antigos["classic"] = $sprite_classic_atual;
+    }
+}
+
+if ($tem_upload_sprite)
+    $sprites["new"] = $arq_tmp;
+
+$mudou_categoria = $tipo_item !== $tipo_anterior;
+$precisa_mover_sprites = $mudou_categoria || $tem_upload_sprite;
+
+if ($precisa_mover_sprites && $sprites) {
+    $icon_base = $icon_novo;
+    $nome_base = pathinfo($icon_base, PATHINFO_FILENAME);
+    $extensao = pathinfo($icon_base, PATHINFO_EXTENSION);
+    $sufixo_extensao = $extensao === "" ? "" : ".$extensao";
+    $tentativa = 0;
+    $conflito_encontrado = true;
+
+    while ($conflito_encontrado) {
+        $candidato = $tentativa === 0
+            ? $icon_base
+            : $id_item . "_" . $nome_base . ($tentativa > 1 ? "_$tentativa" : "") . $sufixo_extensao;
+        $conflito_encontrado = false;
+        $icon_sql_teste = $conexao->real_escape_string($candidato);
+        $consulta_uso = $conexao->query(
+            "SELECT id_item FROM item WHERE tipo = '$tipo_item' AND icon = '$icon_sql_teste' AND id_item <> $id_item LIMIT 1"
+        );
+
+        if (!$consulta_uso) {
+            throw new RuntimeException("Falha ao verificar o nome do sprite: " . $conexao->error);
+        }
+
+        $ha_referencias = $consulta_uso->num_rows > 0;
+        foreach ($sprites as $geracao => $origem) {
+            $destino = "$diretorio_itens/$geracao/$tipo_item/$candidato";
+            if (is_file($destino)) {
+                if (hash_file("sha256", $destino) !== hash_file("sha256", $origem))
+                    $conflito_encontrado = true;
+            } elseif ($ha_referencias) {
+                $conflito_encontrado = true;
+            }
+        }
+
+        $tentativa++;
+    }
+
+    $icon_novo = $candidato;
+
+    foreach ($sprites as $geracao => $origem) {
+        $diretorio_destino = "$diretorio_itens/$geracao/$tipo_item";
+        if (!is_dir($diretorio_destino) && !mkdir($diretorio_destino, 0775, true) && !is_dir($diretorio_destino)) {
+            throw new RuntimeException("Não foi possível criar a pasta de sprites da guia.");
+        }
+
+        $destino = "$diretorio_destino/$icon_novo";
+        if (realpath($origem) === realpath($destino))
+            continue;
+
+        if (is_file($destino) && hash_file("sha256", $destino) === hash_file("sha256", $origem))
+            continue;
+
+        if (!copy($origem, $destino)) {
+            throw new RuntimeException("Não foi possível copiar o sprite para a nova guia.");
+        }
+    }
+}
+
+$icon_sql = $conexao->real_escape_string($icon_novo);
+if (!$conexao->query(
+    "UPDATE item SET tipo = '$tipo_item', icon = '$icon_sql' WHERE id_item = $id_item"
+)) {
+    throw new RuntimeException("Falha ao salvar a guia e o sprite do item: " . $conexao->error);
+}
+
+foreach ($sprites_antigos as $geracao => $origem) {
+    if (!$mudou_categoria && $icon_novo === $icon_anterior)
+        continue;
+
+    $tipo_sql_antigo = $conexao->real_escape_string($tipo_anterior);
+    $icon_sql_antigo = $conexao->real_escape_string($icon_anterior);
+    if ($geracao === "classic") {
+        $consulta_referencias = $conexao->query(
+            "SELECT item.id_item FROM item
+             INNER JOIN item_legado ON item_legado.id_item = item.id_item
+             WHERE item.tipo = '$tipo_sql_antigo'
+               AND item.icon = '$icon_sql_antigo'
+               AND item.id_item <> $id_item
+             LIMIT 1"
+        );
+    } else {
+        $consulta_referencias = $conexao->query(
+            "SELECT id_item FROM item
+             WHERE tipo = '$tipo_sql_antigo'
+               AND icon = '$icon_sql_antigo'
+               AND id_item <> $id_item
+             LIMIT 1"
+        );
+    }
+
+    if (!$consulta_referencias) {
+        throw new RuntimeException("Falha ao verificar referências ao sprite antigo: " . $conexao->error);
+    }
+
+    if ($consulta_referencias->num_rows === 0 && is_file($origem))
+        unlink($origem);
 }
 
 Header("Location: ../pages/item_detalhes.php?id=$id_item");

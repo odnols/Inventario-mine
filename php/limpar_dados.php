@@ -1,19 +1,25 @@
 <?php include_once "conexao_obsoleta.php";
 
-$executa = $conexao->query("DELETE FROM item");
+// As tabelas dependentes precisam ser limpas antes de "item" por causa das chaves estrangeiras
+$tabelas = ["item_titulo", "item_durabilidade", "item_receita", "item_descricao", "item_oculto", "item_legado", "item_guia", "item"];
+$sucesso = true;
 
-$executa = $conexao->query("DELETE FROM item_titulo");
+try {
+    $conexao->begin_transaction();
 
-$executa = $conexao->query("DELETE FROM item_durabilidade");
+    foreach ($tabelas as $tabela)
+        $conexao->query("DELETE FROM $tabela");
 
-$executa = $conexao->query("DELETE FROM item_receita");
+    $conexao->commit();
+} catch (Throwable $e) {
+    $conexao->rollback();
+    $sucesso = false;
+}
 
-$executa = $conexao->query("DELETE FROM item_descricao");
-
-$executa = $conexao->query("DELETE FROM item_oculto");
-
-$executa = $conexao->query("DELETE FROM item_legado");
-
-$executa = $conexao->query("DELETE FROM item_guia");
+if (isset($_GET["ajax"])) {
+    header("Content-Type: application/json");
+    echo json_encode(["ok" => $sucesso]);
+    exit;
+}
 
 header("Location: ../pages/index.php");

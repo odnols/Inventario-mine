@@ -161,7 +161,28 @@
                         echo "<input type='button' id='btn_fabricacao' value='Fabricação' onclick='inicia_craft($id_item)'>"; ?>
 
                     <br><br>
-                    <?php echo "<input type='button' id='btn_abamenu' value='Guia no menu' onclick='escolhe_aba_menu($id_item)'>" ?>
+                    <input type="button" id="btn_abamenu" value="Guia no menu" onclick="escolhe_aba_menu()">
+                    <br>
+                    <select id="seletor_guia_menu" name="tipo_item" aria-label="Guia no menu" hidden>
+                        <?php
+                        $guias_menu = [
+                            "construcao" => "Construção",
+                            "decorativos" => "Decorativos",
+                            "redstone" => "Redstone",
+                            "transportes" => "Transportes",
+                            "diversos" => "Diversos",
+                            "alimentos" => "Alimentos",
+                            "ferramentas" => "Ferramentas",
+                            "combate" => "Combate",
+                            "pocoes" => "Poções",
+                            "especiais" => "Especiais"
+                        ];
+
+                        foreach ($guias_menu as $valor_guia => $nome_guia) {
+                            $selecionada = $tipo_item === $valor_guia ? " selected" : "";
+                            echo "<option value='$valor_guia'$selecionada>$nome_guia</option>";
+                        } ?>
+                    </select>
                 </div>
 
                 <div id="selects" class="pag_2_opcoes">
@@ -258,23 +279,55 @@
                 </div>
             </div>
 
-            <input name="tipo_item" value="<?php echo $tipo_item ?>" style="display: none">
-
             <input id="inserir_item" type="submit" value="Atualizar">
         </form>
 
         <?php if ($crafting == "checked") {
 
-            $executa_coleta = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item");
+            $executa_coleta = $conexao->query("SELECT crafting, qtd_produtos FROM item_receita WHERE id_item = $id_item");
             $dados4 = $executa_coleta->fetch_assoc();
+            $receita = "";
+            $qtd_produtos_receita = 1;
 
-            if ($executa_coleta->num_rows > 0)
-                $receita = $dados4["crafting"]; ?>
+            if ($executa_coleta->num_rows > 0) {
+                $receita = $dados4["crafting"];
+                $qtd_produtos_receita = max(1, (int) $dados4["qtd_produtos"]);
+            } ?>
 
             <div id="preview_item_craft">
                 <?php for ($i = 0; $i < 9; $i++) {
                     echo "<div class='grid_craft gric'></div>";
+                }
+
+                $ids_ingredientes = array_values(array_unique(array_filter(
+                    array_map("intval", explode(",", $receita)),
+                    function ($id) {
+                        return $id > 0;
+                    }
+                )));
+
+                if ($ids_ingredientes) {
+                    $lista_ids_ingredientes = implode(",", $ids_ingredientes);
+                    $executa_ingredientes = $conexao->query(
+                        "SELECT id_item, nome, tipo, icon, `internal`
+                         FROM item
+                         WHERE id_item IN ($lista_ids_ingredientes)"
+                    );
+
+                    if (!$executa_ingredientes) {
+                        throw new RuntimeException("Falha ao carregar os ingredientes da receita: " . $conexao->error);
+                    }
+
+                    while ($ingrediente = $executa_ingredientes->fetch_assoc()) { ?>
+                        <span hidden
+                            data-craft-item-id="<?php echo (int) $ingrediente["id_item"] ?>"
+                            data-craft-item-type="<?php echo htmlspecialchars($ingrediente["tipo"], ENT_QUOTES, "UTF-8") ?>"
+                            data-craft-item-icon="<?php echo htmlspecialchars($ingrediente["icon"], ENT_QUOTES, "UTF-8") ?>"
+                            data-craft-item-name="<?php echo htmlspecialchars($ingrediente["nome"], ENT_QUOTES, "UTF-8") ?>"
+                            data-craft-item-internal-name="<?php echo htmlspecialchars($ingrediente["internal"], ENT_QUOTES, "UTF-8") ?>"></span>
+                <?php }
                 } ?>
+                <span id="qtd_produto"><?php echo $qtd_produtos_receita; ?></span>
             </div>
 
     <?php }
@@ -300,7 +353,7 @@
 <?php if ($crafting == "checked") { ?>
     <script type="text/javascript">
         setTimeout(() => {
-            mostra_crafting('<?php echo $receita ?>', null, 1)
+            mostra_crafting('<?php echo $receita ?>', null, <?php echo $qtd_produtos_receita; ?>)
         }, 0)
     </script>
 <?php } ?>
