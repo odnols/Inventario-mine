@@ -55,6 +55,7 @@ O Resultado será este// <br>
 
 <h2>Importando e Exportando</h2>
 <p>A Importação dos valores e a exportação é realizada através do arquivo JSON, dessa forma, também é possível adicionar itens editando o JSON e clicando para importar no sistema.<br>Só tenha certeza que o ID não é repetido, dessa forma o sistema irá adicionar o item, utilizando o ID informado</p>
+<p>Nas receitas, <code>craft_type</code> usa os nomes <code>bancada</code>, <code>ferraria</code>, <code>fornalha</code> ou <code>pocao</code>. Bancos existentes com tipos numéricos devem ter um backup da tabela <code>item_receita</code> antes da execução de <a href="files/migracao_tipos_craft.sql">files/migracao_tipos_craft.sql</a>. JSONs antigos também devem ser convertidos para esses nomes antes da importação.</p>
 <img src="https://user-images.githubusercontent.com/56841881/136668949-a82aeba2-674e-425f-afdb-ecd69ee031f7.png">
 
 

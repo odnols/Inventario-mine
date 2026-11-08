@@ -1031,15 +1031,6 @@ a {
     -webkit-appearance: none;
 }
 
-#preview_item_craft #qtd_produto {
-    top: 55%;
-    right: -30px;
-    bottom: auto;
-    padding: 0;
-    line-height: 1;
-    transform: translateY(-50%);
-}
-
 .gric {
     width: 48px;
     float: left;
@@ -1061,159 +1052,112 @@ a {
     width: 528px;
     height: 498px;
     position: absolute;
-    background-image: url("../img/interface/claro/craft.png");
+    background-image: url("../img/interface/claro/craft_bancada.png");
 }
 
 #craft_station_interface {
     display: none;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 528px;
-    height: 240px;
-    box-sizing: border-box;
-    border: 8px solid #f4f4f4;
-    background-color: #c6c6c6;
-    box-shadow: inset 0 0 0 3px #555;
-    background-repeat: no-repeat;
-    background-position: right 34px center;
-    background-size: 112px 112px;
 }
 
-#craft_station_interface::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(198, 198, 198, 0) 58%, rgba(198, 198, 198, 0.28));
+#craft_prancheta[data-tipo-craft="bancada"] {
+    background-image: url("../img/interface/claro/craft_bancada.png");
 }
 
-#craft_prancheta[data-tipo-craft="1"] #craft_station_interface,
-#craft_prancheta[data-tipo-craft="2"] #craft_station_interface,
-#craft_prancheta[data-tipo-craft="3"] #craft_station_interface {
-    display: block;
+#craft_prancheta[data-tipo-craft="ferraria"] {
+    background-image: url("../img/interface/claro/craft_ferraria.png");
 }
 
-#craft_prancheta[data-tipo-craft="1"] #craft_station_interface {
-    background-image: url("../img/itens/new/decorativos/smithing_table.png");
+#craft_prancheta[data-tipo-craft="fornalha"] {
+    background-image: url("../img/interface/claro/craft_fornalha.png");
 }
 
-#craft_prancheta[data-tipo-craft="2"] #craft_station_interface {
-    background-image: url("../img/itens/new/decorativos/furnace.png");
+#craft_prancheta[data-tipo-craft="pocao"] {
+    background-image: url("../img/interface/claro/craft_pocao.png");
 }
 
-#craft_prancheta[data-tipo-craft="3"] #craft_station_interface {
-    background-image: url("../img/itens/new/pocoes/brewing_stand.png");
-}
-
-#craft_prancheta[data-tipo-craft="1"] .textos_craft,
-#craft_prancheta[data-tipo-craft="2"] .textos_craft,
-#craft_prancheta[data-tipo-craft="3"] .textos_craft {
+#craft_prancheta[data-tipo-craft="ferraria"] .textos_craft,
+#craft_prancheta[data-tipo-craft="fornalha"] .textos_craft,
+#craft_prancheta[data-tipo-craft="pocao"] .textos_craft {
     z-index: 2;
 }
 
-#craft_prancheta[data-tipo-craft="1"] #grid_crafting,
-#craft_prancheta[data-tipo-craft="2"] #grid_crafting,
-#craft_prancheta[data-tipo-craft="3"] #grid_crafting {
-    top: 88px;
-    left: 104px;
+#craft_prancheta[data-tipo-craft="ferraria"] #grid_crafting,
+#craft_prancheta[data-tipo-craft="fornalha"] #grid_crafting,
+#craft_prancheta[data-tipo-craft="pocao"] #grid_crafting {
+    top: 0;
+    left: 0;
     right: auto;
-    display: flex;
-    width: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+    pointer-events: none;
+}
+
+#craft_prancheta[data-tipo-craft="ferraria"] .grid_craft,
+#craft_prancheta[data-tipo-craft="fornalha"] .grid_craft,
+#craft_prancheta[data-tipo-craft="pocao"] .grid_craft {
+    display: none;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px 48px;
+    box-shadow: none;
+    pointer-events: auto;
+}
+
+#craft_prancheta[data-tipo-craft="ferraria"] .grid_craft:nth-child(-n+3) {
+    display: block;
+}
+
+#craft_prancheta[data-tipo-craft="ferraria"] .grid_craft:nth-child(1) { left: 21px; top: 141px; }
+#craft_prancheta[data-tipo-craft="ferraria"] .grid_craft:nth-child(2) { left: 75px; top: 141px; }
+#craft_prancheta[data-tipo-craft="ferraria"] .grid_craft:nth-child(3) { left: 129px; top: 141px; }
+
+#craft_prancheta[data-tipo-craft="fornalha"] .grid_craft:nth-child(-n+2) {
+    display: block;
+}
+
+#craft_prancheta[data-tipo-craft="fornalha"] .grid_craft:nth-child(1) { left: 165px; top: 48px; }
+#craft_prancheta[data-tipo-craft="fornalha"] .grid_craft:nth-child(2) { left: 165px; top: 157px; }
+
+#craft_prancheta[data-tipo-craft="pocao"] .grid_craft:nth-child(-n+4) {
+    display: block;
+}
+
+#craft_prancheta[data-tipo-craft="pocao"] .grid_craft:nth-child(1) { left: 48px; top: 48px; }
+#craft_prancheta[data-tipo-craft="pocao"] .grid_craft:nth-child(2) { left: 234px; top: 48px; }
+#craft_prancheta[data-tipo-craft="pocao"] .grid_craft:nth-child(3) { left: 165px; top: 150px; }
+#craft_prancheta[data-tipo-craft="pocao"] .grid_craft:nth-child(4) { left: 303px; top: 150px; }
+
+#craft_prancheta[data-tipo-craft="ferraria"] #produto_final,
+#craft_prancheta[data-tipo-craft="pocao"] #produto_final {
+    top: 171px;
+    right: 239px;
+    width: 54px;
     height: 54px;
     background: none;
 }
 
-#craft_prancheta[data-tipo-craft="1"] #grid_crafting {
-    gap: 5px;
+#craft_prancheta[data-tipo-craft="ferraria"] #produto_final { top: 141px; right: 183px; }
+
+#craft_prancheta[data-tipo-craft="fornalha"] #produto_final {
+    top: 91px;
+    right: 118px;
+    width: 78px;
+    height: 78px;
+    background: none;
 }
 
-#craft_prancheta[data-tipo-craft="2"] #grid_crafting,
-#craft_prancheta[data-tipo-craft="3"] #grid_crafting {
-    left: 158px;
-}
+#craft_prancheta[data-tipo-craft="ferraria"] #sprite_produto,
+#craft_prancheta[data-tipo-craft="pocao"] #sprite_produto { margin: 3px; }
 
-#craft_prancheta[data-tipo-craft="3"] #grid_crafting {
-    top: 60px;
-    left: 24px;
-    right: auto;
-    gap: 12px;
-}
-
-#craft_prancheta[data-tipo-craft="1"] .grid_craft,
-#craft_prancheta[data-tipo-craft="2"] .grid_craft,
-#craft_prancheta[data-tipo-craft="3"] .grid_craft {
-    display: none;
-    float: none;
-    flex: 0 0 48px;
-    width: 48px;
-    height: 48px;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #8b8b8b;
-    box-shadow: inset 0 0 0 2px #555;
-}
-
-#craft_prancheta[data-tipo-craft="1"] .grid_craft:nth-child(-n+3),
-#craft_prancheta[data-tipo-craft="2"] .grid_craft:first-child,
-#craft_prancheta[data-tipo-craft="3"] .grid_craft:nth-child(-n+9) {
-    display: block;
-}
-
-#craft_prancheta[data-tipo-craft="3"] .grid_craft {
-    position: relative;
-    flex-basis: 36px;
-    width: 36px;
-    height: 36px;
-    box-shadow: inset 0 0 0 2px #555;
-}
-
-#craft_prancheta[data-tipo-craft="3"] .grid_craft:not(:last-child)::after {
-    content: "›";
-    position: absolute;
-    top: 0;
-    right: -11px;
-    width: 10px;
-    color: #777;
-    font-family: 'Minecraftia';
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    pointer-events: none;
-}
-
-#craft_prancheta[data-tipo-craft="2"] #produto_final,
-#craft_prancheta[data-tipo-craft="3"] #produto_final {
-    top: 76px;
-    right: 76px;
-    width: 72px;
-    height: 72px;
-    background: url("../img/interface/claro/slot.png") no-repeat center;
-}
-
-#craft_prancheta[data-tipo-craft="3"] #produto_final {
-    top: 132px;
-    right: 220px;
-}
-
-#craft_prancheta[data-tipo-craft="1"] #produto_final {
-    top: 76px;
-    right: 76px;
-    width: 72px;
-    height: 72px;
-    background: url("../img/interface/claro/slot.png") no-repeat center;
-}
-
-#craft_prancheta[data-tipo-craft="1"] #grid_crafting::after {
-    content: "➜";
-    position: absolute;
-    top: 4px;
-    left: 164px;
-    color: #777;
-    font-size: 34px;
-    line-height: 48px;
-    pointer-events: none;
-}
+#craft_prancheta[data-tipo-craft="fornalha"] #sprite_produto { margin: 15px; }
 
 #slots_atalho_itens {
     left: 21px;
@@ -1309,6 +1253,28 @@ a {
     background: rgba(90, 90, 90, 0.92);
 }
 
+#seletor_receitas_craft {
+    position: absolute;
+    top: calc(100% + 112px);
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+#seletor_receitas_craft button,
+.craft_preview_navegacao button {
+    padding: 3px 10px;
+    cursor: pointer;
+    font: inherit;
+}
+
+#seletor_receitas_craft button:disabled {
+    cursor: default;
+    opacity: .5;
+}
+
 .input_hidden {
     display: none;
 }
@@ -1341,11 +1307,128 @@ a {
 
 #preview_item_craft {
     z-index: 99;
-    width: 162px;
     right: 136px;
-    height: 162px;
     bottom: 105px;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.craft_recipe_preview {
+    position: relative;
+    flex: none;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
+
+.craft_recipe_preview[hidden] {
+    display: none;
+}
+
+.craft_preview_navegacao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-shadow: 2px 2px 0 #3e3e3e;
+}
+
+.craft_recipe_preview[data-craft-type="bancada"] {
+    width: 348px;
+    height: 162px;
+    background-image: url("../img/interface/claro/mask_bancada.png");
+}
+
+.craft_recipe_preview[data-craft-type="ferraria"] {
+    width: 324px;
+    height: 54px;
+    background-image: url("../img/interface/claro/mask_ferraria.png");
+}
+
+.craft_recipe_preview[data-craft-type="fornalha"] {
+    width: 246px;
+    height: 162px;
+    background-image: url("../img/interface/claro/mask_fornalha.png");
+}
+
+.craft_recipe_preview[data-craft-type="pocao"] {
+    width: 309px;
+    height: 180px;
+    background-image: url("../img/interface/claro/mask_pocao.png");
+}
+
+#preview_item_craft .grid_craft {
+    position: absolute;
+    display: none;
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px 48px;
+}
+
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(-n+9) {
+    display: block;
+}
+
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(1) { left: 0; top: 0; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(2) { left: 54px; top: 0; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(3) { left: 108px; top: 0; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(4) { left: 0; top: 54px; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(5) { left: 54px; top: 54px; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(6) { left: 108px; top: 54px; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(7) { left: 0; top: 108px; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(8) { left: 54px; top: 108px; }
+.craft_recipe_preview[data-craft-type="bancada"] .grid_craft:nth-child(9) { left: 108px; top: 108px; }
+
+.craft_recipe_preview[data-craft-type="ferraria"] .grid_craft:nth-child(-n+3) { display: block; }
+.craft_recipe_preview[data-craft-type="ferraria"] .grid_craft:nth-child(1) { left: 0; top: 0; }
+.craft_recipe_preview[data-craft-type="ferraria"] .grid_craft:nth-child(2) { left: 54px; top: 0; }
+.craft_recipe_preview[data-craft-type="ferraria"] .grid_craft:nth-child(3) { left: 108px; top: 0; }
+
+.craft_recipe_preview[data-craft-type="fornalha"] .grid_craft:nth-child(-n+2) { display: block; }
+.craft_recipe_preview[data-craft-type="fornalha"] .grid_craft:nth-child(1) { left: 0; top: 0; }
+.craft_recipe_preview[data-craft-type="fornalha"] .grid_craft:nth-child(2) { left: 0; top: 108px; }
+
+.craft_recipe_preview[data-craft-type="pocao"] .grid_craft:nth-child(-n+4) { display: block; }
+.craft_recipe_preview[data-craft-type="pocao"] .grid_craft:nth-child(1) { left: 0; top: 0; }
+.craft_recipe_preview[data-craft-type="pocao"] .grid_craft:nth-child(2) { left: 186px; top: 0; }
+.craft_recipe_preview[data-craft-type="pocao"] .grid_craft:nth-child(3) { left: 117px; top: 102px; }
+.craft_recipe_preview[data-craft-type="pocao"] .grid_craft:nth-child(4) { left: 255px; top: 102px; }
+
+.craft_recipe_output {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.craft_recipe_output img {
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+}
+
+.craft_recipe_preview[data-craft-type="bancada"] .craft_recipe_output { left: 270px; top: 42px; width: 78px; height: 78px; }
+.craft_recipe_preview[data-craft-type="ferraria"] .craft_recipe_output { left: 270px; top: 0; }
+.craft_recipe_preview[data-craft-type="fornalha"] .craft_recipe_output { left: 168px; top: 42px; width: 78px; height: 78px; }
+.craft_recipe_preview[data-craft-type="pocao"] .craft_recipe_output { left: 186px; top: 123px; }
+
+.craft_recipe_quantity {
+    position: absolute;
+    z-index: 3;
+    right: 3px;
+    bottom: 3px;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    text-shadow: 2px 2px 0 #3e3e3e;
+    pointer-events: none;
 }
 
 .textos_craft {

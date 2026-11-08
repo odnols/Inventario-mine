@@ -5,7 +5,7 @@
 
     <?php if (!empty($mostrar_aba_remover)) { ?>
         <button id="aba_remover_item_selecionado" type="button" onclick="remove_item_selecionado()"
-            aria-label="Remover item selecionado" title="Remover item selecionado" onmouseover="toolTip('Remover item selecionado')" onmouseout="toolTip()">
+            aria-label="Limpar cursor" title="Limpar cursor" onmouseover="toolTip('Limpar cursor')" onmouseout="toolTip()">
             <img src="../img/interface/aba_generic.png" alt="">
         </button>
     <?php } ?>

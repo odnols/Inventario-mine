@@ -16,7 +16,8 @@
     <script src="../js/custom.js"></script>
     <script src="../js/crafting.js"></script>
 
-    <?php include_once "../php/conexao_obsoleta.php"; ?>
+    <?php include_once "../php/conexao_obsoleta.php";
+    include_once "../php/tipos_craft.php"; ?>
 </head>
 
 <body onload="sincroniza_tema(undefined, 1)">
@@ -283,52 +284,104 @@
         </form>
 
         <?php if ($crafting == "checked") {
+            $executa_coleta = $conexao->query(
+                "SELECT crafting, tipo_craft, qtd_produtos
+                 FROM item_receita
+                 WHERE id_item = $id_item
+                 ORDER BY FIELD(tipo_craft, 'bancada', 'ferraria', 'fornalha', 'pocao'), id_craft"
+            );
+            if (!$executa_coleta) {
+                throw new RuntimeException("Falha ao carregar as receitas do item: " . $conexao->error);
+            }
 
-            $executa_coleta = $conexao->query("SELECT crafting, qtd_produtos FROM item_receita WHERE id_item = $id_item");
-            $dados4 = $executa_coleta->fetch_assoc();
-            $receita = "";
-            $qtd_produtos_receita = 1;
-
-            if ($executa_coleta->num_rows > 0) {
-                $receita = $dados4["crafting"];
-                $qtd_produtos_receita = max(1, (int) $dados4["qtd_produtos"]);
-            } ?>
-
-            <div id="preview_item_craft">
-                <?php for ($i = 0; $i < 9; $i++) {
-                    echo "<div class='grid_craft gric'></div>";
+            $receitas_craft = [];
+            $ids_ingredientes = [];
+            while ($dados4 = $executa_coleta->fetch_assoc()) {
+                $tipo_craft_receita = normaliza_tipo_craft($dados4["tipo_craft"]);
+                if ($tipo_craft_receita === null) {
+                    throw new RuntimeException("Tipo de bancada inválido na receita do item.");
                 }
 
-                $ids_ingredientes = array_values(array_unique(array_filter(
-                    array_map("intval", explode(",", $receita)),
-                    function ($id) {
-                        return $id > 0;
+                if (!preg_match('/[1-9]/', $dados4["crafting"])) {
+                    continue;
+                }
+
+                $receitas_craft[] = [
+                    "recipe" => $dados4["crafting"],
+                    "type" => $tipo_craft_receita,
+                    "products" => max(1, (int) $dados4["qtd_produtos"])
+                ];
+                foreach (explode(",", $dados4["crafting"]) as $id_ingrediente) {
+                    $id_ingrediente = (int) trim($id_ingrediente);
+                    if ($id_ingrediente > 0) {
+                        $ids_ingredientes[] = $id_ingrediente;
                     }
-                )));
+                }
+            }
+            $ids_ingredientes = array_values(array_unique($ids_ingredientes));
 
-                if ($ids_ingredientes) {
-                    $lista_ids_ingredientes = implode(",", $ids_ingredientes);
-                    $executa_ingredientes = $conexao->query(
-                        "SELECT id_item, nome, tipo, icon, `internal`
-                         FROM item
-                         WHERE id_item IN ($lista_ids_ingredientes)"
-                    );
+            $dados_ingredientes = [];
+            if ($ids_ingredientes) {
+                $lista_ids_ingredientes = implode(",", $ids_ingredientes);
+                $executa_ingredientes = $conexao->query(
+                    "SELECT id_item, nome, tipo, icon, `internal`
+                     FROM item
+                     WHERE id_item IN ($lista_ids_ingredientes)"
+                );
+                if (!$executa_ingredientes) {
+                    throw new RuntimeException("Falha ao carregar os ingredientes das receitas: " . $conexao->error);
+                }
+                while ($ingrediente = $executa_ingredientes->fetch_assoc()) {
+                    $dados_ingredientes[] = $ingrediente;
+                }
+            } ?>
 
-                    if (!$executa_ingredientes) {
-                        throw new RuntimeException("Falha ao carregar os ingredientes da receita: " . $conexao->error);
-                    }
-
-                    while ($ingrediente = $executa_ingredientes->fetch_assoc()) { ?>
+            <?php if ($receitas_craft) { ?>
+                <?php
+                $mascara_bancada = "../img/interface/claro/mask_bancada.png";
+                $versao_mascara_bancada = filemtime($mascara_bancada);
+                if ($versao_mascara_bancada === false) {
+                    throw new RuntimeException("Falha ao carregar a máscara da bancada.");
+                }
+                ?>
+                <div id="preview_item_craft">
+                    <?php foreach ($receitas_craft as $indice_receita => $receita_craft) { ?>
+                        <div class="craft_recipe_preview"
+                            <?php if ($indice_receita > 0) { ?>hidden<?php } ?>
+                            data-craft-type="<?php echo $receita_craft["type"] ?>"
+                            data-craft-recipe="<?php echo htmlspecialchars($receita_craft["recipe"], ENT_QUOTES, "UTF-8") ?>"
+                            <?php if ($receita_craft["type"] === "bancada") { ?>
+                                style="background-image: url('<?php echo $mascara_bancada ?>?v=<?php echo $versao_mascara_bancada ?>')"
+                            <?php } ?>>
+                            <?php for ($i = 0; $i < 9; $i++) { ?>
+                                <div class="grid_craft gric" data-craft-slot="<?php echo $i ?>"></div>
+                            <?php } ?>
+                            <div class="craft_recipe_output">
+                                <img src="../img/itens/new/<?php echo htmlspecialchars($tipo_item, ENT_QUOTES, "UTF-8") ?>/<?php echo htmlspecialchars($nome_icon, ENT_QUOTES, "UTF-8") ?>"
+                                    alt="<?php echo htmlspecialchars($nome_item, ENT_QUOTES, "UTF-8") ?>"
+                                    data-product-name="<?php echo htmlspecialchars($nome_item, ENT_QUOTES, "UTF-8") ?>"
+                                    data-product-internal-name="<?php echo htmlspecialchars($nome_interno, ENT_QUOTES, "UTF-8") ?>">
+                                <span class="craft_recipe_quantity"><?php echo $receita_craft["products"] ?></span>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    <?php if (count($receitas_craft) > 1) { ?>
+                        <div class="craft_preview_navegacao" role="group" aria-label="Navegar entre receitas">
+                            <button type="button" class="craft_preview_anterior" aria-label="Receita anterior">&#8249;</button>
+                            <span class="craft_preview_indicador" aria-live="polite">1 / <?php echo count($receitas_craft) ?></span>
+                            <button type="button" class="craft_preview_proxima" aria-label="Próxima receita">&#8250;</button>
+                        </div>
+                    <?php } ?>
+                    <?php foreach ($dados_ingredientes as $ingrediente) { ?>
                         <span hidden
                             data-craft-item-id="<?php echo (int) $ingrediente["id_item"] ?>"
                             data-craft-item-type="<?php echo htmlspecialchars($ingrediente["tipo"], ENT_QUOTES, "UTF-8") ?>"
                             data-craft-item-icon="<?php echo htmlspecialchars($ingrediente["icon"], ENT_QUOTES, "UTF-8") ?>"
                             data-craft-item-name="<?php echo htmlspecialchars($ingrediente["nome"], ENT_QUOTES, "UTF-8") ?>"
                             data-craft-item-internal-name="<?php echo htmlspecialchars($ingrediente["internal"], ENT_QUOTES, "UTF-8") ?>"></span>
-                <?php }
-                } ?>
-                <span id="qtd_produto"><?php echo $qtd_produtos_receita; ?></span>
-            </div>
+                    <?php } ?>
+                </div>
+            <?php } ?>
 
     <?php }
         echo "<script>toolTip(\"$nome_item\", \"$descricao_item\", \"$nome_interno\", $cor_item, 1)</script>";
@@ -352,9 +405,7 @@
 
 <?php if ($crafting == "checked") { ?>
     <script type="text/javascript">
-        setTimeout(() => {
-            mostra_crafting('<?php echo $receita ?>', null, <?php echo $qtd_produtos_receita; ?>)
-        }, 0)
+        renderiza_previews_craft_item()
     </script>
 <?php } ?>
 

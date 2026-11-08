@@ -1,4 +1,5 @@
 <?php include_once "conexao_obsoleta.php";
+include_once "tipos_craft.php";
 
 $arquivo = "dados_locais.json";
 $file = fopen("../files/JSON/" . $arquivo, 'w');
@@ -63,21 +64,21 @@ while ($dados = $executa->fetch_assoc()) {
     }
 
     // Verifica se o item possui registros de fabricação
-    $executa_item = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item");
+    $executa_item = $conexao->query("SELECT * FROM item_receita WHERE id_item = $id_item ORDER BY tipo_craft");
 
     if ($executa_item->num_rows > 0) {
 
-        $dados = $executa_item->fetch_assoc();
-
-        $receita = $dados["crafting"];
-        $qtd_produtos = $dados["qtd_produtos"];
-        $tipo_craft = $dados["tipo_craft"];
-
-        array_push($item_receita, array(
-            "recipe" => $receita,
-            "products" => intval($qtd_produtos),
-            "craft_type" => intval($tipo_craft)
-        ));
+        while ($dados = $executa_item->fetch_assoc()) {
+            $tipo_craft = normaliza_tipo_craft($dados["tipo_craft"]);
+            if ($tipo_craft === null) {
+                throw new RuntimeException("Tipo de crafting inválido na receita " . $dados["id_craft"] . ".");
+            }
+            array_push($item_receita, array(
+                "recipe" => $dados["crafting"],
+                "products" => intval($dados["qtd_produtos"]),
+                "craft_type" => $tipo_craft
+            ));
+        }
     }
 
     // Verifica se o item possui registros de descrição

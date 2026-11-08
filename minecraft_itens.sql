@@ -35,7 +35,7 @@ create table item_receita(
     id_item int not null,
     crafting varchar(500) not null,
     qtd_produtos int,
-    tipo_craft int not null,
+    tipo_craft varchar(20) not null,
     foreign key(id_item) references item(id_item)
 );
 

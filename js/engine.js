@@ -643,7 +643,9 @@ function sincroniza_itens(receita, produto, qtd, local, id_item) {
                 itensBanco.filter(item => !idsItensJson.has(String(item.id)))
             )
 
-            if (local !== 1)
+            if (document.getElementById("craft_prancheta") && local !== 1)
+                seleciona_tipo_craft(document.getElementById("tipo_craft").value, true)
+            else if (local !== 1)
                 mostra_crafting(receita, produto, qtd, 1)
             else
                 seleciona_item(id_item)

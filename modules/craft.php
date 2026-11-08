@@ -38,6 +38,7 @@
     </div>
 
     <?php include_once "../php/conexao_obsoleta.php";
+    include_once "../php/tipos_craft.php";
     $id_item_alvo = (int) ($_GET["id"] ?? 0);
 
     $executa = $conexao->query("SELECT * FROM item WHERE coletavel = 1 ORDER BY id_item DESC");
@@ -49,17 +50,34 @@
     }
     $produto_alvo = $executa_produto->fetch_assoc();
     $executa_coleta = $conexao->query(
-        "SELECT crafting, tipo_craft, qtd_produtos FROM item_receita WHERE id_item = $id_item_alvo LIMIT 1"
+        "SELECT id_craft, crafting, tipo_craft, qtd_produtos FROM item_receita WHERE id_item = $id_item_alvo ORDER BY id_craft"
     );
+    if (!$executa_coleta) {
+        throw new RuntimeException("Falha ao carregar as receitas do produto: " . $conexao->error);
+    }
+
+    $craft_configs = [];
     $receita = "";
-    $tipo_craft = 0;
+    $tipo_craft = "bancada";
     $qtd_produtos = 1;
 
-    if ($executa_coleta->num_rows > 0) {
-        $dados4 = $executa_coleta->fetch_assoc();
-        $receita = $dados4["crafting"];
-        $tipo_craft = (int) $dados4["tipo_craft"];
-        $qtd_produtos = max(1, (int) $dados4["qtd_produtos"]);
+    while ($dados4 = $executa_coleta->fetch_assoc()) {
+        $tipo_receita = normaliza_tipo_craft($dados4["tipo_craft"]);
+        if ($tipo_receita === null) {
+            throw new RuntimeException("Tipo de bancada inválido na receita do produto.");
+        }
+
+        $craft_configs[$tipo_receita][] = [
+            "id" => (int) $dados4["id_craft"],
+            "recipe" => $dados4["crafting"],
+            "products" => max(1, (int) $dados4["qtd_produtos"])
+        ];
+    }
+
+    if ($craft_configs) {
+        $tipo_craft = array_key_first($craft_configs);
+        $receita = $craft_configs[$tipo_craft][0]["recipe"];
+        $qtd_produtos = $craft_configs[$tipo_craft][0]["products"];
     }
 
     if ($qtd_produtos === 1 || trim($receita) === "") {
@@ -108,7 +126,9 @@
 
     <a class="bttn_frrm" id="btn_fecha_tela_craft" href="../pages/item_detalhes.php?id=<?php echo $id_item_alvo ?>" onmouseover="toolTip('Fechar esta tela')" onmouseout="toolTip()"><span>Cancelar</span></a>
 
-    <form id="craft_prancheta" action="../php/item_registra_craft.php" method="POST">
+    <form id="craft_prancheta" data-tipo-craft="<?php echo $tipo_craft; ?>"
+        data-craft-configs="<?php echo htmlspecialchars(json_encode($craft_configs, JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_TAG | JSON_HEX_AMP), ENT_QUOTES, "UTF-8"); ?>"
+        action="../php/item_registra_craft.php" method="POST">
 
         <div id="craft_station_interface" aria-hidden="true"></div>
         <span class="cor_textos textos_craft">Fabricação</span>
@@ -137,27 +157,35 @@
         </div>
 
         <div id="seletor_tipo_craft" role="group" aria-label="Tipo de bancada">
-            <button type="button" class="tipo_craft_opcao ativa" data-tipo-craft="0"
+            <button type="button" class="tipo_craft_opcao ativa" data-tipo-craft="bancada"
                 aria-label="Bancada de trabalho" aria-pressed="true">
                 <img src="../img/itens/new/decorativos/crafting_table.png" alt="Bancada de trabalho">
             </button>
-            <button type="button" class="tipo_craft_opcao" data-tipo-craft="1"
+            <button type="button" class="tipo_craft_opcao" data-tipo-craft="ferraria"
                 aria-label="Bancada de ferraria" aria-pressed="false">
                 <img src="../img/itens/new/decorativos/smithing_table.png" alt="Bancada de ferraria">
             </button>
-            <button type="button" class="tipo_craft_opcao" data-tipo-craft="2"
+            <button type="button" class="tipo_craft_opcao" data-tipo-craft="fornalha"
                 aria-label="Fornalha" aria-pressed="false">
                 <img src="../img/itens/new/decorativos/furnace.png" alt="Fornalha">
             </button>
-            <button type="button" class="tipo_craft_opcao" data-tipo-craft="3"
+            <button type="button" class="tipo_craft_opcao" data-tipo-craft="pocao"
                 aria-label="Suporte de poções" aria-pressed="false">
                 <img src="../img/itens/new/pocoes/brewing_stand.png" alt="Suporte de poções">
             </button>
         </div>
 
+        <div id="seletor_receitas_craft" role="group" aria-label="Receitas da bancada selecionada">
+            <button type="button" id="receita_craft_anterior" aria-label="Receita anterior">&#8249;</button>
+            <span id="receita_craft_indicador" aria-live="polite"></span>
+            <button type="button" id="receita_craft_proxima" aria-label="Próxima receita">&#8250;</button>
+            <button type="button" id="receita_craft_nova">Nova receita</button>
+        </div>
+
         <input type="text" class="input_hidden" name="id_item" value="<?php echo $id_item_alvo ?>">
         <input type="text" class="input_hidden" id="array_craft" name="array_craft" required>
-        <input type="hidden" id="tipo_craft" name="tipo_craft" value="0">
+        <input type="hidden" id="tipo_craft" name="tipo_craft" value="<?php echo $tipo_craft; ?>">
+        <input type="hidden" id="craft_configs" name="craft_configs" value="">
 
         <button id="btn_confirma_craft">Confirma</button>
     </form>
@@ -168,12 +196,9 @@
     aba_menu(10)
     document.addEventListener("onKeyDown", clique())
 
+    inicializa_configuracoes_craft()
     seleciona_item('auto')
-    seleciona_tipo_craft(<?php echo $tipo_craft; ?>)
-
-    setTimeout(() => {
-        mostra_crafting('<?php echo $receita; ?>', <?php echo $id_item_alvo; ?>, null, 2)
-    }, 500)
+    seleciona_tipo_craft(<?php echo json_encode($tipo_craft); ?>)
 </script>
 
 </html>

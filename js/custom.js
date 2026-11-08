@@ -153,8 +153,8 @@ function sincroniza_tema(versao_jogo, local) {
         document.getElementById("filtro_colorido").style.background = "linear-gradient(0deg, rgba(0,0,0,0.9248074229691877) 0%, rgba(9,121,99,0.6699054621848739) 39%, rgba(0,212,255,0) 100%)"
     }
 
-    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add", "#menu_criacao", "#seta_direita_crafting", "#seta_esquerda_crafting", "#craft_prancheta", "#slot_craft_ativo", "#preview_item_craft", "#grid_crafting", ".slot_item_crafting"]
-    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png", "crafting.png", "seta_direita.png", "seta_esquerda.png", "craft.png", "slot_add.png", "grid_crafting.png", "grid_crafting.png", "slot_item_crafting.png"]
+    lista_templates = ["#prancheta_add", ".input_prancheta", "#barra_pesquisa_input", "#barra_scroll", ".slot_item", ".slot_item_add", "#menu_criacao", "#seta_direita_crafting", "#seta_esquerda_crafting", "#slot_craft_ativo", "#grid_crafting", ".slot_item_crafting"]
+    nome_template = ["prancheta.png", "barra_prancheta.png", "barra_pesquisa.png", "scroll.png", "slot.png", "slot_add.png", "crafting.png", "seta_direita.png", "seta_esquerda.png", "slot_add.png", "mask_bancada.png", "slot_item_crafting.png"]
 
     lista_imagens = ["prancheta", "img_construcao", "img_decorativos", "img_redstone", "img_transportes", "img_diversos", "img_alimentos", "img_ferramentas", "img_combate", "img_pocoes", "img_especiais", "img_pesquisa", "barra_scroll_block", "menu", "img_ocultos", "img_craft_todos", "img_craft_ferramentas", "img_craft_blocos", "img_craft_diversos", "img_craft_redstone"]
     nome_arquivos = ["prancheta.png", "aba_construcao.png", "aba_decorativos.png", "aba_redstone.png", "aba_transportes.png", "aba_diversos.png", "aba_alimentos.png", "aba_ferramentas.png", "aba_combate.png", "aba_pocoes.png", "aba_especiais.png", "aba_pesquisa.png", "scroll_bloqueado.png", "menu.png", "aba_oculto.png", "aba_craft_todos.png", "aba_craft_ferramentas.png", "aba_craft_blocos.png", "aba_craft_diversos.png", "aba_craft_redstone.png"]
@@ -216,11 +216,11 @@ function sincroniza_tema(versao_jogo, local) {
     const craftingTipo = document.getElementById("tipo_craft")
     const craftGrid = document.getElementById("grid_crafting")
     const craftOutput = document.getElementById("produto_final")
-    if (craftingTipo && Number(craftingTipo.value) !== 0) {
+    if (craftingTipo && craftingTipo.value !== "bancada") {
         if (craftGrid)
             craftGrid.style.background = "none"
         if (craftOutput)
-            craftOutput.style.background = `url('${caminho}img/interface/${alvo}/slot.png') no-repeat center`
+            craftOutput.style.background = "none"
     }
 
     const buscaCrafting = document.getElementById("busca_crafting")

@@ -1,10 +1,21 @@
 <?php include_once "conexao_obsoleta.php";
+include_once "tipos_craft.php";
 
 $IDs_registrados = [];
 
 // Este arquivo está disponível por padrão em sua pasta JSON
 $arquivo = file_get_contents('../files/JSON/dados_locais.json');
 $data = json_decode($arquivo);
+if (!is_array($data)) {
+    throw new RuntimeException("JSON de itens inválido.");
+}
+foreach ($data as $item) {
+    foreach ($item->recipe ?? [] as $receita) {
+        if (normaliza_tipo_craft($receita->craft_type ?? null) === null) {
+            throw new RuntimeException("Tipo de crafting inválido no item " . ($item->id ?? "?") . ".");
+        }
+    }
+}
 
 $executa = $conexao->query("SELECT * FROM item");
 
@@ -75,11 +86,18 @@ foreach ($data as $key => $value) {
         if (property_exists($value, "recipe")) {
             $crafting = $value->recipe;
 
-            $craft = $crafting[0]->recipe;
-            $produtos = $crafting[0]->products;
-            $tipo_craft = $crafting[0]->craft_type;
+            foreach ($crafting as $configuracao_craft) {
+                $craft = $conexao->real_escape_string($configuracao_craft->recipe);
+                $produtos = (int) $configuracao_craft->products;
+                $tipo_craft = normaliza_tipo_craft($configuracao_craft->craft_type);
 
-            $conexao->query("INSERT INTO item_receita (id_item, crafting, qtd_produtos, tipo_craft) VALUES ($id_item, '$craft', $produtos, $tipo_craft)");
+                if (!$conexao->query(
+                    "INSERT INTO item_receita (id_item, crafting, qtd_produtos, tipo_craft)
+                     VALUES ($id_item, '$craft', $produtos, '$tipo_craft')"
+                )) {
+                    throw new RuntimeException("Falha ao importar receita do item $id_item: " . $conexao->error);
+                }
+            }
         }
 
         // itens com histórico de várias guias no menu
