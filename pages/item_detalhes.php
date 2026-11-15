@@ -217,7 +217,7 @@
 
                         <?php echo "<option value='$versao_add'>$versao_add</option>";
 
-                        $drops = ["26"];
+                        $drops = ["26", "27"];
 
                         for ($x = 0; $x < sizeof($drops); $x++) {
                             for ($i = 4; $i > 0; $i--)
@@ -321,6 +321,7 @@
             $ids_ingredientes = array_values(array_unique($ids_ingredientes));
 
             $dados_ingredientes = [];
+            $cores_ingredientes = [];
             if ($ids_ingredientes) {
                 $lista_ids_ingredientes = implode(",", $ids_ingredientes);
                 $executa_ingredientes = $conexao->query(
@@ -333,6 +334,16 @@
                 }
                 while ($ingrediente = $executa_ingredientes->fetch_assoc()) {
                     $dados_ingredientes[] = $ingrediente;
+                }
+                
+                // Carrega as cores dos ingredientes
+                $executa_cores = $conexao->query(
+                    "SELECT id_item, tipo_item FROM item_titulo WHERE id_item IN ($lista_ids_ingredientes)"
+                );
+                if ($executa_cores) {
+                    while ($cor = $executa_cores->fetch_assoc()) {
+                        $cores_ingredientes[(int)$cor["id_item"]] = (int)$cor["tipo_item"];
+                    }
                 }
             } ?>
 
@@ -360,7 +371,8 @@
                                 <img src="../img/itens/new/<?php echo htmlspecialchars($tipo_item, ENT_QUOTES, "UTF-8") ?>/<?php echo htmlspecialchars($nome_icon, ENT_QUOTES, "UTF-8") ?>"
                                     alt="<?php echo htmlspecialchars($nome_item, ENT_QUOTES, "UTF-8") ?>"
                                     data-product-name="<?php echo htmlspecialchars($nome_item, ENT_QUOTES, "UTF-8") ?>"
-                                    data-product-internal-name="<?php echo htmlspecialchars($nome_interno, ENT_QUOTES, "UTF-8") ?>">
+                                    data-product-internal-name="<?php echo htmlspecialchars($nome_interno, ENT_QUOTES, "UTF-8") ?>"
+                                    data-product-color="<?php echo $cor_item ?? 0 ?>">
                                 <span class="craft_recipe_quantity"><?php echo $receita_craft["products"] ?></span>
                             </div>
                         </div>
@@ -372,13 +384,16 @@
                             <button type="button" class="craft_preview_proxima" aria-label="Próxima receita">&#8250;</button>
                         </div>
                     <?php } ?>
-                    <?php foreach ($dados_ingredientes as $ingrediente) { ?>
+                    <?php foreach ($dados_ingredientes as $ingrediente) { 
+                        $cor_ingrediente = $cores_ingredientes[(int)$ingrediente["id_item"]] ?? 0;
+                    ?>
                         <span hidden
                             data-craft-item-id="<?php echo (int) $ingrediente["id_item"] ?>"
                             data-craft-item-type="<?php echo htmlspecialchars($ingrediente["tipo"], ENT_QUOTES, "UTF-8") ?>"
                             data-craft-item-icon="<?php echo htmlspecialchars($ingrediente["icon"], ENT_QUOTES, "UTF-8") ?>"
                             data-craft-item-name="<?php echo htmlspecialchars($ingrediente["nome"], ENT_QUOTES, "UTF-8") ?>"
-                            data-craft-item-internal-name="<?php echo htmlspecialchars($ingrediente["internal"], ENT_QUOTES, "UTF-8") ?>"></span>
+                            data-craft-item-internal-name="<?php echo htmlspecialchars($ingrediente["internal"], ENT_QUOTES, "UTF-8") ?>"
+                            data-craft-item-color="<?php echo $cor_ingrediente ?>"></span>
                     <?php } ?>
                 </div>
             <?php } ?>

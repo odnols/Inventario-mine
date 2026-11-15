@@ -27,7 +27,7 @@ function configura_tooltip_slot(slot, item) {
     }
 
     slot.onmouseover = evento => {
-        toolTip(item.name, null, item.internal_name || undefined, null)
+        toolTip(item.name, null, item.internal_name || undefined, item.color || 0)
         posiciona_tooltip(evento)
     }
     slot.onmousemove = posiciona_tooltip
@@ -35,62 +35,68 @@ function configura_tooltip_slot(slot, item) {
 }
 
 function renderiza_previews_craft_item() {
-    const preview = document.getElementById("preview_item_craft")
-    if (!preview)
-        return
+    try {
+        const preview = document.getElementById("preview_item_craft")
+        if (!preview)
+            return
 
-    const itens = new Map(
-        Array.from(preview.querySelectorAll("[data-craft-item-id]"), elemento => [
-            Number(elemento.dataset.craftItemId),
-            {
-                type: elemento.dataset.craftItemType,
-                icon: elemento.dataset.craftItemIcon,
-                name: elemento.dataset.craftItemName,
-                internal_name: elemento.dataset.craftItemInternalName
+        const itens = new Map(
+            Array.from(preview.querySelectorAll("[data-craft-item-id]"), elemento => [
+                Number(elemento.dataset.craftItemId),
+                {
+                    type: elemento.dataset.craftItemType,
+                    icon: elemento.dataset.craftItemIcon,
+                    name: elemento.dataset.craftItemName,
+                    internal_name: elemento.dataset.craftItemInternalName,
+                    color: Number(elemento.dataset.craftItemColor) || 0
+                }
+            ])
+        )
+        const receitas = Array.from(preview.querySelectorAll(".craft_recipe_preview"))
+        receitas.forEach(receita => {
+            const tipo = receita.dataset.craftType
+            const idsReceita = receita.dataset.craftRecipe.split(",")
+            const produto = receita.querySelector(".craft_recipe_output img")
+            if (produto) {
+                configura_tooltip_slot(produto, {
+                    name: produto.dataset.productName,
+                    internal_name: produto.dataset.productInternalName,
+                    color: Number(produto.dataset.productColor) || 0
+                })
             }
-        ])
-    )
-    const receitas = Array.from(preview.querySelectorAll(".craft_recipe_preview"))
-    receitas.forEach(receita => {
-        const tipo = receita.dataset.craftType
-        const idsReceita = receita.dataset.craftRecipe.split(",")
-        const produto = receita.querySelector(".craft_recipe_output img")
-        if (produto) {
-            configura_tooltip_slot(produto, {
-                name: produto.dataset.productName,
-                internal_name: produto.dataset.productInternalName
+            receita.querySelectorAll(".grid_craft").forEach((slot, indice) => {
+                const idItem = Number(idsReceita[indice])
+                const item = Number.isInteger(idItem) && idItem > 0 ? itens.get(idItem) : null
+                const slotAtivo = indice < tipos_craft[tipo]
+
+                slot.style.display = slotAtivo ? "block" : "none"
+                slot.style.backgroundImage = item
+                    ? `url('../img/itens/new/${item.type}/${item.icon}')`
+                    : "none"
+                configura_tooltip_slot(slot, item)
             })
-        }
-        receita.querySelectorAll(".grid_craft").forEach((slot, indice) => {
-            const idItem = Number(idsReceita[indice])
-            const item = Number.isInteger(idItem) && idItem > 0 ? itens.get(idItem) : null
-            const slotAtivo = indice < tipos_craft[tipo]
-
-            slot.style.display = slotAtivo ? "block" : "none"
-            slot.style.backgroundImage = item
-                ? `url('../img/itens/new/${item.type}/${item.icon}')`
-                : "none"
-            configura_tooltip_slot(slot, item)
         })
-    })
 
-    if (receitas.length > 1) {
-        let indice = 0
-        const indicador = preview.querySelector(".craft_preview_indicador")
-        const mostraReceita = proximo => {
-            toolTip()
-            receitas[indice].hidden = true
-            indice = (proximo + receitas.length) % receitas.length
-            receitas[indice].hidden = false
-            indicador.textContent = `${indice + 1} / ${receitas.length}`
+        if (receitas.length > 1) {
+            let indice = 0
+            const indicador = preview.querySelector(".craft_preview_indicador")
+            const mostraReceita = proximo => {
+                toolTip()
+                receitas[indice].hidden = true
+                indice = (proximo + receitas.length) % receitas.length
+                receitas[indice].hidden = false
+                indicador.textContent = `${indice + 1} / ${receitas.length}`
+            }
+            preview.querySelector(".craft_preview_anterior").addEventListener("click", () => mostraReceita(indice - 1))
+            preview.querySelector(".craft_preview_proxima").addEventListener("click", () => mostraReceita(indice + 1))
+            setInterval(() => {
+                if (document.hidden || preview.matches(":hover") || preview.contains(document.activeElement))
+                    return
+                mostraReceita(indice + 1)
+            }, 4000)
         }
-        preview.querySelector(".craft_preview_anterior").addEventListener("click", () => mostraReceita(indice - 1))
-        preview.querySelector(".craft_preview_proxima").addEventListener("click", () => mostraReceita(indice + 1))
-        setInterval(() => {
-            if (document.hidden || preview.matches(":hover") || preview.contains(document.activeElement))
-                return
-            mostraReceita(indice + 1)
-        }, 4000)
+    } catch (erro) {
+        console.error('Erro ao renderizar previews de craft:', erro);
     }
 }
 
@@ -336,7 +342,7 @@ function seleciona_item(id_item) {
                     slot_craft_ativo = "id='slot_craft_ativo'"
 
                 slots_atalho.innerHTML += `<div class='slot_item' ${slot_craft_ativo} onclick='seleciona_item(${itens_atalho[i]})'>
-                    <img class='icon_item' src='${sprite_item}' onmouseover='toolTip(\"${dados_itens[k]["name"]}\", null, \"${dados_itens[k]["internal_name"]}\")', onmouseout='toolTip()'>
+                    <img class='icon_item' src='${sprite_item}' onmouseover='toolTip(\"${dados_itens[k]["name"]}\", null, \"${dados_itens[k]["internal_name"]}\", ${dados_itens[k]["color"] || 0})' onmouseout='toolTip()'>
                 </div>`
             }
         })
@@ -506,7 +512,8 @@ function mostra_crafting(receita, produto, qtd, local) {
             type: produtoSlot.dataset.productType,
             icon: produtoSlot.dataset.productIcon,
             name: produtoSlot.dataset.productName,
-            internal_name: produtoSlot.dataset.productInternalName
+            internal_name: produtoSlot.dataset.productInternalName,
+            color: Number(produtoSlot.dataset.productColor) || 0
         }
     }
 
@@ -533,7 +540,7 @@ function mostra_crafting(receita, produto, qtd, local) {
         imagemProduto.style.width = "48px"
         produtoSlot.replaceChildren(imagemProduto)
 
-        produtoSlot.onmouseover = () => toolTip(dados_produto.name, null, dados_produto.internal_name, null)
+        produtoSlot.onmouseover = () => toolTip(dados_produto.name, null, dados_produto.internal_name, dados_produto.color || 0)
         produtoSlot.onmouseout = () => toolTip()
 
     }

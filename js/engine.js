@@ -171,7 +171,7 @@ function filtragem(pesquisa_input, local, force_filter, alvo) {
     }
 
     let alvos = []
-    let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20", "1.21", "26.1", "26.2", "26.3", "26.4"]
+    let versoes = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20", "1.21", "26.1", "26.2", "26.3", "26.4", "27.1"]
 
     // Descrição das abas do inventário para os itens
     if (categorias_map[pesquisa_input] && (categorias_map[pesquisa_input] !== "pesquisa" && local !== 1))
@@ -626,30 +626,38 @@ function troca_itens(pag) {
 
 function sincroniza_itens(receita, produto, qtd, local, id_item) {
 
-    fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/files/JSON/dados_locais.json')
-        .then(response => response.json())
-        .then(async res_artigo => {
+    Promise.all([
+        fetch('https://raw.githubusercontent.com/odnols/inventario-mine/main/files/JSON/dados_locais.json').then(r => r.json()),
+        fetch('../php/api_item_colors.php').then(r => r.json()).catch(() => ({}))
+    ])
+    .then(([res_artigo, coresItens]) => {
+        const idsItensJson = new Set(res_artigo.map(item => String(item.id)))
+        const itensBanco = Array.from(document.querySelectorAll("[data-craft-item-id]"), elemento => ({
+            id: Number(elemento.dataset.craftItemId),
+            type: elemento.dataset.craftItemType,
+            icon: elemento.dataset.craftItemIcon,
+            name: elemento.dataset.craftItemName,
+            internal_name: elemento.dataset.craftItemInternalName,
+            color: Number(elemento.dataset.craftItemColor) || 0
+        }))
 
-            const idsItensJson = new Set(res_artigo.map(item => String(item.id)))
-            const itensBanco = Array.from(document.querySelectorAll("[data-craft-item-id]"), elemento => ({
-                id: Number(elemento.dataset.craftItemId),
-                type: elemento.dataset.craftItemType,
-                icon: elemento.dataset.craftItemIcon,
-                name: elemento.dataset.craftItemName,
-                internal_name: elemento.dataset.craftItemInternalName
-            }))
+        // Adiciona cores aos items do JSON
+        res_artigo = res_artigo.map(item => ({
+            ...item,
+            color: coresItens[item.id] || 0
+        }))
 
-            dados_itens = res_artigo.concat(
-                itensBanco.filter(item => !idsItensJson.has(String(item.id)))
-            )
+        dados_itens = res_artigo.concat(
+            itensBanco.filter(item => !idsItensJson.has(String(item.id)))
+        )
 
-            if (document.getElementById("craft_prancheta") && local !== 1)
-                seleciona_tipo_craft(document.getElementById("tipo_craft").value, true)
-            else if (local !== 1)
-                mostra_crafting(receita, produto, qtd, 1)
-            else
-                seleciona_item(id_item)
-        })
+        if (document.getElementById("craft_prancheta") && local !== 1)
+            seleciona_tipo_craft(document.getElementById("tipo_craft").value, true)
+        else if (local !== 1)
+            mostra_crafting(receita, produto, qtd, 1)
+        else
+            seleciona_item(id_item)
+    })
 }
 
 function expande_sprite(caminho) {

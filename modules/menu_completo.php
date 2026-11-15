@@ -164,7 +164,8 @@
                         . " data-craft-item-type='" . htmlspecialchars((string) $tipo_item, ENT_QUOTES, "UTF-8") . "'"
                         . " data-craft-item-icon='" . htmlspecialchars((string) $nome_icon, ENT_QUOTES, "UTF-8") . "'"
                         . " data-craft-item-name='" . htmlspecialchars((string) $nome_item, ENT_QUOTES, "UTF-8") . "'"
-                        . " data-craft-item-internal-name='" . htmlspecialchars((string) $nome_interno, ENT_QUOTES, "UTF-8") . "'";
+                        . " data-craft-item-internal-name='" . htmlspecialchars((string) $nome_interno, ENT_QUOTES, "UTF-8") . "'"
+                        . " data-craft-item-color='" . (int) $cor_item . "'";
                 }
 
                 if ($local_requisicao == 1) { // Requisição proveniente da página inicial

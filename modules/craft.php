@@ -49,6 +49,13 @@
         throw new RuntimeException("Falha ao carregar o produto da receita: " . $conexao->error);
     }
     $produto_alvo = $executa_produto->fetch_assoc();
+    
+    $cor_produto = 0;
+    $resultado_cor = $conexao->query("SELECT tipo_item FROM item_titulo WHERE id_item = $id_item_alvo LIMIT 1");
+    if ($resultado_cor && $linha_cor = $resultado_cor->fetch_assoc()) {
+        $cor_produto = (int) $linha_cor["tipo_item"];
+    }
+    
     $executa_coleta = $conexao->query(
         "SELECT id_craft, crafting, tipo_craft, qtd_produtos FROM item_receita WHERE id_item = $id_item_alvo ORDER BY id_craft"
     );
@@ -150,6 +157,7 @@
                 data-product-icon="<?php echo htmlspecialchars($produto_alvo["icon"], ENT_QUOTES, "UTF-8") ?>"
                 data-product-name="<?php echo htmlspecialchars($produto_alvo["nome"], ENT_QUOTES, "UTF-8") ?>"
                 data-product-internal-name="<?php echo htmlspecialchars($produto_alvo["internal"], ENT_QUOTES, "UTF-8") ?>"
+                data-product-color="<?php echo $cor_produto; ?>"
                 <?php } ?>></div>
             <div id="qtd_produto"></div>
             <input id="input_qtd_produto" type="number" name="qtd_produto" min="1" step="1" max="64"

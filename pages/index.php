@@ -143,7 +143,7 @@
                     <option value='26.4'>26.4</option>
                     <?php
 
-                    $drops = ["26"];
+                    $drops = ["26", "27"];
 
                     for ($x = 0; $x < sizeof($drops); $x++) {
                         for ($i = 3; $i > 0; $i--)
