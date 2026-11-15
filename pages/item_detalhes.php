@@ -349,21 +349,34 @@
 
             <?php if ($receitas_craft) { ?>
                 <?php
-                $mascara_bancada = "../img/interface/claro/mask_bancada.png";
-                $versao_mascara_bancada = filemtime($mascara_bancada);
-                if ($versao_mascara_bancada === false) {
-                    throw new RuntimeException("Falha ao carregar a máscara da bancada.");
+                $mascaras_craft = array(
+                    "bancada" => "../img/interface/claro/mask_bancada.png",
+                    "ferraria" => "../img/interface/claro/mask_ferraria.png",
+                    "fornalha" => "../img/interface/claro/mask_fornalha.png",
+                    "pocao" => "../img/interface/claro/mask_pocao.png"
+                );
+                $versoes_mascaras = array();
+                foreach ($mascaras_craft as $tipo => $caminho) {
+                    $versao = filemtime($caminho);
+                    if ($versao === false) {
+                        throw new RuntimeException("Falha ao carregar a máscara de craft do tipo: " . $tipo);
+                    }
+                    $versoes_mascaras[$tipo] = $versao;
                 }
                 ?>
                 <div id="preview_item_craft">
                     <?php foreach ($receitas_craft as $indice_receita => $receita_craft) { ?>
+                        <?php
+                        $tipo_receita = $receita_craft["type"];
+                        $mascara_receita = $mascaras_craft[$tipo_receita] ?? null;
+                        $versao_mascara_receita = $mascara_receita ? ($versoes_mascaras[$tipo_receita] ?? 0) : 0;
+                        $style_background = $mascara_receita ? "style=\"background-image: url('{$mascara_receita}?v={$versao_mascara_receita}')\"" : "";
+                        ?>
                         <div class="craft_recipe_preview"
                             <?php if ($indice_receita > 0) { ?>hidden<?php } ?>
-                            data-craft-type="<?php echo $receita_craft["type"] ?>"
+                            data-craft-type="<?php echo $tipo_receita ?>"
                             data-craft-recipe="<?php echo htmlspecialchars($receita_craft["recipe"], ENT_QUOTES, "UTF-8") ?>"
-                            <?php if ($receita_craft["type"] === "bancada") { ?>
-                                style="background-image: url('<?php echo $mascara_bancada ?>?v=<?php echo $versao_mascara_bancada ?>')"
-                            <?php } ?>>
+                            <?php echo $style_background; ?>>
                             <?php for ($i = 0; $i < 9; $i++) { ?>
                                 <div class="grid_craft gric" data-craft-slot="<?php echo $i ?>"></div>
                             <?php } ?>

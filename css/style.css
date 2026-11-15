@@ -979,6 +979,25 @@ a {
     position: absolute;
 }
 
+#sprite_tipo_craft {
+    width: 48px;
+    float: left;
+    height: 48px;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    z-index: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sprite_tipo_craft img {
+    image-rendering: pixelated;
+    width: 48px;
+    height: 48px;
+}
+
 #sprite_produto {
     width: 48px;
     float: left;

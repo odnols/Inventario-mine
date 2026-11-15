@@ -42828,6 +42828,13 @@
         "craftable": true,
         "hide": false,
         "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1113,2099,2101,2101",
+                "products": 1,
+                "craft_type": "pocao"
+            }
+        ],
         "description": [
             {
                 "value": "[&1Congelamento I (0:45)"
@@ -43501,7 +43508,117 @@
         ],
         "description": [
             {
-                "value": "[&rHyper Potions - flurry"
+                "value": "[&rHyper Potions - Flurry"
+            }
+        ]
+    },
+    {
+        "id": 2133,
+        "icon": "copper_throwing_disc.webp",
+        "type": "combate",
+        "name": "Disco Arremess\u00e1vel de Cobre",
+        "internal_name": "copper_throwing_disc",
+        "version": "27.1",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",199,,199,,199,,199,",
+                "products": 1,
+                "craft_type": "bancada"
+            }
+        ]
+    },
+    {
+        "id": 2134,
+        "icon": "iron_throwing_disc.webp",
+        "type": "combate",
+        "name": "Disco Arremess\u00e1vel de Ferro",
+        "internal_name": "iron_throwing_disc",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",200,,200,,200,,200,",
+                "products": 1,
+                "craft_type": "bancada"
+            }
+        ]
+    },
+    {
+        "id": 2135,
+        "icon": "golden_throwing_disc.webp",
+        "type": "combate",
+        "name": "Disco Arremess\u00e1vel de Ouro",
+        "internal_name": "golden_throwing_disc",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",62,,62,,62,,62,",
+                "products": 1,
+                "craft_type": "bancada"
+            }
+        ]
+    },
+    {
+        "id": 2136,
+        "icon": "diamond_throwing_disc.webp",
+        "type": "combate",
+        "name": "Disco Arremess\u00e1vel de Diamante",
+        "internal_name": "diamond_throwing_disc",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": ",59,,59,,59,,59,",
+                "products": 1,
+                "craft_type": "bancada"
+            }
+        ]
+    },
+    {
+        "id": 2137,
+        "icon": "netherite_throwing_disc.webp",
+        "type": "combate",
+        "name": "Disco Arremess\u00e1vel de Netherita",
+        "internal_name": "netherite_throwing_disc",
+        "version": "26.4",
+        "collectable": true,
+        "released": false,
+        "renewable": true,
+        "stackable": 0,
+        "craftable": true,
+        "hide": false,
+        "legacy": false,
+        "recipe": [
+            {
+                "recipe": "1531,2136,26",
+                "products": 1,
+                "craft_type": "ferraria"
             }
         ]
     }
